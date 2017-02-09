@@ -1,0 +1,30 @@
+﻿#pragma once
+
+#include "il2cpp-config.h"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+#include <stdint.h>
+#include <assert.h>
+#include <exception>
+
+
+#include "codegen/il2cpp-codegen.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_Key52062375MethodDeclarations.h"
+
+// System.Void System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<PunTeams/Team,System.Collections.Generic.List`1<PhotonPlayer>>::.ctor(System.Collections.Generic.Dictionary`2<TKey,TValue>)
+#define Enumerator__ctor_m3532844933(__this, ___host0, method) ((  void (*) (Enumerator_t852343039 *, Dictionary_2_t2457806897 *, const MethodInfo*))Enumerator__ctor_m2271958664_gshared)(__this, ___host0, method)
+// System.Object System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<PunTeams/Team,System.Collections.Generic.List`1<PhotonPlayer>>::System.Collections.IEnumerator.get_Current()
+#define Enumerator_System_Collections_IEnumerator_get_Current_m557180304(__this, method) ((  Il2CppObject * (*) (Enumerator_t852343039 *, const MethodInfo*))Enumerator_System_Collections_IEnumerator_get_Current_m1416869405_gshared)(__this, method)
+// System.Void System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<PunTeams/Team,System.Collections.Generic.List`1<PhotonPlayer>>::System.Collections.IEnumerator.Reset()
+#define Enumerator_System_Collections_IEnumerator_Reset_m3449992312(__this, method) ((  void (*) (Enumerator_t852343039 *, const MethodInfo*))Enumerator_System_Collections_IEnumerator_Reset_m1627399341_gshared)(__this, method)
+// System.Void System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<PunTeams/Team,System.Collections.Generic.List`1<PhotonPlayer>>::Dispose()
+#define Enumerator_Dispose_m3881915717(__this, method) ((  void (*) (Enumerator_t852343039 *, const MethodInfo*))Enumerator_Dispose_m1160684384_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<PunTeams/Team,System.Collections.Generic.List`1<PhotonPlayer>>::MoveNext()
+#define Enumerator_MoveNext_m1413965143(__this, method) ((  bool (*) (Enumerator_t852343039 *, const MethodInfo*))Enumerator_MoveNext_m1241389045_gshared)(__this, method)
+// TKey System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<PunTeams/Team,System.Collections.Generic.List`1<PhotonPlayer>>::get_Current()
+#define Enumerator_get_Current_m2731152811(__this, method) ((  uint8_t (*) (Enumerator_t852343039 *, const MethodInfo*))Enumerator_get_Current_m1635381791_gshared)(__this, method)
