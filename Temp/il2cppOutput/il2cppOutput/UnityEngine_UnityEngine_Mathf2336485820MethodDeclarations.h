@@ -12,6 +12,8 @@
 #include <assert.h>
 #include <exception>
 
+// System.Single[]
+struct SingleU5BU5D_t577127397;
 
 #include "codegen/il2cpp-codegen.h"
 
@@ -19,8 +21,14 @@
 extern "C"  float Mathf_Sin_m831310046 (Il2CppObject * __this /* static, unused */, float ___f0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Cos(System.Single)
 extern "C"  float Mathf_Cos_m238853451 (Il2CppObject * __this /* static, unused */, float ___f0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Mathf::Tan(System.Single)
+extern "C"  float Mathf_Tan_m3348734175 (Il2CppObject * __this /* static, unused */, float ___f0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Acos(System.Single)
 extern "C"  float Mathf_Acos_m3800958570 (Il2CppObject * __this /* static, unused */, float ___f0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Mathf::Atan(System.Single)
+extern "C"  float Mathf_Atan_m3769407270 (Il2CppObject * __this /* static, unused */, float ___f0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Mathf::Atan2(System.Single,System.Single)
+extern "C"  float Mathf_Atan2_m496071197 (Il2CppObject * __this /* static, unused */, float ___y0, float ___x1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Sqrt(System.Single)
 extern "C"  float Mathf_Sqrt_m2213915910 (Il2CppObject * __this /* static, unused */, float ___f0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Abs(System.Single)
@@ -31,6 +39,8 @@ extern "C"  float Mathf_Min_m1648492575 (Il2CppObject * __this /* static, unused
 extern "C"  int32_t Mathf_Min_m2906823867 (Il2CppObject * __this /* static, unused */, int32_t ___a0, int32_t ___b1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Max(System.Single,System.Single)
 extern "C"  float Mathf_Max_m2564622569 (Il2CppObject * __this /* static, unused */, float ___a0, float ___b1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Mathf::Max(System.Single[])
+extern "C"  float Mathf_Max_m144166478 (Il2CppObject * __this /* static, unused */, SingleU5BU5D_t577127397* ___values0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Mathf::Max(System.Int32,System.Int32)
 extern "C"  int32_t Mathf_Max_m1875893177 (Il2CppObject * __this /* static, unused */, int32_t ___a0, int32_t ___b1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Pow(System.Single,System.Single)

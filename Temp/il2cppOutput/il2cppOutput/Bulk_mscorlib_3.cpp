@@ -412,6 +412,7 @@ struct LocalBuilder_t2116499186;
 #include "mscorlib_System_OverflowException1075868493MethodDeclarations.h"
 #include "mscorlib_System_OverflowException1075868493.h"
 #include "mscorlib_System_Double4078015681.h"
+#include "mscorlib_System_Single2076509932MethodDeclarations.h"
 #include "mscorlib_System_Decimal724701077.h"
 #include "mscorlib_System_Decimal724701077MethodDeclarations.h"
 #include "mscorlib_System_MemberAccessException2005094827.h"
@@ -539,7 +540,6 @@ struct LocalBuilder_t2116499186;
 #include "mscorlib_System_Globalization_NumberFormatInfo104580544MethodDeclarations.h"
 #include "mscorlib_System_Globalization_CultureInfo3500843524MethodDeclarations.h"
 #include "mscorlib_System_Double4078015681MethodDeclarations.h"
-#include "mscorlib_System_Single2076509932MethodDeclarations.h"
 #include "mscorlib_System_NumberFormatter_CustomInfo128587492MethodDeclarations.h"
 #include "mscorlib_System_NumberFormatter_CustomInfo128587492.h"
 #include "mscorlib_System_Char3454481338MethodDeclarations.h"
@@ -6260,6 +6260,58 @@ IL_002c:
 		return G_B3_0;
 	}
 }
+// System.Single System.Math::Max(System.Single,System.Single)
+extern "C"  float Math_Max_m3360711905 (Il2CppObject * __this /* static, unused */, float ___val10, float ___val21, const MethodInfo* method)
+{
+	float G_B6_0 = 0.0f;
+	{
+		float L_0 = ___val10;
+		bool L_1 = Single_IsNaN_m2349591895(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		if (L_1)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		float L_2 = ___val21;
+		bool L_3 = Single_IsNaN_m2349591895(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_001c;
+		}
+	}
+
+IL_0016:
+	{
+		return (std::numeric_limits<float>::quiet_NaN());
+	}
+
+IL_001c:
+	{
+		float L_4 = ___val10;
+		float L_5 = ___val21;
+		if ((!(((float)L_4) > ((float)L_5))))
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		float L_6 = ___val10;
+		G_B6_0 = L_6;
+		goto IL_002a;
+	}
+
+IL_0029:
+	{
+		float L_7 = ___val21;
+		G_B6_0 = L_7;
+	}
+
+IL_002a:
+	{
+		return G_B6_0;
+	}
+}
 // System.Int32 System.Math::Max(System.Int32,System.Int32)
 extern "C"  int32_t Math_Max_m2671311541 (Il2CppObject * __this /* static, unused */, int32_t ___val10, int32_t ___val21, const MethodInfo* method)
 {
@@ -6423,10 +6475,25 @@ extern "C"  double Math_Cos_m43596019 (Il2CppObject * __this /* static, unused *
 {
 	return cos(___d0);
 }
+// System.Double System.Math::Tan(System.Double)
+extern "C"  double Math_Tan_m2337827751 (Il2CppObject * __this /* static, unused */, double ___a0, const MethodInfo* method)
+{
+	return tan(___a0);
+}
 // System.Double System.Math::Acos(System.Double)
 extern "C"  double Math_Acos_m2218287828 (Il2CppObject * __this /* static, unused */, double ___d0, const MethodInfo* method)
 {
 	return acos(___d0);
+}
+// System.Double System.Math::Atan(System.Double)
+extern "C"  double Math_Atan_m2820982624 (Il2CppObject * __this /* static, unused */, double ___d0, const MethodInfo* method)
+{
+	return atan(___d0);
+}
+// System.Double System.Math::Atan2(System.Double,System.Double)
+extern "C"  double Math_Atan2_m792822848 (Il2CppObject * __this /* static, unused */, double ___y0, double ___x1, const MethodInfo* method)
+{
+	return atan2(___y0, ___x1);
 }
 // System.Double System.Math::Log(System.Double)
 extern "C"  double Math_Log_m3371716878 (Il2CppObject * __this /* static, unused */, double ___d0, const MethodInfo* method)
@@ -11883,6 +11950,30 @@ extern "C"  void MulticastDelegate_GetObjectData_m3187757658 (MulticastDelegate_
 		return;
 	}
 }
+// System.Object System.MulticastDelegate::DynamicInvokeImpl(System.Object[])
+extern "C"  Il2CppObject * MulticastDelegate_DynamicInvokeImpl_m1972355936 (MulticastDelegate_t3201952435 * __this, ObjectU5BU5D_t3614634134* ___args0, const MethodInfo* method)
+{
+	{
+		MulticastDelegate_t3201952435 * L_0 = __this->get_prev_9();
+		if (!L_0)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		MulticastDelegate_t3201952435 * L_1 = __this->get_prev_9();
+		ObjectU5BU5D_t3614634134* L_2 = ___args0;
+		NullCheck(L_1);
+		MulticastDelegate_DynamicInvokeImpl_m1972355936(L_1, L_2, /*hidden argument*/NULL);
+	}
+
+IL_0018:
+	{
+		ObjectU5BU5D_t3614634134* L_3 = ___args0;
+		Il2CppObject * L_4 = Delegate_DynamicInvokeImpl_m3083854600(__this, L_3, /*hidden argument*/NULL);
+		return L_4;
+	}
+}
 // System.Boolean System.MulticastDelegate::Equals(System.Object)
 extern Il2CppClass* MulticastDelegate_t3201952435_il2cpp_TypeInfo_var;
 extern const uint32_t MulticastDelegate_Equals_m3064081489_MetadataUsageId;
@@ -11986,7 +12077,7 @@ extern "C"  DelegateU5BU5D_t1606206610* MulticastDelegate_GetInvocationList_m138
 	ArrayList_t4252133567 * V_2 = NULL;
 	MulticastDelegate_t3201952435 * V_3 = NULL;
 	{
-		Il2CppObject * L_0 = VirtFuncInvoker0< Il2CppObject * >::Invoke(6 /* System.Object System.Delegate::Clone() */, __this);
+		Il2CppObject * L_0 = VirtFuncInvoker0< Il2CppObject * >::Invoke(7 /* System.Object System.Delegate::Clone() */, __this);
 		V_0 = ((MulticastDelegate_t3201952435 *)CastclassClass(L_0, MulticastDelegate_t3201952435_il2cpp_TypeInfo_var));
 		MulticastDelegate_t3201952435 * L_1 = V_0;
 		NullCheck(L_1);
@@ -12030,7 +12121,7 @@ IL_002b:
 	{
 		MulticastDelegate_t3201952435 * L_11 = V_0;
 		NullCheck(L_11);
-		Il2CppObject * L_12 = VirtFuncInvoker0< Il2CppObject * >::Invoke(6 /* System.Object System.Delegate::Clone() */, L_11);
+		Il2CppObject * L_12 = VirtFuncInvoker0< Il2CppObject * >::Invoke(7 /* System.Object System.Delegate::Clone() */, L_11);
 		V_1 = ((MulticastDelegate_t3201952435 *)CastclassClass(L_12, MulticastDelegate_t3201952435_il2cpp_TypeInfo_var));
 		MulticastDelegate_t3201952435 * L_13 = V_1;
 		NullCheck(L_13);
@@ -12058,7 +12149,7 @@ IL_0071:
 	{
 		MulticastDelegate_t3201952435 * L_18 = V_0;
 		NullCheck(L_18);
-		Il2CppObject * L_19 = VirtFuncInvoker0< Il2CppObject * >::Invoke(6 /* System.Object System.Delegate::Clone() */, L_18);
+		Il2CppObject * L_19 = VirtFuncInvoker0< Il2CppObject * >::Invoke(7 /* System.Object System.Delegate::Clone() */, L_18);
 		V_3 = ((MulticastDelegate_t3201952435 *)CastclassClass(L_19, MulticastDelegate_t3201952435_il2cpp_TypeInfo_var));
 		MulticastDelegate_t3201952435 * L_20 = V_3;
 		NullCheck(L_20);
@@ -12130,7 +12221,7 @@ IL_0021:
 	{
 		Delegate_t3022476291 * L_5 = ___follow0;
 		NullCheck(L_5);
-		Il2CppObject * L_6 = VirtFuncInvoker0< Il2CppObject * >::Invoke(6 /* System.Object System.Delegate::Clone() */, L_5);
+		Il2CppObject * L_6 = VirtFuncInvoker0< Il2CppObject * >::Invoke(7 /* System.Object System.Delegate::Clone() */, L_5);
 		V_0 = ((MulticastDelegate_t3201952435 *)CastclassClass(L_6, MulticastDelegate_t3201952435_il2cpp_TypeInfo_var));
 		MulticastDelegate_t3201952435 * L_7 = V_0;
 		NullCheck(L_7);
@@ -12149,7 +12240,7 @@ IL_0046:
 		MulticastDelegate_t3201952435 * L_11 = V_2;
 		MulticastDelegate_t3201952435 * L_12 = V_1;
 		NullCheck(L_12);
-		Il2CppObject * L_13 = VirtFuncInvoker0< Il2CppObject * >::Invoke(6 /* System.Object System.Delegate::Clone() */, L_12);
+		Il2CppObject * L_13 = VirtFuncInvoker0< Il2CppObject * >::Invoke(7 /* System.Object System.Delegate::Clone() */, L_12);
 		NullCheck(L_11);
 		L_11->set_prev_9(((MulticastDelegate_t3201952435 *)CastclassClass(L_13, MulticastDelegate_t3201952435_il2cpp_TypeInfo_var)));
 		MulticastDelegate_t3201952435 * L_14 = V_2;
@@ -12172,7 +12263,7 @@ IL_0065:
 	}
 	{
 		MulticastDelegate_t3201952435 * L_19 = V_2;
-		Il2CppObject * L_20 = VirtFuncInvoker0< Il2CppObject * >::Invoke(6 /* System.Object System.Delegate::Clone() */, __this);
+		Il2CppObject * L_20 = VirtFuncInvoker0< Il2CppObject * >::Invoke(7 /* System.Object System.Delegate::Clone() */, __this);
 		NullCheck(L_19);
 		L_19->set_prev_9(((MulticastDelegate_t3201952435 *)CastclassClass(L_20, MulticastDelegate_t3201952435_il2cpp_TypeInfo_var)));
 		MulticastDelegate_t3201952435 * L_21 = V_2;
@@ -12189,7 +12280,7 @@ IL_008f:
 		MulticastDelegate_t3201952435 * L_24 = V_2;
 		MulticastDelegate_t3201952435 * L_25 = V_1;
 		NullCheck(L_25);
-		Il2CppObject * L_26 = VirtFuncInvoker0< Il2CppObject * >::Invoke(6 /* System.Object System.Delegate::Clone() */, L_25);
+		Il2CppObject * L_26 = VirtFuncInvoker0< Il2CppObject * >::Invoke(7 /* System.Object System.Delegate::Clone() */, L_25);
 		NullCheck(L_24);
 		L_24->set_prev_9(((MulticastDelegate_t3201952435 *)CastclassClass(L_26, MulticastDelegate_t3201952435_il2cpp_TypeInfo_var)));
 		MulticastDelegate_t3201952435 * L_27 = V_2;
@@ -12512,7 +12603,7 @@ IL_002b:
 	{
 		MulticastDelegate_t3201952435 * L_4 = V_4;
 		NullCheck(L_4);
-		Il2CppObject * L_5 = VirtFuncInvoker0< Il2CppObject * >::Invoke(6 /* System.Object System.Delegate::Clone() */, L_4);
+		Il2CppObject * L_5 = VirtFuncInvoker0< Il2CppObject * >::Invoke(7 /* System.Object System.Delegate::Clone() */, L_4);
 		V_5 = ((MulticastDelegate_t3201952435 *)CastclassClass(L_5, MulticastDelegate_t3201952435_il2cpp_TypeInfo_var));
 		MulticastDelegate_t3201952435 * L_6 = V_2;
 		if (!L_6)
@@ -12563,7 +12654,7 @@ IL_006b:
 	{
 		MulticastDelegate_t3201952435 * L_16 = V_4;
 		NullCheck(L_16);
-		Il2CppObject * L_17 = VirtFuncInvoker0< Il2CppObject * >::Invoke(6 /* System.Object System.Delegate::Clone() */, L_16);
+		Il2CppObject * L_17 = VirtFuncInvoker0< Il2CppObject * >::Invoke(7 /* System.Object System.Delegate::Clone() */, L_16);
 		V_6 = ((MulticastDelegate_t3201952435 *)CastclassClass(L_17, MulticastDelegate_t3201952435_il2cpp_TypeInfo_var));
 		MulticastDelegate_t3201952435 * L_18 = V_2;
 		if (!L_18)

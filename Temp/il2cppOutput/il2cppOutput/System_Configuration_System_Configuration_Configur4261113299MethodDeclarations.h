@@ -43,7 +43,7 @@ extern "C"  KeysCollection_t633582367 * ConfigurationSectionCollection_get_Keys_
 // System.Int32 System.Configuration.ConfigurationSectionCollection::get_Count()
 extern "C"  int32_t ConfigurationSectionCollection_get_Count_m3164332684 (ConfigurationSectionCollection_t4261113299 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Configuration.ConfigurationSection System.Configuration.ConfigurationSectionCollection::get_Item(System.String)
-extern "C"  ConfigurationSection_t2600766927 * ConfigurationSectionCollection_get_Item_m3421303889 (ConfigurationSectionCollection_t4261113299 * __this, String_t* ___name0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  ConfigurationSection_t2600766927 * ConfigurationSectionCollection_get_Item_m1500557111 (ConfigurationSectionCollection_t4261113299 * __this, String_t* ___name0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator System.Configuration.ConfigurationSectionCollection::GetEnumerator()
 extern "C"  Il2CppObject * ConfigurationSectionCollection_GetEnumerator_m1242675576 (ConfigurationSectionCollection_t4261113299 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Configuration.ConfigurationSectionCollection::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)

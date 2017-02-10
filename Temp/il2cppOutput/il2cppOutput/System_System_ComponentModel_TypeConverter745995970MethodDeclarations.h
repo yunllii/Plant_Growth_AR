@@ -49,7 +49,7 @@ struct StringU5BU5D_t1642385972;
 // System.Void System.ComponentModel.TypeConverter::.ctor()
 extern "C"  void TypeConverter__ctor_m3380301159 (TypeConverter_t745995970 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.ComponentModel.TypeConverter::CanConvertFrom(System.Type)
-extern "C"  bool TypeConverter_CanConvertFrom_m1824018217 (TypeConverter_t745995970 * __this, Type_t * ___sourceType0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  bool TypeConverter_CanConvertFrom_m2207973887 (TypeConverter_t745995970 * __this, Type_t * ___sourceType0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.ComponentModel.TypeConverter::CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)
 extern "C"  bool TypeConverter_CanConvertFrom_m1277808141 (TypeConverter_t745995970 * __this, Il2CppObject * ___context0, Type_t * ___sourceType1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.ComponentModel.TypeConverter::CanConvertTo(System.Type)
@@ -57,11 +57,11 @@ extern "C"  bool TypeConverter_CanConvertTo_m3984515018 (TypeConverter_t74599597
 // System.Boolean System.ComponentModel.TypeConverter::CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)
 extern "C"  bool TypeConverter_CanConvertTo_m3192242134 (TypeConverter_t745995970 * __this, Il2CppObject * ___context0, Type_t * ___destinationType1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.ComponentModel.TypeConverter::ConvertFrom(System.Object)
-extern "C"  Il2CppObject * TypeConverter_ConvertFrom_m757293553 (TypeConverter_t745995970 * __this, Il2CppObject * ___o0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  Il2CppObject * TypeConverter_ConvertFrom_m3616211731 (TypeConverter_t745995970 * __this, Il2CppObject * ___o0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.ComponentModel.TypeConverter::ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
 extern "C"  Il2CppObject * TypeConverter_ConvertFrom_m3174062747 (TypeConverter_t745995970 * __this, Il2CppObject * ___context0, CultureInfo_t3500843524 * ___culture1, Il2CppObject * ___value2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.ComponentModel.TypeConverter::ConvertFromInvariantString(System.String)
-extern "C"  Il2CppObject * TypeConverter_ConvertFromInvariantString_m1701603654 (TypeConverter_t745995970 * __this, String_t* ___text0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  Il2CppObject * TypeConverter_ConvertFromInvariantString_m2229102078 (TypeConverter_t745995970 * __this, String_t* ___text0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.ComponentModel.TypeConverter::ConvertFromInvariantString(System.ComponentModel.ITypeDescriptorContext,System.String)
 extern "C"  Il2CppObject * TypeConverter_ConvertFromInvariantString_m1072000636 (TypeConverter_t745995970 * __this, Il2CppObject * ___context0, String_t* ___text1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.ComponentModel.TypeConverter::ConvertFromString(System.String)
@@ -75,7 +75,7 @@ extern "C"  Il2CppObject * TypeConverter_ConvertTo_m2094680623 (TypeConverter_t7
 // System.Object System.ComponentModel.TypeConverter::ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
 extern "C"  Il2CppObject * TypeConverter_ConvertTo_m528793397 (TypeConverter_t745995970 * __this, Il2CppObject * ___context0, CultureInfo_t3500843524 * ___culture1, Il2CppObject * ___value2, Type_t * ___destinationType3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.ComponentModel.TypeConverter::ConvertToInvariantString(System.Object)
-extern "C"  String_t* TypeConverter_ConvertToInvariantString_m2615559221 (TypeConverter_t745995970 * __this, Il2CppObject * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  String_t* TypeConverter_ConvertToInvariantString_m1236807103 (TypeConverter_t745995970 * __this, Il2CppObject * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.ComponentModel.TypeConverter::ConvertToInvariantString(System.ComponentModel.ITypeDescriptorContext,System.Object)
 extern "C"  String_t* TypeConverter_ConvertToInvariantString_m407162877 (TypeConverter_t745995970 * __this, Il2CppObject * ___context0, Il2CppObject * ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.ComponentModel.TypeConverter::ConvertToString(System.Object)

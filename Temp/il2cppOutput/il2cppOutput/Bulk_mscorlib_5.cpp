@@ -43,6 +43,12 @@ struct Il2CppArray;
 struct ByteU5BU5D_t3397334013;
 // System.Char[]
 struct CharU5BU5D_t1328083999;
+// System.Int32[]
+struct Int32U5BU5D_t3030399641;
+// System.Single[]
+struct SingleU5BU5D_t577127397;
+// System.Type
+struct Type_t;
 // System.Runtime.InteropServices.MarshalAsAttribute
 struct MarshalAsAttribute_t2900773360;
 // System.Runtime.InteropServices.MarshalDirectiveException
@@ -57,8 +63,6 @@ struct PreserveSigAttribute_t1564965109;
 struct SafeHandle_t2733794115;
 // System.Runtime.InteropServices.TypeLibImportClassAttribute
 struct TypeLibImportClassAttribute_t2390314680;
-// System.Type
-struct Type_t;
 // System.Runtime.InteropServices.TypeLibVersionAttribute
 struct TypeLibVersionAttribute_t3346496961;
 // System.Runtime.InteropServices.UnmanagedFunctionPointerAttribute
@@ -320,9 +324,9 @@ struct WellKnownServiceTypeEntry_t1712728956;
 #include "mscorlib_System_Runtime_InteropServices_GCHandleTy1970708122.h"
 #include "mscorlib_System_InvalidOperationException721527559MethodDeclarations.h"
 #include "mscorlib_System_InvalidOperationException721527559.h"
-#include "mscorlib_System_Int322071877448MethodDeclarations.h"
 #include "mscorlib_System_ArgumentException3259014390MethodDeclarations.h"
 #include "mscorlib_System_ArgumentException3259014390.h"
+#include "mscorlib_System_Int322071877448MethodDeclarations.h"
 #include "mscorlib_System_Runtime_InteropServices_GCHandleTy1970708122MethodDeclarations.h"
 #include "mscorlib_System_Runtime_InteropServices_GuidAttribu222072359.h"
 #include "mscorlib_System_Runtime_InteropServices_GuidAttribu222072359MethodDeclarations.h"
@@ -339,6 +343,8 @@ struct WellKnownServiceTypeEntry_t1712728956;
 #include "mscorlib_ArrayTypes.h"
 #include "mscorlib_System_Byte3683104436.h"
 #include "mscorlib_System_Char3454481338.h"
+#include "mscorlib_System_Single2076509932.h"
+#include "mscorlib_System_Type1303803226.h"
 #include "mscorlib_System_Runtime_InteropServices_MarshalAsA2900773360.h"
 #include "mscorlib_System_Runtime_InteropServices_MarshalAsA2900773360MethodDeclarations.h"
 #include "mscorlib_System_Runtime_InteropServices_UnmanagedT2550630890.h"
@@ -364,7 +370,6 @@ struct WellKnownServiceTypeEntry_t1712728956;
 #include "mscorlib_System_Object2689449295MethodDeclarations.h"
 #include "mscorlib_System_ObjectDisposedException2695136451MethodDeclarations.h"
 #include "mscorlib_System_Threading_Interlocked1625106012MethodDeclarations.h"
-#include "mscorlib_System_Type1303803226.h"
 #include "mscorlib_System_Type1303803226MethodDeclarations.h"
 #include "mscorlib_System_ObjectDisposedException2695136451.h"
 #include "mscorlib_System_GC2902933594MethodDeclarations.h"
@@ -857,6 +862,67 @@ extern "C"  Il2CppObject * GCHandle_get_Target_m2327042781_AdjustorThunk (Il2Cpp
 	GCHandle_t3409268066 * _thisAdjusted = reinterpret_cast<GCHandle_t3409268066 *>(__this + 1);
 	return GCHandle_get_Target_m2327042781(_thisAdjusted, method);
 }
+// System.IntPtr System.Runtime.InteropServices.GCHandle::AddrOfPinnedObject()
+extern Il2CppClass* ArgumentException_t3259014390_il2cpp_TypeInfo_var;
+extern Il2CppClass* InvalidOperationException_t721527559_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1107711393;
+extern Il2CppCodeGenString* _stringLiteral1606491667;
+extern const uint32_t GCHandle_AddrOfPinnedObject_m3034420542_MetadataUsageId;
+extern "C"  IntPtr_t GCHandle_AddrOfPinnedObject_m3034420542 (GCHandle_t3409268066 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (GCHandle_AddrOfPinnedObject_m3034420542_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	IntPtr_t V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		int32_t L_0 = __this->get_handle_0();
+		IntPtr_t L_1 = GCHandle_GetAddrOfPinnedObject_m2170553013(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		IntPtr_t L_2 = V_0;
+		IntPtr_t L_3 = IntPtr_op_Explicit_m3896766622(NULL /*static, unused*/, (-1), /*hidden argument*/NULL);
+		bool L_4 = IntPtr_op_Equality_m1573482188(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
+		if (!L_4)
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		ArgumentException_t3259014390 * L_5 = (ArgumentException_t3259014390 *)il2cpp_codegen_object_new(ArgumentException_t3259014390_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3739475201(L_5, _stringLiteral1107711393, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5);
+	}
+
+IL_0028:
+	{
+		IntPtr_t L_6 = V_0;
+		IntPtr_t L_7 = IntPtr_op_Explicit_m3896766622(NULL /*static, unused*/, ((int32_t)-2), /*hidden argument*/NULL);
+		bool L_8 = IntPtr_op_Equality_m1573482188(NULL /*static, unused*/, L_6, L_7, /*hidden argument*/NULL);
+		if (!L_8)
+		{
+			goto IL_0045;
+		}
+	}
+	{
+		InvalidOperationException_t721527559 * L_9 = (InvalidOperationException_t721527559 *)il2cpp_codegen_object_new(InvalidOperationException_t721527559_il2cpp_TypeInfo_var);
+		InvalidOperationException__ctor_m2801133788(L_9, _stringLiteral1606491667, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_9);
+	}
+
+IL_0045:
+	{
+		IntPtr_t L_10 = V_0;
+		return L_10;
+	}
+}
+extern "C"  IntPtr_t GCHandle_AddrOfPinnedObject_m3034420542_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
+{
+	GCHandle_t3409268066 * _thisAdjusted = reinterpret_cast<GCHandle_t3409268066 *>(__this + 1);
+	return GCHandle_AddrOfPinnedObject_m3034420542(_thisAdjusted, method);
+}
 // System.Runtime.InteropServices.GCHandle System.Runtime.InteropServices.GCHandle::Alloc(System.Object)
 extern "C"  GCHandle_t3409268066  GCHandle_Alloc_m3171748614 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___value0, const MethodInfo* method)
 {
@@ -922,6 +988,13 @@ extern "C"  void GCHandle_FreeHandle_m2466807271 (Il2CppObject * __this /* stati
 	using namespace il2cpp::icalls;
 	typedef void (*GCHandle_FreeHandle_m2466807271_ftn) (int32_t);
 	 ((GCHandle_FreeHandle_m2466807271_ftn)mscorlib::System::Runtime::InteropServices::GCHandle::FreeHandle) (___handle0);
+}
+// System.IntPtr System.Runtime.InteropServices.GCHandle::GetAddrOfPinnedObject(System.Int32)
+extern "C"  IntPtr_t GCHandle_GetAddrOfPinnedObject_m2170553013 (Il2CppObject * __this /* static, unused */, int32_t ___handle0, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef IntPtr_t (*GCHandle_GetAddrOfPinnedObject_m2170553013_ftn) (int32_t);
+	return  ((GCHandle_GetAddrOfPinnedObject_m2170553013_ftn)mscorlib::System::Runtime::InteropServices::GCHandle::GetAddrOfPinnedObject) (___handle0);
 }
 // System.Boolean System.Runtime.InteropServices.GCHandle::Equals(System.Object)
 extern Il2CppClass* GCHandle_t3409268066_il2cpp_TypeInfo_var;
@@ -1131,6 +1204,32 @@ IL_001d:
 		return;
 	}
 }
+// System.IntPtr System.Runtime.InteropServices.Marshal::AllocHGlobal(System.IntPtr)
+extern "C"  IntPtr_t Marshal_AllocHGlobal_m1566126039 (Il2CppObject * __this /* static, unused */, IntPtr_t ___cb0, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef IntPtr_t (*Marshal_AllocHGlobal_m1566126039_ftn) (IntPtr_t);
+	return  ((Marshal_AllocHGlobal_m1566126039_ftn)mscorlib::System::Runtime::InteropServices::Marshal::AllocHGlobal) (___cb0);
+}
+// System.IntPtr System.Runtime.InteropServices.Marshal::AllocHGlobal(System.Int32)
+extern Il2CppClass* Marshal_t785896760_il2cpp_TypeInfo_var;
+extern const uint32_t Marshal_AllocHGlobal_m4258042074_MetadataUsageId;
+extern "C"  IntPtr_t Marshal_AllocHGlobal_m4258042074 (Il2CppObject * __this /* static, unused */, int32_t ___cb0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Marshal_AllocHGlobal_m4258042074_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		int32_t L_0 = ___cb0;
+		IntPtr_t L_1 = IntPtr_op_Explicit_m3896766622(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		IntPtr_t L_2 = Marshal_AllocHGlobal_m1566126039(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
 // System.Void System.Runtime.InteropServices.Marshal::copy_to_unmanaged(System.Array,System.Int32,System.IntPtr,System.Int32)
 extern "C"  void Marshal_copy_to_unmanaged_m1616166460 (Il2CppObject * __this /* static, unused */, Il2CppArray * ___source0, int32_t ___startIndex1, IntPtr_t ___destination2, int32_t ___length3, const MethodInfo* method)
 {
@@ -1208,6 +1307,55 @@ extern "C"  void Marshal_Copy_m275157126 (Il2CppObject * __this /* static, unuse
 		return;
 	}
 }
+// System.Void System.Runtime.InteropServices.Marshal::Copy(System.IntPtr,System.Int32[],System.Int32,System.Int32)
+extern Il2CppClass* Marshal_t785896760_il2cpp_TypeInfo_var;
+extern const uint32_t Marshal_Copy_m2347082500_MetadataUsageId;
+extern "C"  void Marshal_Copy_m2347082500 (Il2CppObject * __this /* static, unused */, IntPtr_t ___source0, Int32U5BU5D_t3030399641* ___destination1, int32_t ___startIndex2, int32_t ___length3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Marshal_Copy_m2347082500_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IntPtr_t L_0 = ___source0;
+		int32_t L_1 = ___startIndex2;
+		Int32U5BU5D_t3030399641* L_2 = ___destination1;
+		int32_t L_3 = ___length3;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		Marshal_copy_from_unmanaged_m98320635(NULL /*static, unused*/, L_0, L_1, (Il2CppArray *)(Il2CppArray *)L_2, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Runtime.InteropServices.Marshal::Copy(System.IntPtr,System.Single[],System.Int32,System.Int32)
+extern Il2CppClass* Marshal_t785896760_il2cpp_TypeInfo_var;
+extern const uint32_t Marshal_Copy_m2353359830_MetadataUsageId;
+extern "C"  void Marshal_Copy_m2353359830 (Il2CppObject * __this /* static, unused */, IntPtr_t ___source0, SingleU5BU5D_t577127397* ___destination1, int32_t ___startIndex2, int32_t ___length3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Marshal_Copy_m2353359830_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IntPtr_t L_0 = ___source0;
+		int32_t L_1 = ___startIndex2;
+		SingleU5BU5D_t577127397* L_2 = ___destination1;
+		int32_t L_3 = ___length3;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		Marshal_copy_from_unmanaged_m98320635(NULL /*static, unused*/, L_0, L_1, (Il2CppArray *)(Il2CppArray *)L_2, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Runtime.InteropServices.Marshal::FreeHGlobal(System.IntPtr)
+extern "C"  void Marshal_FreeHGlobal_m2238467479 (Il2CppObject * __this /* static, unused */, IntPtr_t ___hglobal0, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef void (*Marshal_FreeHGlobal_m2238467479_ftn) (IntPtr_t);
+	 ((Marshal_FreeHGlobal_m2238467479_ftn)mscorlib::System::Runtime::InteropServices::Marshal::FreeHGlobal) (___hglobal0);
+}
 // System.Int32 System.Runtime.InteropServices.Marshal::GetLastWin32Error()
 extern "C"  int32_t Marshal_GetLastWin32Error_m4162683157 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -1215,12 +1363,79 @@ extern "C"  int32_t Marshal_GetLastWin32Error_m4162683157 (Il2CppObject * __this
 	typedef int32_t (*Marshal_GetLastWin32Error_m4162683157_ftn) ();
 	return  ((Marshal_GetLastWin32Error_m4162683157_ftn)mscorlib::System::Runtime::InteropServices::Marshal::GetLastWin32Error) ();
 }
+// System.String System.Runtime.InteropServices.Marshal::PtrToStringAnsi(System.IntPtr)
+extern "C"  String_t* Marshal_PtrToStringAnsi_m2970070000 (Il2CppObject * __this /* static, unused */, IntPtr_t ___ptr0, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef String_t* (*Marshal_PtrToStringAnsi_m2970070000_ftn) (IntPtr_t);
+	return  ((Marshal_PtrToStringAnsi_m2970070000_ftn)mscorlib::System::Runtime::InteropServices::Marshal::PtrToStringAnsi_mscorlib_System_String_mscorlib_System_IntPtr) (___ptr0);
+}
+// System.String System.Runtime.InteropServices.Marshal::PtrToStringUni(System.IntPtr)
+extern "C"  String_t* Marshal_PtrToStringUni_m4287319443 (Il2CppObject * __this /* static, unused */, IntPtr_t ___ptr0, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef String_t* (*Marshal_PtrToStringUni_m4287319443_ftn) (IntPtr_t);
+	return  ((Marshal_PtrToStringUni_m4287319443_ftn)mscorlib::System::Runtime::InteropServices::Marshal::PtrToStringUni_mscorlib_System_String_mscorlib_System_IntPtr) (___ptr0);
+}
+// System.Object System.Runtime.InteropServices.Marshal::PtrToStructure(System.IntPtr,System.Type)
+extern "C"  Il2CppObject * Marshal_PtrToStructure_m673412918 (Il2CppObject * __this /* static, unused */, IntPtr_t ___ptr0, Type_t * ___structureType1, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef Il2CppObject * (*Marshal_PtrToStructure_m673412918_ftn) (IntPtr_t, Type_t *);
+	return  ((Marshal_PtrToStructure_m673412918_ftn)mscorlib::System::Runtime::InteropServices::Marshal::PtrToStructure) (___ptr0, ___structureType1);
+}
 // System.Byte System.Runtime.InteropServices.Marshal::ReadByte(System.IntPtr,System.Int32)
 extern "C"  uint8_t Marshal_ReadByte_m536122811 (Il2CppObject * __this /* static, unused */, IntPtr_t ___ptr0, int32_t ___ofs1, const MethodInfo* method)
 {
 	using namespace il2cpp::icalls;
 	typedef uint8_t (*Marshal_ReadByte_m536122811_ftn) (IntPtr_t, int32_t);
 	return  ((Marshal_ReadByte_m536122811_ftn)mscorlib::System::Runtime::InteropServices::Marshal::ReadByte) (___ptr0, ___ofs1);
+}
+// System.Int32 System.Runtime.InteropServices.Marshal::ReadInt32(System.IntPtr)
+extern Il2CppClass* Marshal_t785896760_il2cpp_TypeInfo_var;
+extern const uint32_t Marshal_ReadInt32_m1563614062_MetadataUsageId;
+extern "C"  int32_t Marshal_ReadInt32_m1563614062 (Il2CppObject * __this /* static, unused */, IntPtr_t ___ptr0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Marshal_ReadInt32_m1563614062_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IntPtr_t L_0 = ___ptr0;
+		IL2CPP_RUNTIME_CLASS_INIT(Marshal_t785896760_il2cpp_TypeInfo_var);
+		int32_t L_1 = Marshal_ReadInt32_m3506767203(NULL /*static, unused*/, L_0, 0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.Int32 System.Runtime.InteropServices.Marshal::ReadInt32(System.IntPtr,System.Int32)
+extern "C"  int32_t Marshal_ReadInt32_m3506767203 (Il2CppObject * __this /* static, unused */, IntPtr_t ___ptr0, int32_t ___ofs1, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef int32_t (*Marshal_ReadInt32_m3506767203_ftn) (IntPtr_t, int32_t);
+	return  ((Marshal_ReadInt32_m3506767203_ftn)mscorlib::System::Runtime::InteropServices::Marshal::ReadInt32) (___ptr0, ___ofs1);
+}
+// System.Int32 System.Runtime.InteropServices.Marshal::SizeOf(System.Type)
+extern "C"  int32_t Marshal_SizeOf_m2982427619 (Il2CppObject * __this /* static, unused */, Type_t * ___t0, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef int32_t (*Marshal_SizeOf_m2982427619_ftn) (Type_t *);
+	return  ((Marshal_SizeOf_m2982427619_ftn)mscorlib::System::Runtime::InteropServices::Marshal::SizeOf) (___t0);
+}
+// System.IntPtr System.Runtime.InteropServices.Marshal::StringToHGlobalUni(System.String)
+extern "C"  IntPtr_t Marshal_StringToHGlobalUni_m919584414 (Il2CppObject * __this /* static, unused */, String_t* ___s0, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef IntPtr_t (*Marshal_StringToHGlobalUni_m919584414_ftn) (String_t*);
+	return  ((Marshal_StringToHGlobalUni_m919584414_ftn)mscorlib::System::Runtime::InteropServices::Marshal::StringToHGlobalUni) (___s0);
+}
+// System.Void System.Runtime.InteropServices.Marshal::StructureToPtr(System.Object,System.IntPtr,System.Boolean)
+extern "C"  void Marshal_StructureToPtr_m3205507777 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___structure0, IntPtr_t ___ptr1, bool ___fDeleteOld2, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef void (*Marshal_StructureToPtr_m3205507777_ftn) (Il2CppObject *, IntPtr_t, bool);
+	 ((Marshal_StructureToPtr_m3205507777_ftn)mscorlib::System::Runtime::InteropServices::Marshal::StructureToPtr) (___structure0, ___ptr1, ___fDeleteOld2);
 }
 // System.Void System.Runtime.InteropServices.Marshal::WriteByte(System.IntPtr,System.Int32,System.Byte)
 extern "C"  void Marshal_WriteByte_m2971909611 (Il2CppObject * __this /* static, unused */, IntPtr_t ___ptr0, int32_t ___ofs1, uint8_t ___val2, const MethodInfo* method)

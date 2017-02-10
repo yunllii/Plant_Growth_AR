@@ -25,8 +25,14 @@ struct ByteU5BU5D_t3397334013;
 struct SymmetricTransform_t1394030014;
 // System.Security.Cryptography.SymmetricAlgorithm
 struct SymmetricAlgorithm_t1108166522;
+// System.Action
+struct Action_t3226471752;
 // System.Object
 struct Il2CppObject;
+// System.IAsyncResult
+struct IAsyncResult_t1999651008;
+// System.AsyncCallback
+struct AsyncCallback_t163412349;
 // System.MonoTODOAttribute
 struct MonoTODOAttribute_t3487514023;
 // System.Runtime.CompilerServices.ExtensionAttribute
@@ -98,6 +104,10 @@ struct UInt32U5BU5D_t59386216;
 #include "mscorlib_System_ObjectDisposedException2695136451MethodDeclarations.h"
 #include "mscorlib_System_ObjectDisposedException2695136451.h"
 #include "mscorlib_System_Security_Cryptography_PaddingMode3032142640.h"
+#include "System_Core_System_Action3226471752.h"
+#include "System_Core_System_Action3226471752MethodDeclarations.h"
+#include "mscorlib_System_IntPtr2504060609.h"
+#include "mscorlib_System_AsyncCallback163412349.h"
 #include "System_Core_System_Linq_Check578192424.h"
 #include "System_Core_System_Linq_Check578192424MethodDeclarations.h"
 #include "System_Core_System_Linq_Enumerable2148412300.h"
@@ -2200,6 +2210,83 @@ IL_0034:
 		int32_t L_12 = ___inputCount2;
 		ByteU5BU5D_t3397334013* L_13 = SymmetricTransform_FinalDecrypt_m1391053911(__this, L_10, L_11, L_12, /*hidden argument*/NULL);
 		return L_13;
+	}
+}
+// System.Void System.Action::.ctor(System.Object,System.IntPtr)
+extern "C"  void Action__ctor_m2606471964 (Action_t3226471752 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void System.Action::Invoke()
+extern "C"  void Action_Invoke_m3801112262 (Action_t3226471752 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		Action_Invoke_m3801112262((Action_t3226471752 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(__this->get_m_target_2(),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+extern "C"  void DelegatePInvokeWrapper_Action_t3226471752 (Action_t3226471752 * __this, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)();
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc();
+
+}
+// System.IAsyncResult System.Action::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * Action_BeginInvoke_m2008902573 (Action_t3226471752 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___object1, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_codegen_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___object1);
+}
+// System.Void System.Action::EndInvoke(System.IAsyncResult)
+extern "C"  void Action_EndInvoke_m4281032350 (Action_t3226471752 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+// System.Void System.Linq.Check::Source(System.Object)
+extern Il2CppClass* ArgumentNullException_t628810857_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral4211174801;
+extern const uint32_t Check_Source_m3385315029_MetadataUsageId;
+extern "C"  void Check_Source_m3385315029 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___source0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Check_Source_m3385315029_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Il2CppObject * L_0 = ___source0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t628810857 * L_1 = (ArgumentNullException_t628810857 *)il2cpp_codegen_object_new(ArgumentNullException_t628810857_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m3380712306(L_1, _stringLiteral4211174801, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0011:
+	{
+		return;
 	}
 }
 // System.Void System.Linq.Check::SourceAndPredicate(System.Object,System.Object)

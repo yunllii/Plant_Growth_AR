@@ -34,8 +34,8 @@ struct Il2CppObject;
 #include "System_Core_System_Collections_Generic_HashSet_1_E3188621440.h"
 
 // System.Void System.Collections.Generic.HashSet`1<System.Int32>::.ctor()
-extern "C"  void HashSet_1__ctor_m4003481610_gshared (HashSet_1_t405338302 * __this, const MethodInfo* method);
-#define HashSet_1__ctor_m4003481610(__this, method) ((  void (*) (HashSet_1_t405338302 *, const MethodInfo*))HashSet_1__ctor_m4003481610_gshared)(__this, method)
+extern "C"  void HashSet_1__ctor_m2847509_gshared (HashSet_1_t405338302 * __this, const MethodInfo* method);
+#define HashSet_1__ctor_m2847509(__this, method) ((  void (*) (HashSet_1_t405338302 *, const MethodInfo*))HashSet_1__ctor_m2847509_gshared)(__this, method)
 // System.Void System.Collections.Generic.HashSet`1<System.Int32>::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 extern "C"  void HashSet_1__ctor_m2114531361_gshared (HashSet_1_t405338302 * __this, SerializationInfo_t228987430 * ___info0, StreamingContext_t1417235061  ___context1, const MethodInfo* method);
 #define HashSet_1__ctor_m2114531361(__this, ___info0, ___context1, method) ((  void (*) (HashSet_1_t405338302 *, SerializationInfo_t228987430 *, StreamingContext_t1417235061 , const MethodInfo*))HashSet_1__ctor_m2114531361_gshared)(__this, ___info0, ___context1, method)
@@ -85,17 +85,17 @@ extern "C"  int32_t HashSet_1_GetLinkHashCode_m2278455994_gshared (HashSet_1_t40
 extern "C"  int32_t HashSet_1_GetItemHashCode_m2914199602_gshared (HashSet_1_t405338302 * __this, int32_t ___item0, const MethodInfo* method);
 #define HashSet_1_GetItemHashCode_m2914199602(__this, ___item0, method) ((  int32_t (*) (HashSet_1_t405338302 *, int32_t, const MethodInfo*))HashSet_1_GetItemHashCode_m2914199602_gshared)(__this, ___item0, method)
 // System.Boolean System.Collections.Generic.HashSet`1<System.Int32>::Add(T)
-extern "C"  bool HashSet_1_Add_m2170535748_gshared (HashSet_1_t405338302 * __this, int32_t ___item0, const MethodInfo* method);
-#define HashSet_1_Add_m2170535748(__this, ___item0, method) ((  bool (*) (HashSet_1_t405338302 *, int32_t, const MethodInfo*))HashSet_1_Add_m2170535748_gshared)(__this, ___item0, method)
+extern "C"  bool HashSet_1_Add_m1679051141_gshared (HashSet_1_t405338302 * __this, int32_t ___item0, const MethodInfo* method);
+#define HashSet_1_Add_m1679051141(__this, ___item0, method) ((  bool (*) (HashSet_1_t405338302 *, int32_t, const MethodInfo*))HashSet_1_Add_m1679051141_gshared)(__this, ___item0, method)
 // System.Void System.Collections.Generic.HashSet`1<System.Int32>::Clear()
 extern "C"  void HashSet_1_Clear_m3833026751_gshared (HashSet_1_t405338302 * __this, const MethodInfo* method);
 #define HashSet_1_Clear_m3833026751(__this, method) ((  void (*) (HashSet_1_t405338302 *, const MethodInfo*))HashSet_1_Clear_m3833026751_gshared)(__this, method)
 // System.Boolean System.Collections.Generic.HashSet`1<System.Int32>::Contains(T)
-extern "C"  bool HashSet_1_Contains_m2412277956_gshared (HashSet_1_t405338302 * __this, int32_t ___item0, const MethodInfo* method);
-#define HashSet_1_Contains_m2412277956(__this, ___item0, method) ((  bool (*) (HashSet_1_t405338302 *, int32_t, const MethodInfo*))HashSet_1_Contains_m2412277956_gshared)(__this, ___item0, method)
+extern "C"  bool HashSet_1_Contains_m3728309091_gshared (HashSet_1_t405338302 * __this, int32_t ___item0, const MethodInfo* method);
+#define HashSet_1_Contains_m3728309091(__this, ___item0, method) ((  bool (*) (HashSet_1_t405338302 *, int32_t, const MethodInfo*))HashSet_1_Contains_m3728309091_gshared)(__this, ___item0, method)
 // System.Boolean System.Collections.Generic.HashSet`1<System.Int32>::Remove(T)
-extern "C"  bool HashSet_1_Remove_m1067706369_gshared (HashSet_1_t405338302 * __this, int32_t ___item0, const MethodInfo* method);
-#define HashSet_1_Remove_m1067706369(__this, ___item0, method) ((  bool (*) (HashSet_1_t405338302 *, int32_t, const MethodInfo*))HashSet_1_Remove_m1067706369_gshared)(__this, ___item0, method)
+extern "C"  bool HashSet_1_Remove_m3344024002_gshared (HashSet_1_t405338302 * __this, int32_t ___item0, const MethodInfo* method);
+#define HashSet_1_Remove_m3344024002(__this, ___item0, method) ((  bool (*) (HashSet_1_t405338302 *, int32_t, const MethodInfo*))HashSet_1_Remove_m3344024002_gshared)(__this, ___item0, method)
 // System.Void System.Collections.Generic.HashSet`1<System.Int32>::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 extern "C"  void HashSet_1_GetObjectData_m2464622984_gshared (HashSet_1_t405338302 * __this, SerializationInfo_t228987430 * ___info0, StreamingContext_t1417235061  ___context1, const MethodInfo* method);
 #define HashSet_1_GetObjectData_m2464622984(__this, ___info0, ___context1, method) ((  void (*) (HashSet_1_t405338302 *, SerializationInfo_t228987430 *, StreamingContext_t1417235061 , const MethodInfo*))HashSet_1_GetObjectData_m2464622984_gshared)(__this, ___info0, ___context1, method)

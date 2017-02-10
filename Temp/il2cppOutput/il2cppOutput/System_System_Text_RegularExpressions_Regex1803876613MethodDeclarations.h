@@ -18,6 +18,8 @@ struct Regex_t1803876613;
 struct String_t;
 // System.Runtime.Serialization.SerializationInfo
 struct SerializationInfo_t228987430;
+// System.String[]
+struct StringU5BU5D_t1642385972;
 // System.Text.RegularExpressions.IMachineFactory
 struct IMachineFactory_t633643314;
 // System.Text.RegularExpressions.Match
@@ -26,8 +28,6 @@ struct Match_t3164245899;
 struct MatchCollection_t3718216671;
 // System.Text.RegularExpressions.IMachine
 struct IMachine_t3406191350;
-// System.String[]
-struct StringU5BU5D_t1642385972;
 // System.Collections.IDictionary
 struct IDictionary_t596158605;
 // System.Int32[]
@@ -42,7 +42,7 @@ struct Int32U5BU5D_t3030399641;
 // System.Void System.Text.RegularExpressions.Regex::.ctor()
 extern "C"  void Regex__ctor_m3250610064 (Regex_t1803876613 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Text.RegularExpressions.Regex::.ctor(System.String)
-extern "C"  void Regex__ctor_m2794328522 (Regex_t1803876613 * __this, String_t* ___pattern0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void Regex__ctor_m2930443103 (Regex_t1803876613 * __this, String_t* ___pattern0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Text.RegularExpressions.Regex::.ctor(System.String,System.Text.RegularExpressions.RegexOptions)
 extern "C"  void Regex__ctor_m2521903438 (Regex_t1803876613 * __this, String_t* ___pattern0, int32_t ___options1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Text.RegularExpressions.Regex::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
@@ -51,6 +51,10 @@ extern "C"  void Regex__ctor_m392221833 (Regex_t1803876613 * __this, Serializati
 extern "C"  void Regex__cctor_m3397544801 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Text.RegularExpressions.Regex::System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 extern "C"  void Regex_System_Runtime_Serialization_ISerializable_GetObjectData_m4035555909 (Regex_t1803876613 * __this, SerializationInfo_t228987430 * ___info0, StreamingContext_t1417235061  ___context1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String[] System.Text.RegularExpressions.Regex::Split(System.String,System.String)
+extern "C"  StringU5BU5D_t1642385972* Regex_Split_m4283382107 (Il2CppObject * __this /* static, unused */, String_t* ___input0, String_t* ___pattern1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String[] System.Text.RegularExpressions.Regex::Split(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+extern "C"  StringU5BU5D_t1642385972* Regex_Split_m2213626959 (Il2CppObject * __this /* static, unused */, String_t* ___input0, String_t* ___pattern1, int32_t ___options2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Text.RegularExpressions.Regex::validate_options(System.Text.RegularExpressions.RegexOptions)
 extern "C"  void Regex_validate_options_m3563464259 (Il2CppObject * __this /* static, unused */, int32_t ___options0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Text.RegularExpressions.Regex::Init()
@@ -77,6 +81,10 @@ extern "C"  Match_t3164245899 * Regex_Match_m4277133443 (Regex_t1803876613 * __t
 extern "C"  MatchCollection_t3718216671 * Regex_Matches_m3834294444 (Regex_t1803876613 * __this, String_t* ___input0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Text.RegularExpressions.MatchCollection System.Text.RegularExpressions.Regex::Matches(System.String,System.Int32)
 extern "C"  MatchCollection_t3718216671 * Regex_Matches_m1377235443 (Regex_t1803876613 * __this, String_t* ___input0, int32_t ___startat1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String[] System.Text.RegularExpressions.Regex::Split(System.String)
+extern "C"  StringU5BU5D_t1642385972* Regex_Split_m1805163013 (Regex_t1803876613 * __this, String_t* ___input0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String[] System.Text.RegularExpressions.Regex::Split(System.String,System.Int32,System.Int32)
+extern "C"  StringU5BU5D_t1642385972* Regex_Split_m1359617913 (Regex_t1803876613 * __this, String_t* ___input0, int32_t ___count1, int32_t ___startat2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Text.RegularExpressions.Regex::ToString()
 extern "C"  String_t* Regex_ToString_m3687329849 (Regex_t1803876613 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Text.RegularExpressions.Regex::get_Gap()

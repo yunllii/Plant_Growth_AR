@@ -15088,7 +15088,7 @@ IL_0017:
 		__this->set_underlyingType_1(L_4);
 		Type_t * L_5 = __this->get_underlyingType_1();
 		IL2CPP_RUNTIME_CLASS_INIT(TypeDescriptor_t3595688691_il2cpp_TypeInfo_var);
-		TypeConverter_t745995970 * L_6 = TypeDescriptor_GetConverter_m1788154595(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		TypeConverter_t745995970 * L_6 = TypeDescriptor_GetConverter_m2863175601(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
 		__this->set_underlyingTypeConverter_2(L_6);
 		return;
 	}
@@ -16151,7 +16151,7 @@ extern "C"  TypeConverter_t745995970 * PropertyDescriptor_get_Converter_m4108251
 	{
 		TypeConverterAttribute_t252469870 * L_8 = V_0;
 		NullCheck(L_8);
-		String_t* L_9 = TypeConverterAttribute_get_ConverterTypeName_m2296240606(L_8, /*hidden argument*/NULL);
+		String_t* L_9 = TypeConverterAttribute_get_ConverterTypeName_m1307032478(L_8, /*hidden argument*/NULL);
 		Type_t * L_10 = PropertyDescriptor_GetTypeFromName_m2067954802(__this, L_9, /*hidden argument*/NULL);
 		V_1 = L_10;
 		Type_t * L_11 = V_1;
@@ -16188,7 +16188,7 @@ IL_007c:
 	{
 		Type_t * L_18 = VirtFuncInvoker0< Type_t * >::Invoke(21 /* System.Type System.ComponentModel.PropertyDescriptor::get_PropertyType() */, __this);
 		IL2CPP_RUNTIME_CLASS_INIT(TypeDescriptor_t3595688691_il2cpp_TypeInfo_var);
-		TypeConverter_t745995970 * L_19 = TypeDescriptor_GetConverter_m1788154595(NULL /*static, unused*/, L_18, /*hidden argument*/NULL);
+		TypeConverter_t745995970 * L_19 = TypeDescriptor_GetConverter_m2863175601(NULL /*static, unused*/, L_18, /*hidden argument*/NULL);
 		__this->set_converter_4(L_19);
 	}
 
@@ -23550,7 +23550,7 @@ extern "C"  void TypeConverter__ctor_m3380301159 (TypeConverter_t745995970 * __t
 	}
 }
 // System.Boolean System.ComponentModel.TypeConverter::CanConvertFrom(System.Type)
-extern "C"  bool TypeConverter_CanConvertFrom_m1824018217 (TypeConverter_t745995970 * __this, Type_t * ___sourceType0, const MethodInfo* method)
+extern "C"  bool TypeConverter_CanConvertFrom_m2207973887 (TypeConverter_t745995970 * __this, Type_t * ___sourceType0, const MethodInfo* method)
 {
 	{
 		Type_t * L_0 = ___sourceType0;
@@ -23618,13 +23618,13 @@ extern "C"  bool TypeConverter_CanConvertTo_m3192242134 (TypeConverter_t74599597
 }
 // System.Object System.ComponentModel.TypeConverter::ConvertFrom(System.Object)
 extern Il2CppClass* CultureInfo_t3500843524_il2cpp_TypeInfo_var;
-extern const uint32_t TypeConverter_ConvertFrom_m757293553_MetadataUsageId;
-extern "C"  Il2CppObject * TypeConverter_ConvertFrom_m757293553 (TypeConverter_t745995970 * __this, Il2CppObject * ___o0, const MethodInfo* method)
+extern const uint32_t TypeConverter_ConvertFrom_m3616211731_MetadataUsageId;
+extern "C"  Il2CppObject * TypeConverter_ConvertFrom_m3616211731 (TypeConverter_t745995970 * __this, Il2CppObject * ___o0, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (TypeConverter_ConvertFrom_m757293553_MetadataUsageId);
+		il2cpp_codegen_initialize_method (TypeConverter_ConvertFrom_m3616211731_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -23668,7 +23668,7 @@ IL_0017:
 	}
 }
 // System.Object System.ComponentModel.TypeConverter::ConvertFromInvariantString(System.String)
-extern "C"  Il2CppObject * TypeConverter_ConvertFromInvariantString_m1701603654 (TypeConverter_t745995970 * __this, String_t* ___text0, const MethodInfo* method)
+extern "C"  Il2CppObject * TypeConverter_ConvertFromInvariantString_m2229102078 (TypeConverter_t745995970 * __this, String_t* ___text0, const MethodInfo* method)
 {
 	{
 		String_t* L_0 = ___text0;
@@ -23701,7 +23701,7 @@ extern "C"  Il2CppObject * TypeConverter_ConvertFromString_m1918759906 (TypeConv
 {
 	{
 		String_t* L_0 = ___text0;
-		Il2CppObject * L_1 = TypeConverter_ConvertFrom_m757293553(__this, L_0, /*hidden argument*/NULL);
+		Il2CppObject * L_1 = TypeConverter_ConvertFrom_m3616211731(__this, L_0, /*hidden argument*/NULL);
 		return L_1;
 	}
 }
@@ -23814,7 +23814,7 @@ IL_0036:
 	}
 }
 // System.String System.ComponentModel.TypeConverter::ConvertToInvariantString(System.Object)
-extern "C"  String_t* TypeConverter_ConvertToInvariantString_m2615559221 (TypeConverter_t745995970 * __this, Il2CppObject * ___value0, const MethodInfo* method)
+extern "C"  String_t* TypeConverter_ConvertToInvariantString_m1236807103 (TypeConverter_t745995970 * __this, Il2CppObject * ___value0, const MethodInfo* method)
 {
 	{
 		Il2CppObject * L_0 = ___value0;
@@ -24570,7 +24570,7 @@ IL_000d:
 	{
 		Il2CppObject * L_1 = ___obj0;
 		NullCheck(((TypeConverterAttribute_t252469870 *)CastclassSealed(L_1, TypeConverterAttribute_t252469870_il2cpp_TypeInfo_var)));
-		String_t* L_2 = TypeConverterAttribute_get_ConverterTypeName_m2296240606(((TypeConverterAttribute_t252469870 *)CastclassSealed(L_1, TypeConverterAttribute_t252469870_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
+		String_t* L_2 = TypeConverterAttribute_get_ConverterTypeName_m1307032478(((TypeConverterAttribute_t252469870 *)CastclassSealed(L_1, TypeConverterAttribute_t252469870_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
 		String_t* L_3 = __this->get_converter_type_1();
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		bool L_4 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
@@ -24588,7 +24588,7 @@ extern "C"  int32_t TypeConverterAttribute_GetHashCode_m131437980 (TypeConverter
 	}
 }
 // System.String System.ComponentModel.TypeConverterAttribute::get_ConverterTypeName()
-extern "C"  String_t* TypeConverterAttribute_get_ConverterTypeName_m2296240606 (TypeConverterAttribute_t252469870 * __this, const MethodInfo* method)
+extern "C"  String_t* TypeConverterAttribute_get_ConverterTypeName_m1307032478 (TypeConverterAttribute_t252469870 * __this, const MethodInfo* method)
 {
 	{
 		String_t* L_0 = __this->get_converter_type_1();
@@ -26382,7 +26382,7 @@ IL_0033:
 	{
 		TypeConverterAttribute_t252469870 * L_12 = V_2;
 		NullCheck(L_12);
-		String_t* L_13 = TypeConverterAttribute_get_ConverterTypeName_m2296240606(L_12, /*hidden argument*/NULL);
+		String_t* L_13 = TypeConverterAttribute_get_ConverterTypeName_m1307032478(L_12, /*hidden argument*/NULL);
 		NullCheck(L_13);
 		int32_t L_14 = String_get_Length_m1606060069(L_13, /*hidden argument*/NULL);
 		if ((((int32_t)L_14) <= ((int32_t)0)))
@@ -26394,7 +26394,7 @@ IL_0033:
 		Il2CppObject * L_15 = ___component0;
 		TypeConverterAttribute_t252469870 * L_16 = V_2;
 		NullCheck(L_16);
-		String_t* L_17 = TypeConverterAttribute_get_ConverterTypeName_m2296240606(L_16, /*hidden argument*/NULL);
+		String_t* L_17 = TypeConverterAttribute_get_ConverterTypeName_m1307032478(L_16, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(TypeDescriptor_t3595688691_il2cpp_TypeInfo_var);
 		Type_t * L_18 = TypeDescriptor_GetTypeFromName_m3955750754(NULL /*static, unused*/, ((Il2CppObject *)IsInst(L_15, IComponent_t1000253244_il2cpp_TypeInfo_var)), L_17, /*hidden argument*/NULL);
 		V_0 = L_18;
@@ -26835,13 +26835,13 @@ extern Il2CppClass* TypeU5BU5D_t1664964607_il2cpp_TypeInfo_var;
 extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
 extern Il2CppClass* TypeConverter_t745995970_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1421151742;
-extern const uint32_t TypeDescriptor_GetConverter_m1788154595_MetadataUsageId;
-extern "C"  TypeConverter_t745995970 * TypeDescriptor_GetConverter_m1788154595 (Il2CppObject * __this /* static, unused */, Type_t * ___type0, const MethodInfo* method)
+extern const uint32_t TypeDescriptor_GetConverter_m2863175601_MetadataUsageId;
+extern "C"  TypeConverter_t745995970 * TypeDescriptor_GetConverter_m2863175601 (Il2CppObject * __this /* static, unused */, Type_t * ___type0, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (TypeDescriptor_GetConverter_m1788154595_MetadataUsageId);
+		il2cpp_codegen_initialize_method (TypeDescriptor_GetConverter_m2863175601_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	Type_t * V_0 = NULL;
@@ -26883,7 +26883,7 @@ IL_0011:
 	{
 		TypeConverterAttribute_t252469870 * L_8 = V_2;
 		NullCheck(L_8);
-		String_t* L_9 = TypeConverterAttribute_get_ConverterTypeName_m2296240606(L_8, /*hidden argument*/NULL);
+		String_t* L_9 = TypeConverterAttribute_get_ConverterTypeName_m1307032478(L_8, /*hidden argument*/NULL);
 		NullCheck(L_9);
 		int32_t L_10 = String_get_Length_m1606060069(L_9, /*hidden argument*/NULL);
 		if ((((int32_t)L_10) <= ((int32_t)0)))
@@ -26894,7 +26894,7 @@ IL_0011:
 	{
 		TypeConverterAttribute_t252469870 * L_11 = V_2;
 		NullCheck(L_11);
-		String_t* L_12 = TypeConverterAttribute_get_ConverterTypeName_m2296240606(L_11, /*hidden argument*/NULL);
+		String_t* L_12 = TypeConverterAttribute_get_ConverterTypeName_m1307032478(L_11, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(TypeDescriptor_t3595688691_il2cpp_TypeInfo_var);
 		Type_t * L_13 = TypeDescriptor_GetTypeFromName_m3955750754(NULL /*static, unused*/, (Il2CppObject *)NULL, L_12, /*hidden argument*/NULL);
 		V_0 = L_13;

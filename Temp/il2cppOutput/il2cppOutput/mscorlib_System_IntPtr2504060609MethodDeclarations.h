@@ -43,6 +43,8 @@ extern "C"  int32_t IntPtr_get_Size_m3339807560 (Il2CppObject * __this /* static
 extern "C"  bool IntPtr_Equals_m1214967011 (IntPtr_t* __this, Il2CppObject * ___obj0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.IntPtr::GetHashCode()
 extern "C"  int32_t IntPtr_GetHashCode_m1174575389 (IntPtr_t* __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 System.IntPtr::ToInt32()
+extern "C"  int32_t IntPtr_ToInt32_m4084182445 (IntPtr_t* __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int64 System.IntPtr::ToInt64()
 extern "C"  int64_t IntPtr_ToInt64_m39971741 (IntPtr_t* __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void* System.IntPtr::ToPointer()

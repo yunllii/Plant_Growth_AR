@@ -13,14 +13,32 @@
 #include <limits>
 #include <assert.h>
 
-// System.Text.RegularExpressions.BaseMachine
-struct BaseMachine_t4008011478;
-// System.Text.RegularExpressions.Match
-struct Match_t3164245899;
-// System.Text.RegularExpressions.Regex
-struct Regex_t1803876613;
+// System.Security.Cryptography.X509Certificates.X509Store
+struct X509Store_t1617430119;
+// System.Security.Cryptography.X509Certificates.X509Certificate2Collection
+struct X509Certificate2Collection_t1108969367;
+// Mono.Security.X509.X509Stores
+struct X509Stores_t3001420399;
+// Mono.Security.X509.X509Store
+struct X509Store_t4028973564;
+// System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension
+struct X509SubjectKeyIdentifierExtension_t2508879999;
+// System.Security.Cryptography.AsnEncodedData
+struct AsnEncodedData_t463456204;
+// System.Byte[]
+struct ByteU5BU5D_t3397334013;
 // System.String
 struct String_t;
+// System.Security.Cryptography.X509Certificates.PublicKey
+struct PublicKey_t870392;
+// System.Text.RegularExpressions.BaseMachine
+struct BaseMachine_t4008011478;
+// System.String[]
+struct StringU5BU5D_t1642385972;
+// System.Text.RegularExpressions.Regex
+struct Regex_t1803876613;
+// System.Text.RegularExpressions.Match
+struct Match_t3164245899;
 // System.Text.RegularExpressions.Capture
 struct Capture_t4157900610;
 // System.Text.RegularExpressions.CaptureCollection
@@ -37,8 +55,6 @@ struct CILCompiler_t1740644799;
 struct IMachineFactory_t633643314;
 // System.Reflection.Emit.DynamicMethod
 struct DynamicMethod_t3307743052;
-// System.Byte[]
-struct ByteU5BU5D_t3397334013;
 // System.Reflection.MethodInfo
 struct MethodInfo_t;
 // System.Type
@@ -75,8 +91,6 @@ struct InterpreterFactory_t556462562;
 struct IMachine_t3406191350;
 // System.Collections.IDictionary
 struct IDictionary_t596158605;
-// System.String[]
-struct StringU5BU5D_t1642385972;
 // System.Text.RegularExpressions.IntervalCollection
 struct IntervalCollection_t4130821325;
 // System.Text.RegularExpressions.IntervalCollection/CostDelegate
@@ -191,40 +205,108 @@ struct CultureInfo_t3500843524;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
+#include "System_System_Security_Cryptography_X509Certificat2166064554.h"
+#include "System_System_Security_Cryptography_X509Certificat2166064554MethodDeclarations.h"
+#include "System_System_Security_Cryptography_X509Certificat2065307963.h"
+#include "System_System_Security_Cryptography_X509Certificat2065307963MethodDeclarations.h"
+#include "System_System_Security_Cryptography_X509Certificat1617430119.h"
+#include "System_System_Security_Cryptography_X509Certificat1617430119MethodDeclarations.h"
+#include "System_System_Security_Cryptography_X509Certificat2183514610.h"
+#include "System_System_Security_Cryptography_X509Certificat1570828128.h"
+#include "mscorlib_System_Void1841601450.h"
+#include "mscorlib_System_Object2689449295MethodDeclarations.h"
+#include "mscorlib_System_ArgumentException3259014390MethodDeclarations.h"
+#include "mscorlib_System_String2029220233.h"
+#include "mscorlib_System_ArgumentException3259014390.h"
+#include "mscorlib_System_Enum2459695545MethodDeclarations.h"
+#include "mscorlib_System_Enum2459695545.h"
+#include "System_System_Security_Cryptography_X509Certificat1108969367.h"
+#include "System_System_Security_Cryptography_X509Certificat1108969367MethodDeclarations.h"
+#include "mscorlib_System_Collections_CollectionBase1101587467MethodDeclarations.h"
+#include "Mono_Security_Mono_Security_X509_X509Store4028973563.h"
+#include "mscorlib_System_Collections_CollectionBase1101587467.h"
+#include "Mono_Security_Mono_Security_X509_X509Stores3001420398.h"
+#include "Mono_Security_Mono_Security_X509_X509StoreManager1740460066MethodDeclarations.h"
+#include "System_System_Security_Cryptography_X509Certificat2370524385.h"
+#include "mscorlib_System_String2029220233MethodDeclarations.h"
+#include "System_Locale4255929014MethodDeclarations.h"
+#include "mscorlib_System_Security_Cryptography_Cryptographi3349726436MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_g3986656710MethodDeclarations.h"
+#include "Mono_Security_Mono_Security_X509_X509Stores3001420398MethodDeclarations.h"
+#include "Mono_Security_Mono_Security_X509_X509Store4028973563MethodDeclarations.h"
+#include "Mono_Security_Mono_Security_X509_X509CertificateCo3592472865MethodDeclarations.h"
+#include "Mono_Security_Mono_Security_X509_X509CertificateCo3487770522MethodDeclarations.h"
+#include "System_System_Security_Cryptography_X509Certificat4056456767MethodDeclarations.h"
+#include "mscorlib_System_Boolean3825574718.h"
+#include "Mono_Security_Mono_Security_X509_X509Certificate324051957.h"
+#include "Mono_Security_Mono_Security_X509_X509CertificateCo3487770522.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_g3986656710.h"
+#include "mscorlib_System_Int322071877448.h"
+#include "mscorlib_System_Security_Cryptography_Cryptographi3349726436.h"
+#include "mscorlib_ArrayTypes.h"
+#include "mscorlib_System_Object2689449295.h"
+#include "Mono_Security_Mono_Security_X509_X509CertificateCo3592472865.h"
+#include "Mono_Security_Mono_Security_X509_X509Certificate324051957MethodDeclarations.h"
+#include "mscorlib_System_Byte3683104436.h"
+#include "System_System_Security_Cryptography_X509Certificat4056456767.h"
+#include "System_System_Security_Cryptography_X509Certificat2508879999.h"
+#include "System_System_Security_Cryptography_X509Certificat2508879999MethodDeclarations.h"
+#include "System_System_Security_Cryptography_X509Certificat1320896183MethodDeclarations.h"
+#include "System_System_Security_Cryptography_Oid3221867120MethodDeclarations.h"
+#include "System_System_Security_Cryptography_Oid3221867120.h"
+#include "System_System_Security_Cryptography_AsnEncodedData463456204.h"
+#include "System_System_Security_Cryptography_AsnEncodedData463456204MethodDeclarations.h"
+#include "System_System_Security_Cryptography_AsnDecodeStatu1962003286.h"
+#include "mscorlib_System_ArgumentNullException628810857MethodDeclarations.h"
+#include "mscorlib_System_Array3829468939MethodDeclarations.h"
+#include "mscorlib_System_ArgumentNullException628810857.h"
+#include "System_System_Security_Cryptography_X509Certificates_P870392.h"
 #include "System_System_Security_Cryptography_X509Certificate110301003.h"
+#include "System_System_Security_Cryptography_X509Certificates_P870392MethodDeclarations.h"
+#include "mscorlib_System_Security_Cryptography_SHA13336793149MethodDeclarations.h"
+#include "mscorlib_System_Security_Cryptography_HashAlgorith2624936259MethodDeclarations.h"
+#include "mscorlib_System_Buffer3497320070MethodDeclarations.h"
+#include "Mono_Security_Mono_Security_ASN1924533535MethodDeclarations.h"
+#include "mscorlib_System_Security_Cryptography_CryptoConfig896479599MethodDeclarations.h"
+#include "Mono_Security_Mono_Security_ASN1924533535.h"
+#include "mscorlib_System_Security_Cryptography_SHA13336793149.h"
+#include "Mono_Security_Mono_Security_Cryptography_CryptoCon4146607874MethodDeclarations.h"
+#include "System_System_Security_Cryptography_X509Certificat1320896183.h"
+#include "mscorlib_System_Char3454481338.h"
+#include "mscorlib_System_Text_StringBuilder1221177846MethodDeclarations.h"
+#include "mscorlib_System_Environment3662374671MethodDeclarations.h"
+#include "mscorlib_System_Text_StringBuilder1221177846.h"
+#include "mscorlib_System_Byte3683104436MethodDeclarations.h"
 #include "System_System_Security_Cryptography_X509Certificate110301003MethodDeclarations.h"
 #include "System_System_Security_Cryptography_X509Certificat2169036324.h"
 #include "System_System_Security_Cryptography_X509Certificat2169036324MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_BaseMachine4008011478.h"
 #include "System_System_Text_RegularExpressions_BaseMachine4008011478MethodDeclarations.h"
-#include "mscorlib_System_Void1841601450.h"
-#include "mscorlib_System_Object2689449295MethodDeclarations.h"
-#include "mscorlib_System_Boolean3825574718.h"
 #include "System_System_Text_RegularExpressions_Regex1803876613.h"
-#include "mscorlib_System_String2029220233.h"
+#include "mscorlib_System_Collections_ArrayList4252133567MethodDeclarations.h"
+#include "System_System_Text_RegularExpressions_Match3164245899MethodDeclarations.h"
+#include "System_System_Text_RegularExpressions_Regex1803876613MethodDeclarations.h"
+#include "System_System_Text_RegularExpressions_Group3761430853MethodDeclarations.h"
+#include "System_System_Text_RegularExpressions_Capture4157900610MethodDeclarations.h"
+#include "System_System_Text_RegularExpressions_GroupCollecti939014605MethodDeclarations.h"
+#include "mscorlib_System_Type1303803226MethodDeclarations.h"
+#include "mscorlib_System_Collections_ArrayList4252133567.h"
 #include "System_System_Text_RegularExpressions_Match3164245899.h"
-#include "mscorlib_System_Int322071877448.h"
+#include "System_System_Text_RegularExpressions_Group3761430853.h"
+#include "System_System_Text_RegularExpressions_GroupCollecti939014605.h"
+#include "mscorlib_System_Type1303803226.h"
+#include "mscorlib_System_RuntimeTypeHandle2330101084.h"
 #include "mscorlib_System_NotImplementedException2785117854MethodDeclarations.h"
 #include "mscorlib_System_NotImplementedException2785117854.h"
 #include "System_System_Text_RegularExpressions_Capture4157900610.h"
-#include "System_System_Text_RegularExpressions_Capture4157900610MethodDeclarations.h"
-#include "mscorlib_System_String2029220233MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_CaptureColle1671345504.h"
 #include "System_System_Text_RegularExpressions_CaptureColle1671345504MethodDeclarations.h"
 #include "System_ArrayTypes.h"
-#include "mscorlib_System_Object2689449295.h"
-#include "mscorlib_System_Array3829468939MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_Category1984577050.h"
 #include "System_System_Text_RegularExpressions_Category1984577050MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_CategoryUtil3840220623.h"
 #include "System_System_Text_RegularExpressions_CategoryUtil3840220623MethodDeclarations.h"
-#include "mscorlib_System_Type1303803226MethodDeclarations.h"
-#include "mscorlib_System_Enum2459695545MethodDeclarations.h"
-#include "mscorlib_System_ArgumentException3259014390.h"
-#include "mscorlib_System_Type1303803226.h"
-#include "mscorlib_System_RuntimeTypeHandle2330101084.h"
 #include "mscorlib_System_UInt16986882611.h"
-#include "mscorlib_System_Char3454481338.h"
 #include "mscorlib_System_Char3454481338MethodDeclarations.h"
 #include "mscorlib_System_Globalization_UnicodeCategory682236799.h"
 #include "System_System_Text_RegularExpressions_CILCompiler1740644799.h"
@@ -232,14 +314,10 @@ struct CultureInfo_t3500843524;
 #include "System_System_Text_RegularExpressions_RxCompiler4215271879MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g1079703083MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g1079703083.h"
-#include "mscorlib_System_Environment3662374671MethodDeclarations.h"
 #include "mscorlib_System_Reflection_FieldInfo255040150.h"
 #include "mscorlib_System_Reflection_BindingFlags1082350898.h"
-#include "mscorlib_System_Buffer3497320070MethodDeclarations.h"
 #include "mscorlib_System_Reflection_Emit_DynamicMethod3307743052MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_RxInterprete1812879716MethodDeclarations.h"
-#include "mscorlib_ArrayTypes.h"
-#include "mscorlib_System_Byte3683104436.h"
 #include "mscorlib_System_Reflection_Emit_DynamicMethod3307743052.h"
 #include "System_System_Text_RegularExpressions_RxCompiler4215271879.h"
 #include "mscorlib_System_Delegate3022476291.h"
@@ -282,12 +360,6 @@ struct CultureInfo_t3500843524;
 #include "mscorlib_System_Threading_Monitor3228523394MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_FactoryCache_655155419MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_FactoryCache_655155419.h"
-#include "System_System_Text_RegularExpressions_Group3761430853.h"
-#include "System_System_Text_RegularExpressions_Group3761430853MethodDeclarations.h"
-#include "System_System_Text_RegularExpressions_GroupCollecti939014605.h"
-#include "System_System_Text_RegularExpressions_GroupCollecti939014605MethodDeclarations.h"
-#include "System_System_Text_RegularExpressions_Match3164245899MethodDeclarations.h"
-#include "System_System_Text_RegularExpressions_Regex1803876613MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_Interpreter3731288230.h"
 #include "System_System_Text_RegularExpressions_Interpreter3731288230MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_Interpreter_I273560425.h"
@@ -310,8 +382,6 @@ struct CultureInfo_t3500843524;
 #include "System_System_Text_RegularExpressions_Interval2354235237MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_IntervalColl4130821325.h"
 #include "System_System_Text_RegularExpressions_IntervalColl4130821325MethodDeclarations.h"
-#include "mscorlib_System_Collections_ArrayList4252133567MethodDeclarations.h"
-#include "mscorlib_System_Collections_ArrayList4252133567.h"
 #include "System_System_Text_RegularExpressions_IntervalColl1824458113.h"
 #include "System_System_Text_RegularExpressions_IntervalColl1824458113MethodDeclarations.h"
 #include "mscorlib_System_Double4078015681.h"
@@ -344,8 +414,6 @@ struct CultureInfo_t3500843524;
 #include "System_System_Text_RegularExpressions_PatternCompi3337276394.h"
 #include "System_System_Text_RegularExpressions_PatternCompi3337276394MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_Position3781184359MethodDeclarations.h"
-#include "mscorlib_System_ArgumentNullException628810857MethodDeclarations.h"
-#include "mscorlib_System_ArgumentNullException628810857.h"
 #include "mscorlib_System_Runtime_Serialization_Serialization228987430.h"
 #include "mscorlib_System_Runtime_Serialization_StreamingCon1417235061.h"
 #include "mscorlib_System_Runtime_Serialization_Serialization228987430MethodDeclarations.h"
@@ -368,8 +436,6 @@ struct CultureInfo_t3500843524;
 #include "System_System_Text_RegularExpressions_Syntax_Expres238836340.h"
 #include "System_System_Text_RegularExpressions_Syntax_Expres368137076.h"
 #include "System_System_Text_RegularExpressions_Syntax_Expres238836340MethodDeclarations.h"
-#include "mscorlib_System_Collections_CollectionBase1101587467MethodDeclarations.h"
-#include "mscorlib_System_Collections_CollectionBase1101587467.h"
 #include "System_System_Text_RegularExpressions_Syntax_Expres368137076MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_Syntax_Ancho1392970135.h"
 #include "System_System_Text_RegularExpressions_Syntax_Ancho1392970135MethodDeclarations.h"
@@ -394,8 +460,6 @@ struct CultureInfo_t3500843524;
 #include "System_System_Text_RegularExpressions_Syntax_Charac655244183.h"
 #include "System_System_Text_RegularExpressions_Syntax_Charac655244183MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_Syntax_Compo1921307915.h"
-#include "mscorlib_System_Text_StringBuilder1221177846MethodDeclarations.h"
-#include "mscorlib_System_Text_StringBuilder1221177846.h"
 #include "mscorlib_System_IO_TextWriter4027217640.h"
 #include "mscorlib_System_IO_TextWriter4027217640MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_Syntax_NonBac607185170.h"
@@ -405,17 +469,13 @@ struct CultureInfo_t3500843524;
 #include "System_System_Text_RegularExpressions_Syntax_Repet3426306051MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_Syntax_Repet3426306051.h"
 #include "System_System_Text_RegularExpressions_Syntax_Posit2152361535.h"
-#include "mscorlib_System_ArgumentException3259014390MethodDeclarations.h"
 #include "System_System_Uri19570940.h"
 #include "System_System_Uri19570940MethodDeclarations.h"
 #include "System_System_UriKind1128731744.h"
 #include "System_System_UriFormatException3682083048MethodDeclarations.h"
-#include "System_Locale4255929014MethodDeclarations.h"
 #include "System_System_UriFormatException3682083048.h"
 #include "System_System_Uri_UriScheme1876590943.h"
 #include "System_System_Uri_UriScheme1876590943MethodDeclarations.h"
-#include "mscorlib_System_Collections_Generic_Dictionary_2_g3986656710MethodDeclarations.h"
-#include "mscorlib_System_Collections_Generic_Dictionary_2_g3986656710.h"
 #include "System_System_UriPartial112107391.h"
 #include "System_System_UriHostNameType2148127109.h"
 #include "System_System_Net_IPAddress1399971723MethodDeclarations.h"
@@ -460,6 +520,1430 @@ extern "C"  int32_t Array_BinarySearch_TisInt32_t2071877448_m1538339240_gshared 
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.Security.Cryptography.X509Certificates.X509Store::.ctor(System.Security.Cryptography.X509Certificates.StoreName,System.Security.Cryptography.X509Certificates.StoreLocation)
+extern Il2CppClass* ArgumentException_t3259014390_il2cpp_TypeInfo_var;
+extern Il2CppClass* StoreName_t2183514610_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2808514808;
+extern Il2CppCodeGenString* _stringLiteral1054971240;
+extern Il2CppCodeGenString* _stringLiteral3560391898;
+extern const uint32_t X509Store__ctor_m1573680316_MetadataUsageId;
+extern "C"  void X509Store__ctor_m1573680316 (X509Store_t1617430119 * __this, int32_t ___storeName0, int32_t ___storeLocation1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (X509Store__ctor_m1573680316_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		int32_t L_0 = ___storeName0;
+		if ((((int32_t)L_0) < ((int32_t)1)))
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		int32_t L_1 = ___storeName0;
+		if ((((int32_t)L_1) <= ((int32_t)8)))
+		{
+			goto IL_001f;
+		}
+	}
+
+IL_0014:
+	{
+		ArgumentException_t3259014390 * L_2 = (ArgumentException_t3259014390 *)il2cpp_codegen_object_new(ArgumentException_t3259014390_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3739475201(L_2, _stringLiteral2808514808, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_001f:
+	{
+		int32_t L_3 = ___storeLocation1;
+		if ((((int32_t)L_3) < ((int32_t)1)))
+		{
+			goto IL_002d;
+		}
+	}
+	{
+		int32_t L_4 = ___storeLocation1;
+		if ((((int32_t)L_4) <= ((int32_t)2)))
+		{
+			goto IL_0038;
+		}
+	}
+
+IL_002d:
+	{
+		ArgumentException_t3259014390 * L_5 = (ArgumentException_t3259014390 *)il2cpp_codegen_object_new(ArgumentException_t3259014390_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3739475201(L_5, _stringLiteral1054971240, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5);
+	}
+
+IL_0038:
+	{
+		int32_t L_6 = ___storeName0;
+		V_0 = L_6;
+		int32_t L_7 = V_0;
+		if ((((int32_t)L_7) == ((int32_t)3)))
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		goto IL_0056;
+	}
+
+IL_0046:
+	{
+		__this->set__name_0(_stringLiteral3560391898);
+		goto IL_006c;
+	}
+
+IL_0056:
+	{
+		int32_t L_8 = ___storeName0;
+		int32_t L_9 = L_8;
+		Il2CppObject * L_10 = Box(StoreName_t2183514610_il2cpp_TypeInfo_var, &L_9);
+		NullCheck((Enum_t2459695545 *)L_10);
+		String_t* L_11 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Enum::ToString() */, (Enum_t2459695545 *)L_10);
+		__this->set__name_0(L_11);
+		goto IL_006c;
+	}
+
+IL_006c:
+	{
+		int32_t L_12 = ___storeLocation1;
+		__this->set__location_1(L_12);
+		return;
+	}
+}
+// System.Security.Cryptography.X509Certificates.X509Certificate2Collection System.Security.Cryptography.X509Certificates.X509Store::get_Certificates()
+extern Il2CppClass* X509Certificate2Collection_t1108969367_il2cpp_TypeInfo_var;
+extern const uint32_t X509Store_get_Certificates_m329642048_MetadataUsageId;
+extern "C"  X509Certificate2Collection_t1108969367 * X509Store_get_Certificates_m329642048 (X509Store_t1617430119 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (X509Store_get_Certificates_m329642048_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		X509Certificate2Collection_t1108969367 * L_0 = __this->get_list_2();
+		if (L_0)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		X509Certificate2Collection_t1108969367 * L_1 = (X509Certificate2Collection_t1108969367 *)il2cpp_codegen_object_new(X509Certificate2Collection_t1108969367_il2cpp_TypeInfo_var);
+		X509Certificate2Collection__ctor_m406839448(L_1, /*hidden argument*/NULL);
+		__this->set_list_2(L_1);
+		goto IL_0031;
+	}
+
+IL_001b:
+	{
+		X509Store_t4028973564 * L_2 = __this->get_store_4();
+		if (L_2)
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		X509Certificate2Collection_t1108969367 * L_3 = __this->get_list_2();
+		NullCheck(L_3);
+		CollectionBase_Clear_m4223862684(L_3, /*hidden argument*/NULL);
+	}
+
+IL_0031:
+	{
+		X509Certificate2Collection_t1108969367 * L_4 = __this->get_list_2();
+		return L_4;
+	}
+}
+// Mono.Security.X509.X509Stores System.Security.Cryptography.X509Certificates.X509Store::get_Factory()
+extern "C"  X509Stores_t3001420399 * X509Store_get_Factory_m428109475 (X509Store_t1617430119 * __this, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get__location_1();
+		if ((!(((uint32_t)L_0) == ((uint32_t)1))))
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		X509Stores_t3001420399 * L_1 = X509StoreManager_get_CurrentUser_m569194374(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return L_1;
+	}
+
+IL_0012:
+	{
+		X509Stores_t3001420399 * L_2 = X509StoreManager_get_LocalMachine_m2451390246(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+// Mono.Security.X509.X509Store System.Security.Cryptography.X509Certificates.X509Store::get_Store()
+extern "C"  X509Store_t4028973564 * X509Store_get_Store_m3940520391 (X509Store_t1617430119 * __this, const MethodInfo* method)
+{
+	{
+		X509Store_t4028973564 * L_0 = __this->get_store_4();
+		return L_0;
+	}
+}
+// System.Void System.Security.Cryptography.X509Certificates.X509Store::Close()
+extern "C"  void X509Store_Close_m2412711366 (X509Store_t1617430119 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_store_4((X509Store_t4028973564 *)NULL);
+		X509Certificate2Collection_t1108969367 * L_0 = __this->get_list_2();
+		if (!L_0)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		X509Certificate2Collection_t1108969367 * L_1 = __this->get_list_2();
+		NullCheck(L_1);
+		CollectionBase_Clear_m4223862684(L_1, /*hidden argument*/NULL);
+	}
+
+IL_001d:
+	{
+		return;
+	}
+}
+// System.Void System.Security.Cryptography.X509Certificates.X509Store::Open(System.Security.Cryptography.X509Certificates.OpenFlags)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* CryptographicException_t3349726436_il2cpp_TypeInfo_var;
+extern Il2CppClass* X509Store_t1617430119_il2cpp_TypeInfo_var;
+extern Il2CppClass* Dictionary_2_t3986656710_il2cpp_TypeInfo_var;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppClass* X509Certificate2_t4056456767_il2cpp_TypeInfo_var;
+extern Il2CppClass* IDisposable_t2427283555_il2cpp_TypeInfo_var;
+extern const MethodInfo* Dictionary_2__ctor_m2118310873_MethodInfo_var;
+extern const MethodInfo* Dictionary_2_Add_m1209957957_MethodInfo_var;
+extern const MethodInfo* Dictionary_2_TryGetValue_m2977303364_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1997262885;
+extern Il2CppCodeGenString* _stringLiteral3430669166;
+extern Il2CppCodeGenString* _stringLiteral3060525540;
+extern Il2CppCodeGenString* _stringLiteral1990213415;
+extern const uint32_t X509Store_Open_m3416485546_MetadataUsageId;
+extern "C"  void X509Store_Open_m3416485546 (X509Store_t1617430119 * __this, int32_t ___flags0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (X509Store_Open_m3416485546_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	bool V_1 = false;
+	X509Certificate_t324051958 * V_2 = NULL;
+	X509CertificateEnumerator_t3487770523 * V_3 = NULL;
+	String_t* V_4 = NULL;
+	Dictionary_2_t3986656710 * V_5 = NULL;
+	int32_t V_6 = 0;
+	Il2CppObject * V_7 = NULL;
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		String_t* L_0 = __this->get__name_0();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_1 = String_IsNullOrEmpty_m2802126737(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		String_t* L_2 = Locale_GetText_m4034107474(NULL /*static, unused*/, _stringLiteral1997262885, /*hidden argument*/NULL);
+		CryptographicException_t3349726436 * L_3 = (CryptographicException_t3349726436 *)il2cpp_codegen_object_new(CryptographicException_t3349726436_il2cpp_TypeInfo_var);
+		CryptographicException__ctor_m2415891459(L_3, L_2, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
+	}
+
+IL_0020:
+	{
+		String_t* L_4 = __this->get__name_0();
+		V_4 = L_4;
+		String_t* L_5 = V_4;
+		if (!L_5)
+		{
+			goto IL_007f;
+		}
+	}
+	{
+		Dictionary_2_t3986656710 * L_6 = ((X509Store_t1617430119_StaticFields*)X509Store_t1617430119_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__switchU24map1B_5();
+		if (L_6)
+		{
+			goto IL_0055;
+		}
+	}
+	{
+		Dictionary_2_t3986656710 * L_7 = (Dictionary_2_t3986656710 *)il2cpp_codegen_object_new(Dictionary_2_t3986656710_il2cpp_TypeInfo_var);
+		Dictionary_2__ctor_m2118310873(L_7, 1, /*hidden argument*/Dictionary_2__ctor_m2118310873_MethodInfo_var);
+		V_5 = L_7;
+		Dictionary_2_t3986656710 * L_8 = V_5;
+		NullCheck(L_8);
+		Dictionary_2_Add_m1209957957(L_8, _stringLiteral3430669166, 0, /*hidden argument*/Dictionary_2_Add_m1209957957_MethodInfo_var);
+		Dictionary_2_t3986656710 * L_9 = V_5;
+		((X509Store_t1617430119_StaticFields*)X509Store_t1617430119_il2cpp_TypeInfo_var->static_fields)->set_U3CU3Ef__switchU24map1B_5(L_9);
+	}
+
+IL_0055:
+	{
+		Dictionary_2_t3986656710 * L_10 = ((X509Store_t1617430119_StaticFields*)X509Store_t1617430119_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__switchU24map1B_5();
+		String_t* L_11 = V_4;
+		NullCheck(L_10);
+		bool L_12 = Dictionary_2_TryGetValue_m2977303364(L_10, L_11, (&V_6), /*hidden argument*/Dictionary_2_TryGetValue_m2977303364_MethodInfo_var);
+		if (!L_12)
+		{
+			goto IL_007f;
+		}
+	}
+	{
+		int32_t L_13 = V_6;
+		if (!L_13)
+		{
+			goto IL_0074;
+		}
+	}
+	{
+		goto IL_007f;
+	}
+
+IL_0074:
+	{
+		V_0 = _stringLiteral3060525540;
+		goto IL_008b;
+	}
+
+IL_007f:
+	{
+		String_t* L_14 = __this->get__name_0();
+		V_0 = L_14;
+		goto IL_008b;
+	}
+
+IL_008b:
+	{
+		int32_t L_15 = ___flags0;
+		V_1 = (bool)((((int32_t)((((int32_t)((int32_t)((int32_t)L_15&(int32_t)4))) == ((int32_t)4))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		X509Stores_t3001420399 * L_16 = X509Store_get_Factory_m428109475(__this, /*hidden argument*/NULL);
+		String_t* L_17 = V_0;
+		bool L_18 = V_1;
+		NullCheck(L_16);
+		X509Store_t4028973564 * L_19 = X509Stores_Open_m3570436469(L_16, L_17, L_18, /*hidden argument*/NULL);
+		__this->set_store_4(L_19);
+		X509Store_t4028973564 * L_20 = __this->get_store_4();
+		if (L_20)
+		{
+			goto IL_00d2;
+		}
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_21 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)1));
+		String_t* L_22 = __this->get__name_0();
+		NullCheck(L_21);
+		ArrayElementTypeCheck (L_21, L_22);
+		(L_21)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_22);
+		String_t* L_23 = Locale_GetText_m1445803604(NULL /*static, unused*/, _stringLiteral1990213415, L_21, /*hidden argument*/NULL);
+		CryptographicException_t3349726436 * L_24 = (CryptographicException_t3349726436 *)il2cpp_codegen_object_new(CryptographicException_t3349726436_il2cpp_TypeInfo_var);
+		CryptographicException__ctor_m2415891459(L_24, L_23, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_24);
+	}
+
+IL_00d2:
+	{
+		int32_t L_25 = ___flags0;
+		__this->set__flags_3(L_25);
+		X509Store_t4028973564 * L_26 = __this->get_store_4();
+		NullCheck(L_26);
+		X509CertificateCollection_t3592472866 * L_27 = X509Store_get_Certificates_m683383922(L_26, /*hidden argument*/NULL);
+		NullCheck(L_27);
+		X509CertificateEnumerator_t3487770523 * L_28 = X509CertificateCollection_GetEnumerator_m3994741635(L_27, /*hidden argument*/NULL);
+		V_3 = L_28;
+	}
+
+IL_00ea:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_010d;
+		}
+
+IL_00ef:
+		{
+			X509CertificateEnumerator_t3487770523 * L_29 = V_3;
+			NullCheck(L_29);
+			X509Certificate_t324051958 * L_30 = X509CertificateEnumerator_get_Current_m3129374511(L_29, /*hidden argument*/NULL);
+			V_2 = L_30;
+			X509Certificate2Collection_t1108969367 * L_31 = X509Store_get_Certificates_m329642048(__this, /*hidden argument*/NULL);
+			X509Certificate_t324051958 * L_32 = V_2;
+			NullCheck(L_32);
+			ByteU5BU5D_t3397334013* L_33 = VirtFuncInvoker0< ByteU5BU5D_t3397334013* >::Invoke(12 /* System.Byte[] Mono.Security.X509.X509Certificate::get_RawData() */, L_32);
+			X509Certificate2_t4056456767 * L_34 = (X509Certificate2_t4056456767 *)il2cpp_codegen_object_new(X509Certificate2_t4056456767_il2cpp_TypeInfo_var);
+			X509Certificate2__ctor_m1095336775(L_34, L_33, /*hidden argument*/NULL);
+			NullCheck(L_31);
+			X509Certificate2Collection_Add_m3920471111(L_31, L_34, /*hidden argument*/NULL);
+		}
+
+IL_010d:
+		{
+			X509CertificateEnumerator_t3487770523 * L_35 = V_3;
+			NullCheck(L_35);
+			bool L_36 = X509CertificateEnumerator_MoveNext_m4060814498(L_35, /*hidden argument*/NULL);
+			if (L_36)
+			{
+				goto IL_00ef;
+			}
+		}
+
+IL_0118:
+		{
+			IL2CPP_LEAVE(0x132, FINALLY_011d);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+		goto FINALLY_011d;
+	}
+
+FINALLY_011d:
+	{ // begin finally (depth: 1)
+		{
+			X509CertificateEnumerator_t3487770523 * L_37 = V_3;
+			V_7 = ((Il2CppObject *)IsInst(L_37, IDisposable_t2427283555_il2cpp_TypeInfo_var));
+			Il2CppObject * L_38 = V_7;
+			if (L_38)
+			{
+				goto IL_012a;
+			}
+		}
+
+IL_0129:
+		{
+			IL2CPP_END_FINALLY(285)
+		}
+
+IL_012a:
+		{
+			Il2CppObject * L_39 = V_7;
+			NullCheck(L_39);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t2427283555_il2cpp_TypeInfo_var, L_39);
+			IL2CPP_END_FINALLY(285)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(285)
+	{
+		IL2CPP_JUMP_TBL(0x132, IL_0132)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+	}
+
+IL_0132:
+	{
+		return;
+	}
+}
+// System.Void System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension::.ctor()
+extern Il2CppClass* Oid_t3221867120_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1568864491;
+extern Il2CppCodeGenString* _stringLiteral2483521376;
+extern const uint32_t X509SubjectKeyIdentifierExtension__ctor_m2959112706_MetadataUsageId;
+extern "C"  void X509SubjectKeyIdentifierExtension__ctor_m2959112706 (X509SubjectKeyIdentifierExtension_t2508879999 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (X509SubjectKeyIdentifierExtension__ctor_m2959112706_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		X509Extension__ctor_m4030395494(__this, /*hidden argument*/NULL);
+		Oid_t3221867120 * L_0 = (Oid_t3221867120 *)il2cpp_codegen_object_new(Oid_t3221867120_il2cpp_TypeInfo_var);
+		Oid__ctor_m954395291(L_0, _stringLiteral1568864491, _stringLiteral2483521376, /*hidden argument*/NULL);
+		((AsnEncodedData_t463456204 *)__this)->set__oid_0(L_0);
+		return;
+	}
+}
+// System.Void System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension::.ctor(System.Security.Cryptography.AsnEncodedData,System.Boolean)
+extern Il2CppClass* Oid_t3221867120_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1568864491;
+extern Il2CppCodeGenString* _stringLiteral2483521376;
+extern const uint32_t X509SubjectKeyIdentifierExtension__ctor_m2412362046_MetadataUsageId;
+extern "C"  void X509SubjectKeyIdentifierExtension__ctor_m2412362046 (X509SubjectKeyIdentifierExtension_t2508879999 * __this, AsnEncodedData_t463456204 * ___encodedSubjectKeyIdentifier0, bool ___critical1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (X509SubjectKeyIdentifierExtension__ctor_m2412362046_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		X509Extension__ctor_m4030395494(__this, /*hidden argument*/NULL);
+		Oid_t3221867120 * L_0 = (Oid_t3221867120 *)il2cpp_codegen_object_new(Oid_t3221867120_il2cpp_TypeInfo_var);
+		Oid__ctor_m954395291(L_0, _stringLiteral1568864491, _stringLiteral2483521376, /*hidden argument*/NULL);
+		((AsnEncodedData_t463456204 *)__this)->set__oid_0(L_0);
+		AsnEncodedData_t463456204 * L_1 = ___encodedSubjectKeyIdentifier0;
+		NullCheck(L_1);
+		ByteU5BU5D_t3397334013* L_2 = AsnEncodedData_get_RawData_m895923910(L_1, /*hidden argument*/NULL);
+		((AsnEncodedData_t463456204 *)__this)->set__raw_1(L_2);
+		bool L_3 = ___critical1;
+		X509Extension_set_Critical_m1247863465(__this, L_3, /*hidden argument*/NULL);
+		ByteU5BU5D_t3397334013* L_4 = AsnEncodedData_get_RawData_m895923910(__this, /*hidden argument*/NULL);
+		int32_t L_5 = X509SubjectKeyIdentifierExtension_Decode_m4102819207(__this, L_4, /*hidden argument*/NULL);
+		__this->set__status_8(L_5);
+		return;
+	}
+}
+// System.Void System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension::.ctor(System.Byte[],System.Boolean)
+extern Il2CppClass* ArgumentNullException_t628810857_il2cpp_TypeInfo_var;
+extern Il2CppClass* ArgumentException_t3259014390_il2cpp_TypeInfo_var;
+extern Il2CppClass* Oid_t3221867120_il2cpp_TypeInfo_var;
+extern Il2CppClass* ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1896319514;
+extern Il2CppCodeGenString* _stringLiteral1568864491;
+extern Il2CppCodeGenString* _stringLiteral2483521376;
+extern const uint32_t X509SubjectKeyIdentifierExtension__ctor_m3950351260_MetadataUsageId;
+extern "C"  void X509SubjectKeyIdentifierExtension__ctor_m3950351260 (X509SubjectKeyIdentifierExtension_t2508879999 * __this, ByteU5BU5D_t3397334013* ___subjectKeyIdentifier0, bool ___critical1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (X509SubjectKeyIdentifierExtension__ctor_m3950351260_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		X509Extension__ctor_m4030395494(__this, /*hidden argument*/NULL);
+		ByteU5BU5D_t3397334013* L_0 = ___subjectKeyIdentifier0;
+		if (L_0)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentNullException_t628810857 * L_1 = (ArgumentNullException_t628810857 *)il2cpp_codegen_object_new(ArgumentNullException_t628810857_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m3380712306(L_1, _stringLiteral1896319514, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0017:
+	{
+		ByteU5BU5D_t3397334013* L_2 = ___subjectKeyIdentifier0;
+		NullCheck(L_2);
+		if ((((int32_t)((int32_t)(((Il2CppArray *)L_2)->max_length)))))
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		ArgumentException_t3259014390 * L_3 = (ArgumentException_t3259014390 *)il2cpp_codegen_object_new(ArgumentException_t3259014390_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3739475201(L_3, _stringLiteral1896319514, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
+	}
+
+IL_002a:
+	{
+		Oid_t3221867120 * L_4 = (Oid_t3221867120 *)il2cpp_codegen_object_new(Oid_t3221867120_il2cpp_TypeInfo_var);
+		Oid__ctor_m954395291(L_4, _stringLiteral1568864491, _stringLiteral2483521376, /*hidden argument*/NULL);
+		((AsnEncodedData_t463456204 *)__this)->set__oid_0(L_4);
+		bool L_5 = ___critical1;
+		X509Extension_set_Critical_m1247863465(__this, L_5, /*hidden argument*/NULL);
+		ByteU5BU5D_t3397334013* L_6 = ___subjectKeyIdentifier0;
+		NullCheck((Il2CppArray *)(Il2CppArray *)L_6);
+		Il2CppObject * L_7 = Array_Clone_m768574314((Il2CppArray *)(Il2CppArray *)L_6, /*hidden argument*/NULL);
+		__this->set__subjectKeyIdentifier_6(((ByteU5BU5D_t3397334013*)Castclass(L_7, ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var)));
+		ByteU5BU5D_t3397334013* L_8 = X509SubjectKeyIdentifierExtension_Encode_m4237278042(__this, /*hidden argument*/NULL);
+		AsnEncodedData_set_RawData_m1046549989(__this, L_8, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension::.ctor(System.String,System.Boolean)
+extern Il2CppClass* ArgumentNullException_t628810857_il2cpp_TypeInfo_var;
+extern Il2CppClass* ArgumentException_t3259014390_il2cpp_TypeInfo_var;
+extern Il2CppClass* Oid_t3221867120_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1896319514;
+extern Il2CppCodeGenString* _stringLiteral1568864491;
+extern Il2CppCodeGenString* _stringLiteral2483521376;
+extern const uint32_t X509SubjectKeyIdentifierExtension__ctor_m1109455121_MetadataUsageId;
+extern "C"  void X509SubjectKeyIdentifierExtension__ctor_m1109455121 (X509SubjectKeyIdentifierExtension_t2508879999 * __this, String_t* ___subjectKeyIdentifier0, bool ___critical1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (X509SubjectKeyIdentifierExtension__ctor_m1109455121_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		X509Extension__ctor_m4030395494(__this, /*hidden argument*/NULL);
+		String_t* L_0 = ___subjectKeyIdentifier0;
+		if (L_0)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentNullException_t628810857 * L_1 = (ArgumentNullException_t628810857 *)il2cpp_codegen_object_new(ArgumentNullException_t628810857_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m3380712306(L_1, _stringLiteral1896319514, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0017:
+	{
+		String_t* L_2 = ___subjectKeyIdentifier0;
+		NullCheck(L_2);
+		int32_t L_3 = String_get_Length_m1606060069(L_2, /*hidden argument*/NULL);
+		if ((((int32_t)L_3) >= ((int32_t)2)))
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		ArgumentException_t3259014390 * L_4 = (ArgumentException_t3259014390 *)il2cpp_codegen_object_new(ArgumentException_t3259014390_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3739475201(L_4, _stringLiteral1896319514, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4);
+	}
+
+IL_002e:
+	{
+		Oid_t3221867120 * L_5 = (Oid_t3221867120 *)il2cpp_codegen_object_new(Oid_t3221867120_il2cpp_TypeInfo_var);
+		Oid__ctor_m954395291(L_5, _stringLiteral1568864491, _stringLiteral2483521376, /*hidden argument*/NULL);
+		((AsnEncodedData_t463456204 *)__this)->set__oid_0(L_5);
+		bool L_6 = ___critical1;
+		X509Extension_set_Critical_m1247863465(__this, L_6, /*hidden argument*/NULL);
+		String_t* L_7 = ___subjectKeyIdentifier0;
+		ByteU5BU5D_t3397334013* L_8 = X509SubjectKeyIdentifierExtension_FromHex_m3272045013(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
+		__this->set__subjectKeyIdentifier_6(L_8);
+		ByteU5BU5D_t3397334013* L_9 = X509SubjectKeyIdentifierExtension_Encode_m4237278042(__this, /*hidden argument*/NULL);
+		AsnEncodedData_set_RawData_m1046549989(__this, L_9, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension::.ctor(System.Security.Cryptography.X509Certificates.PublicKey,System.Boolean)
+extern "C"  void X509SubjectKeyIdentifierExtension__ctor_m3887138480 (X509SubjectKeyIdentifierExtension_t2508879999 * __this, PublicKey_t870392 * ___key0, bool ___critical1, const MethodInfo* method)
+{
+	{
+		PublicKey_t870392 * L_0 = ___key0;
+		bool L_1 = ___critical1;
+		X509SubjectKeyIdentifierExtension__ctor_m3728672874(__this, L_0, 0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension::.ctor(System.Security.Cryptography.X509Certificates.PublicKey,System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm,System.Boolean)
+extern Il2CppClass* ArgumentNullException_t628810857_il2cpp_TypeInfo_var;
+extern Il2CppClass* ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var;
+extern Il2CppClass* ASN1_t924533536_il2cpp_TypeInfo_var;
+extern Il2CppClass* CryptoConfig_t896479599_il2cpp_TypeInfo_var;
+extern Il2CppClass* ArgumentException_t3259014390_il2cpp_TypeInfo_var;
+extern Il2CppClass* Oid_t3221867120_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3021628599;
+extern Il2CppCodeGenString* _stringLiteral3249564939;
+extern Il2CppCodeGenString* _stringLiteral1568864491;
+extern Il2CppCodeGenString* _stringLiteral2483521376;
+extern const uint32_t X509SubjectKeyIdentifierExtension__ctor_m3728672874_MetadataUsageId;
+extern "C"  void X509SubjectKeyIdentifierExtension__ctor_m3728672874 (X509SubjectKeyIdentifierExtension_t2508879999 * __this, PublicKey_t870392 * ___key0, int32_t ___algorithm1, bool ___critical2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (X509SubjectKeyIdentifierExtension__ctor_m3728672874_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ByteU5BU5D_t3397334013* V_0 = NULL;
+	ByteU5BU5D_t3397334013* V_1 = NULL;
+	ASN1_t924533536 * V_2 = NULL;
+	ASN1_t924533536 * V_3 = NULL;
+	ByteU5BU5D_t3397334013* V_4 = NULL;
+	int32_t V_5 = 0;
+	{
+		X509Extension__ctor_m4030395494(__this, /*hidden argument*/NULL);
+		PublicKey_t870392 * L_0 = ___key0;
+		if (L_0)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentNullException_t628810857 * L_1 = (ArgumentNullException_t628810857 *)il2cpp_codegen_object_new(ArgumentNullException_t628810857_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m3380712306(L_1, _stringLiteral3021628599, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0017:
+	{
+		PublicKey_t870392 * L_2 = ___key0;
+		NullCheck(L_2);
+		AsnEncodedData_t463456204 * L_3 = PublicKey_get_EncodedKeyValue_m3051963850(L_2, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		ByteU5BU5D_t3397334013* L_4 = AsnEncodedData_get_RawData_m895923910(L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		int32_t L_5 = ___algorithm1;
+		V_5 = L_5;
+		int32_t L_6 = V_5;
+		if (L_6 == 0)
+		{
+			goto IL_003e;
+		}
+		if (L_6 == 1)
+		{
+			goto IL_0054;
+		}
+		if (L_6 == 2)
+		{
+			goto IL_0098;
+		}
+	}
+	{
+		goto IL_0124;
+	}
+
+IL_003e:
+	{
+		SHA1_t3336793149 * L_7 = SHA1_Create_m139442991(NULL /*static, unused*/, /*hidden argument*/NULL);
+		ByteU5BU5D_t3397334013* L_8 = V_0;
+		NullCheck(L_7);
+		ByteU5BU5D_t3397334013* L_9 = HashAlgorithm_ComputeHash_m3637856778(L_7, L_8, /*hidden argument*/NULL);
+		__this->set__subjectKeyIdentifier_6(L_9);
+		goto IL_012f;
+	}
+
+IL_0054:
+	{
+		SHA1_t3336793149 * L_10 = SHA1_Create_m139442991(NULL /*static, unused*/, /*hidden argument*/NULL);
+		ByteU5BU5D_t3397334013* L_11 = V_0;
+		NullCheck(L_10);
+		ByteU5BU5D_t3397334013* L_12 = HashAlgorithm_ComputeHash_m3637856778(L_10, L_11, /*hidden argument*/NULL);
+		V_1 = L_12;
+		__this->set__subjectKeyIdentifier_6(((ByteU5BU5D_t3397334013*)SZArrayNew(ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var, (uint32_t)8)));
+		ByteU5BU5D_t3397334013* L_13 = V_1;
+		ByteU5BU5D_t3397334013* L_14 = __this->get__subjectKeyIdentifier_6();
+		Buffer_BlockCopy_m1586717258(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_13, ((int32_t)12), (Il2CppArray *)(Il2CppArray *)L_14, 0, 8, /*hidden argument*/NULL);
+		ByteU5BU5D_t3397334013* L_15 = __this->get__subjectKeyIdentifier_6();
+		ByteU5BU5D_t3397334013* L_16 = __this->get__subjectKeyIdentifier_6();
+		NullCheck(L_16);
+		int32_t L_17 = 0;
+		uint8_t L_18 = (L_16)->GetAt(static_cast<il2cpp_array_size_t>(L_17));
+		NullCheck(L_15);
+		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(0), (uint8_t)(((int32_t)((uint8_t)((int32_t)((int32_t)((int32_t)64)|(int32_t)((int32_t)((int32_t)L_18&(int32_t)((int32_t)15)))))))));
+		goto IL_012f;
+	}
+
+IL_0098:
+	{
+		ASN1_t924533536 * L_19 = (ASN1_t924533536 *)il2cpp_codegen_object_new(ASN1_t924533536_il2cpp_TypeInfo_var);
+		ASN1__ctor_m646105945(L_19, ((int32_t)48), /*hidden argument*/NULL);
+		V_2 = L_19;
+		ASN1_t924533536 * L_20 = V_2;
+		ASN1_t924533536 * L_21 = (ASN1_t924533536 *)il2cpp_codegen_object_new(ASN1_t924533536_il2cpp_TypeInfo_var);
+		ASN1__ctor_m646105945(L_21, ((int32_t)48), /*hidden argument*/NULL);
+		NullCheck(L_20);
+		ASN1_t924533536 * L_22 = ASN1_Add_m1595622622(L_20, L_21, /*hidden argument*/NULL);
+		V_3 = L_22;
+		ASN1_t924533536 * L_23 = V_3;
+		PublicKey_t870392 * L_24 = ___key0;
+		NullCheck(L_24);
+		Oid_t3221867120 * L_25 = PublicKey_get_Oid_m4224222642(L_24, /*hidden argument*/NULL);
+		NullCheck(L_25);
+		String_t* L_26 = Oid_get_Value_m2271181078(L_25, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(CryptoConfig_t896479599_il2cpp_TypeInfo_var);
+		ByteU5BU5D_t3397334013* L_27 = CryptoConfig_EncodeOID_m276236568(NULL /*static, unused*/, L_26, /*hidden argument*/NULL);
+		ASN1_t924533536 * L_28 = (ASN1_t924533536 *)il2cpp_codegen_object_new(ASN1_t924533536_il2cpp_TypeInfo_var);
+		ASN1__ctor_m1653629327(L_28, L_27, /*hidden argument*/NULL);
+		NullCheck(L_23);
+		ASN1_Add_m1595622622(L_23, L_28, /*hidden argument*/NULL);
+		ASN1_t924533536 * L_29 = V_3;
+		PublicKey_t870392 * L_30 = ___key0;
+		NullCheck(L_30);
+		AsnEncodedData_t463456204 * L_31 = PublicKey_get_EncodedParameters_m2182265270(L_30, /*hidden argument*/NULL);
+		NullCheck(L_31);
+		ByteU5BU5D_t3397334013* L_32 = AsnEncodedData_get_RawData_m895923910(L_31, /*hidden argument*/NULL);
+		ASN1_t924533536 * L_33 = (ASN1_t924533536 *)il2cpp_codegen_object_new(ASN1_t924533536_il2cpp_TypeInfo_var);
+		ASN1__ctor_m1653629327(L_33, L_32, /*hidden argument*/NULL);
+		NullCheck(L_29);
+		ASN1_Add_m1595622622(L_29, L_33, /*hidden argument*/NULL);
+		ByteU5BU5D_t3397334013* L_34 = V_0;
+		NullCheck(L_34);
+		V_4 = ((ByteU5BU5D_t3397334013*)SZArrayNew(ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var, (uint32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_34)->max_length))))+(int32_t)1))));
+		ByteU5BU5D_t3397334013* L_35 = V_0;
+		ByteU5BU5D_t3397334013* L_36 = V_4;
+		ByteU5BU5D_t3397334013* L_37 = V_0;
+		NullCheck(L_37);
+		Buffer_BlockCopy_m1586717258(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_35, 0, (Il2CppArray *)(Il2CppArray *)L_36, 1, (((int32_t)((int32_t)(((Il2CppArray *)L_37)->max_length)))), /*hidden argument*/NULL);
+		ASN1_t924533536 * L_38 = V_2;
+		ByteU5BU5D_t3397334013* L_39 = V_4;
+		ASN1_t924533536 * L_40 = (ASN1_t924533536 *)il2cpp_codegen_object_new(ASN1_t924533536_il2cpp_TypeInfo_var);
+		ASN1__ctor_m1045937444(L_40, 3, L_39, /*hidden argument*/NULL);
+		NullCheck(L_38);
+		ASN1_Add_m1595622622(L_38, L_40, /*hidden argument*/NULL);
+		SHA1_t3336793149 * L_41 = SHA1_Create_m139442991(NULL /*static, unused*/, /*hidden argument*/NULL);
+		ASN1_t924533536 * L_42 = V_2;
+		NullCheck(L_42);
+		ByteU5BU5D_t3397334013* L_43 = VirtFuncInvoker0< ByteU5BU5D_t3397334013* >::Invoke(4 /* System.Byte[] Mono.Security.ASN1::GetBytes() */, L_42);
+		NullCheck(L_41);
+		ByteU5BU5D_t3397334013* L_44 = HashAlgorithm_ComputeHash_m3637856778(L_41, L_43, /*hidden argument*/NULL);
+		__this->set__subjectKeyIdentifier_6(L_44);
+		goto IL_012f;
+	}
+
+IL_0124:
+	{
+		ArgumentException_t3259014390 * L_45 = (ArgumentException_t3259014390 *)il2cpp_codegen_object_new(ArgumentException_t3259014390_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3739475201(L_45, _stringLiteral3249564939, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_45);
+	}
+
+IL_012f:
+	{
+		Oid_t3221867120 * L_46 = (Oid_t3221867120 *)il2cpp_codegen_object_new(Oid_t3221867120_il2cpp_TypeInfo_var);
+		Oid__ctor_m954395291(L_46, _stringLiteral1568864491, _stringLiteral2483521376, /*hidden argument*/NULL);
+		((AsnEncodedData_t463456204 *)__this)->set__oid_0(L_46);
+		bool L_47 = ___critical2;
+		X509Extension_set_Critical_m1247863465(__this, L_47, /*hidden argument*/NULL);
+		ByteU5BU5D_t3397334013* L_48 = X509SubjectKeyIdentifierExtension_Encode_m4237278042(__this, /*hidden argument*/NULL);
+		AsnEncodedData_set_RawData_m1046549989(__this, L_48, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.String System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension::get_SubjectKeyIdentifier()
+extern Il2CppClass* CryptographicException_t3349726436_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1874080883;
+extern const uint32_t X509SubjectKeyIdentifierExtension_get_SubjectKeyIdentifier_m1477640894_MetadataUsageId;
+extern "C"  String_t* X509SubjectKeyIdentifierExtension_get_SubjectKeyIdentifier_m1477640894 (X509SubjectKeyIdentifierExtension_t2508879999 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (X509SubjectKeyIdentifierExtension_get_SubjectKeyIdentifier_m1477640894_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = __this->get__status_8();
+		V_0 = L_0;
+		int32_t L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		int32_t L_2 = V_0;
+		if ((((int32_t)L_2) == ((int32_t)4)))
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		goto IL_003c;
+	}
+
+IL_0019:
+	{
+		ByteU5BU5D_t3397334013* L_3 = __this->get__subjectKeyIdentifier_6();
+		if (!L_3)
+		{
+			goto IL_0035;
+		}
+	}
+	{
+		ByteU5BU5D_t3397334013* L_4 = __this->get__subjectKeyIdentifier_6();
+		String_t* L_5 = CryptoConvert_ToHex_m2874017189(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		__this->set__ski_7(L_5);
+	}
+
+IL_0035:
+	{
+		String_t* L_6 = __this->get__ski_7();
+		return L_6;
+	}
+
+IL_003c:
+	{
+		CryptographicException_t3349726436 * L_7 = (CryptographicException_t3349726436 *)il2cpp_codegen_object_new(CryptographicException_t3349726436_il2cpp_TypeInfo_var);
+		CryptographicException__ctor_m2415891459(L_7, _stringLiteral1874080883, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_7);
+	}
+}
+// System.Void System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension::CopyFrom(System.Security.Cryptography.AsnEncodedData)
+extern Il2CppClass* ArgumentNullException_t628810857_il2cpp_TypeInfo_var;
+extern Il2CppClass* X509Extension_t1320896183_il2cpp_TypeInfo_var;
+extern Il2CppClass* ArgumentException_t3259014390_il2cpp_TypeInfo_var;
+extern Il2CppClass* Oid_t3221867120_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2569869112;
+extern Il2CppCodeGenString* _stringLiteral3915869001;
+extern Il2CppCodeGenString* _stringLiteral1568864491;
+extern Il2CppCodeGenString* _stringLiteral2483521376;
+extern const uint32_t X509SubjectKeyIdentifierExtension_CopyFrom_m136762226_MetadataUsageId;
+extern "C"  void X509SubjectKeyIdentifierExtension_CopyFrom_m136762226 (X509SubjectKeyIdentifierExtension_t2508879999 * __this, AsnEncodedData_t463456204 * ___encodedData0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (X509SubjectKeyIdentifierExtension_CopyFrom_m136762226_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	X509Extension_t1320896183 * V_0 = NULL;
+	{
+		AsnEncodedData_t463456204 * L_0 = ___encodedData0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t628810857 * L_1 = (ArgumentNullException_t628810857 *)il2cpp_codegen_object_new(ArgumentNullException_t628810857_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m3380712306(L_1, _stringLiteral2569869112, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0011:
+	{
+		AsnEncodedData_t463456204 * L_2 = ___encodedData0;
+		V_0 = ((X509Extension_t1320896183 *)IsInstClass(L_2, X509Extension_t1320896183_il2cpp_TypeInfo_var));
+		X509Extension_t1320896183 * L_3 = V_0;
+		if (L_3)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		String_t* L_4 = Locale_GetText_m4034107474(NULL /*static, unused*/, _stringLiteral3915869001, /*hidden argument*/NULL);
+		ArgumentException_t3259014390 * L_5 = (ArgumentException_t3259014390 *)il2cpp_codegen_object_new(ArgumentException_t3259014390_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m544251339(L_5, L_4, _stringLiteral2569869112, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5);
+	}
+
+IL_0033:
+	{
+		X509Extension_t1320896183 * L_6 = V_0;
+		NullCheck(L_6);
+		Oid_t3221867120 * L_7 = ((AsnEncodedData_t463456204 *)L_6)->get__oid_0();
+		if (L_7)
+		{
+			goto IL_0058;
+		}
+	}
+	{
+		Oid_t3221867120 * L_8 = (Oid_t3221867120 *)il2cpp_codegen_object_new(Oid_t3221867120_il2cpp_TypeInfo_var);
+		Oid__ctor_m954395291(L_8, _stringLiteral1568864491, _stringLiteral2483521376, /*hidden argument*/NULL);
+		((AsnEncodedData_t463456204 *)__this)->set__oid_0(L_8);
+		goto IL_0069;
+	}
+
+IL_0058:
+	{
+		X509Extension_t1320896183 * L_9 = V_0;
+		NullCheck(L_9);
+		Oid_t3221867120 * L_10 = ((AsnEncodedData_t463456204 *)L_9)->get__oid_0();
+		Oid_t3221867120 * L_11 = (Oid_t3221867120 *)il2cpp_codegen_object_new(Oid_t3221867120_il2cpp_TypeInfo_var);
+		Oid__ctor_m3386806634(L_11, L_10, /*hidden argument*/NULL);
+		((AsnEncodedData_t463456204 *)__this)->set__oid_0(L_11);
+	}
+
+IL_0069:
+	{
+		X509Extension_t1320896183 * L_12 = V_0;
+		NullCheck(L_12);
+		ByteU5BU5D_t3397334013* L_13 = AsnEncodedData_get_RawData_m895923910(L_12, /*hidden argument*/NULL);
+		AsnEncodedData_set_RawData_m1046549989(__this, L_13, /*hidden argument*/NULL);
+		X509Extension_t1320896183 * L_14 = V_0;
+		NullCheck(L_14);
+		bool L_15 = X509Extension_get_Critical_m1395159716(L_14, /*hidden argument*/NULL);
+		X509Extension_set_Critical_m1247863465(__this, L_15, /*hidden argument*/NULL);
+		ByteU5BU5D_t3397334013* L_16 = AsnEncodedData_get_RawData_m895923910(__this, /*hidden argument*/NULL);
+		int32_t L_17 = X509SubjectKeyIdentifierExtension_Decode_m4102819207(__this, L_16, /*hidden argument*/NULL);
+		__this->set__status_8(L_17);
+		return;
+	}
+}
+// System.Byte System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension::FromHexChar(System.Char)
+extern "C"  uint8_t X509SubjectKeyIdentifierExtension_FromHexChar_m4225129392 (Il2CppObject * __this /* static, unused */, Il2CppChar ___c0, const MethodInfo* method)
+{
+	{
+		Il2CppChar L_0 = ___c0;
+		if ((((int32_t)L_0) < ((int32_t)((int32_t)97))))
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		Il2CppChar L_1 = ___c0;
+		if ((((int32_t)L_1) > ((int32_t)((int32_t)102))))
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		Il2CppChar L_2 = ___c0;
+		return (((int32_t)((uint8_t)((int32_t)((int32_t)((int32_t)((int32_t)L_2-(int32_t)((int32_t)97)))+(int32_t)((int32_t)10))))));
+	}
+
+IL_0019:
+	{
+		Il2CppChar L_3 = ___c0;
+		if ((((int32_t)L_3) < ((int32_t)((int32_t)65))))
+		{
+			goto IL_0032;
+		}
+	}
+	{
+		Il2CppChar L_4 = ___c0;
+		if ((((int32_t)L_4) > ((int32_t)((int32_t)70))))
+		{
+			goto IL_0032;
+		}
+	}
+	{
+		Il2CppChar L_5 = ___c0;
+		return (((int32_t)((uint8_t)((int32_t)((int32_t)((int32_t)((int32_t)L_5-(int32_t)((int32_t)65)))+(int32_t)((int32_t)10))))));
+	}
+
+IL_0032:
+	{
+		Il2CppChar L_6 = ___c0;
+		if ((((int32_t)L_6) < ((int32_t)((int32_t)48))))
+		{
+			goto IL_0048;
+		}
+	}
+	{
+		Il2CppChar L_7 = ___c0;
+		if ((((int32_t)L_7) > ((int32_t)((int32_t)57))))
+		{
+			goto IL_0048;
+		}
+	}
+	{
+		Il2CppChar L_8 = ___c0;
+		return (((int32_t)((uint8_t)((int32_t)((int32_t)L_8-(int32_t)((int32_t)48))))));
+	}
+
+IL_0048:
+	{
+		return ((int32_t)255);
+	}
+}
+// System.Byte System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension::FromHexChars(System.Char,System.Char)
+extern "C"  uint8_t X509SubjectKeyIdentifierExtension_FromHexChars_m2515150420 (Il2CppObject * __this /* static, unused */, Il2CppChar ___c10, Il2CppChar ___c21, const MethodInfo* method)
+{
+	uint8_t V_0 = 0x0;
+	{
+		Il2CppChar L_0 = ___c10;
+		uint8_t L_1 = X509SubjectKeyIdentifierExtension_FromHexChar_m4225129392(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		uint8_t L_2 = V_0;
+		if ((((int32_t)L_2) >= ((int32_t)((int32_t)255))))
+		{
+			goto IL_001e;
+		}
+	}
+	{
+		uint8_t L_3 = V_0;
+		Il2CppChar L_4 = ___c21;
+		uint8_t L_5 = X509SubjectKeyIdentifierExtension_FromHexChar_m4225129392(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		V_0 = (((int32_t)((uint8_t)((int32_t)((int32_t)((int32_t)((int32_t)L_3<<(int32_t)4))|(int32_t)L_5)))));
+	}
+
+IL_001e:
+	{
+		uint8_t L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Byte[] System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension::FromHex(System.String)
+extern Il2CppClass* ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var;
+extern const uint32_t X509SubjectKeyIdentifierExtension_FromHex_m3272045013_MetadataUsageId;
+extern "C"  ByteU5BU5D_t3397334013* X509SubjectKeyIdentifierExtension_FromHex_m3272045013 (Il2CppObject * __this /* static, unused */, String_t* ___hex0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (X509SubjectKeyIdentifierExtension_FromHex_m3272045013_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	ByteU5BU5D_t3397334013* V_1 = NULL;
+	int32_t V_2 = 0;
+	int32_t V_3 = 0;
+	{
+		String_t* L_0 = ___hex0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		return (ByteU5BU5D_t3397334013*)NULL;
+	}
+
+IL_0008:
+	{
+		String_t* L_1 = ___hex0;
+		NullCheck(L_1);
+		int32_t L_2 = String_get_Length_m1606060069(L_1, /*hidden argument*/NULL);
+		V_0 = ((int32_t)((int32_t)L_2>>(int32_t)1));
+		int32_t L_3 = V_0;
+		V_1 = ((ByteU5BU5D_t3397334013*)SZArrayNew(ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var, (uint32_t)L_3));
+		V_2 = 0;
+		V_3 = 0;
+		goto IL_0043;
+	}
+
+IL_0021:
+	{
+		ByteU5BU5D_t3397334013* L_4 = V_1;
+		int32_t L_5 = V_2;
+		int32_t L_6 = L_5;
+		V_2 = ((int32_t)((int32_t)L_6+(int32_t)1));
+		String_t* L_7 = ___hex0;
+		int32_t L_8 = V_3;
+		int32_t L_9 = L_8;
+		V_3 = ((int32_t)((int32_t)L_9+(int32_t)1));
+		NullCheck(L_7);
+		Il2CppChar L_10 = String_get_Chars_m4230566705(L_7, L_9, /*hidden argument*/NULL);
+		String_t* L_11 = ___hex0;
+		int32_t L_12 = V_3;
+		int32_t L_13 = L_12;
+		V_3 = ((int32_t)((int32_t)L_13+(int32_t)1));
+		NullCheck(L_11);
+		Il2CppChar L_14 = String_get_Chars_m4230566705(L_11, L_13, /*hidden argument*/NULL);
+		uint8_t L_15 = X509SubjectKeyIdentifierExtension_FromHexChars_m2515150420(NULL /*static, unused*/, L_10, L_14, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_6), (uint8_t)L_15);
+	}
+
+IL_0043:
+	{
+		int32_t L_16 = V_2;
+		int32_t L_17 = V_0;
+		if ((((int32_t)L_16) < ((int32_t)L_17)))
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		ByteU5BU5D_t3397334013* L_18 = V_1;
+		return L_18;
+	}
+}
+// System.Security.Cryptography.AsnDecodeStatus System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension::Decode(System.Byte[])
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* ASN1_t924533536_il2cpp_TypeInfo_var;
+extern Il2CppClass* Il2CppObject_il2cpp_TypeInfo_var;
+extern const uint32_t X509SubjectKeyIdentifierExtension_Decode_m4102819207_MetadataUsageId;
+extern "C"  int32_t X509SubjectKeyIdentifierExtension_Decode_m4102819207 (X509SubjectKeyIdentifierExtension_t2508879999 * __this, ByteU5BU5D_t3397334013* ___extension0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (X509SubjectKeyIdentifierExtension_Decode_m4102819207_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ASN1_t924533536 * V_0 = NULL;
+	int32_t V_1 = 0;
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		ByteU5BU5D_t3397334013* L_0 = ___extension0;
+		if (!L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		ByteU5BU5D_t3397334013* L_1 = ___extension0;
+		NullCheck(L_1);
+		if ((((int32_t)((int32_t)(((Il2CppArray *)L_1)->max_length)))))
+		{
+			goto IL_0010;
+		}
+	}
+
+IL_000e:
+	{
+		return (int32_t)(1);
+	}
+
+IL_0010:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_2 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		__this->set__ski_7(L_2);
+		ByteU5BU5D_t3397334013* L_3 = ___extension0;
+		NullCheck(L_3);
+		int32_t L_4 = 0;
+		uint8_t L_5 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
+		if ((((int32_t)L_5) == ((int32_t)4)))
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		return (int32_t)(2);
+	}
+
+IL_0026:
+	{
+		ByteU5BU5D_t3397334013* L_6 = ___extension0;
+		NullCheck(L_6);
+		if ((!(((uint32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_6)->max_length))))) == ((uint32_t)2))))
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		return (int32_t)(4);
+	}
+
+IL_0031:
+	{
+		ByteU5BU5D_t3397334013* L_7 = ___extension0;
+		NullCheck(L_7);
+		if ((((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_7)->max_length))))) >= ((int32_t)3)))
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		return (int32_t)(3);
+	}
+
+IL_003c:
+	try
+	{ // begin try (depth: 1)
+		ByteU5BU5D_t3397334013* L_8 = ___extension0;
+		ASN1_t924533536 * L_9 = (ASN1_t924533536 *)il2cpp_codegen_object_new(ASN1_t924533536_il2cpp_TypeInfo_var);
+		ASN1__ctor_m1653629327(L_9, L_8, /*hidden argument*/NULL);
+		V_0 = L_9;
+		ASN1_t924533536 * L_10 = V_0;
+		NullCheck(L_10);
+		ByteU5BU5D_t3397334013* L_11 = ASN1_get_Value_m3116965808(L_10, /*hidden argument*/NULL);
+		__this->set__subjectKeyIdentifier_6(L_11);
+		goto IL_0061;
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__exception_local = (Exception_t1927440687 *)e.ex;
+		if(il2cpp_codegen_class_is_assignable_from (Il2CppObject_il2cpp_TypeInfo_var, e.ex->object.klass))
+			goto CATCH_0054;
+		throw e;
+	}
+
+CATCH_0054:
+	{ // begin catch(System.Object)
+		{
+			V_1 = 1;
+			goto IL_0063;
+		}
+
+IL_005c:
+		{
+			; // IL_005c: leave IL_0061
+		}
+	} // end catch (depth: 1)
+
+IL_0061:
+	{
+		return (int32_t)(0);
+	}
+
+IL_0063:
+	{
+		int32_t L_12 = V_1;
+		return L_12;
+	}
+}
+// System.Byte[] System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension::Encode()
+extern Il2CppClass* ASN1_t924533536_il2cpp_TypeInfo_var;
+extern const uint32_t X509SubjectKeyIdentifierExtension_Encode_m4237278042_MetadataUsageId;
+extern "C"  ByteU5BU5D_t3397334013* X509SubjectKeyIdentifierExtension_Encode_m4237278042 (X509SubjectKeyIdentifierExtension_t2508879999 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (X509SubjectKeyIdentifierExtension_Encode_m4237278042_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ASN1_t924533536 * V_0 = NULL;
+	{
+		ByteU5BU5D_t3397334013* L_0 = __this->get__subjectKeyIdentifier_6();
+		ASN1_t924533536 * L_1 = (ASN1_t924533536 *)il2cpp_codegen_object_new(ASN1_t924533536_il2cpp_TypeInfo_var);
+		ASN1__ctor_m1045937444(L_1, 4, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		ASN1_t924533536 * L_2 = V_0;
+		NullCheck(L_2);
+		ByteU5BU5D_t3397334013* L_3 = VirtFuncInvoker0< ByteU5BU5D_t3397334013* >::Invoke(4 /* System.Byte[] Mono.Security.ASN1::GetBytes() */, L_2);
+		return L_3;
+	}
+}
+// System.String System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension::ToString(System.Boolean)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* StringBuilder_t1221177846_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral652014170;
+extern Il2CppCodeGenString* _stringLiteral1568864491;
+extern Il2CppCodeGenString* _stringLiteral4000354433;
+extern Il2CppCodeGenString* _stringLiteral3231012720;
+extern Il2CppCodeGenString* _stringLiteral372029310;
+extern const uint32_t X509SubjectKeyIdentifierExtension_ToString_m4073475390_MetadataUsageId;
+extern "C"  String_t* X509SubjectKeyIdentifierExtension_ToString_m4073475390 (X509SubjectKeyIdentifierExtension_t2508879999 * __this, bool ___multiLine0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (X509SubjectKeyIdentifierExtension_ToString_m4073475390_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	StringBuilder_t1221177846 * V_0 = NULL;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	{
+		int32_t L_0 = __this->get__status_8();
+		V_2 = L_0;
+		int32_t L_1 = V_2;
+		if (((int32_t)((int32_t)L_1-(int32_t)1)) == 0)
+		{
+			goto IL_0024;
+		}
+		if (((int32_t)((int32_t)L_1-(int32_t)1)) == 1)
+		{
+			goto IL_002a;
+		}
+		if (((int32_t)((int32_t)L_1-(int32_t)1)) == 2)
+		{
+			goto IL_002a;
+		}
+		if (((int32_t)((int32_t)L_1-(int32_t)1)) == 3)
+		{
+			goto IL_0037;
+		}
+	}
+	{
+		goto IL_003d;
+	}
+
+IL_0024:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_2 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		return L_2;
+	}
+
+IL_002a:
+	{
+		ByteU5BU5D_t3397334013* L_3 = ((AsnEncodedData_t463456204 *)__this)->get__raw_1();
+		String_t* L_4 = X509Extension_FormatUnkownData_m4057132051(__this, L_3, /*hidden argument*/NULL);
+		return L_4;
+	}
+
+IL_0037:
+	{
+		return _stringLiteral652014170;
+	}
+
+IL_003d:
+	{
+		Oid_t3221867120 * L_5 = ((AsnEncodedData_t463456204 *)__this)->get__oid_0();
+		NullCheck(L_5);
+		String_t* L_6 = Oid_get_Value_m2271181078(L_5, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_7 = String_op_Inequality_m304203149(NULL /*static, unused*/, L_6, _stringLiteral1568864491, /*hidden argument*/NULL);
+		if (!L_7)
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		Oid_t3221867120 * L_8 = ((AsnEncodedData_t463456204 *)__this)->get__oid_0();
+		NullCheck(L_8);
+		String_t* L_9 = Oid_get_Value_m2271181078(L_8, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_10 = String_Format_m2024975688(NULL /*static, unused*/, _stringLiteral4000354433, L_9, /*hidden argument*/NULL);
+		return L_10;
+	}
+
+IL_006d:
+	{
+		StringBuilder_t1221177846 * L_11 = (StringBuilder_t1221177846 *)il2cpp_codegen_object_new(StringBuilder_t1221177846_il2cpp_TypeInfo_var);
+		StringBuilder__ctor_m3946851802(L_11, /*hidden argument*/NULL);
+		V_0 = L_11;
+		V_1 = 0;
+		goto IL_00b7;
+	}
+
+IL_007a:
+	{
+		StringBuilder_t1221177846 * L_12 = V_0;
+		ByteU5BU5D_t3397334013* L_13 = __this->get__subjectKeyIdentifier_6();
+		int32_t L_14 = V_1;
+		NullCheck(L_13);
+		String_t* L_15 = Byte_ToString_m1309661918(((L_13)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_14))), _stringLiteral3231012720, /*hidden argument*/NULL);
+		NullCheck(L_12);
+		StringBuilder_Append_m3636508479(L_12, L_15, /*hidden argument*/NULL);
+		int32_t L_16 = V_1;
+		ByteU5BU5D_t3397334013* L_17 = __this->get__subjectKeyIdentifier_6();
+		NullCheck(L_17);
+		if ((((int32_t)L_16) == ((int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_17)->max_length))))-(int32_t)1)))))
+		{
+			goto IL_00b3;
+		}
+	}
+	{
+		StringBuilder_t1221177846 * L_18 = V_0;
+		NullCheck(L_18);
+		StringBuilder_Append_m3636508479(L_18, _stringLiteral372029310, /*hidden argument*/NULL);
+	}
+
+IL_00b3:
+	{
+		int32_t L_19 = V_1;
+		V_1 = ((int32_t)((int32_t)L_19+(int32_t)1));
+	}
+
+IL_00b7:
+	{
+		int32_t L_20 = V_1;
+		ByteU5BU5D_t3397334013* L_21 = __this->get__subjectKeyIdentifier_6();
+		NullCheck(L_21);
+		if ((((int32_t)L_20) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_21)->max_length)))))))
+		{
+			goto IL_007a;
+		}
+	}
+	{
+		bool L_22 = ___multiLine0;
+		if (!L_22)
+		{
+			goto IL_00d7;
+		}
+	}
+	{
+		StringBuilder_t1221177846 * L_23 = V_0;
+		String_t* L_24 = Environment_get_NewLine_m266316410(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_23);
+		StringBuilder_Append_m3636508479(L_23, L_24, /*hidden argument*/NULL);
+	}
+
+IL_00d7:
+	{
+		StringBuilder_t1221177846 * L_25 = V_0;
+		NullCheck(L_25);
+		String_t* L_26 = StringBuilder_ToString_m1507807375(L_25, /*hidden argument*/NULL);
+		return L_26;
+	}
+}
 // System.Void System.Text.RegularExpressions.BaseMachine::.ctor()
 extern "C"  void BaseMachine__ctor_m2327544039 (BaseMachine_t4008011478 * __this, const MethodInfo* method)
 {
@@ -467,6 +1951,288 @@ extern "C"  void BaseMachine__ctor_m2327544039 (BaseMachine_t4008011478 * __this
 		__this->set_needs_groups_or_captures_0((bool)1);
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
 		return;
+	}
+}
+// System.String[] System.Text.RegularExpressions.BaseMachine::Split(System.Text.RegularExpressions.Regex,System.String,System.Int32,System.Int32)
+extern const Il2CppType* String_t_0_0_0_var;
+extern Il2CppClass* ArrayList_t4252133567_il2cpp_TypeInfo_var;
+extern Il2CppClass* Type_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* StringU5BU5D_t1642385972_il2cpp_TypeInfo_var;
+extern const uint32_t BaseMachine_Split_m3850876468_MetadataUsageId;
+extern "C"  StringU5BU5D_t1642385972* BaseMachine_Split_m3850876468 (BaseMachine_t4008011478 * __this, Regex_t1803876613 * ___regex0, String_t* ___input1, int32_t ___count2, int32_t ___startat3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (BaseMachine_Split_m3850876468_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	ArrayList_t4252133567 * V_0 = NULL;
+	int32_t V_1 = 0;
+	Match_t3164245899 * V_2 = NULL;
+	int32_t V_3 = 0;
+	int32_t V_4 = 0;
+	Group_t3761430853 * V_5 = NULL;
+	{
+		ArrayList_t4252133567 * L_0 = (ArrayList_t4252133567 *)il2cpp_codegen_object_new(ArrayList_t4252133567_il2cpp_TypeInfo_var);
+		ArrayList__ctor_m4012174379(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		int32_t L_1 = ___count2;
+		if (L_1)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		___count2 = ((int32_t)2147483647LL);
+	}
+
+IL_0013:
+	{
+		int32_t L_2 = ___startat3;
+		V_1 = L_2;
+		V_2 = (Match_t3164245899 *)NULL;
+		goto IL_0108;
+	}
+
+IL_001d:
+	{
+		Match_t3164245899 * L_3 = V_2;
+		if (!L_3)
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		Match_t3164245899 * L_4 = V_2;
+		NullCheck(L_4);
+		Match_t3164245899 * L_5 = Match_NextMatch_m1088868049(L_4, /*hidden argument*/NULL);
+		V_2 = L_5;
+		goto IL_0038;
+	}
+
+IL_002f:
+	{
+		Regex_t1803876613 * L_6 = ___regex0;
+		String_t* L_7 = ___input1;
+		int32_t L_8 = V_1;
+		NullCheck(L_6);
+		Match_t3164245899 * L_9 = Regex_Match_m4277133443(L_6, L_7, L_8, /*hidden argument*/NULL);
+		V_2 = L_9;
+	}
+
+IL_0038:
+	{
+		Match_t3164245899 * L_10 = V_2;
+		NullCheck(L_10);
+		bool L_11 = Group_get_Success_m2001463544(L_10, /*hidden argument*/NULL);
+		if (L_11)
+		{
+			goto IL_0048;
+		}
+	}
+	{
+		goto IL_0114;
+	}
+
+IL_0048:
+	{
+		Regex_t1803876613 * L_12 = ___regex0;
+		NullCheck(L_12);
+		bool L_13 = Regex_get_RightToLeft_m529734879(L_12, /*hidden argument*/NULL);
+		if (!L_13)
+		{
+			goto IL_0081;
+		}
+	}
+	{
+		ArrayList_t4252133567 * L_14 = V_0;
+		String_t* L_15 = ___input1;
+		Match_t3164245899 * L_16 = V_2;
+		NullCheck(L_16);
+		int32_t L_17 = Capture_get_Index_m819425556(L_16, /*hidden argument*/NULL);
+		Match_t3164245899 * L_18 = V_2;
+		NullCheck(L_18);
+		int32_t L_19 = Capture_get_Length_m1952322390(L_18, /*hidden argument*/NULL);
+		int32_t L_20 = V_1;
+		Match_t3164245899 * L_21 = V_2;
+		NullCheck(L_21);
+		int32_t L_22 = Capture_get_Index_m819425556(L_21, /*hidden argument*/NULL);
+		Match_t3164245899 * L_23 = V_2;
+		NullCheck(L_23);
+		int32_t L_24 = Capture_get_Length_m1952322390(L_23, /*hidden argument*/NULL);
+		NullCheck(L_15);
+		String_t* L_25 = String_Substring_m12482732(L_15, ((int32_t)((int32_t)L_17+(int32_t)L_19)), ((int32_t)((int32_t)((int32_t)((int32_t)L_20-(int32_t)L_22))-(int32_t)L_24)), /*hidden argument*/NULL);
+		NullCheck(L_14);
+		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(30 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_14, L_25);
+		goto IL_0097;
+	}
+
+IL_0081:
+	{
+		ArrayList_t4252133567 * L_26 = V_0;
+		String_t* L_27 = ___input1;
+		int32_t L_28 = V_1;
+		Match_t3164245899 * L_29 = V_2;
+		NullCheck(L_29);
+		int32_t L_30 = Capture_get_Index_m819425556(L_29, /*hidden argument*/NULL);
+		int32_t L_31 = V_1;
+		NullCheck(L_27);
+		String_t* L_32 = String_Substring_m12482732(L_27, L_28, ((int32_t)((int32_t)L_30-(int32_t)L_31)), /*hidden argument*/NULL);
+		NullCheck(L_26);
+		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(30 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_26, L_32);
+	}
+
+IL_0097:
+	{
+		Match_t3164245899 * L_33 = V_2;
+		NullCheck(L_33);
+		GroupCollection_t939014605 * L_34 = VirtFuncInvoker0< GroupCollection_t939014605 * >::Invoke(4 /* System.Text.RegularExpressions.GroupCollection System.Text.RegularExpressions.Match::get_Groups() */, L_33);
+		NullCheck(L_34);
+		int32_t L_35 = GroupCollection_get_Count_m3713315052(L_34, /*hidden argument*/NULL);
+		V_3 = L_35;
+		V_4 = 1;
+		goto IL_00db;
+	}
+
+IL_00ab:
+	{
+		Match_t3164245899 * L_36 = V_2;
+		NullCheck(L_36);
+		GroupCollection_t939014605 * L_37 = VirtFuncInvoker0< GroupCollection_t939014605 * >::Invoke(4 /* System.Text.RegularExpressions.GroupCollection System.Text.RegularExpressions.Match::get_Groups() */, L_36);
+		int32_t L_38 = V_4;
+		NullCheck(L_37);
+		Group_t3761430853 * L_39 = GroupCollection_get_Item_m3695725918(L_37, L_38, /*hidden argument*/NULL);
+		V_5 = L_39;
+		ArrayList_t4252133567 * L_40 = V_0;
+		String_t* L_41 = ___input1;
+		Group_t3761430853 * L_42 = V_5;
+		NullCheck(L_42);
+		int32_t L_43 = Capture_get_Index_m819425556(L_42, /*hidden argument*/NULL);
+		Group_t3761430853 * L_44 = V_5;
+		NullCheck(L_44);
+		int32_t L_45 = Capture_get_Length_m1952322390(L_44, /*hidden argument*/NULL);
+		NullCheck(L_41);
+		String_t* L_46 = String_Substring_m12482732(L_41, L_43, L_45, /*hidden argument*/NULL);
+		NullCheck(L_40);
+		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(30 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_40, L_46);
+		int32_t L_47 = V_4;
+		V_4 = ((int32_t)((int32_t)L_47+(int32_t)1));
+	}
+
+IL_00db:
+	{
+		int32_t L_48 = V_4;
+		int32_t L_49 = V_3;
+		if ((((int32_t)L_48) < ((int32_t)L_49)))
+		{
+			goto IL_00ab;
+		}
+	}
+	{
+		Regex_t1803876613 * L_50 = ___regex0;
+		NullCheck(L_50);
+		bool L_51 = Regex_get_RightToLeft_m529734879(L_50, /*hidden argument*/NULL);
+		if (!L_51)
+		{
+			goto IL_00fa;
+		}
+	}
+	{
+		Match_t3164245899 * L_52 = V_2;
+		NullCheck(L_52);
+		int32_t L_53 = Capture_get_Index_m819425556(L_52, /*hidden argument*/NULL);
+		V_1 = L_53;
+		goto IL_0108;
+	}
+
+IL_00fa:
+	{
+		Match_t3164245899 * L_54 = V_2;
+		NullCheck(L_54);
+		int32_t L_55 = Capture_get_Index_m819425556(L_54, /*hidden argument*/NULL);
+		Match_t3164245899 * L_56 = V_2;
+		NullCheck(L_56);
+		int32_t L_57 = Capture_get_Length_m1952322390(L_56, /*hidden argument*/NULL);
+		V_1 = ((int32_t)((int32_t)L_55+(int32_t)L_57));
+	}
+
+IL_0108:
+	{
+		int32_t L_58 = ___count2;
+		int32_t L_59 = ((int32_t)((int32_t)L_58-(int32_t)1));
+		___count2 = L_59;
+		if ((((int32_t)L_59) > ((int32_t)0)))
+		{
+			goto IL_001d;
+		}
+	}
+
+IL_0114:
+	{
+		Regex_t1803876613 * L_60 = ___regex0;
+		NullCheck(L_60);
+		bool L_61 = Regex_get_RightToLeft_m529734879(L_60, /*hidden argument*/NULL);
+		if (!L_61)
+		{
+			goto IL_0135;
+		}
+	}
+	{
+		int32_t L_62 = V_1;
+		if ((((int32_t)L_62) < ((int32_t)0)))
+		{
+			goto IL_0135;
+		}
+	}
+	{
+		ArrayList_t4252133567 * L_63 = V_0;
+		String_t* L_64 = ___input1;
+		int32_t L_65 = V_1;
+		NullCheck(L_64);
+		String_t* L_66 = String_Substring_m12482732(L_64, 0, L_65, /*hidden argument*/NULL);
+		NullCheck(L_63);
+		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(30 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_63, L_66);
+	}
+
+IL_0135:
+	{
+		Regex_t1803876613 * L_67 = ___regex0;
+		NullCheck(L_67);
+		bool L_68 = Regex_get_RightToLeft_m529734879(L_67, /*hidden argument*/NULL);
+		if (L_68)
+		{
+			goto IL_015a;
+		}
+	}
+	{
+		int32_t L_69 = V_1;
+		String_t* L_70 = ___input1;
+		NullCheck(L_70);
+		int32_t L_71 = String_get_Length_m1606060069(L_70, /*hidden argument*/NULL);
+		if ((((int32_t)L_69) > ((int32_t)L_71)))
+		{
+			goto IL_015a;
+		}
+	}
+	{
+		ArrayList_t4252133567 * L_72 = V_0;
+		String_t* L_73 = ___input1;
+		int32_t L_74 = V_1;
+		NullCheck(L_73);
+		String_t* L_75 = String_Substring_m2032624251(L_73, L_74, /*hidden argument*/NULL);
+		NullCheck(L_72);
+		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(30 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_72, L_75);
+	}
+
+IL_015a:
+	{
+		ArrayList_t4252133567 * L_76 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_77 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(String_t_0_0_0_var), /*hidden argument*/NULL);
+		NullCheck(L_76);
+		Il2CppArray * L_78 = VirtFuncInvoker1< Il2CppArray *, Type_t * >::Invoke(48 /* System.Array System.Collections.ArrayList::ToArray(System.Type) */, L_76, L_77);
+		return ((StringU5BU5D_t1642385972*)Castclass(L_78, StringU5BU5D_t1642385972_il2cpp_TypeInfo_var));
 	}
 }
 // System.Text.RegularExpressions.Match System.Text.RegularExpressions.BaseMachine::Scan(System.Text.RegularExpressions.Regex,System.String,System.Int32,System.Int32)
@@ -21559,7 +23325,7 @@ extern "C"  void Regex__ctor_m3250610064 (Regex_t1803876613 * __this, const Meth
 	}
 }
 // System.Void System.Text.RegularExpressions.Regex::.ctor(System.String)
-extern "C"  void Regex__ctor_m2794328522 (Regex_t1803876613 * __this, String_t* ___pattern0, const MethodInfo* method)
+extern "C"  void Regex__ctor_m2930443103 (Regex_t1803876613 * __this, String_t* ___pattern0, const MethodInfo* method)
 {
 	{
 		String_t* L_0 = ___pattern0;
@@ -21688,6 +23454,50 @@ extern "C"  void Regex_System_Runtime_Serialization_ISerializable_GetObjectData_
 		NullCheck(L_3);
 		SerializationInfo_AddValue_m1781549036(L_3, _stringLiteral1510501756, L_6, L_7, /*hidden argument*/NULL);
 		return;
+	}
+}
+// System.String[] System.Text.RegularExpressions.Regex::Split(System.String,System.String)
+extern Il2CppClass* Regex_t1803876613_il2cpp_TypeInfo_var;
+extern const uint32_t Regex_Split_m4283382107_MetadataUsageId;
+extern "C"  StringU5BU5D_t1642385972* Regex_Split_m4283382107 (Il2CppObject * __this /* static, unused */, String_t* ___input0, String_t* ___pattern1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Regex_Split_m4283382107_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___input0;
+		String_t* L_1 = ___pattern1;
+		IL2CPP_RUNTIME_CLASS_INIT(Regex_t1803876613_il2cpp_TypeInfo_var);
+		StringU5BU5D_t1642385972* L_2 = Regex_Split_m2213626959(NULL /*static, unused*/, L_0, L_1, 0, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+// System.String[] System.Text.RegularExpressions.Regex::Split(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+extern Il2CppClass* Regex_t1803876613_il2cpp_TypeInfo_var;
+extern const uint32_t Regex_Split_m2213626959_MetadataUsageId;
+extern "C"  StringU5BU5D_t1642385972* Regex_Split_m2213626959 (Il2CppObject * __this /* static, unused */, String_t* ___input0, String_t* ___pattern1, int32_t ___options2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Regex_Split_m2213626959_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Regex_t1803876613 * V_0 = NULL;
+	{
+		String_t* L_0 = ___pattern1;
+		int32_t L_1 = ___options2;
+		Regex_t1803876613 * L_2 = (Regex_t1803876613 *)il2cpp_codegen_object_new(Regex_t1803876613_il2cpp_TypeInfo_var);
+		Regex__ctor_m2521903438(L_2, L_0, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		Regex_t1803876613 * L_3 = V_0;
+		String_t* L_4 = ___input0;
+		NullCheck(L_3);
+		StringU5BU5D_t1642385972* L_5 = Regex_Split_m1805163013(L_3, L_4, /*hidden argument*/NULL);
+		return L_5;
 	}
 }
 // System.Void System.Text.RegularExpressions.Regex::validate_options(System.Text.RegularExpressions.RegexOptions)
@@ -22177,6 +23987,97 @@ extern "C"  MatchCollection_t3718216671 * Regex_Matches_m1377235443 (Regex_t1803
 		MatchCollection_t3718216671 * L_4 = (MatchCollection_t3718216671 *)il2cpp_codegen_object_new(MatchCollection_t3718216671_il2cpp_TypeInfo_var);
 		MatchCollection__ctor_m1944681790(L_4, L_3, /*hidden argument*/NULL);
 		return L_4;
+	}
+}
+// System.String[] System.Text.RegularExpressions.Regex::Split(System.String)
+extern "C"  StringU5BU5D_t1642385972* Regex_Split_m1805163013 (Regex_t1803876613 * __this, String_t* ___input0, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___input0;
+		String_t* L_1 = ___input0;
+		int32_t L_2 = Regex_default_startat_m2116037983(__this, L_1, /*hidden argument*/NULL);
+		StringU5BU5D_t1642385972* L_3 = Regex_Split_m1359617913(__this, L_0, ((int32_t)2147483647LL), L_2, /*hidden argument*/NULL);
+		return L_3;
+	}
+}
+// System.String[] System.Text.RegularExpressions.Regex::Split(System.String,System.Int32,System.Int32)
+extern Il2CppClass* ArgumentNullException_t628810857_il2cpp_TypeInfo_var;
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppClass* IMachine_t3406191350_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral748179678;
+extern Il2CppCodeGenString* _stringLiteral1554746267;
+extern Il2CppCodeGenString* _stringLiteral2557331649;
+extern const uint32_t Regex_Split_m1359617913_MetadataUsageId;
+extern "C"  StringU5BU5D_t1642385972* Regex_Split_m1359617913 (Regex_t1803876613 * __this, String_t* ___input0, int32_t ___count1, int32_t ___startat2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Regex_Split_m1359617913_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___input0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t628810857 * L_1 = (ArgumentNullException_t628810857 *)il2cpp_codegen_object_new(ArgumentNullException_t628810857_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m3380712306(L_1, _stringLiteral748179678, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0011:
+	{
+		int32_t L_2 = ___count1;
+		if ((((int32_t)L_2) >= ((int32_t)0)))
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_3 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_3, _stringLiteral1554746267, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
+	}
+
+IL_0023:
+	{
+		int32_t L_4 = ___startat2;
+		if ((((int32_t)L_4) < ((int32_t)0)))
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		int32_t L_5 = ___startat2;
+		String_t* L_6 = ___input0;
+		NullCheck(L_6);
+		int32_t L_7 = String_get_Length_m1606060069(L_6, /*hidden argument*/NULL);
+		if ((((int32_t)L_5) <= ((int32_t)L_7)))
+		{
+			goto IL_0041;
+		}
+	}
+
+IL_0036:
+	{
+		ArgumentOutOfRangeException_t279959794 * L_8 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_8, _stringLiteral2557331649, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_8);
+	}
+
+IL_0041:
+	{
+		Il2CppObject * L_9 = Regex_CreateMachine_m1003508921(__this, /*hidden argument*/NULL);
+		String_t* L_10 = ___input0;
+		int32_t L_11 = ___count1;
+		int32_t L_12 = ___startat2;
+		NullCheck(L_9);
+		StringU5BU5D_t1642385972* L_13 = InterfaceFuncInvoker4< StringU5BU5D_t1642385972*, Regex_t1803876613 *, String_t*, int32_t, int32_t >::Invoke(1 /* System.String[] System.Text.RegularExpressions.IMachine::Split(System.Text.RegularExpressions.Regex,System.String,System.Int32,System.Int32) */, IMachine_t3406191350_il2cpp_TypeInfo_var, L_9, __this, L_10, L_11, L_12);
+		return L_13;
 	}
 }
 // System.String System.Text.RegularExpressions.Regex::ToString()
@@ -56200,7 +58101,7 @@ extern "C"  void UriParser__cctor_m1839415991 (Il2CppObject * __this /* static, 
 		Regex__ctor_m2521903438(L_1, _stringLiteral704347881, 8, /*hidden argument*/NULL);
 		((UriParser_t1012511323_StaticFields*)UriParser_t1012511323_il2cpp_TypeInfo_var->static_fields)->set_uri_regex_4(L_1);
 		Regex_t1803876613 * L_2 = (Regex_t1803876613 *)il2cpp_codegen_object_new(Regex_t1803876613_il2cpp_TypeInfo_var);
-		Regex__ctor_m2794328522(L_2, _stringLiteral1509538344, /*hidden argument*/NULL);
+		Regex__ctor_m2930443103(L_2, _stringLiteral1509538344, /*hidden argument*/NULL);
 		((UriParser_t1012511323_StaticFields*)UriParser_t1012511323_il2cpp_TypeInfo_var->static_fields)->set_auth_regex_5(L_2);
 		return;
 	}

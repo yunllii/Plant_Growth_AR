@@ -18,6 +18,8 @@ struct MulticastDelegate_t3201952435;
 struct SerializationInfo_t228987430;
 // System.Object
 struct Il2CppObject;
+// System.Object[]
+struct ObjectU5BU5D_t3614634134;
 // System.Delegate[]
 struct DelegateU5BU5D_t1606206610;
 // System.Delegate
@@ -32,6 +34,8 @@ struct Delegate_t3022476291;
 
 // System.Void System.MulticastDelegate::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 extern "C"  void MulticastDelegate_GetObjectData_m3187757658 (MulticastDelegate_t3201952435 * __this, SerializationInfo_t228987430 * ___info0, StreamingContext_t1417235061  ___context1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Object System.MulticastDelegate::DynamicInvokeImpl(System.Object[])
+extern "C"  Il2CppObject * MulticastDelegate_DynamicInvokeImpl_m1972355936 (MulticastDelegate_t3201952435 * __this, ObjectU5BU5D_t3614634134* ___args0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.MulticastDelegate::Equals(System.Object)
 extern "C"  bool MulticastDelegate_Equals_m3064081489 (MulticastDelegate_t3201952435 * __this, Il2CppObject * ___obj0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.MulticastDelegate::GetHashCode()

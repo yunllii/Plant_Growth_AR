@@ -13,6 +13,16 @@
 #include <limits>
 #include <assert.h>
 
+// InRoomRoundTimer
+struct InRoomRoundTimer_t2145612055;
+// ExitGames.Client.Photon.Hashtable
+struct Hashtable_t995404622;
+// PhotonPlayer
+struct PhotonPlayer_t4120608827;
+// InRoomTime
+struct InRoomTime_t4117091819;
+// System.Collections.IEnumerator
+struct IEnumerator_t1466026749;
 // InRoomTime/<SetRoomStartTimestamp>c__Iterator0
 struct U3CSetRoomStartTimestampU3Ec__Iterator0_t287711506;
 // System.Object
@@ -45,8 +55,6 @@ struct EnterRoomParams_t2222988781;
 struct OpJoinRandomRoomParams_t449785843;
 // System.String[]
 struct StringU5BU5D_t1642385972;
-// ExitGames.Client.Photon.Hashtable
-struct Hashtable_t995404622;
 // AuthenticationValues
 struct AuthenticationValues_t1430961670;
 // System.Byte[]
@@ -93,8 +101,6 @@ struct CullArea_t3831440099;
 struct NetworkingPeer_t3034011222;
 // Room
 struct Room_t1042398373;
-// PhotonPlayer
-struct PhotonPlayer_t4120608827;
 // System.Collections.Generic.List`1<Region>
 struct List_1_t990992504;
 // ExitGames.Client.Photon.OperationResponse
@@ -123,8 +129,6 @@ struct OnAwakePhysicsSettings_t211072656;
 struct OnAwakeUsePhotonView_t50327424;
 // OnClickCallMethod
 struct OnClickCallMethod_t4200492266;
-// System.Collections.IEnumerator
-struct IEnumerator_t1466026749;
 // OnClickDestroy/<DestroyRpc>c__Iterator0
 struct U3CDestroyRpcU3Ec__Iterator0_t2941137122;
 // OnClickDisableObj
@@ -279,35 +283,47 @@ struct PointedAtGameObjectInfo_t1351968391;
 struct PunEvent_t2040493857;
 // PunPlayerScores
 struct PunPlayerScores_t851215673;
-// PunRPC
-struct PunRPC_t2663265338;
-// PunTeams
-struct PunTeams_t2511225963;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
-#include "AssemblyU2DCSharp_InRoomTime_U3CSetRoomStartTimesta287711506.h"
-#include "AssemblyU2DCSharp_InRoomTime_U3CSetRoomStartTimesta287711506MethodDeclarations.h"
+#include "AssemblyU2DCSharp_InRoomRoundTimer2145612055.h"
+#include "AssemblyU2DCSharp_InRoomRoundTimer2145612055MethodDeclarations.h"
 #include "mscorlib_System_Void1841601450.h"
-#include "mscorlib_System_Object2689449295MethodDeclarations.h"
-#include "mscorlib_System_Boolean3825574718.h"
-#include "AssemblyU2DCSharp_InRoomTime4117091819MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_MonoBehaviour1158329972MethodDeclarations.h"
+#include "mscorlib_System_Int322071877448.h"
+#include "UnityEngine_UnityEngine_Rect3681755626.h"
+#include "UnityEngine_UnityEngine_Rect3681755626MethodDeclarations.h"
+#include "mscorlib_System_Single2076509932.h"
 #include "AssemblyU2DCSharp_PhotonNetwork1563132424MethodDeclarations.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_Hashtable995404622MethodDeclarations.h"
 #include "AssemblyU2DCSharp_Room1042398373MethodDeclarations.h"
-#include "mscorlib_System_UInt322149682021.h"
-#include "mscorlib_System_Int322071877448.h"
-#include "AssemblyU2DCSharp_InRoomTime4117091819.h"
-#include "mscorlib_System_Object2689449295.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_Hashtable995404622.h"
+#include "mscorlib_System_Double4078015681.h"
+#include "mscorlib_System_Boolean3825574718.h"
 #include "mscorlib_System_String2029220233.h"
+#include "mscorlib_System_Object2689449295.h"
 #include "AssemblyU2DCSharp_Room1042398373.h"
+#include "AssemblyU2DCSharp_RoomInfo4257638335MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_g2281509423MethodDeclarations.h"
+#include "mscorlib_System_String2029220233MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Debug1368543263MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_g2281509423.h"
+#include "AssemblyU2DCSharp_PhotonPlayer4120608827.h"
+#include "UnityEngine_UnityEngine_GUILayout2579273657MethodDeclarations.h"
+#include "UnityEngine_ArrayTypes.h"
+#include "UnityEngine_UnityEngine_GUILayoutOption4183744904.h"
+#include "AssemblyU2DCSharp_InRoomTime4117091819.h"
+#include "AssemblyU2DCSharp_InRoomTime4117091819MethodDeclarations.h"
+#include "mscorlib_System_UInt322149682021.h"
+#include "AssemblyU2DCSharp_InRoomTime_U3CSetRoomStartTimesta287711506MethodDeclarations.h"
+#include "AssemblyU2DCSharp_InRoomTime_U3CSetRoomStartTimesta287711506.h"
+#include "UnityEngine_UnityEngine_Coroutine2299508840.h"
+#include "mscorlib_System_Object2689449295MethodDeclarations.h"
 #include "mscorlib_System_NotSupportedException1793819818MethodDeclarations.h"
 #include "mscorlib_System_NotSupportedException1793819818.h"
 #include "AssemblyU2DCSharp_InstantiateCube1938453577.h"
 #include "AssemblyU2DCSharp_InstantiateCube1938453577MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_MonoBehaviour1158329972MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Object1021602117MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Component3819376471MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Transform3275118058MethodDeclarations.h"
@@ -317,7 +333,6 @@ struct PunTeams_t2511225963;
 #include "UnityEngine_UnityEngine_GameObject1756533147.h"
 #include "UnityEngine_UnityEngine_Transform3275118058.h"
 #include "UnityEngine_UnityEngine_Vector32243707580.h"
-#include "mscorlib_System_Single2076509932.h"
 #include "UnityEngine_UnityEngine_Quaternion4030073918.h"
 #include "AssemblyU2DCSharp_InputToEvent861782367.h"
 #include "AssemblyU2DCSharp_InputToEvent861782367MethodDeclarations.h"
@@ -361,16 +376,12 @@ struct PunTeams_t2511225963;
 #include "AssemblyU2DCSharp_RoomOptions590971513MethodDeclarations.h"
 #include "AssemblyU2DCSharp_Extensions612262650MethodDeclarations.h"
 #include "AssemblyU2DCSharp_EnterRoomParams2222988781.h"
-#include "mscorlib_System_String2029220233MethodDeclarations.h"
-#include "mscorlib_System_Collections_Generic_Dictionary_2_g2281509423MethodDeclarations.h"
-#include "mscorlib_System_Collections_Generic_Dictionary_2_g2281509423.h"
 #include "AssemblyU2DCSharp_OpJoinRandomRoomParams449785843.h"
 #include "AssemblyU2DCSharp_MatchmakingMode160361017.h"
 #include "AssemblyU2DCSharp_AuthenticationValues1430961670.h"
 #include "AssemblyU2DCSharp_AuthenticationValues1430961670MethodDeclarations.h"
 #include "AssemblyU2DCSharp_CustomAuthenticationType1962747993.h"
 #include "AssemblyU2DCSharp_EncryptionMode2259972134.h"
-#include "UnityEngine_UnityEngine_Debug1368543263MethodDeclarations.h"
 #include "AssemblyU2DCSharp_PhotonNetwork1563132424.h"
 #include "AssemblyU2DCSharp_ServerSettings1038886298.h"
 #include "AssemblyU2DCSharp_RaiseEventOptions565739090.h"
@@ -392,7 +403,6 @@ struct PunTeams_t2511225963;
 #include "UnityEngine_UnityEngine_Material193706927.h"
 #include "AssemblyU2DCSharp_MessageOverlay4042034875.h"
 #include "AssemblyU2DCSharp_MessageOverlay4042034875MethodDeclarations.h"
-#include "UnityEngine_ArrayTypes.h"
 #include "AssemblyU2DCSharp_MoveByKeys3680896920.h"
 #include "AssemblyU2DCSharp_MoveByKeys3680896920MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SpriteRenderer1209076198.h"
@@ -434,8 +444,6 @@ struct PunTeams_t2511225963;
 #include "UnityEngine_UnityEngine_GUIStyle1799908754MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_GUI4082743951MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_GUIStyle1799908754.h"
-#include "UnityEngine_UnityEngine_Rect3681755626.h"
-#include "UnityEngine_UnityEngine_Rect3681755626MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_TextAnchor112990806.h"
 #include "AssemblyU2DCSharp_NetworkingPeer3034011222.h"
 #include "AssemblyU2DCSharp_NetworkingPeer3034011222MethodDeclarations.h"
@@ -455,7 +463,6 @@ struct PunTeams_t2511225963;
 #include "Assembly-CSharp_ArrayTypes.h"
 #include "AssemblyU2DCSharp_RoomInfo4257638335.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g3128434462.h"
-#include "AssemblyU2DCSharp_PhotonPlayer4120608827.h"
 #include "System_Core_System_Collections_Generic_HashSet_1_ge405338302.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g4202656512.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_gen3230257.h"
@@ -465,7 +472,6 @@ struct PunTeams_t2511225963;
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g3986656710.h"
 #include "AssemblyU2DCSharp_AuthModeOption918236656.h"
 #include "AssemblyU2DCSharp_ServerConnection1155372161.h"
-#include "AssemblyU2DCSharp_RoomInfo4257638335MethodDeclarations.h"
 #include "mscorlib_System_Environment3662374671MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen990992504.h"
 #include "AssemblyU2DCSharp_CloudRegionCode989201940.h"
@@ -541,7 +547,6 @@ struct PunTeams_t2511225963;
 #include "mscorlib_System_Reflection_MemberInfo4043097260.h"
 #include "mscorlib_System_Reflection_MethodBase904190842.h"
 #include "mscorlib_System_Reflection_MethodInfo3330546337MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Coroutine2299508840.h"
 #include "mscorlib_System_Reflection_ParameterInfo2249040075MethodDeclarations.h"
 #include "AssemblyU2DCSharp_PhotonMessageInfo13590565MethodDeclarations.h"
 #include "mscorlib_System_Enum2459695545MethodDeclarations.h"
@@ -586,8 +591,6 @@ struct PunTeams_t2511225963;
 #include "UnityEngine_UnityEngine_Color2020392075.h"
 #include "AssemblyU2DCSharp_OnClickInstantiate2713345687.h"
 #include "AssemblyU2DCSharp_OnClickInstantiate2713345687MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_GUILayout2579273657MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_GUILayoutOption4183744904.h"
 #include "AssemblyU2DCSharp_OnClickLoadSomething2729402039.h"
 #include "AssemblyU2DCSharp_OnClickLoadSomething2729402039MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SceneManagement_SceneManager90660965MethodDeclarations.h"
@@ -681,7 +684,6 @@ struct PunTeams_t2511225963;
 #include "Photon3Unity3D_ExitGames_Client_Photon_NetworkSimu2323123337MethodDeclarations.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_NetworkSimu2323123337.h"
 #include "AssemblyU2DCSharp_PhotonLogLevel1525257006MethodDeclarations.h"
-#include "mscorlib_System_Double4078015681.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_SupportClas1507343911MethodDeclarations.h"
 #include "AssemblyU2DCSharp_CustomTypes3265409152MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_HideFlags1434274199.h"
@@ -812,9 +814,6 @@ struct PunTeams_t2511225963;
 #include "AssemblyU2DCSharp_PunEvent2040493857MethodDeclarations.h"
 #include "AssemblyU2DCSharp_PunPlayerScores851215673.h"
 #include "AssemblyU2DCSharp_PunPlayerScores851215673MethodDeclarations.h"
-#include "AssemblyU2DCSharp_PunRPC2663265338.h"
-#include "AssemblyU2DCSharp_PunRPC2663265338MethodDeclarations.h"
-#include "mscorlib_System_Attribute542643598MethodDeclarations.h"
 
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m4109961936_gshared (Component_t3819376471 * __this, const MethodInfo* method);
@@ -836,7 +835,7 @@ extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2812611596_g
 // !!0 UnityEngine.GameObject::GetComponent<OnClickDestroy>()
 #define GameObject_GetComponent_TisOnClickDestroy_t3163187831_m1402313062(__this, method) ((  OnClickDestroy_t3163187831 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2812611596_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Renderer>()
-#define Component_GetComponent_TisRenderer_t257310565_m772028041(__this, method) ((  Renderer_t257310565 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
+#define Component_GetComponent_TisRenderer_t257310565_m2803939486(__this, method) ((  Renderer_t257310565 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.SpriteRenderer>()
 #define Component_GetComponent_TisSpriteRenderer_t1209076198_m2178781570(__this, method) ((  SpriteRenderer_t1209076198 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Rigidbody>()
@@ -844,21 +843,21 @@ extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2812611596_g
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Camera>()
 #define Component_GetComponent_TisCamera_t189460977_m3276577584(__this, method) ((  Camera_t189460977 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
 // !!0 UnityEngine.Object::FindObjectOfType<System.Object>()
-extern "C"  Il2CppObject * Object_FindObjectOfType_TisIl2CppObject_m483057723_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method);
-#define Object_FindObjectOfType_TisIl2CppObject_m483057723(__this /* static, unused */, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectOfType_TisIl2CppObject_m483057723_gshared)(__this /* static, unused */, method)
+extern "C"  Il2CppObject * Object_FindObjectOfType_TisIl2CppObject_m758847274_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method);
+#define Object_FindObjectOfType_TisIl2CppObject_m758847274(__this /* static, unused */, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectOfType_TisIl2CppObject_m758847274_gshared)(__this /* static, unused */, method)
 // !!0 UnityEngine.Object::FindObjectOfType<ChatGui>()
-#define Object_FindObjectOfType_TisChatGui_t1028549327_m1829503400(__this /* static, unused */, method) ((  ChatGui_t1028549327 * (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectOfType_TisIl2CppObject_m483057723_gshared)(__this /* static, unused */, method)
+#define Object_FindObjectOfType_TisChatGui_t1028549327_m1829503400(__this /* static, unused */, method) ((  ChatGui_t1028549327 * (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectOfType_TisIl2CppObject_m758847274_gshared)(__this /* static, unused */, method)
 // !!0 UnityEngine.Component::GetComponent<myThirdPersonController>()
 #define Component_GetComponent_TismyThirdPersonController_t936732382_m3285548545(__this, method) ((  myThirdPersonController_t936732382 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m4109961936_gshared)(__this, method)
 // !!0 UnityEngine.Object::FindObjectOfType<CullArea>()
-#define Object_FindObjectOfType_TisCullArea_t3831440099_m1955415508(__this /* static, unused */, method) ((  CullArea_t3831440099 * (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectOfType_TisIl2CppObject_m483057723_gshared)(__this /* static, unused */, method)
+#define Object_FindObjectOfType_TisCullArea_t3831440099_m1955415508(__this /* static, unused */, method) ((  CullArea_t3831440099 * (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectOfType_TisIl2CppObject_m758847274_gshared)(__this /* static, unused */, method)
 // !!0[] UnityEngine.GameObject::GetComponentsInChildren<System.Object>(System.Boolean)
-extern "C"  ObjectU5BU5D_t3614634134* GameObject_GetComponentsInChildren_TisIl2CppObject_m541433219_gshared (GameObject_t1756533147 * __this, bool p0, const MethodInfo* method);
-#define GameObject_GetComponentsInChildren_TisIl2CppObject_m541433219(__this, p0, method) ((  ObjectU5BU5D_t3614634134* (*) (GameObject_t1756533147 *, bool, const MethodInfo*))GameObject_GetComponentsInChildren_TisIl2CppObject_m541433219_gshared)(__this, p0, method)
+extern "C"  ObjectU5BU5D_t3614634134* GameObject_GetComponentsInChildren_TisIl2CppObject_m2065355970_gshared (GameObject_t1756533147 * __this, bool p0, const MethodInfo* method);
+#define GameObject_GetComponentsInChildren_TisIl2CppObject_m2065355970(__this, p0, method) ((  ObjectU5BU5D_t3614634134* (*) (GameObject_t1756533147 *, bool, const MethodInfo*))GameObject_GetComponentsInChildren_TisIl2CppObject_m2065355970_gshared)(__this, p0, method)
 // !!0[] UnityEngine.GameObject::GetComponentsInChildren<PhotonView>(System.Boolean)
-#define GameObject_GetComponentsInChildren_TisPhotonView_t899863581_m1946901258(__this, p0, method) ((  PhotonViewU5BU5D_t1020776144* (*) (GameObject_t1756533147 *, bool, const MethodInfo*))GameObject_GetComponentsInChildren_TisIl2CppObject_m541433219_gshared)(__this, p0, method)
+#define GameObject_GetComponentsInChildren_TisPhotonView_t899863581_m1946901258(__this, p0, method) ((  PhotonViewU5BU5D_t1020776144* (*) (GameObject_t1756533147 *, bool, const MethodInfo*))GameObject_GetComponentsInChildren_TisIl2CppObject_m2065355970_gshared)(__this, p0, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.Renderer>()
-#define GameObject_GetComponent_TisRenderer_t257310565_m1312615893(__this, method) ((  Renderer_t257310565 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2812611596_gshared)(__this, method)
+#define GameObject_GetComponent_TisRenderer_t257310565_m697787402(__this, method) ((  Renderer_t257310565 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2812611596_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<System.Object>()
 extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m3813873105_gshared (GameObject_t1756533147 * __this, const MethodInfo* method);
 #define GameObject_AddComponent_TisIl2CppObject_m3813873105(__this, method) ((  Il2CppObject * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m3813873105_gshared)(__this, method)
@@ -891,6 +890,469 @@ extern "C"  Il2CppObject * Component_GetComponentInChildren_TisIl2CppObject_m246
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void InRoomRoundTimer::.ctor()
+extern "C"  void InRoomRoundTimer__ctor_m3481733288 (InRoomRoundTimer_t2145612055 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_SecondsPerTurn_2(5);
+		Rect_t3681755626  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Rect__ctor_m1220545469(&L_0, (0.0f), (80.0f), (150.0f), (300.0f), /*hidden argument*/NULL);
+		__this->set_TextPos_4(L_0);
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void InRoomRoundTimer::StartRoundNow()
+extern Il2CppClass* PhotonNetwork_t1563132424_il2cpp_TypeInfo_var;
+extern Il2CppClass* Hashtable_t995404622_il2cpp_TypeInfo_var;
+extern Il2CppClass* Double_t4078015681_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3869568075;
+extern const uint32_t InRoomRoundTimer_StartRoundNow_m2899351016_MetadataUsageId;
+extern "C"  void InRoomRoundTimer_StartRoundNow_m2899351016 (InRoomRoundTimer_t2145612055 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InRoomRoundTimer_StartRoundNow_m2899351016_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Hashtable_t995404622 * V_0 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t1563132424_il2cpp_TypeInfo_var);
+		double L_0 = PhotonNetwork_get_time_m990205952(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((!(((double)L_0) < ((double)(9.9999997473787516E-05)))))
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		__this->set_startRoundWhenTimeIsSynced_5((bool)1);
+		return;
+	}
+
+IL_001b:
+	{
+		__this->set_startRoundWhenTimeIsSynced_5((bool)0);
+		Hashtable_t995404622 * L_1 = (Hashtable_t995404622 *)il2cpp_codegen_object_new(Hashtable_t995404622_il2cpp_TypeInfo_var);
+		Hashtable__ctor_m665092784(L_1, /*hidden argument*/NULL);
+		V_0 = L_1;
+		Hashtable_t995404622 * L_2 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t1563132424_il2cpp_TypeInfo_var);
+		double L_3 = PhotonNetwork_get_time_m990205952(NULL /*static, unused*/, /*hidden argument*/NULL);
+		double L_4 = L_3;
+		Il2CppObject * L_5 = Box(Double_t4078015681_il2cpp_TypeInfo_var, &L_4);
+		NullCheck(L_2);
+		Hashtable_set_Item_m3535563514(L_2, _stringLiteral3869568075, L_5, /*hidden argument*/NULL);
+		Room_t1042398373 * L_6 = PhotonNetwork_get_room_m1295242937(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Hashtable_t995404622 * L_7 = V_0;
+		NullCheck(L_6);
+		Room_SetCustomProperties_m1192882299(L_6, L_7, (Hashtable_t995404622 *)NULL, (bool)0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void InRoomRoundTimer::OnJoinedRoom()
+extern Il2CppClass* PhotonNetwork_t1563132424_il2cpp_TypeInfo_var;
+extern Il2CppClass* Boolean_t3825574718_il2cpp_TypeInfo_var;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern const MethodInfo* Dictionary_2_ContainsKey_m1004552065_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3975098123;
+extern Il2CppCodeGenString* _stringLiteral3869568075;
+extern const uint32_t InRoomRoundTimer_OnJoinedRoom_m2248476055_MetadataUsageId;
+extern "C"  void InRoomRoundTimer_OnJoinedRoom_m2248476055 (InRoomRoundTimer_t2145612055 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InRoomRoundTimer_OnJoinedRoom_m2248476055_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t1563132424_il2cpp_TypeInfo_var);
+		bool L_0 = PhotonNetwork_get_isMasterClient_m2660608337(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		InRoomRoundTimer_StartRoundNow_m2899351016(__this, /*hidden argument*/NULL);
+		goto IL_003d;
+	}
+
+IL_0015:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t1563132424_il2cpp_TypeInfo_var);
+		Room_t1042398373 * L_1 = PhotonNetwork_get_room_m1295242937(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Hashtable_t995404622 * L_2 = RoomInfo_get_CustomProperties_m3639800824(L_1, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		bool L_3 = Dictionary_2_ContainsKey_m1004552065(L_2, _stringLiteral3869568075, /*hidden argument*/Dictionary_2_ContainsKey_m1004552065_MethodInfo_var);
+		bool L_4 = L_3;
+		Il2CppObject * L_5 = Box(Boolean_t3825574718_il2cpp_TypeInfo_var, &L_4);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_6 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral3975098123, L_5, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
+	}
+
+IL_003d:
+	{
+		return;
+	}
+}
+// System.Void InRoomRoundTimer::OnPhotonCustomRoomPropertiesChanged(ExitGames.Client.Photon.Hashtable)
+extern Il2CppClass* Double_t4078015681_il2cpp_TypeInfo_var;
+extern const MethodInfo* Dictionary_2_ContainsKey_m1004552065_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3869568075;
+extern const uint32_t InRoomRoundTimer_OnPhotonCustomRoomPropertiesChanged_m3189640166_MetadataUsageId;
+extern "C"  void InRoomRoundTimer_OnPhotonCustomRoomPropertiesChanged_m3189640166 (InRoomRoundTimer_t2145612055 * __this, Hashtable_t995404622 * ___propertiesThatChanged0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InRoomRoundTimer_OnPhotonCustomRoomPropertiesChanged_m3189640166_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Hashtable_t995404622 * L_0 = ___propertiesThatChanged0;
+		NullCheck(L_0);
+		bool L_1 = Dictionary_2_ContainsKey_m1004552065(L_0, _stringLiteral3869568075, /*hidden argument*/Dictionary_2_ContainsKey_m1004552065_MethodInfo_var);
+		if (!L_1)
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		Hashtable_t995404622 * L_2 = ___propertiesThatChanged0;
+		NullCheck(L_2);
+		Il2CppObject * L_3 = Hashtable_get_Item_m2544898945(L_2, _stringLiteral3869568075, /*hidden argument*/NULL);
+		__this->set_StartTime_3(((*(double*)((double*)UnBox (L_3, Double_t4078015681_il2cpp_TypeInfo_var)))));
+	}
+
+IL_0026:
+	{
+		return;
+	}
+}
+// System.Void InRoomRoundTimer::OnMasterClientSwitched(PhotonPlayer)
+extern Il2CppClass* PhotonNetwork_t1563132424_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern const MethodInfo* Dictionary_2_ContainsKey_m1004552065_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3869568075;
+extern Il2CppCodeGenString* _stringLiteral3180410422;
+extern const uint32_t InRoomRoundTimer_OnMasterClientSwitched_m3307614910_MetadataUsageId;
+extern "C"  void InRoomRoundTimer_OnMasterClientSwitched_m3307614910 (InRoomRoundTimer_t2145612055 * __this, PhotonPlayer_t4120608827 * ___newMasterClient0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InRoomRoundTimer_OnMasterClientSwitched_m3307614910_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t1563132424_il2cpp_TypeInfo_var);
+		Room_t1042398373 * L_0 = PhotonNetwork_get_room_m1295242937(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		Hashtable_t995404622 * L_1 = RoomInfo_get_CustomProperties_m3639800824(L_0, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		bool L_2 = Dictionary_2_ContainsKey_m1004552065(L_1, _stringLiteral3869568075, /*hidden argument*/Dictionary_2_ContainsKey_m1004552065_MethodInfo_var);
+		if (L_2)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral3180410422, /*hidden argument*/NULL);
+		InRoomRoundTimer_StartRoundNow_m2899351016(__this, /*hidden argument*/NULL);
+	}
+
+IL_0029:
+	{
+		return;
+	}
+}
+// System.Void InRoomRoundTimer::Update()
+extern "C"  void InRoomRoundTimer_Update_m1933442359 (InRoomRoundTimer_t2145612055 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = __this->get_startRoundWhenTimeIsSynced_5();
+		if (!L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		InRoomRoundTimer_StartRoundNow_m2899351016(__this, /*hidden argument*/NULL);
+	}
+
+IL_0011:
+	{
+		return;
+	}
+}
+// System.Void InRoomRoundTimer::OnGUI()
+extern Il2CppClass* PhotonNetwork_t1563132424_il2cpp_TypeInfo_var;
+extern Il2CppClass* Double_t4078015681_il2cpp_TypeInfo_var;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var;
+extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral4268833994;
+extern Il2CppCodeGenString* _stringLiteral2587067354;
+extern Il2CppCodeGenString* _stringLiteral1038320411;
+extern Il2CppCodeGenString* _stringLiteral2622104964;
+extern const uint32_t InRoomRoundTimer_OnGUI_m1699629156_MetadataUsageId;
+extern "C"  void InRoomRoundTimer_OnGUI_m1699629156 (InRoomRoundTimer_t2145612055 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InRoomRoundTimer_OnGUI_m1699629156_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	double V_0 = 0.0;
+	double V_1 = 0.0;
+	int32_t V_2 = 0;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t1563132424_il2cpp_TypeInfo_var);
+		double L_0 = PhotonNetwork_get_time_m990205952(NULL /*static, unused*/, /*hidden argument*/NULL);
+		double L_1 = __this->get_StartTime_3();
+		V_0 = ((double)((double)L_0-(double)L_1));
+		int32_t L_2 = __this->get_SecondsPerTurn_2();
+		double L_3 = V_0;
+		int32_t L_4 = __this->get_SecondsPerTurn_2();
+		V_1 = ((double)((double)(((double)((double)L_2)))-(double)(fmod(L_3, (((double)((double)L_4)))))));
+		double L_5 = V_0;
+		int32_t L_6 = __this->get_SecondsPerTurn_2();
+		V_2 = (((int32_t)((int32_t)((double)((double)L_5/(double)(((double)((double)L_6))))))));
+		Rect_t3681755626  L_7 = __this->get_TextPos_4();
+		GUILayout_BeginArea_m3297699023(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
+		double L_8 = V_0;
+		double L_9 = L_8;
+		Il2CppObject * L_10 = Box(Double_t4078015681_il2cpp_TypeInfo_var, &L_9);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_11 = String_Format_m2024975688(NULL /*static, unused*/, _stringLiteral4268833994, L_10, /*hidden argument*/NULL);
+		GUILayout_Label_m3466110979(NULL /*static, unused*/, L_11, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		double L_12 = V_1;
+		double L_13 = L_12;
+		Il2CppObject * L_14 = Box(Double_t4078015681_il2cpp_TypeInfo_var, &L_13);
+		String_t* L_15 = String_Format_m2024975688(NULL /*static, unused*/, _stringLiteral2587067354, L_14, /*hidden argument*/NULL);
+		GUILayout_Label_m3466110979(NULL /*static, unused*/, L_15, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		int32_t L_16 = V_2;
+		int32_t L_17 = L_16;
+		Il2CppObject * L_18 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_17);
+		String_t* L_19 = String_Format_m2024975688(NULL /*static, unused*/, _stringLiteral1038320411, L_18, /*hidden argument*/NULL);
+		GUILayout_Label_m3466110979(NULL /*static, unused*/, L_19, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		bool L_20 = GUILayout_Button_m3322709003(NULL /*static, unused*/, _stringLiteral2622104964, ((GUILayoutOptionU5BU5D_t2108882777*)SZArrayNew(GUILayoutOptionU5BU5D_t2108882777_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		if (!L_20)
+		{
+			goto IL_00a1;
+		}
+	}
+	{
+		InRoomRoundTimer_StartRoundNow_m2899351016(__this, /*hidden argument*/NULL);
+	}
+
+IL_00a1:
+	{
+		GUILayout_EndArea_m1904221074(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void InRoomTime::.ctor()
+extern "C"  void InRoomTime__ctor_m3765987976 (InRoomTime_t4117091819 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Double InRoomTime::get_RoomTime()
+extern "C"  double InRoomTime_get_RoomTime_m4013742088 (InRoomTime_t4117091819 * __this, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	double V_1 = 0.0;
+	{
+		int32_t L_0 = InRoomTime_get_RoomTimestamp_m2472561184(__this, /*hidden argument*/NULL);
+		V_0 = L_0;
+		uint32_t L_1 = V_0;
+		V_1 = (((double)((double)(((double)((uint32_t)L_1))))));
+		double L_2 = V_1;
+		return ((double)((double)L_2/(double)(1000.0)));
+	}
+}
+// System.Int32 InRoomTime::get_RoomTimestamp()
+extern Il2CppClass* PhotonNetwork_t1563132424_il2cpp_TypeInfo_var;
+extern const uint32_t InRoomTime_get_RoomTimestamp_m2472561184_MetadataUsageId;
+extern "C"  int32_t InRoomTime_get_RoomTimestamp_m2472561184 (InRoomTime_t4117091819 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InRoomTime_get_RoomTimestamp_m2472561184_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t G_B3_0 = 0;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t1563132424_il2cpp_TypeInfo_var);
+		bool L_0 = PhotonNetwork_get_inRoom_m986349412(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t1563132424_il2cpp_TypeInfo_var);
+		int32_t L_1 = PhotonNetwork_get_ServerTimestamp_m3991372575(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_2 = __this->get_roomStartTimestamp_2();
+		G_B3_0 = ((int32_t)((int32_t)L_1-(int32_t)L_2));
+		goto IL_001c;
+	}
+
+IL_001b:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_001c:
+	{
+		return G_B3_0;
+	}
+}
+// System.Boolean InRoomTime::get_IsRoomTimeSet()
+extern Il2CppClass* PhotonNetwork_t1563132424_il2cpp_TypeInfo_var;
+extern const MethodInfo* Dictionary_2_ContainsKey_m1004552065_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral386851077;
+extern const uint32_t InRoomTime_get_IsRoomTimeSet_m1405147561_MetadataUsageId;
+extern "C"  bool InRoomTime_get_IsRoomTimeSet_m1405147561 (InRoomTime_t4117091819 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InRoomTime_get_IsRoomTimeSet_m1405147561_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t G_B3_0 = 0;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t1563132424_il2cpp_TypeInfo_var);
+		bool L_0 = PhotonNetwork_get_inRoom_m986349412(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t1563132424_il2cpp_TypeInfo_var);
+		Room_t1042398373 * L_1 = PhotonNetwork_get_room_m1295242937(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Hashtable_t995404622 * L_2 = RoomInfo_get_CustomProperties_m3639800824(L_1, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		bool L_3 = Dictionary_2_ContainsKey_m1004552065(L_2, _stringLiteral386851077, /*hidden argument*/Dictionary_2_ContainsKey_m1004552065_MethodInfo_var);
+		G_B3_0 = ((int32_t)(L_3));
+		goto IL_0021;
+	}
+
+IL_0020:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_0021:
+	{
+		return (bool)G_B3_0;
+	}
+}
+// System.Collections.IEnumerator InRoomTime::SetRoomStartTimestamp()
+extern Il2CppClass* U3CSetRoomStartTimestampU3Ec__Iterator0_t287711506_il2cpp_TypeInfo_var;
+extern const uint32_t InRoomTime_SetRoomStartTimestamp_m3368091583_MetadataUsageId;
+extern "C"  Il2CppObject * InRoomTime_SetRoomStartTimestamp_m3368091583 (InRoomTime_t4117091819 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InRoomTime_SetRoomStartTimestamp_m3368091583_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CSetRoomStartTimestampU3Ec__Iterator0_t287711506 * V_0 = NULL;
+	{
+		U3CSetRoomStartTimestampU3Ec__Iterator0_t287711506 * L_0 = (U3CSetRoomStartTimestampU3Ec__Iterator0_t287711506 *)il2cpp_codegen_object_new(U3CSetRoomStartTimestampU3Ec__Iterator0_t287711506_il2cpp_TypeInfo_var);
+		U3CSetRoomStartTimestampU3Ec__Iterator0__ctor_m3151460569(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		U3CSetRoomStartTimestampU3Ec__Iterator0_t287711506 * L_1 = V_0;
+		NullCheck(L_1);
+		L_1->set_U24this_1(__this);
+		U3CSetRoomStartTimestampU3Ec__Iterator0_t287711506 * L_2 = V_0;
+		return L_2;
+	}
+}
+// System.Void InRoomTime::OnJoinedRoom()
+extern Il2CppCodeGenString* _stringLiteral3277979715;
+extern const uint32_t InRoomTime_OnJoinedRoom_m1820921127_MetadataUsageId;
+extern "C"  void InRoomTime_OnJoinedRoom_m1820921127 (InRoomTime_t4117091819 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InRoomTime_OnJoinedRoom_m1820921127_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		MonoBehaviour_StartCoroutine_m1399371129(__this, _stringLiteral3277979715, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void InRoomTime::OnMasterClientSwitched(PhotonPlayer)
+extern Il2CppCodeGenString* _stringLiteral3277979715;
+extern const uint32_t InRoomTime_OnMasterClientSwitched_m475166546_MetadataUsageId;
+extern "C"  void InRoomTime_OnMasterClientSwitched_m475166546 (InRoomTime_t4117091819 * __this, PhotonPlayer_t4120608827 * ___newMasterClient0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InRoomTime_OnMasterClientSwitched_m475166546_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		MonoBehaviour_StartCoroutine_m1399371129(__this, _stringLiteral3277979715, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void InRoomTime::OnPhotonCustomRoomPropertiesChanged(ExitGames.Client.Photon.Hashtable)
+extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
+extern const MethodInfo* Dictionary_2_ContainsKey_m1004552065_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral386851077;
+extern const uint32_t InRoomTime_OnPhotonCustomRoomPropertiesChanged_m3323182926_MetadataUsageId;
+extern "C"  void InRoomTime_OnPhotonCustomRoomPropertiesChanged_m3323182926 (InRoomTime_t4117091819 * __this, Hashtable_t995404622 * ___propertiesThatChanged0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (InRoomTime_OnPhotonCustomRoomPropertiesChanged_m3323182926_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Hashtable_t995404622 * L_0 = ___propertiesThatChanged0;
+		NullCheck(L_0);
+		bool L_1 = Dictionary_2_ContainsKey_m1004552065(L_0, _stringLiteral386851077, /*hidden argument*/Dictionary_2_ContainsKey_m1004552065_MethodInfo_var);
+		if (!L_1)
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		Hashtable_t995404622 * L_2 = ___propertiesThatChanged0;
+		NullCheck(L_2);
+		Il2CppObject * L_3 = Hashtable_get_Item_m2544898945(L_2, _stringLiteral386851077, /*hidden argument*/NULL);
+		__this->set_roomStartTimestamp_2(((*(int32_t*)((int32_t*)UnBox (L_3, Int32_t2071877448_il2cpp_TypeInfo_var)))));
+	}
+
+IL_0026:
+	{
+		return;
+	}
+}
 // System.Void InRoomTime/<SetRoomStartTimestamp>c__Iterator0::.ctor()
 extern "C"  void U3CSetRoomStartTimestampU3Ec__Iterator0__ctor_m3151460569 (U3CSetRoomStartTimestampU3Ec__Iterator0_t287711506 * __this, const MethodInfo* method)
 {
@@ -3870,7 +4332,7 @@ extern "C"  void MaterialPerOwner__ctor_m3759539506 (MaterialPerOwner_t159210835
 	}
 }
 // System.Void MaterialPerOwner::Start()
-extern const MethodInfo* Component_GetComponent_TisRenderer_t257310565_m772028041_MethodInfo_var;
+extern const MethodInfo* Component_GetComponent_TisRenderer_t257310565_m2803939486_MethodInfo_var;
 extern const uint32_t MaterialPerOwner_Start_m3499617966_MetadataUsageId;
 extern "C"  void MaterialPerOwner_Start_m3499617966 (MaterialPerOwner_t1592108355 * __this, const MethodInfo* method)
 {
@@ -3881,7 +4343,7 @@ extern "C"  void MaterialPerOwner_Start_m3499617966 (MaterialPerOwner_t159210835
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		Renderer_t257310565 * L_0 = Component_GetComponent_TisRenderer_t257310565_m772028041(__this, /*hidden argument*/Component_GetComponent_TisRenderer_t257310565_m772028041_MethodInfo_var);
+		Renderer_t257310565 * L_0 = Component_GetComponent_TisRenderer_t257310565_m2803939486(__this, /*hidden argument*/Component_GetComponent_TisRenderer_t257310565_m2803939486_MethodInfo_var);
 		__this->set_m_Renderer_4(L_0);
 		return;
 	}
@@ -4804,9 +5266,9 @@ extern Il2CppClass* List_1_t1440998580_il2cpp_TypeInfo_var;
 extern const MethodInfo* List_1__ctor_m2961219472_MethodInfo_var;
 extern const MethodInfo* List_1_get_Count_m852068579_MethodInfo_var;
 extern const MethodInfo* List_1_GetEnumerator_m4100073676_MethodInfo_var;
-extern const MethodInfo* Enumerator_get_Current_m1062633493_MethodInfo_var;
-extern const MethodInfo* List_1_Contains_m793041670_MethodInfo_var;
-extern const MethodInfo* Enumerator_MoveNext_m4282865897_MethodInfo_var;
+extern const MethodInfo* Enumerator_get_Current_m2400786426_MethodInfo_var;
+extern const MethodInfo* List_1_Contains_m1136004261_MethodInfo_var;
+extern const MethodInfo* Enumerator_MoveNext_m2584216872_MethodInfo_var;
 extern const MethodInfo* Enumerator_Dispose_m1274756239_MethodInfo_var;
 extern const uint32_t NetworkCullingHandler_CheckGroupsChanged_m2916311331_MetadataUsageId;
 extern "C"  void NetworkCullingHandler_CheckGroupsChanged_m2916311331 (NetworkCullingHandler_t2843961906 * __this, const MethodInfo* method)
@@ -4885,12 +5347,12 @@ IL_006c:
 
 IL_0071:
 		{
-			int32_t L_14 = Enumerator_get_Current_m1062633493((&V_1), /*hidden argument*/Enumerator_get_Current_m1062633493_MethodInfo_var);
+			int32_t L_14 = Enumerator_get_Current_m2400786426((&V_1), /*hidden argument*/Enumerator_get_Current_m2400786426_MethodInfo_var);
 			V_0 = L_14;
 			List_1_t1440998580 * L_15 = __this->get_previousActiveCells_4();
 			int32_t L_16 = V_0;
 			NullCheck(L_15);
-			bool L_17 = List_1_Contains_m793041670(L_15, L_16, /*hidden argument*/List_1_Contains_m793041670_MethodInfo_var);
+			bool L_17 = List_1_Contains_m1136004261(L_15, L_16, /*hidden argument*/List_1_Contains_m1136004261_MethodInfo_var);
 			if (L_17)
 			{
 				goto IL_0095;
@@ -4905,7 +5367,7 @@ IL_008a:
 
 IL_0095:
 		{
-			bool L_18 = Enumerator_MoveNext_m4282865897((&V_1), /*hidden argument*/Enumerator_MoveNext_m4282865897_MethodInfo_var);
+			bool L_18 = Enumerator_MoveNext_m2584216872((&V_1), /*hidden argument*/Enumerator_MoveNext_m2584216872_MethodInfo_var);
 			if (L_18)
 			{
 				goto IL_0071;
@@ -4942,8 +5404,8 @@ IL_00b4:
 // System.Void NetworkCullingHandler::UpdateInterestGroups()
 extern Il2CppClass* PhotonNetwork_t1563132424_il2cpp_TypeInfo_var;
 extern const MethodInfo* List_1_GetEnumerator_m4100073676_MethodInfo_var;
-extern const MethodInfo* Enumerator_get_Current_m1062633493_MethodInfo_var;
-extern const MethodInfo* Enumerator_MoveNext_m4282865897_MethodInfo_var;
+extern const MethodInfo* Enumerator_get_Current_m2400786426_MethodInfo_var;
+extern const MethodInfo* Enumerator_MoveNext_m2584216872_MethodInfo_var;
 extern const MethodInfo* Enumerator_Dispose_m1274756239_MethodInfo_var;
 extern const uint32_t NetworkCullingHandler_UpdateInterestGroups_m2686879790_MetadataUsageId;
 extern "C"  void NetworkCullingHandler_UpdateInterestGroups_m2686879790 (NetworkCullingHandler_t2843961906 * __this, const MethodInfo* method)
@@ -4982,7 +5444,7 @@ IL_000c:
 
 IL_0011:
 		{
-			int32_t L_2 = Enumerator_get_Current_m1062633493((&V_1), /*hidden argument*/Enumerator_get_Current_m1062633493_MethodInfo_var);
+			int32_t L_2 = Enumerator_get_Current_m2400786426((&V_1), /*hidden argument*/Enumerator_get_Current_m2400786426_MethodInfo_var);
 			V_0 = L_2;
 			int32_t L_3 = V_0;
 			IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t1563132424_il2cpp_TypeInfo_var);
@@ -4993,7 +5455,7 @@ IL_0011:
 
 IL_0027:
 		{
-			bool L_5 = Enumerator_MoveNext_m4282865897((&V_1), /*hidden argument*/Enumerator_MoveNext_m4282865897_MethodInfo_var);
+			bool L_5 = Enumerator_MoveNext_m2584216872((&V_1), /*hidden argument*/Enumerator_MoveNext_m2584216872_MethodInfo_var);
 			if (L_5)
 			{
 				goto IL_0011;
@@ -5039,7 +5501,7 @@ IL_0052:
 
 IL_0057:
 		{
-			int32_t L_8 = Enumerator_get_Current_m1062633493((&V_3), /*hidden argument*/Enumerator_get_Current_m1062633493_MethodInfo_var);
+			int32_t L_8 = Enumerator_get_Current_m2400786426((&V_3), /*hidden argument*/Enumerator_get_Current_m2400786426_MethodInfo_var);
 			V_2 = L_8;
 			int32_t L_9 = V_2;
 			IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t1563132424_il2cpp_TypeInfo_var);
@@ -5050,7 +5512,7 @@ IL_0057:
 
 IL_006d:
 		{
-			bool L_11 = Enumerator_MoveNext_m4282865897((&V_3), /*hidden argument*/Enumerator_MoveNext_m4282865897_MethodInfo_var);
+			bool L_11 = Enumerator_MoveNext_m2584216872((&V_3), /*hidden argument*/Enumerator_MoveNext_m2584216872_MethodInfo_var);
 			if (L_11)
 			{
 				goto IL_0057;
@@ -5087,7 +5549,7 @@ IL_008c:
 // System.Void NetworkCullingHandler::UpdateActiveGroup()
 extern const MethodInfo* List_1_Add_m2801927573_MethodInfo_var;
 extern const MethodInfo* List_1_get_Count_m852068579_MethodInfo_var;
-extern const MethodInfo* List_1_get_Item_m1921196075_MethodInfo_var;
+extern const MethodInfo* List_1_get_Item_m3472206364_MethodInfo_var;
 extern const uint32_t NetworkCullingHandler_UpdateActiveGroup_m25024265_MetadataUsageId;
 extern "C"  void NetworkCullingHandler_UpdateActiveGroup_m25024265 (NetworkCullingHandler_t2843961906 * __this, const MethodInfo* method)
 {
@@ -5155,7 +5617,7 @@ IL_001b:
 		int32_t L_19 = L_18;
 		int32_t L_20 = (L_17)->GetAt(static_cast<il2cpp_array_size_t>(L_19));
 		NullCheck(L_15);
-		int32_t L_21 = List_1_get_Item_m1921196075(L_15, L_20, /*hidden argument*/List_1_get_Item_m1921196075_MethodInfo_var);
+		int32_t L_21 = List_1_get_Item_m3472206364(L_15, L_20, /*hidden argument*/List_1_get_Item_m3472206364_MethodInfo_var);
 		NullCheck(L_14);
 		L_14->set_group_4(L_21);
 		goto IL_015a;
@@ -5192,7 +5654,7 @@ IL_0099:
 		int32_t L_34 = L_33;
 		int32_t L_35 = (L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_34));
 		NullCheck(L_30);
-		int32_t L_36 = List_1_get_Item_m1921196075(L_30, L_35, /*hidden argument*/List_1_get_Item_m1921196075_MethodInfo_var);
+		int32_t L_36 = List_1_get_Item_m3472206364(L_30, L_35, /*hidden argument*/List_1_get_Item_m3472206364_MethodInfo_var);
 		NullCheck(L_29);
 		L_29->set_group_4(L_36);
 		goto IL_015a;
@@ -5229,7 +5691,7 @@ IL_00fc:
 		int32_t L_49 = L_48;
 		int32_t L_50 = (L_47)->GetAt(static_cast<il2cpp_array_size_t>(L_49));
 		NullCheck(L_45);
-		int32_t L_51 = List_1_get_Item_m1921196075(L_45, L_50, /*hidden argument*/List_1_get_Item_m1921196075_MethodInfo_var);
+		int32_t L_51 = List_1_get_Item_m3472206364(L_45, L_50, /*hidden argument*/List_1_get_Item_m3472206364_MethodInfo_var);
 		NullCheck(L_44);
 		L_44->set_group_4(L_51);
 	}
@@ -5244,7 +5706,7 @@ extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* GUIStyle_t1799908754_il2cpp_TypeInfo_var;
 extern Il2CppClass* GUI_t4082743951_il2cpp_TypeInfo_var;
-extern const MethodInfo* List_1_get_Item_m1921196075_MethodInfo_var;
+extern const MethodInfo* List_1_get_Item_m3472206364_MethodInfo_var;
 extern const MethodInfo* List_1_get_Count_m852068579_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2089799869;
 extern Il2CppCodeGenString* _stringLiteral357455341;
@@ -5301,7 +5763,7 @@ IL_0024:
 		List_1_t1440998580 * L_6 = __this->get_activeCells_5();
 		int32_t L_7 = V_2;
 		NullCheck(L_6);
-		int32_t L_8 = List_1_get_Item_m1921196075(L_6, L_7, /*hidden argument*/List_1_get_Item_m1921196075_MethodInfo_var);
+		int32_t L_8 = List_1_get_Item_m3472206364(L_6, L_7, /*hidden argument*/List_1_get_Item_m3472206364_MethodInfo_var);
 		int32_t L_9 = L_8;
 		Il2CppObject * L_10 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_9);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
@@ -5315,7 +5777,7 @@ IL_0052:
 		List_1_t1440998580 * L_13 = __this->get_activeCells_5();
 		int32_t L_14 = V_2;
 		NullCheck(L_13);
-		int32_t L_15 = List_1_get_Item_m1921196075(L_13, L_14, /*hidden argument*/List_1_get_Item_m1921196075_MethodInfo_var);
+		int32_t L_15 = List_1_get_Item_m3472206364(L_13, L_14, /*hidden argument*/List_1_get_Item_m3472206364_MethodInfo_var);
 		int32_t L_16 = L_15;
 		Il2CppObject * L_17 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_16);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
@@ -5396,7 +5858,7 @@ extern Il2CppClass* Dictionary_2_t3986656710_il2cpp_TypeInfo_var;
 extern const MethodInfo* List_1__ctor_m2302588161_MethodInfo_var;
 extern const MethodInfo* Dictionary_2__ctor_m1708023163_MethodInfo_var;
 extern const MethodInfo* Dictionary_2__ctor_m739534228_MethodInfo_var;
-extern const MethodInfo* HashSet_1__ctor_m4003481610_MethodInfo_var;
+extern const MethodInfo* HashSet_1__ctor_m2847509_MethodInfo_var;
 extern const MethodInfo* Dictionary_2__ctor_m3608282488_MethodInfo_var;
 extern const MethodInfo* Dictionary_2__ctor_m384438757_MethodInfo_var;
 extern const MethodInfo* Dictionary_2__ctor_m2736464042_MethodInfo_var;
@@ -5433,10 +5895,10 @@ extern "C"  void NetworkingPeer__ctor_m2917563925 (NetworkingPeer_t3034011222 * 
 		__this->set_mOtherPlayerListCopy_72(((PhotonPlayerU5BU5D_t818546810*)SZArrayNew(PhotonPlayerU5BU5D_t818546810_il2cpp_TypeInfo_var, (uint32_t)0)));
 		__this->set_mPlayerListCopy_73(((PhotonPlayerU5BU5D_t818546810*)SZArrayNew(PhotonPlayerU5BU5D_t818546810_il2cpp_TypeInfo_var, (uint32_t)0)));
 		HashSet_1_t405338302 * L_4 = (HashSet_1_t405338302 *)il2cpp_codegen_object_new(HashSet_1_t405338302_il2cpp_TypeInfo_var);
-		HashSet_1__ctor_m4003481610(L_4, /*hidden argument*/HashSet_1__ctor_m4003481610_MethodInfo_var);
+		HashSet_1__ctor_m2847509(L_4, /*hidden argument*/HashSet_1__ctor_m2847509_MethodInfo_var);
 		__this->set_allowedReceivingGroups_75(L_4);
 		HashSet_1_t405338302 * L_5 = (HashSet_1_t405338302 *)il2cpp_codegen_object_new(HashSet_1_t405338302_il2cpp_TypeInfo_var);
-		HashSet_1__ctor_m4003481610(L_5, /*hidden argument*/HashSet_1__ctor_m4003481610_MethodInfo_var);
+		HashSet_1__ctor_m2847509(L_5, /*hidden argument*/HashSet_1__ctor_m2847509_MethodInfo_var);
 		__this->set_blockSendingGroups_76(L_5);
 		Dictionary_2_t4202656512 * L_6 = (Dictionary_2_t4202656512 *)il2cpp_codegen_object_new(Dictionary_2_t4202656512_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m3608282488(L_6, /*hidden argument*/Dictionary_2__ctor_m3608282488_MethodInfo_var);
@@ -7634,7 +8096,7 @@ extern Il2CppClass* List_1_t1440998580_il2cpp_TypeInfo_var;
 extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
 extern Il2CppClass* NetworkingPeer_t3034011222_il2cpp_TypeInfo_var;
 extern const MethodInfo* Dictionary_2__ctor_m739534228_MethodInfo_var;
-extern const MethodInfo* HashSet_1__ctor_m4003481610_MethodInfo_var;
+extern const MethodInfo* HashSet_1__ctor_m2847509_MethodInfo_var;
 extern const MethodInfo* Dictionary_2__ctor_m1708023163_MethodInfo_var;
 extern const MethodInfo* List_1__ctor_m265493321_MethodInfo_var;
 extern const uint32_t NetworkingPeer_LeftRoomCleanup_m3225674791_MetadataUsageId;
@@ -7684,10 +8146,10 @@ IL_002d:
 		__this->set_mPlayerListCopy_73(((PhotonPlayerU5BU5D_t818546810*)SZArrayNew(PhotonPlayerU5BU5D_t818546810_il2cpp_TypeInfo_var, (uint32_t)0)));
 		__this->set_mOtherPlayerListCopy_72(((PhotonPlayerU5BU5D_t818546810*)SZArrayNew(PhotonPlayerU5BU5D_t818546810_il2cpp_TypeInfo_var, (uint32_t)0)));
 		HashSet_1_t405338302 * L_6 = (HashSet_1_t405338302 *)il2cpp_codegen_object_new(HashSet_1_t405338302_il2cpp_TypeInfo_var);
-		HashSet_1__ctor_m4003481610(L_6, /*hidden argument*/HashSet_1__ctor_m4003481610_MethodInfo_var);
+		HashSet_1__ctor_m2847509(L_6, /*hidden argument*/HashSet_1__ctor_m2847509_MethodInfo_var);
 		__this->set_allowedReceivingGroups_75(L_6);
 		HashSet_1_t405338302 * L_7 = (HashSet_1_t405338302 *)il2cpp_codegen_object_new(HashSet_1_t405338302_il2cpp_TypeInfo_var);
-		HashSet_1__ctor_m4003481610(L_7, /*hidden argument*/HashSet_1__ctor_m4003481610_MethodInfo_var);
+		HashSet_1__ctor_m2847509(L_7, /*hidden argument*/HashSet_1__ctor_m2847509_MethodInfo_var);
 		__this->set_blockSendingGroups_76(L_7);
 		Dictionary_2_t1877450301 * L_8 = (Dictionary_2_t1877450301 *)il2cpp_codegen_object_new(Dictionary_2_t1877450301_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m1708023163(L_8, /*hidden argument*/Dictionary_2__ctor_m1708023163_MethodInfo_var);
@@ -14237,7 +14699,7 @@ extern Il2CppClass* PhotonMessageInfo_t13590565_il2cpp_TypeInfo_var;
 extern const MethodInfo* Dictionary_2_ContainsKey_m1004552065_MethodInfo_var;
 extern const MethodInfo* List_1_get_Count_m780127360_MethodInfo_var;
 extern const MethodInfo* List_1_get_Item_m1112119647_MethodInfo_var;
-extern const MethodInfo* HashSet_1_Contains_m2412277956_MethodInfo_var;
+extern const MethodInfo* HashSet_1_Contains_m3728309091_MethodInfo_var;
 extern const MethodInfo* Dictionary_2_TryGetValue_m2063657711_MethodInfo_var;
 extern const MethodInfo* Dictionary_2_set_Item_m1593498775_MethodInfo_var;
 extern const MethodInfo* List_1_get_Item_m258847265_MethodInfo_var;
@@ -14810,7 +15272,7 @@ IL_02d9:
 		NullCheck(L_138);
 		int32_t L_139 = L_138->get_group_4();
 		NullCheck(L_137);
-		bool L_140 = HashSet_1_Contains_m2412277956(L_137, L_139, /*hidden argument*/HashSet_1_Contains_m2412277956_MethodInfo_var);
+		bool L_140 = HashSet_1_Contains_m3728309091(L_137, L_139, /*hidden argument*/HashSet_1_Contains_m3728309091_MethodInfo_var);
 		if (L_140)
 		{
 			goto IL_02fd;
@@ -15895,7 +16357,7 @@ extern Il2CppClass* Type_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* GameObject_t1756533147_il2cpp_TypeInfo_var;
 extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
 extern const MethodInfo* Dictionary_2_ContainsKey_m1004552065_MethodInfo_var;
-extern const MethodInfo* HashSet_1_Contains_m2412277956_MethodInfo_var;
+extern const MethodInfo* HashSet_1_Contains_m3728309091_MethodInfo_var;
 extern const MethodInfo* Dictionary_2_TryGetValue_m1468036199_MethodInfo_var;
 extern const MethodInfo* Dictionary_2_Add_m2363528878_MethodInfo_var;
 extern const MethodInfo* Object_Instantiate_TisGameObject_t1756533147_m3064851704_MethodInfo_var;
@@ -16111,7 +16573,7 @@ IL_013e:
 		HashSet_1_t405338302 * L_65 = __this->get_allowedReceivingGroups_75();
 		int32_t L_66 = V_5;
 		NullCheck(L_65);
-		bool L_67 = HashSet_1_Contains_m2412277956(L_65, L_66, /*hidden argument*/HashSet_1_Contains_m2412277956_MethodInfo_var);
+		bool L_67 = HashSet_1_Contains_m3728309091(L_65, L_66, /*hidden argument*/HashSet_1_Contains_m3728309091_MethodInfo_var);
 		if (L_67)
 		{
 			goto IL_0159;
@@ -18173,7 +18635,7 @@ extern Il2CppClass* Byte_t3683104436_il2cpp_TypeInfo_var;
 extern Il2CppClass* Int16_t4041245914_il2cpp_TypeInfo_var;
 extern Il2CppClass* RaiseEventOptions_t565739090_il2cpp_TypeInfo_var;
 extern Il2CppClass* Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var;
-extern const MethodInfo* HashSet_1_Contains_m2412277956_MethodInfo_var;
+extern const MethodInfo* HashSet_1_Contains_m3728309091_MethodInfo_var;
 extern const MethodInfo* Dictionary_2_TryGetValue_m2977303364_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2959595932;
 extern Il2CppCodeGenString* _stringLiteral1796425209;
@@ -18209,7 +18671,7 @@ extern "C"  void NetworkingPeer_RPC_m396657009 (NetworkingPeer_t3034011222 * __t
 		NullCheck(L_1);
 		int32_t L_2 = L_1->get_group_4();
 		NullCheck(L_0);
-		bool L_3 = HashSet_1_Contains_m2412277956(L_0, L_2, /*hidden argument*/HashSet_1_Contains_m2412277956_MethodInfo_var);
+		bool L_3 = HashSet_1_Contains_m3728309091(L_0, L_2, /*hidden argument*/HashSet_1_Contains_m3728309091_MethodInfo_var);
 		if (!L_3)
 		{
 			goto IL_0017;
@@ -18770,9 +19232,9 @@ extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
 extern Il2CppClass* ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var;
-extern const MethodInfo* HashSet_1_Contains_m2412277956_MethodInfo_var;
-extern const MethodInfo* HashSet_1_Add_m2170535748_MethodInfo_var;
-extern const MethodInfo* HashSet_1_Remove_m1067706369_MethodInfo_var;
+extern const MethodInfo* HashSet_1_Contains_m3728309091_MethodInfo_var;
+extern const MethodInfo* HashSet_1_Add_m1679051141_MethodInfo_var;
+extern const MethodInfo* HashSet_1_Remove_m3344024002_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2290755440;
 extern Il2CppCodeGenString* _stringLiteral3555410962;
 extern const uint32_t NetworkingPeer_SetReceivingEnabled_m559248578_MetadataUsageId;
@@ -18816,7 +19278,7 @@ IL_0022:
 		HashSet_1_t405338302 * L_6 = __this->get_allowedReceivingGroups_75();
 		int32_t L_7 = ___group0;
 		NullCheck(L_6);
-		bool L_8 = HashSet_1_Contains_m2412277956(L_6, L_7, /*hidden argument*/HashSet_1_Contains_m2412277956_MethodInfo_var);
+		bool L_8 = HashSet_1_Contains_m3728309091(L_6, L_7, /*hidden argument*/HashSet_1_Contains_m3728309091_MethodInfo_var);
 		if (L_8)
 		{
 			goto IL_005b;
@@ -18826,7 +19288,7 @@ IL_0022:
 		HashSet_1_t405338302 * L_9 = __this->get_allowedReceivingGroups_75();
 		int32_t L_10 = ___group0;
 		NullCheck(L_9);
-		HashSet_1_Add_m2170535748(L_9, L_10, /*hidden argument*/HashSet_1_Add_m2170535748_MethodInfo_var);
+		HashSet_1_Add_m1679051141(L_9, L_10, /*hidden argument*/HashSet_1_Add_m1679051141_MethodInfo_var);
 		ByteU5BU5D_t3397334013* L_11 = ((ByteU5BU5D_t3397334013*)SZArrayNew(ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var, (uint32_t)1));
 		int32_t L_12 = ___group0;
 		NullCheck(L_11);
@@ -18846,7 +19308,7 @@ IL_0060:
 		HashSet_1_t405338302 * L_14 = __this->get_allowedReceivingGroups_75();
 		int32_t L_15 = ___group0;
 		NullCheck(L_14);
-		bool L_16 = HashSet_1_Contains_m2412277956(L_14, L_15, /*hidden argument*/HashSet_1_Contains_m2412277956_MethodInfo_var);
+		bool L_16 = HashSet_1_Contains_m3728309091(L_14, L_15, /*hidden argument*/HashSet_1_Contains_m3728309091_MethodInfo_var);
 		if (!L_16)
 		{
 			goto IL_0093;
@@ -18856,7 +19318,7 @@ IL_0060:
 		HashSet_1_t405338302 * L_17 = __this->get_allowedReceivingGroups_75();
 		int32_t L_18 = ___group0;
 		NullCheck(L_17);
-		HashSet_1_Remove_m1067706369(L_17, L_18, /*hidden argument*/HashSet_1_Remove_m1067706369_MethodInfo_var);
+		HashSet_1_Remove_m3344024002(L_17, L_18, /*hidden argument*/HashSet_1_Remove_m3344024002_MethodInfo_var);
 		ByteU5BU5D_t3397334013* L_19 = ((ByteU5BU5D_t3397334013*)SZArrayNew(ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var, (uint32_t)1));
 		int32_t L_20 = ___group0;
 		NullCheck(L_19);
@@ -18877,11 +19339,11 @@ extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
 extern const MethodInfo* List_1__ctor_m3689494784_MethodInfo_var;
-extern const MethodInfo* HashSet_1_Contains_m2412277956_MethodInfo_var;
-extern const MethodInfo* HashSet_1_Add_m2170535748_MethodInfo_var;
+extern const MethodInfo* HashSet_1_Contains_m3728309091_MethodInfo_var;
+extern const MethodInfo* HashSet_1_Add_m1679051141_MethodInfo_var;
 extern const MethodInfo* List_1_Add_m127864652_MethodInfo_var;
 extern const MethodInfo* List_1_Contains_m3806060382_MethodInfo_var;
-extern const MethodInfo* HashSet_1_Remove_m1067706369_MethodInfo_var;
+extern const MethodInfo* HashSet_1_Remove_m3344024002_MethodInfo_var;
 extern const MethodInfo* List_1_get_Count_m135534010_MethodInfo_var;
 extern const MethodInfo* List_1_ToArray_m3280299950_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2290755440;
@@ -18962,7 +19424,7 @@ IL_0043:
 		HashSet_1_t405338302 * L_12 = __this->get_allowedReceivingGroups_75();
 		int32_t L_13 = V_3;
 		NullCheck(L_12);
-		bool L_14 = HashSet_1_Contains_m2412277956(L_12, L_13, /*hidden argument*/HashSet_1_Contains_m2412277956_MethodInfo_var);
+		bool L_14 = HashSet_1_Contains_m3728309091(L_12, L_13, /*hidden argument*/HashSet_1_Contains_m3728309091_MethodInfo_var);
 		if (L_14)
 		{
 			goto IL_0069;
@@ -18972,7 +19434,7 @@ IL_0043:
 		HashSet_1_t405338302 * L_15 = __this->get_allowedReceivingGroups_75();
 		int32_t L_16 = V_3;
 		NullCheck(L_15);
-		HashSet_1_Add_m2170535748(L_15, L_16, /*hidden argument*/HashSet_1_Add_m2170535748_MethodInfo_var);
+		HashSet_1_Add_m1679051141(L_15, L_16, /*hidden argument*/HashSet_1_Add_m1679051141_MethodInfo_var);
 		List_1_t3052225568 * L_17 = V_0;
 		int32_t L_18 = V_3;
 		NullCheck(L_17);
@@ -19061,7 +19523,7 @@ IL_00e0:
 		HashSet_1_t405338302 * L_39 = __this->get_allowedReceivingGroups_75();
 		int32_t L_40 = V_5;
 		NullCheck(L_39);
-		bool L_41 = HashSet_1_Contains_m2412277956(L_39, L_40, /*hidden argument*/HashSet_1_Contains_m2412277956_MethodInfo_var);
+		bool L_41 = HashSet_1_Contains_m3728309091(L_39, L_40, /*hidden argument*/HashSet_1_Contains_m3728309091_MethodInfo_var);
 		if (!L_41)
 		{
 			goto IL_0109;
@@ -19071,7 +19533,7 @@ IL_00e0:
 		HashSet_1_t405338302 * L_42 = __this->get_allowedReceivingGroups_75();
 		int32_t L_43 = V_5;
 		NullCheck(L_42);
-		HashSet_1_Remove_m1067706369(L_42, L_43, /*hidden argument*/HashSet_1_Remove_m1067706369_MethodInfo_var);
+		HashSet_1_Remove_m3344024002(L_42, L_43, /*hidden argument*/HashSet_1_Remove_m3344024002_MethodInfo_var);
 		List_1_t3052225568 * L_44 = V_1;
 		int32_t L_45 = V_5;
 		NullCheck(L_44);
@@ -19161,8 +19623,8 @@ IL_014a:
 	}
 }
 // System.Void NetworkingPeer::SetSendingEnabled(System.Int32,System.Boolean)
-extern const MethodInfo* HashSet_1_Add_m2170535748_MethodInfo_var;
-extern const MethodInfo* HashSet_1_Remove_m1067706369_MethodInfo_var;
+extern const MethodInfo* HashSet_1_Add_m1679051141_MethodInfo_var;
+extern const MethodInfo* HashSet_1_Remove_m3344024002_MethodInfo_var;
 extern const uint32_t NetworkingPeer_SetSendingEnabled_m1033981886_MetadataUsageId;
 extern "C"  void NetworkingPeer_SetSendingEnabled_m1033981886 (NetworkingPeer_t3034011222 * __this, int32_t ___group0, bool ___enabled1, const MethodInfo* method)
 {
@@ -19183,7 +19645,7 @@ extern "C"  void NetworkingPeer_SetSendingEnabled_m1033981886 (NetworkingPeer_t3
 		HashSet_1_t405338302 * L_1 = __this->get_blockSendingGroups_76();
 		int32_t L_2 = ___group0;
 		NullCheck(L_1);
-		HashSet_1_Add_m2170535748(L_1, L_2, /*hidden argument*/HashSet_1_Add_m2170535748_MethodInfo_var);
+		HashSet_1_Add_m1679051141(L_1, L_2, /*hidden argument*/HashSet_1_Add_m1679051141_MethodInfo_var);
 		goto IL_0025;
 	}
 
@@ -19192,7 +19654,7 @@ IL_0018:
 		HashSet_1_t405338302 * L_3 = __this->get_blockSendingGroups_76();
 		int32_t L_4 = ___group0;
 		NullCheck(L_3);
-		HashSet_1_Remove_m1067706369(L_3, L_4, /*hidden argument*/HashSet_1_Remove_m1067706369_MethodInfo_var);
+		HashSet_1_Remove_m3344024002(L_3, L_4, /*hidden argument*/HashSet_1_Remove_m3344024002_MethodInfo_var);
 	}
 
 IL_0025:
@@ -19201,9 +19663,9 @@ IL_0025:
 	}
 }
 // System.Void NetworkingPeer::SetSendingEnabled(System.Int32[],System.Int32[])
-extern const MethodInfo* HashSet_1_Contains_m2412277956_MethodInfo_var;
-extern const MethodInfo* HashSet_1_Remove_m1067706369_MethodInfo_var;
-extern const MethodInfo* HashSet_1_Add_m2170535748_MethodInfo_var;
+extern const MethodInfo* HashSet_1_Contains_m3728309091_MethodInfo_var;
+extern const MethodInfo* HashSet_1_Remove_m3344024002_MethodInfo_var;
+extern const MethodInfo* HashSet_1_Add_m1679051141_MethodInfo_var;
 extern const uint32_t NetworkingPeer_SetSendingEnabled_m3798735534_MetadataUsageId;
 extern "C"  void NetworkingPeer_SetSendingEnabled_m3798735534 (NetworkingPeer_t3034011222 * __this, Int32U5BU5D_t3030399641* ___enableGroups0, Int32U5BU5D_t3030399641* ___disableGroups1, const MethodInfo* method)
 {
@@ -19244,7 +19706,7 @@ IL_000f:
 		HashSet_1_t405338302 * L_6 = __this->get_blockSendingGroups_76();
 		int32_t L_7 = V_0;
 		NullCheck(L_6);
-		bool L_8 = HashSet_1_Contains_m2412277956(L_6, L_7, /*hidden argument*/HashSet_1_Contains_m2412277956_MethodInfo_var);
+		bool L_8 = HashSet_1_Contains_m3728309091(L_6, L_7, /*hidden argument*/HashSet_1_Contains_m3728309091_MethodInfo_var);
 		if (!L_8)
 		{
 			goto IL_0031;
@@ -19254,7 +19716,7 @@ IL_000f:
 		HashSet_1_t405338302 * L_9 = __this->get_blockSendingGroups_76();
 		int32_t L_10 = V_0;
 		NullCheck(L_9);
-		HashSet_1_Remove_m1067706369(L_9, L_10, /*hidden argument*/HashSet_1_Remove_m1067706369_MethodInfo_var);
+		HashSet_1_Remove_m3344024002(L_9, L_10, /*hidden argument*/HashSet_1_Remove_m3344024002_MethodInfo_var);
 	}
 
 IL_0031:
@@ -19300,7 +19762,7 @@ IL_004f:
 		HashSet_1_t405338302 * L_20 = __this->get_blockSendingGroups_76();
 		int32_t L_21 = V_3;
 		NullCheck(L_20);
-		bool L_22 = HashSet_1_Contains_m2412277956(L_20, L_21, /*hidden argument*/HashSet_1_Contains_m2412277956_MethodInfo_var);
+		bool L_22 = HashSet_1_Contains_m3728309091(L_20, L_21, /*hidden argument*/HashSet_1_Contains_m3728309091_MethodInfo_var);
 		if (L_22)
 		{
 			goto IL_0073;
@@ -19310,7 +19772,7 @@ IL_004f:
 		HashSet_1_t405338302 * L_23 = __this->get_blockSendingGroups_76();
 		int32_t L_24 = V_3;
 		NullCheck(L_23);
-		HashSet_1_Add_m2170535748(L_23, L_24, /*hidden argument*/HashSet_1_Add_m2170535748_MethodInfo_var);
+		HashSet_1_Add_m1679051141(L_23, L_24, /*hidden argument*/HashSet_1_Add_m1679051141_MethodInfo_var);
 	}
 
 IL_0073:
@@ -19350,7 +19812,7 @@ extern const MethodInfo* KeyValuePair_2_get_Key_m2032516212_MethodInfo_var;
 extern const MethodInfo* List_1_Add_m2801927573_MethodInfo_var;
 extern const MethodInfo* Enumerator_MoveNext_m4272472083_MethodInfo_var;
 extern const MethodInfo* Enumerator_Dispose_m1020215653_MethodInfo_var;
-extern const MethodInfo* List_1_get_Item_m1921196075_MethodInfo_var;
+extern const MethodInfo* List_1_get_Item_m3472206364_MethodInfo_var;
 extern const MethodInfo* Dictionary_2_Remove_m4236769173_MethodInfo_var;
 extern const MethodInfo* List_1_get_Count_m852068579_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral4271868033;
@@ -19474,7 +19936,7 @@ IL_007f:
 		List_1_t1440998580 * L_11 = V_0;
 		int32_t L_12 = V_4;
 		NullCheck(L_11);
-		int32_t L_13 = List_1_get_Item_m1921196075(L_11, L_12, /*hidden argument*/List_1_get_Item_m1921196075_MethodInfo_var);
+		int32_t L_13 = List_1_get_Item_m3472206364(L_11, L_12, /*hidden argument*/List_1_get_Item_m3472206364_MethodInfo_var);
 		V_5 = L_13;
 		Dictionary_2_t4202656512 * L_14 = __this->get_photonViewList_77();
 		int32_t L_15 = V_5;
@@ -19541,7 +20003,7 @@ extern const MethodInfo* Dictionary_2_get_Count_m2974047374_MethodInfo_var;
 extern const MethodInfo* Dictionary_2_get_Values_m1435264616_MethodInfo_var;
 extern const MethodInfo* ValueCollection_GetEnumerator_m1957752682_MethodInfo_var;
 extern const MethodInfo* Enumerator_get_Current_m3836672024_MethodInfo_var;
-extern const MethodInfo* HashSet_1_Contains_m2412277956_MethodInfo_var;
+extern const MethodInfo* HashSet_1_Contains_m3728309091_MethodInfo_var;
 extern const MethodInfo* Dictionary_2_TryGetValue_m686914248_MethodInfo_var;
 extern const MethodInfo* Dictionary_2_set_Item_m1975031208_MethodInfo_var;
 extern const MethodInfo* Dictionary_2_get_Count_m1258731365_MethodInfo_var;
@@ -19701,7 +20163,7 @@ IL_0083:
 			NullCheck(L_18);
 			int32_t L_19 = L_18->get_group_4();
 			NullCheck(L_17);
-			bool L_20 = HashSet_1_Contains_m2412277956(L_17, L_19, /*hidden argument*/HashSet_1_Contains_m2412277956_MethodInfo_var);
+			bool L_20 = HashSet_1_Contains_m3728309091(L_17, L_19, /*hidden argument*/HashSet_1_Contains_m3728309091_MethodInfo_var);
 			if (!L_20)
 			{
 				goto IL_009e;
@@ -20447,7 +20909,7 @@ extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
 extern Il2CppClass* Int16_t4041245914_il2cpp_TypeInfo_var;
 extern Il2CppClass* PhotonNetwork_t1563132424_il2cpp_TypeInfo_var;
-extern const MethodInfo* HashSet_1_Contains_m2412277956_MethodInfo_var;
+extern const MethodInfo* HashSet_1_Contains_m3728309091_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral764260915;
 extern Il2CppCodeGenString* _stringLiteral723918677;
 extern Il2CppCodeGenString* _stringLiteral2940115946;
@@ -20595,7 +21057,7 @@ IL_00b8:
 		NullCheck(L_43);
 		int32_t L_44 = L_43->get_group_4();
 		NullCheck(L_42);
-		bool L_45 = HashSet_1_Contains_m2412277956(L_42, L_44, /*hidden argument*/HashSet_1_Contains_m2412277956_MethodInfo_var);
+		bool L_45 = HashSet_1_Contains_m3728309091(L_42, L_44, /*hidden argument*/HashSet_1_Contains_m3728309091_MethodInfo_var);
 		if (L_45)
 		{
 			goto IL_00da;
@@ -22521,7 +22983,7 @@ extern "C"  void U3CFlashU3Ec__Iterator0__ctor_m3939499729 (U3CFlashU3Ec__Iterat
 // System.Boolean OnClickFlashRpc/<Flash>c__Iterator0::MoveNext()
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
-extern const MethodInfo* Component_GetComponent_TisRenderer_t257310565_m772028041_MethodInfo_var;
+extern const MethodInfo* Component_GetComponent_TisRenderer_t257310565_m2803939486_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2002659660;
 extern Il2CppCodeGenString* _stringLiteral562487523;
 extern const uint32_t U3CFlashU3Ec__Iterator0_MoveNext_m2698619711_MetadataUsageId;
@@ -22574,7 +23036,7 @@ IL_0036:
 		OnClickFlashRpc_t4256173558 * L_5 = __this->get_U24this_2();
 		OnClickFlashRpc_t4256173558 * L_6 = __this->get_U24this_2();
 		NullCheck(L_6);
-		Renderer_t257310565 * L_7 = Component_GetComponent_TisRenderer_t257310565_m772028041(L_6, /*hidden argument*/Component_GetComponent_TisRenderer_t257310565_m772028041_MethodInfo_var);
+		Renderer_t257310565 * L_7 = Component_GetComponent_TisRenderer_t257310565_m2803939486(L_6, /*hidden argument*/Component_GetComponent_TisRenderer_t257310565_m2803939486_MethodInfo_var);
 		NullCheck(L_7);
 		Material_t193706927 * L_8 = Renderer_get_material_m2553789785(L_7, /*hidden argument*/NULL);
 		NullCheck(L_5);
@@ -23025,7 +23487,7 @@ IL_00a7:
 	}
 }
 // System.Void OnClickRequestOwnership::ColorRpc(UnityEngine.Vector3)
-extern const MethodInfo* GameObject_GetComponent_TisRenderer_t257310565_m1312615893_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisRenderer_t257310565_m697787402_MethodInfo_var;
 extern const uint32_t OnClickRequestOwnership_ColorRpc_m3694121707_MetadataUsageId;
 extern "C"  void OnClickRequestOwnership_ColorRpc_m3694121707 (OnClickRequestOwnership_t527990915 * __this, Vector3_t2243707580  ___col0, const MethodInfo* method)
 {
@@ -23044,7 +23506,7 @@ extern "C"  void OnClickRequestOwnership_ColorRpc_m3694121707 (OnClickRequestOwn
 		Color__ctor_m3811852957((&V_0), L_0, L_1, L_2, /*hidden argument*/NULL);
 		GameObject_t1756533147 * L_3 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
 		NullCheck(L_3);
-		Renderer_t257310565 * L_4 = GameObject_GetComponent_TisRenderer_t257310565_m1312615893(L_3, /*hidden argument*/GameObject_GetComponent_TisRenderer_t257310565_m1312615893_MethodInfo_var);
+		Renderer_t257310565 * L_4 = GameObject_GetComponent_TisRenderer_t257310565_m697787402(L_3, /*hidden argument*/GameObject_GetComponent_TisRenderer_t257310565_m697787402_MethodInfo_var);
 		NullCheck(L_4);
 		Material_t193706927 * L_5 = Renderer_get_material_m2553789785(L_4, /*hidden argument*/NULL);
 		Color_t2020392075  L_6 = V_0;
@@ -32129,7 +32591,7 @@ extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* Exception_t1927440687_il2cpp_TypeInfo_var;
 extern const MethodInfo* Dictionary_2_ContainsKey_m3138596743_MethodInfo_var;
-extern const MethodInfo* List_1_Contains_m793041670_MethodInfo_var;
+extern const MethodInfo* List_1_Contains_m1136004261_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral3420029970;
 extern Il2CppCodeGenString* _stringLiteral1645210050;
 extern const uint32_t PhotonNetwork_AllocateViewID_m837476753_MetadataUsageId;
@@ -32285,7 +32747,7 @@ IL_00a6:
 		List_1_t1440998580 * L_35 = ((PhotonNetwork_t1563132424_StaticFields*)PhotonNetwork_t1563132424_il2cpp_TypeInfo_var->static_fields)->get_manuallyAllocatedViewIds_34();
 		int32_t L_36 = V_5;
 		NullCheck(L_35);
-		bool L_37 = List_1_Contains_m793041670(L_35, L_36, /*hidden argument*/List_1_Contains_m793041670_MethodInfo_var);
+		bool L_37 = List_1_Contains_m1136004261(L_35, L_36, /*hidden argument*/List_1_Contains_m1136004261_MethodInfo_var);
 		if (L_37)
 		{
 			goto IL_00de;
@@ -32378,7 +32840,7 @@ extern Il2CppClass* PhotonNetwork_t1563132424_il2cpp_TypeInfo_var;
 extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
-extern const MethodInfo* List_1_Remove_m3494432915_MethodInfo_var;
+extern const MethodInfo* List_1_Remove_m3746272350_MethodInfo_var;
 extern const MethodInfo* Dictionary_2_ContainsKey_m3138596743_MethodInfo_var;
 extern const MethodInfo* Dictionary_2_get_Item_m1876539902_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2768095093;
@@ -32396,7 +32858,7 @@ extern "C"  void PhotonNetwork_UnAllocateViewID_m4241669110 (Il2CppObject * __th
 		List_1_t1440998580 * L_0 = ((PhotonNetwork_t1563132424_StaticFields*)PhotonNetwork_t1563132424_il2cpp_TypeInfo_var->static_fields)->get_manuallyAllocatedViewIds_34();
 		int32_t L_1 = ___viewID0;
 		NullCheck(L_0);
-		List_1_Remove_m3494432915(L_0, L_1, /*hidden argument*/List_1_Remove_m3494432915_MethodInfo_var);
+		List_1_Remove_m3746272350(L_0, L_1, /*hidden argument*/List_1_Remove_m3746272350_MethodInfo_var);
 		NetworkingPeer_t3034011222 * L_2 = ((PhotonNetwork_t1563132424_StaticFields*)PhotonNetwork_t1563132424_il2cpp_TypeInfo_var->static_fields)->get_networkingPeer_3();
 		NullCheck(L_2);
 		Dictionary_2_t4202656512 * L_3 = L_2->get_photonViewList_77();
@@ -46351,370 +46813,6 @@ extern "C"  void PunPlayerScores__ctor_m2480230180 (PunPlayerScores_t851215673 *
 {
 	{
 		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void PunRPC::.ctor()
-extern "C"  void PunRPC__ctor_m3631903409 (PunRPC_t2663265338 * __this, const MethodInfo* method)
-{
-	{
-		Attribute__ctor_m1730479323(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void PunTeams::.ctor()
-extern "C"  void PunTeams__ctor_m1308971250 (PunTeams_t2511225963 * __this, const MethodInfo* method)
-{
-	{
-		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void PunTeams::Start()
-extern const Il2CppType* Team_t3635662189_0_0_0_var;
-extern Il2CppClass* Dictionary_2_t2457806897_il2cpp_TypeInfo_var;
-extern Il2CppClass* PunTeams_t2511225963_il2cpp_TypeInfo_var;
-extern Il2CppClass* Type_t_il2cpp_TypeInfo_var;
-extern Il2CppClass* Enum_t2459695545_il2cpp_TypeInfo_var;
-extern Il2CppClass* IEnumerator_t1466026749_il2cpp_TypeInfo_var;
-extern Il2CppClass* Team_t3635662189_il2cpp_TypeInfo_var;
-extern Il2CppClass* List_1_t3489729959_il2cpp_TypeInfo_var;
-extern Il2CppClass* IDisposable_t2427283555_il2cpp_TypeInfo_var;
-extern const MethodInfo* Dictionary_2__ctor_m3311363738_MethodInfo_var;
-extern const MethodInfo* List_1__ctor_m1187620528_MethodInfo_var;
-extern const MethodInfo* Dictionary_2_set_Item_m2613746097_MethodInfo_var;
-extern const uint32_t PunTeams_Start_m1423046614_MetadataUsageId;
-extern "C"  void PunTeams_Start_m1423046614 (PunTeams_t2511225963 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (PunTeams_Start_m1423046614_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	Il2CppArray * V_0 = NULL;
-	Il2CppObject * V_1 = NULL;
-	Il2CppObject * V_2 = NULL;
-	Il2CppObject * V_3 = NULL;
-	Exception_t1927440687 * __last_unhandled_exception = 0;
-	NO_UNUSED_WARNING (__last_unhandled_exception);
-	Exception_t1927440687 * __exception_local = 0;
-	NO_UNUSED_WARNING (__exception_local);
-	int32_t __leave_target = 0;
-	NO_UNUSED_WARNING (__leave_target);
-	{
-		Dictionary_2_t2457806897 * L_0 = (Dictionary_2_t2457806897 *)il2cpp_codegen_object_new(Dictionary_2_t2457806897_il2cpp_TypeInfo_var);
-		Dictionary_2__ctor_m3311363738(L_0, /*hidden argument*/Dictionary_2__ctor_m3311363738_MethodInfo_var);
-		((PunTeams_t2511225963_StaticFields*)PunTeams_t2511225963_il2cpp_TypeInfo_var->static_fields)->set_PlayersPerTeam_2(L_0);
-		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
-		Type_t * L_1 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(Team_t3635662189_0_0_0_var), /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Enum_t2459695545_il2cpp_TypeInfo_var);
-		Il2CppArray * L_2 = Enum_GetValues_m2107059536(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
-		V_0 = L_2;
-		Il2CppArray * L_3 = V_0;
-		NullCheck(L_3);
-		Il2CppObject * L_4 = Array_GetEnumerator_m2284404958(L_3, /*hidden argument*/NULL);
-		V_2 = L_4;
-	}
-
-IL_0021:
-	try
-	{ // begin try (depth: 1)
-		{
-			goto IL_0042;
-		}
-
-IL_0026:
-		{
-			Il2CppObject * L_5 = V_2;
-			NullCheck(L_5);
-			Il2CppObject * L_6 = InterfaceFuncInvoker0< Il2CppObject * >::Invoke(0 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t1466026749_il2cpp_TypeInfo_var, L_5);
-			V_1 = L_6;
-			Dictionary_2_t2457806897 * L_7 = ((PunTeams_t2511225963_StaticFields*)PunTeams_t2511225963_il2cpp_TypeInfo_var->static_fields)->get_PlayersPerTeam_2();
-			Il2CppObject * L_8 = V_1;
-			List_1_t3489729959 * L_9 = (List_1_t3489729959 *)il2cpp_codegen_object_new(List_1_t3489729959_il2cpp_TypeInfo_var);
-			List_1__ctor_m1187620528(L_9, /*hidden argument*/List_1__ctor_m1187620528_MethodInfo_var);
-			NullCheck(L_7);
-			Dictionary_2_set_Item_m2613746097(L_7, ((*(uint8_t*)((uint8_t*)UnBox (L_8, Team_t3635662189_il2cpp_TypeInfo_var)))), L_9, /*hidden argument*/Dictionary_2_set_Item_m2613746097_MethodInfo_var);
-		}
-
-IL_0042:
-		{
-			Il2CppObject * L_10 = V_2;
-			NullCheck(L_10);
-			bool L_11 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t1466026749_il2cpp_TypeInfo_var, L_10);
-			if (L_11)
-			{
-				goto IL_0026;
-			}
-		}
-
-IL_004d:
-		{
-			IL2CPP_LEAVE(0x66, FINALLY_0052);
-		}
-	} // end try (depth: 1)
-	catch(Il2CppExceptionWrapper& e)
-	{
-		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
-		goto FINALLY_0052;
-	}
-
-FINALLY_0052:
-	{ // begin finally (depth: 1)
-		{
-			Il2CppObject * L_12 = V_2;
-			Il2CppObject * L_13 = ((Il2CppObject *)IsInst(L_12, IDisposable_t2427283555_il2cpp_TypeInfo_var));
-			V_3 = L_13;
-			if (!L_13)
-			{
-				goto IL_0065;
-			}
-		}
-
-IL_005f:
-		{
-			Il2CppObject * L_14 = V_3;
-			NullCheck(L_14);
-			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t2427283555_il2cpp_TypeInfo_var, L_14);
-		}
-
-IL_0065:
-		{
-			IL2CPP_END_FINALLY(82)
-		}
-	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(82)
-	{
-		IL2CPP_JUMP_TBL(0x66, IL_0066)
-		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
-	}
-
-IL_0066:
-	{
-		return;
-	}
-}
-// System.Void PunTeams::OnDisable()
-extern Il2CppClass* Dictionary_2_t2457806897_il2cpp_TypeInfo_var;
-extern Il2CppClass* PunTeams_t2511225963_il2cpp_TypeInfo_var;
-extern const MethodInfo* Dictionary_2__ctor_m3311363738_MethodInfo_var;
-extern const uint32_t PunTeams_OnDisable_m3881962211_MetadataUsageId;
-extern "C"  void PunTeams_OnDisable_m3881962211 (PunTeams_t2511225963 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (PunTeams_OnDisable_m3881962211_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		Dictionary_2_t2457806897 * L_0 = (Dictionary_2_t2457806897 *)il2cpp_codegen_object_new(Dictionary_2_t2457806897_il2cpp_TypeInfo_var);
-		Dictionary_2__ctor_m3311363738(L_0, /*hidden argument*/Dictionary_2__ctor_m3311363738_MethodInfo_var);
-		((PunTeams_t2511225963_StaticFields*)PunTeams_t2511225963_il2cpp_TypeInfo_var->static_fields)->set_PlayersPerTeam_2(L_0);
-		return;
-	}
-}
-// System.Void PunTeams::OnJoinedRoom()
-extern "C"  void PunTeams_OnJoinedRoom_m736144195 (PunTeams_t2511225963 * __this, const MethodInfo* method)
-{
-	{
-		PunTeams_UpdateTeams_m3021726269(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void PunTeams::OnLeftRoom()
-extern "C"  void PunTeams_OnLeftRoom_m2495644179 (PunTeams_t2511225963 * __this, const MethodInfo* method)
-{
-	{
-		PunTeams_Start_m1423046614(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void PunTeams::OnPhotonPlayerPropertiesChanged(System.Object[])
-extern "C"  void PunTeams_OnPhotonPlayerPropertiesChanged_m2269603965 (PunTeams_t2511225963 * __this, ObjectU5BU5D_t3614634134* ___playerAndUpdatedProps0, const MethodInfo* method)
-{
-	{
-		PunTeams_UpdateTeams_m3021726269(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void PunTeams::OnPhotonPlayerDisconnected(PhotonPlayer)
-extern "C"  void PunTeams_OnPhotonPlayerDisconnected_m2498061324 (PunTeams_t2511225963 * __this, PhotonPlayer_t4120608827 * ___otherPlayer0, const MethodInfo* method)
-{
-	{
-		PunTeams_UpdateTeams_m3021726269(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void PunTeams::OnPhotonPlayerConnected(PhotonPlayer)
-extern "C"  void PunTeams_OnPhotonPlayerConnected_m527918058 (PunTeams_t2511225963 * __this, PhotonPlayer_t4120608827 * ___newPlayer0, const MethodInfo* method)
-{
-	{
-		PunTeams_UpdateTeams_m3021726269(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void PunTeams::UpdateTeams()
-extern const Il2CppType* Team_t3635662189_0_0_0_var;
-extern Il2CppClass* Type_t_il2cpp_TypeInfo_var;
-extern Il2CppClass* Enum_t2459695545_il2cpp_TypeInfo_var;
-extern Il2CppClass* IEnumerator_t1466026749_il2cpp_TypeInfo_var;
-extern Il2CppClass* PunTeams_t2511225963_il2cpp_TypeInfo_var;
-extern Il2CppClass* Team_t3635662189_il2cpp_TypeInfo_var;
-extern Il2CppClass* IDisposable_t2427283555_il2cpp_TypeInfo_var;
-extern Il2CppClass* PhotonNetwork_t1563132424_il2cpp_TypeInfo_var;
-extern const MethodInfo* Dictionary_2_get_Item_m4239463688_MethodInfo_var;
-extern const MethodInfo* List_1_Clear_m3741360597_MethodInfo_var;
-extern const MethodInfo* List_1_Add_m637615468_MethodInfo_var;
-extern const uint32_t PunTeams_UpdateTeams_m3021726269_MetadataUsageId;
-extern "C"  void PunTeams_UpdateTeams_m3021726269 (PunTeams_t2511225963 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (PunTeams_UpdateTeams_m3021726269_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	Il2CppArray * V_0 = NULL;
-	Il2CppObject * V_1 = NULL;
-	Il2CppObject * V_2 = NULL;
-	Il2CppObject * V_3 = NULL;
-	int32_t V_4 = 0;
-	PhotonPlayer_t4120608827 * V_5 = NULL;
-	uint8_t V_6 = 0;
-	Exception_t1927440687 * __last_unhandled_exception = 0;
-	NO_UNUSED_WARNING (__last_unhandled_exception);
-	Exception_t1927440687 * __exception_local = 0;
-	NO_UNUSED_WARNING (__exception_local);
-	int32_t __leave_target = 0;
-	NO_UNUSED_WARNING (__leave_target);
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
-		Type_t * L_0 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(Team_t3635662189_0_0_0_var), /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Enum_t2459695545_il2cpp_TypeInfo_var);
-		Il2CppArray * L_1 = Enum_GetValues_m2107059536(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		V_0 = L_1;
-		Il2CppArray * L_2 = V_0;
-		NullCheck(L_2);
-		Il2CppObject * L_3 = Array_GetEnumerator_m2284404958(L_2, /*hidden argument*/NULL);
-		V_2 = L_3;
-	}
-
-IL_0017:
-	try
-	{ // begin try (depth: 1)
-		{
-			goto IL_0038;
-		}
-
-IL_001c:
-		{
-			Il2CppObject * L_4 = V_2;
-			NullCheck(L_4);
-			Il2CppObject * L_5 = InterfaceFuncInvoker0< Il2CppObject * >::Invoke(0 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t1466026749_il2cpp_TypeInfo_var, L_4);
-			V_1 = L_5;
-			Dictionary_2_t2457806897 * L_6 = ((PunTeams_t2511225963_StaticFields*)PunTeams_t2511225963_il2cpp_TypeInfo_var->static_fields)->get_PlayersPerTeam_2();
-			Il2CppObject * L_7 = V_1;
-			NullCheck(L_6);
-			List_1_t3489729959 * L_8 = Dictionary_2_get_Item_m4239463688(L_6, ((*(uint8_t*)((uint8_t*)UnBox (L_7, Team_t3635662189_il2cpp_TypeInfo_var)))), /*hidden argument*/Dictionary_2_get_Item_m4239463688_MethodInfo_var);
-			NullCheck(L_8);
-			List_1_Clear_m3741360597(L_8, /*hidden argument*/List_1_Clear_m3741360597_MethodInfo_var);
-		}
-
-IL_0038:
-		{
-			Il2CppObject * L_9 = V_2;
-			NullCheck(L_9);
-			bool L_10 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t1466026749_il2cpp_TypeInfo_var, L_9);
-			if (L_10)
-			{
-				goto IL_001c;
-			}
-		}
-
-IL_0043:
-		{
-			IL2CPP_LEAVE(0x5C, FINALLY_0048);
-		}
-	} // end try (depth: 1)
-	catch(Il2CppExceptionWrapper& e)
-	{
-		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
-		goto FINALLY_0048;
-	}
-
-FINALLY_0048:
-	{ // begin finally (depth: 1)
-		{
-			Il2CppObject * L_11 = V_2;
-			Il2CppObject * L_12 = ((Il2CppObject *)IsInst(L_11, IDisposable_t2427283555_il2cpp_TypeInfo_var));
-			V_3 = L_12;
-			if (!L_12)
-			{
-				goto IL_005b;
-			}
-		}
-
-IL_0055:
-		{
-			Il2CppObject * L_13 = V_3;
-			NullCheck(L_13);
-			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t2427283555_il2cpp_TypeInfo_var, L_13);
-		}
-
-IL_005b:
-		{
-			IL2CPP_END_FINALLY(72)
-		}
-	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(72)
-	{
-		IL2CPP_JUMP_TBL(0x5C, IL_005c)
-		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
-	}
-
-IL_005c:
-	{
-		V_4 = 0;
-		goto IL_0090;
-	}
-
-IL_0064:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t1563132424_il2cpp_TypeInfo_var);
-		PhotonPlayerU5BU5D_t818546810* L_14 = PhotonNetwork_get_playerList_m308562995(NULL /*static, unused*/, /*hidden argument*/NULL);
-		int32_t L_15 = V_4;
-		NullCheck(L_14);
-		int32_t L_16 = L_15;
-		PhotonPlayer_t4120608827 * L_17 = (L_14)->GetAt(static_cast<il2cpp_array_size_t>(L_16));
-		V_5 = L_17;
-		PhotonPlayer_t4120608827 * L_18 = V_5;
-		uint8_t L_19 = TeamExtensions_GetTeam_m465995972(NULL /*static, unused*/, L_18, /*hidden argument*/NULL);
-		V_6 = L_19;
-		Dictionary_2_t2457806897 * L_20 = ((PunTeams_t2511225963_StaticFields*)PunTeams_t2511225963_il2cpp_TypeInfo_var->static_fields)->get_PlayersPerTeam_2();
-		uint8_t L_21 = V_6;
-		NullCheck(L_20);
-		List_1_t3489729959 * L_22 = Dictionary_2_get_Item_m4239463688(L_20, L_21, /*hidden argument*/Dictionary_2_get_Item_m4239463688_MethodInfo_var);
-		PhotonPlayer_t4120608827 * L_23 = V_5;
-		NullCheck(L_22);
-		List_1_Add_m637615468(L_22, L_23, /*hidden argument*/List_1_Add_m637615468_MethodInfo_var);
-		int32_t L_24 = V_4;
-		V_4 = ((int32_t)((int32_t)L_24+(int32_t)1));
-	}
-
-IL_0090:
-	{
-		int32_t L_25 = V_4;
-		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t1563132424_il2cpp_TypeInfo_var);
-		PhotonPlayerU5BU5D_t818546810* L_26 = PhotonNetwork_get_playerList_m308562995(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_26);
-		if ((((int32_t)L_25) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_26)->max_length)))))))
-		{
-			goto IL_0064;
-		}
-	}
-	{
 		return;
 	}
 }

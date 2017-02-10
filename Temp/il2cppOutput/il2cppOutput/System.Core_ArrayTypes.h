@@ -17,8 +17,12 @@ struct HashSet_1_t2984649583;
 #include "System_Core_System_Collections_Generic_HashSet_1_L2826872705.h"
 #include "System_Core_System_Collections_Generic_HashSet_1_g2984649583.h"
 #include "System_Core_System_Collections_Generic_HashSet_1_Li116960033.h"
-#include "System_Core_System_Collections_Generic_HashSet_1_L2103067015.h"
 #include "System_Core_System_Collections_Generic_HashSet_1_Li247561424.h"
+#include "System_Core_System_Collections_Generic_HashSet_1_L3738892376.h"
+#include "System_Core_System_Collections_Generic_HashSet_1_L2866035586.h"
+#include "System_Core_System_Collections_Generic_HashSet_1_L1908629703.h"
+#include "System_Core_System_Collections_Generic_HashSet_1_Li863261303.h"
+#include "System_Core_System_Collections_Generic_HashSet_1_L2103067015.h"
 #include "System_Core_System_Collections_Generic_HashSet_1_L4227184419.h"
 #include "System_Core_System_Collections_Generic_HashSet_1_L2296292803.h"
 #include "System_Core_System_Collections_Generic_HashSet_1_Li204904209.h"
@@ -166,41 +170,6 @@ public:
 		m_Items[index] = value;
 	}
 };
-// System.Collections.Generic.HashSet`1/Link<PickupItem>[]
-struct LinkU5BU5D_t461601918  : public Il2CppArray
-{
-public:
-	ALIGN_FIELD (8) Link_t2103067015  m_Items[1];
-
-public:
-	inline Link_t2103067015  GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline Link_t2103067015 * GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, Link_t2103067015  value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline Link_t2103067015  GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline Link_t2103067015 * GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, Link_t2103067015  value)
-	{
-		m_Items[index] = value;
-	}
-};
 // System.Collections.Generic.HashSet`1/Link<System.Int32>[]
 struct LinkU5BU5D_t3013699057  : public Il2CppArray
 {
@@ -232,6 +201,181 @@ public:
 		return m_Items + index;
 	}
 	inline void SetAtUnchecked(il2cpp_array_size_t index, Link_t247561424  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Collections.Generic.HashSet`1/Link<UnityEngine.MeshRenderer>[]
+struct LinkU5BU5D_t1550459721  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Link_t3738892376  m_Items[1];
+
+public:
+	inline Link_t3738892376  GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Link_t3738892376 * GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Link_t3738892376  value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Link_t3738892376  GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Link_t3738892376 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Link_t3738892376  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Collections.Generic.HashSet`1/Link<Vuforia.VideoBackgroundAbstractBehaviour>[]
+struct LinkU5BU5D_t3324718135  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Link_t2866035586  m_Items[1];
+
+public:
+	inline Link_t2866035586  GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Link_t2866035586 * GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Link_t2866035586  value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Link_t2866035586  GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Link_t2866035586 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Link_t2866035586  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Collections.Generic.HashSet`1/Link<Vuforia.BackgroundPlaneAbstractBehaviour>[]
+struct LinkU5BU5D_t1001895998  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Link_t1908629703  m_Items[1];
+
+public:
+	inline Link_t1908629703  GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Link_t1908629703 * GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Link_t1908629703  value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Link_t1908629703  GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Link_t1908629703 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Link_t1908629703  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Collections.Generic.HashSet`1/Link<Vuforia.HideExcessAreaAbstractBehaviour>[]
+struct LinkU5BU5D_t753392078  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Link_t863261303  m_Items[1];
+
+public:
+	inline Link_t863261303  GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Link_t863261303 * GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Link_t863261303  value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Link_t863261303  GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Link_t863261303 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Link_t863261303  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Collections.Generic.HashSet`1/Link<PickupItem>[]
+struct LinkU5BU5D_t461601918  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Link_t2103067015  m_Items[1];
+
+public:
+	inline Link_t2103067015  GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Link_t2103067015 * GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Link_t2103067015  value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Link_t2103067015  GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Link_t2103067015 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Link_t2103067015  value)
 	{
 		m_Items[index] = value;
 	}

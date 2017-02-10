@@ -31,21 +31,21 @@ struct XmlNode_t616554813;
 #include "System_Xml_System_Xml_XmlNode616554813.h"
 
 // System.Void System.Configuration.ConfigurationException::.ctor()
-extern "C"  void ConfigurationException__ctor_m1046987330 (ConfigurationException_t3814184945 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void ConfigurationException__ctor_m2016541990 (ConfigurationException_t3814184945 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Configuration.ConfigurationException::.ctor(System.String)
-extern "C"  void ConfigurationException__ctor_m1950737452 (ConfigurationException_t3814184945 * __this, String_t* ___message0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void ConfigurationException__ctor_m155150844 (ConfigurationException_t3814184945 * __this, String_t* ___message0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Configuration.ConfigurationException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-extern "C"  void ConfigurationException__ctor_m3177755519 (ConfigurationException_t3814184945 * __this, SerializationInfo_t228987430 * ___info0, StreamingContext_t1417235061  ___context1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void ConfigurationException__ctor_m1625396877 (ConfigurationException_t3814184945 * __this, SerializationInfo_t228987430 * ___info0, StreamingContext_t1417235061  ___context1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Configuration.ConfigurationException::.ctor(System.String,System.Exception)
-extern "C"  void ConfigurationException__ctor_m3617147564 (ConfigurationException_t3814184945 * __this, String_t* ___message0, Exception_t1927440687 * ___inner1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void ConfigurationException__ctor_m134485716 (ConfigurationException_t3814184945 * __this, String_t* ___message0, Exception_t1927440687 * ___inner1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Configuration.ConfigurationException::.ctor(System.String,System.Xml.XmlNode)
 extern "C"  void ConfigurationException__ctor_m2353791559 (ConfigurationException_t3814184945 * __this, String_t* ___message0, XmlNode_t616554813 * ___node1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Configuration.ConfigurationException::.ctor(System.String,System.Exception,System.Xml.XmlNode)
 extern "C"  void ConfigurationException__ctor_m3525068459 (ConfigurationException_t3814184945 * __this, String_t* ___message0, Exception_t1927440687 * ___inner1, XmlNode_t616554813 * ___node2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Configuration.ConfigurationException::.ctor(System.String,System.String,System.Int32)
-extern "C"  void ConfigurationException__ctor_m2633858641 (ConfigurationException_t3814184945 * __this, String_t* ___message0, String_t* ___filename1, int32_t ___line2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void ConfigurationException__ctor_m146514043 (ConfigurationException_t3814184945 * __this, String_t* ___message0, String_t* ___filename1, int32_t ___line2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Configuration.ConfigurationException::get_BareMessage()
-extern "C"  String_t* ConfigurationException_get_BareMessage_m74709031 (ConfigurationException_t3814184945 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  String_t* ConfigurationException_get_BareMessage_m1773829953 (ConfigurationException_t3814184945 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Configuration.ConfigurationException::get_Message()
 extern "C"  String_t* ConfigurationException_get_Message_m4079252099 (ConfigurationException_t3814184945 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Configuration.ConfigurationException::GetXmlNodeFilename(System.Xml.XmlNode)
@@ -53,4 +53,4 @@ extern "C"  String_t* ConfigurationException_GetXmlNodeFilename_m3187209172 (Il2
 // System.Int32 System.Configuration.ConfigurationException::GetXmlNodeLineNumber(System.Xml.XmlNode)
 extern "C"  int32_t ConfigurationException_GetXmlNodeLineNumber_m3219878065 (Il2CppObject * __this /* static, unused */, XmlNode_t616554813 * ___node0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Configuration.ConfigurationException::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-extern "C"  void ConfigurationException_GetObjectData_m832314182 (ConfigurationException_t3814184945 * __this, SerializationInfo_t228987430 * ___info0, StreamingContext_t1417235061  ___context1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void ConfigurationException_GetObjectData_m2618268214 (ConfigurationException_t3814184945 * __this, SerializationInfo_t228987430 * ___info0, StreamingContext_t1417235061  ___context1, const MethodInfo* method) IL2CPP_METHOD_ATTR;

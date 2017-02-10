@@ -907,7 +907,7 @@ extern "C"  void BigInteger__ctor_m3787562545 (BigInteger_t925946153 * __this, u
 // System.Void Mono.Math.BigInteger::.cctor()
 extern Il2CppClass* UInt32U5BU5D_t59386216_il2cpp_TypeInfo_var;
 extern Il2CppClass* BigInteger_t925946153_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D0_0_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D0_0_FieldInfo_var;
 extern const uint32_t BigInteger__cctor_m3631692756_MetadataUsageId;
 extern "C"  void BigInteger__cctor_m3631692756 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -919,7 +919,7 @@ extern "C"  void BigInteger__cctor_m3631692756 (Il2CppObject * __this /* static,
 	}
 	{
 		UInt32U5BU5D_t59386216* L_0 = ((UInt32U5BU5D_t59386216*)SZArrayNew(UInt32U5BU5D_t59386216_il2cpp_TypeInfo_var, (uint32_t)((int32_t)783)));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D0_0_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D0_0_FieldInfo_var), /*hidden argument*/NULL);
 		((BigInteger_t925946153_StaticFields*)BigInteger_t925946153_il2cpp_TypeInfo_var->static_fields)->set_smallPrimes_2(L_0);
 		return;
 	}
@@ -9907,7 +9907,7 @@ extern "C"  void MD2Managed__ctor_m1696123663 (MD2Managed_t1421454332 * __this, 
 // System.Void Mono.Security.Cryptography.MD2Managed::.cctor()
 extern Il2CppClass* ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var;
 extern Il2CppClass* MD2Managed_t1421454332_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D5_1_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D5_1_FieldInfo_var;
 extern const uint32_t MD2Managed__cctor_m3575944986_MetadataUsageId;
 extern "C"  void MD2Managed__cctor_m3575944986 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -9919,7 +9919,7 @@ extern "C"  void MD2Managed__cctor_m3575944986 (Il2CppObject * __this /* static,
 	}
 	{
 		ByteU5BU5D_t3397334013* L_0 = ((ByteU5BU5D_t3397334013*)SZArrayNew(ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var, (uint32_t)((int32_t)256)));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D5_1_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D5_1_FieldInfo_var), /*hidden argument*/NULL);
 		((MD2Managed_t1421454332_StaticFields*)MD2Managed_t1421454332_il2cpp_TypeInfo_var->static_fields)->set_PI_SUBST_9(L_0);
 		return;
 	}
@@ -11493,10 +11493,10 @@ IL_0022:
 // System.Void Mono.Security.Cryptography.PKCS1::.cctor()
 extern Il2CppClass* ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var;
 extern Il2CppClass* PKCS1_t3312870481_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D6_2_FieldInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D7_3_FieldInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D8_4_FieldInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D9_5_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D6_2_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D7_3_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D8_4_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D9_5_FieldInfo_var;
 extern const uint32_t PKCS1__cctor_m1002943778_MetadataUsageId;
 extern "C"  void PKCS1__cctor_m1002943778 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -11508,16 +11508,16 @@ extern "C"  void PKCS1__cctor_m1002943778 (Il2CppObject * __this /* static, unus
 	}
 	{
 		ByteU5BU5D_t3397334013* L_0 = ((ByteU5BU5D_t3397334013*)SZArrayNew(ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var, (uint32_t)((int32_t)20)));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D6_2_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D6_2_FieldInfo_var), /*hidden argument*/NULL);
 		((PKCS1_t3312870481_StaticFields*)PKCS1_t3312870481_il2cpp_TypeInfo_var->static_fields)->set_emptySHA1_0(L_0);
 		ByteU5BU5D_t3397334013* L_1 = ((ByteU5BU5D_t3397334013*)SZArrayNew(ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var, (uint32_t)((int32_t)32)));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_1, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D7_3_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_1, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D7_3_FieldInfo_var), /*hidden argument*/NULL);
 		((PKCS1_t3312870481_StaticFields*)PKCS1_t3312870481_il2cpp_TypeInfo_var->static_fields)->set_emptySHA256_1(L_1);
 		ByteU5BU5D_t3397334013* L_2 = ((ByteU5BU5D_t3397334013*)SZArrayNew(ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var, (uint32_t)((int32_t)48)));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_2, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D8_4_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_2, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D8_4_FieldInfo_var), /*hidden argument*/NULL);
 		((PKCS1_t3312870481_StaticFields*)PKCS1_t3312870481_il2cpp_TypeInfo_var->static_fields)->set_emptySHA384_2(L_2);
 		ByteU5BU5D_t3397334013* L_3 = ((ByteU5BU5D_t3397334013*)SZArrayNew(ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var, (uint32_t)((int32_t)64)));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_3, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D9_5_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_3, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D9_5_FieldInfo_var), /*hidden argument*/NULL);
 		((PKCS1_t3312870481_StaticFields*)PKCS1_t3312870481_il2cpp_TypeInfo_var->static_fields)->set_emptySHA512_3(L_3);
 		return;
 	}
@@ -21607,7 +21607,7 @@ extern "C"  void TlsClientFinished__ctor_m3019203717 (TlsClientFinished_t3939745
 // System.Void Mono.Security.Protocol.Tls.Handshake.Client.TlsClientFinished::.cctor()
 extern Il2CppClass* ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var;
 extern Il2CppClass* TlsClientFinished_t3939745042_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D21_13_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D21_13_FieldInfo_var;
 extern const uint32_t TlsClientFinished__cctor_m2632026509_MetadataUsageId;
 extern "C"  void TlsClientFinished__cctor_m2632026509 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -21619,7 +21619,7 @@ extern "C"  void TlsClientFinished__cctor_m2632026509 (Il2CppObject * __this /* 
 	}
 	{
 		ByteU5BU5D_t3397334013* L_0 = ((ByteU5BU5D_t3397334013*)SZArrayNew(ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var, (uint32_t)4));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D21_13_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D21_13_FieldInfo_var), /*hidden argument*/NULL);
 		((TlsClientFinished_t3939745042_StaticFields*)TlsClientFinished_t3939745042_il2cpp_TypeInfo_var->static_fields)->set_Ssl3Marker_10(L_0);
 		return;
 	}
@@ -23041,7 +23041,7 @@ extern "C"  bool TlsServerCertificate_checkDomainName_m547589480 (TlsServerCerti
 		String_t* L_1 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
 		V_1 = L_1;
 		Regex_t1803876613 * L_2 = (Regex_t1803876613 *)il2cpp_codegen_object_new(Regex_t1803876613_il2cpp_TypeInfo_var);
-		Regex__ctor_m2794328522(L_2, _stringLiteral4039886463, /*hidden argument*/NULL);
+		Regex__ctor_m2930443103(L_2, _stringLiteral4039886463, /*hidden argument*/NULL);
 		V_2 = L_2;
 		Regex_t1803876613 * L_3 = V_2;
 		String_t* L_4 = ___subjectName0;
@@ -23452,7 +23452,7 @@ extern "C"  void TlsServerFinished__ctor_m3517940960 (TlsServerFinished_t1869592
 // System.Void Mono.Security.Protocol.Tls.Handshake.Client.TlsServerFinished::.cctor()
 extern Il2CppClass* ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var;
 extern Il2CppClass* TlsServerFinished_t1869592958_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D22_14_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D22_14_FieldInfo_var;
 extern const uint32_t TlsServerFinished__cctor_m3702151001_MetadataUsageId;
 extern "C"  void TlsServerFinished__cctor_m3702151001 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -23464,7 +23464,7 @@ extern "C"  void TlsServerFinished__cctor_m3702151001 (Il2CppObject * __this /* 
 	}
 	{
 		ByteU5BU5D_t3397334013* L_0 = ((ByteU5BU5D_t3397334013*)SZArrayNew(ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var, (uint32_t)4));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D22_14_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D22_14_FieldInfo_var), /*hidden argument*/NULL);
 		((TlsServerFinished_t1869592958_StaticFields*)TlsServerFinished_t1869592958_il2cpp_TypeInfo_var->static_fields)->set_Ssl3Marker_10(L_0);
 		return;
 	}

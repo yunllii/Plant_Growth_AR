@@ -23560,6 +23560,57 @@ IL_0012:
 		return (bool)G_B3_0;
 	}
 }
+// System.String System.String::Remove(System.Int32)
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2445621174;
+extern Il2CppCodeGenString* _stringLiteral3213755908;
+extern Il2CppCodeGenString* _stringLiteral3883846318;
+extern const uint32_t String_Remove_m2742773378_MetadataUsageId;
+extern "C"  String_t* String_Remove_m2742773378 (String_t* __this, int32_t ___startIndex0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (String_Remove_m2742773378_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		int32_t L_0 = ___startIndex0;
+		if ((((int32_t)L_0) >= ((int32_t)0)))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_1 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m4234257711(L_1, _stringLiteral2445621174, _stringLiteral3213755908, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0017:
+	{
+		int32_t L_2 = ___startIndex0;
+		int32_t L_3 = __this->get_length_0();
+		if ((((int32_t)L_2) < ((int32_t)L_3)))
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_4 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m4234257711(L_4, _stringLiteral2445621174, _stringLiteral3883846318, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4);
+	}
+
+IL_0033:
+	{
+		int32_t L_5 = ___startIndex0;
+		int32_t L_6 = __this->get_length_0();
+		int32_t L_7 = ___startIndex0;
+		String_t* L_8 = String_Remove_m3580114465(__this, L_5, ((int32_t)((int32_t)L_6-(int32_t)L_7)), /*hidden argument*/NULL);
+		return L_8;
+	}
+}
 // System.String System.String::PadRight(System.Int32,System.Char)
 extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;

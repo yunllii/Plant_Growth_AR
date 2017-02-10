@@ -41,4 +41,4 @@ extern "C"  Il2CppObject * ConfigurationManager_get_ConfigurationFactory_m113132
 // System.Configuration.Internal.IInternalConfigSystem System.Configuration.ConfigurationManager::get_ConfigurationSystem()
 extern "C"  Il2CppObject * ConfigurationManager_get_ConfigurationSystem_m1820628092 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Configuration.ConfigurationManager::GetSection(System.String)
-extern "C"  Il2CppObject * ConfigurationManager_GetSection_m1187558274 (Il2CppObject * __this /* static, unused */, String_t* ___sectionName0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  Il2CppObject * ConfigurationManager_GetSection_m2582692502 (Il2CppObject * __this /* static, unused */, String_t* ___sectionName0, const MethodInfo* method) IL2CPP_METHOD_ATTR;

@@ -12871,7 +12871,7 @@ IL_0509:
 			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 			String_t* L_180 = String_Concat_m612901809(NULL /*static, unused*/, _stringLiteral372029428, L_179, _stringLiteral372029306, /*hidden argument*/NULL);
 			Regex_t1803876613 * L_181 = (Regex_t1803876613 *)il2cpp_codegen_object_new(Regex_t1803876613_il2cpp_TypeInfo_var);
-			Regex__ctor_m2794328522(L_181, L_180, /*hidden argument*/NULL);
+			Regex__ctor_m2930443103(L_181, L_180, /*hidden argument*/NULL);
 			V_15 = L_181;
 			RegexU5BU5D_t3677892936* L_182 = __this->get_rexPatterns_22();
 			int32_t L_183 = V_9;
@@ -15047,7 +15047,7 @@ extern Il2CppClass* Decimal_t724701077_il2cpp_TypeInfo_var;
 extern Il2CppClass* CharU5BU5D_t1328083999_il2cpp_TypeInfo_var;
 extern Il2CppClass* OverflowException_t1075868493_il2cpp_TypeInfo_var;
 extern Il2CppClass* FormatException_t2948921286_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D44_7_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D44_7_FieldInfo_var;
 extern Il2CppCodeGenString* _stringLiteral122366958;
 extern Il2CppCodeGenString* _stringLiteral4191651376;
 extern Il2CppCodeGenString* _stringLiteral372029316;
@@ -15481,7 +15481,7 @@ IL_0246:
 	{
 		String_t* L_93 = ___value0;
 		CharU5BU5D_t1328083999* L_94 = ((CharU5BU5D_t1328083999*)SZArrayNew(CharU5BU5D_t1328083999_il2cpp_TypeInfo_var, (uint32_t)4));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_94, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D44_7_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_94, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D44_7_FieldInfo_var), /*hidden argument*/NULL);
 		NullCheck(L_93);
 		String_t* L_95 = String_Trim_m3982520224(L_93, L_94, /*hidden argument*/NULL);
 		V_9 = L_95;
@@ -31249,10 +31249,10 @@ extern Il2CppClass* CharU5BU5D_t1328083999_il2cpp_TypeInfo_var;
 extern Il2CppClass* XmlChar_t1369421061_il2cpp_TypeInfo_var;
 extern Il2CppClass* ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var;
 extern Il2CppClass* UInt32U5BU5D_t59386216_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D36_0_FieldInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D37_1_FieldInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D38_2_FieldInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D39_3_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D36_0_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D37_1_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D38_2_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D39_3_FieldInfo_var;
 extern const uint32_t XmlChar__cctor_m2546143923_MetadataUsageId;
 extern "C"  void XmlChar__cctor_m2546143923 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -31264,16 +31264,16 @@ extern "C"  void XmlChar__cctor_m2546143923 (Il2CppObject * __this /* static, un
 	}
 	{
 		CharU5BU5D_t1328083999* L_0 = ((CharU5BU5D_t1328083999*)SZArrayNew(CharU5BU5D_t1328083999_il2cpp_TypeInfo_var, (uint32_t)4));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D36_0_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D36_0_FieldInfo_var), /*hidden argument*/NULL);
 		((XmlChar_t1369421061_StaticFields*)XmlChar_t1369421061_il2cpp_TypeInfo_var->static_fields)->set_WhitespaceChars_0(L_0);
 		ByteU5BU5D_t3397334013* L_1 = ((ByteU5BU5D_t3397334013*)SZArrayNew(ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var, (uint32_t)((int32_t)256)));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_1, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D37_1_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_1, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D37_1_FieldInfo_var), /*hidden argument*/NULL);
 		((XmlChar_t1369421061_StaticFields*)XmlChar_t1369421061_il2cpp_TypeInfo_var->static_fields)->set_firstNamePages_1(L_1);
 		ByteU5BU5D_t3397334013* L_2 = ((ByteU5BU5D_t3397334013*)SZArrayNew(ByteU5BU5D_t3397334013_il2cpp_TypeInfo_var, (uint32_t)((int32_t)256)));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_2, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D38_2_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_2, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D38_2_FieldInfo_var), /*hidden argument*/NULL);
 		((XmlChar_t1369421061_StaticFields*)XmlChar_t1369421061_il2cpp_TypeInfo_var->static_fields)->set_namePages_2(L_2);
 		UInt32U5BU5D_t59386216* L_3 = ((UInt32U5BU5D_t59386216*)SZArrayNew(UInt32U5BU5D_t59386216_il2cpp_TypeInfo_var, (uint32_t)((int32_t)320)));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_3, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D39_3_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_3, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D39_3_FieldInfo_var), /*hidden argument*/NULL);
 		((XmlChar_t1369421061_StaticFields*)XmlChar_t1369421061_il2cpp_TypeInfo_var->static_fields)->set_nameBitmap_3(L_3);
 		return;
 	}
@@ -57330,8 +57330,8 @@ extern Il2CppClass* StreamWriter_t3858580635_il2cpp_TypeInfo_var;
 extern Il2CppClass* XmlNamespaceManager_t486731501_il2cpp_TypeInfo_var;
 extern Il2CppClass* CharU5BU5D_t1328083999_il2cpp_TypeInfo_var;
 extern Il2CppClass* XmlTextWriter_t2527250655_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D40_4_FieldInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D41_5_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D40_4_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D41_5_FieldInfo_var;
 extern Il2CppCodeGenString* _stringLiteral3496454067;
 extern const uint32_t XmlTextWriter_Initialize_m467029607_MetadataUsageId;
 extern "C"  void XmlTextWriter_Initialize_m467029607 (XmlTextWriter_t2527250655 * __this, TextWriter_t4027217640 * ___writer0, const MethodInfo* method)
@@ -57397,7 +57397,7 @@ IL_003a:
 	}
 	{
 		CharU5BU5D_t1328083999* L_13 = ((CharU5BU5D_t1328083999*)SZArrayNew(CharU5BU5D_t1328083999_il2cpp_TypeInfo_var, (uint32_t)5));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_13, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D40_4_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_13, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D40_4_FieldInfo_var), /*hidden argument*/NULL);
 		G_B7_0 = L_13;
 		goto IL_0090;
 	}
@@ -57421,7 +57421,7 @@ IL_0090:
 		IL2CPP_RUNTIME_CLASS_INIT(XmlTextWriter_t2527250655_il2cpp_TypeInfo_var);
 		((XmlTextWriter_t2527250655_StaticFields*)XmlTextWriter_t2527250655_il2cpp_TypeInfo_var->static_fields)->set_escaped_text_chars_1(G_B7_0);
 		CharU5BU5D_t1328083999* L_17 = ((CharU5BU5D_t1328083999*)SZArrayNew(CharU5BU5D_t1328083999_il2cpp_TypeInfo_var, (uint32_t)6));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_17, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D41_5_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_17, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D41_5_FieldInfo_var), /*hidden argument*/NULL);
 		((XmlTextWriter_t2527250655_StaticFields*)XmlTextWriter_t2527250655_il2cpp_TypeInfo_var->static_fields)->set_escaped_attr_chars_2(L_17);
 		return;
 	}

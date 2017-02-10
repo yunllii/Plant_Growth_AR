@@ -83,7 +83,7 @@
 // System.Int32 System.Collections.Generic.List`1<System.String>::GetIndex(System.Int32,System.Int32,System.Predicate`1<T>)
 #define List_1_GetIndex_m2997382047(__this, ___startIndex0, ___count1, ___match2, method) ((  int32_t (*) (List_1_t1398341365 *, int32_t, int32_t, Predicate_1_t472190348 *, const MethodInfo*))List_1_GetIndex_m3409004147_gshared)(__this, ___startIndex0, ___count1, ___match2, method)
 // System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<System.String>::GetEnumerator()
-#define List_1_GetEnumerator_m145511136(__this, method) ((  Enumerator_t933071039  (*) (List_1_t1398341365 *, const MethodInfo*))List_1_GetEnumerator_m3294992758_gshared)(__this, method)
+#define List_1_GetEnumerator_m1158801717(__this, method) ((  Enumerator_t933071039  (*) (List_1_t1398341365 *, const MethodInfo*))List_1_GetEnumerator_m3294992758_gshared)(__this, method)
 // System.Int32 System.Collections.Generic.List`1<System.String>::IndexOf(T)
 #define List_1_IndexOf_m1064188445(__this, ___item0, method) ((  int32_t (*) (List_1_t1398341365 *, String_t*, const MethodInfo*))List_1_IndexOf_m2070479489_gshared)(__this, ___item0, method)
 // System.Void System.Collections.Generic.List`1<System.String>::Shift(System.Int32,System.Int32)

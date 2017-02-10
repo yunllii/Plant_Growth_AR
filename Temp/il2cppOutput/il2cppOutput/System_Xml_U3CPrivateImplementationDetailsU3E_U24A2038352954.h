@@ -20,7 +20,7 @@
 #endif
 
 // <PrivateImplementationDetails>/$ArrayType$256
-struct  U24ArrayTypeU24256_t2038352956 
+struct  U24ArrayTypeU24256_t2038352955 
 {
 public:
 	union
@@ -31,7 +31,7 @@ public:
 			{
 			};
 		};
-		uint8_t U24ArrayTypeU24256_t2038352956__padding[256];
+		uint8_t U24ArrayTypeU24256_t2038352955__padding[256];
 	};
 
 public:

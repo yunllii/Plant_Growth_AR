@@ -1980,6 +1980,8 @@ extern "C" void Delegate_CreateDelegate_m2775155596 ();
 extern "C" void Delegate_CreateDelegate_m1864084142 ();
 extern "C" void Delegate_CreateDelegate_m1706525923 ();
 extern "C" void Delegate_CreateDelegate_m2923944126 ();
+extern "C" void Delegate_DynamicInvoke_m4087640646 ();
+extern "C" void Delegate_DynamicInvokeImpl_m3083854600 ();
 extern "C" void Delegate_Clone_m2661349026 ();
 extern "C" void Delegate_Equals_m2235282625 ();
 extern "C" void Delegate_GetHashCode_m4213744155 ();
@@ -2166,6 +2168,9 @@ extern "C" void FormatException__ctor_m3521145315 ();
 extern "C" void FormatException__ctor_m1466217969 ();
 extern "C" void FormatException__ctor_m333678921 ();
 extern "C" void FormatException__ctor_m3740644286 ();
+extern "C" void GC_get_MaxGeneration_m1986243316 ();
+extern "C" void GC_InternalCollect_m479047119 ();
+extern "C" void GC_Collect_m388951712 ();
 extern "C" void GC_SuppressFinalize_m953228702 ();
 extern "C" void Calendar__ctor_m1687153432 ();
 extern "C" void Calendar_Clone_m3159430630 ();
@@ -2522,6 +2527,7 @@ extern "C" void IntPtr_System_Runtime_Serialization_ISerializable_GetObjectData_
 extern "C" void IntPtr_get_Size_m3339807560 ();
 extern "C" void IntPtr_Equals_m1214967011_AdjustorThunk ();
 extern "C" void IntPtr_GetHashCode_m1174575389_AdjustorThunk ();
+extern "C" void IntPtr_ToInt32_m4084182445_AdjustorThunk ();
 extern "C" void IntPtr_ToInt64_m39971741_AdjustorThunk ();
 extern "C" void IntPtr_ToPointer_m1888290092_AdjustorThunk ();
 extern "C" void IntPtr_ToString_m428195821_AdjustorThunk ();
@@ -3020,13 +3026,17 @@ extern "C" void Math_Abs_m4060679202 ();
 extern "C" void Math_Ceiling_m614624719 ();
 extern "C" void Math_Floor_m4118366418 ();
 extern "C" void Math_Log_m3325929366 ();
+extern "C" void Math_Max_m3360711905 ();
 extern "C" void Math_Max_m2671311541 ();
 extern "C" void Math_Min_m4290821911 ();
 extern "C" void Math_Round_m565516458 ();
 extern "C" void Math_Round_m2632426160 ();
 extern "C" void Math_Sin_m2320256962 ();
 extern "C" void Math_Cos_m43596019 ();
+extern "C" void Math_Tan_m2337827751 ();
 extern "C" void Math_Acos_m2218287828 ();
+extern "C" void Math_Atan_m2820982624 ();
+extern "C" void Math_Atan2_m792822848 ();
 extern "C" void Math_Log_m3371716878 ();
 extern "C" void Math_Pow_m3099781906 ();
 extern "C" void Math_Sqrt_m932242488 ();
@@ -3145,6 +3155,7 @@ extern "C" void MonoType_CheckMethodSecurity_m4116906190 ();
 extern "C" void MonoType_ReorderParamArrayArguments_m979187413 ();
 extern "C" void MonoTypeInfo__ctor_m1398838196 ();
 extern "C" void MulticastDelegate_GetObjectData_m3187757658 ();
+extern "C" void MulticastDelegate_DynamicInvokeImpl_m1972355936 ();
 extern "C" void MulticastDelegate_Equals_m3064081489 ();
 extern "C" void MulticastDelegate_GetHashCode_m1352560743 ();
 extern "C" void MulticastDelegate_GetInvocationList_m1380132617 ();
@@ -4278,6 +4289,7 @@ extern "C" void GCHandle__ctor_m3715741256_AdjustorThunk ();
 extern "C" void GCHandle__ctor_m2952050298_AdjustorThunk ();
 extern "C" void GCHandle_get_IsAllocated_m2246567034_AdjustorThunk ();
 extern "C" void GCHandle_get_Target_m2327042781_AdjustorThunk ();
+extern "C" void GCHandle_AddrOfPinnedObject_m3034420542_AdjustorThunk ();
 extern "C" void GCHandle_Alloc_m3171748614 ();
 extern "C" void GCHandle_Alloc_m1063472408 ();
 extern "C" void GCHandle_Free_m1639542352_AdjustorThunk ();
@@ -4285,6 +4297,7 @@ extern "C" void GCHandle_CheckCurrentDomain_m2505085614 ();
 extern "C" void GCHandle_GetTarget_m2056570211 ();
 extern "C" void GCHandle_GetTargetHandle_m3810891574 ();
 extern "C" void GCHandle_FreeHandle_m2466807271 ();
+extern "C" void GCHandle_GetAddrOfPinnedObject_m2170553013 ();
 extern "C" void GCHandle_Equals_m170815541_AdjustorThunk ();
 extern "C" void GCHandle_GetHashCode_m1664905595_AdjustorThunk ();
 extern "C" void GCHandle_FromIntPtr_m390042100 ();
@@ -4295,13 +4308,26 @@ extern "C" void GuidAttribute__ctor_m1099153635 ();
 extern "C" void InAttribute__ctor_m1401060713 ();
 extern "C" void InterfaceTypeAttribute__ctor_m1747686341 ();
 extern "C" void Marshal__cctor_m802981325 ();
+extern "C" void Marshal_AllocHGlobal_m1566126039 ();
+extern "C" void Marshal_AllocHGlobal_m4258042074 ();
 extern "C" void Marshal_copy_to_unmanaged_m1616166460 ();
 extern "C" void Marshal_copy_from_unmanaged_m98320635 ();
 extern "C" void Marshal_Copy_m3575923452 ();
 extern "C" void Marshal_Copy_m1683535972 ();
 extern "C" void Marshal_Copy_m275157126 ();
+extern "C" void Marshal_Copy_m2347082500 ();
+extern "C" void Marshal_Copy_m2353359830 ();
+extern "C" void Marshal_FreeHGlobal_m2238467479 ();
 extern "C" void Marshal_GetLastWin32Error_m4162683157 ();
+extern "C" void Marshal_PtrToStringAnsi_m2970070000 ();
+extern "C" void Marshal_PtrToStringUni_m4287319443 ();
+extern "C" void Marshal_PtrToStructure_m673412918 ();
 extern "C" void Marshal_ReadByte_m536122811 ();
+extern "C" void Marshal_ReadInt32_m1563614062 ();
+extern "C" void Marshal_ReadInt32_m3506767203 ();
+extern "C" void Marshal_SizeOf_m2982427619 ();
+extern "C" void Marshal_StringToHGlobalUni_m919584414 ();
+extern "C" void Marshal_StructureToPtr_m3205507777 ();
 extern "C" void Marshal_WriteByte_m2971909611 ();
 extern "C" void MarshalAsAttribute__ctor_m1892084128 ();
 extern "C" void MarshalDirectiveException__ctor_m3894820706 ();
@@ -6487,6 +6513,7 @@ extern "C" void String_LastIndexOf_m1975817115 ();
 extern "C" void String_LastIndexOf_m290475879 ();
 extern "C" void String_Contains_m4017059963 ();
 extern "C" void String_IsNullOrEmpty_m2802126737 ();
+extern "C" void String_Remove_m2742773378 ();
 extern "C" void String_PadRight_m1043573208 ();
 extern "C" void String_StartsWith_m1841920685 ();
 extern "C" void String_StartsWith_m46695182 ();
@@ -7347,916 +7374,6 @@ extern "C" void WindowsConsoleDriver_ReadKey_m2722483337 ();
 extern "C" void WindowsConsoleDriver_GetStdHandle_m2228793753 ();
 extern "C" void WindowsConsoleDriver_GetConsoleScreenBufferInfo_m1086313578 ();
 extern "C" void WindowsConsoleDriver_ReadConsoleInput_m3748139698 ();
-extern "C" void Locale_GetText_m1644072174 ();
-extern "C" void BigInteger__ctor_m4013661868 ();
-extern "C" void BigInteger__ctor_m2991182310 ();
-extern "C" void BigInteger__ctor_m3239748086 ();
-extern "C" void BigInteger__ctor_m2998639688 ();
-extern "C" void BigInteger__ctor_m3787562545 ();
-extern "C" void BigInteger__cctor_m3631692756 ();
-extern "C" void BigInteger_get_Rng_m2525288368 ();
-extern "C" void BigInteger_GenerateRandom_m714043984 ();
-extern "C" void BigInteger_GenerateRandom_m1878468830 ();
-extern "C" void BigInteger_BitCount_m1334731567 ();
-extern "C" void BigInteger_TestBit_m2460344121 ();
-extern "C" void BigInteger_SetBit_m426619300 ();
-extern "C" void BigInteger_SetBit_m576108355 ();
-extern "C" void BigInteger_LowestSetBit_m1146240832 ();
-extern "C" void BigInteger_GetBytes_m767422614 ();
-extern "C" void BigInteger_ToString_m1842353154 ();
-extern "C" void BigInteger_ToString_m2878297110 ();
-extern "C" void BigInteger_Normalize_m1262742386 ();
-extern "C" void BigInteger_Clear_m2734785184 ();
-extern "C" void BigInteger_GetHashCode_m1450276268 ();
-extern "C" void BigInteger_ToString_m2806881644 ();
-extern "C" void BigInteger_Equals_m1886728252 ();
-extern "C" void BigInteger_ModInverse_m1881894572 ();
-extern "C" void BigInteger_ModPow_m1418407677 ();
-extern "C" void BigInteger_GeneratePseudoPrime_m2186059270 ();
-extern "C" void BigInteger_Incr2_m505983313 ();
-extern "C" void BigInteger_op_Implicit_m622924526 ();
-extern "C" void BigInteger_op_Implicit_m3634001681 ();
-extern "C" void BigInteger_op_Addition_m1734797151 ();
-extern "C" void BigInteger_op_Subtraction_m972393015 ();
-extern "C" void BigInteger_op_Modulus_m2895726170 ();
-extern "C" void BigInteger_op_Modulus_m13450242 ();
-extern "C" void BigInteger_op_Division_m4076990896 ();
-extern "C" void BigInteger_op_Multiply_m1833761647 ();
-extern "C" void BigInteger_op_LeftShift_m3361632170 ();
-extern "C" void BigInteger_op_RightShift_m852685747 ();
-extern "C" void BigInteger_op_Equality_m2683055762 ();
-extern "C" void BigInteger_op_Inequality_m744282323 ();
-extern "C" void BigInteger_op_Equality_m3089846781 ();
-extern "C" void BigInteger_op_Inequality_m4286929594 ();
-extern "C" void BigInteger_op_GreaterThan_m2492620848 ();
-extern "C" void BigInteger_op_LessThan_m3825358479 ();
-extern "C" void BigInteger_op_GreaterThanOrEqual_m2643115413 ();
-extern "C" void BigInteger_op_LessThanOrEqual_m3528380540 ();
-extern "C" void Kernel_AddSameSign_m4087322475 ();
-extern "C" void Kernel_Subtract_m2224959291 ();
-extern "C" void Kernel_MinusEq_m1637138341 ();
-extern "C" void Kernel_PlusEq_m2259390883 ();
-extern "C" void Kernel_Compare_m722412638 ();
-extern "C" void Kernel_SingleByteDivideInPlace_m3631295848 ();
-extern "C" void Kernel_DwordMod_m978954867 ();
-extern "C" void Kernel_DwordDivMod_m3728402123 ();
-extern "C" void Kernel_multiByteDivide_m3157480645 ();
-extern "C" void Kernel_LeftShift_m3814364702 ();
-extern "C" void Kernel_RightShift_m2983108719 ();
-extern "C" void Kernel_Multiply_m1938858919 ();
-extern "C" void Kernel_MultiplyMod2p32pmod_m874406394 ();
-extern "C" void Kernel_modInverse_m1848537133 ();
-extern "C" void Kernel_modInverse_m3230829577 ();
-extern "C" void ModulusRing__ctor_m630117946 ();
-extern "C" void ModulusRing_BarrettReduction_m2802101099 ();
-extern "C" void ModulusRing_Multiply_m3113924743 ();
-extern "C" void ModulusRing_Difference_m662924064 ();
-extern "C" void ModulusRing_Pow_m2489265435 ();
-extern "C" void ModulusRing_Pow_m661630322 ();
-extern "C" void PrimeGeneratorBase__ctor_m4281387560 ();
-extern "C" void PrimeGeneratorBase_get_Confidence_m3927471963 ();
-extern "C" void PrimeGeneratorBase_get_PrimalityTest_m308005118 ();
-extern "C" void PrimeGeneratorBase_get_TrialDivisionBounds_m4192107199 ();
-extern "C" void SequentialSearchPrimeGeneratorBase__ctor_m3982028469 ();
-extern "C" void SequentialSearchPrimeGeneratorBase_GenerateSearchBase_m2930465198 ();
-extern "C" void SequentialSearchPrimeGeneratorBase_GenerateNewPrime_m2255936480 ();
-extern "C" void SequentialSearchPrimeGeneratorBase_GenerateNewPrime_m296245934 ();
-extern "C" void SequentialSearchPrimeGeneratorBase_IsPrimeAcceptable_m3678219529 ();
-extern "C" void PrimalityTest__ctor_m1351629431 ();
-extern "C" void PrimalityTest_Invoke_m4058801829 ();
-extern "C" void PrimalityTest_BeginInvoke_m1691702520 ();
-extern "C" void PrimalityTest_EndInvoke_m380367609 ();
-extern "C" void PrimalityTests_GetSPPRounds_m873706010 ();
-extern "C" void PrimalityTests_RabinMillerTest_m2029846965 ();
-extern "C" void ASN1__ctor_m646105945 ();
-extern "C" void ASN1__ctor_m1045937444 ();
-extern "C" void ASN1__ctor_m1653629327 ();
-extern "C" void ASN1_get_Count_m3992276234 ();
-extern "C" void ASN1_get_Tag_m3531603485 ();
-extern "C" void ASN1_get_Length_m2568143283 ();
-extern "C" void ASN1_get_Value_m3116965808 ();
-extern "C" void ASN1_set_Value_m1063274345 ();
-extern "C" void ASN1_CompareArray_m2071014626 ();
-extern "C" void ASN1_CompareValue_m2994814651 ();
-extern "C" void ASN1_Add_m1595622622 ();
-extern "C" void ASN1_GetBytes_m3982410951 ();
-extern "C" void ASN1_Decode_m947929221 ();
-extern "C" void ASN1_DecodeTLV_m2898581687 ();
-extern "C" void ASN1_get_Item_m1067746146 ();
-extern "C" void ASN1_Element_m1568353429 ();
-extern "C" void ASN1_ToString_m2669105451 ();
-extern "C" void ASN1Convert_FromInt32_m4211017145 ();
-extern "C" void ASN1Convert_FromOid_m3277257826 ();
-extern "C" void ASN1Convert_ToInt32_m2482104422 ();
-extern "C" void ASN1Convert_ToOid_m1035860535 ();
-extern "C" void ASN1Convert_ToDateTime_m2305963290 ();
-extern "C" void BitConverterLE_GetUIntBytes_m2975603021 ();
-extern "C" void BitConverterLE_GetBytes_m1242468557 ();
-extern "C" void ARC4Managed__ctor_m2922048522 ();
-extern "C" void ARC4Managed_Finalize_m4206406046 ();
-extern "C" void ARC4Managed_Dispose_m4102232694 ();
-extern "C" void ARC4Managed_get_Key_m3234603170 ();
-extern "C" void ARC4Managed_set_Key_m663161993 ();
-extern "C" void ARC4Managed_get_CanReuseTransform_m3235470105 ();
-extern "C" void ARC4Managed_CreateEncryptor_m800891464 ();
-extern "C" void ARC4Managed_CreateDecryptor_m2848783948 ();
-extern "C" void ARC4Managed_GenerateIV_m2815460576 ();
-extern "C" void ARC4Managed_GenerateKey_m716135508 ();
-extern "C" void ARC4Managed_get_CanTransformMultipleBlocks_m2283663207 ();
-extern "C" void ARC4Managed_get_InputBlockSize_m2472484505 ();
-extern "C" void ARC4Managed_get_OutputBlockSize_m1486579102 ();
-extern "C" void ARC4Managed_KeySetup_m73384687 ();
-extern "C" void ARC4Managed_CheckInput_m3033530539 ();
-extern "C" void ARC4Managed_TransformBlock_m1197694862 ();
-extern "C" void ARC4Managed_InternalTransformBlock_m1999805545 ();
-extern "C" void ARC4Managed_TransformFinalBlock_m2162658128 ();
-extern "C" void CryptoConvert_ToHex_m2874017189 ();
-extern "C" void HMAC__ctor_m2605930831 ();
-extern "C" void HMAC_get_Key_m2528863640 ();
-extern "C" void HMAC_set_Key_m3745565827 ();
-extern "C" void HMAC_Initialize_m3052649104 ();
-extern "C" void HMAC_HashFinal_m1045191164 ();
-extern "C" void HMAC_HashCore_m3394319142 ();
-extern "C" void HMAC_initializePad_m3828610671 ();
-extern "C" void KeyBuilder_get_Rng_m2539978716 ();
-extern "C" void KeyBuilder_Key_m3814433741 ();
-extern "C" void MD2__ctor_m3133818738 ();
-extern "C" void MD2_Create_m3241404171 ();
-extern "C" void MD2_Create_m539024737 ();
-extern "C" void MD2Managed__ctor_m1696123663 ();
-extern "C" void MD2Managed__cctor_m3575944986 ();
-extern "C" void MD2Managed_Padding_m410163267 ();
-extern "C" void MD2Managed_Initialize_m1330748427 ();
-extern "C" void MD2Managed_HashCore_m248147901 ();
-extern "C" void MD2Managed_HashFinal_m4151214661 ();
-extern "C" void MD2Managed_MD2Transform_m3825201358 ();
-extern "C" void MD4__ctor_m2366413460 ();
-extern "C" void MD4_Create_m3565183915 ();
-extern "C" void MD4_Create_m2582504069 ();
-extern "C" void MD4Managed__ctor_m796835377 ();
-extern "C" void MD4Managed_Initialize_m2316730601 ();
-extern "C" void MD4Managed_HashCore_m3133543859 ();
-extern "C" void MD4Managed_HashFinal_m1777895823 ();
-extern "C" void MD4Managed_Padding_m2920052321 ();
-extern "C" void MD4Managed_F_m2501978380 ();
-extern "C" void MD4Managed_G_m1121848465 ();
-extern "C" void MD4Managed_H_m4236752602 ();
-extern "C" void MD4Managed_ROL_m2970841588 ();
-extern "C" void MD4Managed_FF_m784377458 ();
-extern "C" void MD4Managed_GG_m1462438360 ();
-extern "C" void MD4Managed_HH_m2172169314 ();
-extern "C" void MD4Managed_Encode_m2097839378 ();
-extern "C" void MD4Managed_Decode_m1036272973 ();
-extern "C" void MD4Managed_MD4Transform_m2648331494 ();
-extern "C" void MD5SHA1__ctor_m371038734 ();
-extern "C" void MD5SHA1_Initialize_m3440022970 ();
-extern "C" void MD5SHA1_HashFinal_m4051142254 ();
-extern "C" void MD5SHA1_HashCore_m2043482644 ();
-extern "C" void MD5SHA1_CreateSignature_m4274114929 ();
-extern "C" void MD5SHA1_VerifySignature_m507888141 ();
-extern "C" void PKCS1__cctor_m1002943778 ();
-extern "C" void PKCS1_Compare_m552424558 ();
-extern "C" void PKCS1_I2OSP_m647014786 ();
-extern "C" void PKCS1_OS2IP_m2226560443 ();
-extern "C" void PKCS1_RSASP1_m1748738009 ();
-extern "C" void PKCS1_RSAVP1_m1644175986 ();
-extern "C" void PKCS1_Sign_v15_m554806303 ();
-extern "C" void PKCS1_Verify_v15_m3855588030 ();
-extern "C" void PKCS1_Verify_v15_m478274703 ();
-extern "C" void PKCS1_Encode_v15_m1038051160 ();
-extern "C" void EncryptedPrivateKeyInfo__ctor_m569026543 ();
-extern "C" void EncryptedPrivateKeyInfo__ctor_m3398795484 ();
-extern "C" void EncryptedPrivateKeyInfo_get_Algorithm_m3024753760 ();
-extern "C" void EncryptedPrivateKeyInfo_get_EncryptedData_m598672214 ();
-extern "C" void EncryptedPrivateKeyInfo_get_Salt_m590211404 ();
-extern "C" void EncryptedPrivateKeyInfo_get_IterationCount_m2407997966 ();
-extern "C" void EncryptedPrivateKeyInfo_Decode_m1706190306 ();
-extern "C" void PrivateKeyInfo__ctor_m2683279425 ();
-extern "C" void PrivateKeyInfo__ctor_m3851924948 ();
-extern "C" void PrivateKeyInfo_get_PrivateKey_m2127503870 ();
-extern "C" void PrivateKeyInfo_Decode_m1053025782 ();
-extern "C" void PrivateKeyInfo_RemoveLeadingZero_m3396807048 ();
-extern "C" void PrivateKeyInfo_Normalize_m1192796352 ();
-extern "C" void PrivateKeyInfo_DecodeRSA_m919734506 ();
-extern "C" void PrivateKeyInfo_DecodeDSA_m2497561917 ();
-extern "C" void RC4__ctor_m1585026462 ();
-extern "C" void RC4__cctor_m523650203 ();
-extern "C" void RC4_get_IV_m506011366 ();
-extern "C" void RC4_set_IV_m4096786929 ();
-extern "C" void RSAManaged__ctor_m1370411656 ();
-extern "C" void RSAManaged__ctor_m1680944437 ();
-extern "C" void RSAManaged_Finalize_m3491799840 ();
-extern "C" void RSAManaged_GenerateKeyPair_m1213111262 ();
-extern "C" void RSAManaged_get_KeySize_m3478823737 ();
-extern "C" void RSAManaged_get_KeyExchangeAlgorithm_m123531007 ();
-extern "C" void RSAManaged_get_PublicOnly_m2581981140 ();
-extern "C" void RSAManaged_get_SignatureAlgorithm_m4261969919 ();
-extern "C" void RSAManaged_DecryptValue_m1225349489 ();
-extern "C" void RSAManaged_EncryptValue_m1847230963 ();
-extern "C" void RSAManaged_ExportParameters_m2871338879 ();
-extern "C" void RSAManaged_ImportParameters_m3060955884 ();
-extern "C" void RSAManaged_Dispose_m160261748 ();
-extern "C" void RSAManaged_ToXmlString_m2606223477 ();
-extern "C" void RSAManaged_GetPaddedValue_m2972141669 ();
-extern "C" void KeyGeneratedEventHandler__ctor_m639133899 ();
-extern "C" void KeyGeneratedEventHandler_Invoke_m1298576133 ();
-extern "C" void KeyGeneratedEventHandler_BeginInvoke_m2404438262 ();
-extern "C" void KeyGeneratedEventHandler_EndInvoke_m80374889 ();
-extern "C" void ContentInfo__ctor_m3727742917 ();
-extern "C" void ContentInfo__ctor_m3579805263 ();
-extern "C" void ContentInfo__ctor_m2845339866 ();
-extern "C" void ContentInfo__ctor_m3871771681 ();
-extern "C" void ContentInfo_get_ASN1_m1697727120 ();
-extern "C" void ContentInfo_get_Content_m1802070908 ();
-extern "C" void ContentInfo_set_Content_m3643334361 ();
-extern "C" void ContentInfo_get_ContentType_m2984320800 ();
-extern "C" void ContentInfo_set_ContentType_m1242338355 ();
-extern "C" void ContentInfo_GetASN1_m1560623629 ();
-extern "C" void EncryptedData__ctor_m3834592644 ();
-extern "C" void EncryptedData__ctor_m3866918584 ();
-extern "C" void EncryptedData_get_EncryptionAlgorithm_m3585820551 ();
-extern "C" void EncryptedData_get_EncryptedContent_m3832882582 ();
-extern "C" void Alert__ctor_m264447866 ();
-extern "C" void Alert__ctor_m287829582 ();
-extern "C" void Alert_get_Level_m2913362942 ();
-extern "C" void Alert_get_Description_m3856702046 ();
-extern "C" void Alert_get_IsWarning_m427004807 ();
-extern "C" void Alert_get_IsCloseNotify_m577852330 ();
-extern "C" void Alert_inferAlertLevel_m1194123772 ();
-extern "C" void Alert_GetAlertMessage_m325996256 ();
-extern "C" void CertificateSelectionCallback__ctor_m2302751912 ();
-extern "C" void CertificateSelectionCallback_Invoke_m2902629105 ();
-extern "C" void CertificateSelectionCallback_BeginInvoke_m990408067 ();
-extern "C" void CertificateSelectionCallback_EndInvoke_m3525317639 ();
-extern "C" void CertificateValidationCallback__ctor_m1298586051 ();
-extern "C" void CertificateValidationCallback_Invoke_m2500463874 ();
-extern "C" void CertificateValidationCallback_BeginInvoke_m3625803269 ();
-extern "C" void CertificateValidationCallback_EndInvoke_m2418808873 ();
-extern "C" void CertificateValidationCallback2__ctor_m1915259009 ();
-extern "C" void CertificateValidationCallback2_Invoke_m436894540 ();
-extern "C" void CertificateValidationCallback2_BeginInvoke_m3996282202 ();
-extern "C" void CertificateValidationCallback2_EndInvoke_m1734587200 ();
-extern "C" void CipherSuite__ctor_m440966622 ();
-extern "C" void CipherSuite__cctor_m2232817620 ();
-extern "C" void CipherSuite_get_EncryptionCipher_m1019312730 ();
-extern "C" void CipherSuite_get_DecryptionCipher_m3464788382 ();
-extern "C" void CipherSuite_get_ClientHMAC_m2261562571 ();
-extern "C" void CipherSuite_get_ServerHMAC_m3566778727 ();
-extern "C" void CipherSuite_get_CipherAlgorithmType_m750379757 ();
-extern "C" void CipherSuite_get_HashAlgorithmName_m3238654725 ();
-extern "C" void CipherSuite_get_HashAlgorithmType_m3902365773 ();
-extern "C" void CipherSuite_get_HashSize_m3748598203 ();
-extern "C" void CipherSuite_get_ExchangeAlgorithmType_m3219223789 ();
-extern "C" void CipherSuite_get_CipherMode_m2346658878 ();
-extern "C" void CipherSuite_get_Code_m3902213587 ();
-extern "C" void CipherSuite_get_Name_m3914703358 ();
-extern "C" void CipherSuite_get_IsExportable_m136354150 ();
-extern "C" void CipherSuite_get_KeyMaterialSize_m4222492337 ();
-extern "C" void CipherSuite_get_KeyBlockSize_m2993514247 ();
-extern "C" void CipherSuite_get_ExpandedKeyMaterialSize_m296573450 ();
-extern "C" void CipherSuite_get_EffectiveKeyBits_m3588203390 ();
-extern "C" void CipherSuite_get_IvSize_m2971966910 ();
-extern "C" void CipherSuite_get_Context_m1298687213 ();
-extern "C" void CipherSuite_set_Context_m4127897124 ();
-extern "C" void CipherSuite_Write_m1271196675 ();
-extern "C" void CipherSuite_Write_m827355463 ();
-extern "C" void CipherSuite_InitializeCipher_m229247572 ();
-extern "C" void CipherSuite_EncryptRecord_m3421046381 ();
-extern "C" void CipherSuite_DecryptRecord_m1247194570 ();
-extern "C" void CipherSuite_CreatePremasterSecret_m3728217834 ();
-extern "C" void CipherSuite_PRF_m3379816948 ();
-extern "C" void CipherSuite_Expand_m1800208652 ();
-extern "C" void CipherSuite_createEncryptionCipher_m1926075645 ();
-extern "C" void CipherSuite_createDecryptionCipher_m1118350455 ();
-extern "C" void CipherSuiteCollection__ctor_m2154226461 ();
-extern "C" void CipherSuiteCollection_System_Collections_IList_get_Item_m218755780 ();
-extern "C" void CipherSuiteCollection_System_Collections_IList_set_Item_m750275607 ();
-extern "C" void CipherSuiteCollection_System_Collections_ICollection_get_IsSynchronized_m36679989 ();
-extern "C" void CipherSuiteCollection_System_Collections_ICollection_get_SyncRoot_m2818114049 ();
-extern "C" void CipherSuiteCollection_System_Collections_IEnumerable_GetEnumerator_m1600967134 ();
-extern "C" void CipherSuiteCollection_System_Collections_IList_Contains_m3239163601 ();
-extern "C" void CipherSuiteCollection_System_Collections_IList_IndexOf_m540536407 ();
-extern "C" void CipherSuiteCollection_System_Collections_IList_Insert_m3923805048 ();
-extern "C" void CipherSuiteCollection_System_Collections_IList_Remove_m4022085178 ();
-extern "C" void CipherSuiteCollection_System_Collections_IList_RemoveAt_m143866082 ();
-extern "C" void CipherSuiteCollection_System_Collections_IList_Add_m2644442861 ();
-extern "C" void CipherSuiteCollection_get_Item_m3667070847 ();
-extern "C" void CipherSuiteCollection_get_Item_m280627160 ();
-extern "C" void CipherSuiteCollection_set_Item_m1064755671 ();
-extern "C" void CipherSuiteCollection_get_Item_m2606225922 ();
-extern "C" void CipherSuiteCollection_get_Count_m1700100413 ();
-extern "C" void CipherSuiteCollection_get_IsFixedSize_m2849280449 ();
-extern "C" void CipherSuiteCollection_get_IsReadOnly_m2233332798 ();
-extern "C" void CipherSuiteCollection_CopyTo_m869893074 ();
-extern "C" void CipherSuiteCollection_Clear_m533808424 ();
-extern "C" void CipherSuiteCollection_IndexOf_m204129362 ();
-extern "C" void CipherSuiteCollection_IndexOf_m4089218779 ();
-extern "C" void CipherSuiteCollection_Add_m3114709461 ();
-extern "C" void CipherSuiteCollection_add_m2465397903 ();
-extern "C" void CipherSuiteCollection_add_m513562767 ();
-extern "C" void CipherSuiteCollection_cultureAwareCompare_m1825407448 ();
-extern "C" void CipherSuiteFactory_GetSupportedCiphers_m338097823 ();
-extern "C" void CipherSuiteFactory_GetTls1SupportedCiphers_m2952983549 ();
-extern "C" void CipherSuiteFactory_GetSsl3SupportedCiphers_m2476597368 ();
-extern "C" void ClientContext__ctor_m1008306089 ();
-extern "C" void ClientContext_get_SslStream_m360110741 ();
-extern "C" void ClientContext_get_ClientHelloProtocol_m1765198120 ();
-extern "C" void ClientContext_set_ClientHelloProtocol_m2246603449 ();
-extern "C" void ClientContext_Clear_m1290084423 ();
-extern "C" void ClientRecordProtocol__ctor_m648586559 ();
-extern "C" void ClientRecordProtocol_GetMessage_m2649269799 ();
-extern "C" void ClientRecordProtocol_ProcessHandshakeMessage_m3590516592 ();
-extern "C" void ClientRecordProtocol_createClientHandshakeMessage_m811708715 ();
-extern "C" void ClientRecordProtocol_createServerHandshakeMessage_m3939790866 ();
-extern "C" void ClientSessionCache__cctor_m1134810266 ();
-extern "C" void ClientSessionCache_Add_m987180603 ();
-extern "C" void ClientSessionCache_FromHost_m1396036471 ();
-extern "C" void ClientSessionCache_FromContext_m3886959254 ();
-extern "C" void ClientSessionCache_SetContextInCache_m907788136 ();
-extern "C" void ClientSessionCache_SetContextFromCache_m3917528339 ();
-extern "C" void ClientSessionInfo__ctor_m759726440 ();
-extern "C" void ClientSessionInfo__cctor_m1353980836 ();
-extern "C" void ClientSessionInfo_Finalize_m1198775539 ();
-extern "C" void ClientSessionInfo_get_HostName_m759522668 ();
-extern "C" void ClientSessionInfo_get_Id_m3046630969 ();
-extern "C" void ClientSessionInfo_get_Valid_m3589823308 ();
-extern "C" void ClientSessionInfo_GetContext_m301320023 ();
-extern "C" void ClientSessionInfo_SetContext_m2649357891 ();
-extern "C" void ClientSessionInfo_KeepAlive_m3125408381 ();
-extern "C" void ClientSessionInfo_Dispose_m3315842124 ();
-extern "C" void ClientSessionInfo_Dispose_m2571428025 ();
-extern "C" void ClientSessionInfo_CheckDisposed_m1394638186 ();
-extern "C" void Context__ctor_m3963941463 ();
-extern "C" void Context_get_AbbreviatedHandshake_m2972837690 ();
-extern "C" void Context_set_AbbreviatedHandshake_m4080371327 ();
-extern "C" void Context_get_ProtocolNegotiated_m624488778 ();
-extern "C" void Context_set_ProtocolNegotiated_m1177527245 ();
-extern "C" void Context_get_SecurityProtocol_m1600902905 ();
-extern "C" void Context_set_SecurityProtocol_m4153223312 ();
-extern "C" void Context_get_SecurityProtocolFlags_m3295551796 ();
-extern "C" void Context_get_Protocol_m1537476188 ();
-extern "C" void Context_get_SessionId_m1296338025 ();
-extern "C" void Context_set_SessionId_m1229908268 ();
-extern "C" void Context_get_CompressionMethod_m1938328556 ();
-extern "C" void Context_set_CompressionMethod_m2848483559 ();
-extern "C" void Context_get_ServerSettings_m225713600 ();
-extern "C" void Context_get_ClientSettings_m1185615112 ();
-extern "C" void Context_get_LastHandshakeMsg_m873777031 ();
-extern "C" void Context_set_LastHandshakeMsg_m3162558586 ();
-extern "C" void Context_get_HandshakeState_m3443153737 ();
-extern "C" void Context_set_HandshakeState_m1586089840 ();
-extern "C" void Context_get_ReceivedConnectionEnd_m3369356276 ();
-extern "C" void Context_set_ReceivedConnectionEnd_m213831275 ();
-extern "C" void Context_get_SentConnectionEnd_m3114190867 ();
-extern "C" void Context_set_SentConnectionEnd_m2641458842 ();
-extern "C" void Context_get_SupportedCiphers_m2172827298 ();
-extern "C" void Context_set_SupportedCiphers_m3994965527 ();
-extern "C" void Context_get_HandshakeMessages_m2765912589 ();
-extern "C" void Context_get_WriteSequenceNumber_m243492531 ();
-extern "C" void Context_set_WriteSequenceNumber_m3356252710 ();
-extern "C" void Context_get_ReadSequenceNumber_m2586681610 ();
-extern "C" void Context_set_ReadSequenceNumber_m3303454459 ();
-extern "C" void Context_get_ClientRandom_m697914474 ();
-extern "C" void Context_set_ClientRandom_m631392719 ();
-extern "C" void Context_get_ServerRandom_m3526559022 ();
-extern "C" void Context_set_ServerRandom_m173601139 ();
-extern "C" void Context_get_RandomCS_m3946020109 ();
-extern "C" void Context_set_RandomCS_m2334825038 ();
-extern "C" void Context_get_RandomSC_m1687420621 ();
-extern "C" void Context_set_RandomSC_m2057392782 ();
-extern "C" void Context_get_MasterSecret_m231851308 ();
-extern "C" void Context_set_MasterSecret_m1422386411 ();
-extern "C" void Context_get_ClientWriteKey_m2235605337 ();
-extern "C" void Context_set_ClientWriteKey_m1137238126 ();
-extern "C" void Context_get_ServerWriteKey_m1780148437 ();
-extern "C" void Context_set_ServerWriteKey_m2317745418 ();
-extern "C" void Context_get_ClientWriteIV_m2171757117 ();
-extern "C" void Context_set_ClientWriteIV_m70615452 ();
-extern "C" void Context_get_ServerWriteIV_m2960700649 ();
-extern "C" void Context_set_ServerWriteIV_m3391477120 ();
-extern "C" void Context_get_RecordProtocol_m1527823481 ();
-extern "C" void Context_set_RecordProtocol_m1968834768 ();
-extern "C" void Context_GetUnixTime_m3777795180 ();
-extern "C" void Context_GetSecureRandomBytes_m1065353673 ();
-extern "C" void Context_Clear_m4000337070 ();
-extern "C" void Context_ClearKeyInfo_m205678623 ();
-extern "C" void Context_DecodeProtocolCode_m4051353560 ();
-extern "C" void Context_ChangeProtocol_m46663628 ();
-extern "C" void Context_get_Current_m2717045324 ();
-extern "C" void Context_get_Negotiating_m3946476110 ();
-extern "C" void Context_get_Read_m171585211 ();
-extern "C" void Context_get_Write_m2299361626 ();
-extern "C" void Context_StartSwitchingSecurityParameters_m373522596 ();
-extern "C" void Context_EndSwitchingSecurityParameters_m1613076777 ();
-extern "C" void TlsClientCertificate__ctor_m987604448 ();
-extern "C" void TlsClientCertificate_get_ClientCertificate_m3062440489 ();
-extern "C" void TlsClientCertificate_Update_m3781462820 ();
-extern "C" void TlsClientCertificate_GetClientCertificate_m2808467979 ();
-extern "C" void TlsClientCertificate_SendCertificates_m1096074091 ();
-extern "C" void TlsClientCertificate_ProcessAsSsl3_m3634449507 ();
-extern "C" void TlsClientCertificate_ProcessAsTls1_m1772516248 ();
-extern "C" void TlsClientCertificate_FindParentCertificate_m10738514 ();
-extern "C" void TlsClientCertificateVerify__ctor_m110646389 ();
-extern "C" void TlsClientCertificateVerify_Update_m1622071203 ();
-extern "C" void TlsClientCertificateVerify_ProcessAsSsl3_m3377063356 ();
-extern "C" void TlsClientCertificateVerify_ProcessAsTls1_m1960818833 ();
-extern "C" void TlsClientCertificateVerify_getClientCertRSA_m3799135236 ();
-extern "C" void TlsClientCertificateVerify_getUnsignedBigInteger_m3357519896 ();
-extern "C" void TlsClientFinished__ctor_m3019203717 ();
-extern "C" void TlsClientFinished__cctor_m2632026509 ();
-extern "C" void TlsClientFinished_Update_m840013355 ();
-extern "C" void TlsClientFinished_ProcessAsSsl3_m1576972610 ();
-extern "C" void TlsClientFinished_ProcessAsTls1_m3490501889 ();
-extern "C" void TlsClientHello__ctor_m1699671541 ();
-extern "C" void TlsClientHello_Update_m1723542631 ();
-extern "C" void TlsClientHello_ProcessAsSsl3_m3243018502 ();
-extern "C" void TlsClientHello_ProcessAsTls1_m881347961 ();
-extern "C" void TlsClientKeyExchange__ctor_m2741078239 ();
-extern "C" void TlsClientKeyExchange_ProcessAsSsl3_m662933084 ();
-extern "C" void TlsClientKeyExchange_ProcessAsTls1_m1707307575 ();
-extern "C" void TlsClientKeyExchange_ProcessCommon_m1203833053 ();
-extern "C" void TlsServerCertificate__ctor_m3697944709 ();
-extern "C" void TlsServerCertificate_Update_m3673209976 ();
-extern "C" void TlsServerCertificate_ProcessAsSsl3_m277089231 ();
-extern "C" void TlsServerCertificate_ProcessAsTls1_m3083203628 ();
-extern "C" void TlsServerCertificate_checkCertificateUsage_m2392234217 ();
-extern "C" void TlsServerCertificate_validateCertificates_m1988583701 ();
-extern "C" void TlsServerCertificate_checkServerIdentity_m3836435780 ();
-extern "C" void TlsServerCertificate_checkDomainName_m547589480 ();
-extern "C" void TlsServerCertificate_Match_m239075186 ();
-extern "C" void TlsServerCertificateRequest__ctor_m1684270714 ();
-extern "C" void TlsServerCertificateRequest_Update_m2674822753 ();
-extern "C" void TlsServerCertificateRequest_ProcessAsSsl3_m3017921864 ();
-extern "C" void TlsServerCertificateRequest_ProcessAsTls1_m3580757431 ();
-extern "C" void TlsServerFinished__ctor_m3517940960 ();
-extern "C" void TlsServerFinished__cctor_m3702151001 ();
-extern "C" void TlsServerFinished_Update_m3332245911 ();
-extern "C" void TlsServerFinished_ProcessAsSsl3_m2226689406 ();
-extern "C" void TlsServerFinished_ProcessAsTls1_m734183757 ();
-extern "C" void TlsServerHello__ctor_m3032108168 ();
-extern "C" void TlsServerHello_Update_m1740270635 ();
-extern "C" void TlsServerHello_ProcessAsSsl3_m3986132482 ();
-extern "C" void TlsServerHello_ProcessAsTls1_m1997577085 ();
-extern "C" void TlsServerHello_processProtocol_m1241336522 ();
-extern "C" void TlsServerHelloDone__ctor_m2125611008 ();
-extern "C" void TlsServerHelloDone_ProcessAsSsl3_m2352567662 ();
-extern "C" void TlsServerHelloDone_ProcessAsTls1_m2785450409 ();
-extern "C" void TlsServerKeyExchange__ctor_m247733406 ();
-extern "C" void TlsServerKeyExchange_Update_m467765633 ();
-extern "C" void TlsServerKeyExchange_ProcessAsSsl3_m462106368 ();
-extern "C" void TlsServerKeyExchange_ProcessAsTls1_m1879578643 ();
-extern "C" void TlsServerKeyExchange_verifySignature_m3641534563 ();
-extern "C" void HandshakeMessage__ctor_m3783158590 ();
-extern "C" void HandshakeMessage__ctor_m2727745933 ();
-extern "C" void HandshakeMessage__ctor_m1431757899 ();
-extern "C" void HandshakeMessage_get_Context_m3356295711 ();
-extern "C" void HandshakeMessage_get_HandshakeType_m2104271474 ();
-extern "C" void HandshakeMessage_get_ContentType_m760670911 ();
-extern "C" void HandshakeMessage_Process_m2688076118 ();
-extern "C" void HandshakeMessage_Update_m1733566706 ();
-extern "C" void HandshakeMessage_EncodeMessage_m2725158930 ();
-extern "C" void HandshakeMessage_Compare_m2025941142 ();
-extern "C" void HttpsClientStream__ctor_m3407922777 ();
-extern "C" void HttpsClientStream_get_TrustFailure_m1980919191 ();
-extern "C" void HttpsClientStream_RaiseServerCertificateValidation_m3356770426 ();
-extern "C" void HttpsClientStream_U3CHttpsClientStreamU3Em__0_m3176353714 ();
-extern "C" void HttpsClientStream_U3CHttpsClientStreamU3Em__1_m4293802471 ();
-extern "C" void PrivateKeySelectionCallback__ctor_m2259908823 ();
-extern "C" void PrivateKeySelectionCallback_Invoke_m1058550892 ();
-extern "C" void PrivateKeySelectionCallback_BeginInvoke_m1904952334 ();
-extern "C" void PrivateKeySelectionCallback_EndInvoke_m1718473578 ();
-extern "C" void RecordProtocol__ctor_m168945279 ();
-extern "C" void RecordProtocol__cctor_m1255542758 ();
-extern "C" void RecordProtocol_get_Context_m2688493529 ();
-extern "C" void RecordProtocol_SendRecord_m2977889250 ();
-extern "C" void RecordProtocol_ProcessChangeCipherSpec_m3233959862 ();
-extern "C" void RecordProtocol_GetMessage_m594970728 ();
-extern "C" void RecordProtocol_BeginReceiveRecord_m2023581433 ();
-extern "C" void RecordProtocol_InternalReceiveRecordCallback_m2228921492 ();
-extern "C" void RecordProtocol_EndReceiveRecord_m4045980155 ();
-extern "C" void RecordProtocol_ReceiveRecord_m3672584816 ();
-extern "C" void RecordProtocol_ReadRecordBuffer_m1307297230 ();
-extern "C" void RecordProtocol_ReadClientHelloV2_m103475177 ();
-extern "C" void RecordProtocol_ReadStandardRecordBuffer_m3546484478 ();
-extern "C" void RecordProtocol_ProcessAlert_m2650247744 ();
-extern "C" void RecordProtocol_SendAlert_m2622753765 ();
-extern "C" void RecordProtocol_SendAlert_m2529562669 ();
-extern "C" void RecordProtocol_SendAlert_m2816808523 ();
-extern "C" void RecordProtocol_SendChangeCipherSpec_m3542001341 ();
-extern "C" void RecordProtocol_BeginSendRecord_m3180957815 ();
-extern "C" void RecordProtocol_InternalSendRecordCallback_m3984764857 ();
-extern "C" void RecordProtocol_BeginSendRecord_m166940611 ();
-extern "C" void RecordProtocol_EndSendRecord_m3304963666 ();
-extern "C" void RecordProtocol_SendRecord_m132002114 ();
-extern "C" void RecordProtocol_EncodeRecord_m1215442978 ();
-extern "C" void RecordProtocol_EncodeRecord_m3884270352 ();
-extern "C" void RecordProtocol_encryptRecordFragment_m1241873183 ();
-extern "C" void RecordProtocol_decryptRecordFragment_m2510859489 ();
-extern "C" void RecordProtocol_Compare_m216902730 ();
-extern "C" void RecordProtocol_ProcessCipherSpecV2Buffer_m1895848015 ();
-extern "C" void RecordProtocol_MapV2CipherCode_m4064211604 ();
-extern "C" void ReceiveRecordAsyncResult__ctor_m109339899 ();
-extern "C" void ReceiveRecordAsyncResult_get_Record_m1336421357 ();
-extern "C" void ReceiveRecordAsyncResult_get_ResultingBuffer_m2153361373 ();
-extern "C" void ReceiveRecordAsyncResult_get_InitialBuffer_m1245345098 ();
-extern "C" void ReceiveRecordAsyncResult_get_AsyncState_m2086535212 ();
-extern "C" void ReceiveRecordAsyncResult_get_AsyncException_m1835236292 ();
-extern "C" void ReceiveRecordAsyncResult_get_CompletedWithError_m2670396551 ();
-extern "C" void ReceiveRecordAsyncResult_get_AsyncWaitHandle_m1602093076 ();
-extern "C" void ReceiveRecordAsyncResult_get_IsCompleted_m2327274447 ();
-extern "C" void ReceiveRecordAsyncResult_SetComplete_m2441107665 ();
-extern "C" void ReceiveRecordAsyncResult_SetComplete_m494147202 ();
-extern "C" void ReceiveRecordAsyncResult_SetComplete_m4055415513 ();
-extern "C" void SendRecordAsyncResult__ctor_m2999905045 ();
-extern "C" void SendRecordAsyncResult_get_Message_m2340978616 ();
-extern "C" void SendRecordAsyncResult_get_AsyncState_m2299453419 ();
-extern "C" void SendRecordAsyncResult_get_AsyncException_m2088364821 ();
-extern "C" void SendRecordAsyncResult_get_CompletedWithError_m349920476 ();
-extern "C" void SendRecordAsyncResult_get_AsyncWaitHandle_m3532375825 ();
-extern "C" void SendRecordAsyncResult_get_IsCompleted_m2666127692 ();
-extern "C" void SendRecordAsyncResult_SetComplete_m425796521 ();
-extern "C" void SendRecordAsyncResult_SetComplete_m3006273145 ();
-extern "C" void RSASslSignatureDeformatter__ctor_m2325995515 ();
-extern "C" void RSASslSignatureDeformatter_VerifySignature_m3138484348 ();
-extern "C" void RSASslSignatureDeformatter_SetHashAlgorithm_m4048969080 ();
-extern "C" void RSASslSignatureDeformatter_SetKey_m1150106904 ();
-extern "C" void RSASslSignatureFormatter__ctor_m2530528184 ();
-extern "C" void RSASslSignatureFormatter_CreateSignature_m4186395359 ();
-extern "C" void RSASslSignatureFormatter_SetHashAlgorithm_m1976793413 ();
-extern "C" void RSASslSignatureFormatter_SetKey_m53887771 ();
-extern "C" void SecurityParameters__ctor_m3136793890 ();
-extern "C" void SecurityParameters_get_Cipher_m2392911632 ();
-extern "C" void SecurityParameters_set_Cipher_m3888132335 ();
-extern "C" void SecurityParameters_get_ClientWriteMAC_m2756307972 ();
-extern "C" void SecurityParameters_set_ClientWriteMAC_m1970377285 ();
-extern "C" void SecurityParameters_get_ServerWriteMAC_m244028400 ();
-extern "C" void SecurityParameters_set_ServerWriteMAC_m3769080193 ();
-extern "C" void SecurityParameters_Clear_m3409219757 ();
-extern "C" void SslCipherSuite__ctor_m1382988490 ();
-extern "C" void SslCipherSuite_ComputeServerRecordMAC_m1876572367 ();
-extern "C" void SslCipherSuite_ComputeClientRecordMAC_m232780723 ();
-extern "C" void SslCipherSuite_ComputeMasterSecret_m491038647 ();
-extern "C" void SslCipherSuite_ComputeKeys_m574473636 ();
-extern "C" void SslCipherSuite_prf_m2084589217 ();
-extern "C" void SslClientStream__ctor_m3295335959 ();
-extern "C" void SslClientStream__ctor_m1193810714 ();
-extern "C" void SslClientStream__ctor_m3350475994 ();
-extern "C" void SslClientStream__ctor_m1435497855 ();
-extern "C" void SslClientStream__ctor_m2178305131 ();
-extern "C" void SslClientStream_add_ServerCertValidation_m684653638 ();
-extern "C" void SslClientStream_remove_ServerCertValidation_m2446179261 ();
-extern "C" void SslClientStream_add_ClientCertSelection_m2644836210 ();
-extern "C" void SslClientStream_remove_ClientCertSelection_m2497978917 ();
-extern "C" void SslClientStream_add_PrivateKeySelection_m481383932 ();
-extern "C" void SslClientStream_remove_PrivateKeySelection_m427666577 ();
-extern "C" void SslClientStream_add_ServerCertValidation2_m2603998068 ();
-extern "C" void SslClientStream_remove_ServerCertValidation2_m3857463517 ();
-extern "C" void SslClientStream_get_InputBuffer_m295521966 ();
-extern "C" void SslClientStream_get_ClientCertificates_m444639806 ();
-extern "C" void SslClientStream_get_SelectedClientCertificate_m1580018944 ();
-extern "C" void SslClientStream_get_ServerCertValidationDelegate_m3909657681 ();
-extern "C" void SslClientStream_set_ServerCertValidationDelegate_m3125858424 ();
-extern "C" void SslClientStream_get_ClientCertSelectionDelegate_m2316959461 ();
-extern "C" void SslClientStream_set_ClientCertSelectionDelegate_m3476473798 ();
-extern "C" void SslClientStream_get_PrivateKeyCertSelectionDelegate_m3715949545 ();
-extern "C" void SslClientStream_set_PrivateKeyCertSelectionDelegate_m159581650 ();
-extern "C" void SslClientStream_Finalize_m3464869995 ();
-extern "C" void SslClientStream_Dispose_m3148875377 ();
-extern "C" void SslClientStream_OnBeginNegotiateHandshake_m4281860610 ();
-extern "C" void SslClientStream_SafeReceiveRecord_m210668541 ();
-extern "C" void SslClientStream_OnNegotiateHandshakeCallback_m1332934317 ();
-extern "C" void SslClientStream_OnLocalCertificateSelection_m3628249765 ();
-extern "C" void SslClientStream_get_HaveRemoteValidation2Callback_m3555576758 ();
-extern "C" void SslClientStream_OnRemoteCertificateValidation2_m3416857045 ();
-extern "C" void SslClientStream_OnRemoteCertificateValidation_m3974135419 ();
-extern "C" void SslClientStream_RaiseServerCertificateValidation_m1782631027 ();
-extern "C" void SslClientStream_RaiseServerCertificateValidation2_m3736176381 ();
-extern "C" void SslClientStream_RaiseClientCertificateSelection_m3933788312 ();
-extern "C" void SslClientStream_OnLocalPrivateKeySelection_m3649986106 ();
-extern "C" void SslClientStream_RaisePrivateKeySelection_m2326189090 ();
-extern "C" void SslHandshakeHash__ctor_m1269339424 ();
-extern "C" void SslHandshakeHash_Initialize_m2786849785 ();
-extern "C" void SslHandshakeHash_HashFinal_m1925138451 ();
-extern "C" void SslHandshakeHash_HashCore_m3914471343 ();
-extern "C" void SslHandshakeHash_CreateSignature_m3001618400 ();
-extern "C" void SslHandshakeHash_initializePad_m4132246594 ();
-extern "C" void SslStreamBase__ctor_m543947417 ();
-extern "C" void SslStreamBase__cctor_m4047446554 ();
-extern "C" void SslStreamBase_AsyncHandshakeCallback_m1101580486 ();
-extern "C" void SslStreamBase_get_MightNeedHandshake_m3432170694 ();
-extern "C" void SslStreamBase_NegotiateHandshake_m1758369850 ();
-extern "C" void SslStreamBase_RaiseLocalCertificateSelection_m3422705716 ();
-extern "C" void SslStreamBase_RaiseRemoteCertificateValidation_m902031508 ();
-extern "C" void SslStreamBase_RaiseRemoteCertificateValidation2_m1013444422 ();
-extern "C" void SslStreamBase_RaiseLocalPrivateKeySelection_m1885975771 ();
-extern "C" void SslStreamBase_get_CheckCertRevocationStatus_m2467957380 ();
-extern "C" void SslStreamBase_set_CheckCertRevocationStatus_m703827149 ();
-extern "C" void SslStreamBase_get_CipherAlgorithm_m692718075 ();
-extern "C" void SslStreamBase_get_CipherStrength_m3744053336 ();
-extern "C" void SslStreamBase_get_HashAlgorithm_m2591448891 ();
-extern "C" void SslStreamBase_get_HashStrength_m480059173 ();
-extern "C" void SslStreamBase_get_KeyExchangeStrength_m1717128931 ();
-extern "C" void SslStreamBase_get_KeyExchangeAlgorithm_m3712013038 ();
-extern "C" void SslStreamBase_get_SecurityProtocol_m2458441395 ();
-extern "C" void SslStreamBase_get_ServerCertificate_m702547597 ();
-extern "C" void SslStreamBase_get_ServerCertificates_m1401009752 ();
-extern "C" void SslStreamBase_BeginNegotiateHandshake_m2029257721 ();
-extern "C" void SslStreamBase_EndNegotiateHandshake_m1732321201 ();
-extern "C" void SslStreamBase_BeginRead_m869235395 ();
-extern "C" void SslStreamBase_InternalBeginRead_m707911413 ();
-extern "C" void SslStreamBase_InternalReadCallback_m2524917586 ();
-extern "C" void SslStreamBase_InternalBeginWrite_m3760772368 ();
-extern "C" void SslStreamBase_InternalWriteCallback_m2552665647 ();
-extern "C" void SslStreamBase_BeginWrite_m270524114 ();
-extern "C" void SslStreamBase_EndRead_m1072850679 ();
-extern "C" void SslStreamBase_EndWrite_m1091701856 ();
-extern "C" void SslStreamBase_Close_m2762736871 ();
-extern "C" void SslStreamBase_Flush_m2762644405 ();
-extern "C" void SslStreamBase_Read_m1663229390 ();
-extern "C" void SslStreamBase_Read_m1036897444 ();
-extern "C" void SslStreamBase_Seek_m3605313093 ();
-extern "C" void SslStreamBase_SetLength_m3282486041 ();
-extern "C" void SslStreamBase_Write_m3392707719 ();
-extern "C" void SslStreamBase_Write_m1135856379 ();
-extern "C" void SslStreamBase_get_CanRead_m3061866682 ();
-extern "C" void SslStreamBase_get_CanSeek_m1596790394 ();
-extern "C" void SslStreamBase_get_CanWrite_m2069502593 ();
-extern "C" void SslStreamBase_get_Length_m763159069 ();
-extern "C" void SslStreamBase_get_Position_m2525437172 ();
-extern "C" void SslStreamBase_set_Position_m598220223 ();
-extern "C" void SslStreamBase_Finalize_m2530628835 ();
-extern "C" void SslStreamBase_Dispose_m747909841 ();
-extern "C" void SslStreamBase_resetBuffer_m3028042362 ();
-extern "C" void SslStreamBase_checkDisposed_m2550190176 ();
-extern "C" void InternalAsyncResult__ctor_m2764854695 ();
-extern "C" void InternalAsyncResult_get_ProceedAfterHandshake_m552962842 ();
-extern "C" void InternalAsyncResult_get_FromWrite_m2893408424 ();
-extern "C" void InternalAsyncResult_get_Buffer_m163794679 ();
-extern "C" void InternalAsyncResult_get_Offset_m3458447452 ();
-extern "C" void InternalAsyncResult_get_Count_m1291942796 ();
-extern "C" void InternalAsyncResult_get_BytesRead_m4243892348 ();
-extern "C" void InternalAsyncResult_get_AsyncState_m42006015 ();
-extern "C" void InternalAsyncResult_get_AsyncException_m3936660437 ();
-extern "C" void InternalAsyncResult_get_CompletedWithError_m3993955322 ();
-extern "C" void InternalAsyncResult_get_AsyncWaitHandle_m2297269869 ();
-extern "C" void InternalAsyncResult_get_IsCompleted_m1463732458 ();
-extern "C" void InternalAsyncResult_SetComplete_m4011593916 ();
-extern "C" void InternalAsyncResult_SetComplete_m2187159697 ();
-extern "C" void InternalAsyncResult_SetComplete_m200761170 ();
-extern "C" void InternalAsyncResult_SetComplete_m35987153 ();
-extern "C" void TlsCipherSuite__ctor_m2983563913 ();
-extern "C" void TlsCipherSuite_ComputeServerRecordMAC_m661450756 ();
-extern "C" void TlsCipherSuite_ComputeClientRecordMAC_m3290639544 ();
-extern "C" void TlsCipherSuite_ComputeMasterSecret_m3863800064 ();
-extern "C" void TlsCipherSuite_ComputeKeys_m1444202749 ();
-extern "C" void TlsClientSettings__ctor_m3065987087 ();
-extern "C" void TlsClientSettings_get_TargetHost_m2817634620 ();
-extern "C" void TlsClientSettings_set_TargetHost_m3421266913 ();
-extern "C" void TlsClientSettings_get_Certificates_m2509165647 ();
-extern "C" void TlsClientSettings_set_Certificates_m1110280480 ();
-extern "C" void TlsClientSettings_get_ClientCertificate_m89435195 ();
-extern "C" void TlsClientSettings_set_ClientCertificate_m442292512 ();
-extern "C" void TlsClientSettings_UpdateCertificateRSA_m1828531911 ();
-extern "C" void TlsException__ctor_m3885720020 ();
-extern "C" void TlsException__ctor_m1249020603 ();
-extern "C" void TlsException__ctor_m2205512412 ();
-extern "C" void TlsException__ctor_m3747188020 ();
-extern "C" void TlsException__ctor_m2436420036 ();
-extern "C" void TlsException__ctor_m1988757560 ();
-extern "C" void TlsException_get_Alert_m4022765752 ();
-extern "C" void TlsServerSettings__ctor_m1125867683 ();
-extern "C" void TlsServerSettings_get_ServerKeyExchange_m1147981947 ();
-extern "C" void TlsServerSettings_set_ServerKeyExchange_m4199779410 ();
-extern "C" void TlsServerSettings_get_Certificates_m3301336199 ();
-extern "C" void TlsServerSettings_set_Certificates_m67827830 ();
-extern "C" void TlsServerSettings_get_CertificateRSA_m1899388839 ();
-extern "C" void TlsServerSettings_get_RsaParameters_m1327440044 ();
-extern "C" void TlsServerSettings_set_RsaParameters_m3165273449 ();
-extern "C" void TlsServerSettings_set_SignedParams_m1826385315 ();
-extern "C" void TlsServerSettings_get_CertificateRequest_m1204669838 ();
-extern "C" void TlsServerSettings_set_CertificateRequest_m3419519893 ();
-extern "C" void TlsServerSettings_set_CertificateTypes_m264196087 ();
-extern "C" void TlsServerSettings_set_DistinguisedNames_m2290049644 ();
-extern "C" void TlsServerSettings_UpdateCertificateRSA_m2025051563 ();
-extern "C" void TlsStream__ctor_m4117943603 ();
-extern "C" void TlsStream__ctor_m2982031560 ();
-extern "C" void TlsStream_get_EOF_m1728604576 ();
-extern "C" void TlsStream_get_CanWrite_m79048455 ();
-extern "C" void TlsStream_get_CanRead_m1860811404 ();
-extern "C" void TlsStream_get_CanSeek_m3608197976 ();
-extern "C" void TlsStream_get_Position_m3551173234 ();
-extern "C" void TlsStream_set_Position_m378064217 ();
-extern "C" void TlsStream_get_Length_m1562309511 ();
-extern "C" void TlsStream_ReadSmallValue_m1760325248 ();
-extern "C" void TlsStream_ReadByte_m1935235961 ();
-extern "C" void TlsStream_ReadInt16_m1855118433 ();
-extern "C" void TlsStream_ReadInt24_m1268450166 ();
-extern "C" void TlsStream_ReadBytes_m3301522097 ();
-extern "C" void TlsStream_Write_m2271546135 ();
-extern "C" void TlsStream_Write_m2055734301 ();
-extern "C" void TlsStream_WriteInt24_m1660453494 ();
-extern "C" void TlsStream_Write_m4025102703 ();
-extern "C" void TlsStream_Write_m3425460533 ();
-extern "C" void TlsStream_Reset_m1504601050 ();
-extern "C" void TlsStream_ToArray_m3731779317 ();
-extern "C" void TlsStream_Flush_m2603881359 ();
-extern "C" void TlsStream_SetLength_m1460039587 ();
-extern "C" void TlsStream_Seek_m3898619363 ();
-extern "C" void TlsStream_Read_m2550027598 ();
-extern "C" void TlsStream_Write_m418642281 ();
-extern "C" void ValidationResult__ctor_m2761103915 ();
-extern "C" void ValidationResult_get_Trusted_m1316755606 ();
-extern "C" void ValidationResult_get_ErrorCode_m599531882 ();
-extern "C" void AuthorityKeyIdentifierExtension__ctor_m3445584677 ();
-extern "C" void AuthorityKeyIdentifierExtension_Decode_m1941074339 ();
-extern "C" void AuthorityKeyIdentifierExtension_get_Identifier_m3123570309 ();
-extern "C" void AuthorityKeyIdentifierExtension_ToString_m1294877924 ();
-extern "C" void BasicConstraintsExtension__ctor_m3832084132 ();
-extern "C" void BasicConstraintsExtension_Decode_m893312834 ();
-extern "C" void BasicConstraintsExtension_Encode_m3738782306 ();
-extern "C" void BasicConstraintsExtension_get_CertificateAuthority_m2523289727 ();
-extern "C" void BasicConstraintsExtension_ToString_m1598306805 ();
-extern "C" void ExtendedKeyUsageExtension__ctor_m3310261285 ();
-extern "C" void ExtendedKeyUsageExtension_Decode_m901297139 ();
-extern "C" void ExtendedKeyUsageExtension_Encode_m3429751649 ();
-extern "C" void ExtendedKeyUsageExtension_get_KeyPurpose_m1625001387 ();
-extern "C" void ExtendedKeyUsageExtension_ToString_m1081992020 ();
-extern "C" void GeneralNames__ctor_m3021378417 ();
-extern "C" void GeneralNames_get_DNSNames_m2721668874 ();
-extern "C" void GeneralNames_get_IPAddresses_m1712556836 ();
-extern "C" void GeneralNames_ToString_m800435094 ();
-extern "C" void KeyUsageExtension__ctor_m2471620836 ();
-extern "C" void KeyUsageExtension_Decode_m4115739726 ();
-extern "C" void KeyUsageExtension_Encode_m1269721630 ();
-extern "C" void KeyUsageExtension_Support_m2720178361 ();
-extern "C" void KeyUsageExtension_ToString_m1213032139 ();
-extern "C" void NetscapeCertTypeExtension__ctor_m3885754615 ();
-extern "C" void NetscapeCertTypeExtension_Decode_m2210025005 ();
-extern "C" void NetscapeCertTypeExtension_Support_m3954199663 ();
-extern "C" void NetscapeCertTypeExtension_ToString_m834335182 ();
-extern "C" void SubjectAltNameExtension__ctor_m2621620126 ();
-extern "C" void SubjectAltNameExtension_Decode_m3676245240 ();
-extern "C" void SubjectAltNameExtension_get_DNSNames_m1798931443 ();
-extern "C" void SubjectAltNameExtension_get_IPAddresses_m3207151211 ();
-extern "C" void SubjectAltNameExtension_ToString_m1300810903 ();
-extern "C" void PKCS12__ctor_m766227211 ();
-extern "C" void PKCS12__ctor_m1564527510 ();
-extern "C" void PKCS12__ctor_m997996062 ();
-extern "C" void PKCS12__cctor_m3312759338 ();
-extern "C" void PKCS12_Decode_m2543116952 ();
-extern "C" void PKCS12_Finalize_m3579787021 ();
-extern "C" void PKCS12_set_Password_m64359107 ();
-extern "C" void PKCS12_get_IterationCount_m3648861112 ();
-extern "C" void PKCS12_set_IterationCount_m2468663791 ();
-extern "C" void PKCS12_get_Keys_m1312614820 ();
-extern "C" void PKCS12_get_Certificates_m1274732891 ();
-extern "C" void PKCS12_get_RNG_m3963529040 ();
-extern "C" void PKCS12_Compare_m2529107822 ();
-extern "C" void PKCS12_GetSymmetricAlgorithm_m3196291685 ();
-extern "C" void PKCS12_Decrypt_m2707332345 ();
-extern "C" void PKCS12_Decrypt_m1557069392 ();
-extern "C" void PKCS12_Encrypt_m2154408631 ();
-extern "C" void PKCS12_GetExistingParameters_m3532830249 ();
-extern "C" void PKCS12_AddPrivateKey_m4216166133 ();
-extern "C" void PKCS12_ReadSafeBag_m1100201494 ();
-extern "C" void PKCS12_CertificateSafeBag_m3272197807 ();
-extern "C" void PKCS12_MAC_m3228833816 ();
-extern "C" void PKCS12_GetBytes_m2884672032 ();
-extern "C" void PKCS12_EncryptedContentInfo_m938119256 ();
-extern "C" void PKCS12_AddCertificate_m3637520737 ();
-extern "C" void PKCS12_AddCertificate_m2800455360 ();
-extern "C" void PKCS12_RemoveCertificate_m228884064 ();
-extern "C" void PKCS12_RemoveCertificate_m1352841763 ();
-extern "C" void PKCS12_Clone_m1135152221 ();
-extern "C" void PKCS12_get_MaximumPasswordLength_m1673883007 ();
-extern "C" void DeriveBytes__ctor_m649232120 ();
-extern "C" void DeriveBytes__cctor_m3390880627 ();
-extern "C" void DeriveBytes_set_HashName_m2530261318 ();
-extern "C" void DeriveBytes_set_IterationCount_m1653995136 ();
-extern "C" void DeriveBytes_set_Password_m1444282377 ();
-extern "C" void DeriveBytes_set_Salt_m973628730 ();
-extern "C" void DeriveBytes_Adjust_m3395788526 ();
-extern "C" void DeriveBytes_Derive_m1435464935 ();
-extern "C" void DeriveBytes_DeriveKey_m3654953847 ();
-extern "C" void DeriveBytes_DeriveIV_m3343375195 ();
-extern "C" void DeriveBytes_DeriveMAC_m436209295 ();
-extern "C" void SafeBag__ctor_m2828572544 ();
-extern "C" void SafeBag_get_BagOID_m2574947216 ();
-extern "C" void SafeBag_get_ASN1_m1646183377 ();
-extern "C" void X501__cctor_m2610532554 ();
-extern "C" void X501_ToString_m4145210560 ();
-extern "C" void X501_ToString_m3328169518 ();
-extern "C" void X501_AppendEntry_m768611426 ();
-extern "C" void X509Certificate__ctor_m2941481449 ();
-extern "C" void X509Certificate__cctor_m2984068893 ();
-extern "C" void X509Certificate_Parse_m1764345628 ();
-extern "C" void X509Certificate_GetUnsignedBigInteger_m2102946512 ();
-extern "C" void X509Certificate_get_DSA_m3972464423 ();
-extern "C" void X509Certificate_set_DSA_m1325917832 ();
-extern "C" void X509Certificate_get_Extensions_m222060964 ();
-extern "C" void X509Certificate_get_Hash_m2470366345 ();
-extern "C" void X509Certificate_get_IssuerName_m3907994144 ();
-extern "C" void X509Certificate_get_KeyAlgorithm_m454927092 ();
-extern "C" void X509Certificate_get_KeyAlgorithmParameters_m1701675565 ();
-extern "C" void X509Certificate_set_KeyAlgorithmParameters_m17826364 ();
-extern "C" void X509Certificate_get_PublicKey_m933487733 ();
-extern "C" void X509Certificate_get_RSA_m1167362983 ();
-extern "C" void X509Certificate_set_RSA_m1038416652 ();
-extern "C" void X509Certificate_get_RawData_m1262574599 ();
-extern "C" void X509Certificate_get_SerialNumber_m2509150920 ();
-extern "C" void X509Certificate_get_Signature_m3664033367 ();
-extern "C" void X509Certificate_get_SignatureAlgorithm_m2111916881 ();
-extern "C" void X509Certificate_get_SubjectName_m3533705485 ();
-extern "C" void X509Certificate_get_ValidFrom_m1740754472 ();
-extern "C" void X509Certificate_get_ValidUntil_m4037777446 ();
-extern "C" void X509Certificate_get_Version_m1704730343 ();
-extern "C" void X509Certificate_get_IsCurrent_m424898544 ();
-extern "C" void X509Certificate_WasCurrent_m3632049416 ();
-extern "C" void X509Certificate_VerifySignature_m4020723406 ();
-extern "C" void X509Certificate_VerifySignature_m4020723740 ();
-extern "C" void X509Certificate_VerifySignature_m3536156059 ();
-extern "C" void X509Certificate_get_IsSelfSigned_m3860357831 ();
-extern "C" void X509Certificate_GetIssuerName_m2776799695 ();
-extern "C" void X509Certificate_GetSubjectName_m3163312410 ();
-extern "C" void X509Certificate_GetObjectData_m2064274370 ();
-extern "C" void X509Certificate_PEM_m49854707 ();
-extern "C" void X509CertificateCollection__ctor_m858704242 ();
-extern "C" void X509CertificateCollection__ctor_m583031014 ();
-extern "C" void X509CertificateCollection_System_Collections_IEnumerable_GetEnumerator_m977294505 ();
-extern "C" void X509CertificateCollection_get_Item_m2115598414 ();
-extern "C" void X509CertificateCollection_Add_m4008705157 ();
-extern "C" void X509CertificateCollection_AddRange_m3644738604 ();
-extern "C" void X509CertificateCollection_Contains_m2373814229 ();
-extern "C" void X509CertificateCollection_GetEnumerator_m3994741635 ();
-extern "C" void X509CertificateCollection_GetHashCode_m1043795447 ();
-extern "C" void X509CertificateCollection_IndexOf_m2175658423 ();
-extern "C" void X509CertificateCollection_Remove_m2722259192 ();
-extern "C" void X509CertificateCollection_Compare_m1014334435 ();
-extern "C" void X509CertificateEnumerator__ctor_m82280444 ();
-extern "C" void X509CertificateEnumerator_System_Collections_IEnumerator_get_Current_m3386014480 ();
-extern "C" void X509CertificateEnumerator_System_Collections_IEnumerator_MoveNext_m1448966539 ();
-extern "C" void X509CertificateEnumerator_System_Collections_IEnumerator_Reset_m3929249334 ();
-extern "C" void X509CertificateEnumerator_get_Current_m3129374511 ();
-extern "C" void X509CertificateEnumerator_MoveNext_m4060814498 ();
-extern "C" void X509CertificateEnumerator_Reset_m4167796875 ();
-extern "C" void X509Chain__ctor_m3522797144 ();
-extern "C" void X509Chain__ctor_m1113875360 ();
-extern "C" void X509Chain_get_Status_m2726750609 ();
-extern "C" void X509Chain_get_TrustAnchors_m930867182 ();
-extern "C" void X509Chain_Build_m175470596 ();
-extern "C" void X509Chain_IsValid_m4184995162 ();
-extern "C" void X509Chain_FindCertificateParent_m3122224229 ();
-extern "C" void X509Chain_FindCertificateRoot_m589250107 ();
-extern "C" void X509Chain_IsTrusted_m2834338719 ();
-extern "C" void X509Chain_IsParent_m2578316632 ();
-extern "C" void X509Crl__ctor_m2469408229 ();
-extern "C" void X509Crl_Parse_m3287862528 ();
-extern "C" void X509Crl_get_Extensions_m1795830276 ();
-extern "C" void X509Crl_get_Hash_m3617397429 ();
-extern "C" void X509Crl_get_IssuerName_m756409840 ();
-extern "C" void X509Crl_get_NextUpdate_m45665244 ();
-extern "C" void X509Crl_Compare_m2229641633 ();
-extern "C" void X509Crl_GetCrlEntry_m630720316 ();
-extern "C" void X509Crl_GetCrlEntry_m550904265 ();
-extern "C" void X509Crl_GetHashName_m183504634 ();
-extern "C" void X509Crl_VerifySignature_m25190802 ();
-extern "C" void X509Crl_VerifySignature_m25189948 ();
-extern "C" void X509Crl_VerifySignature_m1390212587 ();
-extern "C" void X509CrlEntry__ctor_m3156488776 ();
-extern "C" void X509CrlEntry_get_SerialNumber_m3603416806 ();
-extern "C" void X509CrlEntry_get_RevocationDate_m1257876856 ();
-extern "C" void X509CrlEntry_get_Extensions_m79989256 ();
-extern "C" void X509Extension__ctor_m2083345012 ();
-extern "C" void X509Extension__ctor_m2273534630 ();
-extern "C" void X509Extension_Decode_m972859652 ();
-extern "C" void X509Extension_Encode_m1753933824 ();
-extern "C" void X509Extension_get_Oid_m2301335920 ();
-extern "C" void X509Extension_get_Critical_m1103269870 ();
-extern "C" void X509Extension_get_Value_m3409801211 ();
-extern "C" void X509Extension_Equals_m1304125015 ();
-extern "C" void X509Extension_GetHashCode_m3265407565 ();
-extern "C" void X509Extension_WriteLine_m364247613 ();
-extern "C" void X509Extension_ToString_m408479757 ();
-extern "C" void X509ExtensionCollection__ctor_m1119345384 ();
-extern "C" void X509ExtensionCollection__ctor_m2672322588 ();
-extern "C" void X509ExtensionCollection_System_Collections_IEnumerable_GetEnumerator_m2600902401 ();
-extern "C" void X509ExtensionCollection_IndexOf_m3972100651 ();
-extern "C" void X509ExtensionCollection_get_Item_m4212651995 ();
-extern "C" void X509Store__ctor_m914086381 ();
-extern "C" void X509Store_get_Certificates_m683383922 ();
-extern "C" void X509Store_get_Crls_m1365300487 ();
-extern "C" void X509Store_Load_m3792048208 ();
-extern "C" void X509Store_LoadCertificate_m1082475046 ();
-extern "C" void X509Store_LoadCrl_m1146720614 ();
-extern "C" void X509Store_CheckStore_m1027496478 ();
-extern "C" void X509Store_BuildCertificatesCollection_m4224672591 ();
-extern "C" void X509Store_BuildCrlsCollection_m52567568 ();
-extern "C" void X509StoreManager_get_CurrentUser_m569194374 ();
-extern "C" void X509StoreManager_get_LocalMachine_m2451390246 ();
-extern "C" void X509StoreManager_get_TrustedRootCertificates_m122138510 ();
-extern "C" void X509Stores__ctor_m2453291421 ();
-extern "C" void X509Stores_get_TrustedRoot_m3412716694 ();
-extern "C" void X509Stores_Open_m3570436469 ();
 extern "C" void DictionaryBase__ctor_m2253926576 ();
 extern "C" void DictionaryBase_get_Values_m137197045 ();
 extern "C" void U3CU3Ec__Iterator3__ctor_m1703452705 ();
@@ -10817,6 +9934,1320 @@ extern "C" void XmlWriter_WriteAttributeString_m2741345027 ();
 extern "C" void XmlWriter_WriteElementString_m1467633369 ();
 extern "C" void XmlWriter_WriteNode_m1949395905 ();
 extern "C" void XmlWriter_WriteStartElement_m2103041358 ();
+extern "C" void Locale_GetText_m1644072174 ();
+extern "C" void BigInteger__ctor_m4013661868 ();
+extern "C" void BigInteger__ctor_m2991182310 ();
+extern "C" void BigInteger__ctor_m3239748086 ();
+extern "C" void BigInteger__ctor_m2998639688 ();
+extern "C" void BigInteger__ctor_m3787562545 ();
+extern "C" void BigInteger__cctor_m3631692756 ();
+extern "C" void BigInteger_get_Rng_m2525288368 ();
+extern "C" void BigInteger_GenerateRandom_m714043984 ();
+extern "C" void BigInteger_GenerateRandom_m1878468830 ();
+extern "C" void BigInteger_BitCount_m1334731567 ();
+extern "C" void BigInteger_TestBit_m2460344121 ();
+extern "C" void BigInteger_SetBit_m426619300 ();
+extern "C" void BigInteger_SetBit_m576108355 ();
+extern "C" void BigInteger_LowestSetBit_m1146240832 ();
+extern "C" void BigInteger_GetBytes_m767422614 ();
+extern "C" void BigInteger_ToString_m1842353154 ();
+extern "C" void BigInteger_ToString_m2878297110 ();
+extern "C" void BigInteger_Normalize_m1262742386 ();
+extern "C" void BigInteger_Clear_m2734785184 ();
+extern "C" void BigInteger_GetHashCode_m1450276268 ();
+extern "C" void BigInteger_ToString_m2806881644 ();
+extern "C" void BigInteger_Equals_m1886728252 ();
+extern "C" void BigInteger_ModInverse_m1881894572 ();
+extern "C" void BigInteger_ModPow_m1418407677 ();
+extern "C" void BigInteger_GeneratePseudoPrime_m2186059270 ();
+extern "C" void BigInteger_Incr2_m505983313 ();
+extern "C" void BigInteger_op_Implicit_m622924526 ();
+extern "C" void BigInteger_op_Implicit_m3634001681 ();
+extern "C" void BigInteger_op_Addition_m1734797151 ();
+extern "C" void BigInteger_op_Subtraction_m972393015 ();
+extern "C" void BigInteger_op_Modulus_m2895726170 ();
+extern "C" void BigInteger_op_Modulus_m13450242 ();
+extern "C" void BigInteger_op_Division_m4076990896 ();
+extern "C" void BigInteger_op_Multiply_m1833761647 ();
+extern "C" void BigInteger_op_LeftShift_m3361632170 ();
+extern "C" void BigInteger_op_RightShift_m852685747 ();
+extern "C" void BigInteger_op_Equality_m2683055762 ();
+extern "C" void BigInteger_op_Inequality_m744282323 ();
+extern "C" void BigInteger_op_Equality_m3089846781 ();
+extern "C" void BigInteger_op_Inequality_m4286929594 ();
+extern "C" void BigInteger_op_GreaterThan_m2492620848 ();
+extern "C" void BigInteger_op_LessThan_m3825358479 ();
+extern "C" void BigInteger_op_GreaterThanOrEqual_m2643115413 ();
+extern "C" void BigInteger_op_LessThanOrEqual_m3528380540 ();
+extern "C" void Kernel_AddSameSign_m4087322475 ();
+extern "C" void Kernel_Subtract_m2224959291 ();
+extern "C" void Kernel_MinusEq_m1637138341 ();
+extern "C" void Kernel_PlusEq_m2259390883 ();
+extern "C" void Kernel_Compare_m722412638 ();
+extern "C" void Kernel_SingleByteDivideInPlace_m3631295848 ();
+extern "C" void Kernel_DwordMod_m978954867 ();
+extern "C" void Kernel_DwordDivMod_m3728402123 ();
+extern "C" void Kernel_multiByteDivide_m3157480645 ();
+extern "C" void Kernel_LeftShift_m3814364702 ();
+extern "C" void Kernel_RightShift_m2983108719 ();
+extern "C" void Kernel_Multiply_m1938858919 ();
+extern "C" void Kernel_MultiplyMod2p32pmod_m874406394 ();
+extern "C" void Kernel_modInverse_m1848537133 ();
+extern "C" void Kernel_modInverse_m3230829577 ();
+extern "C" void ModulusRing__ctor_m630117946 ();
+extern "C" void ModulusRing_BarrettReduction_m2802101099 ();
+extern "C" void ModulusRing_Multiply_m3113924743 ();
+extern "C" void ModulusRing_Difference_m662924064 ();
+extern "C" void ModulusRing_Pow_m2489265435 ();
+extern "C" void ModulusRing_Pow_m661630322 ();
+extern "C" void PrimeGeneratorBase__ctor_m4281387560 ();
+extern "C" void PrimeGeneratorBase_get_Confidence_m3927471963 ();
+extern "C" void PrimeGeneratorBase_get_PrimalityTest_m308005118 ();
+extern "C" void PrimeGeneratorBase_get_TrialDivisionBounds_m4192107199 ();
+extern "C" void SequentialSearchPrimeGeneratorBase__ctor_m3982028469 ();
+extern "C" void SequentialSearchPrimeGeneratorBase_GenerateSearchBase_m2930465198 ();
+extern "C" void SequentialSearchPrimeGeneratorBase_GenerateNewPrime_m2255936480 ();
+extern "C" void SequentialSearchPrimeGeneratorBase_GenerateNewPrime_m296245934 ();
+extern "C" void SequentialSearchPrimeGeneratorBase_IsPrimeAcceptable_m3678219529 ();
+extern "C" void PrimalityTest__ctor_m1351629431 ();
+extern "C" void PrimalityTest_Invoke_m4058801829 ();
+extern "C" void PrimalityTest_BeginInvoke_m1691702520 ();
+extern "C" void PrimalityTest_EndInvoke_m380367609 ();
+extern "C" void PrimalityTests_GetSPPRounds_m873706010 ();
+extern "C" void PrimalityTests_RabinMillerTest_m2029846965 ();
+extern "C" void ASN1__ctor_m646105945 ();
+extern "C" void ASN1__ctor_m1045937444 ();
+extern "C" void ASN1__ctor_m1653629327 ();
+extern "C" void ASN1_get_Count_m3992276234 ();
+extern "C" void ASN1_get_Tag_m3531603485 ();
+extern "C" void ASN1_get_Length_m2568143283 ();
+extern "C" void ASN1_get_Value_m3116965808 ();
+extern "C" void ASN1_set_Value_m1063274345 ();
+extern "C" void ASN1_CompareArray_m2071014626 ();
+extern "C" void ASN1_CompareValue_m2994814651 ();
+extern "C" void ASN1_Add_m1595622622 ();
+extern "C" void ASN1_GetBytes_m3982410951 ();
+extern "C" void ASN1_Decode_m947929221 ();
+extern "C" void ASN1_DecodeTLV_m2898581687 ();
+extern "C" void ASN1_get_Item_m1067746146 ();
+extern "C" void ASN1_Element_m1568353429 ();
+extern "C" void ASN1_ToString_m2669105451 ();
+extern "C" void ASN1Convert_FromInt32_m4211017145 ();
+extern "C" void ASN1Convert_FromOid_m3277257826 ();
+extern "C" void ASN1Convert_ToInt32_m2482104422 ();
+extern "C" void ASN1Convert_ToOid_m1035860535 ();
+extern "C" void ASN1Convert_ToDateTime_m2305963290 ();
+extern "C" void BitConverterLE_GetUIntBytes_m2975603021 ();
+extern "C" void BitConverterLE_GetBytes_m1242468557 ();
+extern "C" void ARC4Managed__ctor_m2922048522 ();
+extern "C" void ARC4Managed_Finalize_m4206406046 ();
+extern "C" void ARC4Managed_Dispose_m4102232694 ();
+extern "C" void ARC4Managed_get_Key_m3234603170 ();
+extern "C" void ARC4Managed_set_Key_m663161993 ();
+extern "C" void ARC4Managed_get_CanReuseTransform_m3235470105 ();
+extern "C" void ARC4Managed_CreateEncryptor_m800891464 ();
+extern "C" void ARC4Managed_CreateDecryptor_m2848783948 ();
+extern "C" void ARC4Managed_GenerateIV_m2815460576 ();
+extern "C" void ARC4Managed_GenerateKey_m716135508 ();
+extern "C" void ARC4Managed_get_CanTransformMultipleBlocks_m2283663207 ();
+extern "C" void ARC4Managed_get_InputBlockSize_m2472484505 ();
+extern "C" void ARC4Managed_get_OutputBlockSize_m1486579102 ();
+extern "C" void ARC4Managed_KeySetup_m73384687 ();
+extern "C" void ARC4Managed_CheckInput_m3033530539 ();
+extern "C" void ARC4Managed_TransformBlock_m1197694862 ();
+extern "C" void ARC4Managed_InternalTransformBlock_m1999805545 ();
+extern "C" void ARC4Managed_TransformFinalBlock_m2162658128 ();
+extern "C" void CryptoConvert_ToHex_m2874017189 ();
+extern "C" void HMAC__ctor_m2605930831 ();
+extern "C" void HMAC_get_Key_m2528863640 ();
+extern "C" void HMAC_set_Key_m3745565827 ();
+extern "C" void HMAC_Initialize_m3052649104 ();
+extern "C" void HMAC_HashFinal_m1045191164 ();
+extern "C" void HMAC_HashCore_m3394319142 ();
+extern "C" void HMAC_initializePad_m3828610671 ();
+extern "C" void KeyBuilder_get_Rng_m2539978716 ();
+extern "C" void KeyBuilder_Key_m3814433741 ();
+extern "C" void MD2__ctor_m3133818738 ();
+extern "C" void MD2_Create_m3241404171 ();
+extern "C" void MD2_Create_m539024737 ();
+extern "C" void MD2Managed__ctor_m1696123663 ();
+extern "C" void MD2Managed__cctor_m3575944986 ();
+extern "C" void MD2Managed_Padding_m410163267 ();
+extern "C" void MD2Managed_Initialize_m1330748427 ();
+extern "C" void MD2Managed_HashCore_m248147901 ();
+extern "C" void MD2Managed_HashFinal_m4151214661 ();
+extern "C" void MD2Managed_MD2Transform_m3825201358 ();
+extern "C" void MD4__ctor_m2366413460 ();
+extern "C" void MD4_Create_m3565183915 ();
+extern "C" void MD4_Create_m2582504069 ();
+extern "C" void MD4Managed__ctor_m796835377 ();
+extern "C" void MD4Managed_Initialize_m2316730601 ();
+extern "C" void MD4Managed_HashCore_m3133543859 ();
+extern "C" void MD4Managed_HashFinal_m1777895823 ();
+extern "C" void MD4Managed_Padding_m2920052321 ();
+extern "C" void MD4Managed_F_m2501978380 ();
+extern "C" void MD4Managed_G_m1121848465 ();
+extern "C" void MD4Managed_H_m4236752602 ();
+extern "C" void MD4Managed_ROL_m2970841588 ();
+extern "C" void MD4Managed_FF_m784377458 ();
+extern "C" void MD4Managed_GG_m1462438360 ();
+extern "C" void MD4Managed_HH_m2172169314 ();
+extern "C" void MD4Managed_Encode_m2097839378 ();
+extern "C" void MD4Managed_Decode_m1036272973 ();
+extern "C" void MD4Managed_MD4Transform_m2648331494 ();
+extern "C" void MD5SHA1__ctor_m371038734 ();
+extern "C" void MD5SHA1_Initialize_m3440022970 ();
+extern "C" void MD5SHA1_HashFinal_m4051142254 ();
+extern "C" void MD5SHA1_HashCore_m2043482644 ();
+extern "C" void MD5SHA1_CreateSignature_m4274114929 ();
+extern "C" void MD5SHA1_VerifySignature_m507888141 ();
+extern "C" void PKCS1__cctor_m1002943778 ();
+extern "C" void PKCS1_Compare_m552424558 ();
+extern "C" void PKCS1_I2OSP_m647014786 ();
+extern "C" void PKCS1_OS2IP_m2226560443 ();
+extern "C" void PKCS1_RSASP1_m1748738009 ();
+extern "C" void PKCS1_RSAVP1_m1644175986 ();
+extern "C" void PKCS1_Sign_v15_m554806303 ();
+extern "C" void PKCS1_Verify_v15_m3855588030 ();
+extern "C" void PKCS1_Verify_v15_m478274703 ();
+extern "C" void PKCS1_Encode_v15_m1038051160 ();
+extern "C" void EncryptedPrivateKeyInfo__ctor_m569026543 ();
+extern "C" void EncryptedPrivateKeyInfo__ctor_m3398795484 ();
+extern "C" void EncryptedPrivateKeyInfo_get_Algorithm_m3024753760 ();
+extern "C" void EncryptedPrivateKeyInfo_get_EncryptedData_m598672214 ();
+extern "C" void EncryptedPrivateKeyInfo_get_Salt_m590211404 ();
+extern "C" void EncryptedPrivateKeyInfo_get_IterationCount_m2407997966 ();
+extern "C" void EncryptedPrivateKeyInfo_Decode_m1706190306 ();
+extern "C" void PrivateKeyInfo__ctor_m2683279425 ();
+extern "C" void PrivateKeyInfo__ctor_m3851924948 ();
+extern "C" void PrivateKeyInfo_get_PrivateKey_m2127503870 ();
+extern "C" void PrivateKeyInfo_Decode_m1053025782 ();
+extern "C" void PrivateKeyInfo_RemoveLeadingZero_m3396807048 ();
+extern "C" void PrivateKeyInfo_Normalize_m1192796352 ();
+extern "C" void PrivateKeyInfo_DecodeRSA_m919734506 ();
+extern "C" void PrivateKeyInfo_DecodeDSA_m2497561917 ();
+extern "C" void RC4__ctor_m1585026462 ();
+extern "C" void RC4__cctor_m523650203 ();
+extern "C" void RC4_get_IV_m506011366 ();
+extern "C" void RC4_set_IV_m4096786929 ();
+extern "C" void RSAManaged__ctor_m1370411656 ();
+extern "C" void RSAManaged__ctor_m1680944437 ();
+extern "C" void RSAManaged_Finalize_m3491799840 ();
+extern "C" void RSAManaged_GenerateKeyPair_m1213111262 ();
+extern "C" void RSAManaged_get_KeySize_m3478823737 ();
+extern "C" void RSAManaged_get_KeyExchangeAlgorithm_m123531007 ();
+extern "C" void RSAManaged_get_PublicOnly_m2581981140 ();
+extern "C" void RSAManaged_get_SignatureAlgorithm_m4261969919 ();
+extern "C" void RSAManaged_DecryptValue_m1225349489 ();
+extern "C" void RSAManaged_EncryptValue_m1847230963 ();
+extern "C" void RSAManaged_ExportParameters_m2871338879 ();
+extern "C" void RSAManaged_ImportParameters_m3060955884 ();
+extern "C" void RSAManaged_Dispose_m160261748 ();
+extern "C" void RSAManaged_ToXmlString_m2606223477 ();
+extern "C" void RSAManaged_GetPaddedValue_m2972141669 ();
+extern "C" void KeyGeneratedEventHandler__ctor_m639133899 ();
+extern "C" void KeyGeneratedEventHandler_Invoke_m1298576133 ();
+extern "C" void KeyGeneratedEventHandler_BeginInvoke_m2404438262 ();
+extern "C" void KeyGeneratedEventHandler_EndInvoke_m80374889 ();
+extern "C" void ContentInfo__ctor_m3727742917 ();
+extern "C" void ContentInfo__ctor_m3579805263 ();
+extern "C" void ContentInfo__ctor_m2845339866 ();
+extern "C" void ContentInfo__ctor_m3871771681 ();
+extern "C" void ContentInfo_get_ASN1_m1697727120 ();
+extern "C" void ContentInfo_get_Content_m1802070908 ();
+extern "C" void ContentInfo_set_Content_m3643334361 ();
+extern "C" void ContentInfo_get_ContentType_m2984320800 ();
+extern "C" void ContentInfo_set_ContentType_m1242338355 ();
+extern "C" void ContentInfo_GetASN1_m1560623629 ();
+extern "C" void EncryptedData__ctor_m3834592644 ();
+extern "C" void EncryptedData__ctor_m3866918584 ();
+extern "C" void EncryptedData_get_EncryptionAlgorithm_m3585820551 ();
+extern "C" void EncryptedData_get_EncryptedContent_m3832882582 ();
+extern "C" void Alert__ctor_m264447866 ();
+extern "C" void Alert__ctor_m287829582 ();
+extern "C" void Alert_get_Level_m2913362942 ();
+extern "C" void Alert_get_Description_m3856702046 ();
+extern "C" void Alert_get_IsWarning_m427004807 ();
+extern "C" void Alert_get_IsCloseNotify_m577852330 ();
+extern "C" void Alert_inferAlertLevel_m1194123772 ();
+extern "C" void Alert_GetAlertMessage_m325996256 ();
+extern "C" void CertificateSelectionCallback__ctor_m2302751912 ();
+extern "C" void CertificateSelectionCallback_Invoke_m2902629105 ();
+extern "C" void CertificateSelectionCallback_BeginInvoke_m990408067 ();
+extern "C" void CertificateSelectionCallback_EndInvoke_m3525317639 ();
+extern "C" void CertificateValidationCallback__ctor_m1298586051 ();
+extern "C" void CertificateValidationCallback_Invoke_m2500463874 ();
+extern "C" void CertificateValidationCallback_BeginInvoke_m3625803269 ();
+extern "C" void CertificateValidationCallback_EndInvoke_m2418808873 ();
+extern "C" void CertificateValidationCallback2__ctor_m1915259009 ();
+extern "C" void CertificateValidationCallback2_Invoke_m436894540 ();
+extern "C" void CertificateValidationCallback2_BeginInvoke_m3996282202 ();
+extern "C" void CertificateValidationCallback2_EndInvoke_m1734587200 ();
+extern "C" void CipherSuite__ctor_m440966622 ();
+extern "C" void CipherSuite__cctor_m2232817620 ();
+extern "C" void CipherSuite_get_EncryptionCipher_m1019312730 ();
+extern "C" void CipherSuite_get_DecryptionCipher_m3464788382 ();
+extern "C" void CipherSuite_get_ClientHMAC_m2261562571 ();
+extern "C" void CipherSuite_get_ServerHMAC_m3566778727 ();
+extern "C" void CipherSuite_get_CipherAlgorithmType_m750379757 ();
+extern "C" void CipherSuite_get_HashAlgorithmName_m3238654725 ();
+extern "C" void CipherSuite_get_HashAlgorithmType_m3902365773 ();
+extern "C" void CipherSuite_get_HashSize_m3748598203 ();
+extern "C" void CipherSuite_get_ExchangeAlgorithmType_m3219223789 ();
+extern "C" void CipherSuite_get_CipherMode_m2346658878 ();
+extern "C" void CipherSuite_get_Code_m3902213587 ();
+extern "C" void CipherSuite_get_Name_m3914703358 ();
+extern "C" void CipherSuite_get_IsExportable_m136354150 ();
+extern "C" void CipherSuite_get_KeyMaterialSize_m4222492337 ();
+extern "C" void CipherSuite_get_KeyBlockSize_m2993514247 ();
+extern "C" void CipherSuite_get_ExpandedKeyMaterialSize_m296573450 ();
+extern "C" void CipherSuite_get_EffectiveKeyBits_m3588203390 ();
+extern "C" void CipherSuite_get_IvSize_m2971966910 ();
+extern "C" void CipherSuite_get_Context_m1298687213 ();
+extern "C" void CipherSuite_set_Context_m4127897124 ();
+extern "C" void CipherSuite_Write_m1271196675 ();
+extern "C" void CipherSuite_Write_m827355463 ();
+extern "C" void CipherSuite_InitializeCipher_m229247572 ();
+extern "C" void CipherSuite_EncryptRecord_m3421046381 ();
+extern "C" void CipherSuite_DecryptRecord_m1247194570 ();
+extern "C" void CipherSuite_CreatePremasterSecret_m3728217834 ();
+extern "C" void CipherSuite_PRF_m3379816948 ();
+extern "C" void CipherSuite_Expand_m1800208652 ();
+extern "C" void CipherSuite_createEncryptionCipher_m1926075645 ();
+extern "C" void CipherSuite_createDecryptionCipher_m1118350455 ();
+extern "C" void CipherSuiteCollection__ctor_m2154226461 ();
+extern "C" void CipherSuiteCollection_System_Collections_IList_get_Item_m218755780 ();
+extern "C" void CipherSuiteCollection_System_Collections_IList_set_Item_m750275607 ();
+extern "C" void CipherSuiteCollection_System_Collections_ICollection_get_IsSynchronized_m36679989 ();
+extern "C" void CipherSuiteCollection_System_Collections_ICollection_get_SyncRoot_m2818114049 ();
+extern "C" void CipherSuiteCollection_System_Collections_IEnumerable_GetEnumerator_m1600967134 ();
+extern "C" void CipherSuiteCollection_System_Collections_IList_Contains_m3239163601 ();
+extern "C" void CipherSuiteCollection_System_Collections_IList_IndexOf_m540536407 ();
+extern "C" void CipherSuiteCollection_System_Collections_IList_Insert_m3923805048 ();
+extern "C" void CipherSuiteCollection_System_Collections_IList_Remove_m4022085178 ();
+extern "C" void CipherSuiteCollection_System_Collections_IList_RemoveAt_m143866082 ();
+extern "C" void CipherSuiteCollection_System_Collections_IList_Add_m2644442861 ();
+extern "C" void CipherSuiteCollection_get_Item_m3667070847 ();
+extern "C" void CipherSuiteCollection_get_Item_m280627160 ();
+extern "C" void CipherSuiteCollection_set_Item_m1064755671 ();
+extern "C" void CipherSuiteCollection_get_Item_m2606225922 ();
+extern "C" void CipherSuiteCollection_get_Count_m1700100413 ();
+extern "C" void CipherSuiteCollection_get_IsFixedSize_m2849280449 ();
+extern "C" void CipherSuiteCollection_get_IsReadOnly_m2233332798 ();
+extern "C" void CipherSuiteCollection_CopyTo_m869893074 ();
+extern "C" void CipherSuiteCollection_Clear_m533808424 ();
+extern "C" void CipherSuiteCollection_IndexOf_m204129362 ();
+extern "C" void CipherSuiteCollection_IndexOf_m4089218779 ();
+extern "C" void CipherSuiteCollection_Add_m3114709461 ();
+extern "C" void CipherSuiteCollection_add_m2465397903 ();
+extern "C" void CipherSuiteCollection_add_m513562767 ();
+extern "C" void CipherSuiteCollection_cultureAwareCompare_m1825407448 ();
+extern "C" void CipherSuiteFactory_GetSupportedCiphers_m338097823 ();
+extern "C" void CipherSuiteFactory_GetTls1SupportedCiphers_m2952983549 ();
+extern "C" void CipherSuiteFactory_GetSsl3SupportedCiphers_m2476597368 ();
+extern "C" void ClientContext__ctor_m1008306089 ();
+extern "C" void ClientContext_get_SslStream_m360110741 ();
+extern "C" void ClientContext_get_ClientHelloProtocol_m1765198120 ();
+extern "C" void ClientContext_set_ClientHelloProtocol_m2246603449 ();
+extern "C" void ClientContext_Clear_m1290084423 ();
+extern "C" void ClientRecordProtocol__ctor_m648586559 ();
+extern "C" void ClientRecordProtocol_GetMessage_m2649269799 ();
+extern "C" void ClientRecordProtocol_ProcessHandshakeMessage_m3590516592 ();
+extern "C" void ClientRecordProtocol_createClientHandshakeMessage_m811708715 ();
+extern "C" void ClientRecordProtocol_createServerHandshakeMessage_m3939790866 ();
+extern "C" void ClientSessionCache__cctor_m1134810266 ();
+extern "C" void ClientSessionCache_Add_m987180603 ();
+extern "C" void ClientSessionCache_FromHost_m1396036471 ();
+extern "C" void ClientSessionCache_FromContext_m3886959254 ();
+extern "C" void ClientSessionCache_SetContextInCache_m907788136 ();
+extern "C" void ClientSessionCache_SetContextFromCache_m3917528339 ();
+extern "C" void ClientSessionInfo__ctor_m759726440 ();
+extern "C" void ClientSessionInfo__cctor_m1353980836 ();
+extern "C" void ClientSessionInfo_Finalize_m1198775539 ();
+extern "C" void ClientSessionInfo_get_HostName_m759522668 ();
+extern "C" void ClientSessionInfo_get_Id_m3046630969 ();
+extern "C" void ClientSessionInfo_get_Valid_m3589823308 ();
+extern "C" void ClientSessionInfo_GetContext_m301320023 ();
+extern "C" void ClientSessionInfo_SetContext_m2649357891 ();
+extern "C" void ClientSessionInfo_KeepAlive_m3125408381 ();
+extern "C" void ClientSessionInfo_Dispose_m3315842124 ();
+extern "C" void ClientSessionInfo_Dispose_m2571428025 ();
+extern "C" void ClientSessionInfo_CheckDisposed_m1394638186 ();
+extern "C" void Context__ctor_m3963941463 ();
+extern "C" void Context_get_AbbreviatedHandshake_m2972837690 ();
+extern "C" void Context_set_AbbreviatedHandshake_m4080371327 ();
+extern "C" void Context_get_ProtocolNegotiated_m624488778 ();
+extern "C" void Context_set_ProtocolNegotiated_m1177527245 ();
+extern "C" void Context_get_SecurityProtocol_m1600902905 ();
+extern "C" void Context_set_SecurityProtocol_m4153223312 ();
+extern "C" void Context_get_SecurityProtocolFlags_m3295551796 ();
+extern "C" void Context_get_Protocol_m1537476188 ();
+extern "C" void Context_get_SessionId_m1296338025 ();
+extern "C" void Context_set_SessionId_m1229908268 ();
+extern "C" void Context_get_CompressionMethod_m1938328556 ();
+extern "C" void Context_set_CompressionMethod_m2848483559 ();
+extern "C" void Context_get_ServerSettings_m225713600 ();
+extern "C" void Context_get_ClientSettings_m1185615112 ();
+extern "C" void Context_get_LastHandshakeMsg_m873777031 ();
+extern "C" void Context_set_LastHandshakeMsg_m3162558586 ();
+extern "C" void Context_get_HandshakeState_m3443153737 ();
+extern "C" void Context_set_HandshakeState_m1586089840 ();
+extern "C" void Context_get_ReceivedConnectionEnd_m3369356276 ();
+extern "C" void Context_set_ReceivedConnectionEnd_m213831275 ();
+extern "C" void Context_get_SentConnectionEnd_m3114190867 ();
+extern "C" void Context_set_SentConnectionEnd_m2641458842 ();
+extern "C" void Context_get_SupportedCiphers_m2172827298 ();
+extern "C" void Context_set_SupportedCiphers_m3994965527 ();
+extern "C" void Context_get_HandshakeMessages_m2765912589 ();
+extern "C" void Context_get_WriteSequenceNumber_m243492531 ();
+extern "C" void Context_set_WriteSequenceNumber_m3356252710 ();
+extern "C" void Context_get_ReadSequenceNumber_m2586681610 ();
+extern "C" void Context_set_ReadSequenceNumber_m3303454459 ();
+extern "C" void Context_get_ClientRandom_m697914474 ();
+extern "C" void Context_set_ClientRandom_m631392719 ();
+extern "C" void Context_get_ServerRandom_m3526559022 ();
+extern "C" void Context_set_ServerRandom_m173601139 ();
+extern "C" void Context_get_RandomCS_m3946020109 ();
+extern "C" void Context_set_RandomCS_m2334825038 ();
+extern "C" void Context_get_RandomSC_m1687420621 ();
+extern "C" void Context_set_RandomSC_m2057392782 ();
+extern "C" void Context_get_MasterSecret_m231851308 ();
+extern "C" void Context_set_MasterSecret_m1422386411 ();
+extern "C" void Context_get_ClientWriteKey_m2235605337 ();
+extern "C" void Context_set_ClientWriteKey_m1137238126 ();
+extern "C" void Context_get_ServerWriteKey_m1780148437 ();
+extern "C" void Context_set_ServerWriteKey_m2317745418 ();
+extern "C" void Context_get_ClientWriteIV_m2171757117 ();
+extern "C" void Context_set_ClientWriteIV_m70615452 ();
+extern "C" void Context_get_ServerWriteIV_m2960700649 ();
+extern "C" void Context_set_ServerWriteIV_m3391477120 ();
+extern "C" void Context_get_RecordProtocol_m1527823481 ();
+extern "C" void Context_set_RecordProtocol_m1968834768 ();
+extern "C" void Context_GetUnixTime_m3777795180 ();
+extern "C" void Context_GetSecureRandomBytes_m1065353673 ();
+extern "C" void Context_Clear_m4000337070 ();
+extern "C" void Context_ClearKeyInfo_m205678623 ();
+extern "C" void Context_DecodeProtocolCode_m4051353560 ();
+extern "C" void Context_ChangeProtocol_m46663628 ();
+extern "C" void Context_get_Current_m2717045324 ();
+extern "C" void Context_get_Negotiating_m3946476110 ();
+extern "C" void Context_get_Read_m171585211 ();
+extern "C" void Context_get_Write_m2299361626 ();
+extern "C" void Context_StartSwitchingSecurityParameters_m373522596 ();
+extern "C" void Context_EndSwitchingSecurityParameters_m1613076777 ();
+extern "C" void TlsClientCertificate__ctor_m987604448 ();
+extern "C" void TlsClientCertificate_get_ClientCertificate_m3062440489 ();
+extern "C" void TlsClientCertificate_Update_m3781462820 ();
+extern "C" void TlsClientCertificate_GetClientCertificate_m2808467979 ();
+extern "C" void TlsClientCertificate_SendCertificates_m1096074091 ();
+extern "C" void TlsClientCertificate_ProcessAsSsl3_m3634449507 ();
+extern "C" void TlsClientCertificate_ProcessAsTls1_m1772516248 ();
+extern "C" void TlsClientCertificate_FindParentCertificate_m10738514 ();
+extern "C" void TlsClientCertificateVerify__ctor_m110646389 ();
+extern "C" void TlsClientCertificateVerify_Update_m1622071203 ();
+extern "C" void TlsClientCertificateVerify_ProcessAsSsl3_m3377063356 ();
+extern "C" void TlsClientCertificateVerify_ProcessAsTls1_m1960818833 ();
+extern "C" void TlsClientCertificateVerify_getClientCertRSA_m3799135236 ();
+extern "C" void TlsClientCertificateVerify_getUnsignedBigInteger_m3357519896 ();
+extern "C" void TlsClientFinished__ctor_m3019203717 ();
+extern "C" void TlsClientFinished__cctor_m2632026509 ();
+extern "C" void TlsClientFinished_Update_m840013355 ();
+extern "C" void TlsClientFinished_ProcessAsSsl3_m1576972610 ();
+extern "C" void TlsClientFinished_ProcessAsTls1_m3490501889 ();
+extern "C" void TlsClientHello__ctor_m1699671541 ();
+extern "C" void TlsClientHello_Update_m1723542631 ();
+extern "C" void TlsClientHello_ProcessAsSsl3_m3243018502 ();
+extern "C" void TlsClientHello_ProcessAsTls1_m881347961 ();
+extern "C" void TlsClientKeyExchange__ctor_m2741078239 ();
+extern "C" void TlsClientKeyExchange_ProcessAsSsl3_m662933084 ();
+extern "C" void TlsClientKeyExchange_ProcessAsTls1_m1707307575 ();
+extern "C" void TlsClientKeyExchange_ProcessCommon_m1203833053 ();
+extern "C" void TlsServerCertificate__ctor_m3697944709 ();
+extern "C" void TlsServerCertificate_Update_m3673209976 ();
+extern "C" void TlsServerCertificate_ProcessAsSsl3_m277089231 ();
+extern "C" void TlsServerCertificate_ProcessAsTls1_m3083203628 ();
+extern "C" void TlsServerCertificate_checkCertificateUsage_m2392234217 ();
+extern "C" void TlsServerCertificate_validateCertificates_m1988583701 ();
+extern "C" void TlsServerCertificate_checkServerIdentity_m3836435780 ();
+extern "C" void TlsServerCertificate_checkDomainName_m547589480 ();
+extern "C" void TlsServerCertificate_Match_m239075186 ();
+extern "C" void TlsServerCertificateRequest__ctor_m1684270714 ();
+extern "C" void TlsServerCertificateRequest_Update_m2674822753 ();
+extern "C" void TlsServerCertificateRequest_ProcessAsSsl3_m3017921864 ();
+extern "C" void TlsServerCertificateRequest_ProcessAsTls1_m3580757431 ();
+extern "C" void TlsServerFinished__ctor_m3517940960 ();
+extern "C" void TlsServerFinished__cctor_m3702151001 ();
+extern "C" void TlsServerFinished_Update_m3332245911 ();
+extern "C" void TlsServerFinished_ProcessAsSsl3_m2226689406 ();
+extern "C" void TlsServerFinished_ProcessAsTls1_m734183757 ();
+extern "C" void TlsServerHello__ctor_m3032108168 ();
+extern "C" void TlsServerHello_Update_m1740270635 ();
+extern "C" void TlsServerHello_ProcessAsSsl3_m3986132482 ();
+extern "C" void TlsServerHello_ProcessAsTls1_m1997577085 ();
+extern "C" void TlsServerHello_processProtocol_m1241336522 ();
+extern "C" void TlsServerHelloDone__ctor_m2125611008 ();
+extern "C" void TlsServerHelloDone_ProcessAsSsl3_m2352567662 ();
+extern "C" void TlsServerHelloDone_ProcessAsTls1_m2785450409 ();
+extern "C" void TlsServerKeyExchange__ctor_m247733406 ();
+extern "C" void TlsServerKeyExchange_Update_m467765633 ();
+extern "C" void TlsServerKeyExchange_ProcessAsSsl3_m462106368 ();
+extern "C" void TlsServerKeyExchange_ProcessAsTls1_m1879578643 ();
+extern "C" void TlsServerKeyExchange_verifySignature_m3641534563 ();
+extern "C" void HandshakeMessage__ctor_m3783158590 ();
+extern "C" void HandshakeMessage__ctor_m2727745933 ();
+extern "C" void HandshakeMessage__ctor_m1431757899 ();
+extern "C" void HandshakeMessage_get_Context_m3356295711 ();
+extern "C" void HandshakeMessage_get_HandshakeType_m2104271474 ();
+extern "C" void HandshakeMessage_get_ContentType_m760670911 ();
+extern "C" void HandshakeMessage_Process_m2688076118 ();
+extern "C" void HandshakeMessage_Update_m1733566706 ();
+extern "C" void HandshakeMessage_EncodeMessage_m2725158930 ();
+extern "C" void HandshakeMessage_Compare_m2025941142 ();
+extern "C" void HttpsClientStream__ctor_m3407922777 ();
+extern "C" void HttpsClientStream_get_TrustFailure_m1980919191 ();
+extern "C" void HttpsClientStream_RaiseServerCertificateValidation_m3356770426 ();
+extern "C" void HttpsClientStream_U3CHttpsClientStreamU3Em__0_m3176353714 ();
+extern "C" void HttpsClientStream_U3CHttpsClientStreamU3Em__1_m4293802471 ();
+extern "C" void PrivateKeySelectionCallback__ctor_m2259908823 ();
+extern "C" void PrivateKeySelectionCallback_Invoke_m1058550892 ();
+extern "C" void PrivateKeySelectionCallback_BeginInvoke_m1904952334 ();
+extern "C" void PrivateKeySelectionCallback_EndInvoke_m1718473578 ();
+extern "C" void RecordProtocol__ctor_m168945279 ();
+extern "C" void RecordProtocol__cctor_m1255542758 ();
+extern "C" void RecordProtocol_get_Context_m2688493529 ();
+extern "C" void RecordProtocol_SendRecord_m2977889250 ();
+extern "C" void RecordProtocol_ProcessChangeCipherSpec_m3233959862 ();
+extern "C" void RecordProtocol_GetMessage_m594970728 ();
+extern "C" void RecordProtocol_BeginReceiveRecord_m2023581433 ();
+extern "C" void RecordProtocol_InternalReceiveRecordCallback_m2228921492 ();
+extern "C" void RecordProtocol_EndReceiveRecord_m4045980155 ();
+extern "C" void RecordProtocol_ReceiveRecord_m3672584816 ();
+extern "C" void RecordProtocol_ReadRecordBuffer_m1307297230 ();
+extern "C" void RecordProtocol_ReadClientHelloV2_m103475177 ();
+extern "C" void RecordProtocol_ReadStandardRecordBuffer_m3546484478 ();
+extern "C" void RecordProtocol_ProcessAlert_m2650247744 ();
+extern "C" void RecordProtocol_SendAlert_m2622753765 ();
+extern "C" void RecordProtocol_SendAlert_m2529562669 ();
+extern "C" void RecordProtocol_SendAlert_m2816808523 ();
+extern "C" void RecordProtocol_SendChangeCipherSpec_m3542001341 ();
+extern "C" void RecordProtocol_BeginSendRecord_m3180957815 ();
+extern "C" void RecordProtocol_InternalSendRecordCallback_m3984764857 ();
+extern "C" void RecordProtocol_BeginSendRecord_m166940611 ();
+extern "C" void RecordProtocol_EndSendRecord_m3304963666 ();
+extern "C" void RecordProtocol_SendRecord_m132002114 ();
+extern "C" void RecordProtocol_EncodeRecord_m1215442978 ();
+extern "C" void RecordProtocol_EncodeRecord_m3884270352 ();
+extern "C" void RecordProtocol_encryptRecordFragment_m1241873183 ();
+extern "C" void RecordProtocol_decryptRecordFragment_m2510859489 ();
+extern "C" void RecordProtocol_Compare_m216902730 ();
+extern "C" void RecordProtocol_ProcessCipherSpecV2Buffer_m1895848015 ();
+extern "C" void RecordProtocol_MapV2CipherCode_m4064211604 ();
+extern "C" void ReceiveRecordAsyncResult__ctor_m109339899 ();
+extern "C" void ReceiveRecordAsyncResult_get_Record_m1336421357 ();
+extern "C" void ReceiveRecordAsyncResult_get_ResultingBuffer_m2153361373 ();
+extern "C" void ReceiveRecordAsyncResult_get_InitialBuffer_m1245345098 ();
+extern "C" void ReceiveRecordAsyncResult_get_AsyncState_m2086535212 ();
+extern "C" void ReceiveRecordAsyncResult_get_AsyncException_m1835236292 ();
+extern "C" void ReceiveRecordAsyncResult_get_CompletedWithError_m2670396551 ();
+extern "C" void ReceiveRecordAsyncResult_get_AsyncWaitHandle_m1602093076 ();
+extern "C" void ReceiveRecordAsyncResult_get_IsCompleted_m2327274447 ();
+extern "C" void ReceiveRecordAsyncResult_SetComplete_m2441107665 ();
+extern "C" void ReceiveRecordAsyncResult_SetComplete_m494147202 ();
+extern "C" void ReceiveRecordAsyncResult_SetComplete_m4055415513 ();
+extern "C" void SendRecordAsyncResult__ctor_m2999905045 ();
+extern "C" void SendRecordAsyncResult_get_Message_m2340978616 ();
+extern "C" void SendRecordAsyncResult_get_AsyncState_m2299453419 ();
+extern "C" void SendRecordAsyncResult_get_AsyncException_m2088364821 ();
+extern "C" void SendRecordAsyncResult_get_CompletedWithError_m349920476 ();
+extern "C" void SendRecordAsyncResult_get_AsyncWaitHandle_m3532375825 ();
+extern "C" void SendRecordAsyncResult_get_IsCompleted_m2666127692 ();
+extern "C" void SendRecordAsyncResult_SetComplete_m425796521 ();
+extern "C" void SendRecordAsyncResult_SetComplete_m3006273145 ();
+extern "C" void RSASslSignatureDeformatter__ctor_m2325995515 ();
+extern "C" void RSASslSignatureDeformatter_VerifySignature_m3138484348 ();
+extern "C" void RSASslSignatureDeformatter_SetHashAlgorithm_m4048969080 ();
+extern "C" void RSASslSignatureDeformatter_SetKey_m1150106904 ();
+extern "C" void RSASslSignatureFormatter__ctor_m2530528184 ();
+extern "C" void RSASslSignatureFormatter_CreateSignature_m4186395359 ();
+extern "C" void RSASslSignatureFormatter_SetHashAlgorithm_m1976793413 ();
+extern "C" void RSASslSignatureFormatter_SetKey_m53887771 ();
+extern "C" void SecurityParameters__ctor_m3136793890 ();
+extern "C" void SecurityParameters_get_Cipher_m2392911632 ();
+extern "C" void SecurityParameters_set_Cipher_m3888132335 ();
+extern "C" void SecurityParameters_get_ClientWriteMAC_m2756307972 ();
+extern "C" void SecurityParameters_set_ClientWriteMAC_m1970377285 ();
+extern "C" void SecurityParameters_get_ServerWriteMAC_m244028400 ();
+extern "C" void SecurityParameters_set_ServerWriteMAC_m3769080193 ();
+extern "C" void SecurityParameters_Clear_m3409219757 ();
+extern "C" void SslCipherSuite__ctor_m1382988490 ();
+extern "C" void SslCipherSuite_ComputeServerRecordMAC_m1876572367 ();
+extern "C" void SslCipherSuite_ComputeClientRecordMAC_m232780723 ();
+extern "C" void SslCipherSuite_ComputeMasterSecret_m491038647 ();
+extern "C" void SslCipherSuite_ComputeKeys_m574473636 ();
+extern "C" void SslCipherSuite_prf_m2084589217 ();
+extern "C" void SslClientStream__ctor_m3295335959 ();
+extern "C" void SslClientStream__ctor_m1193810714 ();
+extern "C" void SslClientStream__ctor_m3350475994 ();
+extern "C" void SslClientStream__ctor_m1435497855 ();
+extern "C" void SslClientStream__ctor_m2178305131 ();
+extern "C" void SslClientStream_add_ServerCertValidation_m684653638 ();
+extern "C" void SslClientStream_remove_ServerCertValidation_m2446179261 ();
+extern "C" void SslClientStream_add_ClientCertSelection_m2644836210 ();
+extern "C" void SslClientStream_remove_ClientCertSelection_m2497978917 ();
+extern "C" void SslClientStream_add_PrivateKeySelection_m481383932 ();
+extern "C" void SslClientStream_remove_PrivateKeySelection_m427666577 ();
+extern "C" void SslClientStream_add_ServerCertValidation2_m2603998068 ();
+extern "C" void SslClientStream_remove_ServerCertValidation2_m3857463517 ();
+extern "C" void SslClientStream_get_InputBuffer_m295521966 ();
+extern "C" void SslClientStream_get_ClientCertificates_m444639806 ();
+extern "C" void SslClientStream_get_SelectedClientCertificate_m1580018944 ();
+extern "C" void SslClientStream_get_ServerCertValidationDelegate_m3909657681 ();
+extern "C" void SslClientStream_set_ServerCertValidationDelegate_m3125858424 ();
+extern "C" void SslClientStream_get_ClientCertSelectionDelegate_m2316959461 ();
+extern "C" void SslClientStream_set_ClientCertSelectionDelegate_m3476473798 ();
+extern "C" void SslClientStream_get_PrivateKeyCertSelectionDelegate_m3715949545 ();
+extern "C" void SslClientStream_set_PrivateKeyCertSelectionDelegate_m159581650 ();
+extern "C" void SslClientStream_Finalize_m3464869995 ();
+extern "C" void SslClientStream_Dispose_m3148875377 ();
+extern "C" void SslClientStream_OnBeginNegotiateHandshake_m4281860610 ();
+extern "C" void SslClientStream_SafeReceiveRecord_m210668541 ();
+extern "C" void SslClientStream_OnNegotiateHandshakeCallback_m1332934317 ();
+extern "C" void SslClientStream_OnLocalCertificateSelection_m3628249765 ();
+extern "C" void SslClientStream_get_HaveRemoteValidation2Callback_m3555576758 ();
+extern "C" void SslClientStream_OnRemoteCertificateValidation2_m3416857045 ();
+extern "C" void SslClientStream_OnRemoteCertificateValidation_m3974135419 ();
+extern "C" void SslClientStream_RaiseServerCertificateValidation_m1782631027 ();
+extern "C" void SslClientStream_RaiseServerCertificateValidation2_m3736176381 ();
+extern "C" void SslClientStream_RaiseClientCertificateSelection_m3933788312 ();
+extern "C" void SslClientStream_OnLocalPrivateKeySelection_m3649986106 ();
+extern "C" void SslClientStream_RaisePrivateKeySelection_m2326189090 ();
+extern "C" void SslHandshakeHash__ctor_m1269339424 ();
+extern "C" void SslHandshakeHash_Initialize_m2786849785 ();
+extern "C" void SslHandshakeHash_HashFinal_m1925138451 ();
+extern "C" void SslHandshakeHash_HashCore_m3914471343 ();
+extern "C" void SslHandshakeHash_CreateSignature_m3001618400 ();
+extern "C" void SslHandshakeHash_initializePad_m4132246594 ();
+extern "C" void SslStreamBase__ctor_m543947417 ();
+extern "C" void SslStreamBase__cctor_m4047446554 ();
+extern "C" void SslStreamBase_AsyncHandshakeCallback_m1101580486 ();
+extern "C" void SslStreamBase_get_MightNeedHandshake_m3432170694 ();
+extern "C" void SslStreamBase_NegotiateHandshake_m1758369850 ();
+extern "C" void SslStreamBase_RaiseLocalCertificateSelection_m3422705716 ();
+extern "C" void SslStreamBase_RaiseRemoteCertificateValidation_m902031508 ();
+extern "C" void SslStreamBase_RaiseRemoteCertificateValidation2_m1013444422 ();
+extern "C" void SslStreamBase_RaiseLocalPrivateKeySelection_m1885975771 ();
+extern "C" void SslStreamBase_get_CheckCertRevocationStatus_m2467957380 ();
+extern "C" void SslStreamBase_set_CheckCertRevocationStatus_m703827149 ();
+extern "C" void SslStreamBase_get_CipherAlgorithm_m692718075 ();
+extern "C" void SslStreamBase_get_CipherStrength_m3744053336 ();
+extern "C" void SslStreamBase_get_HashAlgorithm_m2591448891 ();
+extern "C" void SslStreamBase_get_HashStrength_m480059173 ();
+extern "C" void SslStreamBase_get_KeyExchangeStrength_m1717128931 ();
+extern "C" void SslStreamBase_get_KeyExchangeAlgorithm_m3712013038 ();
+extern "C" void SslStreamBase_get_SecurityProtocol_m2458441395 ();
+extern "C" void SslStreamBase_get_ServerCertificate_m702547597 ();
+extern "C" void SslStreamBase_get_ServerCertificates_m1401009752 ();
+extern "C" void SslStreamBase_BeginNegotiateHandshake_m2029257721 ();
+extern "C" void SslStreamBase_EndNegotiateHandshake_m1732321201 ();
+extern "C" void SslStreamBase_BeginRead_m869235395 ();
+extern "C" void SslStreamBase_InternalBeginRead_m707911413 ();
+extern "C" void SslStreamBase_InternalReadCallback_m2524917586 ();
+extern "C" void SslStreamBase_InternalBeginWrite_m3760772368 ();
+extern "C" void SslStreamBase_InternalWriteCallback_m2552665647 ();
+extern "C" void SslStreamBase_BeginWrite_m270524114 ();
+extern "C" void SslStreamBase_EndRead_m1072850679 ();
+extern "C" void SslStreamBase_EndWrite_m1091701856 ();
+extern "C" void SslStreamBase_Close_m2762736871 ();
+extern "C" void SslStreamBase_Flush_m2762644405 ();
+extern "C" void SslStreamBase_Read_m1663229390 ();
+extern "C" void SslStreamBase_Read_m1036897444 ();
+extern "C" void SslStreamBase_Seek_m3605313093 ();
+extern "C" void SslStreamBase_SetLength_m3282486041 ();
+extern "C" void SslStreamBase_Write_m3392707719 ();
+extern "C" void SslStreamBase_Write_m1135856379 ();
+extern "C" void SslStreamBase_get_CanRead_m3061866682 ();
+extern "C" void SslStreamBase_get_CanSeek_m1596790394 ();
+extern "C" void SslStreamBase_get_CanWrite_m2069502593 ();
+extern "C" void SslStreamBase_get_Length_m763159069 ();
+extern "C" void SslStreamBase_get_Position_m2525437172 ();
+extern "C" void SslStreamBase_set_Position_m598220223 ();
+extern "C" void SslStreamBase_Finalize_m2530628835 ();
+extern "C" void SslStreamBase_Dispose_m747909841 ();
+extern "C" void SslStreamBase_resetBuffer_m3028042362 ();
+extern "C" void SslStreamBase_checkDisposed_m2550190176 ();
+extern "C" void InternalAsyncResult__ctor_m2764854695 ();
+extern "C" void InternalAsyncResult_get_ProceedAfterHandshake_m552962842 ();
+extern "C" void InternalAsyncResult_get_FromWrite_m2893408424 ();
+extern "C" void InternalAsyncResult_get_Buffer_m163794679 ();
+extern "C" void InternalAsyncResult_get_Offset_m3458447452 ();
+extern "C" void InternalAsyncResult_get_Count_m1291942796 ();
+extern "C" void InternalAsyncResult_get_BytesRead_m4243892348 ();
+extern "C" void InternalAsyncResult_get_AsyncState_m42006015 ();
+extern "C" void InternalAsyncResult_get_AsyncException_m3936660437 ();
+extern "C" void InternalAsyncResult_get_CompletedWithError_m3993955322 ();
+extern "C" void InternalAsyncResult_get_AsyncWaitHandle_m2297269869 ();
+extern "C" void InternalAsyncResult_get_IsCompleted_m1463732458 ();
+extern "C" void InternalAsyncResult_SetComplete_m4011593916 ();
+extern "C" void InternalAsyncResult_SetComplete_m2187159697 ();
+extern "C" void InternalAsyncResult_SetComplete_m200761170 ();
+extern "C" void InternalAsyncResult_SetComplete_m35987153 ();
+extern "C" void TlsCipherSuite__ctor_m2983563913 ();
+extern "C" void TlsCipherSuite_ComputeServerRecordMAC_m661450756 ();
+extern "C" void TlsCipherSuite_ComputeClientRecordMAC_m3290639544 ();
+extern "C" void TlsCipherSuite_ComputeMasterSecret_m3863800064 ();
+extern "C" void TlsCipherSuite_ComputeKeys_m1444202749 ();
+extern "C" void TlsClientSettings__ctor_m3065987087 ();
+extern "C" void TlsClientSettings_get_TargetHost_m2817634620 ();
+extern "C" void TlsClientSettings_set_TargetHost_m3421266913 ();
+extern "C" void TlsClientSettings_get_Certificates_m2509165647 ();
+extern "C" void TlsClientSettings_set_Certificates_m1110280480 ();
+extern "C" void TlsClientSettings_get_ClientCertificate_m89435195 ();
+extern "C" void TlsClientSettings_set_ClientCertificate_m442292512 ();
+extern "C" void TlsClientSettings_UpdateCertificateRSA_m1828531911 ();
+extern "C" void TlsException__ctor_m3885720020 ();
+extern "C" void TlsException__ctor_m1249020603 ();
+extern "C" void TlsException__ctor_m2205512412 ();
+extern "C" void TlsException__ctor_m3747188020 ();
+extern "C" void TlsException__ctor_m2436420036 ();
+extern "C" void TlsException__ctor_m1988757560 ();
+extern "C" void TlsException_get_Alert_m4022765752 ();
+extern "C" void TlsServerSettings__ctor_m1125867683 ();
+extern "C" void TlsServerSettings_get_ServerKeyExchange_m1147981947 ();
+extern "C" void TlsServerSettings_set_ServerKeyExchange_m4199779410 ();
+extern "C" void TlsServerSettings_get_Certificates_m3301336199 ();
+extern "C" void TlsServerSettings_set_Certificates_m67827830 ();
+extern "C" void TlsServerSettings_get_CertificateRSA_m1899388839 ();
+extern "C" void TlsServerSettings_get_RsaParameters_m1327440044 ();
+extern "C" void TlsServerSettings_set_RsaParameters_m3165273449 ();
+extern "C" void TlsServerSettings_set_SignedParams_m1826385315 ();
+extern "C" void TlsServerSettings_get_CertificateRequest_m1204669838 ();
+extern "C" void TlsServerSettings_set_CertificateRequest_m3419519893 ();
+extern "C" void TlsServerSettings_set_CertificateTypes_m264196087 ();
+extern "C" void TlsServerSettings_set_DistinguisedNames_m2290049644 ();
+extern "C" void TlsServerSettings_UpdateCertificateRSA_m2025051563 ();
+extern "C" void TlsStream__ctor_m4117943603 ();
+extern "C" void TlsStream__ctor_m2982031560 ();
+extern "C" void TlsStream_get_EOF_m1728604576 ();
+extern "C" void TlsStream_get_CanWrite_m79048455 ();
+extern "C" void TlsStream_get_CanRead_m1860811404 ();
+extern "C" void TlsStream_get_CanSeek_m3608197976 ();
+extern "C" void TlsStream_get_Position_m3551173234 ();
+extern "C" void TlsStream_set_Position_m378064217 ();
+extern "C" void TlsStream_get_Length_m1562309511 ();
+extern "C" void TlsStream_ReadSmallValue_m1760325248 ();
+extern "C" void TlsStream_ReadByte_m1935235961 ();
+extern "C" void TlsStream_ReadInt16_m1855118433 ();
+extern "C" void TlsStream_ReadInt24_m1268450166 ();
+extern "C" void TlsStream_ReadBytes_m3301522097 ();
+extern "C" void TlsStream_Write_m2271546135 ();
+extern "C" void TlsStream_Write_m2055734301 ();
+extern "C" void TlsStream_WriteInt24_m1660453494 ();
+extern "C" void TlsStream_Write_m4025102703 ();
+extern "C" void TlsStream_Write_m3425460533 ();
+extern "C" void TlsStream_Reset_m1504601050 ();
+extern "C" void TlsStream_ToArray_m3731779317 ();
+extern "C" void TlsStream_Flush_m2603881359 ();
+extern "C" void TlsStream_SetLength_m1460039587 ();
+extern "C" void TlsStream_Seek_m3898619363 ();
+extern "C" void TlsStream_Read_m2550027598 ();
+extern "C" void TlsStream_Write_m418642281 ();
+extern "C" void ValidationResult__ctor_m2761103915 ();
+extern "C" void ValidationResult_get_Trusted_m1316755606 ();
+extern "C" void ValidationResult_get_ErrorCode_m599531882 ();
+extern "C" void AuthorityKeyIdentifierExtension__ctor_m3445584677 ();
+extern "C" void AuthorityKeyIdentifierExtension_Decode_m1941074339 ();
+extern "C" void AuthorityKeyIdentifierExtension_get_Identifier_m3123570309 ();
+extern "C" void AuthorityKeyIdentifierExtension_ToString_m1294877924 ();
+extern "C" void BasicConstraintsExtension__ctor_m3832084132 ();
+extern "C" void BasicConstraintsExtension_Decode_m893312834 ();
+extern "C" void BasicConstraintsExtension_Encode_m3738782306 ();
+extern "C" void BasicConstraintsExtension_get_CertificateAuthority_m2523289727 ();
+extern "C" void BasicConstraintsExtension_ToString_m1598306805 ();
+extern "C" void ExtendedKeyUsageExtension__ctor_m3310261285 ();
+extern "C" void ExtendedKeyUsageExtension_Decode_m901297139 ();
+extern "C" void ExtendedKeyUsageExtension_Encode_m3429751649 ();
+extern "C" void ExtendedKeyUsageExtension_get_KeyPurpose_m1625001387 ();
+extern "C" void ExtendedKeyUsageExtension_ToString_m1081992020 ();
+extern "C" void GeneralNames__ctor_m3021378417 ();
+extern "C" void GeneralNames_get_DNSNames_m2721668874 ();
+extern "C" void GeneralNames_get_IPAddresses_m1712556836 ();
+extern "C" void GeneralNames_ToString_m800435094 ();
+extern "C" void KeyUsageExtension__ctor_m2471620836 ();
+extern "C" void KeyUsageExtension_Decode_m4115739726 ();
+extern "C" void KeyUsageExtension_Encode_m1269721630 ();
+extern "C" void KeyUsageExtension_Support_m2720178361 ();
+extern "C" void KeyUsageExtension_ToString_m1213032139 ();
+extern "C" void NetscapeCertTypeExtension__ctor_m3885754615 ();
+extern "C" void NetscapeCertTypeExtension_Decode_m2210025005 ();
+extern "C" void NetscapeCertTypeExtension_Support_m3954199663 ();
+extern "C" void NetscapeCertTypeExtension_ToString_m834335182 ();
+extern "C" void SubjectAltNameExtension__ctor_m2621620126 ();
+extern "C" void SubjectAltNameExtension_Decode_m3676245240 ();
+extern "C" void SubjectAltNameExtension_get_DNSNames_m1798931443 ();
+extern "C" void SubjectAltNameExtension_get_IPAddresses_m3207151211 ();
+extern "C" void SubjectAltNameExtension_ToString_m1300810903 ();
+extern "C" void PKCS12__ctor_m766227211 ();
+extern "C" void PKCS12__ctor_m1564527510 ();
+extern "C" void PKCS12__ctor_m997996062 ();
+extern "C" void PKCS12__cctor_m3312759338 ();
+extern "C" void PKCS12_Decode_m2543116952 ();
+extern "C" void PKCS12_Finalize_m3579787021 ();
+extern "C" void PKCS12_set_Password_m64359107 ();
+extern "C" void PKCS12_get_IterationCount_m3648861112 ();
+extern "C" void PKCS12_set_IterationCount_m2468663791 ();
+extern "C" void PKCS12_get_Keys_m1312614820 ();
+extern "C" void PKCS12_get_Certificates_m1274732891 ();
+extern "C" void PKCS12_get_RNG_m3963529040 ();
+extern "C" void PKCS12_Compare_m2529107822 ();
+extern "C" void PKCS12_GetSymmetricAlgorithm_m3196291685 ();
+extern "C" void PKCS12_Decrypt_m2707332345 ();
+extern "C" void PKCS12_Decrypt_m1557069392 ();
+extern "C" void PKCS12_Encrypt_m2154408631 ();
+extern "C" void PKCS12_GetExistingParameters_m3532830249 ();
+extern "C" void PKCS12_AddPrivateKey_m4216166133 ();
+extern "C" void PKCS12_ReadSafeBag_m1100201494 ();
+extern "C" void PKCS12_CertificateSafeBag_m3272197807 ();
+extern "C" void PKCS12_MAC_m3228833816 ();
+extern "C" void PKCS12_GetBytes_m2884672032 ();
+extern "C" void PKCS12_EncryptedContentInfo_m938119256 ();
+extern "C" void PKCS12_AddCertificate_m3637520737 ();
+extern "C" void PKCS12_AddCertificate_m2800455360 ();
+extern "C" void PKCS12_RemoveCertificate_m228884064 ();
+extern "C" void PKCS12_RemoveCertificate_m1352841763 ();
+extern "C" void PKCS12_Clone_m1135152221 ();
+extern "C" void PKCS12_get_MaximumPasswordLength_m1673883007 ();
+extern "C" void DeriveBytes__ctor_m649232120 ();
+extern "C" void DeriveBytes__cctor_m3390880627 ();
+extern "C" void DeriveBytes_set_HashName_m2530261318 ();
+extern "C" void DeriveBytes_set_IterationCount_m1653995136 ();
+extern "C" void DeriveBytes_set_Password_m1444282377 ();
+extern "C" void DeriveBytes_set_Salt_m973628730 ();
+extern "C" void DeriveBytes_Adjust_m3395788526 ();
+extern "C" void DeriveBytes_Derive_m1435464935 ();
+extern "C" void DeriveBytes_DeriveKey_m3654953847 ();
+extern "C" void DeriveBytes_DeriveIV_m3343375195 ();
+extern "C" void DeriveBytes_DeriveMAC_m436209295 ();
+extern "C" void SafeBag__ctor_m2828572544 ();
+extern "C" void SafeBag_get_BagOID_m2574947216 ();
+extern "C" void SafeBag_get_ASN1_m1646183377 ();
+extern "C" void X501__cctor_m2610532554 ();
+extern "C" void X501_ToString_m4145210560 ();
+extern "C" void X501_ToString_m3328169518 ();
+extern "C" void X501_AppendEntry_m768611426 ();
+extern "C" void X509Certificate__ctor_m2941481449 ();
+extern "C" void X509Certificate__cctor_m2984068893 ();
+extern "C" void X509Certificate_Parse_m1764345628 ();
+extern "C" void X509Certificate_GetUnsignedBigInteger_m2102946512 ();
+extern "C" void X509Certificate_get_DSA_m3972464423 ();
+extern "C" void X509Certificate_set_DSA_m1325917832 ();
+extern "C" void X509Certificate_get_Extensions_m222060964 ();
+extern "C" void X509Certificate_get_Hash_m2470366345 ();
+extern "C" void X509Certificate_get_IssuerName_m3907994144 ();
+extern "C" void X509Certificate_get_KeyAlgorithm_m454927092 ();
+extern "C" void X509Certificate_get_KeyAlgorithmParameters_m1701675565 ();
+extern "C" void X509Certificate_set_KeyAlgorithmParameters_m17826364 ();
+extern "C" void X509Certificate_get_PublicKey_m933487733 ();
+extern "C" void X509Certificate_get_RSA_m1167362983 ();
+extern "C" void X509Certificate_set_RSA_m1038416652 ();
+extern "C" void X509Certificate_get_RawData_m1262574599 ();
+extern "C" void X509Certificate_get_SerialNumber_m2509150920 ();
+extern "C" void X509Certificate_get_Signature_m3664033367 ();
+extern "C" void X509Certificate_get_SignatureAlgorithm_m2111916881 ();
+extern "C" void X509Certificate_get_SubjectName_m3533705485 ();
+extern "C" void X509Certificate_get_ValidFrom_m1740754472 ();
+extern "C" void X509Certificate_get_ValidUntil_m4037777446 ();
+extern "C" void X509Certificate_get_Version_m1704730343 ();
+extern "C" void X509Certificate_get_IsCurrent_m424898544 ();
+extern "C" void X509Certificate_WasCurrent_m3632049416 ();
+extern "C" void X509Certificate_VerifySignature_m4020723406 ();
+extern "C" void X509Certificate_VerifySignature_m4020723740 ();
+extern "C" void X509Certificate_VerifySignature_m3536156059 ();
+extern "C" void X509Certificate_get_IsSelfSigned_m3860357831 ();
+extern "C" void X509Certificate_GetIssuerName_m2776799695 ();
+extern "C" void X509Certificate_GetSubjectName_m3163312410 ();
+extern "C" void X509Certificate_GetObjectData_m2064274370 ();
+extern "C" void X509Certificate_PEM_m49854707 ();
+extern "C" void X509CertificateCollection__ctor_m858704242 ();
+extern "C" void X509CertificateCollection__ctor_m583031014 ();
+extern "C" void X509CertificateCollection_System_Collections_IEnumerable_GetEnumerator_m977294505 ();
+extern "C" void X509CertificateCollection_get_Item_m2115598414 ();
+extern "C" void X509CertificateCollection_Add_m4008705157 ();
+extern "C" void X509CertificateCollection_AddRange_m3644738604 ();
+extern "C" void X509CertificateCollection_Contains_m2373814229 ();
+extern "C" void X509CertificateCollection_GetEnumerator_m3994741635 ();
+extern "C" void X509CertificateCollection_GetHashCode_m1043795447 ();
+extern "C" void X509CertificateCollection_IndexOf_m2175658423 ();
+extern "C" void X509CertificateCollection_Remove_m2722259192 ();
+extern "C" void X509CertificateCollection_Compare_m1014334435 ();
+extern "C" void X509CertificateEnumerator__ctor_m82280444 ();
+extern "C" void X509CertificateEnumerator_System_Collections_IEnumerator_get_Current_m3386014480 ();
+extern "C" void X509CertificateEnumerator_System_Collections_IEnumerator_MoveNext_m1448966539 ();
+extern "C" void X509CertificateEnumerator_System_Collections_IEnumerator_Reset_m3929249334 ();
+extern "C" void X509CertificateEnumerator_get_Current_m3129374511 ();
+extern "C" void X509CertificateEnumerator_MoveNext_m4060814498 ();
+extern "C" void X509CertificateEnumerator_Reset_m4167796875 ();
+extern "C" void X509Chain__ctor_m3522797144 ();
+extern "C" void X509Chain__ctor_m1113875360 ();
+extern "C" void X509Chain_get_Status_m2726750609 ();
+extern "C" void X509Chain_get_TrustAnchors_m930867182 ();
+extern "C" void X509Chain_Build_m175470596 ();
+extern "C" void X509Chain_IsValid_m4184995162 ();
+extern "C" void X509Chain_FindCertificateParent_m3122224229 ();
+extern "C" void X509Chain_FindCertificateRoot_m589250107 ();
+extern "C" void X509Chain_IsTrusted_m2834338719 ();
+extern "C" void X509Chain_IsParent_m2578316632 ();
+extern "C" void X509Crl__ctor_m2469408229 ();
+extern "C" void X509Crl_Parse_m3287862528 ();
+extern "C" void X509Crl_get_Extensions_m1795830276 ();
+extern "C" void X509Crl_get_Hash_m3617397429 ();
+extern "C" void X509Crl_get_IssuerName_m756409840 ();
+extern "C" void X509Crl_get_NextUpdate_m45665244 ();
+extern "C" void X509Crl_Compare_m2229641633 ();
+extern "C" void X509Crl_GetCrlEntry_m630720316 ();
+extern "C" void X509Crl_GetCrlEntry_m550904265 ();
+extern "C" void X509Crl_GetHashName_m183504634 ();
+extern "C" void X509Crl_VerifySignature_m25190802 ();
+extern "C" void X509Crl_VerifySignature_m25189948 ();
+extern "C" void X509Crl_VerifySignature_m1390212587 ();
+extern "C" void X509CrlEntry__ctor_m3156488776 ();
+extern "C" void X509CrlEntry_get_SerialNumber_m3603416806 ();
+extern "C" void X509CrlEntry_get_RevocationDate_m1257876856 ();
+extern "C" void X509CrlEntry_get_Extensions_m79989256 ();
+extern "C" void X509Extension__ctor_m2083345012 ();
+extern "C" void X509Extension__ctor_m2273534630 ();
+extern "C" void X509Extension_Decode_m972859652 ();
+extern "C" void X509Extension_Encode_m1753933824 ();
+extern "C" void X509Extension_get_Oid_m2301335920 ();
+extern "C" void X509Extension_get_Critical_m1103269870 ();
+extern "C" void X509Extension_get_Value_m3409801211 ();
+extern "C" void X509Extension_Equals_m1304125015 ();
+extern "C" void X509Extension_GetHashCode_m3265407565 ();
+extern "C" void X509Extension_WriteLine_m364247613 ();
+extern "C" void X509Extension_ToString_m408479757 ();
+extern "C" void X509ExtensionCollection__ctor_m1119345384 ();
+extern "C" void X509ExtensionCollection__ctor_m2672322588 ();
+extern "C" void X509ExtensionCollection_System_Collections_IEnumerable_GetEnumerator_m2600902401 ();
+extern "C" void X509ExtensionCollection_IndexOf_m3972100651 ();
+extern "C" void X509ExtensionCollection_get_Item_m4212651995 ();
+extern "C" void X509Store__ctor_m914086381 ();
+extern "C" void X509Store_get_Certificates_m683383922 ();
+extern "C" void X509Store_get_Crls_m1365300487 ();
+extern "C" void X509Store_Load_m3792048208 ();
+extern "C" void X509Store_LoadCertificate_m1082475046 ();
+extern "C" void X509Store_LoadCrl_m1146720614 ();
+extern "C" void X509Store_CheckStore_m1027496478 ();
+extern "C" void X509Store_BuildCertificatesCollection_m4224672591 ();
+extern "C" void X509Store_BuildCrlsCollection_m52567568 ();
+extern "C" void X509StoreManager_get_CurrentUser_m569194374 ();
+extern "C" void X509StoreManager_get_LocalMachine_m2451390246 ();
+extern "C" void X509StoreManager_get_TrustedRootCertificates_m122138510 ();
+extern "C" void X509Stores__ctor_m2453291421 ();
+extern "C" void X509Stores_get_TrustedRoot_m3412716694 ();
+extern "C" void X509Stores_Open_m3570436469 ();
+extern "C" void ConfigXmlTextReader__ctor_m965728314 ();
+extern "C" void ConfigXmlTextReader__ctor_m2778808542 ();
+extern "C" void ConfigXmlTextReader_get_Filename_m3902945538 ();
+extern "C" void ClientConfigurationSystem__ctor_m2508818941 ();
+extern "C" void ClientConfigurationSystem_System_Configuration_Internal_IInternalConfigSystem_GetSection_m2690705608 ();
+extern "C" void ClientConfigurationSystem_get_Configuration_m1415521026 ();
+extern "C" void ConfigInfo__ctor_m2533184409 ();
+extern "C" void ConfigInfo_CreateInstance_m615435773 ();
+extern "C" void ConfigInfo_set_StreamName_m1734466909 ();
+extern "C" void ConfigInfo_ThrowException_m3313572946 ();
+extern "C" void ConfigInfoCollection__ctor_m2267743875 ();
+extern "C" void ConfigInfoCollection_get_AllKeys_m3546771423 ();
+extern "C" void ConfigInfoCollection_get_Item_m4196945655 ();
+extern "C" void ConfigInfoCollection_set_Item_m406516082 ();
+extern "C" void ConfigInfoCollection_Add_m1288541941 ();
+extern "C" void ConfigInfoCollection_Clear_m1297066444 ();
+extern "C" void ConfigInfoCollection_Remove_m1334699295 ();
+extern "C" void ConfigNameValueCollection__ctor_m1183291289 ();
+extern "C" void ConfigNameValueCollection__ctor_m2285608570 ();
+extern "C" void ConfigNameValueCollection_ResetModified_m2605677405 ();
+extern "C" void ConfigNameValueCollection_get_IsModified_m3218832143 ();
+extern "C" void ConfigNameValueCollection_Set_m2008693955 ();
+extern "C" void Configuration__ctor_m3545852494 ();
+extern "C" void Configuration__ctor_m88421328 ();
+extern "C" void Configuration_FindLocationConfiguration_m4081437406 ();
+extern "C" void Configuration_Init_m2991025886 ();
+extern "C" void Configuration_get_Parent_m335637978 ();
+extern "C" void Configuration_set_Parent_m3106974805 ();
+extern "C" void Configuration_GetParentWithFile_m1651703053 ();
+extern "C" void Configuration_get_ConfigHost_m854336265 ();
+extern "C" void Configuration_get_LocationConfigPath_m609030371 ();
+extern "C" void Configuration_get_ConfigPath_m937107392 ();
+extern "C" void Configuration_get_FilePath_m3184045596 ();
+extern "C" void Configuration_get_HasFile_m1167170352 ();
+extern "C" void Configuration_get_Locations_m2394414303 ();
+extern "C" void Configuration_get_RootSectionGroup_m1643677634 ();
+extern "C" void Configuration_get_SectionGroups_m2782934403 ();
+extern "C" void Configuration_get_Sections_m3724328875 ();
+extern "C" void Configuration_GetSection_m3056810807 ();
+extern "C" void Configuration_GetSectionInstance_m3769455073 ();
+extern "C" void Configuration_GetSectionGroupInstance_m2028928705 ();
+extern "C" void Configuration_SetSectionXml_m2783526347 ();
+extern "C" void Configuration_GetSectionXml_m1792995434 ();
+extern "C" void Configuration_Load_m851220319 ();
+extern "C" void Configuration_ReadConfigFile_m1878607525 ();
+extern "C" void Configuration_ReadData_m342895002 ();
+extern "C" void Configuration_ThrowException_m3079645534 ();
+extern "C" void ConfigurationCollectionAttribute__ctor_m1251693102 ();
+extern "C" void ConfigurationCollectionAttribute_get_AddItemName_m1343590308 ();
+extern "C" void ConfigurationCollectionAttribute_get_ClearItemsName_m2101089535 ();
+extern "C" void ConfigurationCollectionAttribute_get_RemoveItemName_m1223332851 ();
+extern "C" void ConfigurationCollectionAttribute_set_CollectionType_m1820962205 ();
+extern "C" void ConfigurationElement__ctor_m3836278767 ();
+extern "C" void ConfigurationElement_get_Configuration_m2347242418 ();
+extern "C" void ConfigurationElement_set_Configuration_m1639150663 ();
+extern "C" void ConfigurationElement_InitFromProperty_m3625723156 ();
+extern "C" void ConfigurationElement_get_ElementInformation_m3882602470 ();
+extern "C" void ConfigurationElement_get_RawXml_m2664527628 ();
+extern "C" void ConfigurationElement_set_RawXml_m3850583953 ();
+extern "C" void ConfigurationElement_Init_m1329365593 ();
+extern "C" void ConfigurationElement_get_LockAllAttributesExcept_m3610263831 ();
+extern "C" void ConfigurationElement_get_LockAllElementsExcept_m1554073633 ();
+extern "C" void ConfigurationElement_get_LockAttributes_m3450186057 ();
+extern "C" void ConfigurationElement_get_LockElements_m2225570247 ();
+extern "C" void ConfigurationElement_set_LockItem_m3758070483 ();
+extern "C" void ConfigurationElement_SetPropertyValue_m1782021972 ();
+extern "C" void ConfigurationElement_GetKeyProperties_m4219970304 ();
+extern "C" void ConfigurationElement_GetDefaultCollection_m1796439560 ();
+extern "C" void ConfigurationElement_get_Item_m3892773274 ();
+extern "C" void ConfigurationElement_set_Item_m2109506183 ();
+extern "C" void ConfigurationElement_get_Item_m2488651020 ();
+extern "C" void ConfigurationElement_set_Item_m3671663911 ();
+extern "C" void ConfigurationElement_get_Properties_m2163360678 ();
+extern "C" void ConfigurationElement_Equals_m3484522968 ();
+extern "C" void ConfigurationElement_GetHashCode_m2198573252 ();
+extern "C" void ConfigurationElement_HasValues_m1341383433 ();
+extern "C" void ConfigurationElement_HasLocalModifications_m169968917 ();
+extern "C" void ConfigurationElement_DeserializeElement_m3818955857 ();
+extern "C" void ConfigurationElement_OnDeserializeUnrecognizedAttribute_m157901910 ();
+extern "C" void ConfigurationElement_OnDeserializeUnrecognizedElement_m1053820706 ();
+extern "C" void ConfigurationElement_OnRequiredPropertyNotFound_m3323765040 ();
+extern "C" void ConfigurationElement_PreSerialize_m1824129726 ();
+extern "C" void ConfigurationElement_PostDeserialize_m3061775188 ();
+extern "C" void ConfigurationElement_InitializeDefault_m2939047706 ();
+extern "C" void ConfigurationElement_IsModified_m748618350 ();
+extern "C" void ConfigurationElement_SetReadOnly_m1594739059 ();
+extern "C" void ConfigurationElement_IsReadOnly_m2244525315 ();
+extern "C" void ConfigurationElement_Reset_m484744193 ();
+extern "C" void ConfigurationElement_ResetModified_m933170487 ();
+extern "C" void ConfigurationElement_SerializeElement_m4131562944 ();
+extern "C" void ConfigurationElement_SerializeToXmlElement_m3789742405 ();
+extern "C" void ConfigurationElement_Unmerge_m2515561191 ();
+extern "C" void ConfigurationElement_HasValue_m1390685398 ();
+extern "C" void ConfigurationElement_ValidateValue_m1396480566 ();
+extern "C" void ConfigurationElementCollection__ctor_m3776365441 ();
+extern "C" void ConfigurationElementCollection_System_Collections_ICollection_CopyTo_m3947886345 ();
+extern "C" void ConfigurationElementCollection_InitFromProperty_m3084253332 ();
+extern "C" void ConfigurationElementCollection_get_CollectionType_m2878912072 ();
+extern "C" void ConfigurationElementCollection_get_IsBasic_m1624364384 ();
+extern "C" void ConfigurationElementCollection_get_IsAlternate_m1087333324 ();
+extern "C" void ConfigurationElementCollection_get_Count_m1016392721 ();
+extern "C" void ConfigurationElementCollection_get_ElementName_m1163032572 ();
+extern "C" void ConfigurationElementCollection_set_EmitClear_m649573135 ();
+extern "C" void ConfigurationElementCollection_get_IsSynchronized_m3152177730 ();
+extern "C" void ConfigurationElementCollection_get_SyncRoot_m1263605066 ();
+extern "C" void ConfigurationElementCollection_get_ThrowOnDuplicate_m2516679882 ();
+extern "C" void ConfigurationElementCollection_get_AddElementName_m2131549453 ();
+extern "C" void ConfigurationElementCollection_get_ClearElementName_m344564617 ();
+extern "C" void ConfigurationElementCollection_get_RemoveElementName_m670755192 ();
+extern "C" void ConfigurationElementCollection_BaseAdd_m692033632 ();
+extern "C" void ConfigurationElementCollection_BaseAdd_m1594255685 ();
+extern "C" void ConfigurationElementCollection_BaseClear_m297267965 ();
+extern "C" void ConfigurationElementCollection_BaseGet_m498332263 ();
+extern "C" void ConfigurationElementCollection_BaseGet_m673060682 ();
+extern "C" void ConfigurationElementCollection_BaseIndexOf_m2389057362 ();
+extern "C" void ConfigurationElementCollection_IndexOfKey_m1888078841 ();
+extern "C" void ConfigurationElementCollection_BaseRemove_m2742159664 ();
+extern "C" void ConfigurationElementCollection_BaseRemoveAt_m1402001296 ();
+extern "C" void ConfigurationElementCollection_CompareKeys_m682234560 ();
+extern "C" void ConfigurationElementCollection_CreateNewElement_m3219927641 ();
+extern "C" void ConfigurationElementCollection_CreateNewElementInternal_m226698700 ();
+extern "C" void ConfigurationElementCollection_Equals_m2221773756 ();
+extern "C" void ConfigurationElementCollection_GetHashCode_m770974360 ();
+extern "C" void ConfigurationElementCollection_GetEnumerator_m3962900713 ();
+extern "C" void ConfigurationElementCollection_IsElementName_m2704993900 ();
+extern "C" void ConfigurationElementCollection_IsElementRemovable_m1916442331 ();
+extern "C" void ConfigurationElementCollection_IsModified_m4233298518 ();
+extern "C" void ConfigurationElementCollection_IsReadOnly_m2147280149 ();
+extern "C" void ConfigurationElementCollection_HasValues_m4112686071 ();
+extern "C" void ConfigurationElementCollection_Reset_m3142114271 ();
+extern "C" void ConfigurationElementCollection_ResetModified_m3318214445 ();
+extern "C" void ConfigurationElementCollection_SetReadOnly_m2819095069 ();
+extern "C" void ConfigurationElementCollection_SerializeElement_m3696766444 ();
+extern "C" void ConfigurationElementCollection_OnDeserializeUnrecognizedElement_m1168261278 ();
+extern "C" void ConfigurationElementCollection_Unmerge_m2009439485 ();
+extern "C" void ConfigurationRemoveElement__ctor_m2892373574 ();
+extern "C" void ConfigurationRemoveElement_get_KeyValue_m2322918292 ();
+extern "C" void ConfigurationRemoveElement_get_Properties_m4160822773 ();
+extern "C" void ConfigurationErrorsException__ctor_m3609325505 ();
+extern "C" void ConfigurationErrorsException__ctor_m3571142591 ();
+extern "C" void ConfigurationErrorsException__ctor_m1926925674 ();
+extern "C" void ConfigurationErrorsException__ctor_m3963297863 ();
+extern "C" void ConfigurationErrorsException__ctor_m1235462802 ();
+extern "C" void ConfigurationErrorsException__ctor_m4265896371 ();
+extern "C" void ConfigurationErrorsException__ctor_m3506512730 ();
+extern "C" void ConfigurationErrorsException_get_BareMessage_m403421148 ();
+extern "C" void ConfigurationErrorsException_get_Message_m3733233144 ();
+extern "C" void ConfigurationErrorsException_GetFilename_m2673389627 ();
+extern "C" void ConfigurationErrorsException_GetLineNumber_m1372608032 ();
+extern "C" void ConfigurationErrorsException_GetFilename_m2049567258 ();
+extern "C" void ConfigurationErrorsException_GetLineNumber_m3976484637 ();
+extern "C" void ConfigurationErrorsException_GetObjectData_m770656613 ();
+extern "C" void ConfigurationFileMap__ctor_m3731838539 ();
+extern "C" void ConfigurationFileMap__ctor_m3124444437 ();
+extern "C" void ConfigurationFileMap_get_MachineConfigFilename_m1702653625 ();
+extern "C" void ConfigurationFileMap_set_MachineConfigFilename_m3052034378 ();
+extern "C" void ConfigurationFileMap_Clone_m1273941989 ();
+extern "C" void ConfigurationLocation__ctor_m3125296074 ();
+extern "C" void ConfigurationLocation__cctor_m1384898491 ();
+extern "C" void ConfigurationLocation_get_Path_m2365456525 ();
+extern "C" void ConfigurationLocation_OpenConfiguration_m2905080700 ();
+extern "C" void ConfigurationLocation_SetParentConfiguration_m4197005207 ();
+extern "C" void ConfigurationLocationCollection__ctor_m303069056 ();
+extern "C" void ConfigurationLocationCollection_Add_m3681642539 ();
+extern "C" void ConfigurationLocationCollection_Find_m3684263568 ();
+extern "C" void ConfigurationLockCollection__ctor_m870306509 ();
+extern "C" void ConfigurationLockCollection_System_Collections_ICollection_CopyTo_m3497490008 ();
+extern "C" void ConfigurationLockCollection_CheckName_m2810988355 ();
+extern "C" void ConfigurationLockCollection_Add_m3416925987 ();
+extern "C" void ConfigurationLockCollection_Clear_m2378334261 ();
+extern "C" void ConfigurationLockCollection_GetEnumerator_m3742833280 ();
+extern "C" void ConfigurationLockCollection_SetFromList_m2739237306 ();
+extern "C" void ConfigurationLockCollection_get_Count_m3926033248 ();
+extern "C" void ConfigurationLockCollection_get_IsSynchronized_m1658122353 ();
+extern "C" void ConfigurationLockCollection_get_SyncRoot_m1477706993 ();
+extern "C" void ConfigurationManager__cctor_m145104057 ();
+extern "C" void ConfigurationManager_GetAssemblyInfo_m1959334153 ();
+extern "C" void ConfigurationManager_OpenExeConfigurationInternal_m2337857263 ();
+extern "C" void ConfigurationManager_get_ConfigurationFactory_m113132422 ();
+extern "C" void ConfigurationManager_get_ConfigurationSystem_m1820628092 ();
+extern "C" void ConfigurationManager_GetSection_m2582692502 ();
+extern "C" void ConfigurationProperty__ctor_m1936944139 ();
+extern "C" void ConfigurationProperty__ctor_m1536343945 ();
+extern "C" void ConfigurationProperty__ctor_m1540124895 ();
+extern "C" void ConfigurationProperty__ctor_m2779674618 ();
+extern "C" void ConfigurationProperty__ctor_m664996226 ();
+extern "C" void ConfigurationProperty__cctor_m3667988185 ();
+extern "C" void ConfigurationProperty_get_DefaultValue_m426297024 ();
+extern "C" void ConfigurationProperty_get_IsKey_m2843757270 ();
+extern "C" void ConfigurationProperty_get_IsRequired_m2849112540 ();
+extern "C" void ConfigurationProperty_get_IsDefaultCollection_m4193636108 ();
+extern "C" void ConfigurationProperty_get_Name_m2150541641 ();
+extern "C" void ConfigurationProperty_get_Type_m573764699 ();
+extern "C" void ConfigurationProperty_get_Validator_m1030428852 ();
+extern "C" void ConfigurationProperty_ConvertFromString_m661781545 ();
+extern "C" void ConfigurationProperty_ConvertToString_m137757750 ();
+extern "C" void ConfigurationProperty_get_IsElement_m12977767 ();
+extern "C" void ConfigurationProperty_get_CollectionAttribute_m256228153 ();
+extern "C" void ConfigurationProperty_set_CollectionAttribute_m21883792 ();
+extern "C" void ConfigurationProperty_Validate_m556423690 ();
+extern "C" void ConfigurationPropertyAttribute__ctor_m2756034538 ();
+extern "C" void ConfigurationPropertyAttribute_get_DefaultValue_m315790916 ();
+extern "C" void ConfigurationPropertyAttribute_set_DefaultValue_m645825465 ();
+extern "C" void ConfigurationPropertyAttribute_get_Options_m78342746 ();
+extern "C" void ConfigurationPropertyAttribute_set_Options_m540649869 ();
+extern "C" void ConfigurationPropertyAttribute_get_Name_m3548275941 ();
+extern "C" void ConfigurationPropertyCollection__ctor_m906226530 ();
+extern "C" void ConfigurationPropertyCollection_System_Collections_ICollection_CopyTo_m3374724930 ();
+extern "C" void ConfigurationPropertyCollection_get_Count_m1518273402 ();
+extern "C" void ConfigurationPropertyCollection_get_IsSynchronized_m2330227857 ();
+extern "C" void ConfigurationPropertyCollection_get_SyncRoot_m2789197201 ();
+extern "C" void ConfigurationPropertyCollection_Add_m2387630251 ();
+extern "C" void ConfigurationPropertyCollection_GetEnumerator_m3414286410 ();
+extern "C" void ConfigurationSection__ctor_m2154258044 ();
+extern "C" void ConfigurationSection_get_SectionHandler_m1982719862 ();
+extern "C" void ConfigurationSection_set_SectionHandler_m1410633441 ();
+extern "C" void ConfigurationSection_get_SectionInformation_m4037021195 ();
+extern "C" void ConfigurationSection_get_ConfigContext_m4131621597 ();
+extern "C" void ConfigurationSection_set_ConfigContext_m1616871218 ();
+extern "C" void ConfigurationSection_GetRuntimeObject_m3965484768 ();
+extern "C" void ConfigurationSection_IsModified_m1833174423 ();
+extern "C" void ConfigurationSection_ResetModified_m2300774056 ();
+extern "C" void ConfigurationSection_CreateElement_m1756012205 ();
+extern "C" void ConfigurationSection_DoDeserializeSection_m2782358321 ();
+extern "C" void ConfigurationSection_DeserializeSection_m1139223106 ();
+extern "C" void ConfigurationSection_DeserializeConfigSource_m495463306 ();
+extern "C" void ConfigurationSection_SerializeSection_m2886244226 ();
+extern "C" void ConfigurationSectionCollection__ctor_m452173858 ();
+extern "C" void ConfigurationSectionCollection_get_Keys_m1706717625 ();
+extern "C" void ConfigurationSectionCollection_get_Count_m3164332684 ();
+extern "C" void ConfigurationSectionCollection_get_Item_m1500557111 ();
+extern "C" void ConfigurationSectionCollection_GetEnumerator_m1242675576 ();
+extern "C" void ConfigurationSectionCollection_GetObjectData_m253846356 ();
+extern "C" void U3CGetEnumeratorU3Ec__Iterator0__ctor_m2507040616 ();
+extern "C" void U3CGetEnumeratorU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3533736502 ();
+extern "C" void U3CGetEnumeratorU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m20938814 ();
+extern "C" void U3CGetEnumeratorU3Ec__Iterator0_MoveNext_m3065246498 ();
+extern "C" void U3CGetEnumeratorU3Ec__Iterator0_Dispose_m2640554235 ();
+extern "C" void U3CGetEnumeratorU3Ec__Iterator0_Reset_m3299736337 ();
+extern "C" void ConfigurationSectionGroup__ctor_m298945591 ();
+extern "C" void ConfigurationSectionGroup_get_Config_m3001742842 ();
+extern "C" void ConfigurationSectionGroup_Initialize_m2622037419 ();
+extern "C" void ConfigurationSectionGroup_get_SectionGroups_m3335531313 ();
+extern "C" void ConfigurationSectionGroup_get_Sections_m3419181621 ();
+extern "C" void ConfigurationSectionGroupCollection__ctor_m2237904677 ();
+extern "C" void ConfigurationSectionGroupCollection_get_Keys_m3664428060 ();
+extern "C" void ConfigurationSectionGroupCollection_get_Count_m447488593 ();
+extern "C" void ConfigurationSectionGroupCollection_get_Item_m2720920827 ();
+extern "C" void ConfigurationSectionGroupCollection_GetEnumerator_m2684317377 ();
+extern "C" void ConfigurationSectionGroupCollection_GetObjectData_m378227929 ();
+extern "C" void ConfigurationValidatorAttribute_get_ValidatorInstance_m35782466 ();
+extern "C" void ConfigurationValidatorBase__ctor_m3250462424 ();
+extern "C" void ConfigurationValidatorBase_CanValidate_m2900122087 ();
+extern "C" void DefaultSection__ctor_m1597606775 ();
+extern "C" void DefaultSection__cctor_m1370258022 ();
+extern "C" void DefaultSection_DeserializeSection_m2332286625 ();
+extern "C" void DefaultSection_IsModified_m1050808524 ();
+extern "C" void DefaultSection_Reset_m516688665 ();
+extern "C" void DefaultSection_ResetModified_m2081880583 ();
+extern "C" void DefaultSection_SerializeSection_m580503059 ();
+extern "C" void DefaultSection_get_Properties_m1402553764 ();
+extern "C" void DefaultValidator__ctor_m233258192 ();
+extern "C" void DefaultValidator_CanValidate_m2475130869 ();
+extern "C" void DefaultValidator_Validate_m4293733324 ();
+extern "C" void ElementInformation__ctor_m815008552 ();
+extern "C" void ElementInformation_get_Properties_m1533763968 ();
+extern "C" void ElementInformation_Reset_m3203551617 ();
+extern "C" void ElementMap__ctor_m2348370310 ();
+extern "C" void ElementMap__cctor_m3070084744 ();
+extern "C" void ElementMap_GetMap_m1137301092 ();
+extern "C" void ElementMap_get_Properties_m169107978 ();
+extern "C" void ExeConfigurationFileMap__ctor_m2848771159 ();
+extern "C" void ExeConfigurationFileMap_get_ExeConfigFilename_m4217231138 ();
+extern "C" void ExeConfigurationFileMap_set_ExeConfigFilename_m2695258183 ();
+extern "C" void ExeConfigurationFileMap_get_LocalUserConfigFilename_m3988942578 ();
+extern "C" void ExeConfigurationFileMap_set_LocalUserConfigFilename_m245771243 ();
+extern "C" void ExeConfigurationFileMap_get_RoamingUserConfigFilename_m3176990010 ();
+extern "C" void ExeConfigurationFileMap_set_RoamingUserConfigFilename_m4034760815 ();
+extern "C" void ExeConfigurationFileMap_Clone_m3686499741 ();
+extern "C" void ExeConfigurationHost__ctor_m2672717525 ();
+extern "C" void ExeConfigurationHost_Init_m1279008829 ();
+extern "C" void ExeConfigurationHost_GetStreamName_m4070417723 ();
+extern "C" void ExeConfigurationHost_InitForConfiguration_m442278400 ();
+extern "C" void IgnoreSection__ctor_m4055714512 ();
+extern "C" void IgnoreSection__cctor_m1005553135 ();
+extern "C" void IgnoreSection_IsModified_m3722026291 ();
+extern "C" void IgnoreSection_DeserializeSection_m2922463074 ();
+extern "C" void IgnoreSection_Reset_m2294022138 ();
+extern "C" void IgnoreSection_ResetModified_m2018290788 ();
+extern "C" void IgnoreSection_SerializeSection_m1724288736 ();
+extern "C" void IgnoreSection_get_Properties_m3548508015 ();
+extern "C" void InternalConfigurationFactory__ctor_m2455511552 ();
+extern "C" void InternalConfigurationFactory_Create_m3329707975 ();
+extern "C" void InternalConfigurationHost__ctor_m1120670670 ();
+extern "C" void InternalConfigurationHost_CreateDeprecatedConfigContext_m3055903953 ();
+extern "C" void InternalConfigurationHost_GetConfigPathFromLocationSubPath_m3102336364 ();
+extern "C" void InternalConfigurationHost_GetConfigType_m2265190311 ();
+extern "C" void InternalConfigurationHost_IsDefinitionAllowed_m2472316359 ();
+extern "C" void InternalConfigurationHost_get_bundled_machine_config_m171293269 ();
+extern "C" void InternalConfigurationHost_OpenStreamForRead_m1823276945 ();
+extern "C" void InternalConfigurationRoot__ctor_m903766256 ();
+extern "C" void InternalConfigurationRoot_Init_m2920331433 ();
+extern "C" void InternalConfigurationSystem__ctor_m1377055107 ();
+extern "C" void InternalConfigurationSystem_Init_m117598888 ();
+extern "C" void InternalConfigurationSystem_InitForConfiguration_m909576572 ();
+extern "C" void InternalConfigurationSystem_get_Host_m3360228097 ();
+extern "C" void PropertyInformation__ctor_m3964645511 ();
+extern "C" void PropertyInformation_get_DefaultValue_m2865970966 ();
+extern "C" void PropertyInformation_get_IsKey_m53514336 ();
+extern "C" void PropertyInformation_get_IsModified_m2197427276 ();
+extern "C" void PropertyInformation_set_IsModified_m2277508543 ();
+extern "C" void PropertyInformation_get_IsRequired_m2394064138 ();
+extern "C" void PropertyInformation_get_Name_m339533533 ();
+extern "C" void PropertyInformation_get_Type_m2447867467 ();
+extern "C" void PropertyInformation_get_Value_m1250658193 ();
+extern "C" void PropertyInformation_set_Value_m1161719494 ();
+extern "C" void PropertyInformation_Reset_m4131859557 ();
+extern "C" void PropertyInformation_get_IsElement_m1135806159 ();
+extern "C" void PropertyInformation_get_ValueOrigin_m1155932344 ();
+extern "C" void PropertyInformation_GetStringValue_m233999863 ();
+extern "C" void PropertyInformation_SetStringValue_m1643234174 ();
+extern "C" void PropertyInformation_get_Property_m530348717 ();
+extern "C" void PropertyInformationCollection__ctor_m3360125324 ();
+extern "C" void PropertyInformationCollection_get_Item_m1640937095 ();
+extern "C" void PropertyInformationCollection_GetEnumerator_m2342156100 ();
+extern "C" void PropertyInformationCollection_Add_m3086044235 ();
+extern "C" void PropertyInformationCollection_GetObjectData_m1752565104 ();
+extern "C" void PropertyInformationEnumerator__ctor_m3513537070 ();
+extern "C" void PropertyInformationEnumerator_get_Current_m3392533325 ();
+extern "C" void PropertyInformationEnumerator_MoveNext_m1887690358 ();
+extern "C" void PropertyInformationEnumerator_Reset_m2871712389 ();
+extern "C" void ProtectedConfiguration_get_Providers_m2677655615 ();
+extern "C" void ProtectedConfiguration_get_Section_m2417461286 ();
+extern "C" void ProtectedConfiguration_GetProvider_m659380218 ();
+extern "C" void ProtectedConfigurationProviderCollection__ctor_m2871984156 ();
+extern "C" void ProtectedConfigurationProviderCollection_get_Item_m2881465527 ();
+extern "C" void ProtectedConfigurationProviderCollection_Add_m1943221191 ();
+extern "C" void ProtectedConfigurationSection__cctor_m710069301 ();
+extern "C" void ProtectedConfigurationSection_get_Providers_m3108810289 ();
+extern "C" void ProtectedConfigurationSection_get_Properties_m3218406561 ();
+extern "C" void ProtectedConfigurationSection_GetAllProviders_m1380267610 ();
+extern "C" void ProtectedConfigurationSection_InstantiateProvider_m1916220169 ();
+extern "C" void ProviderBase_Initialize_m309026731 ();
+extern "C" void ProviderBase_get_Name_m1908650449 ();
+extern "C" void ProviderCollection__ctor_m2739070153 ();
+extern "C" void ProviderCollection_System_Collections_ICollection_CopyTo_m1409815097 ();
+extern "C" void ProviderCollection_Add_m2062313466 ();
+extern "C" void ProviderCollection_GetEnumerator_m2535943389 ();
+extern "C" void ProviderCollection_get_Count_m1651598797 ();
+extern "C" void ProviderCollection_get_IsSynchronized_m2860234084 ();
+extern "C" void ProviderCollection_get_SyncRoot_m2583585530 ();
+extern "C" void ProviderCollection_get_Item_m4205164 ();
+extern "C" void ProviderSettings__ctor_m2418229397 ();
+extern "C" void ProviderSettings__cctor_m1551014246 ();
+extern "C" void ProviderSettings_OnDeserializeUnrecognizedAttribute_m2101799192 ();
+extern "C" void ProviderSettings_IsModified_m4208587056 ();
+extern "C" void ProviderSettings_Reset_m748547671 ();
+extern "C" void ProviderSettings_Unmerge_m3899437761 ();
+extern "C" void ProviderSettings_get_Name_m2720563190 ();
+extern "C" void ProviderSettings_get_Type_m525859805 ();
+extern "C" void ProviderSettings_get_Properties_m1448998824 ();
+extern "C" void ProviderSettings_get_Parameters_m1237896802 ();
+extern "C" void ProviderSettingsCollection__cctor_m2098499738 ();
+extern "C" void ProviderSettingsCollection_CreateNewElement_m278470757 ();
+extern "C" void ProviderSettingsCollection_GetElementKey_m2598146650 ();
+extern "C" void ProviderSettingsCollection_get_Properties_m2175226160 ();
+extern "C" void SectionGroupInfo__ctor_m2214539325 ();
+extern "C" void SectionGroupInfo__cctor_m673398592 ();
+extern "C" void SectionGroupInfo_AddChild_m3251971407 ();
+extern "C" void SectionGroupInfo_Clear_m3188268036 ();
+extern "C" void SectionGroupInfo_HasChild_m1202859971 ();
+extern "C" void SectionGroupInfo_RemoveChild_m2246840815 ();
+extern "C" void SectionGroupInfo_get_Sections_m2472444668 ();
+extern "C" void SectionGroupInfo_get_Groups_m2080419472 ();
+extern "C" void SectionGroupInfo_ReadConfig_m964124140 ();
+extern "C" void SectionGroupInfo_ReadRemoveSection_m3200085140 ();
+extern "C" void SectionGroupInfo_ReadRootData_m1364370771 ();
+extern "C" void SectionGroupInfo_ReadData_m4130533217 ();
+extern "C" void SectionGroupInfo_ReadContent_m2298842435 ();
+extern "C" void SectionGroupInfo_GetConfigInfo_m1968621232 ();
+extern "C" void SectionGroupInfo_Merge_m1107900400 ();
+extern "C" void SectionInfo__ctor_m3237924430 ();
+extern "C" void SectionInfo_CreateInstance_m3857848628 ();
+extern "C" void SectionInfo_ReadConfig_m1508625577 ();
+extern "C" void SectionInfo_ReadData_m2814313648 ();
+extern "C" void SectionInfo_Merge_m2513541987 ();
+extern "C" void SectionInformation__ctor_m118501942 ();
+extern "C" void SectionInformation_get_ConfigFilePath_m966874317 ();
+extern "C" void SectionInformation_set_ConfigFilePath_m2908232936 ();
+extern "C" void SectionInformation_set_AllowDefinition_m391233744 ();
+extern "C" void SectionInformation_set_AllowExeDefinition_m2089738550 ();
+extern "C" void SectionInformation_set_AllowLocation_m1178294342 ();
+extern "C" void SectionInformation_get_ConfigSource_m1613439595 ();
+extern "C" void SectionInformation_set_ConfigSource_m2152533200 ();
+extern "C" void SectionInformation_set_RequirePermission_m1040565520 ();
+extern "C" void SectionInformation_set_RestartOnExternalChanges_m2815572962 ();
+extern "C" void SectionInformation_GetParentSection_m3638988220 ();
+extern "C" void SectionInformation_SetParentSection_m321631079 ();
+extern "C" void SectionInformation_ProtectSection_m230982508 ();
+extern "C" void SectionInformation_SetRawXml_m1162572473 ();
+extern "C" void SectionInformation_SetName_m2381998591 ();
+extern "C" void MonoInternalNoteAttribute__ctor_m2854554221 ();
+extern "C" void MonoTODOAttribute__ctor_m817868876 ();
+extern "C" void MonoTODOAttribute__ctor_m1940477654 ();
 extern "C" void Locale_GetText_m4034107474 ();
 extern "C" void Locale_GetText_m1445803604 ();
 extern "C" void OSX509Certificates__cctor_m1823235584 ();
@@ -10895,7 +11326,7 @@ extern "C" void DictionaryNodeEnumerator_get_Key_m4038343473 ();
 extern "C" void DictionaryNodeEnumerator_get_Value_m2179504825 ();
 extern "C" void NameObjectCollectionBase__ctor_m2433753948 ();
 extern "C" void NameObjectCollectionBase__ctor_m2025187105 ();
-extern "C" void NameObjectCollectionBase__ctor_m3028321656 ();
+extern "C" void NameObjectCollectionBase__ctor_m2843349416 ();
 extern "C" void NameObjectCollectionBase__ctor_m241668161 ();
 extern "C" void NameObjectCollectionBase__ctor_m4071024582 ();
 extern "C" void NameObjectCollectionBase_System_Collections_ICollection_get_IsSynchronized_m4271190852 ();
@@ -10910,13 +11341,13 @@ extern "C" void NameObjectCollectionBase_GetObjectData_m699981132 ();
 extern "C" void NameObjectCollectionBase_get_Count_m2353593692 ();
 extern "C" void NameObjectCollectionBase_OnDeserialization_m3478980442 ();
 extern "C" void NameObjectCollectionBase_get_IsReadOnly_m3287350911 ();
-extern "C" void NameObjectCollectionBase_BaseAdd_m964300824 ();
-extern "C" void NameObjectCollectionBase_BaseClear_m125195694 ();
-extern "C" void NameObjectCollectionBase_BaseGet_m667273025 ();
-extern "C" void NameObjectCollectionBase_BaseGet_m3772026934 ();
+extern "C" void NameObjectCollectionBase_BaseAdd_m2553984848 ();
+extern "C" void NameObjectCollectionBase_BaseClear_m3254864954 ();
+extern "C" void NameObjectCollectionBase_BaseGet_m2690623991 ();
+extern "C" void NameObjectCollectionBase_BaseGet_m4152270534 ();
 extern "C" void NameObjectCollectionBase_BaseGetKey_m1766059806 ();
-extern "C" void NameObjectCollectionBase_BaseRemove_m3247708763 ();
-extern "C" void NameObjectCollectionBase_BaseSet_m1294211025 ();
+extern "C" void NameObjectCollectionBase_BaseRemove_m497600633 ();
+extern "C" void NameObjectCollectionBase_BaseSet_m1854375571 ();
 extern "C" void NameObjectCollectionBase_FindFirstMatchedItem_m2460648656 ();
 extern "C" void NameObjectCollectionBase_Equals_m1130527645 ();
 extern "C" void _Item__ctor_m1496904011 ();
@@ -10930,11 +11361,11 @@ extern "C" void KeysCollection_System_Collections_ICollection_get_IsSynchronized
 extern "C" void KeysCollection_System_Collections_ICollection_get_SyncRoot_m2289369147 ();
 extern "C" void KeysCollection_get_Count_m3650400467 ();
 extern "C" void KeysCollection_GetEnumerator_m3831125359 ();
-extern "C" void NameValueCollection__ctor_m1767369537 ();
-extern "C" void NameValueCollection__ctor_m2225277639 ();
+extern "C" void NameValueCollection__ctor_m1929851035 ();
+extern "C" void NameValueCollection__ctor_m3524889949 ();
 extern "C" void NameValueCollection__ctor_m3660918416 ();
-extern "C" void NameValueCollection_get_Item_m2776418562 ();
-extern "C" void NameValueCollection_set_Item_m3775607929 ();
+extern "C" void NameValueCollection_get_Item_m2645480742 ();
+extern "C" void NameValueCollection_set_Item_m1374509551 ();
 extern "C" void NameValueCollection_Add_m2977622107 ();
 extern "C" void NameValueCollection_Add_m263445674 ();
 extern "C" void NameValueCollection_Get_m861415899 ();
@@ -10944,7 +11375,7 @@ extern "C" void NameValueCollection_GetKey_m3871624648 ();
 extern "C" void NameValueCollection_GetValues_m1275908180 ();
 extern "C" void NameValueCollection_AsStringArray_m1681029335 ();
 extern "C" void NameValueCollection_Remove_m629217025 ();
-extern "C" void NameValueCollection_Set_m2969274643 ();
+extern "C" void NameValueCollection_Set_m3172952177 ();
 extern "C" void NameValueCollection_InvalidateCachedArrays_m1142700554 ();
 extern "C" void StringCollection__ctor_m2392274323 ();
 extern "C" void StringCollection_System_Collections_IList_get_IsReadOnly_m3716594668 ();
@@ -12127,20 +12558,20 @@ extern "C" void ToolboxItemFilterAttribute_GetHashCode_m1134792074 ();
 extern "C" void ToolboxItemFilterAttribute_Match_m135261178 ();
 extern "C" void ToolboxItemFilterAttribute_ToString_m661989874 ();
 extern "C" void TypeConverter__ctor_m3380301159 ();
-extern "C" void TypeConverter_CanConvertFrom_m1824018217 ();
+extern "C" void TypeConverter_CanConvertFrom_m2207973887 ();
 extern "C" void TypeConverter_CanConvertFrom_m1277808141 ();
 extern "C" void TypeConverter_CanConvertTo_m3984515018 ();
 extern "C" void TypeConverter_CanConvertTo_m3192242134 ();
-extern "C" void TypeConverter_ConvertFrom_m757293553 ();
+extern "C" void TypeConverter_ConvertFrom_m3616211731 ();
 extern "C" void TypeConverter_ConvertFrom_m3174062747 ();
-extern "C" void TypeConverter_ConvertFromInvariantString_m1701603654 ();
+extern "C" void TypeConverter_ConvertFromInvariantString_m2229102078 ();
 extern "C" void TypeConverter_ConvertFromInvariantString_m1072000636 ();
 extern "C" void TypeConverter_ConvertFromString_m1918759906 ();
 extern "C" void TypeConverter_ConvertFromString_m3964413992 ();
 extern "C" void TypeConverter_ConvertFromString_m3568010184 ();
 extern "C" void TypeConverter_ConvertTo_m2094680623 ();
 extern "C" void TypeConverter_ConvertTo_m528793397 ();
-extern "C" void TypeConverter_ConvertToInvariantString_m2615559221 ();
+extern "C" void TypeConverter_ConvertToInvariantString_m1236807103 ();
 extern "C" void TypeConverter_ConvertToInvariantString_m407162877 ();
 extern "C" void TypeConverter_ConvertToString_m3590519313 ();
 extern "C" void TypeConverter_ConvertToString_m127192225 ();
@@ -12189,7 +12620,7 @@ extern "C" void TypeConverterAttribute__ctor_m4061167050 ();
 extern "C" void TypeConverterAttribute__cctor_m506796812 ();
 extern "C" void TypeConverterAttribute_Equals_m2330345916 ();
 extern "C" void TypeConverterAttribute_GetHashCode_m131437980 ();
-extern "C" void TypeConverterAttribute_get_ConverterTypeName_m2296240606 ();
+extern "C" void TypeConverterAttribute_get_ConverterTypeName_m1307032478 ();
 extern "C" void TypeDescriptionProvider__ctor_m960440148 ();
 extern "C" void TypeDescriptionProvider__ctor_m1628468586 ();
 extern "C" void TypeDescriptionProvider_CreateInstance_m451412922 ();
@@ -12234,7 +12665,7 @@ extern "C" void TypeDescriptor_GetClassName_m2692108253 ();
 extern "C" void TypeDescriptor_GetConverter_m1302924816 ();
 extern "C" void TypeDescriptor_GetConverter_m2779430453 ();
 extern "C" void TypeDescriptor_get_DefaultConverters_m3008219029 ();
-extern "C" void TypeDescriptor_GetConverter_m1788154595 ();
+extern "C" void TypeDescriptor_GetConverter_m2863175601 ();
 extern "C" void TypeDescriptor_FindDefaultConverterType_m1939082393 ();
 extern "C" void TypeDescriptor_GetDefaultEvent_m1693368423 ();
 extern "C" void TypeDescriptor_GetDefaultEvent_m472929496 ();
@@ -12355,18 +12786,18 @@ extern "C" void Win32Exception__ctor_m3886439846 ();
 extern "C" void Win32Exception_get_NativeErrorCode_m2974494452 ();
 extern "C" void Win32Exception_GetObjectData_m2648429033 ();
 extern "C" void Win32Exception_W32ErrorMessage_m916044474 ();
-extern "C" void ConfigurationException__ctor_m1046987330 ();
-extern "C" void ConfigurationException__ctor_m1950737452 ();
-extern "C" void ConfigurationException__ctor_m3177755519 ();
-extern "C" void ConfigurationException__ctor_m3617147564 ();
+extern "C" void ConfigurationException__ctor_m2016541990 ();
+extern "C" void ConfigurationException__ctor_m155150844 ();
+extern "C" void ConfigurationException__ctor_m1625396877 ();
+extern "C" void ConfigurationException__ctor_m134485716 ();
 extern "C" void ConfigurationException__ctor_m2353791559 ();
 extern "C" void ConfigurationException__ctor_m3525068459 ();
-extern "C" void ConfigurationException__ctor_m2633858641 ();
-extern "C" void ConfigurationException_get_BareMessage_m74709031 ();
+extern "C" void ConfigurationException__ctor_m146514043 ();
+extern "C" void ConfigurationException_get_BareMessage_m1773829953 ();
 extern "C" void ConfigurationException_get_Message_m4079252099 ();
 extern "C" void ConfigurationException_GetXmlNodeFilename_m3187209172 ();
 extern "C" void ConfigurationException_GetXmlNodeLineNumber_m3219878065 ();
-extern "C" void ConfigurationException_GetObjectData_m832314182 ();
+extern "C" void ConfigurationException_GetObjectData_m2618268214 ();
 extern "C" void ConfigurationSettings__cctor_m1127819917 ();
 extern "C" void ConfigurationSettings_GetConfig_m3759429389 ();
 extern "C" void DefaultConfig__ctor_m2771391998 ();
@@ -12539,6 +12970,7 @@ extern "C" void GZipStream_get_CanWrite_m836005977 ();
 extern "C" void GZipStream_get_Length_m436994325 ();
 extern "C" void GZipStream_get_Position_m1646138170 ();
 extern "C" void GZipStream_set_Position_m2544990935 ();
+extern "C" void MonoLimitationAttribute__ctor_m722814010 ();
 extern "C" void MonoNotSupportedAttribute__ctor_m525307291 ();
 extern "C" void MonoTODOAttribute__ctor_m4004919844 ();
 extern "C" void MonoTODOAttribute__ctor_m991492462 ();
@@ -13681,6 +14113,17 @@ extern "C" void WebResponse_GetMustImplement_m2853142170 ();
 extern "C" void WebResponse_Close_m3788698729 ();
 extern "C" void WebResponse_GetResponseStream_m629848918 ();
 extern "C" void WebResponse_GetObjectData_m3352137755 ();
+extern "C" void DefaultParameterValueAttribute__ctor_m458420735 ();
+extern "C" void DefaultParameterValueAttribute_get_Value_m1687085018 ();
+extern "C" void HandleCollector__ctor_m3314435530 ();
+extern "C" void HandleCollector__ctor_m2995166471 ();
+extern "C" void HandleCollector_get_Count_m3616622921 ();
+extern "C" void HandleCollector_get_InitialThreshold_m680859983 ();
+extern "C" void HandleCollector_get_MaximumThreshold_m1939631573 ();
+extern "C" void HandleCollector_get_Name_m1920967056 ();
+extern "C" void HandleCollector_Add_m1173341632 ();
+extern "C" void HandleCollector_Remove_m1328079655 ();
+extern "C" void StandardOleMarshalObject__ctor_m3296759340 ();
 extern "C" void AsnEncodedData__ctor_m1611830939 ();
 extern "C" void AsnEncodedData__ctor_m1211934482 ();
 extern "C" void AsnEncodedData__ctor_m3538036029 ();
@@ -13918,6 +14361,7 @@ extern "C" void X509SubjectKeyIdentifierExtension_Decode_m4102819207 ();
 extern "C" void X509SubjectKeyIdentifierExtension_Encode_m4237278042 ();
 extern "C" void X509SubjectKeyIdentifierExtension_ToString_m4073475390 ();
 extern "C" void BaseMachine__ctor_m2327544039 ();
+extern "C" void BaseMachine_Split_m3850876468 ();
 extern "C" void BaseMachine_Scan_m122450399 ();
 extern "C" void Capture__ctor_m885749277 ();
 extern "C" void Capture__ctor_m2965900721 ();
@@ -14143,11 +14587,13 @@ extern "C" void QuickSearch_SetupShiftTable_m2317442109 ();
 extern "C" void QuickSearch_GetShiftDistance_m2364008966 ();
 extern "C" void QuickSearch_GetChar_m2043548857 ();
 extern "C" void Regex__ctor_m3250610064 ();
-extern "C" void Regex__ctor_m2794328522 ();
+extern "C" void Regex__ctor_m2930443103 ();
 extern "C" void Regex__ctor_m2521903438 ();
 extern "C" void Regex__ctor_m392221833 ();
 extern "C" void Regex__cctor_m3397544801 ();
 extern "C" void Regex_System_Runtime_Serialization_ISerializable_GetObjectData_m4035555909 ();
+extern "C" void Regex_Split_m4283382107 ();
+extern "C" void Regex_Split_m2213626959 ();
 extern "C" void Regex_validate_options_m3563464259 ();
 extern "C" void Regex_Init_m1873144192 ();
 extern "C" void Regex_InitNewRegex_m692548389 ();
@@ -14161,6 +14607,8 @@ extern "C" void Regex_IsMatch_m1286520424 ();
 extern "C" void Regex_Match_m4277133443 ();
 extern "C" void Regex_Matches_m3834294444 ();
 extern "C" void Regex_Matches_m1377235443 ();
+extern "C" void Regex_Split_m1805163013 ();
+extern "C" void Regex_Split_m1359617913 ();
 extern "C" void Regex_ToString_m3687329849 ();
 extern "C" void Regex_get_Gap_m2028850051 ();
 extern "C" void Regex_CreateMachine_m1003508921 ();
@@ -14490,410 +14938,6 @@ extern "C" void UriTypeConverter_CanConvertTo_m1561226854 ();
 extern "C" void UriTypeConverter_ConvertFrom_m2743854187 ();
 extern "C" void UriTypeConverter_ConvertTo_m507771013 ();
 extern "C" void UriTypeConverter_IsValid_m2806107649 ();
-extern "C" void ConfigXmlTextReader__ctor_m965728314 ();
-extern "C" void ConfigXmlTextReader__ctor_m2778808542 ();
-extern "C" void ConfigXmlTextReader_get_Filename_m3902945538 ();
-extern "C" void ClientConfigurationSystem__ctor_m2508818941 ();
-extern "C" void ClientConfigurationSystem_System_Configuration_Internal_IInternalConfigSystem_GetSection_m2690705608 ();
-extern "C" void ClientConfigurationSystem_get_Configuration_m1415521026 ();
-extern "C" void ConfigInfo__ctor_m2533184409 ();
-extern "C" void ConfigInfo_CreateInstance_m615435773 ();
-extern "C" void ConfigInfo_set_StreamName_m1734466909 ();
-extern "C" void ConfigInfo_ThrowException_m3313572946 ();
-extern "C" void ConfigInfoCollection__ctor_m2267743875 ();
-extern "C" void ConfigInfoCollection_get_AllKeys_m3546771423 ();
-extern "C" void ConfigInfoCollection_get_Item_m4196945655 ();
-extern "C" void ConfigInfoCollection_set_Item_m406516082 ();
-extern "C" void ConfigInfoCollection_Add_m1288541941 ();
-extern "C" void ConfigInfoCollection_Clear_m1297066444 ();
-extern "C" void ConfigInfoCollection_Remove_m1334699295 ();
-extern "C" void ConfigNameValueCollection__ctor_m1183291289 ();
-extern "C" void ConfigNameValueCollection__ctor_m2285608570 ();
-extern "C" void ConfigNameValueCollection_ResetModified_m2605677405 ();
-extern "C" void ConfigNameValueCollection_get_IsModified_m3218832143 ();
-extern "C" void ConfigNameValueCollection_Set_m2008693955 ();
-extern "C" void Configuration__ctor_m3545852494 ();
-extern "C" void Configuration__ctor_m88421328 ();
-extern "C" void Configuration_FindLocationConfiguration_m4081437406 ();
-extern "C" void Configuration_Init_m2991025886 ();
-extern "C" void Configuration_get_Parent_m335637978 ();
-extern "C" void Configuration_set_Parent_m3106974805 ();
-extern "C" void Configuration_GetParentWithFile_m1651703053 ();
-extern "C" void Configuration_get_ConfigHost_m854336265 ();
-extern "C" void Configuration_get_LocationConfigPath_m609030371 ();
-extern "C" void Configuration_get_ConfigPath_m937107392 ();
-extern "C" void Configuration_get_FilePath_m3184045596 ();
-extern "C" void Configuration_get_HasFile_m1167170352 ();
-extern "C" void Configuration_get_Locations_m2394414303 ();
-extern "C" void Configuration_get_RootSectionGroup_m1643677634 ();
-extern "C" void Configuration_get_SectionGroups_m2782934403 ();
-extern "C" void Configuration_get_Sections_m3724328875 ();
-extern "C" void Configuration_GetSection_m3056810807 ();
-extern "C" void Configuration_GetSectionInstance_m3769455073 ();
-extern "C" void Configuration_GetSectionGroupInstance_m2028928705 ();
-extern "C" void Configuration_SetSectionXml_m2783526347 ();
-extern "C" void Configuration_GetSectionXml_m1792995434 ();
-extern "C" void Configuration_Load_m851220319 ();
-extern "C" void Configuration_ReadConfigFile_m1878607525 ();
-extern "C" void Configuration_ReadData_m342895002 ();
-extern "C" void Configuration_ThrowException_m3079645534 ();
-extern "C" void ConfigurationCollectionAttribute__ctor_m1251693102 ();
-extern "C" void ConfigurationCollectionAttribute_get_AddItemName_m1343590308 ();
-extern "C" void ConfigurationCollectionAttribute_get_ClearItemsName_m2101089535 ();
-extern "C" void ConfigurationCollectionAttribute_get_RemoveItemName_m1223332851 ();
-extern "C" void ConfigurationCollectionAttribute_set_CollectionType_m1820962205 ();
-extern "C" void ConfigurationElement__ctor_m1276017081 ();
-extern "C" void ConfigurationElement_get_Configuration_m2347242418 ();
-extern "C" void ConfigurationElement_set_Configuration_m1639150663 ();
-extern "C" void ConfigurationElement_InitFromProperty_m3625723156 ();
-extern "C" void ConfigurationElement_get_ElementInformation_m3882602470 ();
-extern "C" void ConfigurationElement_get_RawXml_m2664527628 ();
-extern "C" void ConfigurationElement_set_RawXml_m3850583953 ();
-extern "C" void ConfigurationElement_Init_m1329365593 ();
-extern "C" void ConfigurationElement_get_LockAllAttributesExcept_m3610263831 ();
-extern "C" void ConfigurationElement_get_LockAllElementsExcept_m1554073633 ();
-extern "C" void ConfigurationElement_get_LockAttributes_m3450186057 ();
-extern "C" void ConfigurationElement_get_LockElements_m2225570247 ();
-extern "C" void ConfigurationElement_set_LockItem_m3758070483 ();
-extern "C" void ConfigurationElement_SetPropertyValue_m1782021972 ();
-extern "C" void ConfigurationElement_GetKeyProperties_m4219970304 ();
-extern "C" void ConfigurationElement_GetDefaultCollection_m1796439560 ();
-extern "C" void ConfigurationElement_get_Item_m1850092018 ();
-extern "C" void ConfigurationElement_set_Item_m2558768429 ();
-extern "C" void ConfigurationElement_get_Item_m3478882412 ();
-extern "C" void ConfigurationElement_set_Item_m3141894725 ();
-extern "C" void ConfigurationElement_get_Properties_m4044803742 ();
-extern "C" void ConfigurationElement_Equals_m3484522968 ();
-extern "C" void ConfigurationElement_GetHashCode_m2198573252 ();
-extern "C" void ConfigurationElement_HasValues_m1341383433 ();
-extern "C" void ConfigurationElement_HasLocalModifications_m169968917 ();
-extern "C" void ConfigurationElement_DeserializeElement_m2430565615 ();
-extern "C" void ConfigurationElement_OnDeserializeUnrecognizedAttribute_m157901910 ();
-extern "C" void ConfigurationElement_OnDeserializeUnrecognizedElement_m1053820706 ();
-extern "C" void ConfigurationElement_OnRequiredPropertyNotFound_m3323765040 ();
-extern "C" void ConfigurationElement_PreSerialize_m1824129726 ();
-extern "C" void ConfigurationElement_PostDeserialize_m3225465312 ();
-extern "C" void ConfigurationElement_InitializeDefault_m2939047706 ();
-extern "C" void ConfigurationElement_IsModified_m748618350 ();
-extern "C" void ConfigurationElement_SetReadOnly_m1594739059 ();
-extern "C" void ConfigurationElement_IsReadOnly_m2244525315 ();
-extern "C" void ConfigurationElement_Reset_m484744193 ();
-extern "C" void ConfigurationElement_ResetModified_m933170487 ();
-extern "C" void ConfigurationElement_SerializeElement_m4131562944 ();
-extern "C" void ConfigurationElement_SerializeToXmlElement_m3789742405 ();
-extern "C" void ConfigurationElement_Unmerge_m2515561191 ();
-extern "C" void ConfigurationElement_HasValue_m1390685398 ();
-extern "C" void ConfigurationElement_ValidateValue_m1396480566 ();
-extern "C" void ConfigurationElementCollection__ctor_m1722138055 ();
-extern "C" void ConfigurationElementCollection_System_Collections_ICollection_CopyTo_m3947886345 ();
-extern "C" void ConfigurationElementCollection_InitFromProperty_m3084253332 ();
-extern "C" void ConfigurationElementCollection_get_CollectionType_m2878912072 ();
-extern "C" void ConfigurationElementCollection_get_IsBasic_m1624364384 ();
-extern "C" void ConfigurationElementCollection_get_IsAlternate_m1087333324 ();
-extern "C" void ConfigurationElementCollection_get_Count_m1016392721 ();
-extern "C" void ConfigurationElementCollection_get_ElementName_m1163032572 ();
-extern "C" void ConfigurationElementCollection_set_EmitClear_m649573135 ();
-extern "C" void ConfigurationElementCollection_get_IsSynchronized_m3152177730 ();
-extern "C" void ConfigurationElementCollection_get_SyncRoot_m1263605066 ();
-extern "C" void ConfigurationElementCollection_get_ThrowOnDuplicate_m2516679882 ();
-extern "C" void ConfigurationElementCollection_get_AddElementName_m2131549453 ();
-extern "C" void ConfigurationElementCollection_get_ClearElementName_m344564617 ();
-extern "C" void ConfigurationElementCollection_get_RemoveElementName_m670755192 ();
-extern "C" void ConfigurationElementCollection_BaseAdd_m692033632 ();
-extern "C" void ConfigurationElementCollection_BaseAdd_m1594255685 ();
-extern "C" void ConfigurationElementCollection_BaseClear_m1999336003 ();
-extern "C" void ConfigurationElementCollection_BaseGet_m498332263 ();
-extern "C" void ConfigurationElementCollection_BaseGet_m673060682 ();
-extern "C" void ConfigurationElementCollection_BaseIndexOf_m1544895010 ();
-extern "C" void ConfigurationElementCollection_IndexOfKey_m1888078841 ();
-extern "C" void ConfigurationElementCollection_BaseRemove_m1128013164 ();
-extern "C" void ConfigurationElementCollection_BaseRemoveAt_m1239272108 ();
-extern "C" void ConfigurationElementCollection_CompareKeys_m682234560 ();
-extern "C" void ConfigurationElementCollection_CreateNewElement_m3219927641 ();
-extern "C" void ConfigurationElementCollection_CreateNewElementInternal_m226698700 ();
-extern "C" void ConfigurationElementCollection_Equals_m2221773756 ();
-extern "C" void ConfigurationElementCollection_GetHashCode_m770974360 ();
-extern "C" void ConfigurationElementCollection_GetEnumerator_m2214669871 ();
-extern "C" void ConfigurationElementCollection_IsElementName_m2704993900 ();
-extern "C" void ConfigurationElementCollection_IsElementRemovable_m1916442331 ();
-extern "C" void ConfigurationElementCollection_IsModified_m4233298518 ();
-extern "C" void ConfigurationElementCollection_IsReadOnly_m2147280149 ();
-extern "C" void ConfigurationElementCollection_HasValues_m4112686071 ();
-extern "C" void ConfigurationElementCollection_Reset_m3142114271 ();
-extern "C" void ConfigurationElementCollection_ResetModified_m3318214445 ();
-extern "C" void ConfigurationElementCollection_SetReadOnly_m2819095069 ();
-extern "C" void ConfigurationElementCollection_SerializeElement_m3696766444 ();
-extern "C" void ConfigurationElementCollection_OnDeserializeUnrecognizedElement_m1168261278 ();
-extern "C" void ConfigurationElementCollection_Unmerge_m2009439485 ();
-extern "C" void ConfigurationRemoveElement__ctor_m2892373574 ();
-extern "C" void ConfigurationRemoveElement_get_KeyValue_m2322918292 ();
-extern "C" void ConfigurationRemoveElement_get_Properties_m4160822773 ();
-extern "C" void ConfigurationErrorsException__ctor_m3609325505 ();
-extern "C" void ConfigurationErrorsException__ctor_m2348714781 ();
-extern "C" void ConfigurationErrorsException__ctor_m1926925674 ();
-extern "C" void ConfigurationErrorsException__ctor_m3963297863 ();
-extern "C" void ConfigurationErrorsException__ctor_m3089652486 ();
-extern "C" void ConfigurationErrorsException__ctor_m4265896371 ();
-extern "C" void ConfigurationErrorsException__ctor_m3506512730 ();
-extern "C" void ConfigurationErrorsException_get_BareMessage_m403421148 ();
-extern "C" void ConfigurationErrorsException_get_Message_m3733233144 ();
-extern "C" void ConfigurationErrorsException_GetFilename_m2673389627 ();
-extern "C" void ConfigurationErrorsException_GetLineNumber_m1372608032 ();
-extern "C" void ConfigurationErrorsException_GetFilename_m2049567258 ();
-extern "C" void ConfigurationErrorsException_GetLineNumber_m3976484637 ();
-extern "C" void ConfigurationErrorsException_GetObjectData_m770656613 ();
-extern "C" void ConfigurationFileMap__ctor_m3731838539 ();
-extern "C" void ConfigurationFileMap__ctor_m3124444437 ();
-extern "C" void ConfigurationFileMap_get_MachineConfigFilename_m1702653625 ();
-extern "C" void ConfigurationFileMap_set_MachineConfigFilename_m3052034378 ();
-extern "C" void ConfigurationFileMap_Clone_m1273941989 ();
-extern "C" void ConfigurationLocation__ctor_m3125296074 ();
-extern "C" void ConfigurationLocation__cctor_m1384898491 ();
-extern "C" void ConfigurationLocation_get_Path_m2365456525 ();
-extern "C" void ConfigurationLocation_OpenConfiguration_m2905080700 ();
-extern "C" void ConfigurationLocation_SetParentConfiguration_m4197005207 ();
-extern "C" void ConfigurationLocationCollection__ctor_m303069056 ();
-extern "C" void ConfigurationLocationCollection_Add_m3681642539 ();
-extern "C" void ConfigurationLocationCollection_Find_m3684263568 ();
-extern "C" void ConfigurationLockCollection__ctor_m870306509 ();
-extern "C" void ConfigurationLockCollection_System_Collections_ICollection_CopyTo_m3497490008 ();
-extern "C" void ConfigurationLockCollection_CheckName_m2810988355 ();
-extern "C" void ConfigurationLockCollection_Add_m3416925987 ();
-extern "C" void ConfigurationLockCollection_Clear_m2378334261 ();
-extern "C" void ConfigurationLockCollection_GetEnumerator_m3742833280 ();
-extern "C" void ConfigurationLockCollection_SetFromList_m2739237306 ();
-extern "C" void ConfigurationLockCollection_get_Count_m3926033248 ();
-extern "C" void ConfigurationLockCollection_get_IsSynchronized_m1658122353 ();
-extern "C" void ConfigurationLockCollection_get_SyncRoot_m1477706993 ();
-extern "C" void ConfigurationManager__cctor_m145104057 ();
-extern "C" void ConfigurationManager_GetAssemblyInfo_m1959334153 ();
-extern "C" void ConfigurationManager_OpenExeConfigurationInternal_m2337857263 ();
-extern "C" void ConfigurationManager_get_ConfigurationFactory_m113132422 ();
-extern "C" void ConfigurationManager_get_ConfigurationSystem_m1820628092 ();
-extern "C" void ConfigurationManager_GetSection_m1187558274 ();
-extern "C" void ConfigurationProperty__ctor_m2339141717 ();
-extern "C" void ConfigurationProperty__ctor_m2205928547 ();
-extern "C" void ConfigurationProperty__ctor_m1024361505 ();
-extern "C" void ConfigurationProperty__ctor_m2779674618 ();
-extern "C" void ConfigurationProperty__ctor_m664996226 ();
-extern "C" void ConfigurationProperty__cctor_m3667988185 ();
-extern "C" void ConfigurationProperty_get_DefaultValue_m426297024 ();
-extern "C" void ConfigurationProperty_get_IsKey_m2843757270 ();
-extern "C" void ConfigurationProperty_get_IsRequired_m2849112540 ();
-extern "C" void ConfigurationProperty_get_IsDefaultCollection_m4193636108 ();
-extern "C" void ConfigurationProperty_get_Name_m2150541641 ();
-extern "C" void ConfigurationProperty_get_Type_m573764699 ();
-extern "C" void ConfigurationProperty_get_Validator_m1030428852 ();
-extern "C" void ConfigurationProperty_ConvertFromString_m661781545 ();
-extern "C" void ConfigurationProperty_ConvertToString_m137757750 ();
-extern "C" void ConfigurationProperty_get_IsElement_m12977767 ();
-extern "C" void ConfigurationProperty_get_CollectionAttribute_m256228153 ();
-extern "C" void ConfigurationProperty_set_CollectionAttribute_m21883792 ();
-extern "C" void ConfigurationProperty_Validate_m556423690 ();
-extern "C" void ConfigurationPropertyAttribute__ctor_m2756034538 ();
-extern "C" void ConfigurationPropertyAttribute_get_DefaultValue_m315790916 ();
-extern "C" void ConfigurationPropertyAttribute_set_DefaultValue_m645825465 ();
-extern "C" void ConfigurationPropertyAttribute_get_Options_m78342746 ();
-extern "C" void ConfigurationPropertyAttribute_set_Options_m540649869 ();
-extern "C" void ConfigurationPropertyAttribute_get_Name_m3548275941 ();
-extern "C" void ConfigurationPropertyCollection__ctor_m2795982958 ();
-extern "C" void ConfigurationPropertyCollection_System_Collections_ICollection_CopyTo_m3374724930 ();
-extern "C" void ConfigurationPropertyCollection_get_Count_m1518273402 ();
-extern "C" void ConfigurationPropertyCollection_get_IsSynchronized_m2330227857 ();
-extern "C" void ConfigurationPropertyCollection_get_SyncRoot_m2789197201 ();
-extern "C" void ConfigurationPropertyCollection_Add_m3481099429 ();
-extern "C" void ConfigurationPropertyCollection_GetEnumerator_m3414286410 ();
-extern "C" void ConfigurationSection__ctor_m714843276 ();
-extern "C" void ConfigurationSection_get_SectionHandler_m1982719862 ();
-extern "C" void ConfigurationSection_set_SectionHandler_m1410633441 ();
-extern "C" void ConfigurationSection_get_SectionInformation_m4037021195 ();
-extern "C" void ConfigurationSection_get_ConfigContext_m4131621597 ();
-extern "C" void ConfigurationSection_set_ConfigContext_m1616871218 ();
-extern "C" void ConfigurationSection_GetRuntimeObject_m3965484768 ();
-extern "C" void ConfigurationSection_IsModified_m1833174423 ();
-extern "C" void ConfigurationSection_ResetModified_m2300774056 ();
-extern "C" void ConfigurationSection_CreateElement_m1756012205 ();
-extern "C" void ConfigurationSection_DoDeserializeSection_m2782358321 ();
-extern "C" void ConfigurationSection_DeserializeSection_m1139223106 ();
-extern "C" void ConfigurationSection_DeserializeConfigSource_m495463306 ();
-extern "C" void ConfigurationSection_SerializeSection_m2886244226 ();
-extern "C" void ConfigurationSectionCollection__ctor_m452173858 ();
-extern "C" void ConfigurationSectionCollection_get_Keys_m1706717625 ();
-extern "C" void ConfigurationSectionCollection_get_Count_m3164332684 ();
-extern "C" void ConfigurationSectionCollection_get_Item_m3421303889 ();
-extern "C" void ConfigurationSectionCollection_GetEnumerator_m1242675576 ();
-extern "C" void ConfigurationSectionCollection_GetObjectData_m253846356 ();
-extern "C" void U3CGetEnumeratorU3Ec__Iterator0__ctor_m2507040616 ();
-extern "C" void U3CGetEnumeratorU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3533736502 ();
-extern "C" void U3CGetEnumeratorU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m20938814 ();
-extern "C" void U3CGetEnumeratorU3Ec__Iterator0_MoveNext_m3065246498 ();
-extern "C" void U3CGetEnumeratorU3Ec__Iterator0_Dispose_m2640554235 ();
-extern "C" void U3CGetEnumeratorU3Ec__Iterator0_Reset_m3299736337 ();
-extern "C" void ConfigurationSectionGroup__ctor_m2215148105 ();
-extern "C" void ConfigurationSectionGroup_get_Config_m3001742842 ();
-extern "C" void ConfigurationSectionGroup_Initialize_m2622037419 ();
-extern "C" void ConfigurationSectionGroup_get_SectionGroups_m2522870927 ();
-extern "C" void ConfigurationSectionGroup_get_Sections_m3081736119 ();
-extern "C" void ConfigurationSectionGroupCollection__ctor_m2237904677 ();
-extern "C" void ConfigurationSectionGroupCollection_get_Keys_m3664428060 ();
-extern "C" void ConfigurationSectionGroupCollection_get_Count_m447488593 ();
-extern "C" void ConfigurationSectionGroupCollection_get_Item_m4125903849 ();
-extern "C" void ConfigurationSectionGroupCollection_GetEnumerator_m2684317377 ();
-extern "C" void ConfigurationSectionGroupCollection_GetObjectData_m378227929 ();
-extern "C" void ConfigurationValidatorAttribute_get_ValidatorInstance_m35782466 ();
-extern "C" void ConfigurationValidatorBase__ctor_m3250462424 ();
-extern "C" void ConfigurationValidatorBase_CanValidate_m2900122087 ();
-extern "C" void DefaultSection__ctor_m1597606775 ();
-extern "C" void DefaultSection__cctor_m1370258022 ();
-extern "C" void DefaultSection_DeserializeSection_m2332286625 ();
-extern "C" void DefaultSection_IsModified_m1050808524 ();
-extern "C" void DefaultSection_Reset_m516688665 ();
-extern "C" void DefaultSection_ResetModified_m2081880583 ();
-extern "C" void DefaultSection_SerializeSection_m580503059 ();
-extern "C" void DefaultSection_get_Properties_m1402553764 ();
-extern "C" void DefaultValidator__ctor_m233258192 ();
-extern "C" void DefaultValidator_CanValidate_m2475130869 ();
-extern "C" void DefaultValidator_Validate_m4293733324 ();
-extern "C" void ElementInformation__ctor_m815008552 ();
-extern "C" void ElementInformation_get_Properties_m1533763968 ();
-extern "C" void ElementInformation_Reset_m3203551617 ();
-extern "C" void ElementMap__ctor_m2348370310 ();
-extern "C" void ElementMap__cctor_m3070084744 ();
-extern "C" void ElementMap_GetMap_m1137301092 ();
-extern "C" void ElementMap_get_Properties_m169107978 ();
-extern "C" void ExeConfigurationFileMap__ctor_m2848771159 ();
-extern "C" void ExeConfigurationFileMap_get_ExeConfigFilename_m4217231138 ();
-extern "C" void ExeConfigurationFileMap_set_ExeConfigFilename_m2695258183 ();
-extern "C" void ExeConfigurationFileMap_get_LocalUserConfigFilename_m3988942578 ();
-extern "C" void ExeConfigurationFileMap_set_LocalUserConfigFilename_m245771243 ();
-extern "C" void ExeConfigurationFileMap_get_RoamingUserConfigFilename_m3176990010 ();
-extern "C" void ExeConfigurationFileMap_set_RoamingUserConfigFilename_m4034760815 ();
-extern "C" void ExeConfigurationFileMap_Clone_m3686499741 ();
-extern "C" void ExeConfigurationHost__ctor_m2672717525 ();
-extern "C" void ExeConfigurationHost_Init_m1279008829 ();
-extern "C" void ExeConfigurationHost_GetStreamName_m4070417723 ();
-extern "C" void ExeConfigurationHost_InitForConfiguration_m442278400 ();
-extern "C" void IgnoreSection__ctor_m4055714512 ();
-extern "C" void IgnoreSection__cctor_m1005553135 ();
-extern "C" void IgnoreSection_IsModified_m3722026291 ();
-extern "C" void IgnoreSection_DeserializeSection_m2922463074 ();
-extern "C" void IgnoreSection_Reset_m2294022138 ();
-extern "C" void IgnoreSection_ResetModified_m2018290788 ();
-extern "C" void IgnoreSection_SerializeSection_m1724288736 ();
-extern "C" void IgnoreSection_get_Properties_m3548508015 ();
-extern "C" void InternalConfigurationFactory__ctor_m2455511552 ();
-extern "C" void InternalConfigurationFactory_Create_m3329707975 ();
-extern "C" void InternalConfigurationHost__ctor_m1120670670 ();
-extern "C" void InternalConfigurationHost_CreateDeprecatedConfigContext_m3055903953 ();
-extern "C" void InternalConfigurationHost_GetConfigPathFromLocationSubPath_m3102336364 ();
-extern "C" void InternalConfigurationHost_GetConfigType_m2265190311 ();
-extern "C" void InternalConfigurationHost_IsDefinitionAllowed_m2472316359 ();
-extern "C" void InternalConfigurationHost_get_bundled_machine_config_m171293269 ();
-extern "C" void InternalConfigurationHost_OpenStreamForRead_m1823276945 ();
-extern "C" void InternalConfigurationRoot__ctor_m903766256 ();
-extern "C" void InternalConfigurationRoot_Init_m2920331433 ();
-extern "C" void InternalConfigurationSystem__ctor_m1377055107 ();
-extern "C" void InternalConfigurationSystem_Init_m117598888 ();
-extern "C" void InternalConfigurationSystem_InitForConfiguration_m909576572 ();
-extern "C" void InternalConfigurationSystem_get_Host_m3360228097 ();
-extern "C" void PropertyInformation__ctor_m3964645511 ();
-extern "C" void PropertyInformation_get_DefaultValue_m2865970966 ();
-extern "C" void PropertyInformation_get_IsKey_m53514336 ();
-extern "C" void PropertyInformation_get_IsModified_m2197427276 ();
-extern "C" void PropertyInformation_set_IsModified_m2277508543 ();
-extern "C" void PropertyInformation_get_IsRequired_m2394064138 ();
-extern "C" void PropertyInformation_get_Name_m339533533 ();
-extern "C" void PropertyInformation_get_Type_m2447867467 ();
-extern "C" void PropertyInformation_get_Value_m1250658193 ();
-extern "C" void PropertyInformation_set_Value_m1161719494 ();
-extern "C" void PropertyInformation_Reset_m4131859557 ();
-extern "C" void PropertyInformation_get_IsElement_m1135806159 ();
-extern "C" void PropertyInformation_get_ValueOrigin_m1155932344 ();
-extern "C" void PropertyInformation_GetStringValue_m233999863 ();
-extern "C" void PropertyInformation_SetStringValue_m1643234174 ();
-extern "C" void PropertyInformation_get_Property_m530348717 ();
-extern "C" void PropertyInformationCollection__ctor_m3360125324 ();
-extern "C" void PropertyInformationCollection_get_Item_m1640937095 ();
-extern "C" void PropertyInformationCollection_GetEnumerator_m2342156100 ();
-extern "C" void PropertyInformationCollection_Add_m3086044235 ();
-extern "C" void PropertyInformationCollection_GetObjectData_m1752565104 ();
-extern "C" void PropertyInformationEnumerator__ctor_m3513537070 ();
-extern "C" void PropertyInformationEnumerator_get_Current_m3392533325 ();
-extern "C" void PropertyInformationEnumerator_MoveNext_m1887690358 ();
-extern "C" void PropertyInformationEnumerator_Reset_m2871712389 ();
-extern "C" void ProtectedConfiguration_get_Providers_m2677655615 ();
-extern "C" void ProtectedConfiguration_get_Section_m2417461286 ();
-extern "C" void ProtectedConfiguration_GetProvider_m659380218 ();
-extern "C" void ProtectedConfigurationProviderCollection__ctor_m2871984156 ();
-extern "C" void ProtectedConfigurationProviderCollection_get_Item_m2881465527 ();
-extern "C" void ProtectedConfigurationProviderCollection_Add_m1943221191 ();
-extern "C" void ProtectedConfigurationSection__cctor_m710069301 ();
-extern "C" void ProtectedConfigurationSection_get_Providers_m3108810289 ();
-extern "C" void ProtectedConfigurationSection_get_Properties_m3218406561 ();
-extern "C" void ProtectedConfigurationSection_GetAllProviders_m1380267610 ();
-extern "C" void ProtectedConfigurationSection_InstantiateProvider_m1916220169 ();
-extern "C" void ProviderBase_Initialize_m309026731 ();
-extern "C" void ProviderBase_get_Name_m1908650449 ();
-extern "C" void ProviderCollection__ctor_m2739070153 ();
-extern "C" void ProviderCollection_System_Collections_ICollection_CopyTo_m1409815097 ();
-extern "C" void ProviderCollection_Add_m2062313466 ();
-extern "C" void ProviderCollection_GetEnumerator_m2535943389 ();
-extern "C" void ProviderCollection_get_Count_m1651598797 ();
-extern "C" void ProviderCollection_get_IsSynchronized_m2860234084 ();
-extern "C" void ProviderCollection_get_SyncRoot_m2583585530 ();
-extern "C" void ProviderCollection_get_Item_m4205164 ();
-extern "C" void ProviderSettings__ctor_m2418229397 ();
-extern "C" void ProviderSettings__cctor_m1551014246 ();
-extern "C" void ProviderSettings_OnDeserializeUnrecognizedAttribute_m2101799192 ();
-extern "C" void ProviderSettings_IsModified_m4208587056 ();
-extern "C" void ProviderSettings_Reset_m748547671 ();
-extern "C" void ProviderSettings_Unmerge_m3899437761 ();
-extern "C" void ProviderSettings_get_Name_m2720563190 ();
-extern "C" void ProviderSettings_get_Type_m525859805 ();
-extern "C" void ProviderSettings_get_Properties_m1448998824 ();
-extern "C" void ProviderSettings_get_Parameters_m1237896802 ();
-extern "C" void ProviderSettingsCollection__cctor_m2098499738 ();
-extern "C" void ProviderSettingsCollection_CreateNewElement_m278470757 ();
-extern "C" void ProviderSettingsCollection_GetElementKey_m2598146650 ();
-extern "C" void ProviderSettingsCollection_get_Properties_m2175226160 ();
-extern "C" void SectionGroupInfo__ctor_m2214539325 ();
-extern "C" void SectionGroupInfo__cctor_m673398592 ();
-extern "C" void SectionGroupInfo_AddChild_m3251971407 ();
-extern "C" void SectionGroupInfo_Clear_m3188268036 ();
-extern "C" void SectionGroupInfo_HasChild_m1202859971 ();
-extern "C" void SectionGroupInfo_RemoveChild_m2246840815 ();
-extern "C" void SectionGroupInfo_get_Sections_m2472444668 ();
-extern "C" void SectionGroupInfo_get_Groups_m2080419472 ();
-extern "C" void SectionGroupInfo_ReadConfig_m964124140 ();
-extern "C" void SectionGroupInfo_ReadRemoveSection_m3200085140 ();
-extern "C" void SectionGroupInfo_ReadRootData_m1364370771 ();
-extern "C" void SectionGroupInfo_ReadData_m4130533217 ();
-extern "C" void SectionGroupInfo_ReadContent_m2298842435 ();
-extern "C" void SectionGroupInfo_GetConfigInfo_m1968621232 ();
-extern "C" void SectionGroupInfo_Merge_m1107900400 ();
-extern "C" void SectionInfo__ctor_m3237924430 ();
-extern "C" void SectionInfo_CreateInstance_m3857848628 ();
-extern "C" void SectionInfo_ReadConfig_m1508625577 ();
-extern "C" void SectionInfo_ReadData_m2814313648 ();
-extern "C" void SectionInfo_Merge_m2513541987 ();
-extern "C" void SectionInformation__ctor_m118501942 ();
-extern "C" void SectionInformation_get_ConfigFilePath_m966874317 ();
-extern "C" void SectionInformation_set_ConfigFilePath_m2908232936 ();
-extern "C" void SectionInformation_set_AllowDefinition_m391233744 ();
-extern "C" void SectionInformation_set_AllowExeDefinition_m2089738550 ();
-extern "C" void SectionInformation_set_AllowLocation_m1178294342 ();
-extern "C" void SectionInformation_get_ConfigSource_m1613439595 ();
-extern "C" void SectionInformation_set_ConfigSource_m2152533200 ();
-extern "C" void SectionInformation_set_RequirePermission_m1040565520 ();
-extern "C" void SectionInformation_set_RestartOnExternalChanges_m2815572962 ();
-extern "C" void SectionInformation_GetParentSection_m3638988220 ();
-extern "C" void SectionInformation_SetParentSection_m321631079 ();
-extern "C" void SectionInformation_ProtectSection_m230982508 ();
-extern "C" void SectionInformation_SetRawXml_m1162572473 ();
-extern "C" void SectionInformation_SetName_m2381998591 ();
-extern "C" void MonoInternalNoteAttribute__ctor_m2854554221 ();
-extern "C" void MonoTODOAttribute__ctor_m817868876 ();
-extern "C" void MonoTODOAttribute__ctor_m1940477654 ();
 extern "C" void Locale_GetText_m3480617287 ();
 extern "C" void Locale_GetText_m512920887 ();
 extern "C" void KeyBuilder_get_Rng_m587346233 ();
@@ -14921,6 +14965,11 @@ extern "C" void SymmetricTransform_ThrowBadPaddingException_m2553969731 ();
 extern "C" void SymmetricTransform_FinalEncrypt_m952048093 ();
 extern "C" void SymmetricTransform_FinalDecrypt_m1391053911 ();
 extern "C" void SymmetricTransform_TransformFinalBlock_m631349995 ();
+extern "C" void Action__ctor_m2606471964 ();
+extern "C" void Action_Invoke_m3801112262 ();
+extern "C" void Action_BeginInvoke_m2008902573 ();
+extern "C" void Action_EndInvoke_m4281032350 ();
+extern "C" void Check_Source_m3385315029 ();
 extern "C" void Check_SourceAndPredicate_m2063478409 ();
 extern "C" void MonoTODOAttribute__ctor_m1425119999 ();
 extern "C" void ExtensionAttribute__ctor_m1028297080 ();
@@ -15054,8 +15103,13 @@ extern "C" void Application_get_isPlaying_m4091950718 ();
 extern "C" void Application_get_isEditor_m2474583393 ();
 extern "C" void Application_get_platform_m3989224144 ();
 extern "C" void Application_set_runInBackground_m3543179741 ();
+extern "C" void Application_get_dataPath_m371940330 ();
+extern "C" void Application_get_unityVersion_m3302058834 ();
 extern "C" void Application_OpenURL_m3882634228 ();
+extern "C" void Application_set_targetFrameRate_m2941880625 ();
 extern "C" void Application_CallLogCallback_m3408386792 ();
+extern "C" void Application_RequestUserAuthorization_m2712302050 ();
+extern "C" void Application_HasUserAuthorization_m3858687304 ();
 extern "C" void LogCallback__ctor_m898185969 ();
 extern "C" void LogCallback_Invoke_m3921378796 ();
 extern "C" void LogCallback_BeginInvoke_m2485641857 ();
@@ -15146,15 +15200,42 @@ extern "C" void Bounds_op_Inequality_m2315096783 ();
 extern "C" void Bounds_SetMinMax_m1523110422_AdjustorThunk ();
 extern "C" void Bounds_Encapsulate_m3688171368_AdjustorThunk ();
 extern "C" void Bounds_ToString_m1966597703_AdjustorThunk ();
+extern "C" void Camera_get_fieldOfView_m3384007405 ();
+extern "C" void Camera_set_fieldOfView_m3974156396 ();
 extern "C" void Camera_get_nearClipPlane_m3536967407 ();
+extern "C" void Camera_set_nearClipPlane_m3510849382 ();
 extern "C" void Camera_get_farClipPlane_m3137713566 ();
+extern "C" void Camera_set_farClipPlane_m1845065941 ();
+extern "C" void Camera_set_orthographicSize_m2708824189 ();
+extern "C" void Camera_set_orthographic_m2132888580 ();
 extern "C" void Camera_get_depth_m1329692468 ();
+extern "C" void Camera_set_depth_m1570376177 ();
+extern "C" void Camera_get_aspect_m935361871 ();
+extern "C" void Camera_set_aspect_m792328692 ();
 extern "C" void Camera_get_cullingMask_m73686965 ();
+extern "C" void Camera_set_cullingMask_m2396665826 ();
 extern "C" void Camera_get_eventMask_m4241372419 ();
+extern "C" void Camera_set_backgroundColor_m2927893592 ();
+extern "C" void Camera_INTERNAL_set_backgroundColor_m3660646068 ();
+extern "C" void Camera_get_rect_m2873096661 ();
+extern "C" void Camera_set_rect_m1838810502 ();
+extern "C" void Camera_INTERNAL_get_rect_m3971999434 ();
+extern "C" void Camera_INTERNAL_set_rect_m610424166 ();
 extern "C" void Camera_get_pixelRect_m2084185953 ();
+extern "C" void Camera_set_pixelRect_m1366013782 ();
 extern "C" void Camera_INTERNAL_get_pixelRect_m1785951490 ();
+extern "C" void Camera_INTERNAL_set_pixelRect_m3301406310 ();
 extern "C" void Camera_get_targetTexture_m705925974 ();
+extern "C" void Camera_set_targetTexture_m3925036117 ();
+extern "C" void Camera_get_projectionMatrix_m2365994324 ();
+extern "C" void Camera_set_projectionMatrix_m2059836755 ();
+extern "C" void Camera_INTERNAL_get_projectionMatrix_m3593932001 ();
+extern "C" void Camera_INTERNAL_set_projectionMatrix_m179473573 ();
 extern "C" void Camera_get_clearFlags_m1743144302 ();
+extern "C" void Camera_set_clearFlags_m4142614199 ();
+extern "C" void Camera_get_stereoSeparation_m287594473 ();
+extern "C" void Camera_SetStereoProjectionMatrices_m1833429783 ();
+extern "C" void Camera_INTERNAL_CALL_SetStereoProjectionMatrices_m3518928776 ();
 extern "C" void Camera_WorldToScreenPoint_m638747266 ();
 extern "C" void Camera_INTERNAL_CALL_WorldToScreenPoint_m720233894 ();
 extern "C" void Camera_ScreenToViewportPoint_m2666228286 ();
@@ -15164,11 +15245,13 @@ extern "C" void Camera_INTERNAL_CALL_ViewportPointToRay_m786342484 ();
 extern "C" void Camera_ScreenPointToRay_m614889538 ();
 extern "C" void Camera_INTERNAL_CALL_ScreenPointToRay_m2752248646 ();
 extern "C" void Camera_get_main_m475173995 ();
+extern "C" void Camera_get_current_m2639890517 ();
 extern "C" void Camera_get_allCamerasCount_m989474043 ();
 extern "C" void Camera_GetAllCameras_m2922515227 ();
 extern "C" void Camera_FireOnPreCull_m1679634170 ();
 extern "C" void Camera_FireOnPreRender_m24116662 ();
 extern "C" void Camera_FireOnPostRender_m94860165 ();
+extern "C" void Camera_Render_m2021402646 ();
 extern "C" void Camera_RaycastTry_m3412198936 ();
 extern "C" void Camera_INTERNAL_CALL_RaycastTry_m2295752796 ();
 extern "C" void Camera_RaycastTry2D_m755036866 ();
@@ -15241,7 +15324,10 @@ extern "C" void CanvasRenderer_get_absoluteDepth_m4243141 ();
 extern "C" void CanvasRenderer_get_hasMoved_m2428030996 ();
 extern "C" void CharacterController_Move_m3456882757 ();
 extern "C" void CharacterController_INTERNAL_CALL_Move_m2826125634 ();
+extern "C" void CharacterController_get_radius_m2751828411 ();
 extern "C" void CharacterController_get_height_m2830713110 ();
+extern "C" void CharacterController_get_slopeLimit_m1930597355 ();
+extern "C" void Collider_set_enabled_m3489100454 ();
 extern "C" void Collider_get_attachedRigidbody_m3279305420 ();
 extern "C" void Collider_get_bounds_m3534458178 ();
 extern "C" void Collider_INTERNAL_get_bounds_m4035290675 ();
@@ -15280,9 +15366,12 @@ extern "C" void Color_get_white_m3987539815 ();
 extern "C" void Color_get_black_m2650940523 ();
 extern "C" void Color_get_yellow_m3741935494 ();
 extern "C" void Color_get_cyan_m2850282709 ();
+extern "C" void Color_get_gray_m1396712533 ();
 extern "C" void Color_get_grey_m1961362537 ();
 extern "C" void Color_get_clear_m1469108305 ();
 extern "C" void Color_op_Implicit_m1067945802 ();
+extern "C" void Color_get_Item_m368980335_AdjustorThunk ();
+extern "C" void Color_set_Item_m292286054_AdjustorThunk ();
 extern "C" void Color32__ctor_m1932627809_AdjustorThunk ();
 extern "C" void Color32_op_Implicit_m624191464 ();
 extern "C" void Color32_op_Implicit_m889975790 ();
@@ -15375,11 +15464,15 @@ extern "C" void Display_get_renderingWidth_m2127568366 ();
 extern "C" void Display_get_renderingHeight_m3408216949 ();
 extern "C" void Display_get_systemWidth_m957394103 ();
 extern "C" void Display_get_systemHeight_m3377672024 ();
+extern "C" void Display_get_colorBuffer_m3181430321 ();
+extern "C" void Display_get_depthBuffer_m223202149 ();
 extern "C" void Display_RelativeMouseAt_m3983394520 ();
+extern "C" void Display_get_main_m661778883 ();
 extern "C" void Display_RecreateDisplayList_m3412638488 ();
 extern "C" void Display_FireDisplaysUpdated_m3557250167 ();
 extern "C" void Display_GetSystemExtImpl_m2990495607 ();
 extern "C" void Display_GetRenderingExtImpl_m3739199112 ();
+extern "C" void Display_GetRenderingBuffersImpl_m3305526476 ();
 extern "C" void Display_RelativeMouseAtImpl_m1974885337 ();
 extern "C" void Display__cctor_m7440126 ();
 extern "C" void DisplaysUpdatedDelegate__ctor_m2851669167 ();
@@ -15617,6 +15710,8 @@ extern "C" void FontTextureRebuildCallback_BeginInvoke_m381807774 ();
 extern "C" void FontTextureRebuildCallback_EndInvoke_m4275555211 ();
 extern "C" void GameObject__ctor_m962601984 ();
 extern "C" void GameObject__ctor_m498247354 ();
+extern "C" void GameObject__ctor_m1633632305 ();
+extern "C" void GameObject_CreatePrimitive_m973880764 ();
 extern "C" void GameObject_GetComponent_m306258075 ();
 extern "C" void GameObject_GetComponentFastPath_m481070871 ();
 extern "C" void GameObject_GetComponentInChildren_m4263325740 ();
@@ -15642,6 +15737,8 @@ extern "C" void GameObject_AddComponent_m3757565614 ();
 extern "C" void GameObject_Internal_CreateGameObject_m3428198595 ();
 extern "C" void GameObject_Find_m836511350 ();
 extern "C" void GameObject_get_gameObject_m3662236595 ();
+extern "C" void Gizmos_DrawLine_m1315654064 ();
+extern "C" void Gizmos_INTERNAL_CALL_DrawLine_m1667943171 ();
 extern "C" void Gizmos_DrawWireSphere_m3395547818 ();
 extern "C" void Gizmos_INTERNAL_CALL_DrawWireSphere_m2482278875 ();
 extern "C" void Gizmos_DrawSphere_m695677545 ();
@@ -15652,10 +15749,33 @@ extern "C" void Gizmos_DrawCube_m452336961 ();
 extern "C" void Gizmos_INTERNAL_CALL_DrawCube_m1399418594 ();
 extern "C" void Gizmos_set_color_m494992840 ();
 extern "C" void Gizmos_INTERNAL_set_color_m3356916140 ();
+extern "C" void Gizmos_set_matrix_m1590313986 ();
+extern "C" void Gizmos_INTERNAL_set_matrix_m3307761430 ();
+extern "C" void GL_Vertex_m4110027235 ();
+extern "C" void GL_INTERNAL_CALL_Vertex_m2514505792 ();
+extern "C" void GL_BeginInternal_m1538792559 ();
+extern "C" void GL_Begin_m3874173032 ();
+extern "C" void GL_End_m2374230645 ();
+extern "C" void GL_MultMatrix_m767401141 ();
+extern "C" void GL_INTERNAL_CALL_MultMatrix_m1969283986 ();
+extern "C" void GL_PushMatrix_m1979053131 ();
+extern "C" void GL_PopMatrix_m856033754 ();
+extern "C" void GL_set_invertCulling_m153705642 ();
+extern "C" void GL_Clear_m154870981 ();
+extern "C" void GL_Clear_m2110364678 ();
+extern "C" void GL_Internal_Clear_m3348289810 ();
+extern "C" void GL_INTERNAL_CALL_Internal_Clear_m1893090931 ();
+extern "C" void GL_IssuePluginEvent_m2498560141 ();
+extern "C" void GL_IssuePluginEventInternal_m3396520206 ();
 extern "C" void Gradient__ctor_m954570311 ();
 extern "C" void Gradient_Init_m4156899649 ();
 extern "C" void Gradient_Cleanup_m3573871739 ();
 extern "C" void Gradient_Finalize_m2023716701 ();
+extern "C" void Graphics_Internal_GetMaxDrawMeshInstanceCount_m3046083541 ();
+extern "C" void Graphics_Internal_SetRTSimple_m1052203585 ();
+extern "C" void Graphics_SetRenderTargetImpl_m2993156656 ();
+extern "C" void Graphics_SetRenderTarget_m3373863973 ();
+extern "C" void Graphics__cctor_m3711221683 ();
 extern "C" void GUI__cctor_m1321863889 ();
 extern "C" void GUI_get_nextScrollStepTime_m4045060331 ();
 extern "C" void GUI_set_nextScrollStepTime_m2724006954 ();
@@ -15670,6 +15790,7 @@ extern "C" void GUI_Label_m2231582000 ();
 extern "C" void GUI_Label_m98409281 ();
 extern "C" void GUI_Box_m2739364838 ();
 extern "C" void GUI_Box_m4178954864 ();
+extern "C" void GUI_Button_m3054448581 ();
 extern "C" void GUI_Button_m4059760950 ();
 extern "C" void GUI_Button_m2919274209 ();
 extern "C" void GUI_DoRepeatButton_m3482958082 ();
@@ -15696,6 +15817,7 @@ extern "C" void GUI_BeginGroup_m3506508283 ();
 extern "C" void GUI_EndGroup_m1672170830 ();
 extern "C" void GUI_BeginScrollView_m2779271105 ();
 extern "C" void GUI_EndScrollView_m4114936004 ();
+extern "C" void GUI_Window_m2988139263 ();
 extern "C" void GUI_Window_m650843967 ();
 extern "C" void GUI_CallWindowDelegate_m634477008 ();
 extern "C" void GUI_DragWindow_m3819774672 ();
@@ -16111,12 +16233,14 @@ extern "C" void IL2CPPStructAlignmentAttribute__ctor_m2555798229 ();
 extern "C" void Input_GetKeyInt_m4143570188 ();
 extern "C" void Input_GetKeyUpInt_m2486491081 ();
 extern "C" void Input_GetKeyDownInt_m2930607648 ();
+extern "C" void Input_GetKeyDownString_m529184407 ();
 extern "C" void Input_GetAxis_m2098048324 ();
 extern "C" void Input_GetAxisRaw_m4133353720 ();
 extern "C" void Input_GetButton_m38251721 ();
 extern "C" void Input_GetButtonDown_m2792523731 ();
 extern "C" void Input_GetButtonUp_m1680009186 ();
 extern "C" void Input_GetKey_m3849524999 ();
+extern "C" void Input_GetKeyDown_m1749539436 ();
 extern "C" void Input_GetKeyDown_m1771960377 ();
 extern "C" void Input_GetKeyUp_m1008512962 ();
 extern "C" void Input_GetMouseButton_m464100923 ();
@@ -16131,6 +16255,7 @@ extern "C" void Input_GetTouch_m1463942798 ();
 extern "C" void Input_INTERNAL_CALL_GetTouch_m1737132542 ();
 extern "C" void Input_get_touchCount_m2050827666 ();
 extern "C" void Input_get_touchSupported_m3352846145 ();
+extern "C" void Input_get_deviceOrientation_m2415424840 ();
 extern "C" void Input_get_imeCompositionMode_m4250689464 ();
 extern "C" void Input_set_imeCompositionMode_m2881085485 ();
 extern "C" void Input_get_compositionString_m636835668 ();
@@ -16209,15 +16334,19 @@ extern "C" void Logger_Log_m3587255568 ();
 extern "C" void Logger_Log_m4012064130 ();
 extern "C" void Logger_LogFormat_m193464629 ();
 extern "C" void Logger_LogException_m206035446 ();
+extern "C" void Material__ctor_m1897560860 ();
 extern "C" void Material__ctor_m1440882780 ();
 extern "C" void Material_set_color_m577844242 ();
 extern "C" void Material_get_mainTexture_m432794412 ();
+extern "C" void Material_set_mainTexture_m3584203343 ();
 extern "C" void Material_SetColor_m650857509 ();
 extern "C" void Material_SetColor_m1191533068 ();
 extern "C" void Material_INTERNAL_CALL_SetColor_m1364511001 ();
 extern "C" void Material_GetColor_m2326771174 ();
 extern "C" void Material_GetColor_m2968960621 ();
 extern "C" void Material_INTERNAL_CALL_GetColor_m558759949 ();
+extern "C" void Material_SetTexture_m141095205 ();
+extern "C" void Material_SetTexture_m58378708 ();
 extern "C" void Material_GetTexture_m1257877102 ();
 extern "C" void Material_GetTexture_m648312929 ();
 extern "C" void Material_SetFloat_m1926275467 ();
@@ -16225,17 +16354,23 @@ extern "C" void Material_SetFloat_m953675160 ();
 extern "C" void Material_SetInt_m522302436 ();
 extern "C" void Material_HasProperty_m3511389613 ();
 extern "C" void Material_HasProperty_m3175512802 ();
+extern "C" void Material_SetPass_m2448940266 ();
+extern "C" void Material_Internal_CreateWithShader_m4029381963 ();
 extern "C" void Material_Internal_CreateWithMaterial_m2907597451 ();
 extern "C" void Material_EnableKeyword_m3724752646 ();
 extern "C" void Material_DisableKeyword_m1204728089 ();
 extern "C" void Mathf_Sin_m831310046 ();
 extern "C" void Mathf_Cos_m238853451 ();
+extern "C" void Mathf_Tan_m3348734175 ();
 extern "C" void Mathf_Acos_m3800958570 ();
+extern "C" void Mathf_Atan_m3769407270 ();
+extern "C" void Mathf_Atan2_m496071197 ();
 extern "C" void Mathf_Sqrt_m2213915910 ();
 extern "C" void Mathf_Abs_m1942863256 ();
 extern "C" void Mathf_Min_m1648492575 ();
 extern "C" void Mathf_Min_m2906823867 ();
 extern "C" void Mathf_Max_m2564622569 ();
+extern "C" void Mathf_Max_m144166478 ();
 extern "C" void Mathf_Max_m1875893177 ();
 extern "C" void Mathf_Pow_m3865188073 ();
 extern "C" void Mathf_Log_m3878563109 ();
@@ -16260,12 +16395,26 @@ extern "C" void Mathf_Repeat_m943844734 ();
 extern "C" void Mathf_InverseLerp_m55890283 ();
 extern "C" void Mathf_DeltaAngle_m1024687732 ();
 extern "C" void Mathf__cctor_m326403828 ();
+extern "C" void Matrix4x4_Inverse_m146029241 ();
+extern "C" void Matrix4x4_INTERNAL_CALL_Inverse_m4134773479 ();
+extern "C" void Matrix4x4_get_inverse_m2479387736_AdjustorThunk ();
+extern "C" void Matrix4x4_TRS_m1913765359 ();
+extern "C" void Matrix4x4_INTERNAL_CALL_TRS_m2077933669 ();
+extern "C" void Matrix4x4_Ortho_m462958343 ();
+extern "C" void Matrix4x4_INTERNAL_CALL_Ortho_m1536476527 ();
 extern "C" void Matrix4x4_get_Item_m312280350_AdjustorThunk ();
+extern "C" void Matrix4x4_set_Item_m1035113911_AdjustorThunk ();
 extern "C" void Matrix4x4_get_Item_m3317262185_AdjustorThunk ();
+extern "C" void Matrix4x4_set_Item_m870949794_AdjustorThunk ();
 extern "C" void Matrix4x4_GetHashCode_m3649708037_AdjustorThunk ();
 extern "C" void Matrix4x4_Equals_m1321236479_AdjustorThunk ();
+extern "C" void Matrix4x4_op_Multiply_m2352863493 ();
+extern "C" void Matrix4x4_op_Multiply_m2780874321 ();
 extern "C" void Matrix4x4_GetColumn_m1367096730_AdjustorThunk ();
+extern "C" void Matrix4x4_MultiplyPoint_m2903385193_AdjustorThunk ();
 extern "C" void Matrix4x4_MultiplyPoint3x4_m1007952212_AdjustorThunk ();
+extern "C" void Matrix4x4_get_zero_m2893472556 ();
+extern "C" void Matrix4x4_get_identity_m3039560904 ();
 extern "C" void Matrix4x4_ToString_m1982554457_AdjustorThunk ();
 extern "C" void Mesh__ctor_m2975981674 ();
 extern "C" void Mesh_Internal_Create_m1486058998 ();
@@ -16280,19 +16429,29 @@ extern "C" void Mesh_SetArrayForChannelImpl_m271696022 ();
 extern "C" void Mesh_GetAllocArrayFromChannelImpl_m1663415136 ();
 extern "C" void Mesh_HasChannel_m3616583481 ();
 extern "C" void Mesh_ExtractArrayFromList_m1349408169 ();
+extern "C" void Mesh_GetTrianglesImpl_m3976840238 ();
 extern "C" void Mesh_GetIndicesImpl_m2398977086 ();
 extern "C" void Mesh_SetTrianglesImpl_m2743099196 ();
+extern "C" void Mesh_SetTrianglesImpl_m540573335 ();
 extern "C" void Mesh_SetTriangles_m2017297103 ();
 extern "C" void Mesh_SetTriangles_m2506325172 ();
+extern "C" void Mesh_get_bounds_m1752141467 ();
+extern "C" void Mesh_INTERNAL_get_bounds_m1331624142 ();
 extern "C" void Mesh_RecalculateBounds_m3559909024 ();
+extern "C" void Mesh_RecalculateNormals_m1034493793 ();
+extern "C" void Mesh_get_vertexCount_m989566320 ();
 extern "C" void Mesh_get_subMeshCount_m1945011773 ();
 extern "C" void Mesh_GetUVChannel_m364477864 ();
 extern "C" void Mesh_DefaultDimensionForChannel_m153181993 ();
+extern "C" void Mesh_SafeLength_m3028452891 ();
 extern "C" void Mesh_SetSizedArrayForChannel_m299035387 ();
 extern "C" void Mesh_get_vertices_m626989480 ();
+extern "C" void Mesh_set_vertices_m2936804213 ();
 extern "C" void Mesh_get_normals_m1837187359 ();
+extern "C" void Mesh_set_normals_m2674236682 ();
 extern "C" void Mesh_get_tangents_m2910922714 ();
 extern "C" void Mesh_get_uv_m3811151337 ();
+extern "C" void Mesh_set_uv_m1497318906 ();
 extern "C" void Mesh_get_uv2_m3215494975 ();
 extern "C" void Mesh_get_colors32_m4153271224 ();
 extern "C" void Mesh_SetVertices_m3500868388 ();
@@ -16303,7 +16462,14 @@ extern "C" void Mesh_SetUVs_m841280343 ();
 extern "C" void Mesh_CheckCanAccessSubmesh_m1826512193 ();
 extern "C" void Mesh_CheckCanAccessSubmeshTriangles_m3203185587 ();
 extern "C" void Mesh_CheckCanAccessSubmeshIndices_m2098382465 ();
+extern "C" void Mesh_get_triangles_m3988715512 ();
+extern "C" void Mesh_set_triangles_m3244966865 ();
 extern "C" void Mesh_GetIndices_m3085881884 ();
+extern "C" void MeshCollider_set_sharedMesh_m4192566451 ();
+extern "C" void MeshFilter_get_mesh_m977520135 ();
+extern "C" void MeshFilter_set_mesh_m3839924176 ();
+extern "C" void MeshFilter_get_sharedMesh_m1310789932 ();
+extern "C" void MeshFilter_set_sharedMesh_m2225370173 ();
 extern "C" void MonoBehaviour__ctor_m2464341955 ();
 extern "C" void MonoBehaviour_Internal_CancelInvokeAll_m3154116776 ();
 extern "C" void MonoBehaviour_Internal_IsInvokingAll_m3504849565 ();
@@ -16467,7 +16633,13 @@ extern "C" void PlayerPrefs_DeleteKey_m2519743590 ();
 extern "C" void PlayerPrefsException__ctor_m1748847897 ();
 extern "C" void PreferBinarySerialization__ctor_m2043201510 ();
 extern "C" void PropertyAttribute__ctor_m3663555848 ();
+extern "C" void QualitySettings_get_antiAliasing_m1084683812 ();
+extern "C" void QualitySettings_get_activeColorSpace_m580875098 ();
 extern "C" void Quaternion__ctor_m3196903881_AdjustorThunk ();
+extern "C" void Quaternion_AngleAxis_m2806222563 ();
+extern "C" void Quaternion_INTERNAL_CALL_AngleAxis_m3310327005 ();
+extern "C" void Quaternion_ToAngleAxis_m2980929840_AdjustorThunk ();
+extern "C" void Quaternion_LookRotation_m700700634 ();
 extern "C" void Quaternion_LookRotation_m633695927 ();
 extern "C" void Quaternion_INTERNAL_CALL_LookRotation_m3606560944 ();
 extern "C" void Quaternion_Slerp_m1992855400 ();
@@ -16481,10 +16653,13 @@ extern "C" void Quaternion_Inverse_m3931399088 ();
 extern "C" void Quaternion_INTERNAL_CALL_Inverse_m1043108654 ();
 extern "C" void Quaternion_get_eulerAngles_m3302573991_AdjustorThunk ();
 extern "C" void Quaternion_Euler_m2887458175 ();
+extern "C" void Quaternion_Euler_m3586339259 ();
 extern "C" void Quaternion_Internal_ToEulerRad_m2807508879 ();
 extern "C" void Quaternion_INTERNAL_CALL_Internal_ToEulerRad_m1077217777 ();
 extern "C" void Quaternion_Internal_FromEulerRad_m1121344272 ();
 extern "C" void Quaternion_INTERNAL_CALL_Internal_FromEulerRad_m1113788132 ();
+extern "C" void Quaternion_Internal_ToAxisAngleRad_m1386331342 ();
+extern "C" void Quaternion_INTERNAL_CALL_Internal_ToAxisAngleRad_m3577625799 ();
 extern "C" void Quaternion_get_identity_m1561886418 ();
 extern "C" void Quaternion_op_Multiply_m2426727589 ();
 extern "C" void Quaternion_op_Multiply_m1483423721 ();
@@ -16623,22 +16798,58 @@ extern "C" void UpdatedEventHandler__ctor_m1393569768 ();
 extern "C" void UpdatedEventHandler_Invoke_m159598802 ();
 extern "C" void UpdatedEventHandler_BeginInvoke_m4238510153 ();
 extern "C" void UpdatedEventHandler_EndInvoke_m224684362 ();
+extern "C" void RenderBuffer_GetNativeRenderBufferPtr_m954491577_AdjustorThunk ();
+extern "C" void RenderBufferHelper_GetNativeRenderBufferPtr_m3984955661 ();
+extern "C" void RenderBufferHelper_INTERNAL_CALL_GetNativeRenderBufferPtr_m3796353729 ();
+extern "C" void Renderer_get_enabled_m2362836534 ();
 extern "C" void Renderer_set_enabled_m142717579 ();
 extern "C" void Renderer_get_material_m2553789785 ();
 extern "C" void Renderer_set_material_m1053097112 ();
+extern "C" void Renderer_set_sharedMaterial_m391095487 ();
+extern "C" void Renderer_get_materials_m810004692 ();
+extern "C" void Renderer_set_sharedMaterials_m2669445156 ();
 extern "C" void Renderer_get_isVisible_m3612355717 ();
 extern "C" void Renderer_get_sortingLayerID_m2403577271 ();
 extern "C" void Renderer_get_sortingOrder_m1544525007 ();
+extern "C" void RenderSettings_get_skybox_m654921356 ();
+extern "C" void RenderSettings_set_skybox_m2565496707 ();
+extern "C" void RenderTexture__ctor_m2960228168 ();
+extern "C" void RenderTexture_Internal_CreateRenderTexture_m1679754911 ();
+extern "C" void RenderTexture_GetTemporary_m1927959284 ();
+extern "C" void RenderTexture_GetTemporary_m1924862769 ();
+extern "C" void RenderTexture_ReleaseTemporary_m1186631014 ();
 extern "C" void RenderTexture_Internal_GetWidth_m2317917654 ();
+extern "C" void RenderTexture_Internal_SetWidth_m989760279 ();
 extern "C" void RenderTexture_Internal_GetHeight_m2780941261 ();
+extern "C" void RenderTexture_Internal_SetHeight_m2900429544 ();
+extern "C" void RenderTexture_Internal_SetSRGBReadWrite_m286621198 ();
 extern "C" void RenderTexture_get_width_m1471807677 ();
+extern "C" void RenderTexture_set_width_m592588466 ();
 extern "C" void RenderTexture_get_height_m1108175848 ();
+extern "C" void RenderTexture_set_height_m1787187 ();
+extern "C" void RenderTexture_set_depth_m3365909665 ();
+extern "C" void RenderTexture_set_format_m2928390123 ();
+extern "C" void RenderTexture_set_autoGenerateMips_m3051908877 ();
+extern "C" void RenderTexture_set_antiAliasing_m1838970818 ();
+extern "C" void RenderTexture_Create_m1259588374 ();
+extern "C" void RenderTexture_INTERNAL_CALL_Create_m4215814471 ();
+extern "C" void RenderTexture_Release_m1476285593 ();
+extern "C" void RenderTexture_INTERNAL_CALL_Release_m1818573204 ();
+extern "C" void RenderTexture_IsCreated_m375737400 ();
+extern "C" void RenderTexture_INTERNAL_CALL_IsCreated_m2796064041 ();
+extern "C" void RenderTexture_get_colorBuffer_m2259248236 ();
+extern "C" void RenderTexture_get_depthBuffer_m583581910 ();
+extern "C" void RenderTexture_GetColorBuffer_m2909232564 ();
+extern "C" void RenderTexture_GetDepthBuffer_m1144066090 ();
+extern "C" void RenderTexture_set_active_m55464043 ();
 extern "C" void RequireComponent__ctor_m3475141952 ();
 extern "C" void ResourceRequest__ctor_m3340010930 ();
 extern "C" void ResourceRequest_get_asset_m3527928488 ();
 extern "C" void Resources_FindObjectsOfTypeAll_m3365744935 ();
+extern "C" void Resources_Load_m2041782325 ();
 extern "C" void Resources_Load_m243305716 ();
 extern "C" void Resources_GetBuiltinResource_m582410469 ();
+extern "C" void Resources_UnloadUnusedAssets_m2770025609 ();
 extern "C" void Rigidbody_get_velocity_m2022666970 ();
 extern "C" void Rigidbody_set_velocity_m2514070071 ();
 extern "C" void Rigidbody_INTERNAL_get_velocity_m1938461825 ();
@@ -16648,6 +16859,7 @@ extern "C" void Rigidbody_set_angularVelocity_m824394045 ();
 extern "C" void Rigidbody_INTERNAL_get_angularVelocity_m2914925467 ();
 extern "C" void Rigidbody_INTERNAL_set_angularVelocity_m3276405927 ();
 extern "C" void Rigidbody_set_isKinematic_m738793415 ();
+extern "C" void Rigidbody_set_freezeRotation_m2131864169 ();
 extern "C" void Rigidbody_AddForce_m2836187433 ();
 extern "C" void Rigidbody_INTERNAL_CALL_AddForce_m3164777073 ();
 extern "C" void Rigidbody2D_get_velocity_m3310151195 ();
@@ -16661,6 +16873,8 @@ extern "C" void Rigidbody2D_set_isKinematic_m548319077 ();
 extern "C" void Rigidbody2D_AddForce_m3200488178 ();
 extern "C" void Rigidbody2D_INTERNAL_CALL_AddForce_m1958598324 ();
 extern "C" void RPC__ctor_m1432086380 ();
+extern "C" void RuntimeInitializeOnLoadMethodAttribute__ctor_m1066490054 ();
+extern "C" void RuntimeInitializeOnLoadMethodAttribute_set_loadType_m1308196171 ();
 extern "C" void Scene_get_handle_m1555912301_AdjustorThunk ();
 extern "C" void Scene_get_name_m745914591_AdjustorThunk ();
 extern "C" void Scene_get_buildIndex_m3735680091_AdjustorThunk ();
@@ -16683,11 +16897,23 @@ extern "C" void SceneManager_Internal_ActiveSceneChanged_m1162592635 ();
 extern "C" void Screen_get_width_m41137238 ();
 extern "C" void Screen_get_height_m1051800773 ();
 extern "C" void Screen_get_dpi_m3345126327 ();
+extern "C" void Screen_get_autorotateToPortrait_m1443593642 ();
+extern "C" void Screen_set_autorotateToPortrait_m285788005 ();
+extern "C" void Screen_get_autorotateToPortraitUpsideDown_m3456420844 ();
+extern "C" void Screen_set_autorotateToPortraitUpsideDown_m2208155421 ();
+extern "C" void Screen_get_autorotateToLandscapeLeft_m1138037637 ();
+extern "C" void Screen_set_autorotateToLandscapeLeft_m606930980 ();
+extern "C" void Screen_get_autorotateToLandscapeRight_m63828628 ();
+extern "C" void Screen_set_autorotateToLandscapeRight_m703872101 ();
+extern "C" void Screen_get_orientation_m879255848 ();
+extern "C" void Screen_set_orientation_m413080199 ();
+extern "C" void Screen_set_sleepTimeout_m2630230709 ();
 extern "C" void ScriptableObject__ctor_m2671490429 ();
 extern "C" void ScriptableObject_Internal_CreateScriptableObject_m1778903390 ();
 extern "C" void ScriptableObject_CreateInstance_m3921674852 ();
 extern "C" void ScriptableObject_CreateInstance_m3271154163 ();
 extern "C" void ScriptableObject_CreateInstanceFromType_m4271875689 ();
+extern "C" void PreserveAttribute__ctor_m2437378488 ();
 extern "C" void RequiredByNativeCodeAttribute__ctor_m2374853658 ();
 extern "C" void UsedByNativeCodeAttribute__ctor_m2459832290 ();
 extern "C" void SelectionBaseAttribute__ctor_m1487697870 ();
@@ -16704,6 +16930,7 @@ extern "C" void SerializeField__ctor_m994129777 ();
 extern "C" void SerializePrivateVariables__ctor_m806793207 ();
 extern "C" void SetupCoroutine_InvokeMoveNext_m2975616245 ();
 extern "C" void SetupCoroutine_InvokeMember_m1481430263 ();
+extern "C" void Shader_Find_m4179408078 ();
 extern "C" void Shader_PropertyToID_m678579425 ();
 extern "C" void SharedBetweenAnimatorsAttribute__ctor_m1221241062 ();
 extern "C" void SkeletonBone_get_transformModified_m1528786646_AdjustorThunk ();
@@ -17049,15 +17276,42 @@ extern "C" void Texture__ctor_m4198984292 ();
 extern "C" void Texture_Internal_GetWidth_m56137242 ();
 extern "C" void Texture_Internal_GetHeight_m2775530157 ();
 extern "C" void Texture_get_width_m2165436967 ();
+extern "C" void Texture_set_width_m3075240330 ();
 extern "C" void Texture_get_height_m2890247816 ();
+extern "C" void Texture_set_height_m1406712949 ();
+extern "C" void Texture_set_filterMode_m3838996656 ();
+extern "C" void Texture_set_anisoLevel_m4242988344 ();
 extern "C" void Texture_get_wrapMode_m3111235310 ();
+extern "C" void Texture_set_wrapMode_m333956747 ();
 extern "C" void Texture_get_texelSize_m4226268553 ();
 extern "C" void Texture_INTERNAL_get_texelSize_m3180609662 ();
+extern "C" void Texture_GetNativeTexturePtr_m292373493 ();
+extern "C" void Texture_INTERNAL_CALL_GetNativeTexturePtr_m1299338497 ();
 extern "C" void Texture2D__ctor_m3598323350 ();
+extern "C" void Texture2D__ctor_m1873923924 ();
+extern "C" void Texture2D__ctor_m2236018285 ();
 extern "C" void Texture2D_Internal_Create_m3012183307 ();
+extern "C" void Texture2D_CreateExternalTexture_m3402112250 ();
+extern "C" void Texture2D_get_format_m3733300408 ();
 extern "C" void Texture2D_get_whiteTexture_m1979591766 ();
 extern "C" void Texture2D_GetPixelBilinear_m3063031185 ();
 extern "C" void Texture2D_INTERNAL_CALL_GetPixelBilinear_m570286059 ();
+extern "C" void Texture2D_SetPixels_m2799169789 ();
+extern "C" void Texture2D_SetPixels_m1731341200 ();
+extern "C" void Texture2D_SetPixels_m1131483856 ();
+extern "C" void Texture2D_SetAllPixels32_m622827385 ();
+extern "C" void Texture2D_SetPixels32_m2480505405 ();
+extern "C" void Texture2D_SetPixels32_m3248271056 ();
+extern "C" void Texture2D_GetPixels_m643504232 ();
+extern "C" void Texture2D_GetPixels_m3993926511 ();
+extern "C" void Texture2D_GetPixels_m2152513967 ();
+extern "C" void Texture2D_GetPixels32_m3251516747 ();
+extern "C" void Texture2D_GetPixels32_m2977277634 ();
+extern "C" void Texture2D_Apply_m3753817130 ();
+extern "C" void Texture2D_Apply_m3543341930 ();
+extern "C" void Texture2D_Resize_m1578220990 ();
+extern "C" void Texture2D_ReadPixels_m3927717981 ();
+extern "C" void Texture2D_INTERNAL_CALL_ReadPixels_m1476963500 ();
 extern "C" void ThreadAndSerializationSafe__ctor_m84326599 ();
 extern "C" void Time_get_time_m2216684562 ();
 extern "C" void Time_get_timeSinceLevelLoad_m1980066582 ();
@@ -17121,6 +17375,8 @@ extern "C" void Transform_SetParent_m4124909910 ();
 extern "C" void Transform_SetParent_m1963830867 ();
 extern "C" void Transform_get_worldToLocalMatrix_m3299477436 ();
 extern "C" void Transform_INTERNAL_get_worldToLocalMatrix_m3394773201 ();
+extern "C" void Transform_get_localToWorldMatrix_m2868579006 ();
+extern "C" void Transform_INTERNAL_get_localToWorldMatrix_m2347930409 ();
 extern "C" void Transform_Rotate_m2612876682 ();
 extern "C" void Transform_Rotate_m4255273365 ();
 extern "C" void Transform_Rotate_m2449860094 ();
@@ -17137,7 +17393,11 @@ extern "C" void Transform_INTERNAL_CALL_InverseTransformPoint_m69330567 ();
 extern "C" void Transform_get_root_m3891257842 ();
 extern "C" void Transform_get_childCount_m881385315 ();
 extern "C" void Transform_SetAsFirstSibling_m3606528771 ();
+extern "C" void Transform_Find_m3323476454 ();
+extern "C" void Transform_get_lossyScale_m1638545862 ();
+extern "C" void Transform_INTERNAL_get_lossyScale_m3027364225 ();
 extern "C" void Transform_IsChildOf_m10844547 ();
+extern "C" void Transform_FindChild_m2677714886 ();
 extern "C" void Transform_GetEnumerator_m3479720613 ();
 extern "C" void Transform_GetChild_m3838588184 ();
 extern "C" void Enumerator__ctor_m147705785 ();
@@ -17149,6 +17409,7 @@ extern "C" void UnhandledExceptionHandler_RegisterUECatcher_m72343880 ();
 extern "C" void UnhandledExceptionHandler_HandleUnhandledException_m1413629867 ();
 extern "C" void UnhandledExceptionHandler_PrintException_m1321283931 ();
 extern "C" void UnhandledExceptionHandler_NativeUnhandledExceptionHandler_m4002467556 ();
+extern "C" void UnityAPICompatibilityVersionAttribute__ctor_m2146437932 ();
 extern "C" void UnityException__ctor_m3650417185 ();
 extern "C" void UnityException__ctor_m1554762831 ();
 extern "C" void UnityException__ctor_m2835958127 ();
@@ -17162,11 +17423,13 @@ extern "C" void Vector2_ToString_m775491729_AdjustorThunk ();
 extern "C" void Vector2_GetHashCode_m2353429373_AdjustorThunk ();
 extern "C" void Vector2_Equals_m1405920279_AdjustorThunk ();
 extern "C" void Vector2_Dot_m778921987 ();
+extern "C" void Vector2_get_magnitude_m33802565_AdjustorThunk ();
 extern "C" void Vector2_get_sqrMagnitude_m1226294581_AdjustorThunk ();
 extern "C" void Vector2_op_Addition_m1389598521 ();
 extern "C" void Vector2_op_Subtraction_m1984215297 ();
 extern "C" void Vector2_op_UnaryNegation_m2194368113 ();
 extern "C" void Vector2_op_Multiply_m4236139442 ();
+extern "C" void Vector2_op_Multiply_m3393065202 ();
 extern "C" void Vector2_op_Division_m96580069 ();
 extern "C" void Vector2_op_Equality_m4168854394 ();
 extern "C" void Vector2_op_Inequality_m4283136193 ();
@@ -17180,12 +17443,16 @@ extern "C" void Vector3__ctor_m2638739322_AdjustorThunk ();
 extern "C" void Vector3__ctor_m2720820983_AdjustorThunk ();
 extern "C" void Vector3_Slerp_m846771032 ();
 extern "C" void Vector3_INTERNAL_CALL_Slerp_m1119564456 ();
+extern "C" void Vector3_Internal_OrthoNormalize2_m80155026 ();
+extern "C" void Vector3_INTERNAL_CALL_Internal_OrthoNormalize2_m3663555863 ();
+extern "C" void Vector3_OrthoNormalize_m3371971860 ();
 extern "C" void Vector3_RotateTowards_m4046679056 ();
 extern "C" void Vector3_INTERNAL_CALL_RotateTowards_m3109427424 ();
 extern "C" void Vector3_Lerp_m2935648359 ();
 extern "C" void Vector3_MoveTowards_m1358638081 ();
 extern "C" void Vector3_get_Item_m3616014016_AdjustorThunk ();
 extern "C" void Vector3_set_Item_m499708011_AdjustorThunk ();
+extern "C" void Vector3_Cross_m4149044051 ();
 extern "C" void Vector3_GetHashCode_m1754570744_AdjustorThunk ();
 extern "C" void Vector3_Equals_m2692262876_AdjustorThunk ();
 extern "C" void Vector3_Normalize_m2140428981 ();
@@ -17227,6 +17494,7 @@ extern "C" void Vector4_get_zero_m3810945132 ();
 extern "C" void Vector4_op_Subtraction_m2837269249 ();
 extern "C" void Vector4_op_Division_m130892763 ();
 extern "C" void Vector4_op_Equality_m1825453464 ();
+extern "C" void Vector4_op_Implicit_m1902992875 ();
 extern "C" void Vector4_ToString_m2340321043_AdjustorThunk ();
 extern "C" void Vector4_SqrMagnitude_m3109980116 ();
 extern "C" void WaitForEndOfFrame__ctor_m3062480170 ();
@@ -17234,6 +17502,20 @@ extern "C" void WaitForFixedUpdate__ctor_m3781413380 ();
 extern "C" void WaitForSeconds__ctor_m1990515539 ();
 extern "C" void WaitForSecondsRealtime__ctor_m1734539010 ();
 extern "C" void WaitForSecondsRealtime_get_keepWaiting_m741039114 ();
+extern "C" void WebCamDevice_get_name_m1117076425_AdjustorThunk ();
+extern "C" void WebCamTexture__ctor_m1125343005 ();
+extern "C" void WebCamTexture_Internal_CreateWebCamTexture_m1601948981 ();
+extern "C" void WebCamTexture_Play_m1997372813 ();
+extern "C" void WebCamTexture_INTERNAL_CALL_Play_m3743409567 ();
+extern "C" void WebCamTexture_Stop_m4045220381 ();
+extern "C" void WebCamTexture_INTERNAL_CALL_Stop_m3253711615 ();
+extern "C" void WebCamTexture_get_isPlaying_m1392703560 ();
+extern "C" void WebCamTexture_set_deviceName_m2284562713 ();
+extern "C" void WebCamTexture_set_requestedFPS_m608448968 ();
+extern "C" void WebCamTexture_set_requestedWidth_m3863095 ();
+extern "C" void WebCamTexture_set_requestedHeight_m299835388 ();
+extern "C" void WebCamTexture_get_devices_m4137524804 ();
+extern "C" void WebCamTexture_get_didUpdateThisFrame_m4104709683 ();
 extern "C" void WritableAttribute__ctor_m761932763 ();
 extern "C" void YieldInstruction__ctor_m2014522928 ();
 extern "C" void GenericStack__ctor_m1256224477 ();
@@ -19295,6 +19577,2866 @@ extern "C" void VerticalLayoutGroup_CalculateLayoutInputHorizontal_m497637066 ()
 extern "C" void VerticalLayoutGroup_CalculateLayoutInputVertical_m3227111700 ();
 extern "C" void VerticalLayoutGroup_SetLayoutHorizontal_m2935499508 ();
 extern "C" void VerticalLayoutGroup_SetLayoutVertical_m1302409034 ();
+extern "C" void ARController_Awake_m1838475418 ();
+extern "C" void ARController_OnEnable_m4089159589 ();
+extern "C" void ARController_Start_m1416289253 ();
+extern "C" void ARController_Update_m1261096956 ();
+extern "C" void ARController_OnLevelWasLoaded_m217454694 ();
+extern "C" void ARController_OnApplicationPause_m127278491 ();
+extern "C" void ARController_OnDisable_m748878458 ();
+extern "C" void ARController_OnDestroy_m1590741864 ();
+extern "C" void ARController_get_VuforiaBehaviour_m2875904629 ();
+extern "C" void ARController_Register_m1226525385 ();
+extern "C" void ARController_RegisterCamera_m3409757006 ();
+extern "C" void ARController_UnregisterCamera_m318967997 ();
+extern "C" void ARController__ctor_m1209298405 ();
+extern "C" void U3CU3Ec__DisplayClass11_0__ctor_m221941634 ();
+extern "C" void U3CU3Ec__DisplayClass11_0_U3CRegisterU3Eb__0_m3660152912 ();
+extern "C" void U3CU3Ec__DisplayClass11_0_U3CRegisterU3Eb__1_m102017419 ();
+extern "C" void BackgroundPlaneAbstractBehaviour_get_NumDivisions_m1922858648 ();
+extern "C" void BackgroundPlaneAbstractBehaviour_get_BackgroundOffset_m599181539 ();
+extern "C" void BackgroundPlaneAbstractBehaviour_set_BackgroundOffset_m48119280 ();
+extern "C" void BackgroundPlaneAbstractBehaviour_CheckNumDivisions_m3696641221 ();
+extern "C" void BackgroundPlaneAbstractBehaviour_SetStereoDepth_m16312179 ();
+extern "C" void BackgroundPlaneAbstractBehaviour_Start_m142659071 ();
+extern "C" void BackgroundPlaneAbstractBehaviour_OnDestroy_m2138993976 ();
+extern "C" void BackgroundPlaneAbstractBehaviour_OnValidate_m1913460982 ();
+extern "C" void BackgroundPlaneAbstractBehaviour_OnTrackablesUpdated_m2623229581 ();
+extern "C" void BackgroundPlaneAbstractBehaviour_get_DefaultRotationTowardsCamera_m3673566134 ();
+extern "C" void BackgroundPlaneAbstractBehaviour_SetBackgroundPlacedCallback_m1755632302 ();
+extern "C" void BackgroundPlaneAbstractBehaviour_CreateAndSetVideoMesh_m3037061378 ();
+extern "C" void BackgroundPlaneAbstractBehaviour_PositionVideoMesh_m938073738 ();
+extern "C" void BackgroundPlaneAbstractBehaviour_ShouldFitWidth_m3514148159 ();
+extern "C" void BackgroundPlaneAbstractBehaviour_OnBackgroundTextureChanged_m4072941017 ();
+extern "C" void BackgroundPlaneAbstractBehaviour_OnVideoBackgroundConfigChanged_m2941176113 ();
+extern "C" void BackgroundPlaneAbstractBehaviour__ctor_m1193949827 ();
+extern "C" void BackgroundPlaneAbstractBehaviour__cctor_m3625068708 ();
+extern "C" void BaseCameraConfiguration__ctor_m3094252937 ();
+extern "C" void BaseCameraConfiguration_InitCameraDevice_m3505891002 ();
+extern "C" void BaseCameraConfiguration_Init_m298244606 ();
+extern "C" void BaseCameraConfiguration_ResetBackgroundPlane_m2070059094 ();
+extern "C" void BaseCameraConfiguration_get_VideoBackgroundMirrored_m1044842027 ();
+extern "C" void BaseCameraConfiguration_get_VideoBackgroundViewportRect_m2228415960 ();
+extern "C" void BaseCameraConfiguration_SetCameraParameterChanged_m4117501824 ();
+extern "C" void BaseCameraConfiguration_EnableObjectRenderer_m3084190396 ();
+extern "C" void BaseCameraConfiguration_ResolveVideoBackgroundBehaviours_m1968638351 ();
+extern "C" void BaseCameraConfiguration_CameraParameterChanged_m2410154426 ();
+extern "C" void BaseCameraConfiguration_IsVideoBackgroundEnabled_m1349021320 ();
+extern "C" void BaseStereoViewerCameraConfiguration__ctor_m3437146506 ();
+extern "C" void BaseStereoViewerCameraConfiguration_ConfigureVideoBackground_m1335627989 ();
+extern "C" void BaseStereoViewerCameraConfiguration_CheckForSurfaceChanges_m1470795320 ();
+extern "C" void BaseStereoViewerCameraConfiguration_UpdateStereoDepth_m1632133579 ();
+extern "C" void BaseStereoViewerCameraConfiguration_IsStereo_m2497032490 ();
+extern "C" void BaseStereoViewerCameraConfiguration_SetSkewFrustum_m1294368151 ();
+extern "C" void BaseStereoViewerCameraConfiguration_ResolveVideoBackgroundBehaviours_m2899238147 ();
+extern "C" void BaseStereoViewerCameraConfiguration_ComputeViewPortRect_m755714555 ();
+extern "C" void BehaviourComponentFactory_get_Instance_m3607279548 ();
+extern "C" void BehaviourComponentFactory_set_Instance_m3406469245 ();
+extern "C" void BehaviourComponentFactory__ctor_m2037209566 ();
+extern "C" void NullBehaviourComponentFactory_AddMaskOutBehaviour_m3220466358 ();
+extern "C" void NullBehaviourComponentFactory_AddVirtualButtonBehaviour_m2776060812 ();
+extern "C" void NullBehaviourComponentFactory_AddTurnOffBehaviour_m3394477078 ();
+extern "C" void NullBehaviourComponentFactory_AddImageTargetBehaviour_m3396055014 ();
+extern "C" void NullBehaviourComponentFactory_AddMultiTargetBehaviour_m2141392462 ();
+extern "C" void NullBehaviourComponentFactory_AddCylinderTargetBehaviour_m3622008278 ();
+extern "C" void NullBehaviourComponentFactory_AddWordBehaviour_m3090918102 ();
+extern "C" void NullBehaviourComponentFactory_AddTextRecoBehaviour_m922384022 ();
+extern "C" void NullBehaviourComponentFactory_AddObjectTargetBehaviour_m580967574 ();
+extern "C" void NullBehaviourComponentFactory_AddVuMarkBehaviour_m2537231254 ();
+extern "C" void NullBehaviourComponentFactory_CreateVuforiaConfiguration_m1956200995 ();
+extern "C" void NullBehaviourComponentFactory__ctor_m3349585230 ();
+extern "C" void CameraConfigurationUtility_ExtractCameraClippingPlanes_m569612754 ();
+extern "C" void CameraConfigurationUtility_ExtractVerticalCameraFoV_m2831675234 ();
+extern "C" void CameraConfigurationUtility_ExtractHorizontalCameraFoV_m3166710172 ();
+extern "C" void CameraConfigurationUtility_ScalePerspectiveProjectionMatrix_m3901594560 ();
+extern "C" void CameraConfigurationUtility_CalculateHorizontalFoVFromViewPortAspect_m1570910890 ();
+extern "C" void CameraConfigurationUtility_CalculateVerticalFoVFromViewPortAspect_m908386196 ();
+extern "C" void CameraConfigurationUtility_SetFovForCustomProjection_m3414450521 ();
+extern "C" void CameraConfigurationUtility_HomogenizedVec3_m3137916003 ();
+extern "C" void CameraConfigurationUtility__cctor_m1510687646 ();
+extern "C" void CameraDevice_get_Instance_m197511331 ();
+extern "C" void CameraDevice__ctor_m1247925759 ();
+extern "C" void CameraDevice__cctor_m4203430146 ();
+extern "C" void CameraDeviceImpl_get_WebCam_m2368945734 ();
+extern "C" void CameraDeviceImpl_set_WebCam_m4069630425 ();
+extern "C" void CameraDeviceImpl_get_CameraReady_m4180092652 ();
+extern "C" void CameraDeviceImpl_Init_m1642247777 ();
+extern "C" void CameraDeviceImpl_Deinit_m3523334444 ();
+extern "C" void CameraDeviceImpl_Start_m2745191011 ();
+extern "C" void CameraDeviceImpl_Stop_m2928202319 ();
+extern "C" void CameraDeviceImpl_IsActive_m304627893 ();
+extern "C" void CameraDeviceImpl_GetVideoMode_m3945058294 ();
+extern "C" void CameraDeviceImpl_GetVideoMode_m78221528 ();
+extern "C" void CameraDeviceImpl_SelectVideoMode_m741422015 ();
+extern "C" void CameraDeviceImpl_GetSelectedVideoMode_m1029196468 ();
+extern "C" void CameraDeviceImpl_SetFlashTorchMode_m2829915691 ();
+extern "C" void CameraDeviceImpl_SetFocusMode_m3577916841 ();
+extern "C" void CameraDeviceImpl_SetFrameFormat_m2991608962 ();
+extern "C" void CameraDeviceImpl_GetCameraImage_m1023970763 ();
+extern "C" void CameraDeviceImpl_GetCameraDirection_m2070360910 ();
+extern "C" void CameraDeviceImpl_GetSelectedCameraDirection_m3866201548 ();
+extern "C" void CameraDeviceImpl_GetCameraFieldOfViewRads_m3897768225 ();
+extern "C" void CameraDeviceImpl_GetCameraFields_m3126017110 ();
+extern "C" void CameraDeviceImpl_SetField_m1544277991 ();
+extern "C" void CameraDeviceImpl_SetField_m3202339311 ();
+extern "C" void CameraDeviceImpl_SetField_m2393123802 ();
+extern "C" void CameraDeviceImpl_SetField_m2545485720 ();
+extern "C" void CameraDeviceImpl_SetField_m1823643171 ();
+extern "C" void CameraDeviceImpl_GetField_m1612583753 ();
+extern "C" void CameraDeviceImpl_GetField_m1241974801 ();
+extern "C" void CameraDeviceImpl_GetField_m2396688318 ();
+extern "C" void CameraDeviceImpl_GetField_m1895402300 ();
+extern "C" void CameraDeviceImpl_GetField_m4244435533 ();
+extern "C" void CameraDeviceImpl_GetAllImages_m3901853571 ();
+extern "C" void CameraDeviceImpl_IsDirty_m1477532715 ();
+extern "C" void CameraDeviceImpl_ResetDirtyFlag_m4104124686 ();
+extern "C" void CameraDeviceImpl__ctor_m3359037219 ();
+extern "C" void CameraDeviceImpl_ForceFrameFormat_m189252245 ();
+extern "C" void CameraDeviceImpl_InitCameraDevice_m894861495 ();
+extern "C" void CameraDeviceImpl_DeinitCameraDevice_m2896002515 ();
+extern "C" void CameraDeviceImpl_StartCameraDevice_m1679253860 ();
+extern "C" void CameraDeviceImpl_StopCameraDevice_m4211349264 ();
+extern "C" void CameraDeviceImpl__cctor_m2888628436 ();
+extern "C" void CloudRecoAbstractBehaviour_get_CloudRecoEnabled_m2412243295 ();
+extern "C" void CloudRecoAbstractBehaviour_set_CloudRecoEnabled_m1352923538 ();
+extern "C" void CloudRecoAbstractBehaviour_get_CloudRecoInitialized_m1292679304 ();
+extern "C" void CloudRecoAbstractBehaviour_Initialize_m2690637477 ();
+extern "C" void CloudRecoAbstractBehaviour_Deinitialize_m1814882000 ();
+extern "C" void CloudRecoAbstractBehaviour_CheckInitialization_m2990834499 ();
+extern "C" void CloudRecoAbstractBehaviour_StartCloudReco_m1148484471 ();
+extern "C" void CloudRecoAbstractBehaviour_StopCloudReco_m599277347 ();
+extern "C" void CloudRecoAbstractBehaviour_RegisterEventHandler_m1061808793 ();
+extern "C" void CloudRecoAbstractBehaviour_UnregisterEventHandler_m776673674 ();
+extern "C" void CloudRecoAbstractBehaviour_OnEnable_m980927645 ();
+extern "C" void CloudRecoAbstractBehaviour_OnDisable_m1357393090 ();
+extern "C" void CloudRecoAbstractBehaviour_Start_m3565773725 ();
+extern "C" void CloudRecoAbstractBehaviour_Update_m941771004 ();
+extern "C" void CloudRecoAbstractBehaviour_OnDestroy_m3264004452 ();
+extern "C" void CloudRecoAbstractBehaviour_OnValidate_m2527262506 ();
+extern "C" void CloudRecoAbstractBehaviour_OnVuforiaStarted_m3484208845 ();
+extern "C" void CloudRecoAbstractBehaviour__ctor_m3604390285 ();
+extern "C" void CloudRecoImageTargetImpl__ctor_m3921570766 ();
+extern "C" void CloudRecoImageTargetImpl_get_ImageTargetType_m392286440 ();
+extern "C" void CloudRecoImageTargetImpl_GetSize_m3190175895 ();
+extern "C" void CloudRecoImageTargetImpl_GetLargestSizeComponent_m2315964978 ();
+extern "C" void CloudRecoImageTargetImpl_SetSize_m3248189010 ();
+extern "C" void CloudRecoImageTargetImpl_CreateVirtualButton_m403491976 ();
+extern "C" void CloudRecoImageTargetImpl_GetVirtualButtonByName_m748910883 ();
+extern "C" void CloudRecoImageTargetImpl_GetVirtualButtons_m4045798261 ();
+extern "C" void CloudRecoImageTargetImpl_DestroyVirtualButton_m2406708878 ();
+extern "C" void CloudRecoImageTargetImpl_StartExtendedTracking_m4026259656 ();
+extern "C" void CloudRecoImageTargetImpl_StopExtendedTracking_m3289519250 ();
+extern "C" void CustomViewerParameters__ctor_m809587384 ();
+extern "C" void CustomViewerParameters_Finalize_m1145899515 ();
+extern "C" void CustomViewerParameters_SetButtonType_m3873926571 ();
+extern "C" void CustomViewerParameters_SetScreenToLensDistance_m3284214742 ();
+extern "C" void CustomViewerParameters_SetInterLensDistance_m2641452009 ();
+extern "C" void CustomViewerParameters_SetTrayAlignment_m506724771 ();
+extern "C" void CustomViewerParameters_SetLensCentreToTrayDistance_m3667288231 ();
+extern "C" void CustomViewerParameters_ClearDistortionCoefficients_m1791454617 ();
+extern "C" void CustomViewerParameters_AddDistortionCoefficient_m569217303 ();
+extern "C" void CustomViewerParameters_SetFieldOfView_m1152285759 ();
+extern "C" void CustomViewerParameters_SetContainsMagnet_m2479681583 ();
+extern "C" void CylinderTargetAbstractBehaviour_get_CylinderTarget_m889426098 ();
+extern "C" void CylinderTargetAbstractBehaviour_get_SideLength_m999963300 ();
+extern "C" void CylinderTargetAbstractBehaviour_get_TopDiameter_m3611487623 ();
+extern "C" void CylinderTargetAbstractBehaviour_get_BottomDiameter_m3823535359 ();
+extern "C" void CylinderTargetAbstractBehaviour_SetSideLength_m2003326118 ();
+extern "C" void CylinderTargetAbstractBehaviour_SetTopDiameter_m955743771 ();
+extern "C" void CylinderTargetAbstractBehaviour_SetBottomDiameter_m156860143 ();
+extern "C" void CylinderTargetAbstractBehaviour_OnFrameIndexUpdate_m1259366318 ();
+extern "C" void CylinderTargetAbstractBehaviour_CorrectScaleImpl_m2243067026 ();
+extern "C" void CylinderTargetAbstractBehaviour_InternalUnregisterTrackable_m979126964 ();
+extern "C" void CylinderTargetAbstractBehaviour_CalculateDefaultOccluderBounds_m1437490191 ();
+extern "C" void CylinderTargetAbstractBehaviour_ProtectedSetAsSmartTerrainInitializationTarget_m1548690706 ();
+extern "C" void CylinderTargetAbstractBehaviour_InitializeTarget_m3813686769 ();
+extern "C" void CylinderTargetAbstractBehaviour_GetScale_m3431207024 ();
+extern "C" void CylinderTargetAbstractBehaviour_SetScale_m3803922251 ();
+extern "C" void CylinderTargetAbstractBehaviour_ApplyScale_m2021663953 ();
+extern "C" void CylinderTargetAbstractBehaviour_OnValidate_m3144050943 ();
+extern "C" void CylinderTargetAbstractBehaviour__ctor_m3025238902 ();
+extern "C" void CylinderTargetImpl__ctor_m2633572314 ();
+extern "C" void CylinderTargetImpl_SetSize_m2733226247 ();
+extern "C" void CylinderTargetImpl_GetSideLength_m2313618666 ();
+extern "C" void CylinderTargetImpl_GetTopDiameter_m1063515765 ();
+extern "C" void CylinderTargetImpl_GetBottomDiameter_m4039124025 ();
+extern "C" void CylinderTargetImpl_SetSideLength_m2153397273 ();
+extern "C" void CylinderTargetImpl_SetTopDiameter_m3832282024 ();
+extern "C" void CylinderTargetImpl_SetBottomDiameter_m3353701908 ();
+extern "C" void CylinderTargetImpl_ScaleCylinder_m2503463972 ();
+extern "C" void DatabaseLoadARController__ctor_m3506358870 ();
+extern "C" void DatabaseLoadARController_get_Instance_m416959855 ();
+extern "C" void DatabaseLoadARController_RegisterARController_m931671686 ();
+extern "C" void DatabaseLoadARController_LoadDatasets_m3092836309 ();
+extern "C" void DatabaseLoadARController_AddExternalDatasetSearchDir_m2895856311 ();
+extern "C" void DatabaseLoadARController_Awake_m1618726915 ();
+extern "C" void DatabaseLoadARController_Start_m1817666386 ();
+extern "C" void DatabaseLoadARController_OnDestroy_m961284113 ();
+extern "C" void DatabaseLoadARController__cctor_m3807175333 ();
+extern "C" void DataSet_Exists_m1128704002 ();
+extern "C" void DataSet_Exists_m745630089 ();
+extern "C" void DataSet__ctor_m3585007162 ();
+extern "C" void DataSetImpl_get_DataSetPtr_m2088565894 ();
+extern "C" void DataSetImpl_get_Path_m3453191417 ();
+extern "C" void DataSetImpl_get_FileStorageType_m3722668690 ();
+extern "C" void DataSetImpl__ctor_m3268081742 ();
+extern "C" void DataSetImpl_Load_m2213875884 ();
+extern "C" void DataSetImpl_Load_m2480845763 ();
+extern "C" void DataSetImpl_GetTrackables_m1059672671 ();
+extern "C" void DataSetImpl_CreateTrackable_m3721487460 ();
+extern "C" void DataSetImpl_CreateTrackable_m500192224 ();
+extern "C" void DataSetImpl_Destroy_m1521540108 ();
+extern "C" void DataSetImpl_HasReachedTrackableLimit_m1850194642 ();
+extern "C" void DataSetImpl_Contains_m486110610 ();
+extern "C" void DataSetImpl_DestroyAllTrackables_m2581107742 ();
+extern "C" void DataSetImpl_ExistsImpl_m2013534985 ();
+extern "C" void DataSetImpl_CreateImageTargets_m1029277413 ();
+extern "C" void DataSetImpl_CreateMultiTargets_m3311304843 ();
+extern "C" void DataSetImpl_CreateCylinderTargets_m801572728 ();
+extern "C" void DataSetImpl_CreateVuMarkTemplates_m4280412609 ();
+extern "C" void DataSetImpl_CreateObjectTargets_m4247990235 ();
+extern "C" void DataSetTrackableBehaviour_OnDrawGizmos_m3549410262 ();
+extern "C" void DataSetTrackableBehaviour_OnValidate_m4218482479 ();
+extern "C" void DataSetTrackableBehaviour_OnTrackerUpdate_m4101108717 ();
+extern "C" void DataSetTrackableBehaviour_SetAsSmartTerrainInitializationTarget_m1076274819 ();
+extern "C" void DataSetTrackableBehaviour_InitializeTarget_m1796742157 ();
+extern "C" void DataSetTrackableBehaviour_SetDefaultOccluderBounds_m2637168301 ();
+extern "C" void DataSetTrackableBehaviour_get_DataSetPath_m2206046803 ();
+extern "C" void DataSetTrackableBehaviour_get_DataSetName_m3341980537 ();
+extern "C" void DataSetTrackableBehaviour_GetDataSetName_m3318192172 ();
+extern "C" void DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_get_ExtendedTracking_m1029100091 ();
+extern "C" void DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_set_ExtendedTracking_m172963200 ();
+extern "C" void DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_get_InitializeSmartTerrain_m2141021537 ();
+extern "C" void DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_set_InitializeSmartTerrain_m2525867288 ();
+extern "C" void DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_get_ReconstructionToInitialize_m2016534471 ();
+extern "C" void DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_set_ReconstructionToInitialize_m3694045158 ();
+extern "C" void DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_get_SmartTerrainOccluderBoundsMin_m3425900541 ();
+extern "C" void DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_set_SmartTerrainOccluderBoundsMin_m2929626406 ();
+extern "C" void DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_get_SmartTerrainOccluderBoundsMax_m542558007 ();
+extern "C" void DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_set_SmartTerrainOccluderBoundsMax_m220858924 ();
+extern "C" void DataSetTrackableBehaviour__ctor_m3284839088 ();
+extern "C" void DedicatedEyewearCameraConfiguration__ctor_m1667563612 ();
+extern "C" void DedicatedEyewearCameraConfiguration_Init_m916427222 ();
+extern "C" void DedicatedEyewearCameraConfiguration_ConfigureVideoBackground_m2365872095 ();
+extern "C" void DedicatedEyewearCameraConfiguration_CheckForSurfaceChanges_m2087224994 ();
+extern "C" void DedicatedEyewearCameraConfiguration_UpdateStereoDepth_m390416257 ();
+extern "C" void DedicatedEyewearCameraConfiguration_IsStereo_m3733768260 ();
+extern "C" void DedicatedEyewearCameraConfiguration_ApplyCorrectedProjectionMatrix_m2649971740 ();
+extern "C" void DedicatedEyewearCameraConfiguration_ResolveVideoBackgroundBehaviours_m3449389477 ();
+extern "C" void DedicatedEyewearCameraConfiguration_CameraParameterChanged_m3422302974 ();
+extern "C" void DedicatedEyewearCameraConfiguration_UpdateProjection_m3771262396 ();
+extern "C" void DedicatedEyewearCameraConfiguration_SetProjectionAndOffset_m190191563 ();
+extern "C" void DedicatedEyewearCameraConfiguration_ApplyMatrix_m2808423005 ();
+extern "C" void DedicatedEyewearCameraConfiguration_SetSkewFrustum_m3518157437 ();
+extern "C" void DedicatedEyewearDevice_IsSeeThru_m1450487535 ();
+extern "C" void DedicatedEyewearDevice_IsDualDisplay_m3917877013 ();
+extern "C" void DedicatedEyewearDevice_SetDisplayExtended_m2603966001 ();
+extern "C" void DedicatedEyewearDevice_IsDisplayExtended_m2119834474 ();
+extern "C" void DedicatedEyewearDevice_IsDisplayExtendedGLOnly_m2953300593 ();
+extern "C" void DedicatedEyewearDevice_GetScreenOrientation_m3331621187 ();
+extern "C" void DedicatedEyewearDevice_SetPredictiveTracking_m1968211368 ();
+extern "C" void DedicatedEyewearDevice_IsPredictiveTrackingEnabled_m2733753320 ();
+extern "C" void DedicatedEyewearDevice_GetCalibrationProfileManager_m3569960842 ();
+extern "C" void DedicatedEyewearDevice_GetUserCalibrator_m2692608240 ();
+extern "C" void DedicatedEyewearDevice__ctor_m240987917 ();
+extern "C" void DelegateHelper_InvokeWithExceptionHandling_m1427743576 ();
+extern "C" void DelegateHelper_InvokeDelegate_m790092300 ();
+extern "C" void Device_get_Instance_m1237482335 ();
+extern "C" void Device_GetMode_m2892028838 ();
+extern "C" void Device_IsViewerActive_m2356223832 ();
+extern "C" void Device_GetViewerList_m645073826 ();
+extern "C" void Device_SelectViewer_m3327922579 ();
+extern "C" void Device_GetSelectedViewer_m3761765071 ();
+extern "C" void Device_CreateCustomViewerParameters_m1149928607 ();
+extern "C" void Device_SetPlayModeEyewearDevice_m1187330507 ();
+extern "C" void Device_UnsetDevice_m3159407959 ();
+extern "C" void Device_DeleteRenderingPrimitives_m4037723359 ();
+extern "C" void Device_SetViewerActive_m1008036893 ();
+extern "C" void Device_SetMode_m1521156141 ();
+extern "C" void Device_GetDistortionMesh_m2538401350 ();
+extern "C" void Device_GetTextureSize_m1525311301 ();
+extern "C" void Device_GetProjectionMatrix_m2206724463 ();
+extern "C" void Device_GetDistortionTextureViewport_m1917920699 ();
+extern "C" void Device_GetViewport_m1670722187 ();
+extern "C" void Device_GetNormalizedViewport_m3877469804 ();
+extern "C" void Device_GetEyeDisplayAdjustmentMatrix_m3054861827 ();
+extern "C" void Device_GetEffectiveFovRads_m1782659422 ();
+extern "C" void Device_GetViewportCentreToEyeAxis_m1945166372 ();
+extern "C" void Device__ctor_m2337754346 ();
+extern "C" void Device__cctor_m1006421149 ();
+extern "C" void DeviceTracker__ctor_m3937939368 ();
+extern "C" void DeviceTrackerARController__ctor_m2818749925 ();
+extern "C" void DeviceTrackerARController_get_Instance_m1580284183 ();
+extern "C" void DeviceTrackerARController_RegisterARController_m2854473515 ();
+extern "C" void DeviceTrackerARController_get_AutoInitTracker_m2846266341 ();
+extern "C" void DeviceTrackerARController_get_AutoStartTracker_m1257408439 ();
+extern "C" void DeviceTrackerARController_get_ModelCorrectionMode_m3252797747 ();
+extern "C" void DeviceTrackerARController_get_ModelTransformEnabled_m4028189422 ();
+extern "C" void DeviceTrackerARController_get_ModelTransform_m3435521337 ();
+extern "C" void DeviceTrackerARController_Awake_m2580549902 ();
+extern "C" void DeviceTrackerARController_OnEnable_m540620973 ();
+extern "C" void DeviceTrackerARController_OnDisable_m1357064086 ();
+extern "C" void DeviceTrackerARController_OnDestroy_m3636113416 ();
+extern "C" void DeviceTrackerARController_Update_m1438584336 ();
+extern "C" void DeviceTrackerARController_RegisterTrackerStartedCallback_m2411507821 ();
+extern "C" void DeviceTrackerARController_UnregisterTrackerStartedCallback_m3223277948 ();
+extern "C" void DeviceTrackerARController_RegisterBeforeDevicePoseUpdateCallback_m159769737 ();
+extern "C" void DeviceTrackerARController_UnregisterBeforeDevicePoseUpdateCallback_m404633316 ();
+extern "C" void DeviceTrackerARController_RegisterDevicePoseUpdatedCallback_m1308315758 ();
+extern "C" void DeviceTrackerARController_UnregisterDevicePoseUpdatedCallback_m3303356539 ();
+extern "C" void DeviceTrackerARController_StartDeviceTracker_m4250283669 ();
+extern "C" void DeviceTrackerARController_StopDeviceTracker_m1461789157 ();
+extern "C" void DeviceTrackerARController_InitDeviceTracker_m670940815 ();
+extern "C" void DeviceTrackerARController_ApplySettings_m434773872 ();
+extern "C" void DeviceTrackerARController_OnVuforiaInitialized_m1760936328 ();
+extern "C" void DeviceTrackerARController_OnVuforiaStarted_m126850285 ();
+extern "C" void DeviceTrackerARController_OnPause_m3492338041 ();
+extern "C" void DeviceTrackerARController__cctor_m3375416164 ();
+extern "C" void DeviceTrackingManager_RecenterPose_m2145251733 ();
+extern "C" void DeviceTrackingManager_UpdateCamera_m1713979634 ();
+extern "C" void DeviceTrackingManager_RegisterBeforeDevicePoseUpdateCallback_m2175731956 ();
+extern "C" void DeviceTrackingManager_UnregisterBeforeDevicePoseUpdateCallback_m3164930505 ();
+extern "C" void DeviceTrackingManager_RegisterDevicePoseUpdatedCallback_m3529359619 ();
+extern "C" void DeviceTrackingManager_UnregisterDevicePoseUpdatedCallback_m352450326 ();
+extern "C" void DeviceTrackingManager_PositionCamera_m267507202 ();
+extern "C" void DeviceTrackingManager__ctor_m2539317300 ();
+extern "C" void DigitalEyewearARController_get_CameraOffset_m2132838736 ();
+extern "C" void DigitalEyewearARController_set_CameraOffset_m200713839 ();
+extern "C" void DigitalEyewearARController_get_CentralAnchorPoint_m1690577486 ();
+extern "C" void DigitalEyewearARController_get_ParentAnchorPoint_m428242051 ();
+extern "C" void DigitalEyewearARController_get_IsStereoRendering_m3025547144 ();
+extern "C" void DigitalEyewearARController_get_PrimaryCamera_m334515774 ();
+extern "C" void DigitalEyewearARController_set_PrimaryCamera_m3357350685 ();
+extern "C" void DigitalEyewearARController_get_SecondaryCamera_m1083705270 ();
+extern "C" void DigitalEyewearARController_set_SecondaryCamera_m954119115 ();
+extern "C" void DigitalEyewearARController_get_DistortionRenderingLayer_m374435780 ();
+extern "C" void DigitalEyewearARController_set_DistortionRenderingLayer_m1642178385 ();
+extern "C" void DigitalEyewearARController_get_DistortionRendering_m1168072888 ();
+extern "C" void DigitalEyewearARController__ctor_m2602110059 ();
+extern "C" void DigitalEyewearARController_get_Instance_m277595763 ();
+extern "C" void DigitalEyewearARController_RegisterARController_m2428125041 ();
+extern "C" void DigitalEyewearARController_Awake_m1974732040 ();
+extern "C" void DigitalEyewearARController_Start_m1451367815 ();
+extern "C" void DigitalEyewearARController_Update_m302955946 ();
+extern "C" void DigitalEyewearARController_OnDestroy_m4160927174 ();
+extern "C" void DigitalEyewearARController_OnVideoBackgroundConfigChanged_m3171291797 ();
+extern "C" void DigitalEyewearARController_SetCentralAnchorPoint_m1442487430 ();
+extern "C" void DigitalEyewearARController_SetParentAnchorPoint_m769086455 ();
+extern "C" void DigitalEyewearARController_SetCameraOffset_m655483940 ();
+extern "C" void DigitalEyewearARController_SetViewerActive_m2293080751 ();
+extern "C" void DigitalEyewearARController_SetViewerActive_m2271981682 ();
+extern "C" void DigitalEyewearARController_SetMode_m2663127806 ();
+extern "C" void DigitalEyewearARController_SetDistortionRendering_m1211714402 ();
+extern "C" void DigitalEyewearARController_GetEyewearType_m1221871708 ();
+extern "C" void DigitalEyewearARController_SetEyewearType_m3963854201 ();
+extern "C" void DigitalEyewearARController_GetStereoCameraConfig_m3646771353 ();
+extern "C" void DigitalEyewearARController_SetStereoCameraConfiguration_m101416990 ();
+extern "C" void DigitalEyewearARController_GetSeeThroughConfiguration_m2281897004 ();
+extern "C" void DigitalEyewearARController_SetSeeThroughConfiguration_m206989625 ();
+extern "C" void DigitalEyewearARController_EnableAutomaticFocusPointSelection_m1262891588 ();
+extern "C" void DigitalEyewearARController_EnableWorldAnchorUsage_m1759987399 ();
+extern "C" void DigitalEyewearARController_SetFocusPoint_m3666654193 ();
+extern "C" void DigitalEyewearARController_OnVuforiaInitialized_m703041446 ();
+extern "C" void DigitalEyewearARController_OnVuforiaStarted_m3836766119 ();
+extern "C" void DigitalEyewearARController_SetViewerActive_m1121276548 ();
+extern "C" void DigitalEyewearARController_EnableDistortionRendering_m2864563855 ();
+extern "C" void DigitalEyewearARController_DisableDistortionRendering_m477217590 ();
+extern "C" void DigitalEyewearARController_CorrectCameraConfiguration_m3176351466 ();
+extern "C" void DigitalEyewearARController_ConfigureView_m3593949134 ();
+extern "C" void DigitalEyewearARController_get_CameraConfiguration_m1308548170 ();
+extern "C" void DigitalEyewearARController_set_CameraConfiguration_m676024097 ();
+extern "C" void DigitalEyewearARController__cctor_m478811706 ();
+extern "C" void SerializableViewerParameters__ctor_m1900419393 ();
+extern "C" void DistortionRenderingBehaviour_get_UseSingleTexture_m1768677505 ();
+extern "C" void DistortionRenderingBehaviour_set_UseSingleTexture_m1599712680 ();
+extern "C" void DistortionRenderingBehaviour_get_RenderLayer_m4122027286 ();
+extern "C" void DistortionRenderingBehaviour_set_RenderLayer_m1808232559 ();
+extern "C" void DistortionRenderingBehaviour_get_VideoBackgroundChanged_m2441514162 ();
+extern "C" void DistortionRenderingBehaviour_set_VideoBackgroundChanged_m758192121 ();
+extern "C" void DistortionRenderingBehaviour_Start_m3582865692 ();
+extern "C" void DistortionRenderingBehaviour_OnEnable_m2169174460 ();
+extern "C" void DistortionRenderingBehaviour_Update_m1109442223 ();
+extern "C" void DistortionRenderingBehaviour_OnDisable_m2757385287 ();
+extern "C" void DistortionRenderingBehaviour_OnDestroy_m1295239893 ();
+extern "C" void DistortionRenderingBehaviour_CreateMesh_m2465714981 ();
+extern "C" void DistortionRenderingBehaviour_CreateMeshGameObject_m2160735917 ();
+extern "C" void DistortionRenderingBehaviour_CreateRenderTexture_m2238633035 ();
+extern "C" void DistortionRenderingBehaviour_SetupOrthographicCamera_m1817830297 ();
+extern "C" void DistortionRenderingBehaviour_HaveDualTextureViewportsChanged_m3294872394 ();
+extern "C" void DistortionRenderingBehaviour_AdjustDualTextureViewports_m3039346356 ();
+extern "C" void DistortionRenderingBehaviour_OnVideoBackgroundConfigChanged_m3102784572 ();
+extern "C" void DistortionRenderingBehaviour__ctor_m3985695928 ();
+extern "C" void ExternalStereoCameraConfiguration__ctor_m2052271870 ();
+extern "C" void ExternalStereoCameraConfiguration_CheckForSurfaceChanges_m3741145436 ();
+extern "C" void ExternalStereoCameraConfiguration_ApplyCorrectedProjectionMatrix_m2924592674 ();
+extern "C" void ExternalStereoCameraConfiguration_CameraParameterChanged_m1803384904 ();
+extern "C" void ExternalStereoCameraConfiguration_UpdateProjection_m1009762910 ();
+extern "C" void EyewearCalibrationProfileManager__ctor_m3038223222 ();
+extern "C" void EyewearCalibrationProfileManagerImpl_getMaxCount_m16215983 ();
+extern "C" void EyewearCalibrationProfileManagerImpl_getUsedCount_m3471545206 ();
+extern "C" void EyewearCalibrationProfileManagerImpl_isProfileUsed_m3576754687 ();
+extern "C" void EyewearCalibrationProfileManagerImpl_getActiveProfile_m2594318099 ();
+extern "C" void EyewearCalibrationProfileManagerImpl_setActiveProfile_m3165712324 ();
+extern "C" void EyewearCalibrationProfileManagerImpl_getCameraToEyePose_m3028272859 ();
+extern "C" void EyewearCalibrationProfileManagerImpl_getEyeProjection_m386752457 ();
+extern "C" void EyewearCalibrationProfileManagerImpl_setCameraToEyePose_m1060105678 ();
+extern "C" void EyewearCalibrationProfileManagerImpl_setEyeProjection_m4228391584 ();
+extern "C" void EyewearCalibrationProfileManagerImpl_getProfileName_m3993114516 ();
+extern "C" void EyewearCalibrationProfileManagerImpl_setProfileName_m2632119145 ();
+extern "C" void EyewearCalibrationProfileManagerImpl_clearProfile_m2025779759 ();
+extern "C" void EyewearCalibrationProfileManagerImpl__ctor_m1645369704 ();
+extern "C" void EyewearDevice__ctor_m924025370 ();
+extern "C" void EyewearUserCalibrator__ctor_m3942640824 ();
+extern "C" void EyewearUserCalibratorImpl_init_m4030421004 ();
+extern "C" void EyewearUserCalibratorImpl_getMinScaleHint_m1195487277 ();
+extern "C" void EyewearUserCalibratorImpl_getMaxScaleHint_m4213719891 ();
+extern "C" void EyewearUserCalibratorImpl_isStereoStretched_m1235533350 ();
+extern "C" void EyewearUserCalibratorImpl_getProjectionMatrix_m3134012839 ();
+extern "C" void EyewearUserCalibratorImpl__ctor_m2882584214 ();
+extern "C" void FactorySetter__ctor_m507763515 ();
+extern "C" void HideExcessAreaAbstractBehaviour_OnTrackablesUpdated_m3491318521 ();
+extern "C" void HideExcessAreaAbstractBehaviour_OnVuforiaStarted_m2846865987 ();
+extern "C" void HideExcessAreaAbstractBehaviour_CheckForChangedClippingMode_m4283239513 ();
+extern "C" void HideExcessAreaAbstractBehaviour_get_PlaneOffset_m3634335651 ();
+extern "C" void HideExcessAreaAbstractBehaviour_set_PlaneOffset_m3820567390 ();
+extern "C" void HideExcessAreaAbstractBehaviour_SetPlanesRenderingActive_m3111388437 ();
+extern "C" void HideExcessAreaAbstractBehaviour_IsPlanesRenderingActive_m1154293968 ();
+extern "C" void HideExcessAreaAbstractBehaviour_OnConfigurationChanged_m150596188 ();
+extern "C" void HideExcessAreaAbstractBehaviour_OnPreCull_m4173180703 ();
+extern "C" void HideExcessAreaAbstractBehaviour_OnPostRender_m4028749816 ();
+extern "C" void HideExcessAreaAbstractBehaviour_Start_m3931324947 ();
+extern "C" void HideExcessAreaAbstractBehaviour_OnDisable_m4220683468 ();
+extern "C" void HideExcessAreaAbstractBehaviour_OnEnable_m2789243539 ();
+extern "C" void HideExcessAreaAbstractBehaviour_OnDestroy_m2204165266 ();
+extern "C" void HideExcessAreaAbstractBehaviour__ctor_m283987487 ();
+extern "C" void HoloLensExtendedTrackingManager_ApplyTrackingState_m3697571161 ();
+extern "C" void HoloLensExtendedTrackingManager_StartExtendedTracking_m1249991830 ();
+extern "C" void HoloLensExtendedTrackingManager_StopExtendedTracking_m1635671486 ();
+extern "C" void HoloLensExtendedTrackingManager_PersistExtendedTracking_m2336985418 ();
+extern "C" void HoloLensExtendedTrackingManager_ResetExtendedTracking_m2191306863 ();
+extern "C" void HoloLensExtendedTrackingManager_GetExtendedTrackedBehaviours_m2428850838 ();
+extern "C" void HoloLensExtendedTrackingManager_EnableWorldAnchorUsage_m4188451833 ();
+extern "C" void HoloLensExtendedTrackingManager_GetExtendedTrackingParameters_m1981032109 ();
+extern "C" void HoloLensExtendedTrackingManager_SetExtendedTrackingParameters_m3601969701 ();
+extern "C" void HoloLensExtendedTrackingManager_CheckHandoverToHoloLens_m3082323370 ();
+extern "C" void HoloLensExtendedTrackingManager_CheckForHoloLensPoseUpdates_m2344553226 ();
+extern "C" void HoloLensExtendedTrackingManager_IsTargetWellInView_m4118593287 ();
+extern "C" void HoloLensExtendedTrackingManager_CalculateTargetSizeInCameraViewCoeff_m3606167346 ();
+extern "C" void HoloLensExtendedTrackingManager_OnSpatialAnchorTrackingCallback_m1501774474 ();
+extern "C" void HoloLensExtendedTrackingManager_ResetExtendedTrackingForTrackable_m4156989359 ();
+extern "C" void HoloLensExtendedTrackingManager__ctor_m4028871273 ();
+extern "C" void Image__ctor_m290697421 ();
+extern "C" void ImageImpl_get_Width_m2846704276 ();
+extern "C" void ImageImpl_set_Width_m1617992279 ();
+extern "C" void ImageImpl_get_Height_m1190386785 ();
+extern "C" void ImageImpl_set_Height_m1808934552 ();
+extern "C" void ImageImpl_get_Stride_m2588114675 ();
+extern "C" void ImageImpl_set_Stride_m1803209726 ();
+extern "C" void ImageImpl_get_BufferWidth_m200377818 ();
+extern "C" void ImageImpl_set_BufferWidth_m492104915 ();
+extern "C" void ImageImpl_get_BufferHeight_m601828869 ();
+extern "C" void ImageImpl_set_BufferHeight_m3144821170 ();
+extern "C" void ImageImpl_get_PixelFormat_m4082995534 ();
+extern "C" void ImageImpl_set_PixelFormat_m2623990565 ();
+extern "C" void ImageImpl_get_Pixels_m2847445935 ();
+extern "C" void ImageImpl_set_Pixels_m3848062066 ();
+extern "C" void ImageImpl_get_UnmanagedData_m4100531499 ();
+extern "C" void ImageImpl_set_UnmanagedData_m768794850 ();
+extern "C" void ImageImpl__ctor_m1562615945 ();
+extern "C" void ImageImpl_Finalize_m1850203523 ();
+extern "C" void ImageImpl_IsValid_m2070893053 ();
+extern "C" void ImageImpl_CopyToTexture_m2382529606 ();
+extern "C" void ImageImpl_CopyPixelsFromUnmanagedBuffer_m3959285315 ();
+extern "C" void ImageImpl_GetPixels32_m3926724551 ();
+extern "C" void ImageImpl_ConvertPixelFormat_m2077189007 ();
+extern "C" void ImageTargetAbstractBehaviour_get_ImageTarget_m3261756177 ();
+extern "C" void ImageTargetAbstractBehaviour__ctor_m3584284597 ();
+extern "C" void ImageTargetAbstractBehaviour_CorrectScaleImpl_m2789088199 ();
+extern "C" void ImageTargetAbstractBehaviour_InternalUnregisterTrackable_m551580173 ();
+extern "C" void ImageTargetAbstractBehaviour_CalculateDefaultOccluderBounds_m257797196 ();
+extern "C" void ImageTargetAbstractBehaviour_ProtectedSetAsSmartTerrainInitializationTarget_m1937534315 ();
+extern "C" void ImageTargetAbstractBehaviour_CreateVirtualButton_m387103575 ();
+extern "C" void ImageTargetAbstractBehaviour_CreateVirtualButton_m803373355 ();
+extern "C" void ImageTargetAbstractBehaviour_GetVirtualButtonBehaviours_m253719924 ();
+extern "C" void ImageTargetAbstractBehaviour_DestroyVirtualButton_m81583840 ();
+extern "C" void ImageTargetAbstractBehaviour_GetSize_m4105784097 ();
+extern "C" void ImageTargetAbstractBehaviour_SetWidth_m3729972608 ();
+extern "C" void ImageTargetAbstractBehaviour_SetHeight_m1092881085 ();
+extern "C" void ImageTargetAbstractBehaviour_get_ImageTargetType_m3883916497 ();
+extern "C" void ImageTargetAbstractBehaviour_InitializeTarget_m3341073650 ();
+extern "C" void ImageTargetAbstractBehaviour_AssociateExistingVirtualButtonBehaviour_m3138298 ();
+extern "C" void ImageTargetAbstractBehaviour_CreateMissingVirtualButtonBehaviours_m3316820328 ();
+extern "C" void ImageTargetAbstractBehaviour_TryGetVirtualButtonBehaviourByID_m3556963011 ();
+extern "C" void ImageTargetAbstractBehaviour_CreateVirtualButtonFromNative_m303145262 ();
+extern "C" void ImageTargetAbstractBehaviour_CreateNewVirtualButtonFromBehaviour_m2457901221 ();
+extern "C" void ImageTargetAbstractBehaviour_OnValidate_m150764676 ();
+extern "C" void ImageTargetBuilder__ctor_m631402605 ();
+extern "C" void ImageTargetBuilderImpl_Build_m3394855988 ();
+extern "C" void ImageTargetBuilderImpl_StartScan_m3041873830 ();
+extern "C" void ImageTargetBuilderImpl_StopScan_m1055866958 ();
+extern "C" void ImageTargetBuilderImpl_GetFrameQuality_m4132906308 ();
+extern "C" void ImageTargetBuilderImpl_GetTrackableSource_m193365126 ();
+extern "C" void ImageTargetBuilderImpl_IsScanning_m2389375152 ();
+extern "C" void ImageTargetBuilderImpl__ctor_m3200368865 ();
+extern "C" void ImageTargetImpl__ctor_m2593363911 ();
+extern "C" void ImageTargetImpl_get_ImageTargetType_m932177854 ();
+extern "C" void ImageTargetImpl_CreateVirtualButton_m3854995304 ();
+extern "C" void ImageTargetImpl_GetVirtualButtonByName_m1711054985 ();
+extern "C" void ImageTargetImpl_GetVirtualButtons_m186656835 ();
+extern "C" void ImageTargetImpl_DestroyVirtualButton_m2704165902 ();
+extern "C" void ImageTargetImpl_CreateNewVirtualButtonInNative_m583407816 ();
+extern "C" void ImageTargetImpl_UnregisterVirtualButtonInNative_m523759288 ();
+extern "C" void ImageTargetImpl_CreateVirtualButtonsFromNative_m361753039 ();
+extern "C" void InstanceIdImpl__ctor_m431159950 ();
+extern "C" void InstanceIdImpl_get_DataType_m306292916 ();
+extern "C" void InstanceIdImpl_get_Buffer_m2197602831 ();
+extern "C" void InstanceIdImpl_get_HexStringValue_m2871743341 ();
+extern "C" void InstanceIdImpl_get_StringValue_m1924037270 ();
+extern "C" void InstanceIdImpl_get_NumericValue_m1364098803 ();
+extern "C" void InstanceIdImpl_ToString_m1178136557 ();
+extern "C" void IOSCamRecoveringHelper_SetHasJustResumed_m888186305 ();
+extern "C" void IOSCamRecoveringHelper_TryToRecover_m3592690838 ();
+extern "C" void IOSCamRecoveringHelper_SetSuccessfullyRecovered_m2798950804 ();
+extern "C" void IOSCamRecoveringHelper__cctor_m3147570575 ();
+extern "C" void LegacyHideExcessAreaClipping_CreateQuad_m1790734755 ();
+extern "C" void LegacyHideExcessAreaClipping_HasCalculationDataChanged_m1270543338 ();
+extern "C" void LegacyHideExcessAreaClipping__ctor_m1880831303 ();
+extern "C" void LegacyHideExcessAreaClipping_SetPlanesRenderingActive_m1567484271 ();
+extern "C" void LegacyHideExcessAreaClipping_IsPlanesRenderingActive_m3952349606 ();
+extern "C" void LegacyHideExcessAreaClipping_OnPreCull_m1743061293 ();
+extern "C" void LegacyHideExcessAreaClipping_OnPostRender_m2540359138 ();
+extern "C" void LegacyHideExcessAreaClipping_Start_m495781433 ();
+extern "C" void LegacyHideExcessAreaClipping_OnDestroy_m1112703896 ();
+extern "C" void LegacyHideExcessAreaClipping_Update_m1412929669 ();
+extern "C" void MaskOutAbstractBehaviour__ctor_m3743365693 ();
+extern "C" void MeshUtils_UpdateMesh_m3609502194 ();
+extern "C" void MeshUtils_CopyPositions_m2624573433 ();
+extern "C" void MeshUtils_CopyNormals_m3587804019 ();
+extern "C" void MeshUtils_CopyTexCoords_m3674850487 ();
+extern "C" void MeshUtils_CopyTriangles_m2648173621 ();
+extern "C" void MeshUtils__ctor_m3454226092 ();
+extern "C" void MixedRealityController_get_Instance_m2682544475 ();
+extern "C" void MixedRealityController_SetMode_m2979588521 ();
+extern "C" void MixedRealityController_SetViewerParameters_m2297019686 ();
+extern "C" void MixedRealityController_ConfigureForDifferentStereoFramework_m1177858678 ();
+extern "C" void MixedRealityController_get_AutoStopCameraIfNotRequired_m2955406165 ();
+extern "C" void MixedRealityController_set_AutoStopCameraIfNotRequired_m1178389852 ();
+extern "C" void MixedRealityController_ResolveMembers_m4187610732 ();
+extern "C" void MixedRealityController_SetVideoBackgroundEnabled_m3933299158 ();
+extern "C" void MixedRealityController_SetViewer_m2047248436 ();
+extern "C" void MixedRealityController_SetTargetFPS_m4074645502 ();
+extern "C" void MixedRealityController_StopDeviceTracker_m431585225 ();
+extern "C" void MixedRealityController_StartDeviceTracker_m2659636892 ();
+extern "C" void MixedRealityController_StopCameraAndTrackersIfNotRequired_m2636481967 ();
+extern "C" void MixedRealityController_StartCameraAndTrackersIfStopped_m2661183636 ();
+extern "C" void MixedRealityController_SetHandheldAR_m3681670 ();
+extern "C" void MixedRealityController_SetRotationalHandheldAR_m752779695 ();
+extern "C" void MixedRealityController_SetHandheldVR_m3344010865 ();
+extern "C" void MixedRealityController_SetViewerAR_m3871906858 ();
+extern "C" void MixedRealityController_SetRotationalViewerAR_m3257244411 ();
+extern "C" void MixedRealityController_SetViewerVR_m1378552669 ();
+extern "C" void MixedRealityController__ctor_m2809067313 ();
+extern "C" void MixedRealityController__cctor_m387094910 ();
+extern "C" void MonoCameraConfiguration__ctor_m4556692 ();
+extern "C" void MonoCameraConfiguration_ConfigureVideoBackground_m751732411 ();
+extern "C" void MonoCameraConfiguration_CheckForSurfaceChanges_m4001232568 ();
+extern "C" void MonoCameraConfiguration_UpdateStereoDepth_m534515481 ();
+extern "C" void MonoCameraConfiguration_IsStereo_m172501270 ();
+extern "C" void MonoCameraConfiguration_ApplyCorrectedProjectionMatrix_m1818632510 ();
+extern "C" void MonoCameraConfiguration_SetSkewFrustum_m2496860125 ();
+extern "C" void MonoCameraConfiguration_UpdateProjection_m4171837790 ();
+extern "C" void MonoCameraConfiguration_ResolveVideoBackgroundBehaviours_m2707286965 ();
+extern "C" void MonoCameraConfiguration_CameraParameterChanged_m840282076 ();
+extern "C" void MultiTargetAbstractBehaviour_get_MultiTarget_m3726252483 ();
+extern "C" void MultiTargetAbstractBehaviour_InternalUnregisterTrackable_m3635061031 ();
+extern "C" void MultiTargetAbstractBehaviour_CalculateDefaultOccluderBounds_m3132316772 ();
+extern "C" void MultiTargetAbstractBehaviour_ProtectedSetAsSmartTerrainInitializationTarget_m347807997 ();
+extern "C" void MultiTargetAbstractBehaviour_InitializeTarget_m3505194470 ();
+extern "C" void MultiTargetAbstractBehaviour__ctor_m3602545575 ();
+extern "C" void MultiTargetImpl__ctor_m645621717 ();
+extern "C" void MultiTargetImpl_GetSize_m1996308639 ();
+extern "C" void MultiTargetImpl_GetLargestSizeComponent_m3629322614 ();
+extern "C" void MultiTargetImpl_SetSize_m1517218450 ();
+extern "C" void NullCameraConfiguration_Init_m1947562486 ();
+extern "C" void NullCameraConfiguration_InitCameraDevice_m660566198 ();
+extern "C" void NullCameraConfiguration_ConfigureVideoBackground_m3142491847 ();
+extern "C" void NullCameraConfiguration_UpdatePlayModeParameters_m2900218451 ();
+extern "C" void NullCameraConfiguration_CheckForSurfaceChanges_m3091819914 ();
+extern "C" void NullCameraConfiguration_UpdateStereoDepth_m2126623253 ();
+extern "C" void NullCameraConfiguration_IsStereo_m2927167560 ();
+extern "C" void NullCameraConfiguration_ResetBackgroundPlane_m3928893918 ();
+extern "C" void NullCameraConfiguration_get_VideoBackgroundMirrored_m849057329 ();
+extern "C" void NullCameraConfiguration_set_VideoBackgroundMirrored_m525261562 ();
+extern "C" void NullCameraConfiguration_ApplyCorrectedProjectionMatrix_m1073353020 ();
+extern "C" void NullCameraConfiguration_SetSkewFrustum_m1966287497 ();
+extern "C" void NullCameraConfiguration_get_VideoBackgroundViewportRect_m1997693548 ();
+extern "C" void NullCameraConfiguration_get_EyewearUserCalibrationProfileId_m3609770164 ();
+extern "C" void NullCameraConfiguration_set_EyewearUserCalibrationProfileId_m3442712861 ();
+extern "C" void NullCameraConfiguration_SetCameraParameterChanged_m2769363672 ();
+extern "C" void NullCameraConfiguration__ctor_m3104761766 ();
+extern "C" void NullHideExcessAreaClipping_SetPlanesRenderingActive_m4111559369 ();
+extern "C" void NullHideExcessAreaClipping_IsPlanesRenderingActive_m3229182548 ();
+extern "C" void NullHideExcessAreaClipping_OnPreCull_m2043013367 ();
+extern "C" void NullHideExcessAreaClipping_OnPostRender_m2182005192 ();
+extern "C" void NullHideExcessAreaClipping_Start_m950157531 ();
+extern "C" void NullHideExcessAreaClipping_OnDestroy_m270449122 ();
+extern "C" void NullHideExcessAreaClipping_Update_m2422082895 ();
+extern "C" void NullHideExcessAreaClipping__ctor_m2839568335 ();
+extern "C" void NullHoloLensApiAbstraction_SetFocusPoint_m3336859543 ();
+extern "C" void NullHoloLensApiAbstraction_SetWorldAnchor_m1996244266 ();
+extern "C" void NullHoloLensApiAbstraction_DeleteWorldAnchor_m582689819 ();
+extern "C" void NullHoloLensApiAbstraction_DeleteWorldAnchor_m1157685605 ();
+extern "C" void NullHoloLensApiAbstraction_SetSpatialAnchorTrackingCallback_m3294576552 ();
+extern "C" void NullHoloLensApiAbstraction__ctor_m2279623137 ();
+extern "C" void NullUnityPlayer_LoadNativeLibraries_m1496888523 ();
+extern "C" void NullUnityPlayer_InitializePlatform_m4186374246 ();
+extern "C" void NullUnityPlayer_InitializeVuforia_m32392536 ();
+extern "C" void NullUnityPlayer_StartScene_m1563172915 ();
+extern "C" void NullUnityPlayer_Update_m2998149270 ();
+extern "C" void NullUnityPlayer_Dispose_m2810591470 ();
+extern "C" void NullUnityPlayer_OnPause_m700539162 ();
+extern "C" void NullUnityPlayer_OnResume_m325033281 ();
+extern "C" void NullUnityPlayer_OnDestroy_m253508882 ();
+extern "C" void NullUnityPlayer__ctor_m483624113 ();
+extern "C" void NullWebCamTexAdaptor_get_DidUpdateThisFrame_m2320074944 ();
+extern "C" void NullWebCamTexAdaptor_get_IsPlaying_m17368229 ();
+extern "C" void NullWebCamTexAdaptor_get_Texture_m3961705283 ();
+extern "C" void NullWebCamTexAdaptor__ctor_m1912926792 ();
+extern "C" void NullWebCamTexAdaptor_Play_m3701139890 ();
+extern "C" void NullWebCamTexAdaptor_Stop_m2622320100 ();
+extern "C" void NullWebCamTexAdaptor_CheckPermissions_m2828396576 ();
+extern "C" void ObjectTargetAbstractBehaviour__ctor_m4149910295 ();
+extern "C" void ObjectTargetAbstractBehaviour_get_ObjectTarget_m631604847 ();
+extern "C" void ObjectTargetAbstractBehaviour_OnDrawGizmos_m2301756507 ();
+extern "C" void ObjectTargetAbstractBehaviour_CorrectScaleImpl_m2373342665 ();
+extern "C" void ObjectTargetAbstractBehaviour_InternalUnregisterTrackable_m3808528191 ();
+extern "C" void ObjectTargetAbstractBehaviour_CalculateDefaultOccluderBounds_m4152189776 ();
+extern "C" void ObjectTargetAbstractBehaviour_ProtectedSetAsSmartTerrainInitializationTarget_m187480149 ();
+extern "C" void ObjectTargetAbstractBehaviour_SetBoundingBox_m2905572592 ();
+extern "C" void ObjectTargetAbstractBehaviour_GetSize_m4221564256 ();
+extern "C" void ObjectTargetAbstractBehaviour_SetLength_m3259471564 ();
+extern "C" void ObjectTargetAbstractBehaviour_SetWidth_m2466427428 ();
+extern "C" void ObjectTargetAbstractBehaviour_SetHeight_m1507152255 ();
+extern "C" void ObjectTargetAbstractBehaviour_InitializeTarget_m50766930 ();
+extern "C" void ObjectTargetAbstractBehaviour_OnValidate_m1439977524 ();
+extern "C" void ObjectTargetImpl__ctor_m1852696733 ();
+extern "C" void ObjectTargetImpl_GetSize_m3410160351 ();
+extern "C" void ObjectTargetImpl_GetLargestSizeComponent_m4031738666 ();
+extern "C" void ObjectTargetImpl_SetSize_m3814538822 ();
+extern "C" void ObjectTargetImpl_StartExtendedTracking_m913842560 ();
+extern "C" void ObjectTargetImpl_StopExtendedTracking_m2569701850 ();
+extern "C" void ObjectTargetImpl_get_DataSet_m3539943858 ();
+extern "C" void ObjectTracker__ctor_m3101494475 ();
+extern "C" void ObjectTrackerImpl_get_ImageTargetBuilder_m2528094335 ();
+extern "C" void ObjectTrackerImpl_get_TargetFinder_m596223775 ();
+extern "C" void ObjectTrackerImpl__ctor_m2286263407 ();
+extern "C" void ObjectTrackerImpl_Start_m3737479319 ();
+extern "C" void ObjectTrackerImpl_Stop_m3775943247 ();
+extern "C" void ObjectTrackerImpl_CreateDataSet_m793918966 ();
+extern "C" void ObjectTrackerImpl_DestroyDataSet_m1873361072 ();
+extern "C" void ObjectTrackerImpl_ActivateDataSet_m3873063170 ();
+extern "C" void ObjectTrackerImpl_DeactivateDataSet_m1276087149 ();
+extern "C" void ObjectTrackerImpl_GetActiveDataSets_m1766292390 ();
+extern "C" void ObjectTrackerImpl_GetDataSets_m685248976 ();
+extern "C" void ObjectTrackerImpl_DestroyAllDataSets_m282189974 ();
+extern "C" void ObjectTrackerImpl_PersistExtendedTracking_m4279500590 ();
+extern "C" void ObjectTrackerImpl_ResetExtendedTracking_m3601965964 ();
+extern "C" void OrientedBoundingBox__ctor_m1614144038_AdjustorThunk ();
+extern "C" void OrientedBoundingBox_get_Center_m1177362016_AdjustorThunk ();
+extern "C" void OrientedBoundingBox_set_Center_m1455617149_AdjustorThunk ();
+extern "C" void OrientedBoundingBox_get_HalfExtents_m417767871_AdjustorThunk ();
+extern "C" void OrientedBoundingBox_set_HalfExtents_m3457610300_AdjustorThunk ();
+extern "C" void OrientedBoundingBox_get_Rotation_m379772768_AdjustorThunk ();
+extern "C" void OrientedBoundingBox_set_Rotation_m1473121299_AdjustorThunk ();
+extern "C" void OrientedBoundingBox3D__ctor_m2440597057_AdjustorThunk ();
+extern "C" void OrientedBoundingBox3D_get_Center_m934917468_AdjustorThunk ();
+extern "C" void OrientedBoundingBox3D_set_Center_m1489826095_AdjustorThunk ();
+extern "C" void OrientedBoundingBox3D_get_HalfExtents_m3691109229_AdjustorThunk ();
+extern "C" void OrientedBoundingBox3D_set_HalfExtents_m221536114_AdjustorThunk ();
+extern "C" void OrientedBoundingBox3D_get_RotationY_m2715891676_AdjustorThunk ();
+extern "C" void OrientedBoundingBox3D_set_RotationY_m3811947797_AdjustorThunk ();
+extern "C" void PlayModeEditorUtility_get_Instance_m3503318396 ();
+extern "C" void PlayModeEditorUtility_set_Instance_m609218285 ();
+extern "C" void PlayModeEditorUtility__ctor_m88883902 ();
+extern "C" void NullPlayModeEditorUtility_DisplayDialog_m1778193142 ();
+extern "C" void NullPlayModeEditorUtility_LoadAndParseWebcamProfiles_m3242777250 ();
+extern "C" void NullPlayModeEditorUtility_RestartPlayMode_m3680835336 ();
+extern "C" void NullPlayModeEditorUtility_ShowErrorInMouseOverWindow_m2663890123 ();
+extern "C" void NullPlayModeEditorUtility__ctor_m3586199438 ();
+extern "C" void PlayModeEyewearCalibrationProfileManagerImpl_getMaxCount_m2586101394 ();
+extern "C" void PlayModeEyewearCalibrationProfileManagerImpl_getUsedCount_m3700336979 ();
+extern "C" void PlayModeEyewearCalibrationProfileManagerImpl_isProfileUsed_m2155002998 ();
+extern "C" void PlayModeEyewearCalibrationProfileManagerImpl_getActiveProfile_m2761998828 ();
+extern "C" void PlayModeEyewearCalibrationProfileManagerImpl_setActiveProfile_m884227855 ();
+extern "C" void PlayModeEyewearCalibrationProfileManagerImpl_getCameraToEyePose_m747602590 ();
+extern "C" void PlayModeEyewearCalibrationProfileManagerImpl_getEyeProjection_m3464309072 ();
+extern "C" void PlayModeEyewearCalibrationProfileManagerImpl_setCameraToEyePose_m4244120335 ();
+extern "C" void PlayModeEyewearCalibrationProfileManagerImpl_setEyeProjection_m1076870429 ();
+extern "C" void PlayModeEyewearCalibrationProfileManagerImpl_getProfileName_m3780786733 ();
+extern "C" void PlayModeEyewearCalibrationProfileManagerImpl_setProfileName_m3761072908 ();
+extern "C" void PlayModeEyewearCalibrationProfileManagerImpl_clearProfile_m4230319932 ();
+extern "C" void PlayModeEyewearCalibrationProfileManagerImpl__ctor_m2916353515 ();
+extern "C" void PlayModeEyewearDevice_IsSeeThru_m492739259 ();
+extern "C" void PlayModeEyewearDevice_IsDualDisplay_m845257349 ();
+extern "C" void PlayModeEyewearDevice_SetDisplayExtended_m3201655505 ();
+extern "C" void PlayModeEyewearDevice_IsDisplayExtended_m823053100 ();
+extern "C" void PlayModeEyewearDevice_IsDisplayExtendedGLOnly_m1532292705 ();
+extern "C" void PlayModeEyewearDevice_GetScreenOrientation_m4112183447 ();
+extern "C" void PlayModeEyewearDevice_SetPredictiveTracking_m3793069758 ();
+extern "C" void PlayModeEyewearDevice_IsPredictiveTrackingEnabled_m489350214 ();
+extern "C" void PlayModeEyewearDevice_GetCalibrationProfileManager_m988838318 ();
+extern "C" void PlayModeEyewearDevice_GetUserCalibrator_m3769000212 ();
+extern "C" void PlayModeEyewearDevice__ctor_m3153237917 ();
+extern "C" void PlayModeEyewearUserCalibratorImpl_init_m843849621 ();
+extern "C" void PlayModeEyewearUserCalibratorImpl_getMinScaleHint_m799932846 ();
+extern "C" void PlayModeEyewearUserCalibratorImpl_getMaxScaleHint_m1607338756 ();
+extern "C" void PlayModeEyewearUserCalibratorImpl_isStereoStretched_m3277696653 ();
+extern "C" void PlayModeEyewearUserCalibratorImpl_getProjectionMatrix_m2769701112 ();
+extern "C" void PlayModeEyewearUserCalibratorImpl__ctor_m3689106987 ();
+extern "C" void PlayModeUnityPlayer_LoadNativeLibraries_m187654743 ();
+extern "C" void PlayModeUnityPlayer_InitializePlatform_m613208266 ();
+extern "C" void PlayModeUnityPlayer_InitializeSurface_m284621958 ();
+extern "C" void PlayModeUnityPlayer_InitializeVuforia_m730962768 ();
+extern "C" void PlayModeUnityPlayer_StartScene_m440069735 ();
+extern "C" void PlayModeUnityPlayer_Update_m935986358 ();
+extern "C" void PlayModeUnityPlayer_Dispose_m1278853626 ();
+extern "C" void PlayModeUnityPlayer_OnPause_m1792028790 ();
+extern "C" void PlayModeUnityPlayer_OnResume_m464993153 ();
+extern "C" void PlayModeUnityPlayer_OnDestroy_m4040312454 ();
+extern "C" void PlayModeUnityPlayer__ctor_m2126346857 ();
+extern "C" void PremiumObjectFactory_get_Instance_m853892460 ();
+extern "C" void PremiumObjectFactory_set_Instance_m3063549145 ();
+extern "C" void PremiumObjectFactory__ctor_m3000267640 ();
+extern "C" void NullPremiumObjectFactory__ctor_m1644749638 ();
+extern "C" void PropAbstractBehaviour_get_Prop_m1610298944 ();
+extern "C" void PropAbstractBehaviour_UpdateMeshAndColliders_m3053797708 ();
+extern "C" void PropAbstractBehaviour_Start_m2122559776 ();
+extern "C" void PropAbstractBehaviour_InternalUnregisterTrackable_m3524041866 ();
+extern "C" void PropAbstractBehaviour_InitializeProp_m1798106226 ();
+extern "C" void PropAbstractBehaviour__ctor_m1260771068 ();
+extern "C" void PropImpl__ctor_m2261528851 ();
+extern "C" void PropImpl_get_BoundingBox_m4047710222 ();
+extern "C" void PropImpl_SetMesh_m1717601107 ();
+extern "C" void PropImpl_SetObb_m1194184136 ();
+extern "C" void ReconstructionAbstractBehaviour_get_Reconstruction_m3690308805 ();
+extern "C" void ReconstructionAbstractBehaviour_OnDrawGizmos_m3110211705 ();
+extern "C" void ReconstructionAbstractBehaviour_OnValidate_m1158941226 ();
+extern "C" void ReconstructionAbstractBehaviour_RegisterSmartTerrainEventHandler_m2320074155 ();
+extern "C" void ReconstructionAbstractBehaviour_UnregisterSmartTerrainEventHandler_m3855240990 ();
+extern "C" void ReconstructionAbstractBehaviour_RegisterInitializedCallback_m2803194273 ();
+extern "C" void ReconstructionAbstractBehaviour_UnregisterInitializedCallback_m1227727352 ();
+extern "C" void ReconstructionAbstractBehaviour_RegisterPropCreatedCallback_m4192941617 ();
+extern "C" void ReconstructionAbstractBehaviour_UnregisterPropCreatedCallback_m2048741868 ();
+extern "C" void ReconstructionAbstractBehaviour_RegisterPropUpdatedCallback_m3281839854 ();
+extern "C" void ReconstructionAbstractBehaviour_UnregisterPropUpdatedCallback_m1510042523 ();
+extern "C" void ReconstructionAbstractBehaviour_RegisterPropDeletedCallback_m4253060992 ();
+extern "C" void ReconstructionAbstractBehaviour_UnregisterPropDeletedCallback_m2424874071 ();
+extern "C" void ReconstructionAbstractBehaviour_RegisterSurfaceCreatedCallback_m3624331525 ();
+extern "C" void ReconstructionAbstractBehaviour_UnregisterSurfaceCreatedCallback_m1039740100 ();
+extern "C" void ReconstructionAbstractBehaviour_RegisterSurfaceUpdatedCallback_m711979100 ();
+extern "C" void ReconstructionAbstractBehaviour_UnregisterSurfaceUpdatedCallback_m413525535 ();
+extern "C" void ReconstructionAbstractBehaviour_RegisterSurfaceDeletedCallback_m4165818170 ();
+extern "C" void ReconstructionAbstractBehaviour_UnregisterSurfaceDeletedCallback_m3605289059 ();
+extern "C" void ReconstructionAbstractBehaviour_AssociateProp_m920258964 ();
+extern "C" void ReconstructionAbstractBehaviour_AssociateSurface_m4192971254 ();
+extern "C" void ReconstructionAbstractBehaviour_GetActiveProps_m3842873790 ();
+extern "C" void ReconstructionAbstractBehaviour_TryGetPropBehaviour_m1603883707 ();
+extern "C" void ReconstructionAbstractBehaviour_GetActiveSurfaces_m227777230 ();
+extern "C" void ReconstructionAbstractBehaviour_TryGetSurfaceBehaviour_m3130467827 ();
+extern "C" void ReconstructionAbstractBehaviour_Initialize_m1984027653 ();
+extern "C" void ReconstructionAbstractBehaviour_Deinitialize_m63619284 ();
+extern "C" void ReconstructionAbstractBehaviour_UpdateSmartTerrainData_m512220199 ();
+extern "C" void ReconstructionAbstractBehaviour_SetBehavioursToNotFound_m3776253569 ();
+extern "C" void ReconstructionAbstractBehaviour_ClearOnReset_m3379428694 ();
+extern "C" void ReconstructionAbstractBehaviour_OnReconstructionRemoved_m3175675738 ();
+extern "C" void ReconstructionAbstractBehaviour_get_AutomaticStart_m1671730793 ();
+extern "C" void ReconstructionAbstractBehaviour_ScaleEditorMeshesByFactor_m2714981886 ();
+extern "C" void ReconstructionAbstractBehaviour_ScaleEditorPropPositionsByFactor_m2992528058 ();
+extern "C" void ReconstructionAbstractBehaviour_InstantiatePropBehaviour_m2652920676 ();
+extern "C" void ReconstructionAbstractBehaviour_AssociatePropBehaviour_m1737543334 ();
+extern "C" void ReconstructionAbstractBehaviour_InstantiateSurfaceBehaviour_m3240602130 ();
+extern "C" void ReconstructionAbstractBehaviour_AssociateSurfaceBehaviour_m1498417806 ();
+extern "C" void ReconstructionAbstractBehaviour_FindSmartTerrainTrackable_m4027062030 ();
+extern "C" void ReconstructionAbstractBehaviour_NotifySurfaceEventHandlers_m285606018 ();
+extern "C" void ReconstructionAbstractBehaviour_NotifyPropEventHandlers_m2386877132 ();
+extern "C" void ReconstructionAbstractBehaviour_ReadMeshBoundaries_m69083921 ();
+extern "C" void ReconstructionAbstractBehaviour_UnregisterDeletedProps_m4145076513 ();
+extern "C" void ReconstructionAbstractBehaviour_UnregisterDeletedSurfaces_m2867229921 ();
+extern "C" void ReconstructionAbstractBehaviour_UpdateSurfaces_m1418941454 ();
+extern "C" void ReconstructionAbstractBehaviour_UpdateProps_m2364323892 ();
+extern "C" void ReconstructionAbstractBehaviour__ctor_m2037226869 ();
+extern "C" void ReconstructionFromTargetAbstractBehaviour_get_ReconstructionBehaviour_m1203845362 ();
+extern "C" void ReconstructionFromTargetAbstractBehaviour_get_ReconstructionFromTarget_m2539056400 ();
+extern "C" void ReconstructionFromTargetAbstractBehaviour_Awake_m1796292747 ();
+extern "C" void ReconstructionFromTargetAbstractBehaviour_OnDestroy_m562494977 ();
+extern "C" void ReconstructionFromTargetAbstractBehaviour_Initialize_m809542440 ();
+extern "C" void ReconstructionFromTargetAbstractBehaviour_OnTrackerStarted_m380162722 ();
+extern "C" void ReconstructionFromTargetAbstractBehaviour__ctor_m2704257964 ();
+extern "C" void ReconstructionFromTargetImpl__ctor_m2319992657 ();
+extern "C" void ReconstructionFromTargetImpl_SetInitializationTarget_m673095841 ();
+extern "C" void ReconstructionFromTargetImpl_SetInitializationTarget_m4221759535 ();
+extern "C" void ReconstructionFromTargetImpl_SetInitializationTarget_m2632264994 ();
+extern "C" void ReconstructionFromTargetImpl_SetInitializationTarget_m2744479616 ();
+extern "C" void ReconstructionFromTargetImpl_SetInitializationTarget_m228472662 ();
+extern "C" void ReconstructionFromTargetImpl_SetInitializationTarget_m2047845600 ();
+extern "C" void ReconstructionFromTargetImpl_GetInitializationTarget_m274953248 ();
+extern "C" void ReconstructionFromTargetImpl_GetInitializationTarget_m731125596 ();
+extern "C" void ReconstructionFromTargetImpl_Reset_m3824029366 ();
+extern "C" void ReconstructionFromTargetImpl_Start_m1274563583 ();
+extern "C" void ReconstructionFromTargetImpl_SetInitializationTarget_m2812243691 ();
+extern "C" void ReconstructionFromTargetImpl_get_CanAutoSetInitializationTarget_m3645193746 ();
+extern "C" void ReconstructionFromTargetImpl_set_CanAutoSetInitializationTarget_m2562252841 ();
+extern "C" void ReconstructionImpl__ctor_m2915415100 ();
+extern "C" void ReconstructionImpl_get_NativePtr_m887299403 ();
+extern "C" void ReconstructionImpl_SetMaximumArea_m2111402412 ();
+extern "C" void ReconstructionImpl_GetMaximumArea_m2846034152 ();
+extern "C" void ReconstructionImpl_Stop_m2391810884 ();
+extern "C" void ReconstructionImpl_Start_m2283817134 ();
+extern "C" void ReconstructionImpl_IsReconstructing_m310848938 ();
+extern "C" void ReconstructionImpl_SetNavMeshPadding_m275882688 ();
+extern "C" void ReconstructionImpl_get_NavMeshPadding_m1833982022 ();
+extern "C" void ReconstructionImpl_StartNavMeshUpdates_m4284814640 ();
+extern "C" void ReconstructionImpl_StopNavMeshUpdates_m3341200882 ();
+extern "C" void ReconstructionImpl_IsNavMeshUpdating_m2656148540 ();
+extern "C" void ReconstructionImpl_Reset_m1974985481 ();
+extern "C" void RotationalDeviceTracker__ctor_m1171749539 ();
+extern "C" void RotationalDeviceTrackerImpl_Start_m915491143 ();
+extern "C" void RotationalDeviceTrackerImpl_Stop_m2160469823 ();
+extern "C" void RotationalDeviceTrackerImpl_RecenterPose_m4022457808 ();
+extern "C" void RotationalDeviceTrackerImpl_RecenterPose_m223560889 ();
+extern "C" void RotationalDeviceTrackerImpl_SetPosePrediction_m2142991668 ();
+extern "C" void RotationalDeviceTrackerImpl_GetPosePrediction_m3862713161 ();
+extern "C" void RotationalDeviceTrackerImpl_SetModelCorrectionMode_m3720502293 ();
+extern "C" void RotationalDeviceTrackerImpl_GetModelCorrectionMode_m2629405988 ();
+extern "C" void RotationalDeviceTrackerImpl_SetModelCorrectionModeWithTransform_m462537128 ();
+extern "C" void RotationalDeviceTrackerImpl_GetModelCorrectionTransform_m2743554492 ();
+extern "C" void RotationalDeviceTrackerImpl_RecenterPoseToCurrentAnchorPointPosition_m2265721211 ();
+extern "C" void RotationalDeviceTrackerImpl__ctor_m1248228927 ();
+extern "C" void RotationalPlayModeDeviceTrackerImpl_Start_m173489900 ();
+extern "C" void RotationalPlayModeDeviceTrackerImpl_Stop_m3812319390 ();
+extern "C" void RotationalPlayModeDeviceTrackerImpl_RecenterPose_m2490632205 ();
+extern "C" void RotationalPlayModeDeviceTrackerImpl_RecenterPose_m1188573378 ();
+extern "C" void RotationalPlayModeDeviceTrackerImpl_SetPosePrediction_m112933485 ();
+extern "C" void RotationalPlayModeDeviceTrackerImpl_GetPosePrediction_m3272406264 ();
+extern "C" void RotationalPlayModeDeviceTrackerImpl_SetModelCorrectionMode_m2540140746 ();
+extern "C" void RotationalPlayModeDeviceTrackerImpl_GetModelCorrectionMode_m289456285 ();
+extern "C" void RotationalPlayModeDeviceTrackerImpl_SetModelCorrectionModeWithTransform_m989160497 ();
+extern "C" void RotationalPlayModeDeviceTrackerImpl_GetModelCorrectionTransform_m3693354085 ();
+extern "C" void RotationalPlayModeDeviceTrackerImpl_GetTrackable_m3786154696 ();
+extern "C" void RotationalPlayModeDeviceTrackerImpl_get_Rotation_m578061435 ();
+extern "C" void RotationalPlayModeDeviceTrackerImpl_set_Rotation_m3386153514 ();
+extern "C" void RotationalPlayModeDeviceTrackerImpl_RecenterPoseToCurrentAnchorPointPosition_m1325380295 ();
+extern "C" void RotationalPlayModeDeviceTrackerImpl__ctor_m789415676 ();
+extern "C" void SmartTerrainBuilder__ctor_m2181302917 ();
+extern "C" void SmartTerrainBuilderImpl_Init_m2118379831 ();
+extern "C" void SmartTerrainBuilderImpl_Deinit_m1072296474 ();
+extern "C" void SmartTerrainBuilderImpl_GetReconstructions_m3718619771 ();
+extern "C" void SmartTerrainBuilderImpl_AddReconstruction_m3421075475 ();
+extern "C" void SmartTerrainBuilderImpl_RemoveReconstruction_m3833434424 ();
+extern "C" void SmartTerrainBuilderImpl_DestroyReconstruction_m4053523625 ();
+extern "C" void SmartTerrainBuilderImpl_UpdateSmartTerrainData_m78551351 ();
+extern "C" void SmartTerrainBuilderImpl__ctor_m2450610753 ();
+extern "C" void SmartTerrainTrackableBehaviour_get_SmartTerrainTrackable_m261383892 ();
+extern "C" void SmartTerrainTrackableBehaviour_get_AutomaticUpdatesDisabled_m4191268736 ();
+extern "C" void SmartTerrainTrackableBehaviour_UpdateMeshAndColliders_m1711265052 ();
+extern "C" void SmartTerrainTrackableBehaviour_SetAutomaticUpdatesDisabled_m2185627614 ();
+extern "C" void SmartTerrainTrackableBehaviour_Start_m1082390008 ();
+extern "C" void SmartTerrainTrackableBehaviour__ctor_m2454402984 ();
+extern "C" void SmartTerrainTrackableImpl__ctor_m4179247743 ();
+extern "C" void SmartTerrainTrackableImpl_get_Children_m3106361996 ();
+extern "C" void SmartTerrainTrackableImpl_get_MeshRevision_m3388232474 ();
+extern "C" void SmartTerrainTrackableImpl_get_Parent_m2919076160 ();
+extern "C" void SmartTerrainTrackableImpl_set_Parent_m1829951485 ();
+extern "C" void SmartTerrainTrackableImpl_GetMesh_m3696170651 ();
+extern "C" void SmartTerrainTrackableImpl_get_LocalPosition_m1296524986 ();
+extern "C" void SmartTerrainTrackableImpl_SetLocalPose_m1074744374 ();
+extern "C" void SmartTerrainTrackableImpl_DestroyMesh_m2628371564 ();
+extern "C" void SmartTerrainTrackableImpl_AddChild_m1598305199 ();
+extern "C" void SmartTerrainTrackableImpl_RemoveChild_m797376490 ();
+extern "C" void SmartTerrainTracker__ctor_m2347853500 ();
+extern "C" void SmartTerrainTrackerARController__ctor_m2312725407 ();
+extern "C" void SmartTerrainTrackerARController_get_Instance_m891991031 ();
+extern "C" void SmartTerrainTrackerARController_RegisterARController_m172983013 ();
+extern "C" void SmartTerrainTrackerARController_get_AutoInitTracker_m1430244283 ();
+extern "C" void SmartTerrainTrackerARController_get_AutoStartTracker_m1149906481 ();
+extern "C" void SmartTerrainTrackerARController_get_AutoInitBuilder_m3293906578 ();
+extern "C" void SmartTerrainTrackerARController_get_SceneUnitsToMillimeter_m3798240910 ();
+extern "C" void SmartTerrainTrackerARController_Awake_m3955670294 ();
+extern "C" void SmartTerrainTrackerARController_OnEnable_m3423730171 ();
+extern "C" void SmartTerrainTrackerARController_OnDisable_m2076299066 ();
+extern "C" void SmartTerrainTrackerARController_OnDestroy_m4092530404 ();
+extern "C" void SmartTerrainTrackerARController_RegisterTrackerStartedCallback_m1970126519 ();
+extern "C" void SmartTerrainTrackerARController_UnregisterTrackerStartedCallback_m148358516 ();
+extern "C" void SmartTerrainTrackerARController_StartSmartTerrainTracker_m4130963061 ();
+extern "C" void SmartTerrainTrackerARController_StopSmartTerrainTracker_m25452409 ();
+extern "C" void SmartTerrainTrackerARController_InitSmartTerrainTracker_m2031976015 ();
+extern "C" void SmartTerrainTrackerARController_OnVuforiaInitialized_m2259150560 ();
+extern "C" void SmartTerrainTrackerARController_OnVuforiaStarted_m256185755 ();
+extern "C" void SmartTerrainTrackerARController_OnPause_m1999452279 ();
+extern "C" void SmartTerrainTrackerARController__cctor_m587768000 ();
+extern "C" void SmartTerrainTrackerImpl_get_ScaleToMillimeter_m2216273522 ();
+extern "C" void SmartTerrainTrackerImpl_SetScaleToMillimeter_m2010728318 ();
+extern "C" void SmartTerrainTrackerImpl_get_SmartTerrainBuilder_m4070018090 ();
+extern "C" void SmartTerrainTrackerImpl_Start_m1354385746 ();
+extern "C" void SmartTerrainTrackerImpl_Stop_m1218149192 ();
+extern "C" void SmartTerrainTrackerImpl__ctor_m3096830378 ();
+extern "C" void StateManager__ctor_m764273556 ();
+extern "C" void StateManagerImpl_GetActiveTrackableBehaviours_m3188209273 ();
+extern "C" void StateManagerImpl_GetTrackableBehaviours_m2498430077 ();
+extern "C" void StateManagerImpl_GetWordManager_m1212839285 ();
+extern "C" void StateManagerImpl_GetVuMarkManager_m4048863781 ();
+extern "C" void StateManagerImpl_DestroyTrackableBehavioursForTrackable_m2189903977 ();
+extern "C" void StateManagerImpl_ReassociateTrackables_m4093501627 ();
+extern "C" void StateManagerImpl_SetExtendedTrackingManager_m3767416747 ();
+extern "C" void StateManagerImpl_GetExtendedTrackingManager_m1335164220 ();
+extern "C" void StateManagerImpl_AssociateTrackableBehavioursForDataSet_m605110910 ();
+extern "C" void StateManagerImpl_RegisterExternallyManagedTrackableBehaviour_m2854225912 ();
+extern "C" void StateManagerImpl_UnregisterExternallyManagedTrackableBehaviour_m1668424766 ();
+extern "C" void StateManagerImpl_RemoveDestroyedTrackables_m3493103741 ();
+extern "C" void StateManagerImpl_ClearTrackableBehaviours_m948612896 ();
+extern "C" void StateManagerImpl_FindOrCreateImageTargetBehaviourForTrackable_m3679415397 ();
+extern "C" void StateManagerImpl_FindOrCreateImageTargetBehaviourForTrackable_m1783817517 ();
+extern "C" void StateManagerImpl_SetTrackableBehavioursForTrackableToNotFound_m2100230538 ();
+extern "C" void StateManagerImpl_EnableTrackableBehavioursForTrackable_m1913018672 ();
+extern "C" void StateManagerImpl_RemoveDisabledTrackablesFromQueue_m2204456482 ();
+extern "C" void StateManagerImpl_UpdateCameraPoseWRTTrackable_m1054313662 ();
+extern "C" void StateManagerImpl_UpdateTrackablePoses_m948589520 ();
+extern "C" void StateManagerImpl_UpdateVirtualButtons_m1831629644 ();
+extern "C" void StateManagerImpl_UpdateWords_m3051686358 ();
+extern "C" void StateManagerImpl_UpdateVuMarks_m1642590239 ();
+extern "C" void StateManagerImpl_GetDeviceTrackingManager_m3049689921 ();
+extern "C" void StateManagerImpl_TryGetBehaviour_m4080092800 ();
+extern "C" void StateManagerImpl_AssociateVirtualButtonBehaviours_m3624020269 ();
+extern "C" void StateManagerImpl_CreateMissingDataSetTrackableBehaviours_m3568257287 ();
+extern "C" void StateManagerImpl_CreateImageTargetBehaviour_m3101612347 ();
+extern "C" void StateManagerImpl_CreateMultiTargetBehaviour_m3905144773 ();
+extern "C" void StateManagerImpl_CreateCylinderTargetBehaviour_m3709521290 ();
+extern "C" void StateManagerImpl_CreateVuMarkBehaviour_m2036105967 ();
+extern "C" void StateManagerImpl_CreateObjectTargetBehaviour_m411101805 ();
+extern "C" void StateManagerImpl_PositionCameraToTrackable_m3867107221 ();
+extern "C" void StateManagerImpl_ExtractTranslationFromMatrix_m244134135 ();
+extern "C" void StateManagerImpl_ExtractRotationFromMatrix_m3042784432 ();
+extern "C" void StateManagerImpl_PositionTrackable_m691777470 ();
+extern "C" void StateManagerImpl__ctor_m1684002598 ();
+extern "C" void StencilHideExcessAreaClipping_CreateQuad_m1641056092 ();
+extern "C" void StencilHideExcessAreaClipping_HasCalculationDataChanged_m2844737183 ();
+extern "C" void StencilHideExcessAreaClipping__ctor_m2937019428 ();
+extern "C" void StencilHideExcessAreaClipping_SetPlanesRenderingActive_m2624045410 ();
+extern "C" void StencilHideExcessAreaClipping_IsPlanesRenderingActive_m3724166351 ();
+extern "C" void StencilHideExcessAreaClipping_OnPreCull_m1426585804 ();
+extern "C" void StencilHideExcessAreaClipping_OnPostRender_m42167053 ();
+extern "C" void StencilHideExcessAreaClipping_Start_m2440281030 ();
+extern "C" void StencilHideExcessAreaClipping_OnDestroy_m2004263581 ();
+extern "C" void StencilHideExcessAreaClipping_Update_m2016281218 ();
+extern "C" void StereoViewerCameraConfiguration__ctor_m710267357 ();
+extern "C" void StereoViewerCameraConfiguration_ApplyCorrectedProjectionMatrix_m1039505813 ();
+extern "C" void StereoViewerCameraConfiguration_SetDistortion_m2668939769 ();
+extern "C" void StereoViewerCameraConfiguration_ConfigureVideoBackground_m77414874 ();
+extern "C" void StereoViewerCameraConfiguration_CameraParameterChanged_m1220298069 ();
+extern "C" void StereoViewerCameraConfiguration_UpdateProjection_m2815333043 ();
+extern "C" void SurfaceAbstractBehaviour_get_Surface_m2886945944 ();
+extern "C" void SurfaceAbstractBehaviour_InternalUnregisterTrackable_m500321914 ();
+extern "C" void SurfaceAbstractBehaviour_InitializeSurface_m2451600064 ();
+extern "C" void SurfaceAbstractBehaviour__ctor_m4051989004 ();
+extern "C" void SurfaceImpl__ctor_m3491056719 ();
+extern "C" void SurfaceImpl_SetID_m2314875393 ();
+extern "C" void SurfaceImpl_SetMesh_m3126532384 ();
+extern "C" void SurfaceImpl_SetBoundingBox_m254915721 ();
+extern "C" void SurfaceImpl_GetNavMesh_m843393080 ();
+extern "C" void SurfaceImpl_GetMeshBoundaries_m2459214002 ();
+extern "C" void SurfaceImpl_get_BoundingBox_m1349638881 ();
+extern "C" void SurfaceImpl_GetArea_m1881730018 ();
+extern "C" void SurfaceUtilities_OnSurfaceCreated_m3675640541 ();
+extern "C" void SurfaceUtilities_OnSurfaceDeinit_m2313364330 ();
+extern "C" void SurfaceUtilities_HasSurfaceBeenRecreated_m2740261893 ();
+extern "C" void SurfaceUtilities_OnSurfaceChanged_m1174166543 ();
+extern "C" void SurfaceUtilities_SetSurfaceOrientation_m3106547277 ();
+extern "C" void SurfaceUtilities_GetSurfaceOrientation_m270932104 ();
+extern "C" void SurfaceUtilities__cctor_m2402708418 ();
+extern "C" void TargetFinder__ctor_m884950909 ();
+extern "C" void TargetFinderImpl__ctor_m4043272937 ();
+extern "C" void TargetFinderImpl_Finalize_m4085200791 ();
+extern "C" void TargetFinderImpl_StartInit_m81465743 ();
+extern "C" void TargetFinderImpl_GetInitState_m2960710876 ();
+extern "C" void TargetFinderImpl_Deinit_m233710940 ();
+extern "C" void TargetFinderImpl_StartRecognition_m4133014850 ();
+extern "C" void TargetFinderImpl_Stop_m1069546045 ();
+extern "C" void TargetFinderImpl_IsRequesting_m527431398 ();
+extern "C" void TargetFinderImpl_Update_m1230191095 ();
+extern "C" void TargetFinderImpl_Update_m696384020 ();
+extern "C" void TargetFinderImpl_GetResults_m3079493181 ();
+extern "C" void TargetFinderImpl_EnableTracking_m1345350475 ();
+extern "C" void TargetFinderImpl_EnableTracking_m393981657 ();
+extern "C" void TargetFinderImpl_ClearTrackables_m1565896857 ();
+extern "C" void TargetFinderImpl_GetImageTargets_m3243864554 ();
+extern "C" void TextRecoAbstractBehaviour_get_IsInitialized_m4262792788 ();
+extern "C" void TextRecoAbstractBehaviour_Awake_m220638410 ();
+extern "C" void TextRecoAbstractBehaviour_OnEnable_m3783334689 ();
+extern "C" void TextRecoAbstractBehaviour_OnDisable_m321581418 ();
+extern "C" void TextRecoAbstractBehaviour_OnDestroy_m1988576224 ();
+extern "C" void TextRecoAbstractBehaviour_RegisterTextRecoEventHandler_m2429472575 ();
+extern "C" void TextRecoAbstractBehaviour_UnregisterTextRecoEventHandler_m3340187050 ();
+extern "C" void TextRecoAbstractBehaviour_StartTextTracker_m1237111316 ();
+extern "C" void TextRecoAbstractBehaviour_StopTextTracker_m179921704 ();
+extern "C" void TextRecoAbstractBehaviour_SetupWordList_m1780946480 ();
+extern "C" void TextRecoAbstractBehaviour_NotifyEventHandlersOfChanges_m2780294942 ();
+extern "C" void TextRecoAbstractBehaviour_OnVuforiaInitialized_m4291791820 ();
+extern "C" void TextRecoAbstractBehaviour_OnVuforiaStarted_m440491041 ();
+extern "C" void TextRecoAbstractBehaviour_OnTrackablesUpdated_m1506886535 ();
+extern "C" void TextRecoAbstractBehaviour_OnPause_m3556601501 ();
+extern "C" void TextRecoAbstractBehaviour__ctor_m3986867921 ();
+extern "C" void TextTracker__ctor_m3185043435 ();
+extern "C" void TextTrackerImpl_get_WordList_m3637742575 ();
+extern "C" void TextTrackerImpl_Start_m3238301911 ();
+extern "C" void TextTrackerImpl_Stop_m119305535 ();
+extern "C" void TextTrackerImpl_SetRegionOfInterest_m2711259384 ();
+extern "C" void TextTrackerImpl_GetRegionOfInterest_m590102462 ();
+extern "C" void TextTrackerImpl_ScreenSpaceRectFromCamSpaceRectData_m3215332742 ();
+extern "C" void TextTrackerImpl_get_CurrentUpDirection_m3412825062 ();
+extern "C" void TextTrackerImpl__ctor_m3562927119 ();
+extern "C" void TextureRenderer_get_Width_m3510583717 ();
+extern "C" void TextureRenderer_get_Height_m4277442898 ();
+extern "C" void TextureRenderer__ctor_m1942028846 ();
+extern "C" void TextureRenderer_Render_m797034467 ();
+extern "C" void TextureRenderer_Destroy_m2387433172 ();
+extern "C" void TrackableBehaviour_get_CurrentStatus_m161631220 ();
+extern "C" void TrackableBehaviour_get_Trackable_m2299553042 ();
+extern "C" void TrackableBehaviour_get_TrackableName_m3173853042 ();
+extern "C" void TrackableBehaviour_get_TimeStamp_m4066162022 ();
+extern "C" void TrackableBehaviour_set_TimeStamp_m2646705715 ();
+extern "C" void TrackableBehaviour_RegisterTrackableEventHandler_m1156666476 ();
+extern "C" void TrackableBehaviour_UnregisterTrackableEventHandler_m635108731 ();
+extern "C" void TrackableBehaviour_OnTrackerUpdate_m3635877487 ();
+extern "C" void TrackableBehaviour_OnFrameIndexUpdate_m1905371942 ();
+extern "C" void TrackableBehaviour_OnDisable_m2060273815 ();
+extern "C" void TrackableBehaviour_CorrectScale_m4114224384 ();
+extern "C" void TrackableBehaviour_UnregisterTrackable_m3237011489 ();
+extern "C" void TrackableBehaviour_CorrectScaleImpl_m2374582286 ();
+extern "C" void TrackableBehaviour_EnforceUniformScaling_m563763785 ();
+extern "C" void TrackableBehaviour_SetScaleFromWidth_m1609285904 ();
+extern "C" void TrackableBehaviour_SetScaleFromHeight_m309122327 ();
+extern "C" void TrackableBehaviour_SetScale_m3549084047 ();
+extern "C" void TrackableBehaviour__ctor_m3061730430 ();
+extern "C" void TrackableImpl__ctor_m1519495996 ();
+extern "C" void TrackableImpl_get_Name_m1069451128 ();
+extern "C" void TrackableImpl_set_Name_m3021178023 ();
+extern "C" void TrackableImpl_get_ID_m4059169333 ();
+extern "C" void TrackableImpl_set_ID_m3120186232 ();
+extern "C" void TrackableSource__ctor_m2372059400 ();
+extern "C" void TrackableSourceImpl_get_TrackableSourcePtr_m2252804594 ();
+extern "C" void TrackableSourceImpl_set_TrackableSourcePtr_m3781251199 ();
+extern "C" void TrackableSourceImpl__ctor_m2640691668 ();
+extern "C" void Tracker_get_IsActive_m3836407257 ();
+extern "C" void Tracker_set_IsActive_m1033737426 ();
+extern "C" void Tracker__ctor_m3073433658 ();
+extern "C" void TrackerManager_get_Instance_m2067083115 ();
+extern "C" void TrackerManager__ctor_m2827613573 ();
+extern "C" void TrackerManager__cctor_m489463224 ();
+extern "C" void TrackerManagerImpl_GetStateManager_m1215937408 ();
+extern "C" void TrackerManagerImpl__ctor_m3552683369 ();
+extern "C" void TurnOffAbstractBehaviour__ctor_m1043676009 ();
+extern "C" void TypeMapping_GetTypeID_m2778623299 ();
+extern "C" void TypeMapping__cctor_m513036105 ();
+extern "C" void UnityCameraExtensions_GetPixelHeightInt_m3886825274 ();
+extern "C" void UnityCameraExtensions_GetPixelWidthInt_m2878223513 ();
+extern "C" void UnityCameraExtensions_GetMaxDepthForVideoBackground_m2452083041 ();
+extern "C" void UnityCameraExtensions_GetMinDepthForVideoBackground_m1782968943 ();
+extern "C" void UnityPlayer_get_Instance_m671322364 ();
+extern "C" void UnityPlayer_SetImplementation_m4048947777 ();
+extern "C" void UnityPlayer__cctor_m3346810069 ();
+extern "C" void UserDefinedTargetBuildingAbstractBehaviour_RegisterEventHandler_m3014125139 ();
+extern "C" void UserDefinedTargetBuildingAbstractBehaviour_UnregisterEventHandler_m358415958 ();
+extern "C" void UserDefinedTargetBuildingAbstractBehaviour_StartScanning_m2698452449 ();
+extern "C" void UserDefinedTargetBuildingAbstractBehaviour_BuildNewTarget_m3831119264 ();
+extern "C" void UserDefinedTargetBuildingAbstractBehaviour_StopScanning_m2341680829 ();
+extern "C" void UserDefinedTargetBuildingAbstractBehaviour_SetFrameQuality_m3523072144 ();
+extern "C" void UserDefinedTargetBuildingAbstractBehaviour_Start_m3860857606 ();
+extern "C" void UserDefinedTargetBuildingAbstractBehaviour_Update_m685184189 ();
+extern "C" void UserDefinedTargetBuildingAbstractBehaviour_OnEnable_m2243124966 ();
+extern "C" void UserDefinedTargetBuildingAbstractBehaviour_OnDisable_m1547939641 ();
+extern "C" void UserDefinedTargetBuildingAbstractBehaviour_OnDestroy_m4019166983 ();
+extern "C" void UserDefinedTargetBuildingAbstractBehaviour_OnVuforiaStarted_m3972468230 ();
+extern "C" void UserDefinedTargetBuildingAbstractBehaviour_OnPause_m3892567458 ();
+extern "C" void UserDefinedTargetBuildingAbstractBehaviour__ctor_m3581213318 ();
+extern "C" void VideoBackgroundAbstractBehaviour_ResetBackgroundPlane_m4002175800 ();
+extern "C" void VideoBackgroundAbstractBehaviour_SetStereoDepth_m979889836 ();
+extern "C" void VideoBackgroundAbstractBehaviour_ApplyStereoDepthToMatrices_m1030872950 ();
+extern "C" void VideoBackgroundAbstractBehaviour_DisconnectFromBackgroundBehaviour_m3815701813 ();
+extern "C" void VideoBackgroundAbstractBehaviour_SetVuforiaFrustumSkewValues_m893976874 ();
+extern "C" void VideoBackgroundAbstractBehaviour_RestoreVuforiaFrustumSkew_m808624436 ();
+extern "C" void VideoBackgroundAbstractBehaviour_RenderOnUpdate_m1780198690 ();
+extern "C" void VideoBackgroundAbstractBehaviour_Awake_m2283072941 ();
+extern "C" void VideoBackgroundAbstractBehaviour_Start_m3641120856 ();
+extern "C" void VideoBackgroundAbstractBehaviour_OnPreRender_m2914454742 ();
+extern "C" void VideoBackgroundAbstractBehaviour_OnPostRender_m3296587151 ();
+extern "C" void VideoBackgroundAbstractBehaviour_OnDestroy_m2098322779 ();
+extern "C" void VideoBackgroundAbstractBehaviour__ctor_m397100456 ();
+extern "C" void VideoBackgroundAbstractBehaviour__cctor_m683141767 ();
+extern "C" void VideoBackgroundManager__ctor_m2472061678 ();
+extern "C" void VideoBackgroundManager_get_Instance_m2973135279 ();
+extern "C" void VideoBackgroundManager_RegisterARController_m1515432682 ();
+extern "C" void VideoBackgroundManager_get_VideoBackgroundEnabled_m2864646665 ();
+extern "C" void VideoBackgroundManager_get_ClippingMode_m2482110931 ();
+extern "C" void VideoBackgroundManager_get_MatteShader_m1155075128 ();
+extern "C" void VideoBackgroundManager_SetVideoBackgroundEnabled_m2229021397 ();
+extern "C" void VideoBackgroundManager_SetClippingMode_m3211944811 ();
+extern "C" void VideoBackgroundManager_SetMatteShader_m2178247910 ();
+extern "C" void VideoBackgroundManager_Initialize_m2750973746 ();
+extern "C" void VideoBackgroundManager_Awake_m581554667 ();
+extern "C" void VideoBackgroundManager_Start_m603699066 ();
+extern "C" void VideoBackgroundManager_Update_m2069709623 ();
+extern "C" void VideoBackgroundManager_OnDestroy_m1103235341 ();
+extern "C" void VideoBackgroundManager_OnVuforiaInitialized_m1918398019 ();
+extern "C" void VideoBackgroundManager_UpdateVideoBackgroundEnabled_m3879780185 ();
+extern "C" void VideoBackgroundManager_OnVideoBackgroundConfigChanged_m2200842214 ();
+extern "C" void VideoBackgroundManager__cctor_m837365537 ();
+extern "C" void ViewerParameters__ctor_m2907337924 ();
+extern "C" void ViewerParameters_Finalize_m2784781450 ();
+extern "C" void ViewerParameters_GetVersion_m2317581570 ();
+extern "C" void ViewerParameters_GetName_m911448262 ();
+extern "C" void ViewerParameters_GetManufacturer_m3085188268 ();
+extern "C" void ViewerParameters_GetButtonType_m745873483 ();
+extern "C" void ViewerParameters_GetTrayAlignment_m2536018591 ();
+extern "C" void ViewerParameters_GetScreenToLensDistance_m1062311894 ();
+extern "C" void ViewerParameters_GetInterLensDistance_m3548251609 ();
+extern "C" void ViewerParameters_GetLensCentreToTrayDistance_m3799826503 ();
+extern "C" void ViewerParameters_GetNumDistortionCoefficients_m989971033 ();
+extern "C" void ViewerParameters_GetDistortionCoefficient_m255258205 ();
+extern "C" void ViewerParameters_GetFieldOfView_m1495976935 ();
+extern "C" void ViewerParameters_ContainsMagnet_m893246661 ();
+extern "C" void ViewerParameters_get_NativePtr_m4157973501 ();
+extern "C" void ViewerParametersList_get_ListForAuthoringTools_m1486777573 ();
+extern "C" void ViewerParametersList__ctor_m2493037388 ();
+extern "C" void ViewerParametersList_SetSDKFilter_m4259729048 ();
+extern "C" void ViewerParametersList_Size_m726643231 ();
+extern "C" void ViewerParametersList_Get_m527027107 ();
+extern "C" void ViewerParametersList_Get_m4057077902 ();
+extern "C" void ViewerParametersList_GetAllViewers_m3122624633 ();
+extern "C" void VirtualButton__ctor_m3096451101 ();
+extern "C" void VirtualButtonAbstractBehaviour_get_VirtualButtonName_m2853719456 ();
+extern "C" void VirtualButtonAbstractBehaviour_get_Pressed_m1667011251 ();
+extern "C" void VirtualButtonAbstractBehaviour_get_HasUpdatedPose_m3646300135 ();
+extern "C" void VirtualButtonAbstractBehaviour_get_UnregisterOnDestroy_m135051996 ();
+extern "C" void VirtualButtonAbstractBehaviour_set_UnregisterOnDestroy_m3412426979 ();
+extern "C" void VirtualButtonAbstractBehaviour_get_VirtualButton_m513689368 ();
+extern "C" void VirtualButtonAbstractBehaviour__ctor_m855896756 ();
+extern "C" void VirtualButtonAbstractBehaviour_RegisterEventHandler_m2946769017 ();
+extern "C" void VirtualButtonAbstractBehaviour_UnregisterEventHandler_m1632071242 ();
+extern "C" void VirtualButtonAbstractBehaviour_CalculateButtonArea_m3085583845 ();
+extern "C" void VirtualButtonAbstractBehaviour_UpdateAreaRectangle_m786663139 ();
+extern "C" void VirtualButtonAbstractBehaviour_UpdateSensitivity_m4237066460 ();
+extern "C" void VirtualButtonAbstractBehaviour_UpdateEnabled_m3641096346 ();
+extern "C" void VirtualButtonAbstractBehaviour_UpdatePose_m3480467650 ();
+extern "C" void VirtualButtonAbstractBehaviour_OnTrackerUpdated_m981438975 ();
+extern "C" void VirtualButtonAbstractBehaviour_GetImageTargetBehaviour_m2972458003 ();
+extern "C" void VirtualButtonAbstractBehaviour_SetVirtualButtonName_m1373595752 ();
+extern "C" void VirtualButtonAbstractBehaviour_get_Sensitivity_m1288211212 ();
+extern "C" void VirtualButtonAbstractBehaviour_set_Sensitivity_m1575706723 ();
+extern "C" void VirtualButtonAbstractBehaviour_get_PreviousTransform_m2680815663 ();
+extern "C" void VirtualButtonAbstractBehaviour_set_PreviousTransform_m1516004684 ();
+extern "C" void VirtualButtonAbstractBehaviour_get_PreviousParent_m4289491239 ();
+extern "C" void VirtualButtonAbstractBehaviour_set_PreviousParent_m3146033748 ();
+extern "C" void VirtualButtonAbstractBehaviour_InitializeVirtualButton_m1213136180 ();
+extern "C" void VirtualButtonAbstractBehaviour_SetPosAndScaleFromButtonArea_m2415782462 ();
+extern "C" void VirtualButtonAbstractBehaviour_LateUpdate_m1150004353 ();
+extern "C" void VirtualButtonAbstractBehaviour_OnDisable_m2095615841 ();
+extern "C" void VirtualButtonAbstractBehaviour_OnDestroy_m880609011 ();
+extern "C" void VirtualButtonAbstractBehaviour_OnValidate_m69939779 ();
+extern "C" void VirtualButtonAbstractBehaviour_Equals_m1707174628 ();
+extern "C" void VirtualButtonImpl_get_Name_m215985868 ();
+extern "C" void VirtualButtonImpl_get_ID_m84970095 ();
+extern "C" void VirtualButtonImpl_get_Enabled_m3234422381 ();
+extern "C" void VirtualButtonImpl_get_Area_m2641550899 ();
+extern "C" void VirtualButtonImpl__ctor_m3058463529 ();
+extern "C" void VirtualButtonImpl_SetArea_m4087599671 ();
+extern "C" void VirtualButtonImpl_SetSensitivity_m2382816725 ();
+extern "C" void VirtualButtonImpl_SetEnabled_m1713083893 ();
+extern "C" void VuforiaAbstractBehaviour_Awake_m232471254 ();
+extern "C" void VuforiaAbstractBehaviour_OnEnable_m2635583287 ();
+extern "C" void VuforiaAbstractBehaviour_Start_m2160275031 ();
+extern "C" void VuforiaAbstractBehaviour_Update_m1010039316 ();
+extern "C" void VuforiaAbstractBehaviour_OnLevelWasLoaded_m520437034 ();
+extern "C" void VuforiaAbstractBehaviour_OnApplicationPause_m1349687785 ();
+extern "C" void VuforiaAbstractBehaviour_OnDisable_m3115467530 ();
+extern "C" void VuforiaAbstractBehaviour_OnDestroy_m1526652240 ();
+extern "C" void VuforiaAbstractBehaviour_add_BehaviourCreated_m456481505 ();
+extern "C" void VuforiaAbstractBehaviour_remove_BehaviourCreated_m1409464876 ();
+extern "C" void VuforiaAbstractBehaviour_add_BehaviourDestroyed_m1173869650 ();
+extern "C" void VuforiaAbstractBehaviour_remove_BehaviourDestroyed_m1549127109 ();
+extern "C" void VuforiaAbstractBehaviour_add_AwakeEvent_m2402370997 ();
+extern "C" void VuforiaAbstractBehaviour_remove_AwakeEvent_m858652844 ();
+extern "C" void VuforiaAbstractBehaviour_add_OnEnableEvent_m4220286934 ();
+extern "C" void VuforiaAbstractBehaviour_remove_OnEnableEvent_m3087320251 ();
+extern "C" void VuforiaAbstractBehaviour_add_StartEvent_m1312744736 ();
+extern "C" void VuforiaAbstractBehaviour_remove_StartEvent_m3088365351 ();
+extern "C" void VuforiaAbstractBehaviour_add_UpdateEvent_m3785923501 ();
+extern "C" void VuforiaAbstractBehaviour_remove_UpdateEvent_m3440918772 ();
+extern "C" void VuforiaAbstractBehaviour_add_OnLevelWasLoadedEvent_m3268793749 ();
+extern "C" void VuforiaAbstractBehaviour_remove_OnLevelWasLoadedEvent_m750222042 ();
+extern "C" void VuforiaAbstractBehaviour_add_OnApplicationPauseEvent_m1441184353 ();
+extern "C" void VuforiaAbstractBehaviour_remove_OnApplicationPauseEvent_m3242286072 ();
+extern "C" void VuforiaAbstractBehaviour_add_OnDisableEvent_m1370388693 ();
+extern "C" void VuforiaAbstractBehaviour_remove_OnDisableEvent_m4014423472 ();
+extern "C" void VuforiaAbstractBehaviour_add_OnDestroyEvent_m10906947 ();
+extern "C" void VuforiaAbstractBehaviour_remove_OnDestroyEvent_m3652319802 ();
+extern "C" void VuforiaAbstractBehaviour_get_WorldCenterMode_m1610512611 ();
+extern "C" void VuforiaAbstractBehaviour_get_WorldCenter_m471838410 ();
+extern "C" void VuforiaAbstractBehaviour_get_CentralAnchorPoint_m1788441968 ();
+extern "C" void VuforiaAbstractBehaviour_get_ParentAnchorPoint_m712534043 ();
+extern "C" void VuforiaAbstractBehaviour_get_PrimaryCamera_m120897616 ();
+extern "C" void VuforiaAbstractBehaviour_get_SecondaryCamera_m3154276464 ();
+extern "C" void VuforiaAbstractBehaviour__ctor_m3900338923 ();
+extern "C" void VuforiaAbstractConfiguration_get_Instance_m3543652287 ();
+extern "C" void VuforiaAbstractConfiguration_get_Vuforia_m3334047132 ();
+extern "C" void VuforiaAbstractConfiguration_get_DigitalEyewear_m963121745 ();
+extern "C" void VuforiaAbstractConfiguration_get_DatabaseLoad_m863142065 ();
+extern "C" void VuforiaAbstractConfiguration_get_VideoBackground_m3219950961 ();
+extern "C" void VuforiaAbstractConfiguration_get_SmartTerrainTracker_m1411076141 ();
+extern "C" void VuforiaAbstractConfiguration_get_DeviceTracker_m3821906409 ();
+extern "C" void VuforiaAbstractConfiguration_get_WebCam_m1356964529 ();
+extern "C" void VuforiaAbstractConfiguration_CreateInstance_m70843896 ();
+extern "C" void VuforiaAbstractConfiguration__ctor_m1625969650 ();
+extern "C" void VuforiaAbstractConfiguration__cctor_m2562109521 ();
+extern "C" void DatabaseLoadConfiguration_get_DataSetsToLoad_m1670047590 ();
+extern "C" void DatabaseLoadConfiguration_set_DataSetsToLoad_m3508923487 ();
+extern "C" void DatabaseLoadConfiguration_get_DataSetsToActivate_m2124674399 ();
+extern "C" void DatabaseLoadConfiguration_set_DataSetsToActivate_m4276738768 ();
+extern "C" void DatabaseLoadConfiguration__ctor_m2562268836 ();
+extern "C" void DeviceTrackerConfiguration_get_PosePrediction_m3898657930 ();
+extern "C" void DeviceTrackerConfiguration_set_PosePrediction_m1869566795 ();
+extern "C" void DeviceTrackerConfiguration_get_ModelCorrectionMode_m1082958999 ();
+extern "C" void DeviceTrackerConfiguration_set_ModelCorrectionMode_m76410848 ();
+extern "C" void DeviceTrackerConfiguration_get_ModelTransformEnabled_m999993340 ();
+extern "C" void DeviceTrackerConfiguration_set_ModelTransformEnabled_m3823159685 ();
+extern "C" void DeviceTrackerConfiguration_get_ModelTransform_m2773735905 ();
+extern "C" void DeviceTrackerConfiguration_set_ModelTransform_m602758866 ();
+extern "C" void DeviceTrackerConfiguration__ctor_m1713693237 ();
+extern "C" void DigitalEyewearConfiguration_get_CameraOffset_m1098495516 ();
+extern "C" void DigitalEyewearConfiguration_set_CameraOffset_m495326199 ();
+extern "C" void DigitalEyewearConfiguration_get_DistortionRenderingMode_m3316123287 ();
+extern "C" void DigitalEyewearConfiguration_set_DistortionRenderingMode_m2573235694 ();
+extern "C" void DigitalEyewearConfiguration_get_DistortionRenderingLayer_m4168444540 ();
+extern "C" void DigitalEyewearConfiguration_set_DistortionRenderingLayer_m349744261 ();
+extern "C" void DigitalEyewearConfiguration_get_EyewearType_m644536749 ();
+extern "C" void DigitalEyewearConfiguration_set_EyewearType_m848158650 ();
+extern "C" void DigitalEyewearConfiguration_get_StereoFramework_m4052380397 ();
+extern "C" void DigitalEyewearConfiguration_set_StereoFramework_m1313504586 ();
+extern "C" void DigitalEyewearConfiguration_get_SeeThroughConfiguration_m958262893 ();
+extern "C" void DigitalEyewearConfiguration_set_SeeThroughConfiguration_m3654543402 ();
+extern "C" void DigitalEyewearConfiguration_get_ViewerName_m3014765526 ();
+extern "C" void DigitalEyewearConfiguration_set_ViewerName_m1381294493 ();
+extern "C" void DigitalEyewearConfiguration_get_ViewerManufacturer_m3751245116 ();
+extern "C" void DigitalEyewearConfiguration_set_ViewerManufacturer_m1906563745 ();
+extern "C" void DigitalEyewearConfiguration_get_UseCustomViewer_m452624050 ();
+extern "C" void DigitalEyewearConfiguration_set_UseCustomViewer_m3518798199 ();
+extern "C" void DigitalEyewearConfiguration_get_CustomViewer_m2832953697 ();
+extern "C" void DigitalEyewearConfiguration_set_CustomViewer_m2467532474 ();
+extern "C" void DigitalEyewearConfiguration__ctor_m714645971 ();
+extern "C" void GenericVuforiaConfiguration_get_LicenseKey_m3263571328 ();
+extern "C" void GenericVuforiaConfiguration_set_LicenseKey_m1976655159 ();
+extern "C" void GenericVuforiaConfiguration_get_DelayedInitialization_m282560601 ();
+extern "C" void GenericVuforiaConfiguration_set_DelayedInitialization_m2446686252 ();
+extern "C" void GenericVuforiaConfiguration_get_CameraDeviceMode_m2674354308 ();
+extern "C" void GenericVuforiaConfiguration_set_CameraDeviceMode_m575341997 ();
+extern "C" void GenericVuforiaConfiguration_get_MaxSimultaneousImageTargets_m1594838211 ();
+extern "C" void GenericVuforiaConfiguration_set_MaxSimultaneousImageTargets_m4151090044 ();
+extern "C" void GenericVuforiaConfiguration_get_MaxSimultaneousObjectTargets_m920963097 ();
+extern "C" void GenericVuforiaConfiguration_set_MaxSimultaneousObjectTargets_m733835700 ();
+extern "C" void GenericVuforiaConfiguration_get_UseDelayedLoadingObjectTargets_m2442865267 ();
+extern "C" void GenericVuforiaConfiguration_set_UseDelayedLoadingObjectTargets_m3554108566 ();
+extern "C" void GenericVuforiaConfiguration_get_CameraDirection_m1495589414 ();
+extern "C" void GenericVuforiaConfiguration_set_CameraDirection_m67433341 ();
+extern "C" void GenericVuforiaConfiguration_get_MirrorVideoBackground_m3537902870 ();
+extern "C" void GenericVuforiaConfiguration_set_MirrorVideoBackground_m2784427171 ();
+extern "C" void GenericVuforiaConfiguration__ctor_m178639012 ();
+extern "C" void SmartTerrainTrackerConfiguration_get_AutoInitBuilder_m3992337064 ();
+extern "C" void SmartTerrainTrackerConfiguration_set_AutoInitBuilder_m4155674825 ();
+extern "C" void SmartTerrainTrackerConfiguration_get_SceneUnitsToMillimeter_m3985264900 ();
+extern "C" void SmartTerrainTrackerConfiguration_set_SceneUnitsToMillimeter_m2329755313 ();
+extern "C" void SmartTerrainTrackerConfiguration__ctor_m126081675 ();
+extern "C" void TrackerConfiguration_get_AutoInitAndStartTracker_m3795859564 ();
+extern "C" void TrackerConfiguration_set_AutoInitAndStartTracker_m1493555145 ();
+extern "C" void TrackerConfiguration__ctor_m19462729 ();
+extern "C" void VideoBackgroundConfiguration_get_ClippingMode_m3801834199 ();
+extern "C" void VideoBackgroundConfiguration_set_ClippingMode_m1469413642 ();
+extern "C" void VideoBackgroundConfiguration_get_MatteShader_m658757870 ();
+extern "C" void VideoBackgroundConfiguration_set_MatteShader_m358716021 ();
+extern "C" void VideoBackgroundConfiguration_get_VideoBackgroundEnabled_m3395134557 ();
+extern "C" void VideoBackgroundConfiguration_set_VideoBackgroundEnabled_m2331880996 ();
+extern "C" void VideoBackgroundConfiguration_GetDefaultMatteShader_m3099015376 ();
+extern "C" void VideoBackgroundConfiguration_SetDefaultMatteShader_m2477821507 ();
+extern "C" void VideoBackgroundConfiguration__ctor_m3814288290 ();
+extern "C" void WebCamConfiguration_get_DeviceNameSetInEditor_m1642663453 ();
+extern "C" void WebCamConfiguration_get_FlipHorizontally_m1275668363 ();
+extern "C" void WebCamConfiguration_get_TurnOffWebCam_m1754607218 ();
+extern "C" void WebCamConfiguration_get_RenderTextureLayer_m2458825587 ();
+extern "C" void WebCamConfiguration__ctor_m1247846304 ();
+extern "C" void VuforiaARController_get_WorldCenterModeSetting_m119308351 ();
+extern "C" void VuforiaARController_get_WorldCenter_m3294539308 ();
+extern "C" void VuforiaARController_get_VideoBackGroundMirrored_m1321719990 ();
+extern "C" void VuforiaARController_get_CameraDeviceMode_m2914771215 ();
+extern "C" void VuforiaARController_get_HasStarted_m2401859183 ();
+extern "C" void VuforiaARController__ctor_m283184769 ();
+extern "C" void VuforiaARController_get_Instance_m3759800119 ();
+extern "C" void VuforiaARController_RegisterARController_m159338467 ();
+extern "C" void VuforiaARController_RegisterVuforiaInitializedCallback_m2641948078 ();
+extern "C" void VuforiaARController_UnregisterVuforiaInitializedCallback_m2306591099 ();
+extern "C" void VuforiaARController_RegisterVuforiaStartedCallback_m2843633801 ();
+extern "C" void VuforiaARController_UnregisterVuforiaStartedCallback_m1686003454 ();
+extern "C" void VuforiaARController_RegisterTrackablesUpdatedCallback_m3488784743 ();
+extern "C" void VuforiaARController_UnregisterTrackablesUpdatedCallback_m3083737634 ();
+extern "C" void VuforiaARController_RegisterOnPauseCallback_m3559975647 ();
+extern "C" void VuforiaARController_UnregisterOnPauseCallback_m1514303432 ();
+extern "C" void VuforiaARController_RegisterBackgroundTextureChangedCallback_m3203056379 ();
+extern "C" void VuforiaARController_UnregisterBackgroundTextureChangedCallback_m1052550268 ();
+extern "C" void VuforiaARController_RegisterTrackerEventHandler_m487468923 ();
+extern "C" void VuforiaARController_UnregisterTrackerEventHandler_m1455152768 ();
+extern "C" void VuforiaARController_RegisterVideoBgEventHandler_m602997984 ();
+extern "C" void VuforiaARController_UnregisterVideoBgEventHandler_m2237318095 ();
+extern "C" void VuforiaARController_SetWorldCenterMode_m2086476029 ();
+extern "C" void VuforiaARController_SetWorldCenter_m975580946 ();
+extern "C" void VuforiaARController_GetVideoBackgroundRectInViewPort_m1393662747 ();
+extern "C" void VuforiaARController_GetSurfaceOrientation_m862089838 ();
+extern "C" void VuforiaARController_UpdateState_m2272296819 ();
+extern "C" void VuforiaARController_ApplyCorrectedProjectionMatrix_m3388896403 ();
+extern "C" void VuforiaARController_RegisterVuforiaDeinitializedCallback_m2349865249 ();
+extern "C" void VuforiaARController_UnregisterVuforiaDeinitializedCallback_m2035717992 ();
+extern "C" void VuforiaARController_get_CameraConfiguration_m179717394 ();
+extern "C" void VuforiaARController_set_CameraConfiguration_m2912640843 ();
+extern "C" void VuforiaARController_InitCameraConfiguration_m984206152 ();
+extern "C" void VuforiaARController_ConfigureVideoBackground_m1736998326 ();
+extern "C" void VuforiaARController_ResetBackgroundPlane_m4073553983 ();
+extern "C" void VuforiaARController_RegisterRenderOnUpdateCallback_m4049043910 ();
+extern "C" void VuforiaARController_UnregisterRenderOnUpdateCallback_m3605923253 ();
+extern "C" void VuforiaARController_IsValidPrimaryCamera_m58264230 ();
+extern "C" void VuforiaARController_IsValidSecondaryCamera_m214230814 ();
+extern "C" void VuforiaARController_Awake_m200506594 ();
+extern "C" void VuforiaARController_Start_m534875641 ();
+extern "C" void VuforiaARController_OnEnable_m1414166969 ();
+extern "C" void VuforiaARController_OnApplicationPause_m3287677087 ();
+extern "C" void VuforiaARController_OnDisable_m3844446650 ();
+extern "C" void VuforiaARController_OnDestroy_m86903944 ();
+extern "C" void VuforiaARController_UpdateStatePrivate_m3308430596 ();
+extern "C" void VuforiaARController_StartVuforia_m2466127206 ();
+extern "C" void VuforiaARController_StopVuforia_m2011718385 ();
+extern "C" void VuforiaARController_DisableCameraIfNotNeeded_m1776148865 ();
+extern "C" void VuforiaARController_DeinitRequestedTrackers_m3736071081 ();
+extern "C" void VuforiaARController_OnVideoBackgroundConfigChanged_m390161611 ();
+extern "C" void VuforiaARController_EnableObjectRenderer_m4118246151 ();
+extern "C" void VuforiaARController_ApplyMissedProjectionMatrices_m1651958151 ();
+extern "C" void VuforiaARController__cctor_m4028062860 ();
+extern "C" void VuforiaDeinitBehaviour_Awake_m4215310681 ();
+extern "C" void VuforiaDeinitBehaviour_OnApplicationQuit_m2554157948 ();
+extern "C" void VuforiaDeinitBehaviour_DeinitVuforia_m2020728651 ();
+extern "C" void VuforiaDeinitBehaviour__ctor_m1803636006 ();
+extern "C" void VuforiaDeinitBehaviour__cctor_m293654503 ();
+extern "C" void VuforiaExtendedTrackingManager_ApplyTrackingState_m2455272473 ();
+extern "C" void VuforiaExtendedTrackingManager_StartExtendedTracking_m1006262806 ();
+extern "C" void VuforiaExtendedTrackingManager_StopExtendedTracking_m1758508878 ();
+extern "C" void VuforiaExtendedTrackingManager_PersistExtendedTracking_m1576860222 ();
+extern "C" void VuforiaExtendedTrackingManager_ResetExtendedTracking_m3896949427 ();
+extern "C" void VuforiaExtendedTrackingManager_GetExtendedTrackedBehaviours_m1616904410 ();
+extern "C" void VuforiaExtendedTrackingManager_EnableWorldAnchorUsage_m3316152449 ();
+extern "C" void VuforiaExtendedTrackingManager_GetExtendedTrackingParameters_m3848587469 ();
+extern "C" void VuforiaExtendedTrackingManager_SetExtendedTrackingParameters_m268148045 ();
+extern "C" void VuforiaExtendedTrackingManager__ctor_m3622223881 ();
+extern "C" void VuforiaManager_get_Instance_m425433003 ();
+extern "C" void VuforiaManager__ctor_m2402028253 ();
+extern "C" void VuforiaManager__cctor_m1426182330 ();
+extern "C" void TrackableIdPair_FromTrackableId_m1576637116 ();
+extern "C" void TrackableIdPair_FromResultId_m309840374 ();
+extern "C" void TrackableIdPair_FromTrackableAndResultId_m508966059 ();
+extern "C" void VuforiaManagerImpl_set_WorldCenterMode_m3153519054 ();
+extern "C" void VuforiaManagerImpl_get_WorldCenterMode_m2828536029 ();
+extern "C" void VuforiaManagerImpl_set_WorldCenter_m827303058 ();
+extern "C" void VuforiaManagerImpl_get_WorldCenter_m3422950637 ();
+extern "C" void VuforiaManagerImpl_set_VuMarkWorldCenter_m463098780 ();
+extern "C" void VuforiaManagerImpl_get_VuMarkWorldCenter_m3357540109 ();
+extern "C" void VuforiaManagerImpl_set_ARCameraTransform_m314583629 ();
+extern "C" void VuforiaManagerImpl_get_ARCameraTransform_m4007699804 ();
+extern "C" void VuforiaManagerImpl_set_CentralAnchorPoint_m1216617257 ();
+extern "C" void VuforiaManagerImpl_get_CentralAnchorPoint_m1427646452 ();
+extern "C" void VuforiaManagerImpl_set_ParentAnchorPoint_m454618784 ();
+extern "C" void VuforiaManagerImpl_get_ParentAnchorPoint_m3821948537 ();
+extern "C" void VuforiaManagerImpl_get_Initialized_m3015283572 ();
+extern "C" void VuforiaManagerImpl_get_CurrentFrameIndex_m607013204 ();
+extern "C" void VuforiaManagerImpl_set_VideoBackgroundTextureSet_m2835395033 ();
+extern "C" void VuforiaManagerImpl_get_VideoBackgroundTextureSet_m2276462900 ();
+extern "C" void VuforiaManagerImpl_Init_m223499947 ();
+extern "C" void VuforiaManagerImpl_Deinit_m1388239924 ();
+extern "C" void VuforiaManagerImpl_Update_m1207202450 ();
+extern "C" void VuforiaManagerImpl_StartRendering_m1927564155 ();
+extern "C" void VuforiaManagerImpl_FinishRendering_m2654244216 ();
+extern "C" void VuforiaManagerImpl_Pause_m536248066 ();
+extern "C" void VuforiaManagerImpl_SetStatesToDiscard_m1590876370 ();
+extern "C" void VuforiaManagerImpl_IsDiscardingRenderingStates_m753404079 ();
+extern "C" void VuforiaManagerImpl_IsDetectedOrTracked_m1936825519 ();
+extern "C" void VuforiaManagerImpl_InitializeTrackableContainer_m2300008772 ();
+extern "C" void VuforiaManagerImpl_UpdateTrackers_m3984824715 ();
+extern "C" void VuforiaManagerImpl_UpdateSmartTerrain_m2140506790 ();
+extern "C" void VuforiaManagerImpl_UpdateTrackablesEditor_m2419247263 ();
+extern "C" void VuforiaManagerImpl_UnmarshalTrackables_m617329726 ();
+extern "C" void VuforiaManagerImpl_UnmarshalWordTrackables_m2315320206 ();
+extern "C" void VuforiaManagerImpl_UnmarshalVuMarkTrackables_m1685287062 ();
+extern "C" void VuforiaManagerImpl_UpdateImageContainer_m7787316 ();
+extern "C" void VuforiaManagerImpl_UpdateCameraFrame_m310552862 ();
+extern "C" void VuforiaManagerImpl_InjectCameraFrame_m4250962038 ();
+extern "C" void VuforiaManagerImpl_UpdateTrackableFoundQueue_m4002308150 ();
+extern "C" void VuforiaManagerImpl_UpdateTrackableFoundQueue_m917188471 ();
+extern "C" void VuforiaManagerImpl_GetTrackableResultData_m2864035145 ();
+extern "C" void VuforiaManagerImpl_GetVuMarkWorldCenter_m1572153011 ();
+extern "C" void VuforiaManagerImpl_UpdateExtendedTrackedVuMarks_m1547135318 ();
+extern "C" void VuforiaManagerImpl__ctor_m3138251417 ();
+extern "C" void U3CU3Ec__DisplayClass86_0__ctor_m1887019962 ();
+extern "C" void U3CU3Ec__DisplayClass86_0_U3CUpdateTrackableFoundQueueU3Eb__0_m2990144355 ();
+extern "C" void U3CU3Ec__DisplayClass86_0_U3CUpdateTrackableFoundQueueU3Eb__1_m3826244548 ();
+extern "C" void PoseData_get_coordinateSystem_m299770816_AdjustorThunk ();
+extern "C" void PoseData_set_coordinateSystem_m1739671603_AdjustorThunk ();
+extern "C" void TrackableResultData_get_status_m2999615273_AdjustorThunk ();
+extern "C" void TrackableResultData_set_status_m716230220_AdjustorThunk ();
+extern "C" void VuMarkTargetResultData_get_status_m1348501583_AdjustorThunk ();
+extern "C" void VuMarkTargetResultData_set_status_m3447826240_AdjustorThunk ();
+extern "C" void WordResultData_get_status_m2705966852_AdjustorThunk ();
+extern "C" void WordResultData_set_status_m322052673_AdjustorThunk ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceDeinitCamera_m1152901278 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceGetCameraDirection_m1185555680 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceGetCameraField_m711848676 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceGetCameraFieldOfViewRads_m2087319325 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceGetFieldBool_m2888303282 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceGetFieldFloat_m3884659222 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceGetFieldInt64_m2257095147 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceGetFieldInt64Range_m3459352038 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceGetFieldString_m3480342432 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceGetNumCameraFields_m2571014198 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceGetNumVideoModes_m1157853523 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceGetVideoMode_m302402639 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceInitCamera_m807781252 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceSelectVideoMode_m2016613001 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceSetCameraConfiguration_m970640227 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceSetFieldBool_m2173082941 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceSetFieldFloat_m225269101 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceSetFieldInt64_m1597940631 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceSetFieldInt64Range_m3390387310 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceSetFieldString_m2308695447 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceSetFlashTorchMode_m161590340 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceSetFocusMode_m3804486714 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceStartCamera_m3074857167 ();
+extern "C" void VuforiaNativeIosWrapper_CameraDeviceStopCamera_m3151693519 ();
+extern "C" void VuforiaNativeIosWrapper_CustomViewerParameters_AddDistortionCoefficient_m3499897001 ();
+extern "C" void VuforiaNativeIosWrapper_CustomViewerParameters_ClearDistortionCoefficients_m2289754423 ();
+extern "C" void VuforiaNativeIosWrapper_CustomViewerParameters_delete_m1409602130 ();
+extern "C" void VuforiaNativeIosWrapper_CustomViewerParameters_new_m265885501 ();
+extern "C" void VuforiaNativeIosWrapper_CustomViewerParameters_SetButtonType_m2733103106 ();
+extern "C" void VuforiaNativeIosWrapper_CustomViewerParameters_SetContainsMagnet_m4001863969 ();
+extern "C" void VuforiaNativeIosWrapper_CustomViewerParameters_SetFieldOfView_m3367427213 ();
+extern "C" void VuforiaNativeIosWrapper_CustomViewerParameters_SetInterLensDistance_m3945732435 ();
+extern "C" void VuforiaNativeIosWrapper_CustomViewerParameters_SetLensCentreToTrayDistance_m2845567325 ();
+extern "C" void VuforiaNativeIosWrapper_CustomViewerParameters_SetScreenToLensDistance_m1646022090 ();
+extern "C" void VuforiaNativeIosWrapper_CustomViewerParameters_SetTrayAlignment_m4199441105 ();
+extern "C" void VuforiaNativeIosWrapper_CylinderTargetGetDimensions_m2512799187 ();
+extern "C" void VuforiaNativeIosWrapper_CylinderTargetSetBottomDiameter_m3044531299 ();
+extern "C" void VuforiaNativeIosWrapper_CylinderTargetSetSideLength_m1857345412 ();
+extern "C" void VuforiaNativeIosWrapper_CylinderTargetSetTopDiameter_m3164449167 ();
+extern "C" void VuforiaNativeIosWrapper_DataSetCreateTrackable_m2185825815 ();
+extern "C" void VuforiaNativeIosWrapper_DataSetDestroyTrackable_m344764689 ();
+extern "C" void VuforiaNativeIosWrapper_DataSetExists_m2603130428 ();
+extern "C" void VuforiaNativeIosWrapper_DataSetGetNumTrackableType_m3058657915 ();
+extern "C" void VuforiaNativeIosWrapper_DataSetGetTrackableName_m2005700695 ();
+extern "C" void VuforiaNativeIosWrapper_DataSetGetTrackablesOfType_m2596356640 ();
+extern "C" void VuforiaNativeIosWrapper_DataSetHasReachedTrackableLimit_m299544149 ();
+extern "C" void VuforiaNativeIosWrapper_DataSetLoad_m74301160 ();
+extern "C" void VuforiaNativeIosWrapper_DeinitFrameState_m2554644580 ();
+extern "C" void VuforiaNativeIosWrapper_Device_GetMode_m4140149265 ();
+extern "C" void VuforiaNativeIosWrapper_Device_GetSelectedViewer_m1505025856 ();
+extern "C" void VuforiaNativeIosWrapper_Device_GetViewerList_m4044609621 ();
+extern "C" void VuforiaNativeIosWrapper_Device_IsViewerPresent_m3731987927 ();
+extern "C" void VuforiaNativeIosWrapper_Device_SelectViewer_m2040586310 ();
+extern "C" void VuforiaNativeIosWrapper_Device_SetMode_m1981898282 ();
+extern "C" void VuforiaNativeIosWrapper_Device_SetViewerPresent_m754792458 ();
+extern "C" void VuforiaNativeIosWrapper_DeviceIsEyewearDevice_m432492141 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearCPMClearProfile_m2678252602 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearCPMGetActiveProfile_m2591782878 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearCPMGetCameraToEyePose_m3864084515 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearCPMGetEyeProjection_m3756689217 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearCPMGetMaxCount_m662265504 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearCPMGetProfileName_m74204045 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearCPMGetUsedCount_m1748450535 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearCPMIsProfileUsed_m939325052 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearCPMSetActiveProfile_m1362125829 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearCPMSetCameraToEyePose_m3847257495 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearCPMSetEyeProjection_m1699826485 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearCPMSetProfileName_m1326722226 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearDeviceGetScreenOrientation_m127385927 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearDeviceIsDisplayExtended_m1147620486 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearDeviceIsDisplayExtendedGLOnly_m86127519 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearDeviceIsDualDisplay_m283177535 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearDeviceIsPredictiveTrackingEnabled_m226493848 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearDeviceIsSeeThru_m3255744929 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearDeviceSetDisplayExtended_m3408200003 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearDeviceSetPredictiveTracking_m174335064 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearUserCalibratorGetMaxScaleHint_m1022551552 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearUserCalibratorGetMinScaleHint_m2350038758 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearUserCalibratorGetProjectionMatrix_m3444678698 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearUserCalibratorInit_m1851885123 ();
+extern "C" void VuforiaNativeIosWrapper_EyewearUserCalibratorIsStereoStretched_m2508866847 ();
+extern "C" void VuforiaNativeIosWrapper_FrameCounterGetBenchmarkingData_m610769791 ();
+extern "C" void VuforiaNativeIosWrapper_GetCameraThreadID_m2879492543 ();
+extern "C" void VuforiaNativeIosWrapper_GetProjectionGL_m3958918218 ();
+extern "C" void VuforiaNativeIosWrapper_GetVuforiaLibraryVersion_m2616556127 ();
+extern "C" void VuforiaNativeIosWrapper_HasSurfaceBeenRecreated_m1411406811 ();
+extern "C" void VuforiaNativeIosWrapper_ImageTargetBuilderBuild_m761460217 ();
+extern "C" void VuforiaNativeIosWrapper_ImageTargetBuilderGetFrameQuality_m1489038982 ();
+extern "C" void VuforiaNativeIosWrapper_ImageTargetBuilderGetTrackableSource_m2028146589 ();
+extern "C" void VuforiaNativeIosWrapper_ImageTargetBuilderStartScan_m1862534857 ();
+extern "C" void VuforiaNativeIosWrapper_ImageTargetBuilderStopScan_m3689948729 ();
+extern "C" void VuforiaNativeIosWrapper_ImageTargetCreateVirtualButton_m3356595724 ();
+extern "C" void VuforiaNativeIosWrapper_ImageTargetDestroyVirtualButton_m736427530 ();
+extern "C" void VuforiaNativeIosWrapper_ImageTargetGetNumVirtualButtons_m371823917 ();
+extern "C" void VuforiaNativeIosWrapper_ImageTargetGetVirtualButtonName_m3989696179 ();
+extern "C" void VuforiaNativeIosWrapper_ImageTargetGetVirtualButtons_m868907208 ();
+extern "C" void VuforiaNativeIosWrapper_InitFrameState_m1012189235 ();
+extern "C" void VuforiaNativeIosWrapper_InitPlatformNative_m1809835485 ();
+extern "C" void VuforiaNativeIosWrapper_MultiTargetGetLargestSizeComponent_m3440076165 ();
+extern "C" void VuforiaNativeIosWrapper_ObjectTargetGetSize_m804931780 ();
+extern "C" void VuforiaNativeIosWrapper_ObjectTargetSetSize_m3030721496 ();
+extern "C" void VuforiaNativeIosWrapper_ObjectTrackerActivateDataSet_m3557428407 ();
+extern "C" void VuforiaNativeIosWrapper_ObjectTrackerCreateDataSet_m2817648219 ();
+extern "C" void VuforiaNativeIosWrapper_ObjectTrackerDeactivateDataSet_m2648798182 ();
+extern "C" void VuforiaNativeIosWrapper_ObjectTrackerDestroyDataSet_m301844456 ();
+extern "C" void VuforiaNativeIosWrapper_ObjectTrackerPersistExtendedTracking_m3393631373 ();
+extern "C" void VuforiaNativeIosWrapper_ObjectTrackerResetExtendedTracking_m424156371 ();
+extern "C" void VuforiaNativeIosWrapper_OnPause_m2560128968 ();
+extern "C" void VuforiaNativeIosWrapper_OnResume_m1408289077 ();
+extern "C" void VuforiaNativeIosWrapper_OnSurfaceChanged_m307016283 ();
+extern "C" void VuforiaNativeIosWrapper_QcarAddCameraFrame_m2904837623 ();
+extern "C" void VuforiaNativeIosWrapper_QcarDeinit_m4207857047 ();
+extern "C" void VuforiaNativeIosWrapper_QcarGetBufferSize_m3641959808 ();
+extern "C" void VuforiaNativeIosWrapper_QcarInit_m1620694890 ();
+extern "C" void VuforiaNativeIosWrapper_QcarSetFrameFormat_m913867524 ();
+extern "C" void VuforiaNativeIosWrapper_QcarSetHint_m2435668228 ();
+extern "C" void VuforiaNativeIosWrapper_ReconstructioFromEnvironmentGetReconstructionState_m4055328441 ();
+extern "C" void VuforiaNativeIosWrapper_ReconstructionFromTargetSetInitializationTarget_m1516900789 ();
+extern "C" void VuforiaNativeIosWrapper_ReconstructionIsReconstructing_m2980521543 ();
+extern "C" void VuforiaNativeIosWrapper_ReconstructionReset_m4122793900 ();
+extern "C" void VuforiaNativeIosWrapper_ReconstructionSetMaximumArea_m4087028836 ();
+extern "C" void VuforiaNativeIosWrapper_ReconstructionSetNavMeshPadding_m2047814053 ();
+extern "C" void VuforiaNativeIosWrapper_ReconstructionStart_m2330593959 ();
+extern "C" void VuforiaNativeIosWrapper_ReconstructionStop_m2134173667 ();
+extern "C" void VuforiaNativeIosWrapper_RendererCreateNativeTexture_m1318632830 ();
+extern "C" void VuforiaNativeIosWrapper_RendererEnd_m2703841983 ();
+extern "C" void VuforiaNativeIosWrapper_RendererGetGraphicsAPI_m1052861569 ();
+extern "C" void VuforiaNativeIosWrapper_RendererGetRecommendedFps_m3849508297 ();
+extern "C" void VuforiaNativeIosWrapper_RendererGetVideoBackgroundCfg_m900453101 ();
+extern "C" void VuforiaNativeIosWrapper_RendererGetVideoBackgroundTextureInfo_m3496016516 ();
+extern "C" void VuforiaNativeIosWrapper_RendererIsVideoBackgroundTextureInfoAvailable_m3369144807 ();
+extern "C" void VuforiaNativeIosWrapper_RendererSetVideoBackgroundCfg_m3254069681 ();
+extern "C" void VuforiaNativeIosWrapper_RendererSetVideoBackgroundTextureID_m2671740442 ();
+extern "C" void VuforiaNativeIosWrapper_RendererSetVideoBackgroundTexturePtr_m3975425300 ();
+extern "C" void VuforiaNativeIosWrapper_RenderingPrimitives_DeleteCopy_m11704288 ();
+extern "C" void VuforiaNativeIosWrapper_RenderingPrimitives_GetDistortionMesh_m3898684507 ();
+extern "C" void VuforiaNativeIosWrapper_RenderingPrimitives_GetDistortionMeshSize_m1922283246 ();
+extern "C" void VuforiaNativeIosWrapper_RenderingPrimitives_GetDistortionTextureViewport_m1194762575 ();
+extern "C" void VuforiaNativeIosWrapper_RenderingPrimitives_GetEffectiveFov_m2223623225 ();
+extern "C" void VuforiaNativeIosWrapper_RenderingPrimitives_GetEyeDisplayAdjustmentMatrix_m1048175274 ();
+extern "C" void VuforiaNativeIosWrapper_RenderingPrimitives_GetNormalizedViewport_m2259441382 ();
+extern "C" void VuforiaNativeIosWrapper_RenderingPrimitives_GetProjectionMatrix_m1170110928 ();
+extern "C" void VuforiaNativeIosWrapper_RenderingPrimitives_GetViewport_m669351719 ();
+extern "C" void VuforiaNativeIosWrapper_RenderingPrimitives_GetViewportCentreToEyeAxis_m1483442813 ();
+extern "C" void VuforiaNativeIosWrapper_RenderingPrimitives_UpdateCopy_m3173378786 ();
+extern "C" void VuforiaNativeIosWrapper_RotationalDeviceTracker_GetModelCorrectionMode_m680451865 ();
+extern "C" void VuforiaNativeIosWrapper_RotationalDeviceTracker_GetModelCorrectionTransform_m2044223864 ();
+extern "C" void VuforiaNativeIosWrapper_RotationalDeviceTracker_GetPosePrediction_m2933739195 ();
+extern "C" void VuforiaNativeIosWrapper_RotationalDeviceTracker_Recenter_m2484813333 ();
+extern "C" void VuforiaNativeIosWrapper_RotationalDeviceTracker_SetModelCorrectionMode_m3151279954 ();
+extern "C" void VuforiaNativeIosWrapper_RotationalDeviceTracker_SetModelCorrectionModeWithTransform_m814525146 ();
+extern "C" void VuforiaNativeIosWrapper_RotationalDeviceTracker_SetPosePrediction_m691473712 ();
+extern "C" void VuforiaNativeIosWrapper_SetApplicationEnvironment_m75822216 ();
+extern "C" void VuforiaNativeIosWrapper_SetHolographicAppCS_m735300802 ();
+extern "C" void VuforiaNativeIosWrapper_SetRenderBuffers_m3342542844 ();
+extern "C" void VuforiaNativeIosWrapper_SetStateBufferSize_m3213366782 ();
+extern "C" void VuforiaNativeIosWrapper_SmartTerrainBuilderAddReconstruction_m2495975253 ();
+extern "C" void VuforiaNativeIosWrapper_SmartTerrainBuilderCreateReconstructionFromEnvironment_m1815804104 ();
+extern "C" void VuforiaNativeIosWrapper_SmartTerrainBuilderCreateReconstructionFromTarget_m1251424812 ();
+extern "C" void VuforiaNativeIosWrapper_SmartTerrainBuilderDestroyReconstruction_m609742430 ();
+extern "C" void VuforiaNativeIosWrapper_SmartTerrainBuilderRemoveReconstruction_m3971717530 ();
+extern "C" void VuforiaNativeIosWrapper_SmartTerrainTrackerDeinitBuilder_m302996419 ();
+extern "C" void VuforiaNativeIosWrapper_SmartTerrainTrackerInitBuilder_m620295786 ();
+extern "C" void VuforiaNativeIosWrapper_SmartTerrainTrackerSetScaleToMillimeter_m2783048279 ();
+extern "C" void VuforiaNativeIosWrapper_StartExtendedTracking_m3153159432 ();
+extern "C" void VuforiaNativeIosWrapper_StopExtendedTracking_m577155968 ();
+extern "C" void VuforiaNativeIosWrapper_TargetFinderClearTrackables_m4069983977 ();
+extern "C" void VuforiaNativeIosWrapper_TargetFinderDeinit_m3699635235 ();
+extern "C" void VuforiaNativeIosWrapper_TargetFinderEnableTracking_m1012242156 ();
+extern "C" void VuforiaNativeIosWrapper_TargetFinderGetImageTargets_m2512364458 ();
+extern "C" void VuforiaNativeIosWrapper_TargetFinderGetInitState_m3256667455 ();
+extern "C" void VuforiaNativeIosWrapper_TargetFinderGetResults_m589564163 ();
+extern "C" void VuforiaNativeIosWrapper_TargetFinderStartInit_m1218004482 ();
+extern "C" void VuforiaNativeIosWrapper_TargetFinderStartRecognition_m3657386603 ();
+extern "C" void VuforiaNativeIosWrapper_TargetFinderStop_m4086500612 ();
+extern "C" void VuforiaNativeIosWrapper_TargetFinderUpdate_m1076763128 ();
+extern "C" void VuforiaNativeIosWrapper_TextTrackerGetRegionOfInterest_m3865666793 ();
+extern "C" void VuforiaNativeIosWrapper_TextTrackerSetRegionOfInterest_m2445974948 ();
+extern "C" void VuforiaNativeIosWrapper_TrackerManagerDeinitTracker_m2540501350 ();
+extern "C" void VuforiaNativeIosWrapper_TrackerManagerInitTracker_m3935154363 ();
+extern "C" void VuforiaNativeIosWrapper_TrackerStart_m2974003764 ();
+extern "C" void VuforiaNativeIosWrapper_TrackerStop_m1449029388 ();
+extern "C" void VuforiaNativeIosWrapper_UpdateQCAR_m3873847443 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParameters_ContainsMagnet_m2238426861 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParameters_copy_m4121762008 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParameters_delete_m84076153 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParameters_GetButtonType_m706654982 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParameters_GetDistortionCoefficient_m1023272655 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParameters_GetFieldOfView_m318242640 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParameters_GetInterLensDistance_m2088129059 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParameters_GetLensCentreToTrayDistance_m3517560929 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParameters_GetManufacturer_m3196302280 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParameters_GetName_m4134217462 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParameters_GetNumDistortionCoefficients_m3279147659 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParameters_GetScreenToLensDistance_m2226660214 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParameters_GetTrayAlignment_m1934941145 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParameters_GetVersion_m1358966946 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParametersList_Begin_m606335884 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParametersList_GetByIndex_m3002845065 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParametersList_GetByNameManufacturer_m850916446 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParametersList_GetListForAuthoringTools_m3527778128 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParametersList_Next_m81190180 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParametersList_SetSDKFilter_m1583373230 ();
+extern "C" void VuforiaNativeIosWrapper_ViewerParametersList_Size_m3906509153 ();
+extern "C" void VuforiaNativeIosWrapper_VirtualButtonGetId_m569539281 ();
+extern "C" void VuforiaNativeIosWrapper_VirtualButtonSetAreaRectangle_m3672781762 ();
+extern "C" void VuforiaNativeIosWrapper_VirtualButtonSetEnabled_m208095882 ();
+extern "C" void VuforiaNativeIosWrapper_VirtualButtonSetSensitivity_m3799741596 ();
+extern "C" void VuforiaNativeIosWrapper_VuforiaGetRenderEventCallback_m2270251237 ();
+extern "C" void VuforiaNativeIosWrapper_VuMarkTargetGetInstanceImage_m1152364951 ();
+extern "C" void VuforiaNativeIosWrapper_VuMarkTemplateGetOrigin_m381959105 ();
+extern "C" void VuforiaNativeIosWrapper_VuMarkTemplateGetVuMarkUserData_m72354746 ();
+extern "C" void VuforiaNativeIosWrapper_VuMarkTemplateSetTrackingFromRuntimeAppearance_m2733792703 ();
+extern "C" void VuforiaNativeIosWrapper_WordGetLetterBoundingBoxes_m1006111415 ();
+extern "C" void VuforiaNativeIosWrapper_WordGetLetterMask_m610684220 ();
+extern "C" void VuforiaNativeIosWrapper_WordListAddWordsFromFile_m4291907338 ();
+extern "C" void VuforiaNativeIosWrapper_WordListAddWordToFilterListU_m4161474916 ();
+extern "C" void VuforiaNativeIosWrapper_WordListAddWordU_m3618658491 ();
+extern "C" void VuforiaNativeIosWrapper_WordListClearFilterList_m658467842 ();
+extern "C" void VuforiaNativeIosWrapper_WordListContainsWordU_m2040191253 ();
+extern "C" void VuforiaNativeIosWrapper_WordListGetFilterListWordCount_m871389696 ();
+extern "C" void VuforiaNativeIosWrapper_WordListGetFilterListWordU_m3494697002 ();
+extern "C" void VuforiaNativeIosWrapper_WordListGetFilterMode_m2653430156 ();
+extern "C" void VuforiaNativeIosWrapper_WordListLoadFilterList_m3809084866 ();
+extern "C" void VuforiaNativeIosWrapper_WordListLoadWordList_m1883806888 ();
+extern "C" void VuforiaNativeIosWrapper_WordListRemoveWordFromFilterListU_m3389547606 ();
+extern "C" void VuforiaNativeIosWrapper_WordListRemoveWordU_m3110586468 ();
+extern "C" void VuforiaNativeIosWrapper_WordListSetFilterMode_m661376283 ();
+extern "C" void VuforiaNativeIosWrapper_WordListUnloadAllLists_m2056443526 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceDeinitCamera_m1587929918 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceGetCameraDirection_m1728649600 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceGetCameraField_m4250172676 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceGetCameraFieldOfViewRads_m55423933 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceGetFieldBool_m3981804370 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceGetFieldFloat_m980178806 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceGetFieldInt64_m4045292235 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceGetFieldInt64Range_m1981884486 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceGetFieldString_m3298608192 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceGetNumCameraFields_m1875692502 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceGetNumVideoModes_m1830756723 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceGetVideoMode_m1845583535 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceInitCamera_m2633929252 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceSelectVideoMode_m31442025 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceSetCameraConfiguration_m3211847683 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceSetFieldBool_m3266305245 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceSetFieldFloat_m1615749773 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceSetFieldInt64_m3386135735 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceSetFieldInt64Range_m2453804430 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceSetFieldString_m3821169527 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceSetFlashTorchMode_m1889761380 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceSetFocusMode_m3175089050 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceStartCamera_m3208437935 ();
+extern "C" void VuforiaNativeIosWrapper_cameraDeviceStopCamera_m3032355887 ();
+extern "C" void VuforiaNativeIosWrapper_customViewerParameters_AddDistortionCoefficient_m2661110409 ();
+extern "C" void VuforiaNativeIosWrapper_customViewerParameters_ClearDistortionCoefficients_m2509496407 ();
+extern "C" void VuforiaNativeIosWrapper_customViewerParameters_delete_m1145210226 ();
+extern "C" void VuforiaNativeIosWrapper_customViewerParameters_new_m3768036445 ();
+extern "C" void VuforiaNativeIosWrapper_customViewerParameters_SetButtonType_m1021066530 ();
+extern "C" void VuforiaNativeIosWrapper_customViewerParameters_SetContainsMagnet_m1887028353 ();
+extern "C" void VuforiaNativeIosWrapper_customViewerParameters_SetFieldOfView_m2159232301 ();
+extern "C" void VuforiaNativeIosWrapper_customViewerParameters_SetInterLensDistance_m3121437811 ();
+extern "C" void VuforiaNativeIosWrapper_customViewerParameters_SetLensCentreToTrayDistance_m3470445629 ();
+extern "C" void VuforiaNativeIosWrapper_customViewerParameters_SetScreenToLensDistance_m2806871658 ();
+extern "C" void VuforiaNativeIosWrapper_customViewerParameters_SetTrayAlignment_m3316586673 ();
+extern "C" void VuforiaNativeIosWrapper_cylinderTargetGetDimensions_m2568397939 ();
+extern "C" void VuforiaNativeIosWrapper_cylinderTargetSetBottomDiameter_m1846085059 ();
+extern "C" void VuforiaNativeIosWrapper_cylinderTargetSetSideLength_m428031588 ();
+extern "C" void VuforiaNativeIosWrapper_cylinderTargetSetTopDiameter_m3134277167 ();
+extern "C" void VuforiaNativeIosWrapper_dataSetCreateTrackable_m2330511863 ();
+extern "C" void VuforiaNativeIosWrapper_dataSetDestroyTrackable_m1211145585 ();
+extern "C" void VuforiaNativeIosWrapper_dataSetExists_m1609124316 ();
+extern "C" void VuforiaNativeIosWrapper_dataSetGetNumTrackableType_m1607768155 ();
+extern "C" void VuforiaNativeIosWrapper_dataSetGetTrackableName_m84910199 ();
+extern "C" void VuforiaNativeIosWrapper_dataSetGetTrackablesOfType_m273956672 ();
+extern "C" void VuforiaNativeIosWrapper_dataSetHasReachedTrackableLimit_m1442588405 ();
+extern "C" void VuforiaNativeIosWrapper_dataSetLoad_m3012062920 ();
+extern "C" void VuforiaNativeIosWrapper_deinitFrameState_m897954500 ();
+extern "C" void VuforiaNativeIosWrapper_device_GetMode_m250013105 ();
+extern "C" void VuforiaNativeIosWrapper_device_GetSelectedViewer_m2573141792 ();
+extern "C" void VuforiaNativeIosWrapper_device_GetViewerList_m4247101621 ();
+extern "C" void VuforiaNativeIosWrapper_device_IsViewerPresent_m1262156215 ();
+extern "C" void VuforiaNativeIosWrapper_device_SelectViewer_m220684390 ();
+extern "C" void VuforiaNativeIosWrapper_device_SetMode_m2592184458 ();
+extern "C" void VuforiaNativeIosWrapper_device_SetViewerPresent_m3090035818 ();
+extern "C" void VuforiaNativeIosWrapper_deviceIsEyewearDevice_m2657808909 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearCPMClearProfile_m3345323802 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearCPMGetActiveProfile_m4075121662 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearCPMGetCameraToEyePose_m2830964739 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearCPMGetEyeProjection_m3700712801 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearCPMGetMaxCount_m3578964992 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearCPMGetProfileName_m2069979309 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearCPMGetUsedCount_m381538951 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearCPMIsProfileUsed_m2918768860 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearCPMSetActiveProfile_m614447077 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearCPMSetCameraToEyePose_m2814137719 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearCPMSetEyeProjection_m1643850069 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearCPMSetProfileName_m3973334866 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearDeviceGetScreenOrientation_m3076880359 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearDeviceIsDisplayExtended_m2903419110 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearDeviceIsDisplayExtendedGLOnly_m849691199 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearDeviceIsDualDisplay_m904056287 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearDeviceIsPredictiveTrackingEnabled_m3486033528 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearDeviceIsSeeThru_m3205109121 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearDeviceSetDisplayExtended_m3083391203 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearDeviceSetPredictiveTracking_m630864248 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearUserCalibratorGetMaxScaleHint_m1907921952 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearUserCalibratorGetMinScaleHint_m1311367942 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearUserCalibratorGetProjectionMatrix_m2836689226 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearUserCalibratorInit_m1522517795 ();
+extern "C" void VuforiaNativeIosWrapper_eyewearUserCalibratorIsStereoStretched_m2098774975 ();
+extern "C" void VuforiaNativeIosWrapper_frameCounterGetBenchmarkingData_m2069907807 ();
+extern "C" void VuforiaNativeIosWrapper_getCameraThreadID_m1781433375 ();
+extern "C" void VuforiaNativeIosWrapper_getProjectionGL_m2982094058 ();
+extern "C" void VuforiaNativeIosWrapper_getVuforiaLibraryVersion_m1793725823 ();
+extern "C" void VuforiaNativeIosWrapper_hasSurfaceBeenRecreated_m2869422907 ();
+extern "C" void VuforiaNativeIosWrapper_imageTargetBuilderBuild_m2202258393 ();
+extern "C" void VuforiaNativeIosWrapper_imageTargetBuilderGetFrameQuality_m2951572518 ();
+extern "C" void VuforiaNativeIosWrapper_imageTargetBuilderGetTrackableSource_m2143164861 ();
+extern "C" void VuforiaNativeIosWrapper_imageTargetBuilderStartScan_m4228299177 ();
+extern "C" void VuforiaNativeIosWrapper_imageTargetBuilderStopScan_m1835474969 ();
+extern "C" void VuforiaNativeIosWrapper_imageTargetCreateVirtualButton_m3782989548 ();
+extern "C" void VuforiaNativeIosWrapper_imageTargetDestroyVirtualButton_m3689507626 ();
+extern "C" void VuforiaNativeIosWrapper_imageTargetGetNumVirtualButtons_m2957197453 ();
+extern "C" void VuforiaNativeIosWrapper_imageTargetGetVirtualButtonName_m2247848339 ();
+extern "C" void VuforiaNativeIosWrapper_imageTargetGetVirtualButtons_m1743081832 ();
+extern "C" void VuforiaNativeIosWrapper_initFrameState_m2026310867 ();
+extern "C" void VuforiaNativeIosWrapper_initPlatformNative_m3868192701 ();
+extern "C" void VuforiaNativeIosWrapper_multiTargetGetLargestSizeComponent_m2588386597 ();
+extern "C" void VuforiaNativeIosWrapper_objectTargetGetSize_m3619084004 ();
+extern "C" void VuforiaNativeIosWrapper_objectTargetSetSize_m1549906424 ();
+extern "C" void VuforiaNativeIosWrapper_objectTrackerActivateDataSet_m3612744791 ();
+extern "C" void VuforiaNativeIosWrapper_objectTrackerCreateDataSet_m2032962555 ();
+extern "C" void VuforiaNativeIosWrapper_objectTrackerDeactivateDataSet_m1309291462 ();
+extern "C" void VuforiaNativeIosWrapper_objectTrackerDestroyDataSet_m3141081480 ();
+extern "C" void VuforiaNativeIosWrapper_objectTrackerPersistExtendedTracking_m3210300269 ();
+extern "C" void VuforiaNativeIosWrapper_objectTrackerResetExtendedTracking_m1726601523 ();
+extern "C" void VuforiaNativeIosWrapper_onPause_m405923240 ();
+extern "C" void VuforiaNativeIosWrapper_onResume_m1771188757 ();
+extern "C" void VuforiaNativeIosWrapper_onSurfaceChanged_m3315021947 ();
+extern "C" void VuforiaNativeIosWrapper_qcarAddCameraFrame_m4004049239 ();
+extern "C" void VuforiaNativeIosWrapper_qcarDeinit_m101946935 ();
+extern "C" void VuforiaNativeIosWrapper_qcarGetBufferSize_m1980761568 ();
+extern "C" void VuforiaNativeIosWrapper_qcarInit_m2366259850 ();
+extern "C" void VuforiaNativeIosWrapper_qcarSetFrameFormat_m3296300004 ();
+extern "C" void VuforiaNativeIosWrapper_qcarSetHint_m389356964 ();
+extern "C" void VuforiaNativeIosWrapper_reconstructioFromEnvironmentGetReconstructionState_m4226052121 ();
+extern "C" void VuforiaNativeIosWrapper_reconstructionFromTargetSetInitializationTarget_m183654805 ();
+extern "C" void VuforiaNativeIosWrapper_reconstructionIsReconstructing_m1879333735 ();
+extern "C" void VuforiaNativeIosWrapper_reconstructionReset_m569248588 ();
+extern "C" void VuforiaNativeIosWrapper_reconstructionSetMaximumArea_m4277845316 ();
+extern "C" void VuforiaNativeIosWrapper_reconstructionSetNavMeshPadding_m1798156037 ();
+extern "C" void VuforiaNativeIosWrapper_reconstructionStart_m1276739271 ();
+extern "C" void VuforiaNativeIosWrapper_reconstructionStop_m718400579 ();
+extern "C" void VuforiaNativeIosWrapper_rendererCreateNativeTexture_m3522408734 ();
+extern "C" void VuforiaNativeIosWrapper_rendererEnd_m3748908575 ();
+extern "C" void VuforiaNativeIosWrapper_rendererGetGraphicsAPI_m4081151137 ();
+extern "C" void VuforiaNativeIosWrapper_rendererGetRecommendedFps_m2093869481 ();
+extern "C" void VuforiaNativeIosWrapper_rendererGetVideoBackgroundCfg_m2044882061 ();
+extern "C" void VuforiaNativeIosWrapper_rendererGetVideoBackgroundTextureInfo_m3555068388 ();
+extern "C" void VuforiaNativeIosWrapper_rendererIsVideoBackgroundTextureInfoAvailable_m2005124487 ();
+extern "C" void VuforiaNativeIosWrapper_rendererSetVideoBackgroundCfg_m103531345 ();
+extern "C" void VuforiaNativeIosWrapper_rendererSetVideoBackgroundTextureID_m549253946 ();
+extern "C" void VuforiaNativeIosWrapper_rendererSetVideoBackgroundTexturePtr_m3508335028 ();
+extern "C" void VuforiaNativeIosWrapper_renderingPrimitives_DeleteCopy_m2389955136 ();
+extern "C" void VuforiaNativeIosWrapper_renderingPrimitives_GetDistortionMesh_m4267271227 ();
+extern "C" void VuforiaNativeIosWrapper_renderingPrimitives_GetDistortionMeshSize_m1314955982 ();
+extern "C" void VuforiaNativeIosWrapper_renderingPrimitives_GetDistortionTextureViewport_m2409313007 ();
+extern "C" void VuforiaNativeIosWrapper_renderingPrimitives_GetEffectiveFov_m2153537433 ();
+extern "C" void VuforiaNativeIosWrapper_renderingPrimitives_GetEyeDisplayAdjustmentMatrix_m2110868810 ();
+extern "C" void VuforiaNativeIosWrapper_renderingPrimitives_GetNormalizedViewport_m921064390 ();
+extern "C" void VuforiaNativeIosWrapper_renderingPrimitives_GetProjectionMatrix_m3624445744 ();
+extern "C" void VuforiaNativeIosWrapper_renderingPrimitives_GetViewport_m3203698759 ();
+extern "C" void VuforiaNativeIosWrapper_renderingPrimitives_GetViewportCentreToEyeAxis_m1840788573 ();
+extern "C" void VuforiaNativeIosWrapper_renderingPrimitives_UpdateCopy_m3416861250 ();
+extern "C" void VuforiaNativeIosWrapper_rotationalDeviceTracker_GetModelCorrectionMode_m1993917689 ();
+extern "C" void VuforiaNativeIosWrapper_rotationalDeviceTracker_GetModelCorrectionTransform_m4270789976 ();
+extern "C" void VuforiaNativeIosWrapper_rotationalDeviceTracker_GetPosePrediction_m1624677915 ();
+extern "C" void VuforiaNativeIosWrapper_rotationalDeviceTracker_Recenter_m4061718453 ();
+extern "C" void VuforiaNativeIosWrapper_rotationalDeviceTracker_SetModelCorrectionMode_m1264565106 ();
+extern "C" void VuforiaNativeIosWrapper_rotationalDeviceTracker_SetModelCorrectionModeWithTransform_m3332665146 ();
+extern "C" void VuforiaNativeIosWrapper_rotationalDeviceTracker_SetPosePrediction_m3698643088 ();
+extern "C" void VuforiaNativeIosWrapper_setApplicationEnvironment_m3840656360 ();
+extern "C" void VuforiaNativeIosWrapper_setHolographicAppCS_m2821035810 ();
+extern "C" void VuforiaNativeIosWrapper_setRenderBuffers_m1506452892 ();
+extern "C" void VuforiaNativeIosWrapper_setStateBufferSize_m1566900126 ();
+extern "C" void VuforiaNativeIosWrapper_smartTerrainBuilderAddReconstruction_m2389970357 ();
+extern "C" void VuforiaNativeIosWrapper_smartTerrainBuilderCreateReconstructionFromEnvironment_m1899014632 ();
+extern "C" void VuforiaNativeIosWrapper_smartTerrainBuilderCreateReconstructionFromTarget_m3362073420 ();
+extern "C" void VuforiaNativeIosWrapper_smartTerrainBuilderDestroyReconstruction_m1922190526 ();
+extern "C" void VuforiaNativeIosWrapper_smartTerrainBuilderRemoveReconstruction_m3922169658 ();
+extern "C" void VuforiaNativeIosWrapper_smartTerrainTrackerDeinitBuilder_m1812618339 ();
+extern "C" void VuforiaNativeIosWrapper_smartTerrainTrackerInitBuilder_m4050234314 ();
+extern "C" void VuforiaNativeIosWrapper_smartTerrainTrackerSetScaleToMillimeter_m3009738487 ();
+extern "C" void VuforiaNativeIosWrapper_startExtendedTracking_m3420814888 ();
+extern "C" void VuforiaNativeIosWrapper_stopExtendedTracking_m3952460832 ();
+extern "C" void VuforiaNativeIosWrapper_targetFinderClearTrackables_m1475907081 ();
+extern "C" void VuforiaNativeIosWrapper_targetFinderDeinit_m2013149251 ();
+extern "C" void VuforiaNativeIosWrapper_targetFinderEnableTracking_m2220507596 ();
+extern "C" void VuforiaNativeIosWrapper_targetFinderGetImageTargets_m747558922 ();
+extern "C" void VuforiaNativeIosWrapper_targetFinderGetInitState_m4025907359 ();
+extern "C" void VuforiaNativeIosWrapper_targetFinderGetResults_m2135083875 ();
+extern "C" void VuforiaNativeIosWrapper_targetFinderStartInit_m617810274 ();
+extern "C" void VuforiaNativeIosWrapper_targetFinderStartRecognition_m3928355403 ();
+extern "C" void VuforiaNativeIosWrapper_targetFinderStop_m1692693988 ();
+extern "C" void VuforiaNativeIosWrapper_targetFinderUpdate_m4158881560 ();
+extern "C" void VuforiaNativeIosWrapper_textTrackerGetRegionOfInterest_m1206411465 ();
+extern "C" void VuforiaNativeIosWrapper_textTrackerSetRegionOfInterest_m3530828036 ();
+extern "C" void VuforiaNativeIosWrapper_trackerManagerDeinitTracker_m667500934 ();
+extern "C" void VuforiaNativeIosWrapper_trackerManagerInitTracker_m3140201755 ();
+extern "C" void VuforiaNativeIosWrapper_trackerStart_m2503881172 ();
+extern "C" void VuforiaNativeIosWrapper_trackerStop_m1414063980 ();
+extern "C" void VuforiaNativeIosWrapper_updateQCAR_m1735310899 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParameters_ContainsMagnet_m1930084045 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParameters_copy_m2582006584 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParameters_delete_m48747289 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParameters_GetButtonType_m1555090342 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParameters_GetDistortionCoefficient_m3282973871 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParameters_GetFieldOfView_m2602457840 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParameters_GetInterLensDistance_m3435326787 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParameters_GetLensCentreToTrayDistance_m1510126145 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParameters_GetManufacturer_m2113922472 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParameters_GetName_m292468950 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParameters_GetNumDistortionCoefficients_m431163115 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParameters_GetScreenToLensDistance_m127583126 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParameters_GetTrayAlignment_m1144067705 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParameters_GetVersion_m1868306690 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParametersList_Begin_m1351734828 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParametersList_GetByIndex_m3688531817 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParametersList_GetByNameManufacturer_m3451169470 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParametersList_GetListForAuthoringTools_m3822216112 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParametersList_Next_m245097348 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParametersList_SetSDKFilter_m2503443406 ();
+extern "C" void VuforiaNativeIosWrapper_viewerParametersList_Size_m263769793 ();
+extern "C" void VuforiaNativeIosWrapper_virtualButtonGetId_m190867889 ();
+extern "C" void VuforiaNativeIosWrapper_virtualButtonSetAreaRectangle_m2462416034 ();
+extern "C" void VuforiaNativeIosWrapper_virtualButtonSetEnabled_m1979993002 ();
+extern "C" void VuforiaNativeIosWrapper_virtualButtonSetSensitivity_m3646875708 ();
+extern "C" void VuforiaNativeIosWrapper_vuforiaGetRenderEventCallback_m3666992453 ();
+extern "C" void VuforiaNativeIosWrapper_vuMarkTargetGetInstanceImage_m4273202231 ();
+extern "C" void VuforiaNativeIosWrapper_vuMarkTemplateGetOrigin_m685820321 ();
+extern "C" void VuforiaNativeIosWrapper_vuMarkTemplateGetVuMarkUserData_m2375377050 ();
+extern "C" void VuforiaNativeIosWrapper_vuMarkTemplateSetTrackingFromRuntimeAppearance_m2667943135 ();
+extern "C" void VuforiaNativeIosWrapper_wordGetLetterBoundingBoxes_m2060470295 ();
+extern "C" void VuforiaNativeIosWrapper_wordGetLetterMask_m1601539420 ();
+extern "C" void VuforiaNativeIosWrapper_wordListAddWordsFromFile_m4169273642 ();
+extern "C" void VuforiaNativeIosWrapper_wordListAddWordToFilterListU_m1504486340 ();
+extern "C" void VuforiaNativeIosWrapper_wordListAddWordU_m2664139803 ();
+extern "C" void VuforiaNativeIosWrapper_wordListClearFilterList_m2975657186 ();
+extern "C" void VuforiaNativeIosWrapper_wordListContainsWordU_m4226219317 ();
+extern "C" void VuforiaNativeIosWrapper_wordListGetFilterListWordCount_m3662038304 ();
+extern "C" void VuforiaNativeIosWrapper_wordListGetFilterListWordU_m938934346 ();
+extern "C" void VuforiaNativeIosWrapper_wordListGetFilterMode_m1378839596 ();
+extern "C" void VuforiaNativeIosWrapper_wordListLoadFilterList_m1741071522 ();
+extern "C" void VuforiaNativeIosWrapper_wordListLoadWordList_m393179080 ();
+extern "C" void VuforiaNativeIosWrapper_wordListRemoveWordFromFilterListU_m887358902 ();
+extern "C" void VuforiaNativeIosWrapper_wordListRemoveWordU_m1241517508 ();
+extern "C" void VuforiaNativeIosWrapper_wordListSetFilterMode_m4090943099 ();
+extern "C" void VuforiaNativeIosWrapper_wordListUnloadAllLists_m1166082790 ();
+extern "C" void VuforiaNativeIosWrapper__ctor_m421771357 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceDeinitCamera_m1109208629 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceGetCameraDirection_m703468441 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceGetCameraField_m63553131 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceGetCameraFieldOfViewRads_m808578640 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceGetFieldBool_m2539675793 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceGetFieldFloat_m423682739 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceGetFieldInt64_m531726890 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceGetFieldInt64Range_m3248407549 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceGetFieldString_m1690296337 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceGetNumCameraFields_m2982742771 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceGetNumVideoModes_m1468494034 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceGetVideoMode_m831836610 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceInitCamera_m2164031797 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceSelectVideoMode_m1038892030 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceSetCameraConfiguration_m3586296648 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceSetFieldBool_m1466270898 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceSetFieldFloat_m3231490170 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceSetFieldInt64_m3339716288 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceSetFieldInt64Range_m4205204779 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceSetFieldString_m2544232480 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceSetFlashTorchMode_m1268187253 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceSetFocusMode_m1516702471 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceStartCamera_m1648509688 ();
+extern "C" void VuforiaNativeWrapper_CameraDeviceStopCamera_m382415192 ();
+extern "C" void VuforiaNativeWrapper_CustomViewerParameters_AddDistortionCoefficient_m4050510332 ();
+extern "C" void VuforiaNativeWrapper_CustomViewerParameters_ClearDistortionCoefficients_m2969993578 ();
+extern "C" void VuforiaNativeWrapper_CustomViewerParameters_delete_m2560137619 ();
+extern "C" void VuforiaNativeWrapper_CustomViewerParameters_new_m2285257164 ();
+extern "C" void VuforiaNativeWrapper_CustomViewerParameters_SetButtonType_m2557764195 ();
+extern "C" void VuforiaNativeWrapper_CustomViewerParameters_SetContainsMagnet_m441592582 ();
+extern "C" void VuforiaNativeWrapper_CustomViewerParameters_SetFieldOfView_m4256636688 ();
+extern "C" void VuforiaNativeWrapper_CustomViewerParameters_SetInterLensDistance_m750366472 ();
+extern "C" void VuforiaNativeWrapper_CustomViewerParameters_SetLensCentreToTrayDistance_m1881978978 ();
+extern "C" void VuforiaNativeWrapper_CustomViewerParameters_SetScreenToLensDistance_m2504455073 ();
+extern "C" void VuforiaNativeWrapper_CustomViewerParameters_SetTrayAlignment_m2300096494 ();
+extern "C" void VuforiaNativeWrapper_CylinderTargetGetDimensions_m4288176978 ();
+extern "C" void VuforiaNativeWrapper_CylinderTargetSetBottomDiameter_m322495034 ();
+extern "C" void VuforiaNativeWrapper_CylinderTargetSetSideLength_m258427277 ();
+extern "C" void VuforiaNativeWrapper_CylinderTargetSetTopDiameter_m449536726 ();
+extern "C" void VuforiaNativeWrapper_DataSetCreateTrackable_m2990128992 ();
+extern "C" void VuforiaNativeWrapper_DataSetDestroyTrackable_m3681595572 ();
+extern "C" void VuforiaNativeWrapper_DataSetExists_m2807206103 ();
+extern "C" void VuforiaNativeWrapper_DataSetGetNumTrackableType_m2351326228 ();
+extern "C" void VuforiaNativeWrapper_DataSetGetTrackableName_m3695645824 ();
+extern "C" void VuforiaNativeWrapper_DataSetGetTrackablesOfType_m604571841 ();
+extern "C" void VuforiaNativeWrapper_DataSetHasReachedTrackableLimit_m2620656106 ();
+extern "C" void VuforiaNativeWrapper_DataSetLoad_m1260320755 ();
+extern "C" void VuforiaNativeWrapper_DeinitFrameState_m3888900699 ();
+extern "C" void VuforiaNativeWrapper_Device_GetMode_m424990260 ();
+extern "C" void VuforiaNativeWrapper_Device_GetSelectedViewer_m2323016995 ();
+extern "C" void VuforiaNativeWrapper_Device_GetViewerList_m700311300 ();
+extern "C" void VuforiaNativeWrapper_Device_IsViewerPresent_m2010970110 ();
+extern "C" void VuforiaNativeWrapper_Device_SelectViewer_m116751893 ();
+extern "C" void VuforiaNativeWrapper_Device_SetMode_m1718017929 ();
+extern "C" void VuforiaNativeWrapper_Device_SetViewerPresent_m2479357667 ();
+extern "C" void VuforiaNativeWrapper_DeviceIsEyewearDevice_m2970460386 ();
+extern "C" void VuforiaNativeWrapper_EyewearCPMClearProfile_m3627509031 ();
+extern "C" void VuforiaNativeWrapper_EyewearCPMGetActiveProfile_m3497764733 ();
+extern "C" void VuforiaNativeWrapper_EyewearCPMGetCameraToEyePose_m941746972 ();
+extern "C" void VuforiaNativeWrapper_EyewearCPMGetEyeProjection_m1482460470 ();
+extern "C" void VuforiaNativeWrapper_EyewearCPMGetMaxCount_m3171668281 ();
+extern "C" void VuforiaNativeWrapper_EyewearCPMGetProfileName_m505697772 ();
+extern "C" void VuforiaNativeWrapper_EyewearCPMGetUsedCount_m280960342 ();
+extern "C" void VuforiaNativeWrapper_EyewearCPMIsProfileUsed_m2552144799 ();
+extern "C" void VuforiaNativeWrapper_EyewearCPMSetActiveProfile_m2104105680 ();
+extern "C" void VuforiaNativeWrapper_EyewearCPMSetCameraToEyePose_m2875139712 ();
+extern "C" void VuforiaNativeWrapper_EyewearCPMSetEyeProjection_m3300367642 ();
+extern "C" void VuforiaNativeWrapper_EyewearCPMSetProfileName_m553815769 ();
+extern "C" void VuforiaNativeWrapper_EyewearDeviceGetScreenOrientation_m378511126 ();
+extern "C" void VuforiaNativeWrapper_EyewearDeviceIsDisplayExtended_m4119027101 ();
+extern "C" void VuforiaNativeWrapper_EyewearDeviceIsDisplayExtendedGLOnly_m1981191680 ();
+extern "C" void VuforiaNativeWrapper_EyewearDeviceIsDualDisplay_m771840902 ();
+extern "C" void VuforiaNativeWrapper_EyewearDeviceIsPredictiveTrackingEnabled_m2051618457 ();
+extern "C" void VuforiaNativeWrapper_EyewearDeviceIsSeeThru_m3209053292 ();
+extern "C" void VuforiaNativeWrapper_EyewearDeviceSetDisplayExtended_m587511586 ();
+extern "C" void VuforiaNativeWrapper_EyewearDeviceSetPredictiveTracking_m2880039531 ();
+extern "C" void VuforiaNativeWrapper_EyewearUserCalibratorGetMaxScaleHint_m3515881541 ();
+extern "C" void VuforiaNativeWrapper_EyewearUserCalibratorGetMinScaleHint_m497648927 ();
+extern "C" void VuforiaNativeWrapper_EyewearUserCalibratorGetProjectionMatrix_m344279799 ();
+extern "C" void VuforiaNativeWrapper_EyewearUserCalibratorInit_m1428546714 ();
+extern "C" void VuforiaNativeWrapper_EyewearUserCalibratorIsStereoStretched_m3029041672 ();
+extern "C" void VuforiaNativeWrapper_FrameCounterGetBenchmarkingData_m2933366218 ();
+extern "C" void VuforiaNativeWrapper_GetCameraThreadID_m2761409230 ();
+extern "C" void VuforiaNativeWrapper_GetProjectionGL_m844412913 ();
+extern "C" void VuforiaNativeWrapper_GetVuforiaLibraryVersion_m354038804 ();
+extern "C" void VuforiaNativeWrapper_HasSurfaceBeenRecreated_m2036938132 ();
+extern "C" void VuforiaNativeWrapper_ImageTargetBuilderBuild_m910660886 ();
+extern "C" void VuforiaNativeWrapper_ImageTargetBuilderGetFrameQuality_m2416629835 ();
+extern "C" void VuforiaNativeWrapper_ImageTargetBuilderGetTrackableSource_m2360215990 ();
+extern "C" void VuforiaNativeWrapper_ImageTargetBuilderStartScan_m809644532 ();
+extern "C" void VuforiaNativeWrapper_ImageTargetBuilderStopScan_m2535540620 ();
+extern "C" void VuforiaNativeWrapper_ImageTargetCreateVirtualButton_m1368760967 ();
+extern "C" void VuforiaNativeWrapper_ImageTargetDestroyVirtualButton_m82814135 ();
+extern "C" void VuforiaNativeWrapper_ImageTargetGetNumVirtualButtons_m3628348058 ();
+extern "C" void VuforiaNativeWrapper_ImageTargetGetVirtualButtonName_m2112234436 ();
+extern "C" void VuforiaNativeWrapper_ImageTargetGetVirtualButtons_m2320424507 ();
+extern "C" void VuforiaNativeWrapper_InitFrameState_m4223899912 ();
+extern "C" void VuforiaNativeWrapper_InitPlatformNative_m2860361880 ();
+extern "C" void VuforiaNativeWrapper_MultiTargetGetLargestSizeComponent_m2654880854 ();
+extern "C" void VuforiaNativeWrapper_ObjectTargetGetSize_m1080718975 ();
+extern "C" void VuforiaNativeWrapper_ObjectTargetSetSize_m2490596547 ();
+extern "C" void VuforiaNativeWrapper_ObjectTrackerActivateDataSet_m1405592088 ();
+extern "C" void VuforiaNativeWrapper_ObjectTrackerCreateDataSet_m3669350956 ();
+extern "C" void VuforiaNativeWrapper_ObjectTrackerDeactivateDataSet_m1775103787 ();
+extern "C" void VuforiaNativeWrapper_ObjectTrackerDestroyDataSet_m1829171873 ();
+extern "C" void VuforiaNativeWrapper_ObjectTrackerPersistExtendedTracking_m49830696 ();
+extern "C" void VuforiaNativeWrapper_ObjectTrackerResetExtendedTracking_m3037757866 ();
+extern "C" void VuforiaNativeWrapper_OnPause_m2681763759 ();
+extern "C" void VuforiaNativeWrapper_OnResume_m3769569024 ();
+extern "C" void VuforiaNativeWrapper_OnSurfaceChanged_m51781902 ();
+extern "C" void VuforiaNativeWrapper_QcarAddCameraFrame_m800762140 ();
+extern "C" void VuforiaNativeWrapper_QcarDeinit_m4180067380 ();
+extern "C" void VuforiaNativeWrapper_QcarGetBufferSize_m812514041 ();
+extern "C" void VuforiaNativeWrapper_QcarInit_m1548867895 ();
+extern "C" void VuforiaNativeWrapper_QcarSetFrameFormat_m3674889639 ();
+extern "C" void VuforiaNativeWrapper_QcarSetHint_m2216260991 ();
+extern "C" void VuforiaNativeWrapper_ReconstructioFromEnvironmentGetReconstructionState_m4241304182 ();
+extern "C" void VuforiaNativeWrapper_ReconstructionFromTargetSetInitializationTarget_m2216601704 ();
+extern "C" void VuforiaNativeWrapper_ReconstructionIsReconstructing_m4219088470 ();
+extern "C" void VuforiaNativeWrapper_ReconstructionReset_m2652192527 ();
+extern "C" void VuforiaNativeWrapper_ReconstructionSetMaximumArea_m2200790357 ();
+extern "C" void VuforiaNativeWrapper_ReconstructionSetNavMeshPadding_m1245734770 ();
+extern "C" void VuforiaNativeWrapper_ReconstructionStart_m1708729006 ();
+extern "C" void VuforiaNativeWrapper_ReconstructionStop_m2213730332 ();
+extern "C" void VuforiaNativeWrapper_RendererCreateNativeTexture_m4108368443 ();
+extern "C" void VuforiaNativeWrapper_RendererEnd_m2755310140 ();
+extern "C" void VuforiaNativeWrapper_RendererGetGraphicsAPI_m311384318 ();
+extern "C" void VuforiaNativeWrapper_RendererGetRecommendedFps_m2718147006 ();
+extern "C" void VuforiaNativeWrapper_RendererGetVideoBackgroundCfg_m3445707232 ();
+extern "C" void VuforiaNativeWrapper_RendererGetVideoBackgroundTextureInfo_m813611765 ();
+extern "C" void VuforiaNativeWrapper_RendererIsVideoBackgroundTextureInfoAvailable_m3325794448 ();
+extern "C" void VuforiaNativeWrapper_RendererSetVideoBackgroundCfg_m316024940 ();
+extern "C" void VuforiaNativeWrapper_RendererSetVideoBackgroundTextureID_m2114615881 ();
+extern "C" void VuforiaNativeWrapper_RendererSetVideoBackgroundTexturePtr_m1202149405 ();
+extern "C" void VuforiaNativeWrapper_RenderingPrimitives_DeleteCopy_m3000368135 ();
+extern "C" void VuforiaNativeWrapper_RenderingPrimitives_GetDistortionMesh_m4283176662 ();
+extern "C" void VuforiaNativeWrapper_RenderingPrimitives_GetDistortionMeshSize_m912665527 ();
+extern "C" void VuforiaNativeWrapper_RenderingPrimitives_GetDistortionTextureViewport_m1785851748 ();
+extern "C" void VuforiaNativeWrapper_RenderingPrimitives_GetEffectiveFov_m3093465092 ();
+extern "C" void VuforiaNativeWrapper_RenderingPrimitives_GetEyeDisplayAdjustmentMatrix_m738133225 ();
+extern "C" void VuforiaNativeWrapper_RenderingPrimitives_GetNormalizedViewport_m52452887 ();
+extern "C" void VuforiaNativeWrapper_RenderingPrimitives_GetProjectionMatrix_m574647785 ();
+extern "C" void VuforiaNativeWrapper_RenderingPrimitives_GetViewport_m2137207794 ();
+extern "C" void VuforiaNativeWrapper_RenderingPrimitives_GetViewportCentreToEyeAxis_m266470848 ();
+extern "C" void VuforiaNativeWrapper_RenderingPrimitives_UpdateCopy_m2449350739 ();
+extern "C" void VuforiaNativeWrapper_RotationalDeviceTracker_GetModelCorrectionMode_m3601203876 ();
+extern "C" void VuforiaNativeWrapper_RotationalDeviceTracker_GetModelCorrectionTransform_m556679759 ();
+extern "C" void VuforiaNativeWrapper_RotationalDeviceTracker_GetPosePrediction_m2112929460 ();
+extern "C" void VuforiaNativeWrapper_RotationalDeviceTracker_Recenter_m3572830818 ();
+extern "C" void VuforiaNativeWrapper_RotationalDeviceTracker_SetModelCorrectionMode_m900228177 ();
+extern "C" void VuforiaNativeWrapper_RotationalDeviceTracker_SetModelCorrectionModeWithTransform_m3356567657 ();
+extern "C" void VuforiaNativeWrapper_RotationalDeviceTracker_SetPosePrediction_m3042270249 ();
+extern "C" void VuforiaNativeWrapper_SetApplicationEnvironment_m3227637697 ();
+extern "C" void VuforiaNativeWrapper_SetHolographicAppCS_m3683919625 ();
+extern "C" void VuforiaNativeWrapper_SetRenderBuffers_m2507583749 ();
+extern "C" void VuforiaNativeWrapper_SetStateBufferSize_m2648144133 ();
+extern "C" void VuforiaNativeWrapper_SmartTerrainBuilderAddReconstruction_m408374664 ();
+extern "C" void VuforiaNativeWrapper_SmartTerrainBuilderCreateReconstructionFromEnvironment_m464511443 ();
+extern "C" void VuforiaNativeWrapper_SmartTerrainBuilderCreateReconstructionFromTarget_m2726296039 ();
+extern "C" void VuforiaNativeWrapper_SmartTerrainBuilderDestroyReconstruction_m3369434467 ();
+extern "C" void VuforiaNativeWrapper_SmartTerrainBuilderRemoveReconstruction_m3540107375 ();
+extern "C" void VuforiaNativeWrapper_SmartTerrainTrackerDeinitBuilder_m3528945108 ();
+extern "C" void VuforiaNativeWrapper_SmartTerrainTrackerInitBuilder_m2371827647 ();
+extern "C" void VuforiaNativeWrapper_SmartTerrainTrackerSetScaleToMillimeter_m1896207680 ();
+extern "C" void VuforiaNativeWrapper_StartExtendedTracking_m1582118465 ();
+extern "C" void VuforiaNativeWrapper_StopExtendedTracking_m809694617 ();
+extern "C" void VuforiaNativeWrapper_TargetFinderClearTrackables_m2478094286 ();
+extern "C" void VuforiaNativeWrapper_TargetFinderDeinit_m793830682 ();
+extern "C" void VuforiaNativeWrapper_TargetFinderEnableTracking_m4099626151 ();
+extern "C" void VuforiaNativeWrapper_TargetFinderGetImageTargets_m189431547 ();
+extern "C" void VuforiaNativeWrapper_TargetFinderGetInitState_m2991932808 ();
+extern "C" void VuforiaNativeWrapper_TargetFinderGetResults_m3707893436 ();
+extern "C" void VuforiaNativeWrapper_TargetFinderStartInit_m2209911127 ();
+extern "C" void VuforiaNativeWrapper_TargetFinderStartRecognition_m660185564 ();
+extern "C" void VuforiaNativeWrapper_TargetFinderStop_m864798381 ();
+extern "C" void VuforiaNativeWrapper_TargetFinderUpdate_m3958322217 ();
+extern "C" void VuforiaNativeWrapper_TextTrackerGetRegionOfInterest_m474085108 ();
+extern "C" void VuforiaNativeWrapper_TextTrackerSetRegionOfInterest_m2425820735 ();
+extern "C" void VuforiaNativeWrapper_TrackerManagerDeinitTracker_m2521888619 ();
+extern "C" void VuforiaNativeWrapper_TrackerManagerInitTracker_m1042086034 ();
+extern "C" void VuforiaNativeWrapper_TrackerStart_m2627030839 ();
+extern "C" void VuforiaNativeWrapper_TrackerStop_m1349417349 ();
+extern "C" void VuforiaNativeWrapper_UpdateQCAR_m334369828 ();
+extern "C" void VuforiaNativeWrapper_ViewerParameters_ContainsMagnet_m3851168722 ();
+extern "C" void VuforiaNativeWrapper_ViewerParameters_copy_m2541527997 ();
+extern "C" void VuforiaNativeWrapper_ViewerParameters_delete_m3934079046 ();
+extern "C" void VuforiaNativeWrapper_ViewerParameters_GetButtonType_m2399075267 ();
+extern "C" void VuforiaNativeWrapper_ViewerParameters_GetDistortionCoefficient_m2805254700 ();
+extern "C" void VuforiaNativeWrapper_ViewerParameters_GetFieldOfView_m994860239 ();
+extern "C" void VuforiaNativeWrapper_ViewerParameters_GetInterLensDistance_m3452712974 ();
+extern "C" void VuforiaNativeWrapper_ViewerParameters_GetLensCentreToTrayDistance_m391308882 ();
+extern "C" void VuforiaNativeWrapper_ViewerParameters_GetManufacturer_m3535128349 ();
+extern "C" void VuforiaNativeWrapper_ViewerParameters_GetName_m3589734657 ();
+extern "C" void VuforiaNativeWrapper_ViewerParameters_GetNumDistortionCoefficients_m1434048572 ();
+extern "C" void VuforiaNativeWrapper_ViewerParameters_GetScreenToLensDistance_m365067601 ();
+extern "C" void VuforiaNativeWrapper_ViewerParameters_GetTrayAlignment_m224107260 ();
+extern "C" void VuforiaNativeWrapper_ViewerParameters_GetVersion_m1936265387 ();
+extern "C" void VuforiaNativeWrapper_ViewerParametersList_Begin_m3690712145 ();
+extern "C" void VuforiaNativeWrapper_ViewerParametersList_GetByIndex_m2565238122 ();
+extern "C" void VuforiaNativeWrapper_ViewerParametersList_GetByNameManufacturer_m3464335699 ();
+extern "C" void VuforiaNativeWrapper_ViewerParametersList_GetListForAuthoringTools_m561272181 ();
+extern "C" void VuforiaNativeWrapper_ViewerParametersList_Next_m1307807527 ();
+extern "C" void VuforiaNativeWrapper_ViewerParametersList_SetSDKFilter_m172044647 ();
+extern "C" void VuforiaNativeWrapper_ViewerParametersList_Size_m1586103964 ();
+extern "C" void VuforiaNativeWrapper_VirtualButtonGetId_m694900924 ();
+extern "C" void VuforiaNativeWrapper_VirtualButtonSetAreaRectangle_m3735602825 ();
+extern "C" void VuforiaNativeWrapper_VirtualButtonSetEnabled_m2700062673 ();
+extern "C" void VuforiaNativeWrapper_VirtualButtonSetSensitivity_m941855429 ();
+extern "C" void VuforiaNativeWrapper_VuforiaGetRenderEventCallback_m2198644342 ();
+extern "C" void VuforiaNativeWrapper_VuMarkTargetGetInstanceImage_m50631174 ();
+extern "C" void VuforiaNativeWrapper_VuMarkTemplateGetOrigin_m3473411830 ();
+extern "C" void VuforiaNativeWrapper_VuMarkTemplateGetVuMarkUserData_m4092156073 ();
+extern "C" void VuforiaNativeWrapper_VuMarkTemplateSetTrackingFromRuntimeAppearance_m2541755296 ();
+extern "C" void VuforiaNativeWrapper_WordGetLetterBoundingBoxes_m714582278 ();
+extern "C" void VuforiaNativeWrapper_WordGetLetterMask_m1848572543 ();
+extern "C" void VuforiaNativeWrapper_WordListAddWordsFromFile_m3894640849 ();
+extern "C" void VuforiaNativeWrapper_WordListAddWordToFilterListU_m2143677823 ();
+extern "C" void VuforiaNativeWrapper_WordListAddWordU_m2234464154 ();
+extern "C" void VuforiaNativeWrapper_WordListClearFilterList_m857813409 ();
+extern "C" void VuforiaNativeWrapper_WordListContainsWordU_m410011466 ();
+extern "C" void VuforiaNativeWrapper_WordListGetFilterListWordCount_m4067127347 ();
+extern "C" void VuforiaNativeWrapper_WordListGetFilterListWordU_m686241119 ();
+extern "C" void VuforiaNativeWrapper_WordListGetFilterMode_m1898643183 ();
+extern "C" void VuforiaNativeWrapper_WordListLoadFilterList_m153306409 ();
+extern "C" void VuforiaNativeWrapper_WordListLoadWordList_m3917314203 ();
+extern "C" void VuforiaNativeWrapper_WordListRemoveWordFromFilterListU_m513490925 ();
+extern "C" void VuforiaNativeWrapper_WordListRemoveWordU_m2959518757 ();
+extern "C" void VuforiaNativeWrapper_WordListSetFilterMode_m1278809324 ();
+extern "C" void VuforiaNativeWrapper_WordListUnloadAllLists_m437045667 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceDeinitCamera_m4219703893 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceGetCameraDirection_m2401033145 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceGetCameraField_m2600414923 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceGetCameraFieldOfViewRads_m753933936 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceGetFieldBool_m4040444337 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceGetFieldFloat_m3650590099 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceGetFieldInt64_m3267825034 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceGetFieldInt64Range_m1758802909 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceGetFieldString_m3351294513 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceGetNumCameraFields_m3022289683 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceGetNumVideoModes_m1617386610 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceGetVideoMode_m686866146 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceInitCamera_m3271950677 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceSelectVideoMode_m3123920734 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceSetCameraConfiguration_m2074319656 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceSetFieldBool_m1910033874 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceSetFieldFloat_m1203177242 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceSetFieldInt64_m4226630496 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceSetFieldInt64Range_m3417788619 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceSetFieldString_m1167631232 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceSetFlashTorchMode_m987214613 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceSetFocusMode_m754677991 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceStartCamera_m1692944472 ();
+extern "C" void VuforiaNativeWrapper_cameraDeviceStopCamera_m1259053624 ();
+extern "C" void VuforiaNativeWrapper_customViewerParameters_AddDistortionCoefficient_m413939100 ();
+extern "C" void VuforiaNativeWrapper_customViewerParameters_ClearDistortionCoefficients_m1194991818 ();
+extern "C" void VuforiaNativeWrapper_customViewerParameters_delete_m2379453683 ();
+extern "C" void VuforiaNativeWrapper_customViewerParameters_new_m2125218156 ();
+extern "C" void VuforiaNativeWrapper_customViewerParameters_SetButtonType_m300520387 ();
+extern "C" void VuforiaNativeWrapper_customViewerParameters_SetContainsMagnet_m1853518630 ();
+extern "C" void VuforiaNativeWrapper_customViewerParameters_SetFieldOfView_m2657211120 ();
+extern "C" void VuforiaNativeWrapper_customViewerParameters_SetInterLensDistance_m3585563240 ();
+extern "C" void VuforiaNativeWrapper_customViewerParameters_SetLensCentreToTrayDistance_m2196889346 ();
+extern "C" void VuforiaNativeWrapper_customViewerParameters_SetScreenToLensDistance_m3153848193 ();
+extern "C" void VuforiaNativeWrapper_customViewerParameters_SetTrayAlignment_m2685206414 ();
+extern "C" void VuforiaNativeWrapper_cylinderTargetGetDimensions_m2149491314 ();
+extern "C" void VuforiaNativeWrapper_cylinderTargetSetBottomDiameter_m373820186 ();
+extern "C" void VuforiaNativeWrapper_cylinderTargetSetSideLength_m2452915437 ();
+extern "C" void VuforiaNativeWrapper_cylinderTargetSetTopDiameter_m1932526582 ();
+extern "C" void VuforiaNativeWrapper_dataSetCreateTrackable_m1637079488 ();
+extern "C" void VuforiaNativeWrapper_dataSetDestroyTrackable_m630077332 ();
+extern "C" void VuforiaNativeWrapper_dataSetExists_m667588599 ();
+extern "C" void VuforiaNativeWrapper_dataSetGetNumTrackableType_m3985595764 ();
+extern "C" void VuforiaNativeWrapper_dataSetGetTrackableName_m819104800 ();
+extern "C" void VuforiaNativeWrapper_dataSetGetTrackablesOfType_m3970202721 ();
+extern "C" void VuforiaNativeWrapper_dataSetHasReachedTrackableLimit_m3457465354 ();
+extern "C" void VuforiaNativeWrapper_dataSetLoad_m3890757715 ();
+extern "C" void VuforiaNativeWrapper_deinitFrameState_m194699131 ();
+extern "C" void VuforiaNativeWrapper_device_GetMode_m310845780 ();
+extern "C" void VuforiaNativeWrapper_device_GetSelectedViewer_m2226509315 ();
+extern "C" void VuforiaNativeWrapper_device_GetViewerList_m2441017316 ();
+extern "C" void VuforiaNativeWrapper_device_IsViewerPresent_m1486093406 ();
+extern "C" void VuforiaNativeWrapper_device_SelectViewer_m2510235061 ();
+extern "C" void VuforiaNativeWrapper_device_SetMode_m2099758953 ();
+extern "C" void VuforiaNativeWrapper_device_SetViewerPresent_m4028844547 ();
+extern "C" void VuforiaNativeWrapper_deviceIsEyewearDevice_m1088392962 ();
+extern "C" void VuforiaNativeWrapper_eyewearCPMClearProfile_m3838594439 ();
+extern "C" void VuforiaNativeWrapper_eyewearCPMGetActiveProfile_m3855135517 ();
+extern "C" void VuforiaNativeWrapper_eyewearCPMGetCameraToEyePose_m1383118460 ();
+extern "C" void VuforiaNativeWrapper_eyewearCPMGetEyeProjection_m1748705494 ();
+extern "C" void VuforiaNativeWrapper_eyewearCPMGetMaxCount_m3406048793 ();
+extern "C" void VuforiaNativeWrapper_eyewearCPMGetProfileName_m2665778956 ();
+extern "C" void VuforiaNativeWrapper_eyewearCPMGetUsedCount_m944267382 ();
+extern "C" void VuforiaNativeWrapper_eyewearCPMIsProfileUsed_m1923593855 ();
+extern "C" void VuforiaNativeWrapper_eyewearCPMSetActiveProfile_m3135509040 ();
+extern "C" void VuforiaNativeWrapper_eyewearCPMSetCameraToEyePose_m3316511200 ();
+extern "C" void VuforiaNativeWrapper_eyewearCPMSetEyeProjection_m3566612666 ();
+extern "C" void VuforiaNativeWrapper_eyewearCPMSetProfileName_m3420132601 ();
+extern "C" void VuforiaNativeWrapper_eyewearDeviceGetScreenOrientation_m1904932918 ();
+extern "C" void VuforiaNativeWrapper_eyewearDeviceIsDisplayExtended_m1519405693 ();
+extern "C" void VuforiaNativeWrapper_eyewearDeviceIsDisplayExtendedGLOnly_m1047329568 ();
+extern "C" void VuforiaNativeWrapper_eyewearDeviceIsDualDisplay_m1724349606 ();
+extern "C" void VuforiaNativeWrapper_eyewearDeviceIsPredictiveTrackingEnabled_m2951791865 ();
+extern "C" void VuforiaNativeWrapper_eyewearDeviceIsSeeThru_m1119616716 ();
+extern "C" void VuforiaNativeWrapper_eyewearDeviceSetDisplayExtended_m2123754818 ();
+extern "C" void VuforiaNativeWrapper_eyewearDeviceSetPredictiveTracking_m1482673163 ();
+extern "C" void VuforiaNativeWrapper_eyewearUserCalibratorGetMaxScaleHint_m499366373 ();
+extern "C" void VuforiaNativeWrapper_eyewearUserCalibratorGetMinScaleHint_m1472226495 ();
+extern "C" void VuforiaNativeWrapper_eyewearUserCalibratorGetProjectionMatrix_m2427406231 ();
+extern "C" void VuforiaNativeWrapper_eyewearUserCalibratorInit_m639017466 ();
+extern "C" void VuforiaNativeWrapper_eyewearUserCalibratorIsStereoStretched_m1648620072 ();
+extern "C" void VuforiaNativeWrapper_frameCounterGetBenchmarkingData_m3146208618 ();
+extern "C" void VuforiaNativeWrapper_getCameraThreadID_m2369258158 ();
+extern "C" void VuforiaNativeWrapper_getProjectionGL_m152731153 ();
+extern "C" void VuforiaNativeWrapper_getVuforiaLibraryVersion_m4106512244 ();
+extern "C" void VuforiaNativeWrapper_hasSurfaceBeenRecreated_m4147998836 ();
+extern "C" void VuforiaNativeWrapper_imageTargetBuilderBuild_m4139814006 ();
+extern "C" void VuforiaNativeWrapper_imageTargetBuilderGetFrameQuality_m3815886699 ();
+extern "C" void VuforiaNativeWrapper_imageTargetBuilderGetTrackableSource_m3676749142 ();
+extern "C" void VuforiaNativeWrapper_imageTargetBuilderStartScan_m491243668 ();
+extern "C" void VuforiaNativeWrapper_imageTargetBuilderStopScan_m3697451820 ();
+extern "C" void VuforiaNativeWrapper_imageTargetCreateVirtualButton_m3357179879 ();
+extern "C" void VuforiaNativeWrapper_imageTargetDestroyVirtualButton_m4207113303 ();
+extern "C" void VuforiaNativeWrapper_imageTargetGetNumVirtualButtons_m441334138 ();
+extern "C" void VuforiaNativeWrapper_imageTargetGetVirtualButtonName_m1217998884 ();
+extern "C" void VuforiaNativeWrapper_imageTargetGetVirtualButtons_m3961565275 ();
+extern "C" void VuforiaNativeWrapper_initFrameState_m2998378728 ();
+extern "C" void VuforiaNativeWrapper_initPlatformNative_m2039690296 ();
+extern "C" void VuforiaNativeWrapper_multiTargetGetLargestSizeComponent_m1862802294 ();
+extern "C" void VuforiaNativeWrapper_objectTargetGetSize_m2150902047 ();
+extern "C" void VuforiaNativeWrapper_objectTargetSetSize_m3560779619 ();
+extern "C" void VuforiaNativeWrapper_objectTrackerActivateDataSet_m3431537464 ();
+extern "C" void VuforiaNativeWrapper_objectTrackerCreateDataSet_m976305484 ();
+extern "C" void VuforiaNativeWrapper_objectTrackerDeactivateDataSet_m2930407563 ();
+extern "C" void VuforiaNativeWrapper_objectTrackerDestroyDataSet_m428522689 ();
+extern "C" void VuforiaNativeWrapper_objectTrackerPersistExtendedTracking_m3306568840 ();
+extern "C" void VuforiaNativeWrapper_objectTrackerResetExtendedTracking_m2904863626 ();
+extern "C" void VuforiaNativeWrapper_onPause_m2643881807 ();
+extern "C" void VuforiaNativeWrapper_onResume_m3731695520 ();
+extern "C" void VuforiaNativeWrapper_onSurfaceChanged_m4067509614 ();
+extern "C" void VuforiaNativeWrapper_qcarAddCameraFrame_m351656252 ();
+extern "C" void VuforiaNativeWrapper_qcarDeinit_m2998966292 ();
+extern "C" void VuforiaNativeWrapper_qcarGetBufferSize_m248372185 ();
+extern "C" void VuforiaNativeWrapper_qcarInit_m1662005975 ();
+extern "C" void VuforiaNativeWrapper_qcarSetFrameFormat_m3074094087 ();
+extern "C" void VuforiaNativeWrapper_qcarSetHint_m4155760287 ();
+extern "C" void VuforiaNativeWrapper_reconstructioFromEnvironmentGetReconstructionState_m3916566870 ();
+extern "C" void VuforiaNativeWrapper_reconstructionFromTargetSetInitializationTarget_m2592142536 ();
+extern "C" void VuforiaNativeWrapper_reconstructionIsReconstructing_m2923969014 ();
+extern "C" void VuforiaNativeWrapper_reconstructionReset_m1642657839 ();
+extern "C" void VuforiaNativeWrapper_reconstructionSetMaximumArea_m378375349 ();
+extern "C" void VuforiaNativeWrapper_reconstructionSetNavMeshPadding_m2807717266 ();
+extern "C" void VuforiaNativeWrapper_reconstructionStart_m2129778766 ();
+extern "C" void VuforiaNativeWrapper_reconstructionStop_m3099766012 ();
+extern "C" void VuforiaNativeWrapper_rendererCreateNativeTexture_m499622875 ();
+extern "C" void VuforiaNativeWrapper_rendererEnd_m2514244188 ();
+extern "C" void VuforiaNativeWrapper_rendererGetGraphicsAPI_m2912221086 ();
+extern "C" void VuforiaNativeWrapper_rendererGetRecommendedFps_m3352865310 ();
+extern "C" void VuforiaNativeWrapper_rendererGetVideoBackgroundCfg_m2516003008 ();
+extern "C" void VuforiaNativeWrapper_rendererGetVideoBackgroundTextureInfo_m969300693 ();
+extern "C" void VuforiaNativeWrapper_rendererIsVideoBackgroundTextureInfoAvailable_m2647975856 ();
+extern "C" void VuforiaNativeWrapper_rendererSetVideoBackgroundCfg_m3681288012 ();
+extern "C" void VuforiaNativeWrapper_rendererSetVideoBackgroundTextureID_m323774441 ();
+extern "C" void VuforiaNativeWrapper_rendererSetVideoBackgroundTexturePtr_m3208397117 ();
+extern "C" void VuforiaNativeWrapper_renderingPrimitives_DeleteCopy_m1503846695 ();
+extern "C" void VuforiaNativeWrapper_renderingPrimitives_GetDistortionMesh_m584414326 ();
+extern "C" void VuforiaNativeWrapper_renderingPrimitives_GetDistortionMeshSize_m3734207831 ();
+extern "C" void VuforiaNativeWrapper_renderingPrimitives_GetDistortionTextureViewport_m3706007108 ();
+extern "C" void VuforiaNativeWrapper_renderingPrimitives_GetEffectiveFov_m2974713892 ();
+extern "C" void VuforiaNativeWrapper_renderingPrimitives_GetEyeDisplayAdjustmentMatrix_m1670241993 ();
+extern "C" void VuforiaNativeWrapper_renderingPrimitives_GetNormalizedViewport_m1095725751 ();
+extern "C" void VuforiaNativeWrapper_renderingPrimitives_GetProjectionMatrix_m3281247241 ();
+extern "C" void VuforiaNativeWrapper_renderingPrimitives_GetViewport_m3415550290 ();
+extern "C" void VuforiaNativeWrapper_renderingPrimitives_GetViewportCentreToEyeAxis_m3582423392 ();
+extern "C" void VuforiaNativeWrapper_renderingPrimitives_UpdateCopy_m952689779 ();
+extern "C" void VuforiaNativeWrapper_rotationalDeviceTracker_GetModelCorrectionMode_m1644218884 ();
+extern "C" void VuforiaNativeWrapper_rotationalDeviceTracker_GetModelCorrectionTransform_m3353439215 ();
+extern "C" void VuforiaNativeWrapper_rotationalDeviceTracker_GetPosePrediction_m3773104276 ();
+extern "C" void VuforiaNativeWrapper_rotationalDeviceTracker_Recenter_m1839585666 ();
+extern "C" void VuforiaNativeWrapper_rotationalDeviceTracker_SetModelCorrectionMode_m2980623857 ();
+extern "C" void VuforiaNativeWrapper_rotationalDeviceTracker_SetModelCorrectionModeWithTransform_m2483871049 ();
+extern "C" void VuforiaNativeWrapper_rotationalDeviceTracker_SetPosePrediction_m2407139081 ();
+extern "C" void VuforiaNativeWrapper_setApplicationEnvironment_m4251470817 ();
+extern "C" void VuforiaNativeWrapper_setHolographicAppCS_m25892073 ();
+extern "C" void VuforiaNativeWrapper_setRenderBuffers_m2134602725 ();
+extern "C" void VuforiaNativeWrapper_setStateBufferSize_m1346191333 ();
+extern "C" void VuforiaNativeWrapper_smartTerrainBuilderAddReconstruction_m1696364648 ();
+extern "C" void VuforiaNativeWrapper_smartTerrainBuilderCreateReconstructionFromEnvironment_m3734179059 ();
+extern "C" void VuforiaNativeWrapper_smartTerrainBuilderCreateReconstructionFromTarget_m2378007559 ();
+extern "C" void VuforiaNativeWrapper_smartTerrainBuilderDestroyReconstruction_m3285370947 ();
+extern "C" void VuforiaNativeWrapper_smartTerrainBuilderRemoveReconstruction_m1273352847 ();
+extern "C" void VuforiaNativeWrapper_smartTerrainTrackerDeinitBuilder_m2680314868 ();
+extern "C" void VuforiaNativeWrapper_smartTerrainTrackerInitBuilder_m4098769311 ();
+extern "C" void VuforiaNativeWrapper_smartTerrainTrackerSetScaleToMillimeter_m1090673760 ();
+extern "C" void VuforiaNativeWrapper_startExtendedTracking_m4085874657 ();
+extern "C" void VuforiaNativeWrapper_stopExtendedTracking_m353569209 ();
+extern "C" void VuforiaNativeWrapper_targetFinderClearTrackables_m2526441262 ();
+extern "C" void VuforiaNativeWrapper_targetFinderDeinit_m1484163770 ();
+extern "C" void VuforiaNativeWrapper_targetFinderEnableTracking_m38241287 ();
+extern "C" void VuforiaNativeWrapper_targetFinderGetImageTargets_m456651291 ();
+extern "C" void VuforiaNativeWrapper_targetFinderGetInitState_m1497219688 ();
+extern "C" void VuforiaNativeWrapper_targetFinderGetResults_m1283572124 ();
+extern "C" void VuforiaNativeWrapper_targetFinderStartInit_m2442180407 ();
+extern "C" void VuforiaNativeWrapper_targetFinderStartRecognition_m191924028 ();
+extern "C" void VuforiaNativeWrapper_targetFinderStop_m1362528013 ();
+extern "C" void VuforiaNativeWrapper_targetFinderUpdate_m2352440713 ();
+extern "C" void VuforiaNativeWrapper_textTrackerGetRegionOfInterest_m1891530900 ();
+extern "C" void VuforiaNativeWrapper_textTrackerSetRegionOfInterest_m3471806751 ();
+extern "C" void VuforiaNativeWrapper_trackerManagerDeinitTracker_m2273347339 ();
+extern "C" void VuforiaNativeWrapper_trackerManagerInitTracker_m858909298 ();
+extern "C" void VuforiaNativeWrapper_trackerStart_m568363351 ();
+extern "C" void VuforiaNativeWrapper_trackerStop_m2575825061 ();
+extern "C" void VuforiaNativeWrapper_updateQCAR_m1093217348 ();
+extern "C" void VuforiaNativeWrapper_viewerParameters_ContainsMagnet_m1499879730 ();
+extern "C" void VuforiaNativeWrapper_viewerParameters_copy_m569414813 ();
+extern "C" void VuforiaNativeWrapper_viewerParameters_delete_m3849308198 ();
+extern "C" void VuforiaNativeWrapper_viewerParameters_GetButtonType_m3479264483 ();
+extern "C" void VuforiaNativeWrapper_viewerParameters_GetDistortionCoefficient_m1565627276 ();
+extern "C" void VuforiaNativeWrapper_viewerParameters_GetFieldOfView_m3035666863 ();
+extern "C" void VuforiaNativeWrapper_viewerParameters_GetInterLensDistance_m3407840686 ();
+extern "C" void VuforiaNativeWrapper_viewerParameters_GetLensCentreToTrayDistance_m3353119410 ();
+extern "C" void VuforiaNativeWrapper_viewerParameters_GetManufacturer_m265937277 ();
+extern "C" void VuforiaNativeWrapper_viewerParameters_GetName_m2432302177 ();
+extern "C" void VuforiaNativeWrapper_viewerParameters_GetNumDistortionCoefficients_m3854295580 ();
+extern "C" void VuforiaNativeWrapper_viewerParameters_GetScreenToLensDistance_m1173661425 ();
+extern "C" void VuforiaNativeWrapper_viewerParameters_GetTrayAlignment_m1705092636 ();
+extern "C" void VuforiaNativeWrapper_viewerParameters_GetVersion_m3414344075 ();
+extern "C" void VuforiaNativeWrapper_viewerParametersList_Begin_m3298523633 ();
+extern "C" void VuforiaNativeWrapper_viewerParametersList_GetByIndex_m1255506634 ();
+extern "C" void VuforiaNativeWrapper_viewerParametersList_GetByNameManufacturer_m529139379 ();
+extern "C" void VuforiaNativeWrapper_viewerParametersList_GetListForAuthoringTools_m2114064725 ();
+extern "C" void VuforiaNativeWrapper_viewerParametersList_Next_m2110456839 ();
+extern "C" void VuforiaNativeWrapper_viewerParametersList_SetSDKFilter_m3030342599 ();
+extern "C" void VuforiaNativeWrapper_viewerParametersList_Size_m1603735676 ();
+extern "C" void VuforiaNativeWrapper_virtualButtonGetId_m2307391772 ();
+extern "C" void VuforiaNativeWrapper_virtualButtonSetAreaRectangle_m1540384489 ();
+extern "C" void VuforiaNativeWrapper_virtualButtonSetEnabled_m4204282993 ();
+extern "C" void VuforiaNativeWrapper_virtualButtonSetSensitivity_m924368869 ();
+extern "C" void VuforiaNativeWrapper_vuforiaGetRenderEventCallback_m3628388438 ();
+extern "C" void VuforiaNativeWrapper_vuMarkTargetGetInstanceImage_m3526919718 ();
+extern "C" void VuforiaNativeWrapper_vuMarkTemplateGetOrigin_m3601807190 ();
+extern "C" void VuforiaNativeWrapper_vuMarkTemplateGetVuMarkUserData_m2215830537 ();
+extern "C" void VuforiaNativeWrapper_vuMarkTemplateSetTrackingFromRuntimeAppearance_m231246400 ();
+extern "C" void VuforiaNativeWrapper_wordGetLetterBoundingBoxes_m1609842662 ();
+extern "C" void VuforiaNativeWrapper_wordGetLetterMask_m3756631839 ();
+extern "C" void VuforiaNativeWrapper_wordListAddWordsFromFile_m2923970929 ();
+extern "C" void VuforiaNativeWrapper_wordListAddWordToFilterListU_m1962642783 ();
+extern "C" void VuforiaNativeWrapper_wordListAddWordU_m1925461882 ();
+extern "C" void VuforiaNativeWrapper_wordListClearFilterList_m3088835841 ();
+extern "C" void VuforiaNativeWrapper_wordListContainsWordU_m280995818 ();
+extern "C" void VuforiaNativeWrapper_wordListGetFilterListWordCount_m351766995 ();
+extern "C" void VuforiaNativeWrapper_wordListGetFilterListWordU_m847201919 ();
+extern "C" void VuforiaNativeWrapper_wordListGetFilterMode_m3740979215 ();
+extern "C" void VuforiaNativeWrapper_wordListLoadFilterList_m2452788105 ();
+extern "C" void VuforiaNativeWrapper_wordListLoadWordList_m3728913723 ();
+extern "C" void VuforiaNativeWrapper_wordListRemoveWordFromFilterListU_m716212941 ();
+extern "C" void VuforiaNativeWrapper_wordListRemoveWordU_m1201629957 ();
+extern "C" void VuforiaNativeWrapper_wordListSetFilterMode_m209973708 ();
+extern "C" void VuforiaNativeWrapper_wordListUnloadAllLists_m3021676931 ();
+extern "C" void VuforiaNativeWrapper__ctor_m4015888056 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceDeinitCamera_m2665608967 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceGetCameraDirection_m2809298187 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceGetCameraField_m3871545521 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceGetCameraFieldOfViewRads_m1490215970 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceGetFieldBool_m406275755 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceGetFieldFloat_m2369566577 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceGetFieldInt64_m2568572056 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceGetFieldInt64Range_m2566118419 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceGetFieldString_m2124860131 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceGetNumCameraFields_m93530305 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceGetNumVideoModes_m2243247280 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceGetVideoMode_m955650332 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceInitCamera_m434910787 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceSelectVideoMode_m597799808 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceSetCameraConfiguration_m3052196174 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceSetFieldBool_m2589571424 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceSetFieldFloat_m3704437480 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceSetFieldInt64_m765070014 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceSetFieldInt64Range_m910190377 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceSetFieldString_m673822878 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceSetFlashTorchMode_m1860202547 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceSetFocusMode_m1389506209 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceStartCamera_m1962269226 ();
+extern "C" void VuforiaNullWrapper_CameraDeviceStopCamera_m3003729046 ();
+extern "C" void VuforiaNullWrapper_CustomViewerParameters_AddDistortionCoefficient_m458731550 ();
+extern "C" void VuforiaNullWrapper_CustomViewerParameters_ClearDistortionCoefficients_m541615508 ();
+extern "C" void VuforiaNullWrapper_CustomViewerParameters_delete_m3734435025 ();
+extern "C" void VuforiaNullWrapper_CustomViewerParameters_new_m1414888078 ();
+extern "C" void VuforiaNullWrapper_CustomViewerParameters_SetButtonType_m4251585841 ();
+extern "C" void VuforiaNullWrapper_CustomViewerParameters_SetContainsMagnet_m10276000 ();
+extern "C" void VuforiaNullWrapper_CustomViewerParameters_SetFieldOfView_m2758492122 ();
+extern "C" void VuforiaNullWrapper_CustomViewerParameters_SetInterLensDistance_m2800133266 ();
+extern "C" void VuforiaNullWrapper_CustomViewerParameters_SetLensCentreToTrayDistance_m4278095192 ();
+extern "C" void VuforiaNullWrapper_CustomViewerParameters_SetScreenToLensDistance_m1413125979 ();
+extern "C" void VuforiaNullWrapper_CustomViewerParameters_SetTrayAlignment_m157382248 ();
+extern "C" void VuforiaNullWrapper_CylinderTargetGetDimensions_m3582197380 ();
+extern "C" void VuforiaNullWrapper_CylinderTargetSetBottomDiameter_m2860835036 ();
+extern "C" void VuforiaNullWrapper_CylinderTargetSetSideLength_m380416983 ();
+extern "C" void VuforiaNullWrapper_CylinderTargetSetTopDiameter_m248602812 ();
+extern "C" void VuforiaNullWrapper_DataSetCreateTrackable_m3747374382 ();
+extern "C" void VuforiaNullWrapper_DataSetDestroyTrackable_m2074503518 ();
+extern "C" void VuforiaNullWrapper_DataSetExists_m953729653 ();
+extern "C" void VuforiaNullWrapper_DataSetGetNumTrackableType_m1132928170 ();
+extern "C" void VuforiaNullWrapper_DataSetGetTrackableName_m2632674766 ();
+extern "C" void VuforiaNullWrapper_DataSetGetTrackablesOfType_m3910136327 ();
+extern "C" void VuforiaNullWrapper_DataSetHasReachedTrackableLimit_m1886273176 ();
+extern "C" void VuforiaNullWrapper_DataSetLoad_m2516713677 ();
+extern "C" void VuforiaNullWrapper_DeinitFrameState_m1450361765 ();
+extern "C" void VuforiaNullWrapper_Device_GetMode_m788030418 ();
+extern "C" void VuforiaNullWrapper_Device_GetSelectedViewer_m2502658565 ();
+extern "C" void VuforiaNullWrapper_Device_GetViewerList_m2341663702 ();
+extern "C" void VuforiaNullWrapper_Device_IsViewerPresent_m3628312280 ();
+extern "C" void VuforiaNullWrapper_Device_SelectViewer_m2008675991 ();
+extern "C" void VuforiaNullWrapper_Device_SetMode_m1130966083 ();
+extern "C" void VuforiaNullWrapper_Device_SetViewerPresent_m1172878657 ();
+extern "C" void VuforiaNullWrapper_DeviceIsEyewearDevice_m4169933456 ();
+extern "C" void VuforiaNullWrapper_EyewearCPMClearProfile_m1855834093 ();
+extern "C" void VuforiaNullWrapper_EyewearCPMGetActiveProfile_m3784562579 ();
+extern "C" void VuforiaNullWrapper_EyewearCPMGetCameraToEyePose_m1930924194 ();
+extern "C" void VuforiaNullWrapper_EyewearCPMGetEyeProjection_m3336478776 ();
+extern "C" void VuforiaNullWrapper_EyewearCPMGetMaxCount_m244811599 ();
+extern "C" void VuforiaNullWrapper_EyewearCPMGetProfileName_m3900784050 ();
+extern "C" void VuforiaNullWrapper_EyewearCPMGetUsedCount_m118781040 ();
+extern "C" void VuforiaNullWrapper_EyewearCPMIsProfileUsed_m1311943917 ();
+extern "C" void VuforiaNullWrapper_EyewearCPMSetActiveProfile_m3104906706 ();
+extern "C" void VuforiaNullWrapper_EyewearCPMSetCameraToEyePose_m4292498750 ();
+extern "C" void VuforiaNullWrapper_EyewearCPMSetEyeProjection_m1518571604 ();
+extern "C" void VuforiaNullWrapper_EyewearCPMSetProfileName_m241432343 ();
+extern "C" void VuforiaNullWrapper_EyewearDeviceGetScreenOrientation_m2275275548 ();
+extern "C" void VuforiaNullWrapper_EyewearDeviceIsDisplayExtended_m1225441251 ();
+extern "C" void VuforiaNullWrapper_EyewearDeviceIsDisplayExtendedGLOnly_m2131038690 ();
+extern "C" void VuforiaNullWrapper_EyewearDeviceIsDualDisplay_m2766059260 ();
+extern "C" void VuforiaNullWrapper_EyewearDeviceIsPredictiveTrackingEnabled_m3332175535 ();
+extern "C" void VuforiaNullWrapper_EyewearDeviceIsSeeThru_m2901662634 ();
+extern "C" void VuforiaNullWrapper_EyewearDeviceSetDisplayExtended_m210014944 ();
+extern "C" void VuforiaNullWrapper_EyewearDeviceSetPredictiveTracking_m993877989 ();
+extern "C" void VuforiaNullWrapper_EyewearUserCalibratorGetMaxScaleHint_m3532409891 ();
+extern "C" void VuforiaNullWrapper_EyewearUserCalibratorGetMinScaleHint_m2108620741 ();
+extern "C" void VuforiaNullWrapper_EyewearUserCalibratorGetProjectionMatrix_m695524125 ();
+extern "C" void VuforiaNullWrapper_EyewearUserCalibratorInit_m1094752360 ();
+extern "C" void VuforiaNullWrapper_EyewearUserCalibratorIsStereoStretched_m458702346 ();
+extern "C" void VuforiaNullWrapper_FrameCounterGetBenchmarkingData_m3326248512 ();
+extern "C" void VuforiaNullWrapper_GetCameraThreadID_m3621488904 ();
+extern "C" void VuforiaNullWrapper_GetProjectionGL_m2228857983 ();
+extern "C" void VuforiaNullWrapper_GetVuforiaLibraryVersion_m191631426 ();
+extern "C" void VuforiaNullWrapper_HasSurfaceBeenRecreated_m3989471482 ();
+extern "C" void VuforiaNullWrapper_ImageTargetBuilderBuild_m2001575528 ();
+extern "C" void VuforiaNullWrapper_ImageTargetBuilderGetFrameQuality_m2011787533 ();
+extern "C" void VuforiaNullWrapper_ImageTargetBuilderGetTrackableSource_m1559881316 ();
+extern "C" void VuforiaNullWrapper_ImageTargetBuilderStartScan_m3101513590 ();
+extern "C" void VuforiaNullWrapper_ImageTargetBuilderStopScan_m3767910846 ();
+extern "C" void VuforiaNullWrapper_ImageTargetCreateVirtualButton_m1433375141 ();
+extern "C" void VuforiaNullWrapper_ImageTargetDestroyVirtualButton_m2400573581 ();
+extern "C" void VuforiaNullWrapper_ImageTargetGetNumVirtualButtons_m2856701732 ();
+extern "C" void VuforiaNullWrapper_ImageTargetGetVirtualButtonName_m1082824190 ();
+extern "C" void VuforiaNullWrapper_ImageTargetGetVirtualButtons_m1986957249 ();
+extern "C" void VuforiaNullWrapper_InitFrameState_m2020491138 ();
+extern "C" void VuforiaNullWrapper_InitPlatformNative_m2888493394 ();
+extern "C" void VuforiaNullWrapper_MultiTargetGetLargestSizeComponent_m1459103056 ();
+extern "C" void VuforiaNullWrapper_ObjectTargetGetSize_m1637584881 ();
+extern "C" void VuforiaNullWrapper_ObjectTargetSetSize_m227707309 ();
+extern "C" void VuforiaNullWrapper_ObjectTrackerActivateDataSet_m2074555782 ();
+extern "C" void VuforiaNullWrapper_ObjectTrackerCreateDataSet_m3584540878 ();
+extern "C" void VuforiaNullWrapper_ObjectTrackerDeactivateDataSet_m3524240873 ();
+extern "C" void VuforiaNullWrapper_ObjectTrackerDestroyDataSet_m3132984803 ();
+extern "C" void VuforiaNullWrapper_ObjectTrackerPersistExtendedTracking_m749791182 ();
+extern "C" void VuforiaNullWrapper_ObjectTrackerResetExtendedTracking_m1929567880 ();
+extern "C" void VuforiaNullWrapper_OnPause_m3864786145 ();
+extern "C" void VuforiaNullWrapper_OnResume_m4097882238 ();
+extern "C" void VuforiaNullWrapper_OnSurfaceChanged_m2319307868 ();
+extern "C" void VuforiaNullWrapper_QcarAddCameraFrame_m1638812990 ();
+extern "C" void VuforiaNullWrapper_QcarDeinit_m2318850098 ();
+extern "C" void VuforiaNullWrapper_QcarGetBufferSize_m676644523 ();
+extern "C" void VuforiaNullWrapper_QcarInit_m2210364305 ();
+extern "C" void VuforiaNullWrapper_QcarSetFrameFormat_m2619316197 ();
+extern "C" void VuforiaNullWrapper_QcarSetHint_m607678349 ();
+extern "C" void VuforiaNullWrapper_ReconstructioFromEnvironmentGetReconstructionState_m1066290360 ();
+extern "C" void VuforiaNullWrapper_ReconstructionFromTargetSetInitializationTarget_m3253150186 ();
+extern "C" void VuforiaNullWrapper_ReconstructionIsReconstructing_m3948715884 ();
+extern "C" void VuforiaNullWrapper_ReconstructionReset_m3298575601 ();
+extern "C" void VuforiaNullWrapper_ReconstructionSetMaximumArea_m3165861795 ();
+extern "C" void VuforiaNullWrapper_ReconstructionSetNavMeshPadding_m1143047364 ();
+extern "C" void VuforiaNullWrapper_ReconstructionStart_m3253104500 ();
+extern "C" void VuforiaNullWrapper_ReconstructionStop_m1377667986 ();
+extern "C" void VuforiaNullWrapper_RendererCreateNativeTexture_m2446863061 ();
+extern "C" void VuforiaNullWrapper_RendererEnd_m239892666 ();
+extern "C" void VuforiaNullWrapper_RendererGetGraphicsAPI_m1635513844 ();
+extern "C" void VuforiaNullWrapper_RendererGetRecommendedFps_m1698536288 ();
+extern "C" void VuforiaNullWrapper_RendererGetVideoBackgroundCfg_m1954791470 ();
+extern "C" void VuforiaNullWrapper_RendererGetVideoBackgroundTextureInfo_m3073703635 ();
+extern "C" void VuforiaNullWrapper_RendererIsVideoBackgroundTextureInfoAvailable_m1068175170 ();
+extern "C" void VuforiaNullWrapper_RendererSetVideoBackgroundCfg_m789506466 ();
+extern "C" void VuforiaNullWrapper_RendererSetVideoBackgroundTextureID_m2866544087 ();
+extern "C" void VuforiaNullWrapper_RendererSetVideoBackgroundTexturePtr_m1750470823 ();
+extern "C" void VuforiaNullWrapper_RenderingPrimitives_DeleteCopy_m3977550361 ();
+extern "C" void VuforiaNullWrapper_RenderingPrimitives_GetDistortionMesh_m3373795988 ();
+extern "C" void VuforiaNullWrapper_RenderingPrimitives_GetDistortionMeshSize_m3039180269 ();
+extern "C" void VuforiaNullWrapper_RenderingPrimitives_GetDistortionTextureViewport_m1779380722 ();
+extern "C" void VuforiaNullWrapper_RenderingPrimitives_GetEffectiveFov_m3335202502 ();
+extern "C" void VuforiaNullWrapper_RenderingPrimitives_GetEyeDisplayAdjustmentMatrix_m2895442179 ();
+extern "C" void VuforiaNullWrapper_RenderingPrimitives_GetNormalizedViewport_m3565237885 ();
+extern "C" void VuforiaNullWrapper_RenderingPrimitives_GetProjectionMatrix_m1995468187 ();
+extern "C" void VuforiaNullWrapper_RenderingPrimitives_GetViewport_m3169045752 ();
+extern "C" void VuforiaNullWrapper_RenderingPrimitives_GetViewportCentreToEyeAxis_m415748298 ();
+extern "C" void VuforiaNullWrapper_RenderingPrimitives_UpdateCopy_m3821122821 ();
+extern "C" void VuforiaNullWrapper_RotationalDeviceTracker_GetModelCorrectionMode_m3227416434 ();
+extern "C" void VuforiaNullWrapper_RotationalDeviceTracker_GetModelCorrectionTransform_m1401904957 ();
+extern "C" void VuforiaNullWrapper_RotationalDeviceTracker_GetPosePrediction_m1125183950 ();
+extern "C" void VuforiaNullWrapper_RotationalDeviceTracker_Recenter_m671835872 ();
+extern "C" void VuforiaNullWrapper_RotationalDeviceTracker_SetModelCorrectionMode_m3030215243 ();
+extern "C" void VuforiaNullWrapper_RotationalDeviceTracker_SetModelCorrectionModeWithTransform_m818673271 ();
+extern "C" void VuforiaNullWrapper_RotationalDeviceTracker_SetPosePrediction_m2061111295 ();
+extern "C" void VuforiaNullWrapper_SetApplicationEnvironment_m975296579 ();
+extern "C" void VuforiaNullWrapper_SetHolographicAppCS_m284965811 ();
+extern "C" void VuforiaNullWrapper_SetRenderBuffers_m4172595999 ();
+extern "C" void VuforiaNullWrapper_SetStateBufferSize_m1459082135 ();
+extern "C" void VuforiaNullWrapper_SmartTerrainBuilderAddReconstruction_m2747045898 ();
+extern "C" void VuforiaNullWrapper_SmartTerrainBuilderCreateReconstructionFromEnvironment_m4085409637 ();
+extern "C" void VuforiaNullWrapper_SmartTerrainBuilderCreateReconstructionFromTarget_m2367265121 ();
+extern "C" void VuforiaNullWrapper_SmartTerrainBuilderDestroyReconstruction_m1568352757 ();
+extern "C" void VuforiaNullWrapper_SmartTerrainBuilderRemoveReconstruction_m3406661833 ();
+extern "C" void VuforiaNullWrapper_SmartTerrainTrackerDeinitBuilder_m527956670 ();
+extern "C" void VuforiaNullWrapper_SmartTerrainTrackerInitBuilder_m3724222153 ();
+extern "C" void VuforiaNullWrapper_SmartTerrainTrackerSetScaleToMillimeter_m3986342658 ();
+extern "C" void VuforiaNullWrapper_StartExtendedTracking_m2133871827 ();
+extern "C" void VuforiaNullWrapper_StopExtendedTracking_m3950014379 ();
+extern "C" void VuforiaNullWrapper_TargetFinderClearTrackables_m3523004664 ();
+extern "C" void VuforiaNullWrapper_TargetFinderDeinit_m2832471100 ();
+extern "C" void VuforiaNullWrapper_TargetFinderEnableTracking_m1367780585 ();
+extern "C" void VuforiaNullWrapper_TargetFinderGetImageTargets_m48615501 ();
+extern "C" void VuforiaNullWrapper_TargetFinderGetInitState_m885257354 ();
+extern "C" void VuforiaNullWrapper_TargetFinderGetResults_m424069238 ();
+extern "C" void VuforiaNullWrapper_TargetFinderStartInit_m131987489 ();
+extern "C" void VuforiaNullWrapper_TargetFinderStartRecognition_m3330979318 ();
+extern "C" void VuforiaNullWrapper_TargetFinderStop_m2273784955 ();
+extern "C" void VuforiaNullWrapper_TargetFinderUpdate_m348083707 ();
+extern "C" void VuforiaNullWrapper_TextTrackerGetRegionOfInterest_m3909029622 ();
+extern "C" void VuforiaNullWrapper_TextTrackerSetRegionOfInterest_m1907587377 ();
+extern "C" void VuforiaNullWrapper_TrackerManagerDeinitTracker_m2436097149 ();
+extern "C" void VuforiaNullWrapper_TrackerManagerInitTracker_m2245973332 ();
+extern "C" void VuforiaNullWrapper_TrackerStart_m3807133797 ();
+extern "C" void VuforiaNullWrapper_TrackerStop_m2423356467 ();
+extern "C" void VuforiaNullWrapper_UpdateQCAR_m3451494702 ();
+extern "C" void VuforiaNullWrapper_ViewerParameters_ContainsMagnet_m1483129196 ();
+extern "C" void VuforiaNullWrapper_ViewerParameters_copy_m418981427 ();
+extern "C" void VuforiaNullWrapper_ViewerParameters_delete_m3090600244 ();
+extern "C" void VuforiaNullWrapper_ViewerParameters_GetButtonType_m3197033345 ();
+extern "C" void VuforiaNullWrapper_ViewerParameters_GetDistortionCoefficient_m4080920762 ();
+extern "C" void VuforiaNullWrapper_ViewerParameters_GetFieldOfView_m655196337 ();
+extern "C" void VuforiaNullWrapper_ViewerParameters_GetInterLensDistance_m288773804 ();
+extern "C" void VuforiaNullWrapper_ViewerParameters_GetLensCentreToTrayDistance_m3810811076 ();
+extern "C" void VuforiaNullWrapper_ViewerParameters_GetManufacturer_m699853439 ();
+extern "C" void VuforiaNullWrapper_ViewerParameters_GetName_m712885731 ();
+extern "C" void VuforiaNullWrapper_ViewerParameters_GetNumDistortionCoefficients_m1793211042 ();
+extern "C" void VuforiaNullWrapper_ViewerParameters_GetScreenToLensDistance_m2967481871 ();
+extern "C" void VuforiaNullWrapper_ViewerParameters_GetTrayAlignment_m946749990 ();
+extern "C" void VuforiaNullWrapper_ViewerParameters_GetVersion_m3733522217 ();
+extern "C" void VuforiaNullWrapper_ViewerParametersList_Begin_m408273483 ();
+extern "C" void VuforiaNullWrapper_ViewerParametersList_GetByIndex_m2949172368 ();
+extern "C" void VuforiaNullWrapper_ViewerParametersList_GetByNameManufacturer_m699749981 ();
+extern "C" void VuforiaNullWrapper_ViewerParametersList_GetListForAuthoringTools_m3270627803 ();
+extern "C" void VuforiaNullWrapper_ViewerParametersList_Next_m638079517 ();
+extern "C" void VuforiaNullWrapper_ViewerParametersList_SetSDKFilter_m3814776257 ();
+extern "C" void VuforiaNullWrapper_ViewerParametersList_Size_m665886598 ();
+extern "C" void VuforiaNullWrapper_VirtualButtonGetId_m598893338 ();
+extern "C" void VuforiaNullWrapper_VirtualButtonSetAreaRectangle_m4096906019 ();
+extern "C" void VuforiaNullWrapper_VirtualButtonSetEnabled_m3584826287 ();
+extern "C" void VuforiaNullWrapper_VirtualButtonSetSensitivity_m3119222195 ();
+extern "C" void VuforiaNullWrapper_VuforiaGetRenderEventCallback_m4133543940 ();
+extern "C" void VuforiaNullWrapper_VuMarkTargetGetInstanceImage_m4204893360 ();
+extern "C" void VuforiaNullWrapper_VuMarkTemplateGetOrigin_m3208289848 ();
+extern "C" void VuforiaNullWrapper_VuMarkTemplateGetVuMarkUserData_m2574509319 ();
+extern "C" void VuforiaNullWrapper_VuMarkTemplateSetTrackingFromRuntimeAppearance_m3395059870 ();
+extern "C" void VuforiaNullWrapper_WordGetLetterBoundingBoxes_m1603651132 ();
+extern "C" void VuforiaNullWrapper_WordGetLetterMask_m3941092205 ();
+extern "C" void VuforiaNullWrapper_WordListAddWordsFromFile_m3648010511 ();
+extern "C" void VuforiaNullWrapper_WordListAddWordToFilterListU_m3112232109 ();
+extern "C" void VuforiaNullWrapper_WordListAddWordU_m2152771640 ();
+extern "C" void VuforiaNullWrapper_WordListClearFilterList_m24737291 ();
+extern "C" void VuforiaNullWrapper_WordListContainsWordU_m1257010120 ();
+extern "C" void VuforiaNullWrapper_WordListGetFilterListWordCount_m1890773097 ();
+extern "C" void VuforiaNullWrapper_WordListGetFilterListWordU_m1630805709 ();
+extern "C" void VuforiaNullWrapper_WordListGetFilterMode_m2192975005 ();
+extern "C" void VuforiaNullWrapper_WordListLoadFilterList_m121282007 ();
+extern "C" void VuforiaNullWrapper_WordListLoadWordList_m1141964609 ();
+extern "C" void VuforiaNullWrapper_WordListRemoveWordFromFilterListU_m1520481103 ();
+extern "C" void VuforiaNullWrapper_WordListRemoveWordU_m3473614623 ();
+extern "C" void VuforiaNullWrapper_WordListSetFilterMode_m2983089270 ();
+extern "C" void VuforiaNullWrapper_WordListUnloadAllLists_m1984480805 ();
+extern "C" void VuforiaNullWrapper__ctor_m3619043698 ();
+extern "C" void VuforiaRenderer_get_Instance_m1621768183 ();
+extern "C" void VuforiaRenderer_get_InternalInstance_m3420738422 ();
+extern "C" void VuforiaRenderer__ctor_m3432491483 ();
+extern "C" void VuforiaRenderer__cctor_m1094698736 ();
+extern "C" void Vec2I__ctor_m814098547_AdjustorThunk ();
+extern "C" void VideoBGCfgData_get_reflection_m183482127_AdjustorThunk ();
+extern "C" void VideoBGCfgData_set_reflection_m4089700608_AdjustorThunk ();
+extern "C" void VuforiaRendererImpl_get_VideoBackgroundTexture_m832380897 ();
+extern "C" void VuforiaRendererImpl_GetVideoBackgroundConfig_m3531408893 ();
+extern "C" void VuforiaRendererImpl_ClearVideoBackgroundConfig_m2519576127 ();
+extern "C" void VuforiaRendererImpl_SetVideoBackgroundConfig_m1563624558 ();
+extern "C" void VuforiaRendererImpl_createNativeTexture_m3932804897 ();
+extern "C" void VuforiaRendererImpl_SetVideoBackgroundTexture_m66201618 ();
+extern "C" void VuforiaRendererImpl_SetVideoBackgroundTexturePtr_m1482649197 ();
+extern "C" void VuforiaRendererImpl_IsVideoBackgroundInfoAvailable_m1515605869 ();
+extern "C" void VuforiaRendererImpl_GetVideoTextureInfo_m394771892 ();
+extern "C" void VuforiaRendererImpl_Pause_m2076107180 ();
+extern "C" void VuforiaRendererImpl_GetRecommendedFps_m3251648129 ();
+extern "C" void VuforiaRendererImpl_GetRendererAPI_m2962944766 ();
+extern "C" void VuforiaRendererImpl_UnityRenderEvent_m3449656070 ();
+extern "C" void VuforiaRendererImpl_HasBackgroundTextureChanged_m3768314602 ();
+extern "C" void VuforiaRendererImpl_SetVideoBackgroundConfigInternal_m1001709025 ();
+extern "C" void VuforiaRendererImpl_GetLastSetReflection_m2994414649 ();
+extern "C" void VuforiaRendererImpl__ctor_m998191311 ();
+extern "C" void VuforiaRuntime__ctor_m3341498150 ();
+extern "C" void VuforiaRuntime_get_Instance_m4069915631 ();
+extern "C" void VuforiaRuntime_InitPlatform_m3306160978 ();
+extern "C" void VuforiaRuntime_InitVuforia_m2353933398 ();
+extern "C" void VuforiaRuntime_Deinit_m746211317 ();
+extern "C" void VuforiaRuntime_RegisterVuforiaInitErrorCallback_m1800574616 ();
+extern "C" void VuforiaRuntime_UnregisterVuforiaInitErrorCallback_m2870938817 ();
+extern "C" void VuforiaRuntime_get_HasInitialized_m3411757181 ();
+extern "C" void VuforiaRuntime_CreateDeinitHelper_m348246935 ();
+extern "C" void VuforiaRuntime__cctor_m3105021749 ();
+extern "C" void VuforiaRuntimeUtilities_GetStoragePath_m937083168 ();
+extern "C" void VuforiaRuntimeUtilities_StripFileNameFromPath_m3600327917 ();
+extern "C" void VuforiaRuntimeUtilities_StripStreamingAssetsFromPath_m1976521327 ();
+extern "C" void VuforiaRuntimeUtilities_StripExtensionFromPath_m2573996161 ();
+extern "C" void VuforiaRuntimeUtilities_get_ScreenOrientation_m1546146121 ();
+extern "C" void VuforiaRuntimeUtilities_get_IsLandscapeOrientation_m1736391522 ();
+extern "C" void VuforiaRuntimeUtilities_get_IsPortraitOrientation_m989453348 ();
+extern "C" void VuforiaRuntimeUtilities_ForceDisableTrackables_m1370852495 ();
+extern "C" void VuforiaRuntimeUtilities_IsPlayMode_m2939358997 ();
+extern "C" void VuforiaRuntimeUtilities_IsWSARuntime_m3848252715 ();
+extern "C" void VuforiaRuntimeUtilities_IsVuforiaEnabled_m1774515559 ();
+extern "C" void VuforiaRuntimeUtilities_IsWebCamUsed_m1353111182 ();
+extern "C" void VuforiaRuntimeUtilities_ScreenSpaceToCameraFrameCoordinates_m3801339830 ();
+extern "C" void VuforiaRuntimeUtilities_CameraFrameToScreenSpaceCoordinates_m1680369179 ();
+extern "C" void VuforiaRuntimeUtilities_CameraFrameToScreenSpaceCoordinates_m3404428623 ();
+extern "C" void VuforiaRuntimeUtilities_SelectRectTopLeftAndBottomRightForLandscapeLeft_m1389683231 ();
+extern "C" void VuforiaRuntimeUtilities_CalculateRectFromLandscapeLeftCorners_m1942396741 ();
+extern "C" void VuforiaRuntimeUtilities_DisableSleepMode_m2123290978 ();
+extern "C" void VuforiaRuntimeUtilities_ResetSleepMode_m2455636941 ();
+extern "C" void VuforiaRuntimeUtilities_MatrixIsNaN_m431823786 ();
+extern "C" void VuforiaRuntimeUtilities_CheckNativePluginSupport_m1706982001 ();
+extern "C" void VuforiaRuntimeUtilities_IsNativePluginSupportAvailable_m148657444 ();
+extern "C" void VuforiaRuntimeUtilities_StopCameraIfPossible_m3496297228 ();
+extern "C" void VuforiaRuntimeUtilities_CleanTrackableFromUnwantedComponents_m2746381936 ();
+extern "C" void VuforiaRuntimeUtilities_PrepareCoordinateConversion_m1474731089 ();
+extern "C" void VuforiaRuntimeUtilities_qcarCheckNativePluginSupport_m1038601354 ();
+extern "C" void VuforiaRuntimeUtilities__ctor_m222360936 ();
+extern "C" void VuforiaRuntimeUtilities__cctor_m1059653703 ();
+extern "C" void VuforiaUnity_Deinit_m4072609744 ();
+extern "C" void VuforiaUnity_IsRendererDirty_m3880978144 ();
+extern "C" void VuforiaUnity_SetHint_m2330902584 ();
+extern "C" void VuforiaUnity_SetHint_m2483295745 ();
+extern "C" void VuforiaUnity_GetProjectionGL_m3164064275 ();
+extern "C" void VuforiaUnity_OnPause_m2422224752 ();
+extern "C" void VuforiaUnity_OnResume_m2186520633 ();
+extern "C" void VuforiaUnity_SetRendererDirty_m1382076344 ();
+extern "C" void VuforiaUnity_GetVuforiaLibraryVersion_m2417950331 ();
+extern "C" void VuforiaUnity_SetHolographicAppCoordinateSystem_m52519737 ();
+extern "C" void VuforiaUnity_SetHoloLensApiAbstraction_m7689476 ();
+extern "C" void VuforiaUnity_SetAssetInitializationParameters_m3316561825 ();
+extern "C" void VuforiaUnity_SetStandardInitializationParameters_m3220511984 ();
+extern "C" void VuforiaUnity_GetHoloLensApiAbstraction_m3179952423 ();
+extern "C" void VuforiaUnity__cctor_m3355793260 ();
+extern "C" void VuforiaUnityImpl_Deinit_m3798045698 ();
+extern "C" void VuforiaUnityImpl_IsRendererDirty_m837591966 ();
+extern "C" void VuforiaUnityImpl_SetHint_m256192198 ();
+extern "C" void VuforiaUnityImpl_SetHint_m1570319901 ();
+extern "C" void VuforiaUnityImpl_GetProjectionGL_m315627943 ();
+extern "C" void VuforiaUnityImpl_SetHolographicAppCoordinateSystem_m3740974621 ();
+extern "C" void VuforiaUnityImpl_SetApplicationEnvironment_m1395279108 ();
+extern "C" void VuforiaUnityImpl_OnPause_m915261490 ();
+extern "C" void VuforiaUnityImpl_OnResume_m2663092717 ();
+extern "C" void VuforiaUnityImpl_SetRendererDirty_m633029446 ();
+extern "C" void VuforiaUnityImpl_GetVuforiaLibraryVersion_m746775303 ();
+extern "C" void VuforiaUnityImpl_SetAssetInitializationParameters_m1991506221 ();
+extern "C" void VuforiaUnityImpl_SetStandardInitializationParameters_m2170135826 ();
+extern "C" void VuforiaUnityImpl__cctor_m3399819038 ();
+extern "C" void VuforiaWrapper_get_Instance_m128711606 ();
+extern "C" void VuforiaWrapper_get_CamIndependentInstance_m600115195 ();
+extern "C" void VuforiaWrapper_CreateRuntimeInstance_m398239160 ();
+extern "C" void VuforiaWrapper_CreateCamIndependentInstance_m697642581 ();
+extern "C" void VuforiaWrapper_SetImplementation_m1019610825 ();
+extern "C" void VuforiaWrapper__cctor_m3285230706 ();
+extern "C" void VuMarkAbstractBehaviour_get_VuMarkTemplate_m3544911177 ();
+extern "C" void VuMarkAbstractBehaviour_get_VuMarkTarget_m4042803881 ();
+extern "C" void VuMarkAbstractBehaviour_get_Origin_m1957069827 ();
+extern "C" void VuMarkAbstractBehaviour__ctor_m326197713 ();
+extern "C" void VuMarkAbstractBehaviour_CorrectScaleImpl_m1963338375 ();
+extern "C" void VuMarkAbstractBehaviour_InternalUnregisterTrackable_m4208260561 ();
+extern "C" void VuMarkAbstractBehaviour_CalculateDefaultOccluderBounds_m1143923286 ();
+extern "C" void VuMarkAbstractBehaviour_ProtectedSetAsSmartTerrainInitializationTarget_m3368788891 ();
+extern "C" void VuMarkAbstractBehaviour_GetSize_m2325839469 ();
+extern "C" void VuMarkAbstractBehaviour_SetWidth_m1688925418 ();
+extern "C" void VuMarkAbstractBehaviour_SetHeight_m2987244041 ();
+extern "C" void VuMarkAbstractBehaviour_RegisterVuMarkTargetAssignedCallback_m2556160039 ();
+extern "C" void VuMarkAbstractBehaviour_UnregisterVuMarkTargetAssignedCallback_m691111332 ();
+extern "C" void VuMarkAbstractBehaviour_RegisterVuMarkTargetLostCallback_m1294084023 ();
+extern "C" void VuMarkAbstractBehaviour_UnregisterVuMarkTargetLostCallback_m1699960082 ();
+extern "C" void VuMarkAbstractBehaviour_UnregisterVuMarkTarget_m3019970390 ();
+extern "C" void VuMarkAbstractBehaviour_RegisterVuMarkTarget_m980765950 ();
+extern "C" void VuMarkAbstractBehaviour_get_VuMarkResultId_m588106376 ();
+extern "C" void VuMarkAbstractBehaviour_set_VuMarkResultId_m2892526623 ();
+extern "C" void VuMarkAbstractBehaviour_InitializeTarget_m3302584584 ();
+extern "C" void VuMarkAbstractBehaviour_OnValidate_m3543957550 ();
+extern "C" void VuMarkManager__ctor_m2902519055 ();
+extern "C" void VuMarkManagerImpl_GetActiveVuMarks_m3057777205 ();
+extern "C" void VuMarkManagerImpl_GetActiveBehaviours_m193147855 ();
+extern "C" void VuMarkManagerImpl_GetActiveBehaviours_m2701874204 ();
+extern "C" void VuMarkManagerImpl_GetAllBehaviours_m824777727 ();
+extern "C" void VuMarkManagerImpl_RegisterVuMarkDetectedCallback_m1548121458 ();
+extern "C" void VuMarkManagerImpl_UnregisterVuMarkDetectedCallback_m2011038775 ();
+extern "C" void VuMarkManagerImpl_RegisterVuMarkLostCallback_m1875841390 ();
+extern "C" void VuMarkManagerImpl_UnregisterVuMarkLostCallback_m561735977 ();
+extern "C" void VuMarkManagerImpl_RegisterVuMarkBehaviourDetectedCallback_m4277724253 ();
+extern "C" void VuMarkManagerImpl_UnregisterVuMarkBehaviourDetectedCallback_m1301588478 ();
+extern "C" void VuMarkManagerImpl_UpdateVuMarks_m4251157048 ();
+extern "C" void VuMarkManagerImpl_UpdateVuMarkPoses_m1799620 ();
+extern "C" void VuMarkManagerImpl_AddTemplateBehaviour_m2587528850 ();
+extern "C" void VuMarkManagerImpl_ContainsVuMarkTemplate_m3766230023 ();
+extern "C" void VuMarkManagerImpl_ClearBehaviours_m3239519372 ();
+extern "C" void VuMarkManagerImpl_DestroyBehaviourCopies_m1656270747 ();
+extern "C" void VuMarkManagerImpl_RemoveDestroyedTrackables_m2442166898 ();
+extern "C" void VuMarkManagerImpl_IsBehaviourMarkedForDeletion_m2344385681 ();
+extern "C" void VuMarkManagerImpl_GetBehaviourWithResultID_m2260936321 ();
+extern "C" void VuMarkManagerImpl_UpdateNewVuMarks_m1556174676 ();
+extern "C" void VuMarkManagerImpl_UpdateLostVuMarks_m3845955716 ();
+extern "C" void VuMarkManagerImpl_CreateVuMarkTarget_m1497932471 ();
+extern "C" void VuMarkManagerImpl_CreateOrGetUnusedBehaviour_m4109115014 ();
+extern "C" void VuMarkManagerImpl_GetVuMarkTemplate_m1492647889 ();
+extern "C" void VuMarkManagerImpl_CopyGameObject_m2594454544 ();
+extern "C" void VuMarkManagerImpl_MarkBehaviourUntracked_m3376456811 ();
+extern "C" void VuMarkManagerImpl_AssociateTargetWithBehaviour_m3771986789 ();
+extern "C" void VuMarkManagerImpl_UpdateVuMarkResults_m1335032210 ();
+extern "C" void VuMarkManagerImpl_GetActiveBehaviour_m4237687970 ();
+extern "C" void VuMarkManagerImpl_GetVuMarkTarget_m43906157 ();
+extern "C" void VuMarkManagerImpl_GroupResultsByTargetId_m3129483197 ();
+extern "C" void VuMarkManagerImpl__ctor_m3457070443 ();
+extern "C" void VuMarkTargetImpl__ctor_m2799170966 ();
+extern "C" void VuMarkTargetImpl_GetSize_m266131082 ();
+extern "C" void VuMarkTargetImpl_GetLargestSizeComponent_m1554647361 ();
+extern "C" void VuMarkTargetImpl_SetSize_m1721897007 ();
+extern "C" void VuMarkTargetImpl_StartExtendedTracking_m1406240925 ();
+extern "C" void VuMarkTargetImpl_StopExtendedTracking_m2975163645 ();
+extern "C" void VuMarkTargetImpl_ExtendedTrackingEnabled_m902197676 ();
+extern "C" void VuMarkTargetImpl_get_Name_m931358238 ();
+extern "C" void VuMarkTargetImpl_get_ID_m3173237059 ();
+extern "C" void VuMarkTargetImpl_get_InstanceId_m1883644529 ();
+extern "C" void VuMarkTargetImpl_get_Template_m977518223 ();
+extern "C" void VuMarkTargetImpl_get_InstanceImage_m188603180 ();
+extern "C" void VuMarkTargetImpl_CallNativeGetInstanceImage_m191303874 ();
+extern "C" void VuMarkTargetImpl_CreateInstanceImage_m2497056139 ();
+extern "C" void VuMarkTargetImpl_SetImageValues_m500105563 ();
+extern "C" void VuMarkTargetImpl_AllocateImage_m2957561888 ();
+extern "C" void VuMarkTemplateImpl__ctor_m4212876127 ();
+extern "C" void VuMarkTemplateImpl_get_VuMarkUserData_m1342787955 ();
+extern "C" void VuMarkTemplateImpl_get_TrackingFromRuntimeAppearance_m4094086530 ();
+extern "C" void VuMarkTemplateImpl_set_TrackingFromRuntimeAppearance_m2470700277 ();
+extern "C" void VuMarkTemplateImpl_get_Origin_m735220598 ();
+extern "C" void VuMarkTemplateImpl_SetSize_m3397421618 ();
+extern "C" void VuMarkTemplateImpl_UpdateOrigin_m1395473153 ();
+extern "C" void WebCamARController__ctor_m3370055434 ();
+extern "C" void WebCamARController_get_Instance_m1127137215 ();
+extern "C" void WebCamARController_RegisterARController_m4272523858 ();
+extern "C" void WebCamARController_get_DeviceName_m3505426021 ();
+extern "C" void WebCamARController_set_DeviceName_m2220487978 ();
+extern "C" void WebCamARController_get_FlipHorizontally_m831951487 ();
+extern "C" void WebCamARController_set_FlipHorizontally_m3627665488 ();
+extern "C" void WebCamARController_get_IsPlaying_m1619485073 ();
+extern "C" void WebCamARController_get_ImplementationClass_m1189872477 ();
+extern "C" void WebCamARController_InitCamera_m2477073913 ();
+extern "C" void WebCamARController_Awake_m4003528519 ();
+extern "C" void WebCamARController_OnLevelWasLoaded_m1454507931 ();
+extern "C" void WebCamARController_OnDestroy_m1953398301 ();
+extern "C" void WebCamARController_Update_m300718083 ();
+extern "C" void WebCamARController__cctor_m4253412777 ();
+extern "C" void WebCamImpl_get_DidUpdateThisFrame_m3380320051 ();
+extern "C" void WebCamImpl_get_IsPlaying_m3141718436 ();
+extern "C" void WebCamImpl_get_ActualWidth_m2252839076 ();
+extern "C" void WebCamImpl_get_ActualHeight_m3528721215 ();
+extern "C" void WebCamImpl_get_IsTextureSizeAvailable_m4042103541 ();
+extern "C" void WebCamImpl_set_IsTextureSizeAvailable_m1295557856 ();
+extern "C" void WebCamImpl_get_FlipHorizontally_m3677192580 ();
+extern "C" void WebCamImpl_get_ResampledTextureSize_m3469975071 ();
+extern "C" void WebCamImpl_ComputeResampledTextureSize_m1533056019 ();
+extern "C" void WebCamImpl__ctor_m2108257629 ();
+extern "C" void WebCamImpl_StartCamera_m2311244138 ();
+extern "C" void WebCamImpl_StopCamera_m3184021270 ();
+extern "C" void WebCamImpl_ResetPlaying_m3915685594 ();
+extern "C" void WebCamImpl_GetPixels32AndBufferFrame_m2484403945 ();
+extern "C" void WebCamImpl_RenderFrame_m1518656991 ();
+extern "C" void WebCamImpl_GetVideoMode_m920069202 ();
+extern "C" void WebCamImpl_GetVideoTextureInfo_m3954133244 ();
+extern "C" void WebCamImpl_IsRendererDirty_m2680557624 ();
+extern "C" void WebCamImpl_OnDestroy_m615947000 ();
+extern "C" void WebCamImpl_Update_m4105536744 ();
+extern "C" void WebCamProfile_get_Default_m2045402713 ();
+extern "C" void WebCamProfile__ctor_m2516165060 ();
+extern "C" void WebCamProfile_GetProfile_m1910850226 ();
+extern "C" void WebCamProfile_ProfileAvailable_m1660806332 ();
+extern "C" void ProfileCollection__ctor_m1604460341_AdjustorThunk ();
+extern "C" void WebCamTexAdaptor__ctor_m3326895553 ();
+extern "C" void WebCamTexAdaptorImpl_get_DidUpdateThisFrame_m2756135115 ();
+extern "C" void WebCamTexAdaptorImpl_get_IsPlaying_m1323517514 ();
+extern "C" void WebCamTexAdaptorImpl_get_Texture_m594176022 ();
+extern "C" void WebCamTexAdaptorImpl__ctor_m2179149417 ();
+extern "C" void WebCamTexAdaptorImpl_Play_m3880371477 ();
+extern "C" void WebCamTexAdaptorImpl_Stop_m946549237 ();
+extern "C" void WebCamTexAdaptorImpl_CheckPermissions_m644464339 ();
+extern "C" void WordAbstractBehaviour_InternalUnregisterTrackable_m1616159713 ();
+extern "C" void WordAbstractBehaviour_get_Word_m2554944169 ();
+extern "C" void WordAbstractBehaviour_get_IsTemplateMode_m243037009 ();
+extern "C" void WordAbstractBehaviour_get_IsSpecificWordMode_m329663031 ();
+extern "C" void WordAbstractBehaviour_get_SpecificWord_m2846109451 ();
+extern "C" void WordAbstractBehaviour_InitializeWord_m1938025803 ();
+extern "C" void WordAbstractBehaviour_OnValidate_m223603350 ();
+extern "C" void WordAbstractBehaviour__ctor_m1415816009 ();
+extern "C" void WordImpl__ctor_m2135802911 ();
+extern "C" void WordImpl_get_StringValue_m131447204 ();
+extern "C" void WordImpl_get_Size_m2498138279 ();
+extern "C" void WordImpl_GetLetterMask_m1285376160 ();
+extern "C" void WordImpl_GetLetterBoundingBoxes_m3281201375 ();
+extern "C" void WordImpl_InitImageHeader_m492255088 ();
+extern "C" void WordImpl_CreateLetterMask_m1974445140 ();
+extern "C" void WordImpl_SetImageValues_m2453811954 ();
+extern "C" void WordImpl_AllocateImage_m2347164983 ();
+extern "C" void WordList__ctor_m1845098908 ();
+extern "C" void WordListImpl_LoadWordListFile_m2220640552 ();
+extern "C" void WordListImpl_LoadWordListFile_m3178229187 ();
+extern "C" void WordListImpl_AddWordsFromFile_m934599620 ();
+extern "C" void WordListImpl_AddWordsFromFile_m4239366397 ();
+extern "C" void WordListImpl_AddWord_m2914751619 ();
+extern "C" void WordListImpl_RemoveWord_m1457146834 ();
+extern "C" void WordListImpl_ContainsWord_m784687157 ();
+extern "C" void WordListImpl_UnloadAllLists_m672527667 ();
+extern "C" void WordListImpl_GetFilterMode_m978650999 ();
+extern "C" void WordListImpl_SetFilterMode_m2627170536 ();
+extern "C" void WordListImpl_LoadFilterListFile_m1282317742 ();
+extern "C" void WordListImpl_LoadFilterListFile_m969843205 ();
+extern "C" void WordListImpl_AddWordToFilterList_m3484515656 ();
+extern "C" void WordListImpl_RemoveWordFromFilterList_m2724088440 ();
+extern "C" void WordListImpl_ClearFilterList_m2443475993 ();
+extern "C" void WordListImpl_GetFilterListWordCount_m346006489 ();
+extern "C" void WordListImpl_GetFilterListWord_m2629737458 ();
+extern "C" void WordListImpl__ctor_m2953304286 ();
+extern "C" void WordManager__ctor_m501606791 ();
+extern "C" void WordManagerImpl_GetActiveWordResults_m1373666590 ();
+extern "C" void WordManagerImpl_GetNewWords_m3002296077 ();
+extern "C" void WordManagerImpl_GetLostWords_m3146633038 ();
+extern "C" void WordManagerImpl_TryGetWordBehaviour_m1106367364 ();
+extern "C" void WordManagerImpl_GetTrackableBehaviours_m896923779 ();
+extern "C" void WordManagerImpl_DestroyWordBehaviour_m2846089908 ();
+extern "C" void WordManagerImpl_InitializeWordBehaviourTemplates_m3992314456 ();
+extern "C" void WordManagerImpl_InitializeWordBehaviourTemplates_m4020699935 ();
+extern "C" void WordManagerImpl_RemoveDestroyedTrackables_m3725489426 ();
+extern "C" void WordManagerImpl_UpdateWords_m506580541 ();
+extern "C" void WordManagerImpl_SetWordBehavioursToNotFound_m1520214889 ();
+extern "C" void WordManagerImpl_CleanupWordBehaviours_m3463819555 ();
+extern "C" void WordManagerImpl_UpdateWords_m2132655282 ();
+extern "C" void WordManagerImpl_UpdateWordResultPoses_m1487928222 ();
+extern "C" void WordManagerImpl_AssociateWordResultsWithBehaviours_m2500550211 ();
+extern "C" void WordManagerImpl_UnregisterLostWords_m1604343620 ();
+extern "C" void WordManagerImpl_UpdateWordBehaviourPoses_m93294755 ();
+extern "C" void WordManagerImpl_AssociateWordBehaviour_m1493851823 ();
+extern "C" void WordManagerImpl_AssociateWordBehaviour_m3359416954 ();
+extern "C" void WordManagerImpl_InstantiateWordBehaviour_m2525602245 ();
+extern "C" void WordManagerImpl_CreateWordBehaviour_m810645364 ();
+extern "C" void WordManagerImpl__ctor_m1978406723 ();
+extern "C" void WordResult__ctor_m56695885 ();
+extern "C" void WordResultImpl__ctor_m401521253 ();
+extern "C" void WordResultImpl_get_Word_m3362229457 ();
+extern "C" void WordResultImpl_get_Position_m3408670079 ();
+extern "C" void WordResultImpl_get_Orientation_m2760402236 ();
+extern "C" void WordResultImpl_get_Obb_m2405245731 ();
+extern "C" void WordResultImpl_get_CurrentStatus_m3077354831 ();
+extern "C" void WordResultImpl_SetPose_m3664988988 ();
+extern "C" void WordResultImpl_SetObb_m82808223 ();
+extern "C" void WordResultImpl_SetStatus_m3989517476 ();
 extern "C" void ActorProperties__ctor_m2137510317 ();
 extern "C" void AudioRpc__ctor_m3378425616 ();
 extern "C" void AudioRpc_Awake_m4005024013 ();
@@ -19388,6 +22530,8 @@ extern "C" void ConnectAndJoinRandom_OnJoinedLobby_m522346091 ();
 extern "C" void ConnectAndJoinRandom_OnPhotonRandomJoinFailed_m1611482014 ();
 extern "C" void ConnectAndJoinRandom_OnFailedToConnectToPhoton_m1157358986 ();
 extern "C" void ConnectAndJoinRandom_OnJoinedRoom_m574746072 ();
+extern "C" void Control_Plant__ctor_m3930634814 ();
+extern "C" void Control_Plant_Update_m3788805089 ();
 extern "C" void CubeExtra__ctor_m1505268344 ();
 extern "C" void CubeExtra_Awake_m1398511913 ();
 extern "C" void CubeExtra_OnPhotonSerializeView_m1036418693 ();
@@ -19682,6 +22826,12 @@ extern "C" void Extensions_StripToStringKeys_m2363316021 ();
 extern "C" void Extensions_StripKeysWithNullValues_m3622109825 ();
 extern "C" void Extensions_Contains_m4150929930 ();
 extern "C" void Extensions__cctor_m1489472364 ();
+extern "C" void FPSWalkerEnhanced__ctor_m2474376202 ();
+extern "C" void FPSWalkerEnhanced_Start_m571701350 ();
+extern "C" void FPSWalkerEnhanced_FixedUpdate_m3238808973 ();
+extern "C" void FPSWalkerEnhanced_Update_m3412799663 ();
+extern "C" void FPSWalkerEnhanced_OnControllerColliderHit_m2537114598 ();
+extern "C" void FPSWalkerEnhanced_FallingDamageAlert_m2072832505 ();
 extern "C" void FriendInfo__ctor_m1097318655 ();
 extern "C" void FriendInfo_get_Name_m397115320 ();
 extern "C" void FriendInfo_set_Name_m3469425619 ();
@@ -20715,6 +23865,16 @@ extern "C" void ShowInfoOfPlayer_Update_m150419205 ();
 extern "C" void ShowStatusWhenConnecting__ctor_m608592104 ();
 extern "C" void ShowStatusWhenConnecting_OnGUI_m3194874404 ();
 extern "C" void ShowStatusWhenConnecting_GetConnectingDots_m2542111387 ();
+extern "C" void SkyboxChanger__ctor_m1201184127 ();
+extern "C" void SkyboxChanger_Awake_m1118505952 ();
+extern "C" void SkyboxChanger_ChangeSkybox_m3219538497 ();
+extern "C" void SkyboxRotator__ctor_m960111938 ();
+extern "C" void SkyboxRotator_Update_m1192437015 ();
+extern "C" void SkyboxRotator_ToggleSkyboxRotation_m177268064 ();
+extern "C" void SmoothMouseLook__ctor_m2602337615 ();
+extern "C" void SmoothMouseLook_Update_m121977692 ();
+extern "C" void SmoothMouseLook_Start_m774693555 ();
+extern "C" void SmoothMouseLook_ClampAngle_m476947378 ();
 extern "C" void SmoothSyncMovement__ctor_m4278263621 ();
 extern "C" void SmoothSyncMovement_Awake_m2392679608 ();
 extern "C" void SmoothSyncMovement_OnPhotonSerializeView_m2640699924 ();
@@ -20787,6 +23947,139 @@ extern "C" void TypedLobby_ToString_m2537599466 ();
 extern "C" void TypedLobby__cctor_m2464180626 ();
 extern "C" void TypedLobbyInfo__ctor_m726869419 ();
 extern "C" void TypedLobbyInfo_ToString_m3242429526 ();
+extern "C" void VRIntegrationHelper__ctor_m4069773343 ();
+extern "C" void VRIntegrationHelper_Awake_m681899862 ();
+extern "C" void VRIntegrationHelper_Start_m536586683 ();
+extern "C" void VRIntegrationHelper_OnVuforiaStarted_m1154042475 ();
+extern "C" void VRIntegrationHelper_LateUpdate_m4039758880 ();
+extern "C" void VRIntegrationHelper_OnPreRender_m1211949763 ();
+extern "C" void VRIntegrationHelper__cctor_m708693476 ();
+extern "C" void AndroidUnityPlayer__ctor_m2233000524 ();
+extern "C" void AndroidUnityPlayer_LoadNativeLibraries_m694869242 ();
+extern "C" void AndroidUnityPlayer_InitializePlatform_m2952017853 ();
+extern "C" void AndroidUnityPlayer_InitializeVuforia_m3815589415 ();
+extern "C" void AndroidUnityPlayer_StartScene_m1635484230 ();
+extern "C" void AndroidUnityPlayer_Update_m4198269979 ();
+extern "C" void AndroidUnityPlayer_OnPause_m2222496097 ();
+extern "C" void AndroidUnityPlayer_OnResume_m3489453528 ();
+extern "C" void AndroidUnityPlayer_OnDestroy_m3206719289 ();
+extern "C" void AndroidUnityPlayer_Dispose_m2709691617 ();
+extern "C" void AndroidUnityPlayer_LoadNativeLibrariesFromJava_m2955245326 ();
+extern "C" void AndroidUnityPlayer_InitAndroidPlatform_m1583405850 ();
+extern "C" void AndroidUnityPlayer_InitVuforia_m2858754529 ();
+extern "C" void AndroidUnityPlayer_InitializeSurface_m1417263607 ();
+extern "C" void AndroidUnityPlayer_ResetUnityScreenOrientation_m2917504922 ();
+extern "C" void AndroidUnityPlayer_CheckOrientation_m2044239264 ();
+extern "C" void BackgroundPlaneBehaviour__ctor_m2808006244 ();
+extern "C" void CloudRecoBehaviour__ctor_m2555627024 ();
+extern "C" void ComponentFactoryStarterBehaviour__ctor_m1215525256 ();
+extern "C" void ComponentFactoryStarterBehaviour_Awake_m583572645 ();
+extern "C" void ComponentFactoryStarterBehaviour_SetBehaviourComponentFactory_m3496159002 ();
+extern "C" void CylinderTargetBehaviour__ctor_m2197210535 ();
+extern "C" void DefaultInitializationErrorHandler__ctor_m2781804906 ();
+extern "C" void DefaultInitializationErrorHandler_Awake_m2567656739 ();
+extern "C" void DefaultInitializationErrorHandler_OnGUI_m2796165714 ();
+extern "C" void DefaultInitializationErrorHandler_OnDestroy_m3502240837 ();
+extern "C" void DefaultInitializationErrorHandler_DrawWindowContent_m1741663736 ();
+extern "C" void DefaultInitializationErrorHandler_SetErrorCode_m617037449 ();
+extern "C" void DefaultInitializationErrorHandler_SetErrorOccurred_m3043577076 ();
+extern "C" void DefaultInitializationErrorHandler_OnVuforiaInitializationError_m1319028211 ();
+extern "C" void DefaultSmartTerrainEventHandler__ctor_m2500188526 ();
+extern "C" void DefaultSmartTerrainEventHandler_Start_m2088335438 ();
+extern "C" void DefaultSmartTerrainEventHandler_OnDestroy_m904284311 ();
+extern "C" void DefaultSmartTerrainEventHandler_OnPropCreated_m2699063839 ();
+extern "C" void DefaultSmartTerrainEventHandler_OnSurfaceCreated_m3013324307 ();
+extern "C" void DefaultTrackableEventHandler__ctor_m205667975 ();
+extern "C" void DefaultTrackableEventHandler_Start_m93544099 ();
+extern "C" void DefaultTrackableEventHandler_OnTrackableStateChanged_m2460643418 ();
+extern "C" void DefaultTrackableEventHandler_OnTrackingFound_m1963976755 ();
+extern "C" void DefaultTrackableEventHandler_OnTrackingLost_m3813626281 ();
+extern "C" void GLErrorHandler__ctor_m2689292648 ();
+extern "C" void GLErrorHandler_SetError_m381241178 ();
+extern "C" void GLErrorHandler_OnGUI_m3766403336 ();
+extern "C" void GLErrorHandler_DrawWindowContent_m161374698 ();
+extern "C" void GLErrorHandler__cctor_m454494933 ();
+extern "C" void HideExcessAreaBehaviour__ctor_m1434979708 ();
+extern "C" void ImageTargetBehaviour__ctor_m2964661606 ();
+extern "C" void IOSUnityPlayer__ctor_m676692974 ();
+extern "C" void IOSUnityPlayer_LoadNativeLibraries_m1172109064 ();
+extern "C" void IOSUnityPlayer_InitializePlatform_m286541247 ();
+extern "C" void IOSUnityPlayer_InitializeVuforia_m260052685 ();
+extern "C" void IOSUnityPlayer_StartScene_m2357985464 ();
+extern "C" void IOSUnityPlayer_Update_m3611099589 ();
+extern "C" void IOSUnityPlayer_Dispose_m444239215 ();
+extern "C" void IOSUnityPlayer_OnPause_m2518700507 ();
+extern "C" void IOSUnityPlayer_OnResume_m921094382 ();
+extern "C" void IOSUnityPlayer_OnDestroy_m3703758411 ();
+extern "C" void IOSUnityPlayer_InitializeSurface_m4219932605 ();
+extern "C" void IOSUnityPlayer_SetUnityScreenOrientation_m3793088327 ();
+extern "C" void IOSUnityPlayer_setPlatFormNative_m2804175766 ();
+extern "C" void IOSUnityPlayer_initQCARiOS_m4109121394 ();
+extern "C" void IOSUnityPlayer_setSurfaceOrientationiOS_m3165018273 ();
+extern "C" void MaskOutBehaviour__ctor_m3872076058 ();
+extern "C" void MaskOutBehaviour_Start_m3914251470 ();
+extern "C" void MultiTargetBehaviour__ctor_m3457059082 ();
+extern "C" void ObjectTargetBehaviour__ctor_m26156260 ();
+extern "C" void PropBehaviour__ctor_m2238867581 ();
+extern "C" void ReconstructionBehaviour__ctor_m2616285522 ();
+extern "C" void ReconstructionFromTargetBehaviour__ctor_m2764930605 ();
+extern "C" void SurfaceBehaviour__ctor_m1448804633 ();
+extern "C" void TextRecoBehaviour__ctor_m2446679806 ();
+extern "C" void TurnOffBehaviour__ctor_m1873134682 ();
+extern "C" void TurnOffBehaviour_Awake_m4285356927 ();
+extern "C" void TurnOffWordBehaviour__ctor_m2227245698 ();
+extern "C" void TurnOffWordBehaviour_Awake_m2854048885 ();
+extern "C" void UserDefinedTargetBuildingBehaviour__ctor_m2304938643 ();
+extern "C" void VideoBackgroundBehaviour__ctor_m2133855431 ();
+extern "C" void VirtualButtonBehaviour__ctor_m3984899111 ();
+extern "C" void VuforiaBehaviour__ctor_m3143982076 ();
+extern "C" void VuforiaBehaviour_Awake_m3772880569 ();
+extern "C" void VuforiaBehaviour_get_Instance_m790681192 ();
+extern "C" void VuforiaBehaviour_AddOSSpecificExternalDatasetSearchDirs_m4168849520 ();
+extern "C" void VuforiaBehaviour__cctor_m1552098219 ();
+extern "C" void VuforiaBehaviourComponentFactory__ctor_m4023364043 ();
+extern "C" void VuforiaBehaviourComponentFactory_AddMaskOutBehaviour_m3602623915 ();
+extern "C" void VuforiaBehaviourComponentFactory_AddVirtualButtonBehaviour_m273150123 ();
+extern "C" void VuforiaBehaviourComponentFactory_AddTurnOffBehaviour_m3691970091 ();
+extern "C" void VuforiaBehaviourComponentFactory_AddImageTargetBehaviour_m110195307 ();
+extern "C" void VuforiaBehaviourComponentFactory_AddMultiTargetBehaviour_m1008182955 ();
+extern "C" void VuforiaBehaviourComponentFactory_AddCylinderTargetBehaviour_m2573942991 ();
+extern "C" void VuforiaBehaviourComponentFactory_AddWordBehaviour_m3806508403 ();
+extern "C" void VuforiaBehaviourComponentFactory_AddTextRecoBehaviour_m2915043667 ();
+extern "C" void VuforiaBehaviourComponentFactory_AddObjectTargetBehaviour_m3475568395 ();
+extern "C" void VuforiaBehaviourComponentFactory_AddVuMarkBehaviour_m2639490483 ();
+extern "C" void VuforiaBehaviourComponentFactory_CreateVuforiaConfiguration_m931474600 ();
+extern "C" void VuforiaConfiguration__ctor_m2808042321 ();
+extern "C" void VuforiaRuntimeInitialization_InitPlatform_m3197388960 ();
+extern "C" void VuforiaRuntimeInitialization_InitVuforia_m2546903059 ();
+extern "C" void VuforiaRuntimeInitialization_CreateUnityPlayer_m1650732109 ();
+extern "C" void VuMarkBehaviour__ctor_m1415860126 ();
+extern "C" void WireframeBehaviour__ctor_m420914080 ();
+extern "C" void WireframeBehaviour_Start_m2184757344 ();
+extern "C" void WireframeBehaviour_OnRenderObject_m2411339956 ();
+extern "C" void WireframeBehaviour_OnDrawGizmos_m4179942854 ();
+extern "C" void WireframeTrackableEventHandler__ctor_m4253736968 ();
+extern "C" void WireframeTrackableEventHandler_Start_m1475947192 ();
+extern "C" void WireframeTrackableEventHandler_OnTrackableStateChanged_m106630617 ();
+extern "C" void WireframeTrackableEventHandler_OnTrackingFound_m563781220 ();
+extern "C" void WireframeTrackableEventHandler_OnTrackingLost_m3180126272 ();
+extern "C" void WordBehaviour__ctor_m581909702 ();
+extern "C" void WSAUnityPlayer__ctor_m1279021334 ();
+extern "C" void WSAUnityPlayer_LoadNativeLibraries_m2310474608 ();
+extern "C" void WSAUnityPlayer_InitializePlatform_m2450540007 ();
+extern "C" void WSAUnityPlayer_InitializeVuforia_m1467576933 ();
+extern "C" void WSAUnityPlayer_StartScene_m2884648656 ();
+extern "C" void WSAUnityPlayer_Update_m3453039605 ();
+extern "C" void WSAUnityPlayer_Dispose_m459169223 ();
+extern "C" void WSAUnityPlayer_OnPause_m2815166635 ();
+extern "C" void WSAUnityPlayer_OnResume_m2572251502 ();
+extern "C" void WSAUnityPlayer_OnDestroy_m3845019931 ();
+extern "C" void WSAUnityPlayer_InitializeSurface_m2485130165 ();
+extern "C" void WSAUnityPlayer_SetUnityScreenOrientation_m3964512799 ();
+extern "C" void WSAUnityPlayer_GetActualScreenOrientation_m2906081196 ();
+extern "C" void WSAUnityPlayer_setPlatFormNative_m413995854 ();
+extern "C" void WSAUnityPlayer_initVuforiaWSA_m2461582347 ();
+extern "C" void WSAUnityPlayer_setSurfaceOrientationWSA_m2082052129 ();
 extern "C" void WebRpcResponse__ctor_m3792427727 ();
 extern "C" void WebRpcResponse_get_Name_m3941051470 ();
 extern "C" void WebRpcResponse_set_Name_m796339125 ();
@@ -20820,7 +24113,7 @@ extern "C" void WorkerMenu_OnCreatedRoom_m441011172 ();
 extern "C" void WorkerMenu_OnDisconnectedFromPhoton_m3655135434 ();
 extern "C" void WorkerMenu_OnFailedToConnectToPhoton_m2511247198 ();
 extern "C" void WorkerMenu__cctor_m4287693745 ();
-extern const Il2CppMethodPointer g_MethodPointers[20809] = 
+extern const Il2CppMethodPointer g_MethodPointers[24102] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -22791,6 +26084,8 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Delegate_CreateDelegate_m1864084142,
 	Delegate_CreateDelegate_m1706525923,
 	Delegate_CreateDelegate_m2923944126,
+	Delegate_DynamicInvoke_m4087640646,
+	Delegate_DynamicInvokeImpl_m3083854600,
 	Delegate_Clone_m2661349026,
 	Delegate_Equals_m2235282625,
 	Delegate_GetHashCode_m4213744155,
@@ -22977,6 +26272,9 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	FormatException__ctor_m1466217969,
 	FormatException__ctor_m333678921,
 	FormatException__ctor_m3740644286,
+	GC_get_MaxGeneration_m1986243316,
+	GC_InternalCollect_m479047119,
+	GC_Collect_m388951712,
 	GC_SuppressFinalize_m953228702,
 	Calendar__ctor_m1687153432,
 	Calendar_Clone_m3159430630,
@@ -23333,6 +26631,7 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	IntPtr_get_Size_m3339807560,
 	IntPtr_Equals_m1214967011_AdjustorThunk,
 	IntPtr_GetHashCode_m1174575389_AdjustorThunk,
+	IntPtr_ToInt32_m4084182445_AdjustorThunk,
 	IntPtr_ToInt64_m39971741_AdjustorThunk,
 	IntPtr_ToPointer_m1888290092_AdjustorThunk,
 	IntPtr_ToString_m428195821_AdjustorThunk,
@@ -23831,13 +27130,17 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Math_Ceiling_m614624719,
 	Math_Floor_m4118366418,
 	Math_Log_m3325929366,
+	Math_Max_m3360711905,
 	Math_Max_m2671311541,
 	Math_Min_m4290821911,
 	Math_Round_m565516458,
 	Math_Round_m2632426160,
 	Math_Sin_m2320256962,
 	Math_Cos_m43596019,
+	Math_Tan_m2337827751,
 	Math_Acos_m2218287828,
+	Math_Atan_m2820982624,
+	Math_Atan2_m792822848,
 	Math_Log_m3371716878,
 	Math_Pow_m3099781906,
 	Math_Sqrt_m932242488,
@@ -23956,6 +27259,7 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	MonoType_ReorderParamArrayArguments_m979187413,
 	MonoTypeInfo__ctor_m1398838196,
 	MulticastDelegate_GetObjectData_m3187757658,
+	MulticastDelegate_DynamicInvokeImpl_m1972355936,
 	MulticastDelegate_Equals_m3064081489,
 	MulticastDelegate_GetHashCode_m1352560743,
 	MulticastDelegate_GetInvocationList_m1380132617,
@@ -25089,6 +28393,7 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	GCHandle__ctor_m2952050298_AdjustorThunk,
 	GCHandle_get_IsAllocated_m2246567034_AdjustorThunk,
 	GCHandle_get_Target_m2327042781_AdjustorThunk,
+	GCHandle_AddrOfPinnedObject_m3034420542_AdjustorThunk,
 	GCHandle_Alloc_m3171748614,
 	GCHandle_Alloc_m1063472408,
 	GCHandle_Free_m1639542352_AdjustorThunk,
@@ -25096,6 +28401,7 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	GCHandle_GetTarget_m2056570211,
 	GCHandle_GetTargetHandle_m3810891574,
 	GCHandle_FreeHandle_m2466807271,
+	GCHandle_GetAddrOfPinnedObject_m2170553013,
 	GCHandle_Equals_m170815541_AdjustorThunk,
 	GCHandle_GetHashCode_m1664905595_AdjustorThunk,
 	GCHandle_FromIntPtr_m390042100,
@@ -25106,13 +28412,26 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	InAttribute__ctor_m1401060713,
 	InterfaceTypeAttribute__ctor_m1747686341,
 	Marshal__cctor_m802981325,
+	Marshal_AllocHGlobal_m1566126039,
+	Marshal_AllocHGlobal_m4258042074,
 	Marshal_copy_to_unmanaged_m1616166460,
 	Marshal_copy_from_unmanaged_m98320635,
 	Marshal_Copy_m3575923452,
 	Marshal_Copy_m1683535972,
 	Marshal_Copy_m275157126,
+	Marshal_Copy_m2347082500,
+	Marshal_Copy_m2353359830,
+	Marshal_FreeHGlobal_m2238467479,
 	Marshal_GetLastWin32Error_m4162683157,
+	Marshal_PtrToStringAnsi_m2970070000,
+	Marshal_PtrToStringUni_m4287319443,
+	Marshal_PtrToStructure_m673412918,
 	Marshal_ReadByte_m536122811,
+	Marshal_ReadInt32_m1563614062,
+	Marshal_ReadInt32_m3506767203,
+	Marshal_SizeOf_m2982427619,
+	Marshal_StringToHGlobalUni_m919584414,
+	Marshal_StructureToPtr_m3205507777,
 	Marshal_WriteByte_m2971909611,
 	MarshalAsAttribute__ctor_m1892084128,
 	MarshalDirectiveException__ctor_m3894820706,
@@ -27298,6 +30617,7 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	String_LastIndexOf_m290475879,
 	String_Contains_m4017059963,
 	String_IsNullOrEmpty_m2802126737,
+	String_Remove_m2742773378,
 	String_PadRight_m1043573208,
 	String_StartsWith_m1841920685,
 	String_StartsWith_m46695182,
@@ -28158,916 +31478,6 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	WindowsConsoleDriver_GetStdHandle_m2228793753,
 	WindowsConsoleDriver_GetConsoleScreenBufferInfo_m1086313578,
 	WindowsConsoleDriver_ReadConsoleInput_m3748139698,
-	Locale_GetText_m1644072174,
-	BigInteger__ctor_m4013661868,
-	BigInteger__ctor_m2991182310,
-	BigInteger__ctor_m3239748086,
-	BigInteger__ctor_m2998639688,
-	BigInteger__ctor_m3787562545,
-	BigInteger__cctor_m3631692756,
-	BigInteger_get_Rng_m2525288368,
-	BigInteger_GenerateRandom_m714043984,
-	BigInteger_GenerateRandom_m1878468830,
-	BigInteger_BitCount_m1334731567,
-	BigInteger_TestBit_m2460344121,
-	BigInteger_SetBit_m426619300,
-	BigInteger_SetBit_m576108355,
-	BigInteger_LowestSetBit_m1146240832,
-	BigInteger_GetBytes_m767422614,
-	BigInteger_ToString_m1842353154,
-	BigInteger_ToString_m2878297110,
-	BigInteger_Normalize_m1262742386,
-	BigInteger_Clear_m2734785184,
-	BigInteger_GetHashCode_m1450276268,
-	BigInteger_ToString_m2806881644,
-	BigInteger_Equals_m1886728252,
-	BigInteger_ModInverse_m1881894572,
-	BigInteger_ModPow_m1418407677,
-	BigInteger_GeneratePseudoPrime_m2186059270,
-	BigInteger_Incr2_m505983313,
-	BigInteger_op_Implicit_m622924526,
-	BigInteger_op_Implicit_m3634001681,
-	BigInteger_op_Addition_m1734797151,
-	BigInteger_op_Subtraction_m972393015,
-	BigInteger_op_Modulus_m2895726170,
-	BigInteger_op_Modulus_m13450242,
-	BigInteger_op_Division_m4076990896,
-	BigInteger_op_Multiply_m1833761647,
-	BigInteger_op_LeftShift_m3361632170,
-	BigInteger_op_RightShift_m852685747,
-	BigInteger_op_Equality_m2683055762,
-	BigInteger_op_Inequality_m744282323,
-	BigInteger_op_Equality_m3089846781,
-	BigInteger_op_Inequality_m4286929594,
-	BigInteger_op_GreaterThan_m2492620848,
-	BigInteger_op_LessThan_m3825358479,
-	BigInteger_op_GreaterThanOrEqual_m2643115413,
-	BigInteger_op_LessThanOrEqual_m3528380540,
-	Kernel_AddSameSign_m4087322475,
-	Kernel_Subtract_m2224959291,
-	Kernel_MinusEq_m1637138341,
-	Kernel_PlusEq_m2259390883,
-	Kernel_Compare_m722412638,
-	Kernel_SingleByteDivideInPlace_m3631295848,
-	Kernel_DwordMod_m978954867,
-	Kernel_DwordDivMod_m3728402123,
-	Kernel_multiByteDivide_m3157480645,
-	Kernel_LeftShift_m3814364702,
-	Kernel_RightShift_m2983108719,
-	Kernel_Multiply_m1938858919,
-	Kernel_MultiplyMod2p32pmod_m874406394,
-	Kernel_modInverse_m1848537133,
-	Kernel_modInverse_m3230829577,
-	ModulusRing__ctor_m630117946,
-	ModulusRing_BarrettReduction_m2802101099,
-	ModulusRing_Multiply_m3113924743,
-	ModulusRing_Difference_m662924064,
-	ModulusRing_Pow_m2489265435,
-	ModulusRing_Pow_m661630322,
-	PrimeGeneratorBase__ctor_m4281387560,
-	PrimeGeneratorBase_get_Confidence_m3927471963,
-	PrimeGeneratorBase_get_PrimalityTest_m308005118,
-	PrimeGeneratorBase_get_TrialDivisionBounds_m4192107199,
-	SequentialSearchPrimeGeneratorBase__ctor_m3982028469,
-	SequentialSearchPrimeGeneratorBase_GenerateSearchBase_m2930465198,
-	SequentialSearchPrimeGeneratorBase_GenerateNewPrime_m2255936480,
-	SequentialSearchPrimeGeneratorBase_GenerateNewPrime_m296245934,
-	SequentialSearchPrimeGeneratorBase_IsPrimeAcceptable_m3678219529,
-	PrimalityTest__ctor_m1351629431,
-	PrimalityTest_Invoke_m4058801829,
-	PrimalityTest_BeginInvoke_m1691702520,
-	PrimalityTest_EndInvoke_m380367609,
-	PrimalityTests_GetSPPRounds_m873706010,
-	PrimalityTests_RabinMillerTest_m2029846965,
-	ASN1__ctor_m646105945,
-	ASN1__ctor_m1045937444,
-	ASN1__ctor_m1653629327,
-	ASN1_get_Count_m3992276234,
-	ASN1_get_Tag_m3531603485,
-	ASN1_get_Length_m2568143283,
-	ASN1_get_Value_m3116965808,
-	ASN1_set_Value_m1063274345,
-	ASN1_CompareArray_m2071014626,
-	ASN1_CompareValue_m2994814651,
-	ASN1_Add_m1595622622,
-	ASN1_GetBytes_m3982410951,
-	ASN1_Decode_m947929221,
-	ASN1_DecodeTLV_m2898581687,
-	ASN1_get_Item_m1067746146,
-	ASN1_Element_m1568353429,
-	ASN1_ToString_m2669105451,
-	ASN1Convert_FromInt32_m4211017145,
-	ASN1Convert_FromOid_m3277257826,
-	ASN1Convert_ToInt32_m2482104422,
-	ASN1Convert_ToOid_m1035860535,
-	ASN1Convert_ToDateTime_m2305963290,
-	BitConverterLE_GetUIntBytes_m2975603021,
-	BitConverterLE_GetBytes_m1242468557,
-	ARC4Managed__ctor_m2922048522,
-	ARC4Managed_Finalize_m4206406046,
-	ARC4Managed_Dispose_m4102232694,
-	ARC4Managed_get_Key_m3234603170,
-	ARC4Managed_set_Key_m663161993,
-	ARC4Managed_get_CanReuseTransform_m3235470105,
-	ARC4Managed_CreateEncryptor_m800891464,
-	ARC4Managed_CreateDecryptor_m2848783948,
-	ARC4Managed_GenerateIV_m2815460576,
-	ARC4Managed_GenerateKey_m716135508,
-	ARC4Managed_get_CanTransformMultipleBlocks_m2283663207,
-	ARC4Managed_get_InputBlockSize_m2472484505,
-	ARC4Managed_get_OutputBlockSize_m1486579102,
-	ARC4Managed_KeySetup_m73384687,
-	ARC4Managed_CheckInput_m3033530539,
-	ARC4Managed_TransformBlock_m1197694862,
-	ARC4Managed_InternalTransformBlock_m1999805545,
-	ARC4Managed_TransformFinalBlock_m2162658128,
-	CryptoConvert_ToHex_m2874017189,
-	HMAC__ctor_m2605930831,
-	HMAC_get_Key_m2528863640,
-	HMAC_set_Key_m3745565827,
-	HMAC_Initialize_m3052649104,
-	HMAC_HashFinal_m1045191164,
-	HMAC_HashCore_m3394319142,
-	HMAC_initializePad_m3828610671,
-	KeyBuilder_get_Rng_m2539978716,
-	KeyBuilder_Key_m3814433741,
-	MD2__ctor_m3133818738,
-	MD2_Create_m3241404171,
-	MD2_Create_m539024737,
-	MD2Managed__ctor_m1696123663,
-	MD2Managed__cctor_m3575944986,
-	MD2Managed_Padding_m410163267,
-	MD2Managed_Initialize_m1330748427,
-	MD2Managed_HashCore_m248147901,
-	MD2Managed_HashFinal_m4151214661,
-	MD2Managed_MD2Transform_m3825201358,
-	MD4__ctor_m2366413460,
-	MD4_Create_m3565183915,
-	MD4_Create_m2582504069,
-	MD4Managed__ctor_m796835377,
-	MD4Managed_Initialize_m2316730601,
-	MD4Managed_HashCore_m3133543859,
-	MD4Managed_HashFinal_m1777895823,
-	MD4Managed_Padding_m2920052321,
-	MD4Managed_F_m2501978380,
-	MD4Managed_G_m1121848465,
-	MD4Managed_H_m4236752602,
-	MD4Managed_ROL_m2970841588,
-	MD4Managed_FF_m784377458,
-	MD4Managed_GG_m1462438360,
-	MD4Managed_HH_m2172169314,
-	MD4Managed_Encode_m2097839378,
-	MD4Managed_Decode_m1036272973,
-	MD4Managed_MD4Transform_m2648331494,
-	MD5SHA1__ctor_m371038734,
-	MD5SHA1_Initialize_m3440022970,
-	MD5SHA1_HashFinal_m4051142254,
-	MD5SHA1_HashCore_m2043482644,
-	MD5SHA1_CreateSignature_m4274114929,
-	MD5SHA1_VerifySignature_m507888141,
-	PKCS1__cctor_m1002943778,
-	PKCS1_Compare_m552424558,
-	PKCS1_I2OSP_m647014786,
-	PKCS1_OS2IP_m2226560443,
-	PKCS1_RSASP1_m1748738009,
-	PKCS1_RSAVP1_m1644175986,
-	PKCS1_Sign_v15_m554806303,
-	PKCS1_Verify_v15_m3855588030,
-	PKCS1_Verify_v15_m478274703,
-	PKCS1_Encode_v15_m1038051160,
-	EncryptedPrivateKeyInfo__ctor_m569026543,
-	EncryptedPrivateKeyInfo__ctor_m3398795484,
-	EncryptedPrivateKeyInfo_get_Algorithm_m3024753760,
-	EncryptedPrivateKeyInfo_get_EncryptedData_m598672214,
-	EncryptedPrivateKeyInfo_get_Salt_m590211404,
-	EncryptedPrivateKeyInfo_get_IterationCount_m2407997966,
-	EncryptedPrivateKeyInfo_Decode_m1706190306,
-	PrivateKeyInfo__ctor_m2683279425,
-	PrivateKeyInfo__ctor_m3851924948,
-	PrivateKeyInfo_get_PrivateKey_m2127503870,
-	PrivateKeyInfo_Decode_m1053025782,
-	PrivateKeyInfo_RemoveLeadingZero_m3396807048,
-	PrivateKeyInfo_Normalize_m1192796352,
-	PrivateKeyInfo_DecodeRSA_m919734506,
-	PrivateKeyInfo_DecodeDSA_m2497561917,
-	RC4__ctor_m1585026462,
-	RC4__cctor_m523650203,
-	RC4_get_IV_m506011366,
-	RC4_set_IV_m4096786929,
-	RSAManaged__ctor_m1370411656,
-	RSAManaged__ctor_m1680944437,
-	RSAManaged_Finalize_m3491799840,
-	RSAManaged_GenerateKeyPair_m1213111262,
-	RSAManaged_get_KeySize_m3478823737,
-	RSAManaged_get_KeyExchangeAlgorithm_m123531007,
-	RSAManaged_get_PublicOnly_m2581981140,
-	RSAManaged_get_SignatureAlgorithm_m4261969919,
-	RSAManaged_DecryptValue_m1225349489,
-	RSAManaged_EncryptValue_m1847230963,
-	RSAManaged_ExportParameters_m2871338879,
-	RSAManaged_ImportParameters_m3060955884,
-	RSAManaged_Dispose_m160261748,
-	RSAManaged_ToXmlString_m2606223477,
-	RSAManaged_GetPaddedValue_m2972141669,
-	KeyGeneratedEventHandler__ctor_m639133899,
-	KeyGeneratedEventHandler_Invoke_m1298576133,
-	KeyGeneratedEventHandler_BeginInvoke_m2404438262,
-	KeyGeneratedEventHandler_EndInvoke_m80374889,
-	ContentInfo__ctor_m3727742917,
-	ContentInfo__ctor_m3579805263,
-	ContentInfo__ctor_m2845339866,
-	ContentInfo__ctor_m3871771681,
-	ContentInfo_get_ASN1_m1697727120,
-	ContentInfo_get_Content_m1802070908,
-	ContentInfo_set_Content_m3643334361,
-	ContentInfo_get_ContentType_m2984320800,
-	ContentInfo_set_ContentType_m1242338355,
-	ContentInfo_GetASN1_m1560623629,
-	EncryptedData__ctor_m3834592644,
-	EncryptedData__ctor_m3866918584,
-	EncryptedData_get_EncryptionAlgorithm_m3585820551,
-	EncryptedData_get_EncryptedContent_m3832882582,
-	Alert__ctor_m264447866,
-	Alert__ctor_m287829582,
-	Alert_get_Level_m2913362942,
-	Alert_get_Description_m3856702046,
-	Alert_get_IsWarning_m427004807,
-	Alert_get_IsCloseNotify_m577852330,
-	Alert_inferAlertLevel_m1194123772,
-	Alert_GetAlertMessage_m325996256,
-	CertificateSelectionCallback__ctor_m2302751912,
-	CertificateSelectionCallback_Invoke_m2902629105,
-	CertificateSelectionCallback_BeginInvoke_m990408067,
-	CertificateSelectionCallback_EndInvoke_m3525317639,
-	CertificateValidationCallback__ctor_m1298586051,
-	CertificateValidationCallback_Invoke_m2500463874,
-	CertificateValidationCallback_BeginInvoke_m3625803269,
-	CertificateValidationCallback_EndInvoke_m2418808873,
-	CertificateValidationCallback2__ctor_m1915259009,
-	CertificateValidationCallback2_Invoke_m436894540,
-	CertificateValidationCallback2_BeginInvoke_m3996282202,
-	CertificateValidationCallback2_EndInvoke_m1734587200,
-	CipherSuite__ctor_m440966622,
-	CipherSuite__cctor_m2232817620,
-	CipherSuite_get_EncryptionCipher_m1019312730,
-	CipherSuite_get_DecryptionCipher_m3464788382,
-	CipherSuite_get_ClientHMAC_m2261562571,
-	CipherSuite_get_ServerHMAC_m3566778727,
-	CipherSuite_get_CipherAlgorithmType_m750379757,
-	CipherSuite_get_HashAlgorithmName_m3238654725,
-	CipherSuite_get_HashAlgorithmType_m3902365773,
-	CipherSuite_get_HashSize_m3748598203,
-	CipherSuite_get_ExchangeAlgorithmType_m3219223789,
-	CipherSuite_get_CipherMode_m2346658878,
-	CipherSuite_get_Code_m3902213587,
-	CipherSuite_get_Name_m3914703358,
-	CipherSuite_get_IsExportable_m136354150,
-	CipherSuite_get_KeyMaterialSize_m4222492337,
-	CipherSuite_get_KeyBlockSize_m2993514247,
-	CipherSuite_get_ExpandedKeyMaterialSize_m296573450,
-	CipherSuite_get_EffectiveKeyBits_m3588203390,
-	CipherSuite_get_IvSize_m2971966910,
-	CipherSuite_get_Context_m1298687213,
-	CipherSuite_set_Context_m4127897124,
-	CipherSuite_Write_m1271196675,
-	CipherSuite_Write_m827355463,
-	CipherSuite_InitializeCipher_m229247572,
-	CipherSuite_EncryptRecord_m3421046381,
-	CipherSuite_DecryptRecord_m1247194570,
-	CipherSuite_CreatePremasterSecret_m3728217834,
-	CipherSuite_PRF_m3379816948,
-	CipherSuite_Expand_m1800208652,
-	CipherSuite_createEncryptionCipher_m1926075645,
-	CipherSuite_createDecryptionCipher_m1118350455,
-	CipherSuiteCollection__ctor_m2154226461,
-	CipherSuiteCollection_System_Collections_IList_get_Item_m218755780,
-	CipherSuiteCollection_System_Collections_IList_set_Item_m750275607,
-	CipherSuiteCollection_System_Collections_ICollection_get_IsSynchronized_m36679989,
-	CipherSuiteCollection_System_Collections_ICollection_get_SyncRoot_m2818114049,
-	CipherSuiteCollection_System_Collections_IEnumerable_GetEnumerator_m1600967134,
-	CipherSuiteCollection_System_Collections_IList_Contains_m3239163601,
-	CipherSuiteCollection_System_Collections_IList_IndexOf_m540536407,
-	CipherSuiteCollection_System_Collections_IList_Insert_m3923805048,
-	CipherSuiteCollection_System_Collections_IList_Remove_m4022085178,
-	CipherSuiteCollection_System_Collections_IList_RemoveAt_m143866082,
-	CipherSuiteCollection_System_Collections_IList_Add_m2644442861,
-	CipherSuiteCollection_get_Item_m3667070847,
-	CipherSuiteCollection_get_Item_m280627160,
-	CipherSuiteCollection_set_Item_m1064755671,
-	CipherSuiteCollection_get_Item_m2606225922,
-	CipherSuiteCollection_get_Count_m1700100413,
-	CipherSuiteCollection_get_IsFixedSize_m2849280449,
-	CipherSuiteCollection_get_IsReadOnly_m2233332798,
-	CipherSuiteCollection_CopyTo_m869893074,
-	CipherSuiteCollection_Clear_m533808424,
-	CipherSuiteCollection_IndexOf_m204129362,
-	CipherSuiteCollection_IndexOf_m4089218779,
-	CipherSuiteCollection_Add_m3114709461,
-	CipherSuiteCollection_add_m2465397903,
-	CipherSuiteCollection_add_m513562767,
-	CipherSuiteCollection_cultureAwareCompare_m1825407448,
-	CipherSuiteFactory_GetSupportedCiphers_m338097823,
-	CipherSuiteFactory_GetTls1SupportedCiphers_m2952983549,
-	CipherSuiteFactory_GetSsl3SupportedCiphers_m2476597368,
-	ClientContext__ctor_m1008306089,
-	ClientContext_get_SslStream_m360110741,
-	ClientContext_get_ClientHelloProtocol_m1765198120,
-	ClientContext_set_ClientHelloProtocol_m2246603449,
-	ClientContext_Clear_m1290084423,
-	ClientRecordProtocol__ctor_m648586559,
-	ClientRecordProtocol_GetMessage_m2649269799,
-	ClientRecordProtocol_ProcessHandshakeMessage_m3590516592,
-	ClientRecordProtocol_createClientHandshakeMessage_m811708715,
-	ClientRecordProtocol_createServerHandshakeMessage_m3939790866,
-	ClientSessionCache__cctor_m1134810266,
-	ClientSessionCache_Add_m987180603,
-	ClientSessionCache_FromHost_m1396036471,
-	ClientSessionCache_FromContext_m3886959254,
-	ClientSessionCache_SetContextInCache_m907788136,
-	ClientSessionCache_SetContextFromCache_m3917528339,
-	ClientSessionInfo__ctor_m759726440,
-	ClientSessionInfo__cctor_m1353980836,
-	ClientSessionInfo_Finalize_m1198775539,
-	ClientSessionInfo_get_HostName_m759522668,
-	ClientSessionInfo_get_Id_m3046630969,
-	ClientSessionInfo_get_Valid_m3589823308,
-	ClientSessionInfo_GetContext_m301320023,
-	ClientSessionInfo_SetContext_m2649357891,
-	ClientSessionInfo_KeepAlive_m3125408381,
-	ClientSessionInfo_Dispose_m3315842124,
-	ClientSessionInfo_Dispose_m2571428025,
-	ClientSessionInfo_CheckDisposed_m1394638186,
-	Context__ctor_m3963941463,
-	Context_get_AbbreviatedHandshake_m2972837690,
-	Context_set_AbbreviatedHandshake_m4080371327,
-	Context_get_ProtocolNegotiated_m624488778,
-	Context_set_ProtocolNegotiated_m1177527245,
-	Context_get_SecurityProtocol_m1600902905,
-	Context_set_SecurityProtocol_m4153223312,
-	Context_get_SecurityProtocolFlags_m3295551796,
-	Context_get_Protocol_m1537476188,
-	Context_get_SessionId_m1296338025,
-	Context_set_SessionId_m1229908268,
-	Context_get_CompressionMethod_m1938328556,
-	Context_set_CompressionMethod_m2848483559,
-	Context_get_ServerSettings_m225713600,
-	Context_get_ClientSettings_m1185615112,
-	Context_get_LastHandshakeMsg_m873777031,
-	Context_set_LastHandshakeMsg_m3162558586,
-	Context_get_HandshakeState_m3443153737,
-	Context_set_HandshakeState_m1586089840,
-	Context_get_ReceivedConnectionEnd_m3369356276,
-	Context_set_ReceivedConnectionEnd_m213831275,
-	Context_get_SentConnectionEnd_m3114190867,
-	Context_set_SentConnectionEnd_m2641458842,
-	Context_get_SupportedCiphers_m2172827298,
-	Context_set_SupportedCiphers_m3994965527,
-	Context_get_HandshakeMessages_m2765912589,
-	Context_get_WriteSequenceNumber_m243492531,
-	Context_set_WriteSequenceNumber_m3356252710,
-	Context_get_ReadSequenceNumber_m2586681610,
-	Context_set_ReadSequenceNumber_m3303454459,
-	Context_get_ClientRandom_m697914474,
-	Context_set_ClientRandom_m631392719,
-	Context_get_ServerRandom_m3526559022,
-	Context_set_ServerRandom_m173601139,
-	Context_get_RandomCS_m3946020109,
-	Context_set_RandomCS_m2334825038,
-	Context_get_RandomSC_m1687420621,
-	Context_set_RandomSC_m2057392782,
-	Context_get_MasterSecret_m231851308,
-	Context_set_MasterSecret_m1422386411,
-	Context_get_ClientWriteKey_m2235605337,
-	Context_set_ClientWriteKey_m1137238126,
-	Context_get_ServerWriteKey_m1780148437,
-	Context_set_ServerWriteKey_m2317745418,
-	Context_get_ClientWriteIV_m2171757117,
-	Context_set_ClientWriteIV_m70615452,
-	Context_get_ServerWriteIV_m2960700649,
-	Context_set_ServerWriteIV_m3391477120,
-	Context_get_RecordProtocol_m1527823481,
-	Context_set_RecordProtocol_m1968834768,
-	Context_GetUnixTime_m3777795180,
-	Context_GetSecureRandomBytes_m1065353673,
-	Context_Clear_m4000337070,
-	Context_ClearKeyInfo_m205678623,
-	Context_DecodeProtocolCode_m4051353560,
-	Context_ChangeProtocol_m46663628,
-	Context_get_Current_m2717045324,
-	Context_get_Negotiating_m3946476110,
-	Context_get_Read_m171585211,
-	Context_get_Write_m2299361626,
-	Context_StartSwitchingSecurityParameters_m373522596,
-	Context_EndSwitchingSecurityParameters_m1613076777,
-	TlsClientCertificate__ctor_m987604448,
-	TlsClientCertificate_get_ClientCertificate_m3062440489,
-	TlsClientCertificate_Update_m3781462820,
-	TlsClientCertificate_GetClientCertificate_m2808467979,
-	TlsClientCertificate_SendCertificates_m1096074091,
-	TlsClientCertificate_ProcessAsSsl3_m3634449507,
-	TlsClientCertificate_ProcessAsTls1_m1772516248,
-	TlsClientCertificate_FindParentCertificate_m10738514,
-	TlsClientCertificateVerify__ctor_m110646389,
-	TlsClientCertificateVerify_Update_m1622071203,
-	TlsClientCertificateVerify_ProcessAsSsl3_m3377063356,
-	TlsClientCertificateVerify_ProcessAsTls1_m1960818833,
-	TlsClientCertificateVerify_getClientCertRSA_m3799135236,
-	TlsClientCertificateVerify_getUnsignedBigInteger_m3357519896,
-	TlsClientFinished__ctor_m3019203717,
-	TlsClientFinished__cctor_m2632026509,
-	TlsClientFinished_Update_m840013355,
-	TlsClientFinished_ProcessAsSsl3_m1576972610,
-	TlsClientFinished_ProcessAsTls1_m3490501889,
-	TlsClientHello__ctor_m1699671541,
-	TlsClientHello_Update_m1723542631,
-	TlsClientHello_ProcessAsSsl3_m3243018502,
-	TlsClientHello_ProcessAsTls1_m881347961,
-	TlsClientKeyExchange__ctor_m2741078239,
-	TlsClientKeyExchange_ProcessAsSsl3_m662933084,
-	TlsClientKeyExchange_ProcessAsTls1_m1707307575,
-	TlsClientKeyExchange_ProcessCommon_m1203833053,
-	TlsServerCertificate__ctor_m3697944709,
-	TlsServerCertificate_Update_m3673209976,
-	TlsServerCertificate_ProcessAsSsl3_m277089231,
-	TlsServerCertificate_ProcessAsTls1_m3083203628,
-	TlsServerCertificate_checkCertificateUsage_m2392234217,
-	TlsServerCertificate_validateCertificates_m1988583701,
-	TlsServerCertificate_checkServerIdentity_m3836435780,
-	TlsServerCertificate_checkDomainName_m547589480,
-	TlsServerCertificate_Match_m239075186,
-	TlsServerCertificateRequest__ctor_m1684270714,
-	TlsServerCertificateRequest_Update_m2674822753,
-	TlsServerCertificateRequest_ProcessAsSsl3_m3017921864,
-	TlsServerCertificateRequest_ProcessAsTls1_m3580757431,
-	TlsServerFinished__ctor_m3517940960,
-	TlsServerFinished__cctor_m3702151001,
-	TlsServerFinished_Update_m3332245911,
-	TlsServerFinished_ProcessAsSsl3_m2226689406,
-	TlsServerFinished_ProcessAsTls1_m734183757,
-	TlsServerHello__ctor_m3032108168,
-	TlsServerHello_Update_m1740270635,
-	TlsServerHello_ProcessAsSsl3_m3986132482,
-	TlsServerHello_ProcessAsTls1_m1997577085,
-	TlsServerHello_processProtocol_m1241336522,
-	TlsServerHelloDone__ctor_m2125611008,
-	TlsServerHelloDone_ProcessAsSsl3_m2352567662,
-	TlsServerHelloDone_ProcessAsTls1_m2785450409,
-	TlsServerKeyExchange__ctor_m247733406,
-	TlsServerKeyExchange_Update_m467765633,
-	TlsServerKeyExchange_ProcessAsSsl3_m462106368,
-	TlsServerKeyExchange_ProcessAsTls1_m1879578643,
-	TlsServerKeyExchange_verifySignature_m3641534563,
-	HandshakeMessage__ctor_m3783158590,
-	HandshakeMessage__ctor_m2727745933,
-	HandshakeMessage__ctor_m1431757899,
-	HandshakeMessage_get_Context_m3356295711,
-	HandshakeMessage_get_HandshakeType_m2104271474,
-	HandshakeMessage_get_ContentType_m760670911,
-	HandshakeMessage_Process_m2688076118,
-	HandshakeMessage_Update_m1733566706,
-	HandshakeMessage_EncodeMessage_m2725158930,
-	HandshakeMessage_Compare_m2025941142,
-	HttpsClientStream__ctor_m3407922777,
-	HttpsClientStream_get_TrustFailure_m1980919191,
-	HttpsClientStream_RaiseServerCertificateValidation_m3356770426,
-	HttpsClientStream_U3CHttpsClientStreamU3Em__0_m3176353714,
-	HttpsClientStream_U3CHttpsClientStreamU3Em__1_m4293802471,
-	PrivateKeySelectionCallback__ctor_m2259908823,
-	PrivateKeySelectionCallback_Invoke_m1058550892,
-	PrivateKeySelectionCallback_BeginInvoke_m1904952334,
-	PrivateKeySelectionCallback_EndInvoke_m1718473578,
-	RecordProtocol__ctor_m168945279,
-	RecordProtocol__cctor_m1255542758,
-	RecordProtocol_get_Context_m2688493529,
-	RecordProtocol_SendRecord_m2977889250,
-	RecordProtocol_ProcessChangeCipherSpec_m3233959862,
-	RecordProtocol_GetMessage_m594970728,
-	RecordProtocol_BeginReceiveRecord_m2023581433,
-	RecordProtocol_InternalReceiveRecordCallback_m2228921492,
-	RecordProtocol_EndReceiveRecord_m4045980155,
-	RecordProtocol_ReceiveRecord_m3672584816,
-	RecordProtocol_ReadRecordBuffer_m1307297230,
-	RecordProtocol_ReadClientHelloV2_m103475177,
-	RecordProtocol_ReadStandardRecordBuffer_m3546484478,
-	RecordProtocol_ProcessAlert_m2650247744,
-	RecordProtocol_SendAlert_m2622753765,
-	RecordProtocol_SendAlert_m2529562669,
-	RecordProtocol_SendAlert_m2816808523,
-	RecordProtocol_SendChangeCipherSpec_m3542001341,
-	RecordProtocol_BeginSendRecord_m3180957815,
-	RecordProtocol_InternalSendRecordCallback_m3984764857,
-	RecordProtocol_BeginSendRecord_m166940611,
-	RecordProtocol_EndSendRecord_m3304963666,
-	RecordProtocol_SendRecord_m132002114,
-	RecordProtocol_EncodeRecord_m1215442978,
-	RecordProtocol_EncodeRecord_m3884270352,
-	RecordProtocol_encryptRecordFragment_m1241873183,
-	RecordProtocol_decryptRecordFragment_m2510859489,
-	RecordProtocol_Compare_m216902730,
-	RecordProtocol_ProcessCipherSpecV2Buffer_m1895848015,
-	RecordProtocol_MapV2CipherCode_m4064211604,
-	ReceiveRecordAsyncResult__ctor_m109339899,
-	ReceiveRecordAsyncResult_get_Record_m1336421357,
-	ReceiveRecordAsyncResult_get_ResultingBuffer_m2153361373,
-	ReceiveRecordAsyncResult_get_InitialBuffer_m1245345098,
-	ReceiveRecordAsyncResult_get_AsyncState_m2086535212,
-	ReceiveRecordAsyncResult_get_AsyncException_m1835236292,
-	ReceiveRecordAsyncResult_get_CompletedWithError_m2670396551,
-	ReceiveRecordAsyncResult_get_AsyncWaitHandle_m1602093076,
-	ReceiveRecordAsyncResult_get_IsCompleted_m2327274447,
-	ReceiveRecordAsyncResult_SetComplete_m2441107665,
-	ReceiveRecordAsyncResult_SetComplete_m494147202,
-	ReceiveRecordAsyncResult_SetComplete_m4055415513,
-	SendRecordAsyncResult__ctor_m2999905045,
-	SendRecordAsyncResult_get_Message_m2340978616,
-	SendRecordAsyncResult_get_AsyncState_m2299453419,
-	SendRecordAsyncResult_get_AsyncException_m2088364821,
-	SendRecordAsyncResult_get_CompletedWithError_m349920476,
-	SendRecordAsyncResult_get_AsyncWaitHandle_m3532375825,
-	SendRecordAsyncResult_get_IsCompleted_m2666127692,
-	SendRecordAsyncResult_SetComplete_m425796521,
-	SendRecordAsyncResult_SetComplete_m3006273145,
-	RSASslSignatureDeformatter__ctor_m2325995515,
-	RSASslSignatureDeformatter_VerifySignature_m3138484348,
-	RSASslSignatureDeformatter_SetHashAlgorithm_m4048969080,
-	RSASslSignatureDeformatter_SetKey_m1150106904,
-	RSASslSignatureFormatter__ctor_m2530528184,
-	RSASslSignatureFormatter_CreateSignature_m4186395359,
-	RSASslSignatureFormatter_SetHashAlgorithm_m1976793413,
-	RSASslSignatureFormatter_SetKey_m53887771,
-	SecurityParameters__ctor_m3136793890,
-	SecurityParameters_get_Cipher_m2392911632,
-	SecurityParameters_set_Cipher_m3888132335,
-	SecurityParameters_get_ClientWriteMAC_m2756307972,
-	SecurityParameters_set_ClientWriteMAC_m1970377285,
-	SecurityParameters_get_ServerWriteMAC_m244028400,
-	SecurityParameters_set_ServerWriteMAC_m3769080193,
-	SecurityParameters_Clear_m3409219757,
-	SslCipherSuite__ctor_m1382988490,
-	SslCipherSuite_ComputeServerRecordMAC_m1876572367,
-	SslCipherSuite_ComputeClientRecordMAC_m232780723,
-	SslCipherSuite_ComputeMasterSecret_m491038647,
-	SslCipherSuite_ComputeKeys_m574473636,
-	SslCipherSuite_prf_m2084589217,
-	SslClientStream__ctor_m3295335959,
-	SslClientStream__ctor_m1193810714,
-	SslClientStream__ctor_m3350475994,
-	SslClientStream__ctor_m1435497855,
-	SslClientStream__ctor_m2178305131,
-	SslClientStream_add_ServerCertValidation_m684653638,
-	SslClientStream_remove_ServerCertValidation_m2446179261,
-	SslClientStream_add_ClientCertSelection_m2644836210,
-	SslClientStream_remove_ClientCertSelection_m2497978917,
-	SslClientStream_add_PrivateKeySelection_m481383932,
-	SslClientStream_remove_PrivateKeySelection_m427666577,
-	SslClientStream_add_ServerCertValidation2_m2603998068,
-	SslClientStream_remove_ServerCertValidation2_m3857463517,
-	SslClientStream_get_InputBuffer_m295521966,
-	SslClientStream_get_ClientCertificates_m444639806,
-	SslClientStream_get_SelectedClientCertificate_m1580018944,
-	SslClientStream_get_ServerCertValidationDelegate_m3909657681,
-	SslClientStream_set_ServerCertValidationDelegate_m3125858424,
-	SslClientStream_get_ClientCertSelectionDelegate_m2316959461,
-	SslClientStream_set_ClientCertSelectionDelegate_m3476473798,
-	SslClientStream_get_PrivateKeyCertSelectionDelegate_m3715949545,
-	SslClientStream_set_PrivateKeyCertSelectionDelegate_m159581650,
-	SslClientStream_Finalize_m3464869995,
-	SslClientStream_Dispose_m3148875377,
-	SslClientStream_OnBeginNegotiateHandshake_m4281860610,
-	SslClientStream_SafeReceiveRecord_m210668541,
-	SslClientStream_OnNegotiateHandshakeCallback_m1332934317,
-	SslClientStream_OnLocalCertificateSelection_m3628249765,
-	SslClientStream_get_HaveRemoteValidation2Callback_m3555576758,
-	SslClientStream_OnRemoteCertificateValidation2_m3416857045,
-	SslClientStream_OnRemoteCertificateValidation_m3974135419,
-	SslClientStream_RaiseServerCertificateValidation_m1782631027,
-	SslClientStream_RaiseServerCertificateValidation2_m3736176381,
-	SslClientStream_RaiseClientCertificateSelection_m3933788312,
-	SslClientStream_OnLocalPrivateKeySelection_m3649986106,
-	SslClientStream_RaisePrivateKeySelection_m2326189090,
-	SslHandshakeHash__ctor_m1269339424,
-	SslHandshakeHash_Initialize_m2786849785,
-	SslHandshakeHash_HashFinal_m1925138451,
-	SslHandshakeHash_HashCore_m3914471343,
-	SslHandshakeHash_CreateSignature_m3001618400,
-	SslHandshakeHash_initializePad_m4132246594,
-	SslStreamBase__ctor_m543947417,
-	SslStreamBase__cctor_m4047446554,
-	SslStreamBase_AsyncHandshakeCallback_m1101580486,
-	SslStreamBase_get_MightNeedHandshake_m3432170694,
-	SslStreamBase_NegotiateHandshake_m1758369850,
-	SslStreamBase_RaiseLocalCertificateSelection_m3422705716,
-	SslStreamBase_RaiseRemoteCertificateValidation_m902031508,
-	SslStreamBase_RaiseRemoteCertificateValidation2_m1013444422,
-	SslStreamBase_RaiseLocalPrivateKeySelection_m1885975771,
-	SslStreamBase_get_CheckCertRevocationStatus_m2467957380,
-	SslStreamBase_set_CheckCertRevocationStatus_m703827149,
-	SslStreamBase_get_CipherAlgorithm_m692718075,
-	SslStreamBase_get_CipherStrength_m3744053336,
-	SslStreamBase_get_HashAlgorithm_m2591448891,
-	SslStreamBase_get_HashStrength_m480059173,
-	SslStreamBase_get_KeyExchangeStrength_m1717128931,
-	SslStreamBase_get_KeyExchangeAlgorithm_m3712013038,
-	SslStreamBase_get_SecurityProtocol_m2458441395,
-	SslStreamBase_get_ServerCertificate_m702547597,
-	SslStreamBase_get_ServerCertificates_m1401009752,
-	SslStreamBase_BeginNegotiateHandshake_m2029257721,
-	SslStreamBase_EndNegotiateHandshake_m1732321201,
-	SslStreamBase_BeginRead_m869235395,
-	SslStreamBase_InternalBeginRead_m707911413,
-	SslStreamBase_InternalReadCallback_m2524917586,
-	SslStreamBase_InternalBeginWrite_m3760772368,
-	SslStreamBase_InternalWriteCallback_m2552665647,
-	SslStreamBase_BeginWrite_m270524114,
-	SslStreamBase_EndRead_m1072850679,
-	SslStreamBase_EndWrite_m1091701856,
-	SslStreamBase_Close_m2762736871,
-	SslStreamBase_Flush_m2762644405,
-	SslStreamBase_Read_m1663229390,
-	SslStreamBase_Read_m1036897444,
-	SslStreamBase_Seek_m3605313093,
-	SslStreamBase_SetLength_m3282486041,
-	SslStreamBase_Write_m3392707719,
-	SslStreamBase_Write_m1135856379,
-	SslStreamBase_get_CanRead_m3061866682,
-	SslStreamBase_get_CanSeek_m1596790394,
-	SslStreamBase_get_CanWrite_m2069502593,
-	SslStreamBase_get_Length_m763159069,
-	SslStreamBase_get_Position_m2525437172,
-	SslStreamBase_set_Position_m598220223,
-	SslStreamBase_Finalize_m2530628835,
-	SslStreamBase_Dispose_m747909841,
-	SslStreamBase_resetBuffer_m3028042362,
-	SslStreamBase_checkDisposed_m2550190176,
-	InternalAsyncResult__ctor_m2764854695,
-	InternalAsyncResult_get_ProceedAfterHandshake_m552962842,
-	InternalAsyncResult_get_FromWrite_m2893408424,
-	InternalAsyncResult_get_Buffer_m163794679,
-	InternalAsyncResult_get_Offset_m3458447452,
-	InternalAsyncResult_get_Count_m1291942796,
-	InternalAsyncResult_get_BytesRead_m4243892348,
-	InternalAsyncResult_get_AsyncState_m42006015,
-	InternalAsyncResult_get_AsyncException_m3936660437,
-	InternalAsyncResult_get_CompletedWithError_m3993955322,
-	InternalAsyncResult_get_AsyncWaitHandle_m2297269869,
-	InternalAsyncResult_get_IsCompleted_m1463732458,
-	InternalAsyncResult_SetComplete_m4011593916,
-	InternalAsyncResult_SetComplete_m2187159697,
-	InternalAsyncResult_SetComplete_m200761170,
-	InternalAsyncResult_SetComplete_m35987153,
-	TlsCipherSuite__ctor_m2983563913,
-	TlsCipherSuite_ComputeServerRecordMAC_m661450756,
-	TlsCipherSuite_ComputeClientRecordMAC_m3290639544,
-	TlsCipherSuite_ComputeMasterSecret_m3863800064,
-	TlsCipherSuite_ComputeKeys_m1444202749,
-	TlsClientSettings__ctor_m3065987087,
-	TlsClientSettings_get_TargetHost_m2817634620,
-	TlsClientSettings_set_TargetHost_m3421266913,
-	TlsClientSettings_get_Certificates_m2509165647,
-	TlsClientSettings_set_Certificates_m1110280480,
-	TlsClientSettings_get_ClientCertificate_m89435195,
-	TlsClientSettings_set_ClientCertificate_m442292512,
-	TlsClientSettings_UpdateCertificateRSA_m1828531911,
-	TlsException__ctor_m3885720020,
-	TlsException__ctor_m1249020603,
-	TlsException__ctor_m2205512412,
-	TlsException__ctor_m3747188020,
-	TlsException__ctor_m2436420036,
-	TlsException__ctor_m1988757560,
-	TlsException_get_Alert_m4022765752,
-	TlsServerSettings__ctor_m1125867683,
-	TlsServerSettings_get_ServerKeyExchange_m1147981947,
-	TlsServerSettings_set_ServerKeyExchange_m4199779410,
-	TlsServerSettings_get_Certificates_m3301336199,
-	TlsServerSettings_set_Certificates_m67827830,
-	TlsServerSettings_get_CertificateRSA_m1899388839,
-	TlsServerSettings_get_RsaParameters_m1327440044,
-	TlsServerSettings_set_RsaParameters_m3165273449,
-	TlsServerSettings_set_SignedParams_m1826385315,
-	TlsServerSettings_get_CertificateRequest_m1204669838,
-	TlsServerSettings_set_CertificateRequest_m3419519893,
-	TlsServerSettings_set_CertificateTypes_m264196087,
-	TlsServerSettings_set_DistinguisedNames_m2290049644,
-	TlsServerSettings_UpdateCertificateRSA_m2025051563,
-	TlsStream__ctor_m4117943603,
-	TlsStream__ctor_m2982031560,
-	TlsStream_get_EOF_m1728604576,
-	TlsStream_get_CanWrite_m79048455,
-	TlsStream_get_CanRead_m1860811404,
-	TlsStream_get_CanSeek_m3608197976,
-	TlsStream_get_Position_m3551173234,
-	TlsStream_set_Position_m378064217,
-	TlsStream_get_Length_m1562309511,
-	TlsStream_ReadSmallValue_m1760325248,
-	TlsStream_ReadByte_m1935235961,
-	TlsStream_ReadInt16_m1855118433,
-	TlsStream_ReadInt24_m1268450166,
-	TlsStream_ReadBytes_m3301522097,
-	TlsStream_Write_m2271546135,
-	TlsStream_Write_m2055734301,
-	TlsStream_WriteInt24_m1660453494,
-	TlsStream_Write_m4025102703,
-	TlsStream_Write_m3425460533,
-	TlsStream_Reset_m1504601050,
-	TlsStream_ToArray_m3731779317,
-	TlsStream_Flush_m2603881359,
-	TlsStream_SetLength_m1460039587,
-	TlsStream_Seek_m3898619363,
-	TlsStream_Read_m2550027598,
-	TlsStream_Write_m418642281,
-	ValidationResult__ctor_m2761103915,
-	ValidationResult_get_Trusted_m1316755606,
-	ValidationResult_get_ErrorCode_m599531882,
-	AuthorityKeyIdentifierExtension__ctor_m3445584677,
-	AuthorityKeyIdentifierExtension_Decode_m1941074339,
-	AuthorityKeyIdentifierExtension_get_Identifier_m3123570309,
-	AuthorityKeyIdentifierExtension_ToString_m1294877924,
-	BasicConstraintsExtension__ctor_m3832084132,
-	BasicConstraintsExtension_Decode_m893312834,
-	BasicConstraintsExtension_Encode_m3738782306,
-	BasicConstraintsExtension_get_CertificateAuthority_m2523289727,
-	BasicConstraintsExtension_ToString_m1598306805,
-	ExtendedKeyUsageExtension__ctor_m3310261285,
-	ExtendedKeyUsageExtension_Decode_m901297139,
-	ExtendedKeyUsageExtension_Encode_m3429751649,
-	ExtendedKeyUsageExtension_get_KeyPurpose_m1625001387,
-	ExtendedKeyUsageExtension_ToString_m1081992020,
-	GeneralNames__ctor_m3021378417,
-	GeneralNames_get_DNSNames_m2721668874,
-	GeneralNames_get_IPAddresses_m1712556836,
-	GeneralNames_ToString_m800435094,
-	KeyUsageExtension__ctor_m2471620836,
-	KeyUsageExtension_Decode_m4115739726,
-	KeyUsageExtension_Encode_m1269721630,
-	KeyUsageExtension_Support_m2720178361,
-	KeyUsageExtension_ToString_m1213032139,
-	NetscapeCertTypeExtension__ctor_m3885754615,
-	NetscapeCertTypeExtension_Decode_m2210025005,
-	NetscapeCertTypeExtension_Support_m3954199663,
-	NetscapeCertTypeExtension_ToString_m834335182,
-	SubjectAltNameExtension__ctor_m2621620126,
-	SubjectAltNameExtension_Decode_m3676245240,
-	SubjectAltNameExtension_get_DNSNames_m1798931443,
-	SubjectAltNameExtension_get_IPAddresses_m3207151211,
-	SubjectAltNameExtension_ToString_m1300810903,
-	PKCS12__ctor_m766227211,
-	PKCS12__ctor_m1564527510,
-	PKCS12__ctor_m997996062,
-	PKCS12__cctor_m3312759338,
-	PKCS12_Decode_m2543116952,
-	PKCS12_Finalize_m3579787021,
-	PKCS12_set_Password_m64359107,
-	PKCS12_get_IterationCount_m3648861112,
-	PKCS12_set_IterationCount_m2468663791,
-	PKCS12_get_Keys_m1312614820,
-	PKCS12_get_Certificates_m1274732891,
-	PKCS12_get_RNG_m3963529040,
-	PKCS12_Compare_m2529107822,
-	PKCS12_GetSymmetricAlgorithm_m3196291685,
-	PKCS12_Decrypt_m2707332345,
-	PKCS12_Decrypt_m1557069392,
-	PKCS12_Encrypt_m2154408631,
-	PKCS12_GetExistingParameters_m3532830249,
-	PKCS12_AddPrivateKey_m4216166133,
-	PKCS12_ReadSafeBag_m1100201494,
-	PKCS12_CertificateSafeBag_m3272197807,
-	PKCS12_MAC_m3228833816,
-	PKCS12_GetBytes_m2884672032,
-	PKCS12_EncryptedContentInfo_m938119256,
-	PKCS12_AddCertificate_m3637520737,
-	PKCS12_AddCertificate_m2800455360,
-	PKCS12_RemoveCertificate_m228884064,
-	PKCS12_RemoveCertificate_m1352841763,
-	PKCS12_Clone_m1135152221,
-	PKCS12_get_MaximumPasswordLength_m1673883007,
-	DeriveBytes__ctor_m649232120,
-	DeriveBytes__cctor_m3390880627,
-	DeriveBytes_set_HashName_m2530261318,
-	DeriveBytes_set_IterationCount_m1653995136,
-	DeriveBytes_set_Password_m1444282377,
-	DeriveBytes_set_Salt_m973628730,
-	DeriveBytes_Adjust_m3395788526,
-	DeriveBytes_Derive_m1435464935,
-	DeriveBytes_DeriveKey_m3654953847,
-	DeriveBytes_DeriveIV_m3343375195,
-	DeriveBytes_DeriveMAC_m436209295,
-	SafeBag__ctor_m2828572544,
-	SafeBag_get_BagOID_m2574947216,
-	SafeBag_get_ASN1_m1646183377,
-	X501__cctor_m2610532554,
-	X501_ToString_m4145210560,
-	X501_ToString_m3328169518,
-	X501_AppendEntry_m768611426,
-	X509Certificate__ctor_m2941481449,
-	X509Certificate__cctor_m2984068893,
-	X509Certificate_Parse_m1764345628,
-	X509Certificate_GetUnsignedBigInteger_m2102946512,
-	X509Certificate_get_DSA_m3972464423,
-	X509Certificate_set_DSA_m1325917832,
-	X509Certificate_get_Extensions_m222060964,
-	X509Certificate_get_Hash_m2470366345,
-	X509Certificate_get_IssuerName_m3907994144,
-	X509Certificate_get_KeyAlgorithm_m454927092,
-	X509Certificate_get_KeyAlgorithmParameters_m1701675565,
-	X509Certificate_set_KeyAlgorithmParameters_m17826364,
-	X509Certificate_get_PublicKey_m933487733,
-	X509Certificate_get_RSA_m1167362983,
-	X509Certificate_set_RSA_m1038416652,
-	X509Certificate_get_RawData_m1262574599,
-	X509Certificate_get_SerialNumber_m2509150920,
-	X509Certificate_get_Signature_m3664033367,
-	X509Certificate_get_SignatureAlgorithm_m2111916881,
-	X509Certificate_get_SubjectName_m3533705485,
-	X509Certificate_get_ValidFrom_m1740754472,
-	X509Certificate_get_ValidUntil_m4037777446,
-	X509Certificate_get_Version_m1704730343,
-	X509Certificate_get_IsCurrent_m424898544,
-	X509Certificate_WasCurrent_m3632049416,
-	X509Certificate_VerifySignature_m4020723406,
-	X509Certificate_VerifySignature_m4020723740,
-	X509Certificate_VerifySignature_m3536156059,
-	X509Certificate_get_IsSelfSigned_m3860357831,
-	X509Certificate_GetIssuerName_m2776799695,
-	X509Certificate_GetSubjectName_m3163312410,
-	X509Certificate_GetObjectData_m2064274370,
-	X509Certificate_PEM_m49854707,
-	X509CertificateCollection__ctor_m858704242,
-	X509CertificateCollection__ctor_m583031014,
-	X509CertificateCollection_System_Collections_IEnumerable_GetEnumerator_m977294505,
-	X509CertificateCollection_get_Item_m2115598414,
-	X509CertificateCollection_Add_m4008705157,
-	X509CertificateCollection_AddRange_m3644738604,
-	X509CertificateCollection_Contains_m2373814229,
-	X509CertificateCollection_GetEnumerator_m3994741635,
-	X509CertificateCollection_GetHashCode_m1043795447,
-	X509CertificateCollection_IndexOf_m2175658423,
-	X509CertificateCollection_Remove_m2722259192,
-	X509CertificateCollection_Compare_m1014334435,
-	X509CertificateEnumerator__ctor_m82280444,
-	X509CertificateEnumerator_System_Collections_IEnumerator_get_Current_m3386014480,
-	X509CertificateEnumerator_System_Collections_IEnumerator_MoveNext_m1448966539,
-	X509CertificateEnumerator_System_Collections_IEnumerator_Reset_m3929249334,
-	X509CertificateEnumerator_get_Current_m3129374511,
-	X509CertificateEnumerator_MoveNext_m4060814498,
-	X509CertificateEnumerator_Reset_m4167796875,
-	X509Chain__ctor_m3522797144,
-	X509Chain__ctor_m1113875360,
-	X509Chain_get_Status_m2726750609,
-	X509Chain_get_TrustAnchors_m930867182,
-	X509Chain_Build_m175470596,
-	X509Chain_IsValid_m4184995162,
-	X509Chain_FindCertificateParent_m3122224229,
-	X509Chain_FindCertificateRoot_m589250107,
-	X509Chain_IsTrusted_m2834338719,
-	X509Chain_IsParent_m2578316632,
-	X509Crl__ctor_m2469408229,
-	X509Crl_Parse_m3287862528,
-	X509Crl_get_Extensions_m1795830276,
-	X509Crl_get_Hash_m3617397429,
-	X509Crl_get_IssuerName_m756409840,
-	X509Crl_get_NextUpdate_m45665244,
-	X509Crl_Compare_m2229641633,
-	X509Crl_GetCrlEntry_m630720316,
-	X509Crl_GetCrlEntry_m550904265,
-	X509Crl_GetHashName_m183504634,
-	X509Crl_VerifySignature_m25190802,
-	X509Crl_VerifySignature_m25189948,
-	X509Crl_VerifySignature_m1390212587,
-	X509CrlEntry__ctor_m3156488776,
-	X509CrlEntry_get_SerialNumber_m3603416806,
-	X509CrlEntry_get_RevocationDate_m1257876856,
-	X509CrlEntry_get_Extensions_m79989256,
-	X509Extension__ctor_m2083345012,
-	X509Extension__ctor_m2273534630,
-	X509Extension_Decode_m972859652,
-	X509Extension_Encode_m1753933824,
-	X509Extension_get_Oid_m2301335920,
-	X509Extension_get_Critical_m1103269870,
-	X509Extension_get_Value_m3409801211,
-	X509Extension_Equals_m1304125015,
-	X509Extension_GetHashCode_m3265407565,
-	X509Extension_WriteLine_m364247613,
-	X509Extension_ToString_m408479757,
-	X509ExtensionCollection__ctor_m1119345384,
-	X509ExtensionCollection__ctor_m2672322588,
-	X509ExtensionCollection_System_Collections_IEnumerable_GetEnumerator_m2600902401,
-	X509ExtensionCollection_IndexOf_m3972100651,
-	X509ExtensionCollection_get_Item_m4212651995,
-	X509Store__ctor_m914086381,
-	X509Store_get_Certificates_m683383922,
-	X509Store_get_Crls_m1365300487,
-	X509Store_Load_m3792048208,
-	X509Store_LoadCertificate_m1082475046,
-	X509Store_LoadCrl_m1146720614,
-	X509Store_CheckStore_m1027496478,
-	X509Store_BuildCertificatesCollection_m4224672591,
-	X509Store_BuildCrlsCollection_m52567568,
-	X509StoreManager_get_CurrentUser_m569194374,
-	X509StoreManager_get_LocalMachine_m2451390246,
-	X509StoreManager_get_TrustedRootCertificates_m122138510,
-	X509Stores__ctor_m2453291421,
-	X509Stores_get_TrustedRoot_m3412716694,
-	X509Stores_Open_m3570436469,
 	DictionaryBase__ctor_m2253926576,
 	DictionaryBase_get_Values_m137197045,
 	U3CU3Ec__Iterator3__ctor_m1703452705,
@@ -31628,6 +34038,1320 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	XmlWriter_WriteElementString_m1467633369,
 	XmlWriter_WriteNode_m1949395905,
 	XmlWriter_WriteStartElement_m2103041358,
+	Locale_GetText_m1644072174,
+	BigInteger__ctor_m4013661868,
+	BigInteger__ctor_m2991182310,
+	BigInteger__ctor_m3239748086,
+	BigInteger__ctor_m2998639688,
+	BigInteger__ctor_m3787562545,
+	BigInteger__cctor_m3631692756,
+	BigInteger_get_Rng_m2525288368,
+	BigInteger_GenerateRandom_m714043984,
+	BigInteger_GenerateRandom_m1878468830,
+	BigInteger_BitCount_m1334731567,
+	BigInteger_TestBit_m2460344121,
+	BigInteger_SetBit_m426619300,
+	BigInteger_SetBit_m576108355,
+	BigInteger_LowestSetBit_m1146240832,
+	BigInteger_GetBytes_m767422614,
+	BigInteger_ToString_m1842353154,
+	BigInteger_ToString_m2878297110,
+	BigInteger_Normalize_m1262742386,
+	BigInteger_Clear_m2734785184,
+	BigInteger_GetHashCode_m1450276268,
+	BigInteger_ToString_m2806881644,
+	BigInteger_Equals_m1886728252,
+	BigInteger_ModInverse_m1881894572,
+	BigInteger_ModPow_m1418407677,
+	BigInteger_GeneratePseudoPrime_m2186059270,
+	BigInteger_Incr2_m505983313,
+	BigInteger_op_Implicit_m622924526,
+	BigInteger_op_Implicit_m3634001681,
+	BigInteger_op_Addition_m1734797151,
+	BigInteger_op_Subtraction_m972393015,
+	BigInteger_op_Modulus_m2895726170,
+	BigInteger_op_Modulus_m13450242,
+	BigInteger_op_Division_m4076990896,
+	BigInteger_op_Multiply_m1833761647,
+	BigInteger_op_LeftShift_m3361632170,
+	BigInteger_op_RightShift_m852685747,
+	BigInteger_op_Equality_m2683055762,
+	BigInteger_op_Inequality_m744282323,
+	BigInteger_op_Equality_m3089846781,
+	BigInteger_op_Inequality_m4286929594,
+	BigInteger_op_GreaterThan_m2492620848,
+	BigInteger_op_LessThan_m3825358479,
+	BigInteger_op_GreaterThanOrEqual_m2643115413,
+	BigInteger_op_LessThanOrEqual_m3528380540,
+	Kernel_AddSameSign_m4087322475,
+	Kernel_Subtract_m2224959291,
+	Kernel_MinusEq_m1637138341,
+	Kernel_PlusEq_m2259390883,
+	Kernel_Compare_m722412638,
+	Kernel_SingleByteDivideInPlace_m3631295848,
+	Kernel_DwordMod_m978954867,
+	Kernel_DwordDivMod_m3728402123,
+	Kernel_multiByteDivide_m3157480645,
+	Kernel_LeftShift_m3814364702,
+	Kernel_RightShift_m2983108719,
+	Kernel_Multiply_m1938858919,
+	Kernel_MultiplyMod2p32pmod_m874406394,
+	Kernel_modInverse_m1848537133,
+	Kernel_modInverse_m3230829577,
+	ModulusRing__ctor_m630117946,
+	ModulusRing_BarrettReduction_m2802101099,
+	ModulusRing_Multiply_m3113924743,
+	ModulusRing_Difference_m662924064,
+	ModulusRing_Pow_m2489265435,
+	ModulusRing_Pow_m661630322,
+	PrimeGeneratorBase__ctor_m4281387560,
+	PrimeGeneratorBase_get_Confidence_m3927471963,
+	PrimeGeneratorBase_get_PrimalityTest_m308005118,
+	PrimeGeneratorBase_get_TrialDivisionBounds_m4192107199,
+	SequentialSearchPrimeGeneratorBase__ctor_m3982028469,
+	SequentialSearchPrimeGeneratorBase_GenerateSearchBase_m2930465198,
+	SequentialSearchPrimeGeneratorBase_GenerateNewPrime_m2255936480,
+	SequentialSearchPrimeGeneratorBase_GenerateNewPrime_m296245934,
+	SequentialSearchPrimeGeneratorBase_IsPrimeAcceptable_m3678219529,
+	PrimalityTest__ctor_m1351629431,
+	PrimalityTest_Invoke_m4058801829,
+	PrimalityTest_BeginInvoke_m1691702520,
+	PrimalityTest_EndInvoke_m380367609,
+	PrimalityTests_GetSPPRounds_m873706010,
+	PrimalityTests_RabinMillerTest_m2029846965,
+	ASN1__ctor_m646105945,
+	ASN1__ctor_m1045937444,
+	ASN1__ctor_m1653629327,
+	ASN1_get_Count_m3992276234,
+	ASN1_get_Tag_m3531603485,
+	ASN1_get_Length_m2568143283,
+	ASN1_get_Value_m3116965808,
+	ASN1_set_Value_m1063274345,
+	ASN1_CompareArray_m2071014626,
+	ASN1_CompareValue_m2994814651,
+	ASN1_Add_m1595622622,
+	ASN1_GetBytes_m3982410951,
+	ASN1_Decode_m947929221,
+	ASN1_DecodeTLV_m2898581687,
+	ASN1_get_Item_m1067746146,
+	ASN1_Element_m1568353429,
+	ASN1_ToString_m2669105451,
+	ASN1Convert_FromInt32_m4211017145,
+	ASN1Convert_FromOid_m3277257826,
+	ASN1Convert_ToInt32_m2482104422,
+	ASN1Convert_ToOid_m1035860535,
+	ASN1Convert_ToDateTime_m2305963290,
+	BitConverterLE_GetUIntBytes_m2975603021,
+	BitConverterLE_GetBytes_m1242468557,
+	ARC4Managed__ctor_m2922048522,
+	ARC4Managed_Finalize_m4206406046,
+	ARC4Managed_Dispose_m4102232694,
+	ARC4Managed_get_Key_m3234603170,
+	ARC4Managed_set_Key_m663161993,
+	ARC4Managed_get_CanReuseTransform_m3235470105,
+	ARC4Managed_CreateEncryptor_m800891464,
+	ARC4Managed_CreateDecryptor_m2848783948,
+	ARC4Managed_GenerateIV_m2815460576,
+	ARC4Managed_GenerateKey_m716135508,
+	ARC4Managed_get_CanTransformMultipleBlocks_m2283663207,
+	ARC4Managed_get_InputBlockSize_m2472484505,
+	ARC4Managed_get_OutputBlockSize_m1486579102,
+	ARC4Managed_KeySetup_m73384687,
+	ARC4Managed_CheckInput_m3033530539,
+	ARC4Managed_TransformBlock_m1197694862,
+	ARC4Managed_InternalTransformBlock_m1999805545,
+	ARC4Managed_TransformFinalBlock_m2162658128,
+	CryptoConvert_ToHex_m2874017189,
+	HMAC__ctor_m2605930831,
+	HMAC_get_Key_m2528863640,
+	HMAC_set_Key_m3745565827,
+	HMAC_Initialize_m3052649104,
+	HMAC_HashFinal_m1045191164,
+	HMAC_HashCore_m3394319142,
+	HMAC_initializePad_m3828610671,
+	KeyBuilder_get_Rng_m2539978716,
+	KeyBuilder_Key_m3814433741,
+	MD2__ctor_m3133818738,
+	MD2_Create_m3241404171,
+	MD2_Create_m539024737,
+	MD2Managed__ctor_m1696123663,
+	MD2Managed__cctor_m3575944986,
+	MD2Managed_Padding_m410163267,
+	MD2Managed_Initialize_m1330748427,
+	MD2Managed_HashCore_m248147901,
+	MD2Managed_HashFinal_m4151214661,
+	MD2Managed_MD2Transform_m3825201358,
+	MD4__ctor_m2366413460,
+	MD4_Create_m3565183915,
+	MD4_Create_m2582504069,
+	MD4Managed__ctor_m796835377,
+	MD4Managed_Initialize_m2316730601,
+	MD4Managed_HashCore_m3133543859,
+	MD4Managed_HashFinal_m1777895823,
+	MD4Managed_Padding_m2920052321,
+	MD4Managed_F_m2501978380,
+	MD4Managed_G_m1121848465,
+	MD4Managed_H_m4236752602,
+	MD4Managed_ROL_m2970841588,
+	MD4Managed_FF_m784377458,
+	MD4Managed_GG_m1462438360,
+	MD4Managed_HH_m2172169314,
+	MD4Managed_Encode_m2097839378,
+	MD4Managed_Decode_m1036272973,
+	MD4Managed_MD4Transform_m2648331494,
+	MD5SHA1__ctor_m371038734,
+	MD5SHA1_Initialize_m3440022970,
+	MD5SHA1_HashFinal_m4051142254,
+	MD5SHA1_HashCore_m2043482644,
+	MD5SHA1_CreateSignature_m4274114929,
+	MD5SHA1_VerifySignature_m507888141,
+	PKCS1__cctor_m1002943778,
+	PKCS1_Compare_m552424558,
+	PKCS1_I2OSP_m647014786,
+	PKCS1_OS2IP_m2226560443,
+	PKCS1_RSASP1_m1748738009,
+	PKCS1_RSAVP1_m1644175986,
+	PKCS1_Sign_v15_m554806303,
+	PKCS1_Verify_v15_m3855588030,
+	PKCS1_Verify_v15_m478274703,
+	PKCS1_Encode_v15_m1038051160,
+	EncryptedPrivateKeyInfo__ctor_m569026543,
+	EncryptedPrivateKeyInfo__ctor_m3398795484,
+	EncryptedPrivateKeyInfo_get_Algorithm_m3024753760,
+	EncryptedPrivateKeyInfo_get_EncryptedData_m598672214,
+	EncryptedPrivateKeyInfo_get_Salt_m590211404,
+	EncryptedPrivateKeyInfo_get_IterationCount_m2407997966,
+	EncryptedPrivateKeyInfo_Decode_m1706190306,
+	PrivateKeyInfo__ctor_m2683279425,
+	PrivateKeyInfo__ctor_m3851924948,
+	PrivateKeyInfo_get_PrivateKey_m2127503870,
+	PrivateKeyInfo_Decode_m1053025782,
+	PrivateKeyInfo_RemoveLeadingZero_m3396807048,
+	PrivateKeyInfo_Normalize_m1192796352,
+	PrivateKeyInfo_DecodeRSA_m919734506,
+	PrivateKeyInfo_DecodeDSA_m2497561917,
+	RC4__ctor_m1585026462,
+	RC4__cctor_m523650203,
+	RC4_get_IV_m506011366,
+	RC4_set_IV_m4096786929,
+	RSAManaged__ctor_m1370411656,
+	RSAManaged__ctor_m1680944437,
+	RSAManaged_Finalize_m3491799840,
+	RSAManaged_GenerateKeyPair_m1213111262,
+	RSAManaged_get_KeySize_m3478823737,
+	RSAManaged_get_KeyExchangeAlgorithm_m123531007,
+	RSAManaged_get_PublicOnly_m2581981140,
+	RSAManaged_get_SignatureAlgorithm_m4261969919,
+	RSAManaged_DecryptValue_m1225349489,
+	RSAManaged_EncryptValue_m1847230963,
+	RSAManaged_ExportParameters_m2871338879,
+	RSAManaged_ImportParameters_m3060955884,
+	RSAManaged_Dispose_m160261748,
+	RSAManaged_ToXmlString_m2606223477,
+	RSAManaged_GetPaddedValue_m2972141669,
+	KeyGeneratedEventHandler__ctor_m639133899,
+	KeyGeneratedEventHandler_Invoke_m1298576133,
+	KeyGeneratedEventHandler_BeginInvoke_m2404438262,
+	KeyGeneratedEventHandler_EndInvoke_m80374889,
+	ContentInfo__ctor_m3727742917,
+	ContentInfo__ctor_m3579805263,
+	ContentInfo__ctor_m2845339866,
+	ContentInfo__ctor_m3871771681,
+	ContentInfo_get_ASN1_m1697727120,
+	ContentInfo_get_Content_m1802070908,
+	ContentInfo_set_Content_m3643334361,
+	ContentInfo_get_ContentType_m2984320800,
+	ContentInfo_set_ContentType_m1242338355,
+	ContentInfo_GetASN1_m1560623629,
+	EncryptedData__ctor_m3834592644,
+	EncryptedData__ctor_m3866918584,
+	EncryptedData_get_EncryptionAlgorithm_m3585820551,
+	EncryptedData_get_EncryptedContent_m3832882582,
+	Alert__ctor_m264447866,
+	Alert__ctor_m287829582,
+	Alert_get_Level_m2913362942,
+	Alert_get_Description_m3856702046,
+	Alert_get_IsWarning_m427004807,
+	Alert_get_IsCloseNotify_m577852330,
+	Alert_inferAlertLevel_m1194123772,
+	Alert_GetAlertMessage_m325996256,
+	CertificateSelectionCallback__ctor_m2302751912,
+	CertificateSelectionCallback_Invoke_m2902629105,
+	CertificateSelectionCallback_BeginInvoke_m990408067,
+	CertificateSelectionCallback_EndInvoke_m3525317639,
+	CertificateValidationCallback__ctor_m1298586051,
+	CertificateValidationCallback_Invoke_m2500463874,
+	CertificateValidationCallback_BeginInvoke_m3625803269,
+	CertificateValidationCallback_EndInvoke_m2418808873,
+	CertificateValidationCallback2__ctor_m1915259009,
+	CertificateValidationCallback2_Invoke_m436894540,
+	CertificateValidationCallback2_BeginInvoke_m3996282202,
+	CertificateValidationCallback2_EndInvoke_m1734587200,
+	CipherSuite__ctor_m440966622,
+	CipherSuite__cctor_m2232817620,
+	CipherSuite_get_EncryptionCipher_m1019312730,
+	CipherSuite_get_DecryptionCipher_m3464788382,
+	CipherSuite_get_ClientHMAC_m2261562571,
+	CipherSuite_get_ServerHMAC_m3566778727,
+	CipherSuite_get_CipherAlgorithmType_m750379757,
+	CipherSuite_get_HashAlgorithmName_m3238654725,
+	CipherSuite_get_HashAlgorithmType_m3902365773,
+	CipherSuite_get_HashSize_m3748598203,
+	CipherSuite_get_ExchangeAlgorithmType_m3219223789,
+	CipherSuite_get_CipherMode_m2346658878,
+	CipherSuite_get_Code_m3902213587,
+	CipherSuite_get_Name_m3914703358,
+	CipherSuite_get_IsExportable_m136354150,
+	CipherSuite_get_KeyMaterialSize_m4222492337,
+	CipherSuite_get_KeyBlockSize_m2993514247,
+	CipherSuite_get_ExpandedKeyMaterialSize_m296573450,
+	CipherSuite_get_EffectiveKeyBits_m3588203390,
+	CipherSuite_get_IvSize_m2971966910,
+	CipherSuite_get_Context_m1298687213,
+	CipherSuite_set_Context_m4127897124,
+	CipherSuite_Write_m1271196675,
+	CipherSuite_Write_m827355463,
+	CipherSuite_InitializeCipher_m229247572,
+	CipherSuite_EncryptRecord_m3421046381,
+	CipherSuite_DecryptRecord_m1247194570,
+	CipherSuite_CreatePremasterSecret_m3728217834,
+	CipherSuite_PRF_m3379816948,
+	CipherSuite_Expand_m1800208652,
+	CipherSuite_createEncryptionCipher_m1926075645,
+	CipherSuite_createDecryptionCipher_m1118350455,
+	CipherSuiteCollection__ctor_m2154226461,
+	CipherSuiteCollection_System_Collections_IList_get_Item_m218755780,
+	CipherSuiteCollection_System_Collections_IList_set_Item_m750275607,
+	CipherSuiteCollection_System_Collections_ICollection_get_IsSynchronized_m36679989,
+	CipherSuiteCollection_System_Collections_ICollection_get_SyncRoot_m2818114049,
+	CipherSuiteCollection_System_Collections_IEnumerable_GetEnumerator_m1600967134,
+	CipherSuiteCollection_System_Collections_IList_Contains_m3239163601,
+	CipherSuiteCollection_System_Collections_IList_IndexOf_m540536407,
+	CipherSuiteCollection_System_Collections_IList_Insert_m3923805048,
+	CipherSuiteCollection_System_Collections_IList_Remove_m4022085178,
+	CipherSuiteCollection_System_Collections_IList_RemoveAt_m143866082,
+	CipherSuiteCollection_System_Collections_IList_Add_m2644442861,
+	CipherSuiteCollection_get_Item_m3667070847,
+	CipherSuiteCollection_get_Item_m280627160,
+	CipherSuiteCollection_set_Item_m1064755671,
+	CipherSuiteCollection_get_Item_m2606225922,
+	CipherSuiteCollection_get_Count_m1700100413,
+	CipherSuiteCollection_get_IsFixedSize_m2849280449,
+	CipherSuiteCollection_get_IsReadOnly_m2233332798,
+	CipherSuiteCollection_CopyTo_m869893074,
+	CipherSuiteCollection_Clear_m533808424,
+	CipherSuiteCollection_IndexOf_m204129362,
+	CipherSuiteCollection_IndexOf_m4089218779,
+	CipherSuiteCollection_Add_m3114709461,
+	CipherSuiteCollection_add_m2465397903,
+	CipherSuiteCollection_add_m513562767,
+	CipherSuiteCollection_cultureAwareCompare_m1825407448,
+	CipherSuiteFactory_GetSupportedCiphers_m338097823,
+	CipherSuiteFactory_GetTls1SupportedCiphers_m2952983549,
+	CipherSuiteFactory_GetSsl3SupportedCiphers_m2476597368,
+	ClientContext__ctor_m1008306089,
+	ClientContext_get_SslStream_m360110741,
+	ClientContext_get_ClientHelloProtocol_m1765198120,
+	ClientContext_set_ClientHelloProtocol_m2246603449,
+	ClientContext_Clear_m1290084423,
+	ClientRecordProtocol__ctor_m648586559,
+	ClientRecordProtocol_GetMessage_m2649269799,
+	ClientRecordProtocol_ProcessHandshakeMessage_m3590516592,
+	ClientRecordProtocol_createClientHandshakeMessage_m811708715,
+	ClientRecordProtocol_createServerHandshakeMessage_m3939790866,
+	ClientSessionCache__cctor_m1134810266,
+	ClientSessionCache_Add_m987180603,
+	ClientSessionCache_FromHost_m1396036471,
+	ClientSessionCache_FromContext_m3886959254,
+	ClientSessionCache_SetContextInCache_m907788136,
+	ClientSessionCache_SetContextFromCache_m3917528339,
+	ClientSessionInfo__ctor_m759726440,
+	ClientSessionInfo__cctor_m1353980836,
+	ClientSessionInfo_Finalize_m1198775539,
+	ClientSessionInfo_get_HostName_m759522668,
+	ClientSessionInfo_get_Id_m3046630969,
+	ClientSessionInfo_get_Valid_m3589823308,
+	ClientSessionInfo_GetContext_m301320023,
+	ClientSessionInfo_SetContext_m2649357891,
+	ClientSessionInfo_KeepAlive_m3125408381,
+	ClientSessionInfo_Dispose_m3315842124,
+	ClientSessionInfo_Dispose_m2571428025,
+	ClientSessionInfo_CheckDisposed_m1394638186,
+	Context__ctor_m3963941463,
+	Context_get_AbbreviatedHandshake_m2972837690,
+	Context_set_AbbreviatedHandshake_m4080371327,
+	Context_get_ProtocolNegotiated_m624488778,
+	Context_set_ProtocolNegotiated_m1177527245,
+	Context_get_SecurityProtocol_m1600902905,
+	Context_set_SecurityProtocol_m4153223312,
+	Context_get_SecurityProtocolFlags_m3295551796,
+	Context_get_Protocol_m1537476188,
+	Context_get_SessionId_m1296338025,
+	Context_set_SessionId_m1229908268,
+	Context_get_CompressionMethod_m1938328556,
+	Context_set_CompressionMethod_m2848483559,
+	Context_get_ServerSettings_m225713600,
+	Context_get_ClientSettings_m1185615112,
+	Context_get_LastHandshakeMsg_m873777031,
+	Context_set_LastHandshakeMsg_m3162558586,
+	Context_get_HandshakeState_m3443153737,
+	Context_set_HandshakeState_m1586089840,
+	Context_get_ReceivedConnectionEnd_m3369356276,
+	Context_set_ReceivedConnectionEnd_m213831275,
+	Context_get_SentConnectionEnd_m3114190867,
+	Context_set_SentConnectionEnd_m2641458842,
+	Context_get_SupportedCiphers_m2172827298,
+	Context_set_SupportedCiphers_m3994965527,
+	Context_get_HandshakeMessages_m2765912589,
+	Context_get_WriteSequenceNumber_m243492531,
+	Context_set_WriteSequenceNumber_m3356252710,
+	Context_get_ReadSequenceNumber_m2586681610,
+	Context_set_ReadSequenceNumber_m3303454459,
+	Context_get_ClientRandom_m697914474,
+	Context_set_ClientRandom_m631392719,
+	Context_get_ServerRandom_m3526559022,
+	Context_set_ServerRandom_m173601139,
+	Context_get_RandomCS_m3946020109,
+	Context_set_RandomCS_m2334825038,
+	Context_get_RandomSC_m1687420621,
+	Context_set_RandomSC_m2057392782,
+	Context_get_MasterSecret_m231851308,
+	Context_set_MasterSecret_m1422386411,
+	Context_get_ClientWriteKey_m2235605337,
+	Context_set_ClientWriteKey_m1137238126,
+	Context_get_ServerWriteKey_m1780148437,
+	Context_set_ServerWriteKey_m2317745418,
+	Context_get_ClientWriteIV_m2171757117,
+	Context_set_ClientWriteIV_m70615452,
+	Context_get_ServerWriteIV_m2960700649,
+	Context_set_ServerWriteIV_m3391477120,
+	Context_get_RecordProtocol_m1527823481,
+	Context_set_RecordProtocol_m1968834768,
+	Context_GetUnixTime_m3777795180,
+	Context_GetSecureRandomBytes_m1065353673,
+	Context_Clear_m4000337070,
+	Context_ClearKeyInfo_m205678623,
+	Context_DecodeProtocolCode_m4051353560,
+	Context_ChangeProtocol_m46663628,
+	Context_get_Current_m2717045324,
+	Context_get_Negotiating_m3946476110,
+	Context_get_Read_m171585211,
+	Context_get_Write_m2299361626,
+	Context_StartSwitchingSecurityParameters_m373522596,
+	Context_EndSwitchingSecurityParameters_m1613076777,
+	TlsClientCertificate__ctor_m987604448,
+	TlsClientCertificate_get_ClientCertificate_m3062440489,
+	TlsClientCertificate_Update_m3781462820,
+	TlsClientCertificate_GetClientCertificate_m2808467979,
+	TlsClientCertificate_SendCertificates_m1096074091,
+	TlsClientCertificate_ProcessAsSsl3_m3634449507,
+	TlsClientCertificate_ProcessAsTls1_m1772516248,
+	TlsClientCertificate_FindParentCertificate_m10738514,
+	TlsClientCertificateVerify__ctor_m110646389,
+	TlsClientCertificateVerify_Update_m1622071203,
+	TlsClientCertificateVerify_ProcessAsSsl3_m3377063356,
+	TlsClientCertificateVerify_ProcessAsTls1_m1960818833,
+	TlsClientCertificateVerify_getClientCertRSA_m3799135236,
+	TlsClientCertificateVerify_getUnsignedBigInteger_m3357519896,
+	TlsClientFinished__ctor_m3019203717,
+	TlsClientFinished__cctor_m2632026509,
+	TlsClientFinished_Update_m840013355,
+	TlsClientFinished_ProcessAsSsl3_m1576972610,
+	TlsClientFinished_ProcessAsTls1_m3490501889,
+	TlsClientHello__ctor_m1699671541,
+	TlsClientHello_Update_m1723542631,
+	TlsClientHello_ProcessAsSsl3_m3243018502,
+	TlsClientHello_ProcessAsTls1_m881347961,
+	TlsClientKeyExchange__ctor_m2741078239,
+	TlsClientKeyExchange_ProcessAsSsl3_m662933084,
+	TlsClientKeyExchange_ProcessAsTls1_m1707307575,
+	TlsClientKeyExchange_ProcessCommon_m1203833053,
+	TlsServerCertificate__ctor_m3697944709,
+	TlsServerCertificate_Update_m3673209976,
+	TlsServerCertificate_ProcessAsSsl3_m277089231,
+	TlsServerCertificate_ProcessAsTls1_m3083203628,
+	TlsServerCertificate_checkCertificateUsage_m2392234217,
+	TlsServerCertificate_validateCertificates_m1988583701,
+	TlsServerCertificate_checkServerIdentity_m3836435780,
+	TlsServerCertificate_checkDomainName_m547589480,
+	TlsServerCertificate_Match_m239075186,
+	TlsServerCertificateRequest__ctor_m1684270714,
+	TlsServerCertificateRequest_Update_m2674822753,
+	TlsServerCertificateRequest_ProcessAsSsl3_m3017921864,
+	TlsServerCertificateRequest_ProcessAsTls1_m3580757431,
+	TlsServerFinished__ctor_m3517940960,
+	TlsServerFinished__cctor_m3702151001,
+	TlsServerFinished_Update_m3332245911,
+	TlsServerFinished_ProcessAsSsl3_m2226689406,
+	TlsServerFinished_ProcessAsTls1_m734183757,
+	TlsServerHello__ctor_m3032108168,
+	TlsServerHello_Update_m1740270635,
+	TlsServerHello_ProcessAsSsl3_m3986132482,
+	TlsServerHello_ProcessAsTls1_m1997577085,
+	TlsServerHello_processProtocol_m1241336522,
+	TlsServerHelloDone__ctor_m2125611008,
+	TlsServerHelloDone_ProcessAsSsl3_m2352567662,
+	TlsServerHelloDone_ProcessAsTls1_m2785450409,
+	TlsServerKeyExchange__ctor_m247733406,
+	TlsServerKeyExchange_Update_m467765633,
+	TlsServerKeyExchange_ProcessAsSsl3_m462106368,
+	TlsServerKeyExchange_ProcessAsTls1_m1879578643,
+	TlsServerKeyExchange_verifySignature_m3641534563,
+	HandshakeMessage__ctor_m3783158590,
+	HandshakeMessage__ctor_m2727745933,
+	HandshakeMessage__ctor_m1431757899,
+	HandshakeMessage_get_Context_m3356295711,
+	HandshakeMessage_get_HandshakeType_m2104271474,
+	HandshakeMessage_get_ContentType_m760670911,
+	HandshakeMessage_Process_m2688076118,
+	HandshakeMessage_Update_m1733566706,
+	HandshakeMessage_EncodeMessage_m2725158930,
+	HandshakeMessage_Compare_m2025941142,
+	HttpsClientStream__ctor_m3407922777,
+	HttpsClientStream_get_TrustFailure_m1980919191,
+	HttpsClientStream_RaiseServerCertificateValidation_m3356770426,
+	HttpsClientStream_U3CHttpsClientStreamU3Em__0_m3176353714,
+	HttpsClientStream_U3CHttpsClientStreamU3Em__1_m4293802471,
+	PrivateKeySelectionCallback__ctor_m2259908823,
+	PrivateKeySelectionCallback_Invoke_m1058550892,
+	PrivateKeySelectionCallback_BeginInvoke_m1904952334,
+	PrivateKeySelectionCallback_EndInvoke_m1718473578,
+	RecordProtocol__ctor_m168945279,
+	RecordProtocol__cctor_m1255542758,
+	RecordProtocol_get_Context_m2688493529,
+	RecordProtocol_SendRecord_m2977889250,
+	RecordProtocol_ProcessChangeCipherSpec_m3233959862,
+	RecordProtocol_GetMessage_m594970728,
+	RecordProtocol_BeginReceiveRecord_m2023581433,
+	RecordProtocol_InternalReceiveRecordCallback_m2228921492,
+	RecordProtocol_EndReceiveRecord_m4045980155,
+	RecordProtocol_ReceiveRecord_m3672584816,
+	RecordProtocol_ReadRecordBuffer_m1307297230,
+	RecordProtocol_ReadClientHelloV2_m103475177,
+	RecordProtocol_ReadStandardRecordBuffer_m3546484478,
+	RecordProtocol_ProcessAlert_m2650247744,
+	RecordProtocol_SendAlert_m2622753765,
+	RecordProtocol_SendAlert_m2529562669,
+	RecordProtocol_SendAlert_m2816808523,
+	RecordProtocol_SendChangeCipherSpec_m3542001341,
+	RecordProtocol_BeginSendRecord_m3180957815,
+	RecordProtocol_InternalSendRecordCallback_m3984764857,
+	RecordProtocol_BeginSendRecord_m166940611,
+	RecordProtocol_EndSendRecord_m3304963666,
+	RecordProtocol_SendRecord_m132002114,
+	RecordProtocol_EncodeRecord_m1215442978,
+	RecordProtocol_EncodeRecord_m3884270352,
+	RecordProtocol_encryptRecordFragment_m1241873183,
+	RecordProtocol_decryptRecordFragment_m2510859489,
+	RecordProtocol_Compare_m216902730,
+	RecordProtocol_ProcessCipherSpecV2Buffer_m1895848015,
+	RecordProtocol_MapV2CipherCode_m4064211604,
+	ReceiveRecordAsyncResult__ctor_m109339899,
+	ReceiveRecordAsyncResult_get_Record_m1336421357,
+	ReceiveRecordAsyncResult_get_ResultingBuffer_m2153361373,
+	ReceiveRecordAsyncResult_get_InitialBuffer_m1245345098,
+	ReceiveRecordAsyncResult_get_AsyncState_m2086535212,
+	ReceiveRecordAsyncResult_get_AsyncException_m1835236292,
+	ReceiveRecordAsyncResult_get_CompletedWithError_m2670396551,
+	ReceiveRecordAsyncResult_get_AsyncWaitHandle_m1602093076,
+	ReceiveRecordAsyncResult_get_IsCompleted_m2327274447,
+	ReceiveRecordAsyncResult_SetComplete_m2441107665,
+	ReceiveRecordAsyncResult_SetComplete_m494147202,
+	ReceiveRecordAsyncResult_SetComplete_m4055415513,
+	SendRecordAsyncResult__ctor_m2999905045,
+	SendRecordAsyncResult_get_Message_m2340978616,
+	SendRecordAsyncResult_get_AsyncState_m2299453419,
+	SendRecordAsyncResult_get_AsyncException_m2088364821,
+	SendRecordAsyncResult_get_CompletedWithError_m349920476,
+	SendRecordAsyncResult_get_AsyncWaitHandle_m3532375825,
+	SendRecordAsyncResult_get_IsCompleted_m2666127692,
+	SendRecordAsyncResult_SetComplete_m425796521,
+	SendRecordAsyncResult_SetComplete_m3006273145,
+	RSASslSignatureDeformatter__ctor_m2325995515,
+	RSASslSignatureDeformatter_VerifySignature_m3138484348,
+	RSASslSignatureDeformatter_SetHashAlgorithm_m4048969080,
+	RSASslSignatureDeformatter_SetKey_m1150106904,
+	RSASslSignatureFormatter__ctor_m2530528184,
+	RSASslSignatureFormatter_CreateSignature_m4186395359,
+	RSASslSignatureFormatter_SetHashAlgorithm_m1976793413,
+	RSASslSignatureFormatter_SetKey_m53887771,
+	SecurityParameters__ctor_m3136793890,
+	SecurityParameters_get_Cipher_m2392911632,
+	SecurityParameters_set_Cipher_m3888132335,
+	SecurityParameters_get_ClientWriteMAC_m2756307972,
+	SecurityParameters_set_ClientWriteMAC_m1970377285,
+	SecurityParameters_get_ServerWriteMAC_m244028400,
+	SecurityParameters_set_ServerWriteMAC_m3769080193,
+	SecurityParameters_Clear_m3409219757,
+	SslCipherSuite__ctor_m1382988490,
+	SslCipherSuite_ComputeServerRecordMAC_m1876572367,
+	SslCipherSuite_ComputeClientRecordMAC_m232780723,
+	SslCipherSuite_ComputeMasterSecret_m491038647,
+	SslCipherSuite_ComputeKeys_m574473636,
+	SslCipherSuite_prf_m2084589217,
+	SslClientStream__ctor_m3295335959,
+	SslClientStream__ctor_m1193810714,
+	SslClientStream__ctor_m3350475994,
+	SslClientStream__ctor_m1435497855,
+	SslClientStream__ctor_m2178305131,
+	SslClientStream_add_ServerCertValidation_m684653638,
+	SslClientStream_remove_ServerCertValidation_m2446179261,
+	SslClientStream_add_ClientCertSelection_m2644836210,
+	SslClientStream_remove_ClientCertSelection_m2497978917,
+	SslClientStream_add_PrivateKeySelection_m481383932,
+	SslClientStream_remove_PrivateKeySelection_m427666577,
+	SslClientStream_add_ServerCertValidation2_m2603998068,
+	SslClientStream_remove_ServerCertValidation2_m3857463517,
+	SslClientStream_get_InputBuffer_m295521966,
+	SslClientStream_get_ClientCertificates_m444639806,
+	SslClientStream_get_SelectedClientCertificate_m1580018944,
+	SslClientStream_get_ServerCertValidationDelegate_m3909657681,
+	SslClientStream_set_ServerCertValidationDelegate_m3125858424,
+	SslClientStream_get_ClientCertSelectionDelegate_m2316959461,
+	SslClientStream_set_ClientCertSelectionDelegate_m3476473798,
+	SslClientStream_get_PrivateKeyCertSelectionDelegate_m3715949545,
+	SslClientStream_set_PrivateKeyCertSelectionDelegate_m159581650,
+	SslClientStream_Finalize_m3464869995,
+	SslClientStream_Dispose_m3148875377,
+	SslClientStream_OnBeginNegotiateHandshake_m4281860610,
+	SslClientStream_SafeReceiveRecord_m210668541,
+	SslClientStream_OnNegotiateHandshakeCallback_m1332934317,
+	SslClientStream_OnLocalCertificateSelection_m3628249765,
+	SslClientStream_get_HaveRemoteValidation2Callback_m3555576758,
+	SslClientStream_OnRemoteCertificateValidation2_m3416857045,
+	SslClientStream_OnRemoteCertificateValidation_m3974135419,
+	SslClientStream_RaiseServerCertificateValidation_m1782631027,
+	SslClientStream_RaiseServerCertificateValidation2_m3736176381,
+	SslClientStream_RaiseClientCertificateSelection_m3933788312,
+	SslClientStream_OnLocalPrivateKeySelection_m3649986106,
+	SslClientStream_RaisePrivateKeySelection_m2326189090,
+	SslHandshakeHash__ctor_m1269339424,
+	SslHandshakeHash_Initialize_m2786849785,
+	SslHandshakeHash_HashFinal_m1925138451,
+	SslHandshakeHash_HashCore_m3914471343,
+	SslHandshakeHash_CreateSignature_m3001618400,
+	SslHandshakeHash_initializePad_m4132246594,
+	SslStreamBase__ctor_m543947417,
+	SslStreamBase__cctor_m4047446554,
+	SslStreamBase_AsyncHandshakeCallback_m1101580486,
+	SslStreamBase_get_MightNeedHandshake_m3432170694,
+	SslStreamBase_NegotiateHandshake_m1758369850,
+	SslStreamBase_RaiseLocalCertificateSelection_m3422705716,
+	SslStreamBase_RaiseRemoteCertificateValidation_m902031508,
+	SslStreamBase_RaiseRemoteCertificateValidation2_m1013444422,
+	SslStreamBase_RaiseLocalPrivateKeySelection_m1885975771,
+	SslStreamBase_get_CheckCertRevocationStatus_m2467957380,
+	SslStreamBase_set_CheckCertRevocationStatus_m703827149,
+	SslStreamBase_get_CipherAlgorithm_m692718075,
+	SslStreamBase_get_CipherStrength_m3744053336,
+	SslStreamBase_get_HashAlgorithm_m2591448891,
+	SslStreamBase_get_HashStrength_m480059173,
+	SslStreamBase_get_KeyExchangeStrength_m1717128931,
+	SslStreamBase_get_KeyExchangeAlgorithm_m3712013038,
+	SslStreamBase_get_SecurityProtocol_m2458441395,
+	SslStreamBase_get_ServerCertificate_m702547597,
+	SslStreamBase_get_ServerCertificates_m1401009752,
+	SslStreamBase_BeginNegotiateHandshake_m2029257721,
+	SslStreamBase_EndNegotiateHandshake_m1732321201,
+	SslStreamBase_BeginRead_m869235395,
+	SslStreamBase_InternalBeginRead_m707911413,
+	SslStreamBase_InternalReadCallback_m2524917586,
+	SslStreamBase_InternalBeginWrite_m3760772368,
+	SslStreamBase_InternalWriteCallback_m2552665647,
+	SslStreamBase_BeginWrite_m270524114,
+	SslStreamBase_EndRead_m1072850679,
+	SslStreamBase_EndWrite_m1091701856,
+	SslStreamBase_Close_m2762736871,
+	SslStreamBase_Flush_m2762644405,
+	SslStreamBase_Read_m1663229390,
+	SslStreamBase_Read_m1036897444,
+	SslStreamBase_Seek_m3605313093,
+	SslStreamBase_SetLength_m3282486041,
+	SslStreamBase_Write_m3392707719,
+	SslStreamBase_Write_m1135856379,
+	SslStreamBase_get_CanRead_m3061866682,
+	SslStreamBase_get_CanSeek_m1596790394,
+	SslStreamBase_get_CanWrite_m2069502593,
+	SslStreamBase_get_Length_m763159069,
+	SslStreamBase_get_Position_m2525437172,
+	SslStreamBase_set_Position_m598220223,
+	SslStreamBase_Finalize_m2530628835,
+	SslStreamBase_Dispose_m747909841,
+	SslStreamBase_resetBuffer_m3028042362,
+	SslStreamBase_checkDisposed_m2550190176,
+	InternalAsyncResult__ctor_m2764854695,
+	InternalAsyncResult_get_ProceedAfterHandshake_m552962842,
+	InternalAsyncResult_get_FromWrite_m2893408424,
+	InternalAsyncResult_get_Buffer_m163794679,
+	InternalAsyncResult_get_Offset_m3458447452,
+	InternalAsyncResult_get_Count_m1291942796,
+	InternalAsyncResult_get_BytesRead_m4243892348,
+	InternalAsyncResult_get_AsyncState_m42006015,
+	InternalAsyncResult_get_AsyncException_m3936660437,
+	InternalAsyncResult_get_CompletedWithError_m3993955322,
+	InternalAsyncResult_get_AsyncWaitHandle_m2297269869,
+	InternalAsyncResult_get_IsCompleted_m1463732458,
+	InternalAsyncResult_SetComplete_m4011593916,
+	InternalAsyncResult_SetComplete_m2187159697,
+	InternalAsyncResult_SetComplete_m200761170,
+	InternalAsyncResult_SetComplete_m35987153,
+	TlsCipherSuite__ctor_m2983563913,
+	TlsCipherSuite_ComputeServerRecordMAC_m661450756,
+	TlsCipherSuite_ComputeClientRecordMAC_m3290639544,
+	TlsCipherSuite_ComputeMasterSecret_m3863800064,
+	TlsCipherSuite_ComputeKeys_m1444202749,
+	TlsClientSettings__ctor_m3065987087,
+	TlsClientSettings_get_TargetHost_m2817634620,
+	TlsClientSettings_set_TargetHost_m3421266913,
+	TlsClientSettings_get_Certificates_m2509165647,
+	TlsClientSettings_set_Certificates_m1110280480,
+	TlsClientSettings_get_ClientCertificate_m89435195,
+	TlsClientSettings_set_ClientCertificate_m442292512,
+	TlsClientSettings_UpdateCertificateRSA_m1828531911,
+	TlsException__ctor_m3885720020,
+	TlsException__ctor_m1249020603,
+	TlsException__ctor_m2205512412,
+	TlsException__ctor_m3747188020,
+	TlsException__ctor_m2436420036,
+	TlsException__ctor_m1988757560,
+	TlsException_get_Alert_m4022765752,
+	TlsServerSettings__ctor_m1125867683,
+	TlsServerSettings_get_ServerKeyExchange_m1147981947,
+	TlsServerSettings_set_ServerKeyExchange_m4199779410,
+	TlsServerSettings_get_Certificates_m3301336199,
+	TlsServerSettings_set_Certificates_m67827830,
+	TlsServerSettings_get_CertificateRSA_m1899388839,
+	TlsServerSettings_get_RsaParameters_m1327440044,
+	TlsServerSettings_set_RsaParameters_m3165273449,
+	TlsServerSettings_set_SignedParams_m1826385315,
+	TlsServerSettings_get_CertificateRequest_m1204669838,
+	TlsServerSettings_set_CertificateRequest_m3419519893,
+	TlsServerSettings_set_CertificateTypes_m264196087,
+	TlsServerSettings_set_DistinguisedNames_m2290049644,
+	TlsServerSettings_UpdateCertificateRSA_m2025051563,
+	TlsStream__ctor_m4117943603,
+	TlsStream__ctor_m2982031560,
+	TlsStream_get_EOF_m1728604576,
+	TlsStream_get_CanWrite_m79048455,
+	TlsStream_get_CanRead_m1860811404,
+	TlsStream_get_CanSeek_m3608197976,
+	TlsStream_get_Position_m3551173234,
+	TlsStream_set_Position_m378064217,
+	TlsStream_get_Length_m1562309511,
+	TlsStream_ReadSmallValue_m1760325248,
+	TlsStream_ReadByte_m1935235961,
+	TlsStream_ReadInt16_m1855118433,
+	TlsStream_ReadInt24_m1268450166,
+	TlsStream_ReadBytes_m3301522097,
+	TlsStream_Write_m2271546135,
+	TlsStream_Write_m2055734301,
+	TlsStream_WriteInt24_m1660453494,
+	TlsStream_Write_m4025102703,
+	TlsStream_Write_m3425460533,
+	TlsStream_Reset_m1504601050,
+	TlsStream_ToArray_m3731779317,
+	TlsStream_Flush_m2603881359,
+	TlsStream_SetLength_m1460039587,
+	TlsStream_Seek_m3898619363,
+	TlsStream_Read_m2550027598,
+	TlsStream_Write_m418642281,
+	ValidationResult__ctor_m2761103915,
+	ValidationResult_get_Trusted_m1316755606,
+	ValidationResult_get_ErrorCode_m599531882,
+	AuthorityKeyIdentifierExtension__ctor_m3445584677,
+	AuthorityKeyIdentifierExtension_Decode_m1941074339,
+	AuthorityKeyIdentifierExtension_get_Identifier_m3123570309,
+	AuthorityKeyIdentifierExtension_ToString_m1294877924,
+	BasicConstraintsExtension__ctor_m3832084132,
+	BasicConstraintsExtension_Decode_m893312834,
+	BasicConstraintsExtension_Encode_m3738782306,
+	BasicConstraintsExtension_get_CertificateAuthority_m2523289727,
+	BasicConstraintsExtension_ToString_m1598306805,
+	ExtendedKeyUsageExtension__ctor_m3310261285,
+	ExtendedKeyUsageExtension_Decode_m901297139,
+	ExtendedKeyUsageExtension_Encode_m3429751649,
+	ExtendedKeyUsageExtension_get_KeyPurpose_m1625001387,
+	ExtendedKeyUsageExtension_ToString_m1081992020,
+	GeneralNames__ctor_m3021378417,
+	GeneralNames_get_DNSNames_m2721668874,
+	GeneralNames_get_IPAddresses_m1712556836,
+	GeneralNames_ToString_m800435094,
+	KeyUsageExtension__ctor_m2471620836,
+	KeyUsageExtension_Decode_m4115739726,
+	KeyUsageExtension_Encode_m1269721630,
+	KeyUsageExtension_Support_m2720178361,
+	KeyUsageExtension_ToString_m1213032139,
+	NetscapeCertTypeExtension__ctor_m3885754615,
+	NetscapeCertTypeExtension_Decode_m2210025005,
+	NetscapeCertTypeExtension_Support_m3954199663,
+	NetscapeCertTypeExtension_ToString_m834335182,
+	SubjectAltNameExtension__ctor_m2621620126,
+	SubjectAltNameExtension_Decode_m3676245240,
+	SubjectAltNameExtension_get_DNSNames_m1798931443,
+	SubjectAltNameExtension_get_IPAddresses_m3207151211,
+	SubjectAltNameExtension_ToString_m1300810903,
+	PKCS12__ctor_m766227211,
+	PKCS12__ctor_m1564527510,
+	PKCS12__ctor_m997996062,
+	PKCS12__cctor_m3312759338,
+	PKCS12_Decode_m2543116952,
+	PKCS12_Finalize_m3579787021,
+	PKCS12_set_Password_m64359107,
+	PKCS12_get_IterationCount_m3648861112,
+	PKCS12_set_IterationCount_m2468663791,
+	PKCS12_get_Keys_m1312614820,
+	PKCS12_get_Certificates_m1274732891,
+	PKCS12_get_RNG_m3963529040,
+	PKCS12_Compare_m2529107822,
+	PKCS12_GetSymmetricAlgorithm_m3196291685,
+	PKCS12_Decrypt_m2707332345,
+	PKCS12_Decrypt_m1557069392,
+	PKCS12_Encrypt_m2154408631,
+	PKCS12_GetExistingParameters_m3532830249,
+	PKCS12_AddPrivateKey_m4216166133,
+	PKCS12_ReadSafeBag_m1100201494,
+	PKCS12_CertificateSafeBag_m3272197807,
+	PKCS12_MAC_m3228833816,
+	PKCS12_GetBytes_m2884672032,
+	PKCS12_EncryptedContentInfo_m938119256,
+	PKCS12_AddCertificate_m3637520737,
+	PKCS12_AddCertificate_m2800455360,
+	PKCS12_RemoveCertificate_m228884064,
+	PKCS12_RemoveCertificate_m1352841763,
+	PKCS12_Clone_m1135152221,
+	PKCS12_get_MaximumPasswordLength_m1673883007,
+	DeriveBytes__ctor_m649232120,
+	DeriveBytes__cctor_m3390880627,
+	DeriveBytes_set_HashName_m2530261318,
+	DeriveBytes_set_IterationCount_m1653995136,
+	DeriveBytes_set_Password_m1444282377,
+	DeriveBytes_set_Salt_m973628730,
+	DeriveBytes_Adjust_m3395788526,
+	DeriveBytes_Derive_m1435464935,
+	DeriveBytes_DeriveKey_m3654953847,
+	DeriveBytes_DeriveIV_m3343375195,
+	DeriveBytes_DeriveMAC_m436209295,
+	SafeBag__ctor_m2828572544,
+	SafeBag_get_BagOID_m2574947216,
+	SafeBag_get_ASN1_m1646183377,
+	X501__cctor_m2610532554,
+	X501_ToString_m4145210560,
+	X501_ToString_m3328169518,
+	X501_AppendEntry_m768611426,
+	X509Certificate__ctor_m2941481449,
+	X509Certificate__cctor_m2984068893,
+	X509Certificate_Parse_m1764345628,
+	X509Certificate_GetUnsignedBigInteger_m2102946512,
+	X509Certificate_get_DSA_m3972464423,
+	X509Certificate_set_DSA_m1325917832,
+	X509Certificate_get_Extensions_m222060964,
+	X509Certificate_get_Hash_m2470366345,
+	X509Certificate_get_IssuerName_m3907994144,
+	X509Certificate_get_KeyAlgorithm_m454927092,
+	X509Certificate_get_KeyAlgorithmParameters_m1701675565,
+	X509Certificate_set_KeyAlgorithmParameters_m17826364,
+	X509Certificate_get_PublicKey_m933487733,
+	X509Certificate_get_RSA_m1167362983,
+	X509Certificate_set_RSA_m1038416652,
+	X509Certificate_get_RawData_m1262574599,
+	X509Certificate_get_SerialNumber_m2509150920,
+	X509Certificate_get_Signature_m3664033367,
+	X509Certificate_get_SignatureAlgorithm_m2111916881,
+	X509Certificate_get_SubjectName_m3533705485,
+	X509Certificate_get_ValidFrom_m1740754472,
+	X509Certificate_get_ValidUntil_m4037777446,
+	X509Certificate_get_Version_m1704730343,
+	X509Certificate_get_IsCurrent_m424898544,
+	X509Certificate_WasCurrent_m3632049416,
+	X509Certificate_VerifySignature_m4020723406,
+	X509Certificate_VerifySignature_m4020723740,
+	X509Certificate_VerifySignature_m3536156059,
+	X509Certificate_get_IsSelfSigned_m3860357831,
+	X509Certificate_GetIssuerName_m2776799695,
+	X509Certificate_GetSubjectName_m3163312410,
+	X509Certificate_GetObjectData_m2064274370,
+	X509Certificate_PEM_m49854707,
+	X509CertificateCollection__ctor_m858704242,
+	X509CertificateCollection__ctor_m583031014,
+	X509CertificateCollection_System_Collections_IEnumerable_GetEnumerator_m977294505,
+	X509CertificateCollection_get_Item_m2115598414,
+	X509CertificateCollection_Add_m4008705157,
+	X509CertificateCollection_AddRange_m3644738604,
+	X509CertificateCollection_Contains_m2373814229,
+	X509CertificateCollection_GetEnumerator_m3994741635,
+	X509CertificateCollection_GetHashCode_m1043795447,
+	X509CertificateCollection_IndexOf_m2175658423,
+	X509CertificateCollection_Remove_m2722259192,
+	X509CertificateCollection_Compare_m1014334435,
+	X509CertificateEnumerator__ctor_m82280444,
+	X509CertificateEnumerator_System_Collections_IEnumerator_get_Current_m3386014480,
+	X509CertificateEnumerator_System_Collections_IEnumerator_MoveNext_m1448966539,
+	X509CertificateEnumerator_System_Collections_IEnumerator_Reset_m3929249334,
+	X509CertificateEnumerator_get_Current_m3129374511,
+	X509CertificateEnumerator_MoveNext_m4060814498,
+	X509CertificateEnumerator_Reset_m4167796875,
+	X509Chain__ctor_m3522797144,
+	X509Chain__ctor_m1113875360,
+	X509Chain_get_Status_m2726750609,
+	X509Chain_get_TrustAnchors_m930867182,
+	X509Chain_Build_m175470596,
+	X509Chain_IsValid_m4184995162,
+	X509Chain_FindCertificateParent_m3122224229,
+	X509Chain_FindCertificateRoot_m589250107,
+	X509Chain_IsTrusted_m2834338719,
+	X509Chain_IsParent_m2578316632,
+	X509Crl__ctor_m2469408229,
+	X509Crl_Parse_m3287862528,
+	X509Crl_get_Extensions_m1795830276,
+	X509Crl_get_Hash_m3617397429,
+	X509Crl_get_IssuerName_m756409840,
+	X509Crl_get_NextUpdate_m45665244,
+	X509Crl_Compare_m2229641633,
+	X509Crl_GetCrlEntry_m630720316,
+	X509Crl_GetCrlEntry_m550904265,
+	X509Crl_GetHashName_m183504634,
+	X509Crl_VerifySignature_m25190802,
+	X509Crl_VerifySignature_m25189948,
+	X509Crl_VerifySignature_m1390212587,
+	X509CrlEntry__ctor_m3156488776,
+	X509CrlEntry_get_SerialNumber_m3603416806,
+	X509CrlEntry_get_RevocationDate_m1257876856,
+	X509CrlEntry_get_Extensions_m79989256,
+	X509Extension__ctor_m2083345012,
+	X509Extension__ctor_m2273534630,
+	X509Extension_Decode_m972859652,
+	X509Extension_Encode_m1753933824,
+	X509Extension_get_Oid_m2301335920,
+	X509Extension_get_Critical_m1103269870,
+	X509Extension_get_Value_m3409801211,
+	X509Extension_Equals_m1304125015,
+	X509Extension_GetHashCode_m3265407565,
+	X509Extension_WriteLine_m364247613,
+	X509Extension_ToString_m408479757,
+	X509ExtensionCollection__ctor_m1119345384,
+	X509ExtensionCollection__ctor_m2672322588,
+	X509ExtensionCollection_System_Collections_IEnumerable_GetEnumerator_m2600902401,
+	X509ExtensionCollection_IndexOf_m3972100651,
+	X509ExtensionCollection_get_Item_m4212651995,
+	X509Store__ctor_m914086381,
+	X509Store_get_Certificates_m683383922,
+	X509Store_get_Crls_m1365300487,
+	X509Store_Load_m3792048208,
+	X509Store_LoadCertificate_m1082475046,
+	X509Store_LoadCrl_m1146720614,
+	X509Store_CheckStore_m1027496478,
+	X509Store_BuildCertificatesCollection_m4224672591,
+	X509Store_BuildCrlsCollection_m52567568,
+	X509StoreManager_get_CurrentUser_m569194374,
+	X509StoreManager_get_LocalMachine_m2451390246,
+	X509StoreManager_get_TrustedRootCertificates_m122138510,
+	X509Stores__ctor_m2453291421,
+	X509Stores_get_TrustedRoot_m3412716694,
+	X509Stores_Open_m3570436469,
+	ConfigXmlTextReader__ctor_m965728314,
+	ConfigXmlTextReader__ctor_m2778808542,
+	ConfigXmlTextReader_get_Filename_m3902945538,
+	ClientConfigurationSystem__ctor_m2508818941,
+	ClientConfigurationSystem_System_Configuration_Internal_IInternalConfigSystem_GetSection_m2690705608,
+	ClientConfigurationSystem_get_Configuration_m1415521026,
+	ConfigInfo__ctor_m2533184409,
+	ConfigInfo_CreateInstance_m615435773,
+	ConfigInfo_set_StreamName_m1734466909,
+	ConfigInfo_ThrowException_m3313572946,
+	ConfigInfoCollection__ctor_m2267743875,
+	ConfigInfoCollection_get_AllKeys_m3546771423,
+	ConfigInfoCollection_get_Item_m4196945655,
+	ConfigInfoCollection_set_Item_m406516082,
+	ConfigInfoCollection_Add_m1288541941,
+	ConfigInfoCollection_Clear_m1297066444,
+	ConfigInfoCollection_Remove_m1334699295,
+	ConfigNameValueCollection__ctor_m1183291289,
+	ConfigNameValueCollection__ctor_m2285608570,
+	ConfigNameValueCollection_ResetModified_m2605677405,
+	ConfigNameValueCollection_get_IsModified_m3218832143,
+	ConfigNameValueCollection_Set_m2008693955,
+	Configuration__ctor_m3545852494,
+	Configuration__ctor_m88421328,
+	Configuration_FindLocationConfiguration_m4081437406,
+	Configuration_Init_m2991025886,
+	Configuration_get_Parent_m335637978,
+	Configuration_set_Parent_m3106974805,
+	Configuration_GetParentWithFile_m1651703053,
+	Configuration_get_ConfigHost_m854336265,
+	Configuration_get_LocationConfigPath_m609030371,
+	Configuration_get_ConfigPath_m937107392,
+	Configuration_get_FilePath_m3184045596,
+	Configuration_get_HasFile_m1167170352,
+	Configuration_get_Locations_m2394414303,
+	Configuration_get_RootSectionGroup_m1643677634,
+	Configuration_get_SectionGroups_m2782934403,
+	Configuration_get_Sections_m3724328875,
+	Configuration_GetSection_m3056810807,
+	Configuration_GetSectionInstance_m3769455073,
+	Configuration_GetSectionGroupInstance_m2028928705,
+	Configuration_SetSectionXml_m2783526347,
+	Configuration_GetSectionXml_m1792995434,
+	Configuration_Load_m851220319,
+	Configuration_ReadConfigFile_m1878607525,
+	Configuration_ReadData_m342895002,
+	Configuration_ThrowException_m3079645534,
+	ConfigurationCollectionAttribute__ctor_m1251693102,
+	ConfigurationCollectionAttribute_get_AddItemName_m1343590308,
+	ConfigurationCollectionAttribute_get_ClearItemsName_m2101089535,
+	ConfigurationCollectionAttribute_get_RemoveItemName_m1223332851,
+	ConfigurationCollectionAttribute_set_CollectionType_m1820962205,
+	ConfigurationElement__ctor_m3836278767,
+	ConfigurationElement_get_Configuration_m2347242418,
+	ConfigurationElement_set_Configuration_m1639150663,
+	ConfigurationElement_InitFromProperty_m3625723156,
+	ConfigurationElement_get_ElementInformation_m3882602470,
+	ConfigurationElement_get_RawXml_m2664527628,
+	ConfigurationElement_set_RawXml_m3850583953,
+	ConfigurationElement_Init_m1329365593,
+	ConfigurationElement_get_LockAllAttributesExcept_m3610263831,
+	ConfigurationElement_get_LockAllElementsExcept_m1554073633,
+	ConfigurationElement_get_LockAttributes_m3450186057,
+	ConfigurationElement_get_LockElements_m2225570247,
+	ConfigurationElement_set_LockItem_m3758070483,
+	ConfigurationElement_SetPropertyValue_m1782021972,
+	ConfigurationElement_GetKeyProperties_m4219970304,
+	ConfigurationElement_GetDefaultCollection_m1796439560,
+	ConfigurationElement_get_Item_m3892773274,
+	ConfigurationElement_set_Item_m2109506183,
+	ConfigurationElement_get_Item_m2488651020,
+	ConfigurationElement_set_Item_m3671663911,
+	ConfigurationElement_get_Properties_m2163360678,
+	ConfigurationElement_Equals_m3484522968,
+	ConfigurationElement_GetHashCode_m2198573252,
+	ConfigurationElement_HasValues_m1341383433,
+	ConfigurationElement_HasLocalModifications_m169968917,
+	ConfigurationElement_DeserializeElement_m3818955857,
+	ConfigurationElement_OnDeserializeUnrecognizedAttribute_m157901910,
+	ConfigurationElement_OnDeserializeUnrecognizedElement_m1053820706,
+	ConfigurationElement_OnRequiredPropertyNotFound_m3323765040,
+	ConfigurationElement_PreSerialize_m1824129726,
+	ConfigurationElement_PostDeserialize_m3061775188,
+	ConfigurationElement_InitializeDefault_m2939047706,
+	ConfigurationElement_IsModified_m748618350,
+	ConfigurationElement_SetReadOnly_m1594739059,
+	ConfigurationElement_IsReadOnly_m2244525315,
+	ConfigurationElement_Reset_m484744193,
+	ConfigurationElement_ResetModified_m933170487,
+	ConfigurationElement_SerializeElement_m4131562944,
+	ConfigurationElement_SerializeToXmlElement_m3789742405,
+	ConfigurationElement_Unmerge_m2515561191,
+	ConfigurationElement_HasValue_m1390685398,
+	ConfigurationElement_ValidateValue_m1396480566,
+	ConfigurationElementCollection__ctor_m3776365441,
+	ConfigurationElementCollection_System_Collections_ICollection_CopyTo_m3947886345,
+	ConfigurationElementCollection_InitFromProperty_m3084253332,
+	ConfigurationElementCollection_get_CollectionType_m2878912072,
+	ConfigurationElementCollection_get_IsBasic_m1624364384,
+	ConfigurationElementCollection_get_IsAlternate_m1087333324,
+	ConfigurationElementCollection_get_Count_m1016392721,
+	ConfigurationElementCollection_get_ElementName_m1163032572,
+	ConfigurationElementCollection_set_EmitClear_m649573135,
+	ConfigurationElementCollection_get_IsSynchronized_m3152177730,
+	ConfigurationElementCollection_get_SyncRoot_m1263605066,
+	ConfigurationElementCollection_get_ThrowOnDuplicate_m2516679882,
+	ConfigurationElementCollection_get_AddElementName_m2131549453,
+	ConfigurationElementCollection_get_ClearElementName_m344564617,
+	ConfigurationElementCollection_get_RemoveElementName_m670755192,
+	ConfigurationElementCollection_BaseAdd_m692033632,
+	ConfigurationElementCollection_BaseAdd_m1594255685,
+	ConfigurationElementCollection_BaseClear_m297267965,
+	ConfigurationElementCollection_BaseGet_m498332263,
+	ConfigurationElementCollection_BaseGet_m673060682,
+	ConfigurationElementCollection_BaseIndexOf_m2389057362,
+	ConfigurationElementCollection_IndexOfKey_m1888078841,
+	ConfigurationElementCollection_BaseRemove_m2742159664,
+	ConfigurationElementCollection_BaseRemoveAt_m1402001296,
+	ConfigurationElementCollection_CompareKeys_m682234560,
+	ConfigurationElementCollection_CreateNewElement_m3219927641,
+	ConfigurationElementCollection_CreateNewElementInternal_m226698700,
+	ConfigurationElementCollection_Equals_m2221773756,
+	ConfigurationElementCollection_GetHashCode_m770974360,
+	ConfigurationElementCollection_GetEnumerator_m3962900713,
+	ConfigurationElementCollection_IsElementName_m2704993900,
+	ConfigurationElementCollection_IsElementRemovable_m1916442331,
+	ConfigurationElementCollection_IsModified_m4233298518,
+	ConfigurationElementCollection_IsReadOnly_m2147280149,
+	ConfigurationElementCollection_HasValues_m4112686071,
+	ConfigurationElementCollection_Reset_m3142114271,
+	ConfigurationElementCollection_ResetModified_m3318214445,
+	ConfigurationElementCollection_SetReadOnly_m2819095069,
+	ConfigurationElementCollection_SerializeElement_m3696766444,
+	ConfigurationElementCollection_OnDeserializeUnrecognizedElement_m1168261278,
+	ConfigurationElementCollection_Unmerge_m2009439485,
+	ConfigurationRemoveElement__ctor_m2892373574,
+	ConfigurationRemoveElement_get_KeyValue_m2322918292,
+	ConfigurationRemoveElement_get_Properties_m4160822773,
+	ConfigurationErrorsException__ctor_m3609325505,
+	ConfigurationErrorsException__ctor_m3571142591,
+	ConfigurationErrorsException__ctor_m1926925674,
+	ConfigurationErrorsException__ctor_m3963297863,
+	ConfigurationErrorsException__ctor_m1235462802,
+	ConfigurationErrorsException__ctor_m4265896371,
+	ConfigurationErrorsException__ctor_m3506512730,
+	ConfigurationErrorsException_get_BareMessage_m403421148,
+	ConfigurationErrorsException_get_Message_m3733233144,
+	ConfigurationErrorsException_GetFilename_m2673389627,
+	ConfigurationErrorsException_GetLineNumber_m1372608032,
+	ConfigurationErrorsException_GetFilename_m2049567258,
+	ConfigurationErrorsException_GetLineNumber_m3976484637,
+	ConfigurationErrorsException_GetObjectData_m770656613,
+	ConfigurationFileMap__ctor_m3731838539,
+	ConfigurationFileMap__ctor_m3124444437,
+	ConfigurationFileMap_get_MachineConfigFilename_m1702653625,
+	ConfigurationFileMap_set_MachineConfigFilename_m3052034378,
+	ConfigurationFileMap_Clone_m1273941989,
+	ConfigurationLocation__ctor_m3125296074,
+	ConfigurationLocation__cctor_m1384898491,
+	ConfigurationLocation_get_Path_m2365456525,
+	ConfigurationLocation_OpenConfiguration_m2905080700,
+	ConfigurationLocation_SetParentConfiguration_m4197005207,
+	ConfigurationLocationCollection__ctor_m303069056,
+	ConfigurationLocationCollection_Add_m3681642539,
+	ConfigurationLocationCollection_Find_m3684263568,
+	ConfigurationLockCollection__ctor_m870306509,
+	ConfigurationLockCollection_System_Collections_ICollection_CopyTo_m3497490008,
+	ConfigurationLockCollection_CheckName_m2810988355,
+	ConfigurationLockCollection_Add_m3416925987,
+	ConfigurationLockCollection_Clear_m2378334261,
+	ConfigurationLockCollection_GetEnumerator_m3742833280,
+	ConfigurationLockCollection_SetFromList_m2739237306,
+	ConfigurationLockCollection_get_Count_m3926033248,
+	ConfigurationLockCollection_get_IsSynchronized_m1658122353,
+	ConfigurationLockCollection_get_SyncRoot_m1477706993,
+	ConfigurationManager__cctor_m145104057,
+	ConfigurationManager_GetAssemblyInfo_m1959334153,
+	ConfigurationManager_OpenExeConfigurationInternal_m2337857263,
+	ConfigurationManager_get_ConfigurationFactory_m113132422,
+	ConfigurationManager_get_ConfigurationSystem_m1820628092,
+	ConfigurationManager_GetSection_m2582692502,
+	ConfigurationProperty__ctor_m1936944139,
+	ConfigurationProperty__ctor_m1536343945,
+	ConfigurationProperty__ctor_m1540124895,
+	ConfigurationProperty__ctor_m2779674618,
+	ConfigurationProperty__ctor_m664996226,
+	ConfigurationProperty__cctor_m3667988185,
+	ConfigurationProperty_get_DefaultValue_m426297024,
+	ConfigurationProperty_get_IsKey_m2843757270,
+	ConfigurationProperty_get_IsRequired_m2849112540,
+	ConfigurationProperty_get_IsDefaultCollection_m4193636108,
+	ConfigurationProperty_get_Name_m2150541641,
+	ConfigurationProperty_get_Type_m573764699,
+	ConfigurationProperty_get_Validator_m1030428852,
+	ConfigurationProperty_ConvertFromString_m661781545,
+	ConfigurationProperty_ConvertToString_m137757750,
+	ConfigurationProperty_get_IsElement_m12977767,
+	ConfigurationProperty_get_CollectionAttribute_m256228153,
+	ConfigurationProperty_set_CollectionAttribute_m21883792,
+	ConfigurationProperty_Validate_m556423690,
+	ConfigurationPropertyAttribute__ctor_m2756034538,
+	ConfigurationPropertyAttribute_get_DefaultValue_m315790916,
+	ConfigurationPropertyAttribute_set_DefaultValue_m645825465,
+	ConfigurationPropertyAttribute_get_Options_m78342746,
+	ConfigurationPropertyAttribute_set_Options_m540649869,
+	ConfigurationPropertyAttribute_get_Name_m3548275941,
+	ConfigurationPropertyCollection__ctor_m906226530,
+	ConfigurationPropertyCollection_System_Collections_ICollection_CopyTo_m3374724930,
+	ConfigurationPropertyCollection_get_Count_m1518273402,
+	ConfigurationPropertyCollection_get_IsSynchronized_m2330227857,
+	ConfigurationPropertyCollection_get_SyncRoot_m2789197201,
+	ConfigurationPropertyCollection_Add_m2387630251,
+	ConfigurationPropertyCollection_GetEnumerator_m3414286410,
+	ConfigurationSection__ctor_m2154258044,
+	ConfigurationSection_get_SectionHandler_m1982719862,
+	ConfigurationSection_set_SectionHandler_m1410633441,
+	ConfigurationSection_get_SectionInformation_m4037021195,
+	ConfigurationSection_get_ConfigContext_m4131621597,
+	ConfigurationSection_set_ConfigContext_m1616871218,
+	ConfigurationSection_GetRuntimeObject_m3965484768,
+	ConfigurationSection_IsModified_m1833174423,
+	ConfigurationSection_ResetModified_m2300774056,
+	ConfigurationSection_CreateElement_m1756012205,
+	ConfigurationSection_DoDeserializeSection_m2782358321,
+	ConfigurationSection_DeserializeSection_m1139223106,
+	ConfigurationSection_DeserializeConfigSource_m495463306,
+	ConfigurationSection_SerializeSection_m2886244226,
+	ConfigurationSectionCollection__ctor_m452173858,
+	ConfigurationSectionCollection_get_Keys_m1706717625,
+	ConfigurationSectionCollection_get_Count_m3164332684,
+	ConfigurationSectionCollection_get_Item_m1500557111,
+	ConfigurationSectionCollection_GetEnumerator_m1242675576,
+	ConfigurationSectionCollection_GetObjectData_m253846356,
+	U3CGetEnumeratorU3Ec__Iterator0__ctor_m2507040616,
+	U3CGetEnumeratorU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3533736502,
+	U3CGetEnumeratorU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m20938814,
+	U3CGetEnumeratorU3Ec__Iterator0_MoveNext_m3065246498,
+	U3CGetEnumeratorU3Ec__Iterator0_Dispose_m2640554235,
+	U3CGetEnumeratorU3Ec__Iterator0_Reset_m3299736337,
+	ConfigurationSectionGroup__ctor_m298945591,
+	ConfigurationSectionGroup_get_Config_m3001742842,
+	ConfigurationSectionGroup_Initialize_m2622037419,
+	ConfigurationSectionGroup_get_SectionGroups_m3335531313,
+	ConfigurationSectionGroup_get_Sections_m3419181621,
+	ConfigurationSectionGroupCollection__ctor_m2237904677,
+	ConfigurationSectionGroupCollection_get_Keys_m3664428060,
+	ConfigurationSectionGroupCollection_get_Count_m447488593,
+	ConfigurationSectionGroupCollection_get_Item_m2720920827,
+	ConfigurationSectionGroupCollection_GetEnumerator_m2684317377,
+	ConfigurationSectionGroupCollection_GetObjectData_m378227929,
+	ConfigurationValidatorAttribute_get_ValidatorInstance_m35782466,
+	ConfigurationValidatorBase__ctor_m3250462424,
+	ConfigurationValidatorBase_CanValidate_m2900122087,
+	DefaultSection__ctor_m1597606775,
+	DefaultSection__cctor_m1370258022,
+	DefaultSection_DeserializeSection_m2332286625,
+	DefaultSection_IsModified_m1050808524,
+	DefaultSection_Reset_m516688665,
+	DefaultSection_ResetModified_m2081880583,
+	DefaultSection_SerializeSection_m580503059,
+	DefaultSection_get_Properties_m1402553764,
+	DefaultValidator__ctor_m233258192,
+	DefaultValidator_CanValidate_m2475130869,
+	DefaultValidator_Validate_m4293733324,
+	ElementInformation__ctor_m815008552,
+	ElementInformation_get_Properties_m1533763968,
+	ElementInformation_Reset_m3203551617,
+	ElementMap__ctor_m2348370310,
+	ElementMap__cctor_m3070084744,
+	ElementMap_GetMap_m1137301092,
+	ElementMap_get_Properties_m169107978,
+	ExeConfigurationFileMap__ctor_m2848771159,
+	ExeConfigurationFileMap_get_ExeConfigFilename_m4217231138,
+	ExeConfigurationFileMap_set_ExeConfigFilename_m2695258183,
+	ExeConfigurationFileMap_get_LocalUserConfigFilename_m3988942578,
+	ExeConfigurationFileMap_set_LocalUserConfigFilename_m245771243,
+	ExeConfigurationFileMap_get_RoamingUserConfigFilename_m3176990010,
+	ExeConfigurationFileMap_set_RoamingUserConfigFilename_m4034760815,
+	ExeConfigurationFileMap_Clone_m3686499741,
+	ExeConfigurationHost__ctor_m2672717525,
+	ExeConfigurationHost_Init_m1279008829,
+	ExeConfigurationHost_GetStreamName_m4070417723,
+	ExeConfigurationHost_InitForConfiguration_m442278400,
+	IgnoreSection__ctor_m4055714512,
+	IgnoreSection__cctor_m1005553135,
+	IgnoreSection_IsModified_m3722026291,
+	IgnoreSection_DeserializeSection_m2922463074,
+	IgnoreSection_Reset_m2294022138,
+	IgnoreSection_ResetModified_m2018290788,
+	IgnoreSection_SerializeSection_m1724288736,
+	IgnoreSection_get_Properties_m3548508015,
+	InternalConfigurationFactory__ctor_m2455511552,
+	InternalConfigurationFactory_Create_m3329707975,
+	InternalConfigurationHost__ctor_m1120670670,
+	InternalConfigurationHost_CreateDeprecatedConfigContext_m3055903953,
+	InternalConfigurationHost_GetConfigPathFromLocationSubPath_m3102336364,
+	InternalConfigurationHost_GetConfigType_m2265190311,
+	InternalConfigurationHost_IsDefinitionAllowed_m2472316359,
+	InternalConfigurationHost_get_bundled_machine_config_m171293269,
+	InternalConfigurationHost_OpenStreamForRead_m1823276945,
+	InternalConfigurationRoot__ctor_m903766256,
+	InternalConfigurationRoot_Init_m2920331433,
+	InternalConfigurationSystem__ctor_m1377055107,
+	InternalConfigurationSystem_Init_m117598888,
+	InternalConfigurationSystem_InitForConfiguration_m909576572,
+	InternalConfigurationSystem_get_Host_m3360228097,
+	PropertyInformation__ctor_m3964645511,
+	PropertyInformation_get_DefaultValue_m2865970966,
+	PropertyInformation_get_IsKey_m53514336,
+	PropertyInformation_get_IsModified_m2197427276,
+	PropertyInformation_set_IsModified_m2277508543,
+	PropertyInformation_get_IsRequired_m2394064138,
+	PropertyInformation_get_Name_m339533533,
+	PropertyInformation_get_Type_m2447867467,
+	PropertyInformation_get_Value_m1250658193,
+	PropertyInformation_set_Value_m1161719494,
+	PropertyInformation_Reset_m4131859557,
+	PropertyInformation_get_IsElement_m1135806159,
+	PropertyInformation_get_ValueOrigin_m1155932344,
+	PropertyInformation_GetStringValue_m233999863,
+	PropertyInformation_SetStringValue_m1643234174,
+	PropertyInformation_get_Property_m530348717,
+	PropertyInformationCollection__ctor_m3360125324,
+	PropertyInformationCollection_get_Item_m1640937095,
+	PropertyInformationCollection_GetEnumerator_m2342156100,
+	PropertyInformationCollection_Add_m3086044235,
+	PropertyInformationCollection_GetObjectData_m1752565104,
+	PropertyInformationEnumerator__ctor_m3513537070,
+	PropertyInformationEnumerator_get_Current_m3392533325,
+	PropertyInformationEnumerator_MoveNext_m1887690358,
+	PropertyInformationEnumerator_Reset_m2871712389,
+	ProtectedConfiguration_get_Providers_m2677655615,
+	ProtectedConfiguration_get_Section_m2417461286,
+	ProtectedConfiguration_GetProvider_m659380218,
+	ProtectedConfigurationProviderCollection__ctor_m2871984156,
+	ProtectedConfigurationProviderCollection_get_Item_m2881465527,
+	ProtectedConfigurationProviderCollection_Add_m1943221191,
+	ProtectedConfigurationSection__cctor_m710069301,
+	ProtectedConfigurationSection_get_Providers_m3108810289,
+	ProtectedConfigurationSection_get_Properties_m3218406561,
+	ProtectedConfigurationSection_GetAllProviders_m1380267610,
+	ProtectedConfigurationSection_InstantiateProvider_m1916220169,
+	ProviderBase_Initialize_m309026731,
+	ProviderBase_get_Name_m1908650449,
+	ProviderCollection__ctor_m2739070153,
+	ProviderCollection_System_Collections_ICollection_CopyTo_m1409815097,
+	ProviderCollection_Add_m2062313466,
+	ProviderCollection_GetEnumerator_m2535943389,
+	ProviderCollection_get_Count_m1651598797,
+	ProviderCollection_get_IsSynchronized_m2860234084,
+	ProviderCollection_get_SyncRoot_m2583585530,
+	ProviderCollection_get_Item_m4205164,
+	ProviderSettings__ctor_m2418229397,
+	ProviderSettings__cctor_m1551014246,
+	ProviderSettings_OnDeserializeUnrecognizedAttribute_m2101799192,
+	ProviderSettings_IsModified_m4208587056,
+	ProviderSettings_Reset_m748547671,
+	ProviderSettings_Unmerge_m3899437761,
+	ProviderSettings_get_Name_m2720563190,
+	ProviderSettings_get_Type_m525859805,
+	ProviderSettings_get_Properties_m1448998824,
+	ProviderSettings_get_Parameters_m1237896802,
+	ProviderSettingsCollection__cctor_m2098499738,
+	ProviderSettingsCollection_CreateNewElement_m278470757,
+	ProviderSettingsCollection_GetElementKey_m2598146650,
+	ProviderSettingsCollection_get_Properties_m2175226160,
+	SectionGroupInfo__ctor_m2214539325,
+	SectionGroupInfo__cctor_m673398592,
+	SectionGroupInfo_AddChild_m3251971407,
+	SectionGroupInfo_Clear_m3188268036,
+	SectionGroupInfo_HasChild_m1202859971,
+	SectionGroupInfo_RemoveChild_m2246840815,
+	SectionGroupInfo_get_Sections_m2472444668,
+	SectionGroupInfo_get_Groups_m2080419472,
+	SectionGroupInfo_ReadConfig_m964124140,
+	SectionGroupInfo_ReadRemoveSection_m3200085140,
+	SectionGroupInfo_ReadRootData_m1364370771,
+	SectionGroupInfo_ReadData_m4130533217,
+	SectionGroupInfo_ReadContent_m2298842435,
+	SectionGroupInfo_GetConfigInfo_m1968621232,
+	SectionGroupInfo_Merge_m1107900400,
+	SectionInfo__ctor_m3237924430,
+	SectionInfo_CreateInstance_m3857848628,
+	SectionInfo_ReadConfig_m1508625577,
+	SectionInfo_ReadData_m2814313648,
+	SectionInfo_Merge_m2513541987,
+	SectionInformation__ctor_m118501942,
+	SectionInformation_get_ConfigFilePath_m966874317,
+	SectionInformation_set_ConfigFilePath_m2908232936,
+	SectionInformation_set_AllowDefinition_m391233744,
+	SectionInformation_set_AllowExeDefinition_m2089738550,
+	SectionInformation_set_AllowLocation_m1178294342,
+	SectionInformation_get_ConfigSource_m1613439595,
+	SectionInformation_set_ConfigSource_m2152533200,
+	SectionInformation_set_RequirePermission_m1040565520,
+	SectionInformation_set_RestartOnExternalChanges_m2815572962,
+	SectionInformation_GetParentSection_m3638988220,
+	SectionInformation_SetParentSection_m321631079,
+	SectionInformation_ProtectSection_m230982508,
+	SectionInformation_SetRawXml_m1162572473,
+	SectionInformation_SetName_m2381998591,
+	MonoInternalNoteAttribute__ctor_m2854554221,
+	MonoTODOAttribute__ctor_m817868876,
+	MonoTODOAttribute__ctor_m1940477654,
 	Locale_GetText_m4034107474,
 	Locale_GetText_m1445803604,
 	OSX509Certificates__cctor_m1823235584,
@@ -31706,7 +35430,7 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	DictionaryNodeEnumerator_get_Value_m2179504825,
 	NameObjectCollectionBase__ctor_m2433753948,
 	NameObjectCollectionBase__ctor_m2025187105,
-	NameObjectCollectionBase__ctor_m3028321656,
+	NameObjectCollectionBase__ctor_m2843349416,
 	NameObjectCollectionBase__ctor_m241668161,
 	NameObjectCollectionBase__ctor_m4071024582,
 	NameObjectCollectionBase_System_Collections_ICollection_get_IsSynchronized_m4271190852,
@@ -31721,13 +35445,13 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	NameObjectCollectionBase_get_Count_m2353593692,
 	NameObjectCollectionBase_OnDeserialization_m3478980442,
 	NameObjectCollectionBase_get_IsReadOnly_m3287350911,
-	NameObjectCollectionBase_BaseAdd_m964300824,
-	NameObjectCollectionBase_BaseClear_m125195694,
-	NameObjectCollectionBase_BaseGet_m667273025,
-	NameObjectCollectionBase_BaseGet_m3772026934,
+	NameObjectCollectionBase_BaseAdd_m2553984848,
+	NameObjectCollectionBase_BaseClear_m3254864954,
+	NameObjectCollectionBase_BaseGet_m2690623991,
+	NameObjectCollectionBase_BaseGet_m4152270534,
 	NameObjectCollectionBase_BaseGetKey_m1766059806,
-	NameObjectCollectionBase_BaseRemove_m3247708763,
-	NameObjectCollectionBase_BaseSet_m1294211025,
+	NameObjectCollectionBase_BaseRemove_m497600633,
+	NameObjectCollectionBase_BaseSet_m1854375571,
 	NameObjectCollectionBase_FindFirstMatchedItem_m2460648656,
 	NameObjectCollectionBase_Equals_m1130527645,
 	_Item__ctor_m1496904011,
@@ -31741,11 +35465,11 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	KeysCollection_System_Collections_ICollection_get_SyncRoot_m2289369147,
 	KeysCollection_get_Count_m3650400467,
 	KeysCollection_GetEnumerator_m3831125359,
-	NameValueCollection__ctor_m1767369537,
-	NameValueCollection__ctor_m2225277639,
+	NameValueCollection__ctor_m1929851035,
+	NameValueCollection__ctor_m3524889949,
 	NameValueCollection__ctor_m3660918416,
-	NameValueCollection_get_Item_m2776418562,
-	NameValueCollection_set_Item_m3775607929,
+	NameValueCollection_get_Item_m2645480742,
+	NameValueCollection_set_Item_m1374509551,
 	NameValueCollection_Add_m2977622107,
 	NameValueCollection_Add_m263445674,
 	NameValueCollection_Get_m861415899,
@@ -31755,7 +35479,7 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	NameValueCollection_GetValues_m1275908180,
 	NameValueCollection_AsStringArray_m1681029335,
 	NameValueCollection_Remove_m629217025,
-	NameValueCollection_Set_m2969274643,
+	NameValueCollection_Set_m3172952177,
 	NameValueCollection_InvalidateCachedArrays_m1142700554,
 	StringCollection__ctor_m2392274323,
 	StringCollection_System_Collections_IList_get_IsReadOnly_m3716594668,
@@ -32938,20 +36662,20 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	ToolboxItemFilterAttribute_Match_m135261178,
 	ToolboxItemFilterAttribute_ToString_m661989874,
 	TypeConverter__ctor_m3380301159,
-	TypeConverter_CanConvertFrom_m1824018217,
+	TypeConverter_CanConvertFrom_m2207973887,
 	TypeConverter_CanConvertFrom_m1277808141,
 	TypeConverter_CanConvertTo_m3984515018,
 	TypeConverter_CanConvertTo_m3192242134,
-	TypeConverter_ConvertFrom_m757293553,
+	TypeConverter_ConvertFrom_m3616211731,
 	TypeConverter_ConvertFrom_m3174062747,
-	TypeConverter_ConvertFromInvariantString_m1701603654,
+	TypeConverter_ConvertFromInvariantString_m2229102078,
 	TypeConverter_ConvertFromInvariantString_m1072000636,
 	TypeConverter_ConvertFromString_m1918759906,
 	TypeConverter_ConvertFromString_m3964413992,
 	TypeConverter_ConvertFromString_m3568010184,
 	TypeConverter_ConvertTo_m2094680623,
 	TypeConverter_ConvertTo_m528793397,
-	TypeConverter_ConvertToInvariantString_m2615559221,
+	TypeConverter_ConvertToInvariantString_m1236807103,
 	TypeConverter_ConvertToInvariantString_m407162877,
 	TypeConverter_ConvertToString_m3590519313,
 	TypeConverter_ConvertToString_m127192225,
@@ -33000,7 +36724,7 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	TypeConverterAttribute__cctor_m506796812,
 	TypeConverterAttribute_Equals_m2330345916,
 	TypeConverterAttribute_GetHashCode_m131437980,
-	TypeConverterAttribute_get_ConverterTypeName_m2296240606,
+	TypeConverterAttribute_get_ConverterTypeName_m1307032478,
 	TypeDescriptionProvider__ctor_m960440148,
 	TypeDescriptionProvider__ctor_m1628468586,
 	TypeDescriptionProvider_CreateInstance_m451412922,
@@ -33045,7 +36769,7 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	TypeDescriptor_GetConverter_m1302924816,
 	TypeDescriptor_GetConverter_m2779430453,
 	TypeDescriptor_get_DefaultConverters_m3008219029,
-	TypeDescriptor_GetConverter_m1788154595,
+	TypeDescriptor_GetConverter_m2863175601,
 	TypeDescriptor_FindDefaultConverterType_m1939082393,
 	TypeDescriptor_GetDefaultEvent_m1693368423,
 	TypeDescriptor_GetDefaultEvent_m472929496,
@@ -33166,18 +36890,18 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Win32Exception_get_NativeErrorCode_m2974494452,
 	Win32Exception_GetObjectData_m2648429033,
 	Win32Exception_W32ErrorMessage_m916044474,
-	ConfigurationException__ctor_m1046987330,
-	ConfigurationException__ctor_m1950737452,
-	ConfigurationException__ctor_m3177755519,
-	ConfigurationException__ctor_m3617147564,
+	ConfigurationException__ctor_m2016541990,
+	ConfigurationException__ctor_m155150844,
+	ConfigurationException__ctor_m1625396877,
+	ConfigurationException__ctor_m134485716,
 	ConfigurationException__ctor_m2353791559,
 	ConfigurationException__ctor_m3525068459,
-	ConfigurationException__ctor_m2633858641,
-	ConfigurationException_get_BareMessage_m74709031,
+	ConfigurationException__ctor_m146514043,
+	ConfigurationException_get_BareMessage_m1773829953,
 	ConfigurationException_get_Message_m4079252099,
 	ConfigurationException_GetXmlNodeFilename_m3187209172,
 	ConfigurationException_GetXmlNodeLineNumber_m3219878065,
-	ConfigurationException_GetObjectData_m832314182,
+	ConfigurationException_GetObjectData_m2618268214,
 	ConfigurationSettings__cctor_m1127819917,
 	ConfigurationSettings_GetConfig_m3759429389,
 	DefaultConfig__ctor_m2771391998,
@@ -33350,6 +37074,7 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	GZipStream_get_Length_m436994325,
 	GZipStream_get_Position_m1646138170,
 	GZipStream_set_Position_m2544990935,
+	MonoLimitationAttribute__ctor_m722814010,
 	MonoNotSupportedAttribute__ctor_m525307291,
 	MonoTODOAttribute__ctor_m4004919844,
 	MonoTODOAttribute__ctor_m991492462,
@@ -34492,6 +38217,17 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	WebResponse_Close_m3788698729,
 	WebResponse_GetResponseStream_m629848918,
 	WebResponse_GetObjectData_m3352137755,
+	DefaultParameterValueAttribute__ctor_m458420735,
+	DefaultParameterValueAttribute_get_Value_m1687085018,
+	HandleCollector__ctor_m3314435530,
+	HandleCollector__ctor_m2995166471,
+	HandleCollector_get_Count_m3616622921,
+	HandleCollector_get_InitialThreshold_m680859983,
+	HandleCollector_get_MaximumThreshold_m1939631573,
+	HandleCollector_get_Name_m1920967056,
+	HandleCollector_Add_m1173341632,
+	HandleCollector_Remove_m1328079655,
+	StandardOleMarshalObject__ctor_m3296759340,
 	AsnEncodedData__ctor_m1611830939,
 	AsnEncodedData__ctor_m1211934482,
 	AsnEncodedData__ctor_m3538036029,
@@ -34729,6 +38465,7 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	X509SubjectKeyIdentifierExtension_Encode_m4237278042,
 	X509SubjectKeyIdentifierExtension_ToString_m4073475390,
 	BaseMachine__ctor_m2327544039,
+	BaseMachine_Split_m3850876468,
 	BaseMachine_Scan_m122450399,
 	Capture__ctor_m885749277,
 	Capture__ctor_m2965900721,
@@ -34954,11 +38691,13 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	QuickSearch_GetShiftDistance_m2364008966,
 	QuickSearch_GetChar_m2043548857,
 	Regex__ctor_m3250610064,
-	Regex__ctor_m2794328522,
+	Regex__ctor_m2930443103,
 	Regex__ctor_m2521903438,
 	Regex__ctor_m392221833,
 	Regex__cctor_m3397544801,
 	Regex_System_Runtime_Serialization_ISerializable_GetObjectData_m4035555909,
+	Regex_Split_m4283382107,
+	Regex_Split_m2213626959,
 	Regex_validate_options_m3563464259,
 	Regex_Init_m1873144192,
 	Regex_InitNewRegex_m692548389,
@@ -34972,6 +38711,8 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Regex_Match_m4277133443,
 	Regex_Matches_m3834294444,
 	Regex_Matches_m1377235443,
+	Regex_Split_m1805163013,
+	Regex_Split_m1359617913,
 	Regex_ToString_m3687329849,
 	Regex_get_Gap_m2028850051,
 	Regex_CreateMachine_m1003508921,
@@ -35301,410 +39042,6 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	UriTypeConverter_ConvertFrom_m2743854187,
 	UriTypeConverter_ConvertTo_m507771013,
 	UriTypeConverter_IsValid_m2806107649,
-	ConfigXmlTextReader__ctor_m965728314,
-	ConfigXmlTextReader__ctor_m2778808542,
-	ConfigXmlTextReader_get_Filename_m3902945538,
-	ClientConfigurationSystem__ctor_m2508818941,
-	ClientConfigurationSystem_System_Configuration_Internal_IInternalConfigSystem_GetSection_m2690705608,
-	ClientConfigurationSystem_get_Configuration_m1415521026,
-	ConfigInfo__ctor_m2533184409,
-	ConfigInfo_CreateInstance_m615435773,
-	ConfigInfo_set_StreamName_m1734466909,
-	ConfigInfo_ThrowException_m3313572946,
-	ConfigInfoCollection__ctor_m2267743875,
-	ConfigInfoCollection_get_AllKeys_m3546771423,
-	ConfigInfoCollection_get_Item_m4196945655,
-	ConfigInfoCollection_set_Item_m406516082,
-	ConfigInfoCollection_Add_m1288541941,
-	ConfigInfoCollection_Clear_m1297066444,
-	ConfigInfoCollection_Remove_m1334699295,
-	ConfigNameValueCollection__ctor_m1183291289,
-	ConfigNameValueCollection__ctor_m2285608570,
-	ConfigNameValueCollection_ResetModified_m2605677405,
-	ConfigNameValueCollection_get_IsModified_m3218832143,
-	ConfigNameValueCollection_Set_m2008693955,
-	Configuration__ctor_m3545852494,
-	Configuration__ctor_m88421328,
-	Configuration_FindLocationConfiguration_m4081437406,
-	Configuration_Init_m2991025886,
-	Configuration_get_Parent_m335637978,
-	Configuration_set_Parent_m3106974805,
-	Configuration_GetParentWithFile_m1651703053,
-	Configuration_get_ConfigHost_m854336265,
-	Configuration_get_LocationConfigPath_m609030371,
-	Configuration_get_ConfigPath_m937107392,
-	Configuration_get_FilePath_m3184045596,
-	Configuration_get_HasFile_m1167170352,
-	Configuration_get_Locations_m2394414303,
-	Configuration_get_RootSectionGroup_m1643677634,
-	Configuration_get_SectionGroups_m2782934403,
-	Configuration_get_Sections_m3724328875,
-	Configuration_GetSection_m3056810807,
-	Configuration_GetSectionInstance_m3769455073,
-	Configuration_GetSectionGroupInstance_m2028928705,
-	Configuration_SetSectionXml_m2783526347,
-	Configuration_GetSectionXml_m1792995434,
-	Configuration_Load_m851220319,
-	Configuration_ReadConfigFile_m1878607525,
-	Configuration_ReadData_m342895002,
-	Configuration_ThrowException_m3079645534,
-	ConfigurationCollectionAttribute__ctor_m1251693102,
-	ConfigurationCollectionAttribute_get_AddItemName_m1343590308,
-	ConfigurationCollectionAttribute_get_ClearItemsName_m2101089535,
-	ConfigurationCollectionAttribute_get_RemoveItemName_m1223332851,
-	ConfigurationCollectionAttribute_set_CollectionType_m1820962205,
-	ConfigurationElement__ctor_m1276017081,
-	ConfigurationElement_get_Configuration_m2347242418,
-	ConfigurationElement_set_Configuration_m1639150663,
-	ConfigurationElement_InitFromProperty_m3625723156,
-	ConfigurationElement_get_ElementInformation_m3882602470,
-	ConfigurationElement_get_RawXml_m2664527628,
-	ConfigurationElement_set_RawXml_m3850583953,
-	ConfigurationElement_Init_m1329365593,
-	ConfigurationElement_get_LockAllAttributesExcept_m3610263831,
-	ConfigurationElement_get_LockAllElementsExcept_m1554073633,
-	ConfigurationElement_get_LockAttributes_m3450186057,
-	ConfigurationElement_get_LockElements_m2225570247,
-	ConfigurationElement_set_LockItem_m3758070483,
-	ConfigurationElement_SetPropertyValue_m1782021972,
-	ConfigurationElement_GetKeyProperties_m4219970304,
-	ConfigurationElement_GetDefaultCollection_m1796439560,
-	ConfigurationElement_get_Item_m1850092018,
-	ConfigurationElement_set_Item_m2558768429,
-	ConfigurationElement_get_Item_m3478882412,
-	ConfigurationElement_set_Item_m3141894725,
-	ConfigurationElement_get_Properties_m4044803742,
-	ConfigurationElement_Equals_m3484522968,
-	ConfigurationElement_GetHashCode_m2198573252,
-	ConfigurationElement_HasValues_m1341383433,
-	ConfigurationElement_HasLocalModifications_m169968917,
-	ConfigurationElement_DeserializeElement_m2430565615,
-	ConfigurationElement_OnDeserializeUnrecognizedAttribute_m157901910,
-	ConfigurationElement_OnDeserializeUnrecognizedElement_m1053820706,
-	ConfigurationElement_OnRequiredPropertyNotFound_m3323765040,
-	ConfigurationElement_PreSerialize_m1824129726,
-	ConfigurationElement_PostDeserialize_m3225465312,
-	ConfigurationElement_InitializeDefault_m2939047706,
-	ConfigurationElement_IsModified_m748618350,
-	ConfigurationElement_SetReadOnly_m1594739059,
-	ConfigurationElement_IsReadOnly_m2244525315,
-	ConfigurationElement_Reset_m484744193,
-	ConfigurationElement_ResetModified_m933170487,
-	ConfigurationElement_SerializeElement_m4131562944,
-	ConfigurationElement_SerializeToXmlElement_m3789742405,
-	ConfigurationElement_Unmerge_m2515561191,
-	ConfigurationElement_HasValue_m1390685398,
-	ConfigurationElement_ValidateValue_m1396480566,
-	ConfigurationElementCollection__ctor_m1722138055,
-	ConfigurationElementCollection_System_Collections_ICollection_CopyTo_m3947886345,
-	ConfigurationElementCollection_InitFromProperty_m3084253332,
-	ConfigurationElementCollection_get_CollectionType_m2878912072,
-	ConfigurationElementCollection_get_IsBasic_m1624364384,
-	ConfigurationElementCollection_get_IsAlternate_m1087333324,
-	ConfigurationElementCollection_get_Count_m1016392721,
-	ConfigurationElementCollection_get_ElementName_m1163032572,
-	ConfigurationElementCollection_set_EmitClear_m649573135,
-	ConfigurationElementCollection_get_IsSynchronized_m3152177730,
-	ConfigurationElementCollection_get_SyncRoot_m1263605066,
-	ConfigurationElementCollection_get_ThrowOnDuplicate_m2516679882,
-	ConfigurationElementCollection_get_AddElementName_m2131549453,
-	ConfigurationElementCollection_get_ClearElementName_m344564617,
-	ConfigurationElementCollection_get_RemoveElementName_m670755192,
-	ConfigurationElementCollection_BaseAdd_m692033632,
-	ConfigurationElementCollection_BaseAdd_m1594255685,
-	ConfigurationElementCollection_BaseClear_m1999336003,
-	ConfigurationElementCollection_BaseGet_m498332263,
-	ConfigurationElementCollection_BaseGet_m673060682,
-	ConfigurationElementCollection_BaseIndexOf_m1544895010,
-	ConfigurationElementCollection_IndexOfKey_m1888078841,
-	ConfigurationElementCollection_BaseRemove_m1128013164,
-	ConfigurationElementCollection_BaseRemoveAt_m1239272108,
-	ConfigurationElementCollection_CompareKeys_m682234560,
-	ConfigurationElementCollection_CreateNewElement_m3219927641,
-	ConfigurationElementCollection_CreateNewElementInternal_m226698700,
-	ConfigurationElementCollection_Equals_m2221773756,
-	ConfigurationElementCollection_GetHashCode_m770974360,
-	ConfigurationElementCollection_GetEnumerator_m2214669871,
-	ConfigurationElementCollection_IsElementName_m2704993900,
-	ConfigurationElementCollection_IsElementRemovable_m1916442331,
-	ConfigurationElementCollection_IsModified_m4233298518,
-	ConfigurationElementCollection_IsReadOnly_m2147280149,
-	ConfigurationElementCollection_HasValues_m4112686071,
-	ConfigurationElementCollection_Reset_m3142114271,
-	ConfigurationElementCollection_ResetModified_m3318214445,
-	ConfigurationElementCollection_SetReadOnly_m2819095069,
-	ConfigurationElementCollection_SerializeElement_m3696766444,
-	ConfigurationElementCollection_OnDeserializeUnrecognizedElement_m1168261278,
-	ConfigurationElementCollection_Unmerge_m2009439485,
-	ConfigurationRemoveElement__ctor_m2892373574,
-	ConfigurationRemoveElement_get_KeyValue_m2322918292,
-	ConfigurationRemoveElement_get_Properties_m4160822773,
-	ConfigurationErrorsException__ctor_m3609325505,
-	ConfigurationErrorsException__ctor_m2348714781,
-	ConfigurationErrorsException__ctor_m1926925674,
-	ConfigurationErrorsException__ctor_m3963297863,
-	ConfigurationErrorsException__ctor_m3089652486,
-	ConfigurationErrorsException__ctor_m4265896371,
-	ConfigurationErrorsException__ctor_m3506512730,
-	ConfigurationErrorsException_get_BareMessage_m403421148,
-	ConfigurationErrorsException_get_Message_m3733233144,
-	ConfigurationErrorsException_GetFilename_m2673389627,
-	ConfigurationErrorsException_GetLineNumber_m1372608032,
-	ConfigurationErrorsException_GetFilename_m2049567258,
-	ConfigurationErrorsException_GetLineNumber_m3976484637,
-	ConfigurationErrorsException_GetObjectData_m770656613,
-	ConfigurationFileMap__ctor_m3731838539,
-	ConfigurationFileMap__ctor_m3124444437,
-	ConfigurationFileMap_get_MachineConfigFilename_m1702653625,
-	ConfigurationFileMap_set_MachineConfigFilename_m3052034378,
-	ConfigurationFileMap_Clone_m1273941989,
-	ConfigurationLocation__ctor_m3125296074,
-	ConfigurationLocation__cctor_m1384898491,
-	ConfigurationLocation_get_Path_m2365456525,
-	ConfigurationLocation_OpenConfiguration_m2905080700,
-	ConfigurationLocation_SetParentConfiguration_m4197005207,
-	ConfigurationLocationCollection__ctor_m303069056,
-	ConfigurationLocationCollection_Add_m3681642539,
-	ConfigurationLocationCollection_Find_m3684263568,
-	ConfigurationLockCollection__ctor_m870306509,
-	ConfigurationLockCollection_System_Collections_ICollection_CopyTo_m3497490008,
-	ConfigurationLockCollection_CheckName_m2810988355,
-	ConfigurationLockCollection_Add_m3416925987,
-	ConfigurationLockCollection_Clear_m2378334261,
-	ConfigurationLockCollection_GetEnumerator_m3742833280,
-	ConfigurationLockCollection_SetFromList_m2739237306,
-	ConfigurationLockCollection_get_Count_m3926033248,
-	ConfigurationLockCollection_get_IsSynchronized_m1658122353,
-	ConfigurationLockCollection_get_SyncRoot_m1477706993,
-	ConfigurationManager__cctor_m145104057,
-	ConfigurationManager_GetAssemblyInfo_m1959334153,
-	ConfigurationManager_OpenExeConfigurationInternal_m2337857263,
-	ConfigurationManager_get_ConfigurationFactory_m113132422,
-	ConfigurationManager_get_ConfigurationSystem_m1820628092,
-	ConfigurationManager_GetSection_m1187558274,
-	ConfigurationProperty__ctor_m2339141717,
-	ConfigurationProperty__ctor_m2205928547,
-	ConfigurationProperty__ctor_m1024361505,
-	ConfigurationProperty__ctor_m2779674618,
-	ConfigurationProperty__ctor_m664996226,
-	ConfigurationProperty__cctor_m3667988185,
-	ConfigurationProperty_get_DefaultValue_m426297024,
-	ConfigurationProperty_get_IsKey_m2843757270,
-	ConfigurationProperty_get_IsRequired_m2849112540,
-	ConfigurationProperty_get_IsDefaultCollection_m4193636108,
-	ConfigurationProperty_get_Name_m2150541641,
-	ConfigurationProperty_get_Type_m573764699,
-	ConfigurationProperty_get_Validator_m1030428852,
-	ConfigurationProperty_ConvertFromString_m661781545,
-	ConfigurationProperty_ConvertToString_m137757750,
-	ConfigurationProperty_get_IsElement_m12977767,
-	ConfigurationProperty_get_CollectionAttribute_m256228153,
-	ConfigurationProperty_set_CollectionAttribute_m21883792,
-	ConfigurationProperty_Validate_m556423690,
-	ConfigurationPropertyAttribute__ctor_m2756034538,
-	ConfigurationPropertyAttribute_get_DefaultValue_m315790916,
-	ConfigurationPropertyAttribute_set_DefaultValue_m645825465,
-	ConfigurationPropertyAttribute_get_Options_m78342746,
-	ConfigurationPropertyAttribute_set_Options_m540649869,
-	ConfigurationPropertyAttribute_get_Name_m3548275941,
-	ConfigurationPropertyCollection__ctor_m2795982958,
-	ConfigurationPropertyCollection_System_Collections_ICollection_CopyTo_m3374724930,
-	ConfigurationPropertyCollection_get_Count_m1518273402,
-	ConfigurationPropertyCollection_get_IsSynchronized_m2330227857,
-	ConfigurationPropertyCollection_get_SyncRoot_m2789197201,
-	ConfigurationPropertyCollection_Add_m3481099429,
-	ConfigurationPropertyCollection_GetEnumerator_m3414286410,
-	ConfigurationSection__ctor_m714843276,
-	ConfigurationSection_get_SectionHandler_m1982719862,
-	ConfigurationSection_set_SectionHandler_m1410633441,
-	ConfigurationSection_get_SectionInformation_m4037021195,
-	ConfigurationSection_get_ConfigContext_m4131621597,
-	ConfigurationSection_set_ConfigContext_m1616871218,
-	ConfigurationSection_GetRuntimeObject_m3965484768,
-	ConfigurationSection_IsModified_m1833174423,
-	ConfigurationSection_ResetModified_m2300774056,
-	ConfigurationSection_CreateElement_m1756012205,
-	ConfigurationSection_DoDeserializeSection_m2782358321,
-	ConfigurationSection_DeserializeSection_m1139223106,
-	ConfigurationSection_DeserializeConfigSource_m495463306,
-	ConfigurationSection_SerializeSection_m2886244226,
-	ConfigurationSectionCollection__ctor_m452173858,
-	ConfigurationSectionCollection_get_Keys_m1706717625,
-	ConfigurationSectionCollection_get_Count_m3164332684,
-	ConfigurationSectionCollection_get_Item_m3421303889,
-	ConfigurationSectionCollection_GetEnumerator_m1242675576,
-	ConfigurationSectionCollection_GetObjectData_m253846356,
-	U3CGetEnumeratorU3Ec__Iterator0__ctor_m2507040616,
-	U3CGetEnumeratorU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3533736502,
-	U3CGetEnumeratorU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m20938814,
-	U3CGetEnumeratorU3Ec__Iterator0_MoveNext_m3065246498,
-	U3CGetEnumeratorU3Ec__Iterator0_Dispose_m2640554235,
-	U3CGetEnumeratorU3Ec__Iterator0_Reset_m3299736337,
-	ConfigurationSectionGroup__ctor_m2215148105,
-	ConfigurationSectionGroup_get_Config_m3001742842,
-	ConfigurationSectionGroup_Initialize_m2622037419,
-	ConfigurationSectionGroup_get_SectionGroups_m2522870927,
-	ConfigurationSectionGroup_get_Sections_m3081736119,
-	ConfigurationSectionGroupCollection__ctor_m2237904677,
-	ConfigurationSectionGroupCollection_get_Keys_m3664428060,
-	ConfigurationSectionGroupCollection_get_Count_m447488593,
-	ConfigurationSectionGroupCollection_get_Item_m4125903849,
-	ConfigurationSectionGroupCollection_GetEnumerator_m2684317377,
-	ConfigurationSectionGroupCollection_GetObjectData_m378227929,
-	ConfigurationValidatorAttribute_get_ValidatorInstance_m35782466,
-	ConfigurationValidatorBase__ctor_m3250462424,
-	ConfigurationValidatorBase_CanValidate_m2900122087,
-	DefaultSection__ctor_m1597606775,
-	DefaultSection__cctor_m1370258022,
-	DefaultSection_DeserializeSection_m2332286625,
-	DefaultSection_IsModified_m1050808524,
-	DefaultSection_Reset_m516688665,
-	DefaultSection_ResetModified_m2081880583,
-	DefaultSection_SerializeSection_m580503059,
-	DefaultSection_get_Properties_m1402553764,
-	DefaultValidator__ctor_m233258192,
-	DefaultValidator_CanValidate_m2475130869,
-	DefaultValidator_Validate_m4293733324,
-	ElementInformation__ctor_m815008552,
-	ElementInformation_get_Properties_m1533763968,
-	ElementInformation_Reset_m3203551617,
-	ElementMap__ctor_m2348370310,
-	ElementMap__cctor_m3070084744,
-	ElementMap_GetMap_m1137301092,
-	ElementMap_get_Properties_m169107978,
-	ExeConfigurationFileMap__ctor_m2848771159,
-	ExeConfigurationFileMap_get_ExeConfigFilename_m4217231138,
-	ExeConfigurationFileMap_set_ExeConfigFilename_m2695258183,
-	ExeConfigurationFileMap_get_LocalUserConfigFilename_m3988942578,
-	ExeConfigurationFileMap_set_LocalUserConfigFilename_m245771243,
-	ExeConfigurationFileMap_get_RoamingUserConfigFilename_m3176990010,
-	ExeConfigurationFileMap_set_RoamingUserConfigFilename_m4034760815,
-	ExeConfigurationFileMap_Clone_m3686499741,
-	ExeConfigurationHost__ctor_m2672717525,
-	ExeConfigurationHost_Init_m1279008829,
-	ExeConfigurationHost_GetStreamName_m4070417723,
-	ExeConfigurationHost_InitForConfiguration_m442278400,
-	IgnoreSection__ctor_m4055714512,
-	IgnoreSection__cctor_m1005553135,
-	IgnoreSection_IsModified_m3722026291,
-	IgnoreSection_DeserializeSection_m2922463074,
-	IgnoreSection_Reset_m2294022138,
-	IgnoreSection_ResetModified_m2018290788,
-	IgnoreSection_SerializeSection_m1724288736,
-	IgnoreSection_get_Properties_m3548508015,
-	InternalConfigurationFactory__ctor_m2455511552,
-	InternalConfigurationFactory_Create_m3329707975,
-	InternalConfigurationHost__ctor_m1120670670,
-	InternalConfigurationHost_CreateDeprecatedConfigContext_m3055903953,
-	InternalConfigurationHost_GetConfigPathFromLocationSubPath_m3102336364,
-	InternalConfigurationHost_GetConfigType_m2265190311,
-	InternalConfigurationHost_IsDefinitionAllowed_m2472316359,
-	InternalConfigurationHost_get_bundled_machine_config_m171293269,
-	InternalConfigurationHost_OpenStreamForRead_m1823276945,
-	InternalConfigurationRoot__ctor_m903766256,
-	InternalConfigurationRoot_Init_m2920331433,
-	InternalConfigurationSystem__ctor_m1377055107,
-	InternalConfigurationSystem_Init_m117598888,
-	InternalConfigurationSystem_InitForConfiguration_m909576572,
-	InternalConfigurationSystem_get_Host_m3360228097,
-	PropertyInformation__ctor_m3964645511,
-	PropertyInformation_get_DefaultValue_m2865970966,
-	PropertyInformation_get_IsKey_m53514336,
-	PropertyInformation_get_IsModified_m2197427276,
-	PropertyInformation_set_IsModified_m2277508543,
-	PropertyInformation_get_IsRequired_m2394064138,
-	PropertyInformation_get_Name_m339533533,
-	PropertyInformation_get_Type_m2447867467,
-	PropertyInformation_get_Value_m1250658193,
-	PropertyInformation_set_Value_m1161719494,
-	PropertyInformation_Reset_m4131859557,
-	PropertyInformation_get_IsElement_m1135806159,
-	PropertyInformation_get_ValueOrigin_m1155932344,
-	PropertyInformation_GetStringValue_m233999863,
-	PropertyInformation_SetStringValue_m1643234174,
-	PropertyInformation_get_Property_m530348717,
-	PropertyInformationCollection__ctor_m3360125324,
-	PropertyInformationCollection_get_Item_m1640937095,
-	PropertyInformationCollection_GetEnumerator_m2342156100,
-	PropertyInformationCollection_Add_m3086044235,
-	PropertyInformationCollection_GetObjectData_m1752565104,
-	PropertyInformationEnumerator__ctor_m3513537070,
-	PropertyInformationEnumerator_get_Current_m3392533325,
-	PropertyInformationEnumerator_MoveNext_m1887690358,
-	PropertyInformationEnumerator_Reset_m2871712389,
-	ProtectedConfiguration_get_Providers_m2677655615,
-	ProtectedConfiguration_get_Section_m2417461286,
-	ProtectedConfiguration_GetProvider_m659380218,
-	ProtectedConfigurationProviderCollection__ctor_m2871984156,
-	ProtectedConfigurationProviderCollection_get_Item_m2881465527,
-	ProtectedConfigurationProviderCollection_Add_m1943221191,
-	ProtectedConfigurationSection__cctor_m710069301,
-	ProtectedConfigurationSection_get_Providers_m3108810289,
-	ProtectedConfigurationSection_get_Properties_m3218406561,
-	ProtectedConfigurationSection_GetAllProviders_m1380267610,
-	ProtectedConfigurationSection_InstantiateProvider_m1916220169,
-	ProviderBase_Initialize_m309026731,
-	ProviderBase_get_Name_m1908650449,
-	ProviderCollection__ctor_m2739070153,
-	ProviderCollection_System_Collections_ICollection_CopyTo_m1409815097,
-	ProviderCollection_Add_m2062313466,
-	ProviderCollection_GetEnumerator_m2535943389,
-	ProviderCollection_get_Count_m1651598797,
-	ProviderCollection_get_IsSynchronized_m2860234084,
-	ProviderCollection_get_SyncRoot_m2583585530,
-	ProviderCollection_get_Item_m4205164,
-	ProviderSettings__ctor_m2418229397,
-	ProviderSettings__cctor_m1551014246,
-	ProviderSettings_OnDeserializeUnrecognizedAttribute_m2101799192,
-	ProviderSettings_IsModified_m4208587056,
-	ProviderSettings_Reset_m748547671,
-	ProviderSettings_Unmerge_m3899437761,
-	ProviderSettings_get_Name_m2720563190,
-	ProviderSettings_get_Type_m525859805,
-	ProviderSettings_get_Properties_m1448998824,
-	ProviderSettings_get_Parameters_m1237896802,
-	ProviderSettingsCollection__cctor_m2098499738,
-	ProviderSettingsCollection_CreateNewElement_m278470757,
-	ProviderSettingsCollection_GetElementKey_m2598146650,
-	ProviderSettingsCollection_get_Properties_m2175226160,
-	SectionGroupInfo__ctor_m2214539325,
-	SectionGroupInfo__cctor_m673398592,
-	SectionGroupInfo_AddChild_m3251971407,
-	SectionGroupInfo_Clear_m3188268036,
-	SectionGroupInfo_HasChild_m1202859971,
-	SectionGroupInfo_RemoveChild_m2246840815,
-	SectionGroupInfo_get_Sections_m2472444668,
-	SectionGroupInfo_get_Groups_m2080419472,
-	SectionGroupInfo_ReadConfig_m964124140,
-	SectionGroupInfo_ReadRemoveSection_m3200085140,
-	SectionGroupInfo_ReadRootData_m1364370771,
-	SectionGroupInfo_ReadData_m4130533217,
-	SectionGroupInfo_ReadContent_m2298842435,
-	SectionGroupInfo_GetConfigInfo_m1968621232,
-	SectionGroupInfo_Merge_m1107900400,
-	SectionInfo__ctor_m3237924430,
-	SectionInfo_CreateInstance_m3857848628,
-	SectionInfo_ReadConfig_m1508625577,
-	SectionInfo_ReadData_m2814313648,
-	SectionInfo_Merge_m2513541987,
-	SectionInformation__ctor_m118501942,
-	SectionInformation_get_ConfigFilePath_m966874317,
-	SectionInformation_set_ConfigFilePath_m2908232936,
-	SectionInformation_set_AllowDefinition_m391233744,
-	SectionInformation_set_AllowExeDefinition_m2089738550,
-	SectionInformation_set_AllowLocation_m1178294342,
-	SectionInformation_get_ConfigSource_m1613439595,
-	SectionInformation_set_ConfigSource_m2152533200,
-	SectionInformation_set_RequirePermission_m1040565520,
-	SectionInformation_set_RestartOnExternalChanges_m2815572962,
-	SectionInformation_GetParentSection_m3638988220,
-	SectionInformation_SetParentSection_m321631079,
-	SectionInformation_ProtectSection_m230982508,
-	SectionInformation_SetRawXml_m1162572473,
-	SectionInformation_SetName_m2381998591,
-	MonoInternalNoteAttribute__ctor_m2854554221,
-	MonoTODOAttribute__ctor_m817868876,
-	MonoTODOAttribute__ctor_m1940477654,
 	Locale_GetText_m3480617287,
 	Locale_GetText_m512920887,
 	KeyBuilder_get_Rng_m587346233,
@@ -35732,6 +39069,11 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	SymmetricTransform_FinalEncrypt_m952048093,
 	SymmetricTransform_FinalDecrypt_m1391053911,
 	SymmetricTransform_TransformFinalBlock_m631349995,
+	Action__ctor_m2606471964,
+	Action_Invoke_m3801112262,
+	Action_BeginInvoke_m2008902573,
+	Action_EndInvoke_m4281032350,
+	Check_Source_m3385315029,
 	Check_SourceAndPredicate_m2063478409,
 	MonoTODOAttribute__ctor_m1425119999,
 	ExtensionAttribute__ctor_m1028297080,
@@ -35865,8 +39207,13 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Application_get_isEditor_m2474583393,
 	Application_get_platform_m3989224144,
 	Application_set_runInBackground_m3543179741,
+	Application_get_dataPath_m371940330,
+	Application_get_unityVersion_m3302058834,
 	Application_OpenURL_m3882634228,
+	Application_set_targetFrameRate_m2941880625,
 	Application_CallLogCallback_m3408386792,
+	Application_RequestUserAuthorization_m2712302050,
+	Application_HasUserAuthorization_m3858687304,
 	LogCallback__ctor_m898185969,
 	LogCallback_Invoke_m3921378796,
 	LogCallback_BeginInvoke_m2485641857,
@@ -35957,15 +39304,42 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Bounds_SetMinMax_m1523110422_AdjustorThunk,
 	Bounds_Encapsulate_m3688171368_AdjustorThunk,
 	Bounds_ToString_m1966597703_AdjustorThunk,
+	Camera_get_fieldOfView_m3384007405,
+	Camera_set_fieldOfView_m3974156396,
 	Camera_get_nearClipPlane_m3536967407,
+	Camera_set_nearClipPlane_m3510849382,
 	Camera_get_farClipPlane_m3137713566,
+	Camera_set_farClipPlane_m1845065941,
+	Camera_set_orthographicSize_m2708824189,
+	Camera_set_orthographic_m2132888580,
 	Camera_get_depth_m1329692468,
+	Camera_set_depth_m1570376177,
+	Camera_get_aspect_m935361871,
+	Camera_set_aspect_m792328692,
 	Camera_get_cullingMask_m73686965,
+	Camera_set_cullingMask_m2396665826,
 	Camera_get_eventMask_m4241372419,
+	Camera_set_backgroundColor_m2927893592,
+	Camera_INTERNAL_set_backgroundColor_m3660646068,
+	Camera_get_rect_m2873096661,
+	Camera_set_rect_m1838810502,
+	Camera_INTERNAL_get_rect_m3971999434,
+	Camera_INTERNAL_set_rect_m610424166,
 	Camera_get_pixelRect_m2084185953,
+	Camera_set_pixelRect_m1366013782,
 	Camera_INTERNAL_get_pixelRect_m1785951490,
+	Camera_INTERNAL_set_pixelRect_m3301406310,
 	Camera_get_targetTexture_m705925974,
+	Camera_set_targetTexture_m3925036117,
+	Camera_get_projectionMatrix_m2365994324,
+	Camera_set_projectionMatrix_m2059836755,
+	Camera_INTERNAL_get_projectionMatrix_m3593932001,
+	Camera_INTERNAL_set_projectionMatrix_m179473573,
 	Camera_get_clearFlags_m1743144302,
+	Camera_set_clearFlags_m4142614199,
+	Camera_get_stereoSeparation_m287594473,
+	Camera_SetStereoProjectionMatrices_m1833429783,
+	Camera_INTERNAL_CALL_SetStereoProjectionMatrices_m3518928776,
 	Camera_WorldToScreenPoint_m638747266,
 	Camera_INTERNAL_CALL_WorldToScreenPoint_m720233894,
 	Camera_ScreenToViewportPoint_m2666228286,
@@ -35975,11 +39349,13 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Camera_ScreenPointToRay_m614889538,
 	Camera_INTERNAL_CALL_ScreenPointToRay_m2752248646,
 	Camera_get_main_m475173995,
+	Camera_get_current_m2639890517,
 	Camera_get_allCamerasCount_m989474043,
 	Camera_GetAllCameras_m2922515227,
 	Camera_FireOnPreCull_m1679634170,
 	Camera_FireOnPreRender_m24116662,
 	Camera_FireOnPostRender_m94860165,
+	Camera_Render_m2021402646,
 	Camera_RaycastTry_m3412198936,
 	Camera_INTERNAL_CALL_RaycastTry_m2295752796,
 	Camera_RaycastTry2D_m755036866,
@@ -36052,7 +39428,10 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	CanvasRenderer_get_hasMoved_m2428030996,
 	CharacterController_Move_m3456882757,
 	CharacterController_INTERNAL_CALL_Move_m2826125634,
+	CharacterController_get_radius_m2751828411,
 	CharacterController_get_height_m2830713110,
+	CharacterController_get_slopeLimit_m1930597355,
+	Collider_set_enabled_m3489100454,
 	Collider_get_attachedRigidbody_m3279305420,
 	Collider_get_bounds_m3534458178,
 	Collider_INTERNAL_get_bounds_m4035290675,
@@ -36091,9 +39470,12 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Color_get_black_m2650940523,
 	Color_get_yellow_m3741935494,
 	Color_get_cyan_m2850282709,
+	Color_get_gray_m1396712533,
 	Color_get_grey_m1961362537,
 	Color_get_clear_m1469108305,
 	Color_op_Implicit_m1067945802,
+	Color_get_Item_m368980335_AdjustorThunk,
+	Color_set_Item_m292286054_AdjustorThunk,
 	Color32__ctor_m1932627809_AdjustorThunk,
 	Color32_op_Implicit_m624191464,
 	Color32_op_Implicit_m889975790,
@@ -36186,11 +39568,15 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Display_get_renderingHeight_m3408216949,
 	Display_get_systemWidth_m957394103,
 	Display_get_systemHeight_m3377672024,
+	Display_get_colorBuffer_m3181430321,
+	Display_get_depthBuffer_m223202149,
 	Display_RelativeMouseAt_m3983394520,
+	Display_get_main_m661778883,
 	Display_RecreateDisplayList_m3412638488,
 	Display_FireDisplaysUpdated_m3557250167,
 	Display_GetSystemExtImpl_m2990495607,
 	Display_GetRenderingExtImpl_m3739199112,
+	Display_GetRenderingBuffersImpl_m3305526476,
 	Display_RelativeMouseAtImpl_m1974885337,
 	Display__cctor_m7440126,
 	DisplaysUpdatedDelegate__ctor_m2851669167,
@@ -36428,6 +39814,8 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	FontTextureRebuildCallback_EndInvoke_m4275555211,
 	GameObject__ctor_m962601984,
 	GameObject__ctor_m498247354,
+	GameObject__ctor_m1633632305,
+	GameObject_CreatePrimitive_m973880764,
 	GameObject_GetComponent_m306258075,
 	GameObject_GetComponentFastPath_m481070871,
 	GameObject_GetComponentInChildren_m4263325740,
@@ -36453,6 +39841,8 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	GameObject_Internal_CreateGameObject_m3428198595,
 	GameObject_Find_m836511350,
 	GameObject_get_gameObject_m3662236595,
+	Gizmos_DrawLine_m1315654064,
+	Gizmos_INTERNAL_CALL_DrawLine_m1667943171,
 	Gizmos_DrawWireSphere_m3395547818,
 	Gizmos_INTERNAL_CALL_DrawWireSphere_m2482278875,
 	Gizmos_DrawSphere_m695677545,
@@ -36463,10 +39853,33 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Gizmos_INTERNAL_CALL_DrawCube_m1399418594,
 	Gizmos_set_color_m494992840,
 	Gizmos_INTERNAL_set_color_m3356916140,
+	Gizmos_set_matrix_m1590313986,
+	Gizmos_INTERNAL_set_matrix_m3307761430,
+	GL_Vertex_m4110027235,
+	GL_INTERNAL_CALL_Vertex_m2514505792,
+	GL_BeginInternal_m1538792559,
+	GL_Begin_m3874173032,
+	GL_End_m2374230645,
+	GL_MultMatrix_m767401141,
+	GL_INTERNAL_CALL_MultMatrix_m1969283986,
+	GL_PushMatrix_m1979053131,
+	GL_PopMatrix_m856033754,
+	GL_set_invertCulling_m153705642,
+	GL_Clear_m154870981,
+	GL_Clear_m2110364678,
+	GL_Internal_Clear_m3348289810,
+	GL_INTERNAL_CALL_Internal_Clear_m1893090931,
+	GL_IssuePluginEvent_m2498560141,
+	GL_IssuePluginEventInternal_m3396520206,
 	Gradient__ctor_m954570311,
 	Gradient_Init_m4156899649,
 	Gradient_Cleanup_m3573871739,
 	Gradient_Finalize_m2023716701,
+	Graphics_Internal_GetMaxDrawMeshInstanceCount_m3046083541,
+	Graphics_Internal_SetRTSimple_m1052203585,
+	Graphics_SetRenderTargetImpl_m2993156656,
+	Graphics_SetRenderTarget_m3373863973,
+	Graphics__cctor_m3711221683,
 	GUI__cctor_m1321863889,
 	GUI_get_nextScrollStepTime_m4045060331,
 	GUI_set_nextScrollStepTime_m2724006954,
@@ -36481,6 +39894,7 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	GUI_Label_m98409281,
 	GUI_Box_m2739364838,
 	GUI_Box_m4178954864,
+	GUI_Button_m3054448581,
 	GUI_Button_m4059760950,
 	GUI_Button_m2919274209,
 	GUI_DoRepeatButton_m3482958082,
@@ -36507,6 +39921,7 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	GUI_EndGroup_m1672170830,
 	GUI_BeginScrollView_m2779271105,
 	GUI_EndScrollView_m4114936004,
+	GUI_Window_m2988139263,
 	GUI_Window_m650843967,
 	GUI_CallWindowDelegate_m634477008,
 	GUI_DragWindow_m3819774672,
@@ -36922,12 +40337,14 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Input_GetKeyInt_m4143570188,
 	Input_GetKeyUpInt_m2486491081,
 	Input_GetKeyDownInt_m2930607648,
+	Input_GetKeyDownString_m529184407,
 	Input_GetAxis_m2098048324,
 	Input_GetAxisRaw_m4133353720,
 	Input_GetButton_m38251721,
 	Input_GetButtonDown_m2792523731,
 	Input_GetButtonUp_m1680009186,
 	Input_GetKey_m3849524999,
+	Input_GetKeyDown_m1749539436,
 	Input_GetKeyDown_m1771960377,
 	Input_GetKeyUp_m1008512962,
 	Input_GetMouseButton_m464100923,
@@ -36942,6 +40359,7 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Input_INTERNAL_CALL_GetTouch_m1737132542,
 	Input_get_touchCount_m2050827666,
 	Input_get_touchSupported_m3352846145,
+	Input_get_deviceOrientation_m2415424840,
 	Input_get_imeCompositionMode_m4250689464,
 	Input_set_imeCompositionMode_m2881085485,
 	Input_get_compositionString_m636835668,
@@ -37020,15 +40438,19 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Logger_Log_m4012064130,
 	Logger_LogFormat_m193464629,
 	Logger_LogException_m206035446,
+	Material__ctor_m1897560860,
 	Material__ctor_m1440882780,
 	Material_set_color_m577844242,
 	Material_get_mainTexture_m432794412,
+	Material_set_mainTexture_m3584203343,
 	Material_SetColor_m650857509,
 	Material_SetColor_m1191533068,
 	Material_INTERNAL_CALL_SetColor_m1364511001,
 	Material_GetColor_m2326771174,
 	Material_GetColor_m2968960621,
 	Material_INTERNAL_CALL_GetColor_m558759949,
+	Material_SetTexture_m141095205,
+	Material_SetTexture_m58378708,
 	Material_GetTexture_m1257877102,
 	Material_GetTexture_m648312929,
 	Material_SetFloat_m1926275467,
@@ -37036,17 +40458,23 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Material_SetInt_m522302436,
 	Material_HasProperty_m3511389613,
 	Material_HasProperty_m3175512802,
+	Material_SetPass_m2448940266,
+	Material_Internal_CreateWithShader_m4029381963,
 	Material_Internal_CreateWithMaterial_m2907597451,
 	Material_EnableKeyword_m3724752646,
 	Material_DisableKeyword_m1204728089,
 	Mathf_Sin_m831310046,
 	Mathf_Cos_m238853451,
+	Mathf_Tan_m3348734175,
 	Mathf_Acos_m3800958570,
+	Mathf_Atan_m3769407270,
+	Mathf_Atan2_m496071197,
 	Mathf_Sqrt_m2213915910,
 	Mathf_Abs_m1942863256,
 	Mathf_Min_m1648492575,
 	Mathf_Min_m2906823867,
 	Mathf_Max_m2564622569,
+	Mathf_Max_m144166478,
 	Mathf_Max_m1875893177,
 	Mathf_Pow_m3865188073,
 	Mathf_Log_m3878563109,
@@ -37071,12 +40499,26 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Mathf_InverseLerp_m55890283,
 	Mathf_DeltaAngle_m1024687732,
 	Mathf__cctor_m326403828,
+	Matrix4x4_Inverse_m146029241,
+	Matrix4x4_INTERNAL_CALL_Inverse_m4134773479,
+	Matrix4x4_get_inverse_m2479387736_AdjustorThunk,
+	Matrix4x4_TRS_m1913765359,
+	Matrix4x4_INTERNAL_CALL_TRS_m2077933669,
+	Matrix4x4_Ortho_m462958343,
+	Matrix4x4_INTERNAL_CALL_Ortho_m1536476527,
 	Matrix4x4_get_Item_m312280350_AdjustorThunk,
+	Matrix4x4_set_Item_m1035113911_AdjustorThunk,
 	Matrix4x4_get_Item_m3317262185_AdjustorThunk,
+	Matrix4x4_set_Item_m870949794_AdjustorThunk,
 	Matrix4x4_GetHashCode_m3649708037_AdjustorThunk,
 	Matrix4x4_Equals_m1321236479_AdjustorThunk,
+	Matrix4x4_op_Multiply_m2352863493,
+	Matrix4x4_op_Multiply_m2780874321,
 	Matrix4x4_GetColumn_m1367096730_AdjustorThunk,
+	Matrix4x4_MultiplyPoint_m2903385193_AdjustorThunk,
 	Matrix4x4_MultiplyPoint3x4_m1007952212_AdjustorThunk,
+	Matrix4x4_get_zero_m2893472556,
+	Matrix4x4_get_identity_m3039560904,
 	Matrix4x4_ToString_m1982554457_AdjustorThunk,
 	Mesh__ctor_m2975981674,
 	Mesh_Internal_Create_m1486058998,
@@ -37091,19 +40533,29 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Mesh_GetAllocArrayFromChannelImpl_m1663415136,
 	Mesh_HasChannel_m3616583481,
 	Mesh_ExtractArrayFromList_m1349408169,
+	Mesh_GetTrianglesImpl_m3976840238,
 	Mesh_GetIndicesImpl_m2398977086,
 	Mesh_SetTrianglesImpl_m2743099196,
+	Mesh_SetTrianglesImpl_m540573335,
 	Mesh_SetTriangles_m2017297103,
 	Mesh_SetTriangles_m2506325172,
+	Mesh_get_bounds_m1752141467,
+	Mesh_INTERNAL_get_bounds_m1331624142,
 	Mesh_RecalculateBounds_m3559909024,
+	Mesh_RecalculateNormals_m1034493793,
+	Mesh_get_vertexCount_m989566320,
 	Mesh_get_subMeshCount_m1945011773,
 	Mesh_GetUVChannel_m364477864,
 	Mesh_DefaultDimensionForChannel_m153181993,
+	Mesh_SafeLength_m3028452891,
 	Mesh_SetSizedArrayForChannel_m299035387,
 	Mesh_get_vertices_m626989480,
+	Mesh_set_vertices_m2936804213,
 	Mesh_get_normals_m1837187359,
+	Mesh_set_normals_m2674236682,
 	Mesh_get_tangents_m2910922714,
 	Mesh_get_uv_m3811151337,
+	Mesh_set_uv_m1497318906,
 	Mesh_get_uv2_m3215494975,
 	Mesh_get_colors32_m4153271224,
 	Mesh_SetVertices_m3500868388,
@@ -37114,7 +40566,14 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Mesh_CheckCanAccessSubmesh_m1826512193,
 	Mesh_CheckCanAccessSubmeshTriangles_m3203185587,
 	Mesh_CheckCanAccessSubmeshIndices_m2098382465,
+	Mesh_get_triangles_m3988715512,
+	Mesh_set_triangles_m3244966865,
 	Mesh_GetIndices_m3085881884,
+	MeshCollider_set_sharedMesh_m4192566451,
+	MeshFilter_get_mesh_m977520135,
+	MeshFilter_set_mesh_m3839924176,
+	MeshFilter_get_sharedMesh_m1310789932,
+	MeshFilter_set_sharedMesh_m2225370173,
 	MonoBehaviour__ctor_m2464341955,
 	MonoBehaviour_Internal_CancelInvokeAll_m3154116776,
 	MonoBehaviour_Internal_IsInvokingAll_m3504849565,
@@ -37278,7 +40737,13 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	PlayerPrefsException__ctor_m1748847897,
 	PreferBinarySerialization__ctor_m2043201510,
 	PropertyAttribute__ctor_m3663555848,
+	QualitySettings_get_antiAliasing_m1084683812,
+	QualitySettings_get_activeColorSpace_m580875098,
 	Quaternion__ctor_m3196903881_AdjustorThunk,
+	Quaternion_AngleAxis_m2806222563,
+	Quaternion_INTERNAL_CALL_AngleAxis_m3310327005,
+	Quaternion_ToAngleAxis_m2980929840_AdjustorThunk,
+	Quaternion_LookRotation_m700700634,
 	Quaternion_LookRotation_m633695927,
 	Quaternion_INTERNAL_CALL_LookRotation_m3606560944,
 	Quaternion_Slerp_m1992855400,
@@ -37292,10 +40757,13 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Quaternion_INTERNAL_CALL_Inverse_m1043108654,
 	Quaternion_get_eulerAngles_m3302573991_AdjustorThunk,
 	Quaternion_Euler_m2887458175,
+	Quaternion_Euler_m3586339259,
 	Quaternion_Internal_ToEulerRad_m2807508879,
 	Quaternion_INTERNAL_CALL_Internal_ToEulerRad_m1077217777,
 	Quaternion_Internal_FromEulerRad_m1121344272,
 	Quaternion_INTERNAL_CALL_Internal_FromEulerRad_m1113788132,
+	Quaternion_Internal_ToAxisAngleRad_m1386331342,
+	Quaternion_INTERNAL_CALL_Internal_ToAxisAngleRad_m3577625799,
 	Quaternion_get_identity_m1561886418,
 	Quaternion_op_Multiply_m2426727589,
 	Quaternion_op_Multiply_m1483423721,
@@ -37434,22 +40902,58 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	UpdatedEventHandler_Invoke_m159598802,
 	UpdatedEventHandler_BeginInvoke_m4238510153,
 	UpdatedEventHandler_EndInvoke_m224684362,
+	RenderBuffer_GetNativeRenderBufferPtr_m954491577_AdjustorThunk,
+	RenderBufferHelper_GetNativeRenderBufferPtr_m3984955661,
+	RenderBufferHelper_INTERNAL_CALL_GetNativeRenderBufferPtr_m3796353729,
+	Renderer_get_enabled_m2362836534,
 	Renderer_set_enabled_m142717579,
 	Renderer_get_material_m2553789785,
 	Renderer_set_material_m1053097112,
+	Renderer_set_sharedMaterial_m391095487,
+	Renderer_get_materials_m810004692,
+	Renderer_set_sharedMaterials_m2669445156,
 	Renderer_get_isVisible_m3612355717,
 	Renderer_get_sortingLayerID_m2403577271,
 	Renderer_get_sortingOrder_m1544525007,
+	RenderSettings_get_skybox_m654921356,
+	RenderSettings_set_skybox_m2565496707,
+	RenderTexture__ctor_m2960228168,
+	RenderTexture_Internal_CreateRenderTexture_m1679754911,
+	RenderTexture_GetTemporary_m1927959284,
+	RenderTexture_GetTemporary_m1924862769,
+	RenderTexture_ReleaseTemporary_m1186631014,
 	RenderTexture_Internal_GetWidth_m2317917654,
+	RenderTexture_Internal_SetWidth_m989760279,
 	RenderTexture_Internal_GetHeight_m2780941261,
+	RenderTexture_Internal_SetHeight_m2900429544,
+	RenderTexture_Internal_SetSRGBReadWrite_m286621198,
 	RenderTexture_get_width_m1471807677,
+	RenderTexture_set_width_m592588466,
 	RenderTexture_get_height_m1108175848,
+	RenderTexture_set_height_m1787187,
+	RenderTexture_set_depth_m3365909665,
+	RenderTexture_set_format_m2928390123,
+	RenderTexture_set_autoGenerateMips_m3051908877,
+	RenderTexture_set_antiAliasing_m1838970818,
+	RenderTexture_Create_m1259588374,
+	RenderTexture_INTERNAL_CALL_Create_m4215814471,
+	RenderTexture_Release_m1476285593,
+	RenderTexture_INTERNAL_CALL_Release_m1818573204,
+	RenderTexture_IsCreated_m375737400,
+	RenderTexture_INTERNAL_CALL_IsCreated_m2796064041,
+	RenderTexture_get_colorBuffer_m2259248236,
+	RenderTexture_get_depthBuffer_m583581910,
+	RenderTexture_GetColorBuffer_m2909232564,
+	RenderTexture_GetDepthBuffer_m1144066090,
+	RenderTexture_set_active_m55464043,
 	RequireComponent__ctor_m3475141952,
 	ResourceRequest__ctor_m3340010930,
 	ResourceRequest_get_asset_m3527928488,
 	Resources_FindObjectsOfTypeAll_m3365744935,
+	Resources_Load_m2041782325,
 	Resources_Load_m243305716,
 	Resources_GetBuiltinResource_m582410469,
+	Resources_UnloadUnusedAssets_m2770025609,
 	Rigidbody_get_velocity_m2022666970,
 	Rigidbody_set_velocity_m2514070071,
 	Rigidbody_INTERNAL_get_velocity_m1938461825,
@@ -37459,6 +40963,7 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Rigidbody_INTERNAL_get_angularVelocity_m2914925467,
 	Rigidbody_INTERNAL_set_angularVelocity_m3276405927,
 	Rigidbody_set_isKinematic_m738793415,
+	Rigidbody_set_freezeRotation_m2131864169,
 	Rigidbody_AddForce_m2836187433,
 	Rigidbody_INTERNAL_CALL_AddForce_m3164777073,
 	Rigidbody2D_get_velocity_m3310151195,
@@ -37472,6 +40977,8 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Rigidbody2D_AddForce_m3200488178,
 	Rigidbody2D_INTERNAL_CALL_AddForce_m1958598324,
 	RPC__ctor_m1432086380,
+	RuntimeInitializeOnLoadMethodAttribute__ctor_m1066490054,
+	RuntimeInitializeOnLoadMethodAttribute_set_loadType_m1308196171,
 	Scene_get_handle_m1555912301_AdjustorThunk,
 	Scene_get_name_m745914591_AdjustorThunk,
 	Scene_get_buildIndex_m3735680091_AdjustorThunk,
@@ -37494,11 +41001,23 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Screen_get_width_m41137238,
 	Screen_get_height_m1051800773,
 	Screen_get_dpi_m3345126327,
+	Screen_get_autorotateToPortrait_m1443593642,
+	Screen_set_autorotateToPortrait_m285788005,
+	Screen_get_autorotateToPortraitUpsideDown_m3456420844,
+	Screen_set_autorotateToPortraitUpsideDown_m2208155421,
+	Screen_get_autorotateToLandscapeLeft_m1138037637,
+	Screen_set_autorotateToLandscapeLeft_m606930980,
+	Screen_get_autorotateToLandscapeRight_m63828628,
+	Screen_set_autorotateToLandscapeRight_m703872101,
+	Screen_get_orientation_m879255848,
+	Screen_set_orientation_m413080199,
+	Screen_set_sleepTimeout_m2630230709,
 	ScriptableObject__ctor_m2671490429,
 	ScriptableObject_Internal_CreateScriptableObject_m1778903390,
 	ScriptableObject_CreateInstance_m3921674852,
 	ScriptableObject_CreateInstance_m3271154163,
 	ScriptableObject_CreateInstanceFromType_m4271875689,
+	PreserveAttribute__ctor_m2437378488,
 	RequiredByNativeCodeAttribute__ctor_m2374853658,
 	UsedByNativeCodeAttribute__ctor_m2459832290,
 	SelectionBaseAttribute__ctor_m1487697870,
@@ -37515,6 +41034,7 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	SerializePrivateVariables__ctor_m806793207,
 	SetupCoroutine_InvokeMoveNext_m2975616245,
 	SetupCoroutine_InvokeMember_m1481430263,
+	Shader_Find_m4179408078,
 	Shader_PropertyToID_m678579425,
 	SharedBetweenAnimatorsAttribute__ctor_m1221241062,
 	SkeletonBone_get_transformModified_m1528786646_AdjustorThunk,
@@ -37860,15 +41380,42 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Texture_Internal_GetWidth_m56137242,
 	Texture_Internal_GetHeight_m2775530157,
 	Texture_get_width_m2165436967,
+	Texture_set_width_m3075240330,
 	Texture_get_height_m2890247816,
+	Texture_set_height_m1406712949,
+	Texture_set_filterMode_m3838996656,
+	Texture_set_anisoLevel_m4242988344,
 	Texture_get_wrapMode_m3111235310,
+	Texture_set_wrapMode_m333956747,
 	Texture_get_texelSize_m4226268553,
 	Texture_INTERNAL_get_texelSize_m3180609662,
+	Texture_GetNativeTexturePtr_m292373493,
+	Texture_INTERNAL_CALL_GetNativeTexturePtr_m1299338497,
 	Texture2D__ctor_m3598323350,
+	Texture2D__ctor_m1873923924,
+	Texture2D__ctor_m2236018285,
 	Texture2D_Internal_Create_m3012183307,
+	Texture2D_CreateExternalTexture_m3402112250,
+	Texture2D_get_format_m3733300408,
 	Texture2D_get_whiteTexture_m1979591766,
 	Texture2D_GetPixelBilinear_m3063031185,
 	Texture2D_INTERNAL_CALL_GetPixelBilinear_m570286059,
+	Texture2D_SetPixels_m2799169789,
+	Texture2D_SetPixels_m1731341200,
+	Texture2D_SetPixels_m1131483856,
+	Texture2D_SetAllPixels32_m622827385,
+	Texture2D_SetPixels32_m2480505405,
+	Texture2D_SetPixels32_m3248271056,
+	Texture2D_GetPixels_m643504232,
+	Texture2D_GetPixels_m3993926511,
+	Texture2D_GetPixels_m2152513967,
+	Texture2D_GetPixels32_m3251516747,
+	Texture2D_GetPixels32_m2977277634,
+	Texture2D_Apply_m3753817130,
+	Texture2D_Apply_m3543341930,
+	Texture2D_Resize_m1578220990,
+	Texture2D_ReadPixels_m3927717981,
+	Texture2D_INTERNAL_CALL_ReadPixels_m1476963500,
 	ThreadAndSerializationSafe__ctor_m84326599,
 	Time_get_time_m2216684562,
 	Time_get_timeSinceLevelLoad_m1980066582,
@@ -37932,6 +41479,8 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Transform_SetParent_m1963830867,
 	Transform_get_worldToLocalMatrix_m3299477436,
 	Transform_INTERNAL_get_worldToLocalMatrix_m3394773201,
+	Transform_get_localToWorldMatrix_m2868579006,
+	Transform_INTERNAL_get_localToWorldMatrix_m2347930409,
 	Transform_Rotate_m2612876682,
 	Transform_Rotate_m4255273365,
 	Transform_Rotate_m2449860094,
@@ -37948,7 +41497,11 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Transform_get_root_m3891257842,
 	Transform_get_childCount_m881385315,
 	Transform_SetAsFirstSibling_m3606528771,
+	Transform_Find_m3323476454,
+	Transform_get_lossyScale_m1638545862,
+	Transform_INTERNAL_get_lossyScale_m3027364225,
 	Transform_IsChildOf_m10844547,
+	Transform_FindChild_m2677714886,
 	Transform_GetEnumerator_m3479720613,
 	Transform_GetChild_m3838588184,
 	Enumerator__ctor_m147705785,
@@ -37960,6 +41513,7 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	UnhandledExceptionHandler_HandleUnhandledException_m1413629867,
 	UnhandledExceptionHandler_PrintException_m1321283931,
 	UnhandledExceptionHandler_NativeUnhandledExceptionHandler_m4002467556,
+	UnityAPICompatibilityVersionAttribute__ctor_m2146437932,
 	UnityException__ctor_m3650417185,
 	UnityException__ctor_m1554762831,
 	UnityException__ctor_m2835958127,
@@ -37973,11 +41527,13 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Vector2_GetHashCode_m2353429373_AdjustorThunk,
 	Vector2_Equals_m1405920279_AdjustorThunk,
 	Vector2_Dot_m778921987,
+	Vector2_get_magnitude_m33802565_AdjustorThunk,
 	Vector2_get_sqrMagnitude_m1226294581_AdjustorThunk,
 	Vector2_op_Addition_m1389598521,
 	Vector2_op_Subtraction_m1984215297,
 	Vector2_op_UnaryNegation_m2194368113,
 	Vector2_op_Multiply_m4236139442,
+	Vector2_op_Multiply_m3393065202,
 	Vector2_op_Division_m96580069,
 	Vector2_op_Equality_m4168854394,
 	Vector2_op_Inequality_m4283136193,
@@ -37991,12 +41547,16 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Vector3__ctor_m2720820983_AdjustorThunk,
 	Vector3_Slerp_m846771032,
 	Vector3_INTERNAL_CALL_Slerp_m1119564456,
+	Vector3_Internal_OrthoNormalize2_m80155026,
+	Vector3_INTERNAL_CALL_Internal_OrthoNormalize2_m3663555863,
+	Vector3_OrthoNormalize_m3371971860,
 	Vector3_RotateTowards_m4046679056,
 	Vector3_INTERNAL_CALL_RotateTowards_m3109427424,
 	Vector3_Lerp_m2935648359,
 	Vector3_MoveTowards_m1358638081,
 	Vector3_get_Item_m3616014016_AdjustorThunk,
 	Vector3_set_Item_m499708011_AdjustorThunk,
+	Vector3_Cross_m4149044051,
 	Vector3_GetHashCode_m1754570744_AdjustorThunk,
 	Vector3_Equals_m2692262876_AdjustorThunk,
 	Vector3_Normalize_m2140428981,
@@ -38038,6 +41598,7 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Vector4_op_Subtraction_m2837269249,
 	Vector4_op_Division_m130892763,
 	Vector4_op_Equality_m1825453464,
+	Vector4_op_Implicit_m1902992875,
 	Vector4_ToString_m2340321043_AdjustorThunk,
 	Vector4_SqrMagnitude_m3109980116,
 	WaitForEndOfFrame__ctor_m3062480170,
@@ -38045,6 +41606,20 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	WaitForSeconds__ctor_m1990515539,
 	WaitForSecondsRealtime__ctor_m1734539010,
 	WaitForSecondsRealtime_get_keepWaiting_m741039114,
+	WebCamDevice_get_name_m1117076425_AdjustorThunk,
+	WebCamTexture__ctor_m1125343005,
+	WebCamTexture_Internal_CreateWebCamTexture_m1601948981,
+	WebCamTexture_Play_m1997372813,
+	WebCamTexture_INTERNAL_CALL_Play_m3743409567,
+	WebCamTexture_Stop_m4045220381,
+	WebCamTexture_INTERNAL_CALL_Stop_m3253711615,
+	WebCamTexture_get_isPlaying_m1392703560,
+	WebCamTexture_set_deviceName_m2284562713,
+	WebCamTexture_set_requestedFPS_m608448968,
+	WebCamTexture_set_requestedWidth_m3863095,
+	WebCamTexture_set_requestedHeight_m299835388,
+	WebCamTexture_get_devices_m4137524804,
+	WebCamTexture_get_didUpdateThisFrame_m4104709683,
 	WritableAttribute__ctor_m761932763,
 	YieldInstruction__ctor_m2014522928,
 	GenericStack__ctor_m1256224477,
@@ -40106,6 +43681,2866 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	VerticalLayoutGroup_CalculateLayoutInputVertical_m3227111700,
 	VerticalLayoutGroup_SetLayoutHorizontal_m2935499508,
 	VerticalLayoutGroup_SetLayoutVertical_m1302409034,
+	ARController_Awake_m1838475418,
+	ARController_OnEnable_m4089159589,
+	ARController_Start_m1416289253,
+	ARController_Update_m1261096956,
+	ARController_OnLevelWasLoaded_m217454694,
+	ARController_OnApplicationPause_m127278491,
+	ARController_OnDisable_m748878458,
+	ARController_OnDestroy_m1590741864,
+	ARController_get_VuforiaBehaviour_m2875904629,
+	ARController_Register_m1226525385,
+	ARController_RegisterCamera_m3409757006,
+	ARController_UnregisterCamera_m318967997,
+	ARController__ctor_m1209298405,
+	U3CU3Ec__DisplayClass11_0__ctor_m221941634,
+	U3CU3Ec__DisplayClass11_0_U3CRegisterU3Eb__0_m3660152912,
+	U3CU3Ec__DisplayClass11_0_U3CRegisterU3Eb__1_m102017419,
+	BackgroundPlaneAbstractBehaviour_get_NumDivisions_m1922858648,
+	BackgroundPlaneAbstractBehaviour_get_BackgroundOffset_m599181539,
+	BackgroundPlaneAbstractBehaviour_set_BackgroundOffset_m48119280,
+	BackgroundPlaneAbstractBehaviour_CheckNumDivisions_m3696641221,
+	BackgroundPlaneAbstractBehaviour_SetStereoDepth_m16312179,
+	BackgroundPlaneAbstractBehaviour_Start_m142659071,
+	BackgroundPlaneAbstractBehaviour_OnDestroy_m2138993976,
+	BackgroundPlaneAbstractBehaviour_OnValidate_m1913460982,
+	BackgroundPlaneAbstractBehaviour_OnTrackablesUpdated_m2623229581,
+	BackgroundPlaneAbstractBehaviour_get_DefaultRotationTowardsCamera_m3673566134,
+	BackgroundPlaneAbstractBehaviour_SetBackgroundPlacedCallback_m1755632302,
+	BackgroundPlaneAbstractBehaviour_CreateAndSetVideoMesh_m3037061378,
+	BackgroundPlaneAbstractBehaviour_PositionVideoMesh_m938073738,
+	BackgroundPlaneAbstractBehaviour_ShouldFitWidth_m3514148159,
+	BackgroundPlaneAbstractBehaviour_OnBackgroundTextureChanged_m4072941017,
+	BackgroundPlaneAbstractBehaviour_OnVideoBackgroundConfigChanged_m2941176113,
+	BackgroundPlaneAbstractBehaviour__ctor_m1193949827,
+	BackgroundPlaneAbstractBehaviour__cctor_m3625068708,
+	BaseCameraConfiguration__ctor_m3094252937,
+	BaseCameraConfiguration_InitCameraDevice_m3505891002,
+	BaseCameraConfiguration_Init_m298244606,
+	BaseCameraConfiguration_ResetBackgroundPlane_m2070059094,
+	BaseCameraConfiguration_get_VideoBackgroundMirrored_m1044842027,
+	BaseCameraConfiguration_get_VideoBackgroundViewportRect_m2228415960,
+	BaseCameraConfiguration_SetCameraParameterChanged_m4117501824,
+	BaseCameraConfiguration_EnableObjectRenderer_m3084190396,
+	BaseCameraConfiguration_ResolveVideoBackgroundBehaviours_m1968638351,
+	BaseCameraConfiguration_CameraParameterChanged_m2410154426,
+	BaseCameraConfiguration_IsVideoBackgroundEnabled_m1349021320,
+	BaseStereoViewerCameraConfiguration__ctor_m3437146506,
+	BaseStereoViewerCameraConfiguration_ConfigureVideoBackground_m1335627989,
+	BaseStereoViewerCameraConfiguration_CheckForSurfaceChanges_m1470795320,
+	BaseStereoViewerCameraConfiguration_UpdateStereoDepth_m1632133579,
+	BaseStereoViewerCameraConfiguration_IsStereo_m2497032490,
+	BaseStereoViewerCameraConfiguration_SetSkewFrustum_m1294368151,
+	BaseStereoViewerCameraConfiguration_ResolveVideoBackgroundBehaviours_m2899238147,
+	BaseStereoViewerCameraConfiguration_ComputeViewPortRect_m755714555,
+	BehaviourComponentFactory_get_Instance_m3607279548,
+	BehaviourComponentFactory_set_Instance_m3406469245,
+	BehaviourComponentFactory__ctor_m2037209566,
+	NullBehaviourComponentFactory_AddMaskOutBehaviour_m3220466358,
+	NullBehaviourComponentFactory_AddVirtualButtonBehaviour_m2776060812,
+	NullBehaviourComponentFactory_AddTurnOffBehaviour_m3394477078,
+	NullBehaviourComponentFactory_AddImageTargetBehaviour_m3396055014,
+	NullBehaviourComponentFactory_AddMultiTargetBehaviour_m2141392462,
+	NullBehaviourComponentFactory_AddCylinderTargetBehaviour_m3622008278,
+	NullBehaviourComponentFactory_AddWordBehaviour_m3090918102,
+	NullBehaviourComponentFactory_AddTextRecoBehaviour_m922384022,
+	NullBehaviourComponentFactory_AddObjectTargetBehaviour_m580967574,
+	NullBehaviourComponentFactory_AddVuMarkBehaviour_m2537231254,
+	NullBehaviourComponentFactory_CreateVuforiaConfiguration_m1956200995,
+	NullBehaviourComponentFactory__ctor_m3349585230,
+	CameraConfigurationUtility_ExtractCameraClippingPlanes_m569612754,
+	CameraConfigurationUtility_ExtractVerticalCameraFoV_m2831675234,
+	CameraConfigurationUtility_ExtractHorizontalCameraFoV_m3166710172,
+	CameraConfigurationUtility_ScalePerspectiveProjectionMatrix_m3901594560,
+	CameraConfigurationUtility_CalculateHorizontalFoVFromViewPortAspect_m1570910890,
+	CameraConfigurationUtility_CalculateVerticalFoVFromViewPortAspect_m908386196,
+	CameraConfigurationUtility_SetFovForCustomProjection_m3414450521,
+	CameraConfigurationUtility_HomogenizedVec3_m3137916003,
+	CameraConfigurationUtility__cctor_m1510687646,
+	CameraDevice_get_Instance_m197511331,
+	CameraDevice__ctor_m1247925759,
+	CameraDevice__cctor_m4203430146,
+	CameraDeviceImpl_get_WebCam_m2368945734,
+	CameraDeviceImpl_set_WebCam_m4069630425,
+	CameraDeviceImpl_get_CameraReady_m4180092652,
+	CameraDeviceImpl_Init_m1642247777,
+	CameraDeviceImpl_Deinit_m3523334444,
+	CameraDeviceImpl_Start_m2745191011,
+	CameraDeviceImpl_Stop_m2928202319,
+	CameraDeviceImpl_IsActive_m304627893,
+	CameraDeviceImpl_GetVideoMode_m3945058294,
+	CameraDeviceImpl_GetVideoMode_m78221528,
+	CameraDeviceImpl_SelectVideoMode_m741422015,
+	CameraDeviceImpl_GetSelectedVideoMode_m1029196468,
+	CameraDeviceImpl_SetFlashTorchMode_m2829915691,
+	CameraDeviceImpl_SetFocusMode_m3577916841,
+	CameraDeviceImpl_SetFrameFormat_m2991608962,
+	CameraDeviceImpl_GetCameraImage_m1023970763,
+	CameraDeviceImpl_GetCameraDirection_m2070360910,
+	CameraDeviceImpl_GetSelectedCameraDirection_m3866201548,
+	CameraDeviceImpl_GetCameraFieldOfViewRads_m3897768225,
+	CameraDeviceImpl_GetCameraFields_m3126017110,
+	CameraDeviceImpl_SetField_m1544277991,
+	CameraDeviceImpl_SetField_m3202339311,
+	CameraDeviceImpl_SetField_m2393123802,
+	CameraDeviceImpl_SetField_m2545485720,
+	CameraDeviceImpl_SetField_m1823643171,
+	CameraDeviceImpl_GetField_m1612583753,
+	CameraDeviceImpl_GetField_m1241974801,
+	CameraDeviceImpl_GetField_m2396688318,
+	CameraDeviceImpl_GetField_m1895402300,
+	CameraDeviceImpl_GetField_m4244435533,
+	CameraDeviceImpl_GetAllImages_m3901853571,
+	CameraDeviceImpl_IsDirty_m1477532715,
+	CameraDeviceImpl_ResetDirtyFlag_m4104124686,
+	CameraDeviceImpl__ctor_m3359037219,
+	CameraDeviceImpl_ForceFrameFormat_m189252245,
+	CameraDeviceImpl_InitCameraDevice_m894861495,
+	CameraDeviceImpl_DeinitCameraDevice_m2896002515,
+	CameraDeviceImpl_StartCameraDevice_m1679253860,
+	CameraDeviceImpl_StopCameraDevice_m4211349264,
+	CameraDeviceImpl__cctor_m2888628436,
+	CloudRecoAbstractBehaviour_get_CloudRecoEnabled_m2412243295,
+	CloudRecoAbstractBehaviour_set_CloudRecoEnabled_m1352923538,
+	CloudRecoAbstractBehaviour_get_CloudRecoInitialized_m1292679304,
+	CloudRecoAbstractBehaviour_Initialize_m2690637477,
+	CloudRecoAbstractBehaviour_Deinitialize_m1814882000,
+	CloudRecoAbstractBehaviour_CheckInitialization_m2990834499,
+	CloudRecoAbstractBehaviour_StartCloudReco_m1148484471,
+	CloudRecoAbstractBehaviour_StopCloudReco_m599277347,
+	CloudRecoAbstractBehaviour_RegisterEventHandler_m1061808793,
+	CloudRecoAbstractBehaviour_UnregisterEventHandler_m776673674,
+	CloudRecoAbstractBehaviour_OnEnable_m980927645,
+	CloudRecoAbstractBehaviour_OnDisable_m1357393090,
+	CloudRecoAbstractBehaviour_Start_m3565773725,
+	CloudRecoAbstractBehaviour_Update_m941771004,
+	CloudRecoAbstractBehaviour_OnDestroy_m3264004452,
+	CloudRecoAbstractBehaviour_OnValidate_m2527262506,
+	CloudRecoAbstractBehaviour_OnVuforiaStarted_m3484208845,
+	CloudRecoAbstractBehaviour__ctor_m3604390285,
+	CloudRecoImageTargetImpl__ctor_m3921570766,
+	CloudRecoImageTargetImpl_get_ImageTargetType_m392286440,
+	CloudRecoImageTargetImpl_GetSize_m3190175895,
+	CloudRecoImageTargetImpl_GetLargestSizeComponent_m2315964978,
+	CloudRecoImageTargetImpl_SetSize_m3248189010,
+	CloudRecoImageTargetImpl_CreateVirtualButton_m403491976,
+	CloudRecoImageTargetImpl_GetVirtualButtonByName_m748910883,
+	CloudRecoImageTargetImpl_GetVirtualButtons_m4045798261,
+	CloudRecoImageTargetImpl_DestroyVirtualButton_m2406708878,
+	CloudRecoImageTargetImpl_StartExtendedTracking_m4026259656,
+	CloudRecoImageTargetImpl_StopExtendedTracking_m3289519250,
+	CustomViewerParameters__ctor_m809587384,
+	CustomViewerParameters_Finalize_m1145899515,
+	CustomViewerParameters_SetButtonType_m3873926571,
+	CustomViewerParameters_SetScreenToLensDistance_m3284214742,
+	CustomViewerParameters_SetInterLensDistance_m2641452009,
+	CustomViewerParameters_SetTrayAlignment_m506724771,
+	CustomViewerParameters_SetLensCentreToTrayDistance_m3667288231,
+	CustomViewerParameters_ClearDistortionCoefficients_m1791454617,
+	CustomViewerParameters_AddDistortionCoefficient_m569217303,
+	CustomViewerParameters_SetFieldOfView_m1152285759,
+	CustomViewerParameters_SetContainsMagnet_m2479681583,
+	CylinderTargetAbstractBehaviour_get_CylinderTarget_m889426098,
+	CylinderTargetAbstractBehaviour_get_SideLength_m999963300,
+	CylinderTargetAbstractBehaviour_get_TopDiameter_m3611487623,
+	CylinderTargetAbstractBehaviour_get_BottomDiameter_m3823535359,
+	CylinderTargetAbstractBehaviour_SetSideLength_m2003326118,
+	CylinderTargetAbstractBehaviour_SetTopDiameter_m955743771,
+	CylinderTargetAbstractBehaviour_SetBottomDiameter_m156860143,
+	CylinderTargetAbstractBehaviour_OnFrameIndexUpdate_m1259366318,
+	CylinderTargetAbstractBehaviour_CorrectScaleImpl_m2243067026,
+	CylinderTargetAbstractBehaviour_InternalUnregisterTrackable_m979126964,
+	CylinderTargetAbstractBehaviour_CalculateDefaultOccluderBounds_m1437490191,
+	CylinderTargetAbstractBehaviour_ProtectedSetAsSmartTerrainInitializationTarget_m1548690706,
+	CylinderTargetAbstractBehaviour_InitializeTarget_m3813686769,
+	CylinderTargetAbstractBehaviour_GetScale_m3431207024,
+	CylinderTargetAbstractBehaviour_SetScale_m3803922251,
+	CylinderTargetAbstractBehaviour_ApplyScale_m2021663953,
+	CylinderTargetAbstractBehaviour_OnValidate_m3144050943,
+	CylinderTargetAbstractBehaviour__ctor_m3025238902,
+	CylinderTargetImpl__ctor_m2633572314,
+	CylinderTargetImpl_SetSize_m2733226247,
+	CylinderTargetImpl_GetSideLength_m2313618666,
+	CylinderTargetImpl_GetTopDiameter_m1063515765,
+	CylinderTargetImpl_GetBottomDiameter_m4039124025,
+	CylinderTargetImpl_SetSideLength_m2153397273,
+	CylinderTargetImpl_SetTopDiameter_m3832282024,
+	CylinderTargetImpl_SetBottomDiameter_m3353701908,
+	CylinderTargetImpl_ScaleCylinder_m2503463972,
+	DatabaseLoadARController__ctor_m3506358870,
+	DatabaseLoadARController_get_Instance_m416959855,
+	DatabaseLoadARController_RegisterARController_m931671686,
+	DatabaseLoadARController_LoadDatasets_m3092836309,
+	DatabaseLoadARController_AddExternalDatasetSearchDir_m2895856311,
+	DatabaseLoadARController_Awake_m1618726915,
+	DatabaseLoadARController_Start_m1817666386,
+	DatabaseLoadARController_OnDestroy_m961284113,
+	DatabaseLoadARController__cctor_m3807175333,
+	DataSet_Exists_m1128704002,
+	DataSet_Exists_m745630089,
+	DataSet__ctor_m3585007162,
+	DataSetImpl_get_DataSetPtr_m2088565894,
+	DataSetImpl_get_Path_m3453191417,
+	DataSetImpl_get_FileStorageType_m3722668690,
+	DataSetImpl__ctor_m3268081742,
+	DataSetImpl_Load_m2213875884,
+	DataSetImpl_Load_m2480845763,
+	DataSetImpl_GetTrackables_m1059672671,
+	DataSetImpl_CreateTrackable_m3721487460,
+	DataSetImpl_CreateTrackable_m500192224,
+	DataSetImpl_Destroy_m1521540108,
+	DataSetImpl_HasReachedTrackableLimit_m1850194642,
+	DataSetImpl_Contains_m486110610,
+	DataSetImpl_DestroyAllTrackables_m2581107742,
+	DataSetImpl_ExistsImpl_m2013534985,
+	DataSetImpl_CreateImageTargets_m1029277413,
+	DataSetImpl_CreateMultiTargets_m3311304843,
+	DataSetImpl_CreateCylinderTargets_m801572728,
+	DataSetImpl_CreateVuMarkTemplates_m4280412609,
+	DataSetImpl_CreateObjectTargets_m4247990235,
+	DataSetTrackableBehaviour_OnDrawGizmos_m3549410262,
+	DataSetTrackableBehaviour_OnValidate_m4218482479,
+	DataSetTrackableBehaviour_OnTrackerUpdate_m4101108717,
+	DataSetTrackableBehaviour_SetAsSmartTerrainInitializationTarget_m1076274819,
+	DataSetTrackableBehaviour_InitializeTarget_m1796742157,
+	DataSetTrackableBehaviour_SetDefaultOccluderBounds_m2637168301,
+	DataSetTrackableBehaviour_get_DataSetPath_m2206046803,
+	DataSetTrackableBehaviour_get_DataSetName_m3341980537,
+	DataSetTrackableBehaviour_GetDataSetName_m3318192172,
+	DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_get_ExtendedTracking_m1029100091,
+	DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_set_ExtendedTracking_m172963200,
+	DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_get_InitializeSmartTerrain_m2141021537,
+	DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_set_InitializeSmartTerrain_m2525867288,
+	DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_get_ReconstructionToInitialize_m2016534471,
+	DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_set_ReconstructionToInitialize_m3694045158,
+	DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_get_SmartTerrainOccluderBoundsMin_m3425900541,
+	DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_set_SmartTerrainOccluderBoundsMin_m2929626406,
+	DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_get_SmartTerrainOccluderBoundsMax_m542558007,
+	DataSetTrackableBehaviour_Vuforia_IEditDataSetBehaviour_set_SmartTerrainOccluderBoundsMax_m220858924,
+	DataSetTrackableBehaviour__ctor_m3284839088,
+	DedicatedEyewearCameraConfiguration__ctor_m1667563612,
+	DedicatedEyewearCameraConfiguration_Init_m916427222,
+	DedicatedEyewearCameraConfiguration_ConfigureVideoBackground_m2365872095,
+	DedicatedEyewearCameraConfiguration_CheckForSurfaceChanges_m2087224994,
+	DedicatedEyewearCameraConfiguration_UpdateStereoDepth_m390416257,
+	DedicatedEyewearCameraConfiguration_IsStereo_m3733768260,
+	DedicatedEyewearCameraConfiguration_ApplyCorrectedProjectionMatrix_m2649971740,
+	DedicatedEyewearCameraConfiguration_ResolveVideoBackgroundBehaviours_m3449389477,
+	DedicatedEyewearCameraConfiguration_CameraParameterChanged_m3422302974,
+	DedicatedEyewearCameraConfiguration_UpdateProjection_m3771262396,
+	DedicatedEyewearCameraConfiguration_SetProjectionAndOffset_m190191563,
+	DedicatedEyewearCameraConfiguration_ApplyMatrix_m2808423005,
+	DedicatedEyewearCameraConfiguration_SetSkewFrustum_m3518157437,
+	DedicatedEyewearDevice_IsSeeThru_m1450487535,
+	DedicatedEyewearDevice_IsDualDisplay_m3917877013,
+	DedicatedEyewearDevice_SetDisplayExtended_m2603966001,
+	DedicatedEyewearDevice_IsDisplayExtended_m2119834474,
+	DedicatedEyewearDevice_IsDisplayExtendedGLOnly_m2953300593,
+	DedicatedEyewearDevice_GetScreenOrientation_m3331621187,
+	DedicatedEyewearDevice_SetPredictiveTracking_m1968211368,
+	DedicatedEyewearDevice_IsPredictiveTrackingEnabled_m2733753320,
+	DedicatedEyewearDevice_GetCalibrationProfileManager_m3569960842,
+	DedicatedEyewearDevice_GetUserCalibrator_m2692608240,
+	DedicatedEyewearDevice__ctor_m240987917,
+	DelegateHelper_InvokeWithExceptionHandling_m1427743576,
+	DelegateHelper_InvokeDelegate_m790092300,
+	Device_get_Instance_m1237482335,
+	Device_GetMode_m2892028838,
+	Device_IsViewerActive_m2356223832,
+	Device_GetViewerList_m645073826,
+	Device_SelectViewer_m3327922579,
+	Device_GetSelectedViewer_m3761765071,
+	Device_CreateCustomViewerParameters_m1149928607,
+	Device_SetPlayModeEyewearDevice_m1187330507,
+	Device_UnsetDevice_m3159407959,
+	Device_DeleteRenderingPrimitives_m4037723359,
+	Device_SetViewerActive_m1008036893,
+	Device_SetMode_m1521156141,
+	Device_GetDistortionMesh_m2538401350,
+	Device_GetTextureSize_m1525311301,
+	Device_GetProjectionMatrix_m2206724463,
+	Device_GetDistortionTextureViewport_m1917920699,
+	Device_GetViewport_m1670722187,
+	Device_GetNormalizedViewport_m3877469804,
+	Device_GetEyeDisplayAdjustmentMatrix_m3054861827,
+	Device_GetEffectiveFovRads_m1782659422,
+	Device_GetViewportCentreToEyeAxis_m1945166372,
+	Device__ctor_m2337754346,
+	Device__cctor_m1006421149,
+	DeviceTracker__ctor_m3937939368,
+	DeviceTrackerARController__ctor_m2818749925,
+	DeviceTrackerARController_get_Instance_m1580284183,
+	DeviceTrackerARController_RegisterARController_m2854473515,
+	DeviceTrackerARController_get_AutoInitTracker_m2846266341,
+	DeviceTrackerARController_get_AutoStartTracker_m1257408439,
+	DeviceTrackerARController_get_ModelCorrectionMode_m3252797747,
+	DeviceTrackerARController_get_ModelTransformEnabled_m4028189422,
+	DeviceTrackerARController_get_ModelTransform_m3435521337,
+	DeviceTrackerARController_Awake_m2580549902,
+	DeviceTrackerARController_OnEnable_m540620973,
+	DeviceTrackerARController_OnDisable_m1357064086,
+	DeviceTrackerARController_OnDestroy_m3636113416,
+	DeviceTrackerARController_Update_m1438584336,
+	DeviceTrackerARController_RegisterTrackerStartedCallback_m2411507821,
+	DeviceTrackerARController_UnregisterTrackerStartedCallback_m3223277948,
+	DeviceTrackerARController_RegisterBeforeDevicePoseUpdateCallback_m159769737,
+	DeviceTrackerARController_UnregisterBeforeDevicePoseUpdateCallback_m404633316,
+	DeviceTrackerARController_RegisterDevicePoseUpdatedCallback_m1308315758,
+	DeviceTrackerARController_UnregisterDevicePoseUpdatedCallback_m3303356539,
+	DeviceTrackerARController_StartDeviceTracker_m4250283669,
+	DeviceTrackerARController_StopDeviceTracker_m1461789157,
+	DeviceTrackerARController_InitDeviceTracker_m670940815,
+	DeviceTrackerARController_ApplySettings_m434773872,
+	DeviceTrackerARController_OnVuforiaInitialized_m1760936328,
+	DeviceTrackerARController_OnVuforiaStarted_m126850285,
+	DeviceTrackerARController_OnPause_m3492338041,
+	DeviceTrackerARController__cctor_m3375416164,
+	DeviceTrackingManager_RecenterPose_m2145251733,
+	DeviceTrackingManager_UpdateCamera_m1713979634,
+	DeviceTrackingManager_RegisterBeforeDevicePoseUpdateCallback_m2175731956,
+	DeviceTrackingManager_UnregisterBeforeDevicePoseUpdateCallback_m3164930505,
+	DeviceTrackingManager_RegisterDevicePoseUpdatedCallback_m3529359619,
+	DeviceTrackingManager_UnregisterDevicePoseUpdatedCallback_m352450326,
+	DeviceTrackingManager_PositionCamera_m267507202,
+	DeviceTrackingManager__ctor_m2539317300,
+	DigitalEyewearARController_get_CameraOffset_m2132838736,
+	DigitalEyewearARController_set_CameraOffset_m200713839,
+	DigitalEyewearARController_get_CentralAnchorPoint_m1690577486,
+	DigitalEyewearARController_get_ParentAnchorPoint_m428242051,
+	DigitalEyewearARController_get_IsStereoRendering_m3025547144,
+	DigitalEyewearARController_get_PrimaryCamera_m334515774,
+	DigitalEyewearARController_set_PrimaryCamera_m3357350685,
+	DigitalEyewearARController_get_SecondaryCamera_m1083705270,
+	DigitalEyewearARController_set_SecondaryCamera_m954119115,
+	DigitalEyewearARController_get_DistortionRenderingLayer_m374435780,
+	DigitalEyewearARController_set_DistortionRenderingLayer_m1642178385,
+	DigitalEyewearARController_get_DistortionRendering_m1168072888,
+	DigitalEyewearARController__ctor_m2602110059,
+	DigitalEyewearARController_get_Instance_m277595763,
+	DigitalEyewearARController_RegisterARController_m2428125041,
+	DigitalEyewearARController_Awake_m1974732040,
+	DigitalEyewearARController_Start_m1451367815,
+	DigitalEyewearARController_Update_m302955946,
+	DigitalEyewearARController_OnDestroy_m4160927174,
+	DigitalEyewearARController_OnVideoBackgroundConfigChanged_m3171291797,
+	DigitalEyewearARController_SetCentralAnchorPoint_m1442487430,
+	DigitalEyewearARController_SetParentAnchorPoint_m769086455,
+	DigitalEyewearARController_SetCameraOffset_m655483940,
+	DigitalEyewearARController_SetViewerActive_m2293080751,
+	DigitalEyewearARController_SetViewerActive_m2271981682,
+	DigitalEyewearARController_SetMode_m2663127806,
+	DigitalEyewearARController_SetDistortionRendering_m1211714402,
+	DigitalEyewearARController_GetEyewearType_m1221871708,
+	DigitalEyewearARController_SetEyewearType_m3963854201,
+	DigitalEyewearARController_GetStereoCameraConfig_m3646771353,
+	DigitalEyewearARController_SetStereoCameraConfiguration_m101416990,
+	DigitalEyewearARController_GetSeeThroughConfiguration_m2281897004,
+	DigitalEyewearARController_SetSeeThroughConfiguration_m206989625,
+	DigitalEyewearARController_EnableAutomaticFocusPointSelection_m1262891588,
+	DigitalEyewearARController_EnableWorldAnchorUsage_m1759987399,
+	DigitalEyewearARController_SetFocusPoint_m3666654193,
+	DigitalEyewearARController_OnVuforiaInitialized_m703041446,
+	DigitalEyewearARController_OnVuforiaStarted_m3836766119,
+	DigitalEyewearARController_SetViewerActive_m1121276548,
+	DigitalEyewearARController_EnableDistortionRendering_m2864563855,
+	DigitalEyewearARController_DisableDistortionRendering_m477217590,
+	DigitalEyewearARController_CorrectCameraConfiguration_m3176351466,
+	DigitalEyewearARController_ConfigureView_m3593949134,
+	DigitalEyewearARController_get_CameraConfiguration_m1308548170,
+	DigitalEyewearARController_set_CameraConfiguration_m676024097,
+	DigitalEyewearARController__cctor_m478811706,
+	SerializableViewerParameters__ctor_m1900419393,
+	DistortionRenderingBehaviour_get_UseSingleTexture_m1768677505,
+	DistortionRenderingBehaviour_set_UseSingleTexture_m1599712680,
+	DistortionRenderingBehaviour_get_RenderLayer_m4122027286,
+	DistortionRenderingBehaviour_set_RenderLayer_m1808232559,
+	DistortionRenderingBehaviour_get_VideoBackgroundChanged_m2441514162,
+	DistortionRenderingBehaviour_set_VideoBackgroundChanged_m758192121,
+	DistortionRenderingBehaviour_Start_m3582865692,
+	DistortionRenderingBehaviour_OnEnable_m2169174460,
+	DistortionRenderingBehaviour_Update_m1109442223,
+	DistortionRenderingBehaviour_OnDisable_m2757385287,
+	DistortionRenderingBehaviour_OnDestroy_m1295239893,
+	DistortionRenderingBehaviour_CreateMesh_m2465714981,
+	DistortionRenderingBehaviour_CreateMeshGameObject_m2160735917,
+	DistortionRenderingBehaviour_CreateRenderTexture_m2238633035,
+	DistortionRenderingBehaviour_SetupOrthographicCamera_m1817830297,
+	DistortionRenderingBehaviour_HaveDualTextureViewportsChanged_m3294872394,
+	DistortionRenderingBehaviour_AdjustDualTextureViewports_m3039346356,
+	DistortionRenderingBehaviour_OnVideoBackgroundConfigChanged_m3102784572,
+	DistortionRenderingBehaviour__ctor_m3985695928,
+	ExternalStereoCameraConfiguration__ctor_m2052271870,
+	ExternalStereoCameraConfiguration_CheckForSurfaceChanges_m3741145436,
+	ExternalStereoCameraConfiguration_ApplyCorrectedProjectionMatrix_m2924592674,
+	ExternalStereoCameraConfiguration_CameraParameterChanged_m1803384904,
+	ExternalStereoCameraConfiguration_UpdateProjection_m1009762910,
+	EyewearCalibrationProfileManager__ctor_m3038223222,
+	EyewearCalibrationProfileManagerImpl_getMaxCount_m16215983,
+	EyewearCalibrationProfileManagerImpl_getUsedCount_m3471545206,
+	EyewearCalibrationProfileManagerImpl_isProfileUsed_m3576754687,
+	EyewearCalibrationProfileManagerImpl_getActiveProfile_m2594318099,
+	EyewearCalibrationProfileManagerImpl_setActiveProfile_m3165712324,
+	EyewearCalibrationProfileManagerImpl_getCameraToEyePose_m3028272859,
+	EyewearCalibrationProfileManagerImpl_getEyeProjection_m386752457,
+	EyewearCalibrationProfileManagerImpl_setCameraToEyePose_m1060105678,
+	EyewearCalibrationProfileManagerImpl_setEyeProjection_m4228391584,
+	EyewearCalibrationProfileManagerImpl_getProfileName_m3993114516,
+	EyewearCalibrationProfileManagerImpl_setProfileName_m2632119145,
+	EyewearCalibrationProfileManagerImpl_clearProfile_m2025779759,
+	EyewearCalibrationProfileManagerImpl__ctor_m1645369704,
+	EyewearDevice__ctor_m924025370,
+	EyewearUserCalibrator__ctor_m3942640824,
+	EyewearUserCalibratorImpl_init_m4030421004,
+	EyewearUserCalibratorImpl_getMinScaleHint_m1195487277,
+	EyewearUserCalibratorImpl_getMaxScaleHint_m4213719891,
+	EyewearUserCalibratorImpl_isStereoStretched_m1235533350,
+	EyewearUserCalibratorImpl_getProjectionMatrix_m3134012839,
+	EyewearUserCalibratorImpl__ctor_m2882584214,
+	FactorySetter__ctor_m507763515,
+	HideExcessAreaAbstractBehaviour_OnTrackablesUpdated_m3491318521,
+	HideExcessAreaAbstractBehaviour_OnVuforiaStarted_m2846865987,
+	HideExcessAreaAbstractBehaviour_CheckForChangedClippingMode_m4283239513,
+	HideExcessAreaAbstractBehaviour_get_PlaneOffset_m3634335651,
+	HideExcessAreaAbstractBehaviour_set_PlaneOffset_m3820567390,
+	HideExcessAreaAbstractBehaviour_SetPlanesRenderingActive_m3111388437,
+	HideExcessAreaAbstractBehaviour_IsPlanesRenderingActive_m1154293968,
+	HideExcessAreaAbstractBehaviour_OnConfigurationChanged_m150596188,
+	HideExcessAreaAbstractBehaviour_OnPreCull_m4173180703,
+	HideExcessAreaAbstractBehaviour_OnPostRender_m4028749816,
+	HideExcessAreaAbstractBehaviour_Start_m3931324947,
+	HideExcessAreaAbstractBehaviour_OnDisable_m4220683468,
+	HideExcessAreaAbstractBehaviour_OnEnable_m2789243539,
+	HideExcessAreaAbstractBehaviour_OnDestroy_m2204165266,
+	HideExcessAreaAbstractBehaviour__ctor_m283987487,
+	HoloLensExtendedTrackingManager_ApplyTrackingState_m3697571161,
+	HoloLensExtendedTrackingManager_StartExtendedTracking_m1249991830,
+	HoloLensExtendedTrackingManager_StopExtendedTracking_m1635671486,
+	HoloLensExtendedTrackingManager_PersistExtendedTracking_m2336985418,
+	HoloLensExtendedTrackingManager_ResetExtendedTracking_m2191306863,
+	HoloLensExtendedTrackingManager_GetExtendedTrackedBehaviours_m2428850838,
+	HoloLensExtendedTrackingManager_EnableWorldAnchorUsage_m4188451833,
+	HoloLensExtendedTrackingManager_GetExtendedTrackingParameters_m1981032109,
+	HoloLensExtendedTrackingManager_SetExtendedTrackingParameters_m3601969701,
+	HoloLensExtendedTrackingManager_CheckHandoverToHoloLens_m3082323370,
+	HoloLensExtendedTrackingManager_CheckForHoloLensPoseUpdates_m2344553226,
+	HoloLensExtendedTrackingManager_IsTargetWellInView_m4118593287,
+	HoloLensExtendedTrackingManager_CalculateTargetSizeInCameraViewCoeff_m3606167346,
+	HoloLensExtendedTrackingManager_OnSpatialAnchorTrackingCallback_m1501774474,
+	HoloLensExtendedTrackingManager_ResetExtendedTrackingForTrackable_m4156989359,
+	HoloLensExtendedTrackingManager__ctor_m4028871273,
+	Image__ctor_m290697421,
+	ImageImpl_get_Width_m2846704276,
+	ImageImpl_set_Width_m1617992279,
+	ImageImpl_get_Height_m1190386785,
+	ImageImpl_set_Height_m1808934552,
+	ImageImpl_get_Stride_m2588114675,
+	ImageImpl_set_Stride_m1803209726,
+	ImageImpl_get_BufferWidth_m200377818,
+	ImageImpl_set_BufferWidth_m492104915,
+	ImageImpl_get_BufferHeight_m601828869,
+	ImageImpl_set_BufferHeight_m3144821170,
+	ImageImpl_get_PixelFormat_m4082995534,
+	ImageImpl_set_PixelFormat_m2623990565,
+	ImageImpl_get_Pixels_m2847445935,
+	ImageImpl_set_Pixels_m3848062066,
+	ImageImpl_get_UnmanagedData_m4100531499,
+	ImageImpl_set_UnmanagedData_m768794850,
+	ImageImpl__ctor_m1562615945,
+	ImageImpl_Finalize_m1850203523,
+	ImageImpl_IsValid_m2070893053,
+	ImageImpl_CopyToTexture_m2382529606,
+	ImageImpl_CopyPixelsFromUnmanagedBuffer_m3959285315,
+	ImageImpl_GetPixels32_m3926724551,
+	ImageImpl_ConvertPixelFormat_m2077189007,
+	ImageTargetAbstractBehaviour_get_ImageTarget_m3261756177,
+	ImageTargetAbstractBehaviour__ctor_m3584284597,
+	ImageTargetAbstractBehaviour_CorrectScaleImpl_m2789088199,
+	ImageTargetAbstractBehaviour_InternalUnregisterTrackable_m551580173,
+	ImageTargetAbstractBehaviour_CalculateDefaultOccluderBounds_m257797196,
+	ImageTargetAbstractBehaviour_ProtectedSetAsSmartTerrainInitializationTarget_m1937534315,
+	ImageTargetAbstractBehaviour_CreateVirtualButton_m387103575,
+	ImageTargetAbstractBehaviour_CreateVirtualButton_m803373355,
+	ImageTargetAbstractBehaviour_GetVirtualButtonBehaviours_m253719924,
+	ImageTargetAbstractBehaviour_DestroyVirtualButton_m81583840,
+	ImageTargetAbstractBehaviour_GetSize_m4105784097,
+	ImageTargetAbstractBehaviour_SetWidth_m3729972608,
+	ImageTargetAbstractBehaviour_SetHeight_m1092881085,
+	ImageTargetAbstractBehaviour_get_ImageTargetType_m3883916497,
+	ImageTargetAbstractBehaviour_InitializeTarget_m3341073650,
+	ImageTargetAbstractBehaviour_AssociateExistingVirtualButtonBehaviour_m3138298,
+	ImageTargetAbstractBehaviour_CreateMissingVirtualButtonBehaviours_m3316820328,
+	ImageTargetAbstractBehaviour_TryGetVirtualButtonBehaviourByID_m3556963011,
+	ImageTargetAbstractBehaviour_CreateVirtualButtonFromNative_m303145262,
+	ImageTargetAbstractBehaviour_CreateNewVirtualButtonFromBehaviour_m2457901221,
+	ImageTargetAbstractBehaviour_OnValidate_m150764676,
+	ImageTargetBuilder__ctor_m631402605,
+	ImageTargetBuilderImpl_Build_m3394855988,
+	ImageTargetBuilderImpl_StartScan_m3041873830,
+	ImageTargetBuilderImpl_StopScan_m1055866958,
+	ImageTargetBuilderImpl_GetFrameQuality_m4132906308,
+	ImageTargetBuilderImpl_GetTrackableSource_m193365126,
+	ImageTargetBuilderImpl_IsScanning_m2389375152,
+	ImageTargetBuilderImpl__ctor_m3200368865,
+	ImageTargetImpl__ctor_m2593363911,
+	ImageTargetImpl_get_ImageTargetType_m932177854,
+	ImageTargetImpl_CreateVirtualButton_m3854995304,
+	ImageTargetImpl_GetVirtualButtonByName_m1711054985,
+	ImageTargetImpl_GetVirtualButtons_m186656835,
+	ImageTargetImpl_DestroyVirtualButton_m2704165902,
+	ImageTargetImpl_CreateNewVirtualButtonInNative_m583407816,
+	ImageTargetImpl_UnregisterVirtualButtonInNative_m523759288,
+	ImageTargetImpl_CreateVirtualButtonsFromNative_m361753039,
+	InstanceIdImpl__ctor_m431159950,
+	InstanceIdImpl_get_DataType_m306292916,
+	InstanceIdImpl_get_Buffer_m2197602831,
+	InstanceIdImpl_get_HexStringValue_m2871743341,
+	InstanceIdImpl_get_StringValue_m1924037270,
+	InstanceIdImpl_get_NumericValue_m1364098803,
+	InstanceIdImpl_ToString_m1178136557,
+	IOSCamRecoveringHelper_SetHasJustResumed_m888186305,
+	IOSCamRecoveringHelper_TryToRecover_m3592690838,
+	IOSCamRecoveringHelper_SetSuccessfullyRecovered_m2798950804,
+	IOSCamRecoveringHelper__cctor_m3147570575,
+	LegacyHideExcessAreaClipping_CreateQuad_m1790734755,
+	LegacyHideExcessAreaClipping_HasCalculationDataChanged_m1270543338,
+	LegacyHideExcessAreaClipping__ctor_m1880831303,
+	LegacyHideExcessAreaClipping_SetPlanesRenderingActive_m1567484271,
+	LegacyHideExcessAreaClipping_IsPlanesRenderingActive_m3952349606,
+	LegacyHideExcessAreaClipping_OnPreCull_m1743061293,
+	LegacyHideExcessAreaClipping_OnPostRender_m2540359138,
+	LegacyHideExcessAreaClipping_Start_m495781433,
+	LegacyHideExcessAreaClipping_OnDestroy_m1112703896,
+	LegacyHideExcessAreaClipping_Update_m1412929669,
+	MaskOutAbstractBehaviour__ctor_m3743365693,
+	MeshUtils_UpdateMesh_m3609502194,
+	MeshUtils_CopyPositions_m2624573433,
+	MeshUtils_CopyNormals_m3587804019,
+	MeshUtils_CopyTexCoords_m3674850487,
+	MeshUtils_CopyTriangles_m2648173621,
+	MeshUtils__ctor_m3454226092,
+	MixedRealityController_get_Instance_m2682544475,
+	MixedRealityController_SetMode_m2979588521,
+	MixedRealityController_SetViewerParameters_m2297019686,
+	MixedRealityController_ConfigureForDifferentStereoFramework_m1177858678,
+	MixedRealityController_get_AutoStopCameraIfNotRequired_m2955406165,
+	MixedRealityController_set_AutoStopCameraIfNotRequired_m1178389852,
+	MixedRealityController_ResolveMembers_m4187610732,
+	MixedRealityController_SetVideoBackgroundEnabled_m3933299158,
+	MixedRealityController_SetViewer_m2047248436,
+	MixedRealityController_SetTargetFPS_m4074645502,
+	MixedRealityController_StopDeviceTracker_m431585225,
+	MixedRealityController_StartDeviceTracker_m2659636892,
+	MixedRealityController_StopCameraAndTrackersIfNotRequired_m2636481967,
+	MixedRealityController_StartCameraAndTrackersIfStopped_m2661183636,
+	MixedRealityController_SetHandheldAR_m3681670,
+	MixedRealityController_SetRotationalHandheldAR_m752779695,
+	MixedRealityController_SetHandheldVR_m3344010865,
+	MixedRealityController_SetViewerAR_m3871906858,
+	MixedRealityController_SetRotationalViewerAR_m3257244411,
+	MixedRealityController_SetViewerVR_m1378552669,
+	MixedRealityController__ctor_m2809067313,
+	MixedRealityController__cctor_m387094910,
+	MonoCameraConfiguration__ctor_m4556692,
+	MonoCameraConfiguration_ConfigureVideoBackground_m751732411,
+	MonoCameraConfiguration_CheckForSurfaceChanges_m4001232568,
+	MonoCameraConfiguration_UpdateStereoDepth_m534515481,
+	MonoCameraConfiguration_IsStereo_m172501270,
+	MonoCameraConfiguration_ApplyCorrectedProjectionMatrix_m1818632510,
+	MonoCameraConfiguration_SetSkewFrustum_m2496860125,
+	MonoCameraConfiguration_UpdateProjection_m4171837790,
+	MonoCameraConfiguration_ResolveVideoBackgroundBehaviours_m2707286965,
+	MonoCameraConfiguration_CameraParameterChanged_m840282076,
+	MultiTargetAbstractBehaviour_get_MultiTarget_m3726252483,
+	MultiTargetAbstractBehaviour_InternalUnregisterTrackable_m3635061031,
+	MultiTargetAbstractBehaviour_CalculateDefaultOccluderBounds_m3132316772,
+	MultiTargetAbstractBehaviour_ProtectedSetAsSmartTerrainInitializationTarget_m347807997,
+	MultiTargetAbstractBehaviour_InitializeTarget_m3505194470,
+	MultiTargetAbstractBehaviour__ctor_m3602545575,
+	MultiTargetImpl__ctor_m645621717,
+	MultiTargetImpl_GetSize_m1996308639,
+	MultiTargetImpl_GetLargestSizeComponent_m3629322614,
+	MultiTargetImpl_SetSize_m1517218450,
+	NullCameraConfiguration_Init_m1947562486,
+	NullCameraConfiguration_InitCameraDevice_m660566198,
+	NullCameraConfiguration_ConfigureVideoBackground_m3142491847,
+	NullCameraConfiguration_UpdatePlayModeParameters_m2900218451,
+	NullCameraConfiguration_CheckForSurfaceChanges_m3091819914,
+	NullCameraConfiguration_UpdateStereoDepth_m2126623253,
+	NullCameraConfiguration_IsStereo_m2927167560,
+	NullCameraConfiguration_ResetBackgroundPlane_m3928893918,
+	NullCameraConfiguration_get_VideoBackgroundMirrored_m849057329,
+	NullCameraConfiguration_set_VideoBackgroundMirrored_m525261562,
+	NullCameraConfiguration_ApplyCorrectedProjectionMatrix_m1073353020,
+	NullCameraConfiguration_SetSkewFrustum_m1966287497,
+	NullCameraConfiguration_get_VideoBackgroundViewportRect_m1997693548,
+	NullCameraConfiguration_get_EyewearUserCalibrationProfileId_m3609770164,
+	NullCameraConfiguration_set_EyewearUserCalibrationProfileId_m3442712861,
+	NullCameraConfiguration_SetCameraParameterChanged_m2769363672,
+	NullCameraConfiguration__ctor_m3104761766,
+	NullHideExcessAreaClipping_SetPlanesRenderingActive_m4111559369,
+	NullHideExcessAreaClipping_IsPlanesRenderingActive_m3229182548,
+	NullHideExcessAreaClipping_OnPreCull_m2043013367,
+	NullHideExcessAreaClipping_OnPostRender_m2182005192,
+	NullHideExcessAreaClipping_Start_m950157531,
+	NullHideExcessAreaClipping_OnDestroy_m270449122,
+	NullHideExcessAreaClipping_Update_m2422082895,
+	NullHideExcessAreaClipping__ctor_m2839568335,
+	NullHoloLensApiAbstraction_SetFocusPoint_m3336859543,
+	NullHoloLensApiAbstraction_SetWorldAnchor_m1996244266,
+	NullHoloLensApiAbstraction_DeleteWorldAnchor_m582689819,
+	NullHoloLensApiAbstraction_DeleteWorldAnchor_m1157685605,
+	NullHoloLensApiAbstraction_SetSpatialAnchorTrackingCallback_m3294576552,
+	NullHoloLensApiAbstraction__ctor_m2279623137,
+	NullUnityPlayer_LoadNativeLibraries_m1496888523,
+	NullUnityPlayer_InitializePlatform_m4186374246,
+	NullUnityPlayer_InitializeVuforia_m32392536,
+	NullUnityPlayer_StartScene_m1563172915,
+	NullUnityPlayer_Update_m2998149270,
+	NullUnityPlayer_Dispose_m2810591470,
+	NullUnityPlayer_OnPause_m700539162,
+	NullUnityPlayer_OnResume_m325033281,
+	NullUnityPlayer_OnDestroy_m253508882,
+	NullUnityPlayer__ctor_m483624113,
+	NullWebCamTexAdaptor_get_DidUpdateThisFrame_m2320074944,
+	NullWebCamTexAdaptor_get_IsPlaying_m17368229,
+	NullWebCamTexAdaptor_get_Texture_m3961705283,
+	NullWebCamTexAdaptor__ctor_m1912926792,
+	NullWebCamTexAdaptor_Play_m3701139890,
+	NullWebCamTexAdaptor_Stop_m2622320100,
+	NullWebCamTexAdaptor_CheckPermissions_m2828396576,
+	ObjectTargetAbstractBehaviour__ctor_m4149910295,
+	ObjectTargetAbstractBehaviour_get_ObjectTarget_m631604847,
+	ObjectTargetAbstractBehaviour_OnDrawGizmos_m2301756507,
+	ObjectTargetAbstractBehaviour_CorrectScaleImpl_m2373342665,
+	ObjectTargetAbstractBehaviour_InternalUnregisterTrackable_m3808528191,
+	ObjectTargetAbstractBehaviour_CalculateDefaultOccluderBounds_m4152189776,
+	ObjectTargetAbstractBehaviour_ProtectedSetAsSmartTerrainInitializationTarget_m187480149,
+	ObjectTargetAbstractBehaviour_SetBoundingBox_m2905572592,
+	ObjectTargetAbstractBehaviour_GetSize_m4221564256,
+	ObjectTargetAbstractBehaviour_SetLength_m3259471564,
+	ObjectTargetAbstractBehaviour_SetWidth_m2466427428,
+	ObjectTargetAbstractBehaviour_SetHeight_m1507152255,
+	ObjectTargetAbstractBehaviour_InitializeTarget_m50766930,
+	ObjectTargetAbstractBehaviour_OnValidate_m1439977524,
+	ObjectTargetImpl__ctor_m1852696733,
+	ObjectTargetImpl_GetSize_m3410160351,
+	ObjectTargetImpl_GetLargestSizeComponent_m4031738666,
+	ObjectTargetImpl_SetSize_m3814538822,
+	ObjectTargetImpl_StartExtendedTracking_m913842560,
+	ObjectTargetImpl_StopExtendedTracking_m2569701850,
+	ObjectTargetImpl_get_DataSet_m3539943858,
+	ObjectTracker__ctor_m3101494475,
+	ObjectTrackerImpl_get_ImageTargetBuilder_m2528094335,
+	ObjectTrackerImpl_get_TargetFinder_m596223775,
+	ObjectTrackerImpl__ctor_m2286263407,
+	ObjectTrackerImpl_Start_m3737479319,
+	ObjectTrackerImpl_Stop_m3775943247,
+	ObjectTrackerImpl_CreateDataSet_m793918966,
+	ObjectTrackerImpl_DestroyDataSet_m1873361072,
+	ObjectTrackerImpl_ActivateDataSet_m3873063170,
+	ObjectTrackerImpl_DeactivateDataSet_m1276087149,
+	ObjectTrackerImpl_GetActiveDataSets_m1766292390,
+	ObjectTrackerImpl_GetDataSets_m685248976,
+	ObjectTrackerImpl_DestroyAllDataSets_m282189974,
+	ObjectTrackerImpl_PersistExtendedTracking_m4279500590,
+	ObjectTrackerImpl_ResetExtendedTracking_m3601965964,
+	OrientedBoundingBox__ctor_m1614144038_AdjustorThunk,
+	OrientedBoundingBox_get_Center_m1177362016_AdjustorThunk,
+	OrientedBoundingBox_set_Center_m1455617149_AdjustorThunk,
+	OrientedBoundingBox_get_HalfExtents_m417767871_AdjustorThunk,
+	OrientedBoundingBox_set_HalfExtents_m3457610300_AdjustorThunk,
+	OrientedBoundingBox_get_Rotation_m379772768_AdjustorThunk,
+	OrientedBoundingBox_set_Rotation_m1473121299_AdjustorThunk,
+	OrientedBoundingBox3D__ctor_m2440597057_AdjustorThunk,
+	OrientedBoundingBox3D_get_Center_m934917468_AdjustorThunk,
+	OrientedBoundingBox3D_set_Center_m1489826095_AdjustorThunk,
+	OrientedBoundingBox3D_get_HalfExtents_m3691109229_AdjustorThunk,
+	OrientedBoundingBox3D_set_HalfExtents_m221536114_AdjustorThunk,
+	OrientedBoundingBox3D_get_RotationY_m2715891676_AdjustorThunk,
+	OrientedBoundingBox3D_set_RotationY_m3811947797_AdjustorThunk,
+	PlayModeEditorUtility_get_Instance_m3503318396,
+	PlayModeEditorUtility_set_Instance_m609218285,
+	PlayModeEditorUtility__ctor_m88883902,
+	NullPlayModeEditorUtility_DisplayDialog_m1778193142,
+	NullPlayModeEditorUtility_LoadAndParseWebcamProfiles_m3242777250,
+	NullPlayModeEditorUtility_RestartPlayMode_m3680835336,
+	NullPlayModeEditorUtility_ShowErrorInMouseOverWindow_m2663890123,
+	NullPlayModeEditorUtility__ctor_m3586199438,
+	PlayModeEyewearCalibrationProfileManagerImpl_getMaxCount_m2586101394,
+	PlayModeEyewearCalibrationProfileManagerImpl_getUsedCount_m3700336979,
+	PlayModeEyewearCalibrationProfileManagerImpl_isProfileUsed_m2155002998,
+	PlayModeEyewearCalibrationProfileManagerImpl_getActiveProfile_m2761998828,
+	PlayModeEyewearCalibrationProfileManagerImpl_setActiveProfile_m884227855,
+	PlayModeEyewearCalibrationProfileManagerImpl_getCameraToEyePose_m747602590,
+	PlayModeEyewearCalibrationProfileManagerImpl_getEyeProjection_m3464309072,
+	PlayModeEyewearCalibrationProfileManagerImpl_setCameraToEyePose_m4244120335,
+	PlayModeEyewearCalibrationProfileManagerImpl_setEyeProjection_m1076870429,
+	PlayModeEyewearCalibrationProfileManagerImpl_getProfileName_m3780786733,
+	PlayModeEyewearCalibrationProfileManagerImpl_setProfileName_m3761072908,
+	PlayModeEyewearCalibrationProfileManagerImpl_clearProfile_m4230319932,
+	PlayModeEyewearCalibrationProfileManagerImpl__ctor_m2916353515,
+	PlayModeEyewearDevice_IsSeeThru_m492739259,
+	PlayModeEyewearDevice_IsDualDisplay_m845257349,
+	PlayModeEyewearDevice_SetDisplayExtended_m3201655505,
+	PlayModeEyewearDevice_IsDisplayExtended_m823053100,
+	PlayModeEyewearDevice_IsDisplayExtendedGLOnly_m1532292705,
+	PlayModeEyewearDevice_GetScreenOrientation_m4112183447,
+	PlayModeEyewearDevice_SetPredictiveTracking_m3793069758,
+	PlayModeEyewearDevice_IsPredictiveTrackingEnabled_m489350214,
+	PlayModeEyewearDevice_GetCalibrationProfileManager_m988838318,
+	PlayModeEyewearDevice_GetUserCalibrator_m3769000212,
+	PlayModeEyewearDevice__ctor_m3153237917,
+	PlayModeEyewearUserCalibratorImpl_init_m843849621,
+	PlayModeEyewearUserCalibratorImpl_getMinScaleHint_m799932846,
+	PlayModeEyewearUserCalibratorImpl_getMaxScaleHint_m1607338756,
+	PlayModeEyewearUserCalibratorImpl_isStereoStretched_m3277696653,
+	PlayModeEyewearUserCalibratorImpl_getProjectionMatrix_m2769701112,
+	PlayModeEyewearUserCalibratorImpl__ctor_m3689106987,
+	PlayModeUnityPlayer_LoadNativeLibraries_m187654743,
+	PlayModeUnityPlayer_InitializePlatform_m613208266,
+	PlayModeUnityPlayer_InitializeSurface_m284621958,
+	PlayModeUnityPlayer_InitializeVuforia_m730962768,
+	PlayModeUnityPlayer_StartScene_m440069735,
+	PlayModeUnityPlayer_Update_m935986358,
+	PlayModeUnityPlayer_Dispose_m1278853626,
+	PlayModeUnityPlayer_OnPause_m1792028790,
+	PlayModeUnityPlayer_OnResume_m464993153,
+	PlayModeUnityPlayer_OnDestroy_m4040312454,
+	PlayModeUnityPlayer__ctor_m2126346857,
+	PremiumObjectFactory_get_Instance_m853892460,
+	PremiumObjectFactory_set_Instance_m3063549145,
+	PremiumObjectFactory__ctor_m3000267640,
+	NullPremiumObjectFactory__ctor_m1644749638,
+	PropAbstractBehaviour_get_Prop_m1610298944,
+	PropAbstractBehaviour_UpdateMeshAndColliders_m3053797708,
+	PropAbstractBehaviour_Start_m2122559776,
+	PropAbstractBehaviour_InternalUnregisterTrackable_m3524041866,
+	PropAbstractBehaviour_InitializeProp_m1798106226,
+	PropAbstractBehaviour__ctor_m1260771068,
+	PropImpl__ctor_m2261528851,
+	PropImpl_get_BoundingBox_m4047710222,
+	PropImpl_SetMesh_m1717601107,
+	PropImpl_SetObb_m1194184136,
+	ReconstructionAbstractBehaviour_get_Reconstruction_m3690308805,
+	ReconstructionAbstractBehaviour_OnDrawGizmos_m3110211705,
+	ReconstructionAbstractBehaviour_OnValidate_m1158941226,
+	ReconstructionAbstractBehaviour_RegisterSmartTerrainEventHandler_m2320074155,
+	ReconstructionAbstractBehaviour_UnregisterSmartTerrainEventHandler_m3855240990,
+	ReconstructionAbstractBehaviour_RegisterInitializedCallback_m2803194273,
+	ReconstructionAbstractBehaviour_UnregisterInitializedCallback_m1227727352,
+	ReconstructionAbstractBehaviour_RegisterPropCreatedCallback_m4192941617,
+	ReconstructionAbstractBehaviour_UnregisterPropCreatedCallback_m2048741868,
+	ReconstructionAbstractBehaviour_RegisterPropUpdatedCallback_m3281839854,
+	ReconstructionAbstractBehaviour_UnregisterPropUpdatedCallback_m1510042523,
+	ReconstructionAbstractBehaviour_RegisterPropDeletedCallback_m4253060992,
+	ReconstructionAbstractBehaviour_UnregisterPropDeletedCallback_m2424874071,
+	ReconstructionAbstractBehaviour_RegisterSurfaceCreatedCallback_m3624331525,
+	ReconstructionAbstractBehaviour_UnregisterSurfaceCreatedCallback_m1039740100,
+	ReconstructionAbstractBehaviour_RegisterSurfaceUpdatedCallback_m711979100,
+	ReconstructionAbstractBehaviour_UnregisterSurfaceUpdatedCallback_m413525535,
+	ReconstructionAbstractBehaviour_RegisterSurfaceDeletedCallback_m4165818170,
+	ReconstructionAbstractBehaviour_UnregisterSurfaceDeletedCallback_m3605289059,
+	ReconstructionAbstractBehaviour_AssociateProp_m920258964,
+	ReconstructionAbstractBehaviour_AssociateSurface_m4192971254,
+	ReconstructionAbstractBehaviour_GetActiveProps_m3842873790,
+	ReconstructionAbstractBehaviour_TryGetPropBehaviour_m1603883707,
+	ReconstructionAbstractBehaviour_GetActiveSurfaces_m227777230,
+	ReconstructionAbstractBehaviour_TryGetSurfaceBehaviour_m3130467827,
+	ReconstructionAbstractBehaviour_Initialize_m1984027653,
+	ReconstructionAbstractBehaviour_Deinitialize_m63619284,
+	ReconstructionAbstractBehaviour_UpdateSmartTerrainData_m512220199,
+	ReconstructionAbstractBehaviour_SetBehavioursToNotFound_m3776253569,
+	ReconstructionAbstractBehaviour_ClearOnReset_m3379428694,
+	ReconstructionAbstractBehaviour_OnReconstructionRemoved_m3175675738,
+	ReconstructionAbstractBehaviour_get_AutomaticStart_m1671730793,
+	ReconstructionAbstractBehaviour_ScaleEditorMeshesByFactor_m2714981886,
+	ReconstructionAbstractBehaviour_ScaleEditorPropPositionsByFactor_m2992528058,
+	ReconstructionAbstractBehaviour_InstantiatePropBehaviour_m2652920676,
+	ReconstructionAbstractBehaviour_AssociatePropBehaviour_m1737543334,
+	ReconstructionAbstractBehaviour_InstantiateSurfaceBehaviour_m3240602130,
+	ReconstructionAbstractBehaviour_AssociateSurfaceBehaviour_m1498417806,
+	ReconstructionAbstractBehaviour_FindSmartTerrainTrackable_m4027062030,
+	ReconstructionAbstractBehaviour_NotifySurfaceEventHandlers_m285606018,
+	ReconstructionAbstractBehaviour_NotifyPropEventHandlers_m2386877132,
+	ReconstructionAbstractBehaviour_ReadMeshBoundaries_m69083921,
+	ReconstructionAbstractBehaviour_UnregisterDeletedProps_m4145076513,
+	ReconstructionAbstractBehaviour_UnregisterDeletedSurfaces_m2867229921,
+	ReconstructionAbstractBehaviour_UpdateSurfaces_m1418941454,
+	ReconstructionAbstractBehaviour_UpdateProps_m2364323892,
+	ReconstructionAbstractBehaviour__ctor_m2037226869,
+	ReconstructionFromTargetAbstractBehaviour_get_ReconstructionBehaviour_m1203845362,
+	ReconstructionFromTargetAbstractBehaviour_get_ReconstructionFromTarget_m2539056400,
+	ReconstructionFromTargetAbstractBehaviour_Awake_m1796292747,
+	ReconstructionFromTargetAbstractBehaviour_OnDestroy_m562494977,
+	ReconstructionFromTargetAbstractBehaviour_Initialize_m809542440,
+	ReconstructionFromTargetAbstractBehaviour_OnTrackerStarted_m380162722,
+	ReconstructionFromTargetAbstractBehaviour__ctor_m2704257964,
+	ReconstructionFromTargetImpl__ctor_m2319992657,
+	ReconstructionFromTargetImpl_SetInitializationTarget_m673095841,
+	ReconstructionFromTargetImpl_SetInitializationTarget_m4221759535,
+	ReconstructionFromTargetImpl_SetInitializationTarget_m2632264994,
+	ReconstructionFromTargetImpl_SetInitializationTarget_m2744479616,
+	ReconstructionFromTargetImpl_SetInitializationTarget_m228472662,
+	ReconstructionFromTargetImpl_SetInitializationTarget_m2047845600,
+	ReconstructionFromTargetImpl_GetInitializationTarget_m274953248,
+	ReconstructionFromTargetImpl_GetInitializationTarget_m731125596,
+	ReconstructionFromTargetImpl_Reset_m3824029366,
+	ReconstructionFromTargetImpl_Start_m1274563583,
+	ReconstructionFromTargetImpl_SetInitializationTarget_m2812243691,
+	ReconstructionFromTargetImpl_get_CanAutoSetInitializationTarget_m3645193746,
+	ReconstructionFromTargetImpl_set_CanAutoSetInitializationTarget_m2562252841,
+	ReconstructionImpl__ctor_m2915415100,
+	ReconstructionImpl_get_NativePtr_m887299403,
+	ReconstructionImpl_SetMaximumArea_m2111402412,
+	ReconstructionImpl_GetMaximumArea_m2846034152,
+	ReconstructionImpl_Stop_m2391810884,
+	ReconstructionImpl_Start_m2283817134,
+	ReconstructionImpl_IsReconstructing_m310848938,
+	ReconstructionImpl_SetNavMeshPadding_m275882688,
+	ReconstructionImpl_get_NavMeshPadding_m1833982022,
+	ReconstructionImpl_StartNavMeshUpdates_m4284814640,
+	ReconstructionImpl_StopNavMeshUpdates_m3341200882,
+	ReconstructionImpl_IsNavMeshUpdating_m2656148540,
+	ReconstructionImpl_Reset_m1974985481,
+	RotationalDeviceTracker__ctor_m1171749539,
+	RotationalDeviceTrackerImpl_Start_m915491143,
+	RotationalDeviceTrackerImpl_Stop_m2160469823,
+	RotationalDeviceTrackerImpl_RecenterPose_m4022457808,
+	RotationalDeviceTrackerImpl_RecenterPose_m223560889,
+	RotationalDeviceTrackerImpl_SetPosePrediction_m2142991668,
+	RotationalDeviceTrackerImpl_GetPosePrediction_m3862713161,
+	RotationalDeviceTrackerImpl_SetModelCorrectionMode_m3720502293,
+	RotationalDeviceTrackerImpl_GetModelCorrectionMode_m2629405988,
+	RotationalDeviceTrackerImpl_SetModelCorrectionModeWithTransform_m462537128,
+	RotationalDeviceTrackerImpl_GetModelCorrectionTransform_m2743554492,
+	RotationalDeviceTrackerImpl_RecenterPoseToCurrentAnchorPointPosition_m2265721211,
+	RotationalDeviceTrackerImpl__ctor_m1248228927,
+	RotationalPlayModeDeviceTrackerImpl_Start_m173489900,
+	RotationalPlayModeDeviceTrackerImpl_Stop_m3812319390,
+	RotationalPlayModeDeviceTrackerImpl_RecenterPose_m2490632205,
+	RotationalPlayModeDeviceTrackerImpl_RecenterPose_m1188573378,
+	RotationalPlayModeDeviceTrackerImpl_SetPosePrediction_m112933485,
+	RotationalPlayModeDeviceTrackerImpl_GetPosePrediction_m3272406264,
+	RotationalPlayModeDeviceTrackerImpl_SetModelCorrectionMode_m2540140746,
+	RotationalPlayModeDeviceTrackerImpl_GetModelCorrectionMode_m289456285,
+	RotationalPlayModeDeviceTrackerImpl_SetModelCorrectionModeWithTransform_m989160497,
+	RotationalPlayModeDeviceTrackerImpl_GetModelCorrectionTransform_m3693354085,
+	RotationalPlayModeDeviceTrackerImpl_GetTrackable_m3786154696,
+	RotationalPlayModeDeviceTrackerImpl_get_Rotation_m578061435,
+	RotationalPlayModeDeviceTrackerImpl_set_Rotation_m3386153514,
+	RotationalPlayModeDeviceTrackerImpl_RecenterPoseToCurrentAnchorPointPosition_m1325380295,
+	RotationalPlayModeDeviceTrackerImpl__ctor_m789415676,
+	SmartTerrainBuilder__ctor_m2181302917,
+	SmartTerrainBuilderImpl_Init_m2118379831,
+	SmartTerrainBuilderImpl_Deinit_m1072296474,
+	SmartTerrainBuilderImpl_GetReconstructions_m3718619771,
+	SmartTerrainBuilderImpl_AddReconstruction_m3421075475,
+	SmartTerrainBuilderImpl_RemoveReconstruction_m3833434424,
+	SmartTerrainBuilderImpl_DestroyReconstruction_m4053523625,
+	SmartTerrainBuilderImpl_UpdateSmartTerrainData_m78551351,
+	SmartTerrainBuilderImpl__ctor_m2450610753,
+	SmartTerrainTrackableBehaviour_get_SmartTerrainTrackable_m261383892,
+	SmartTerrainTrackableBehaviour_get_AutomaticUpdatesDisabled_m4191268736,
+	SmartTerrainTrackableBehaviour_UpdateMeshAndColliders_m1711265052,
+	SmartTerrainTrackableBehaviour_SetAutomaticUpdatesDisabled_m2185627614,
+	SmartTerrainTrackableBehaviour_Start_m1082390008,
+	SmartTerrainTrackableBehaviour__ctor_m2454402984,
+	SmartTerrainTrackableImpl__ctor_m4179247743,
+	SmartTerrainTrackableImpl_get_Children_m3106361996,
+	SmartTerrainTrackableImpl_get_MeshRevision_m3388232474,
+	SmartTerrainTrackableImpl_get_Parent_m2919076160,
+	SmartTerrainTrackableImpl_set_Parent_m1829951485,
+	SmartTerrainTrackableImpl_GetMesh_m3696170651,
+	SmartTerrainTrackableImpl_get_LocalPosition_m1296524986,
+	SmartTerrainTrackableImpl_SetLocalPose_m1074744374,
+	SmartTerrainTrackableImpl_DestroyMesh_m2628371564,
+	SmartTerrainTrackableImpl_AddChild_m1598305199,
+	SmartTerrainTrackableImpl_RemoveChild_m797376490,
+	SmartTerrainTracker__ctor_m2347853500,
+	SmartTerrainTrackerARController__ctor_m2312725407,
+	SmartTerrainTrackerARController_get_Instance_m891991031,
+	SmartTerrainTrackerARController_RegisterARController_m172983013,
+	SmartTerrainTrackerARController_get_AutoInitTracker_m1430244283,
+	SmartTerrainTrackerARController_get_AutoStartTracker_m1149906481,
+	SmartTerrainTrackerARController_get_AutoInitBuilder_m3293906578,
+	SmartTerrainTrackerARController_get_SceneUnitsToMillimeter_m3798240910,
+	SmartTerrainTrackerARController_Awake_m3955670294,
+	SmartTerrainTrackerARController_OnEnable_m3423730171,
+	SmartTerrainTrackerARController_OnDisable_m2076299066,
+	SmartTerrainTrackerARController_OnDestroy_m4092530404,
+	SmartTerrainTrackerARController_RegisterTrackerStartedCallback_m1970126519,
+	SmartTerrainTrackerARController_UnregisterTrackerStartedCallback_m148358516,
+	SmartTerrainTrackerARController_StartSmartTerrainTracker_m4130963061,
+	SmartTerrainTrackerARController_StopSmartTerrainTracker_m25452409,
+	SmartTerrainTrackerARController_InitSmartTerrainTracker_m2031976015,
+	SmartTerrainTrackerARController_OnVuforiaInitialized_m2259150560,
+	SmartTerrainTrackerARController_OnVuforiaStarted_m256185755,
+	SmartTerrainTrackerARController_OnPause_m1999452279,
+	SmartTerrainTrackerARController__cctor_m587768000,
+	SmartTerrainTrackerImpl_get_ScaleToMillimeter_m2216273522,
+	SmartTerrainTrackerImpl_SetScaleToMillimeter_m2010728318,
+	SmartTerrainTrackerImpl_get_SmartTerrainBuilder_m4070018090,
+	SmartTerrainTrackerImpl_Start_m1354385746,
+	SmartTerrainTrackerImpl_Stop_m1218149192,
+	SmartTerrainTrackerImpl__ctor_m3096830378,
+	StateManager__ctor_m764273556,
+	StateManagerImpl_GetActiveTrackableBehaviours_m3188209273,
+	StateManagerImpl_GetTrackableBehaviours_m2498430077,
+	StateManagerImpl_GetWordManager_m1212839285,
+	StateManagerImpl_GetVuMarkManager_m4048863781,
+	StateManagerImpl_DestroyTrackableBehavioursForTrackable_m2189903977,
+	StateManagerImpl_ReassociateTrackables_m4093501627,
+	StateManagerImpl_SetExtendedTrackingManager_m3767416747,
+	StateManagerImpl_GetExtendedTrackingManager_m1335164220,
+	StateManagerImpl_AssociateTrackableBehavioursForDataSet_m605110910,
+	StateManagerImpl_RegisterExternallyManagedTrackableBehaviour_m2854225912,
+	StateManagerImpl_UnregisterExternallyManagedTrackableBehaviour_m1668424766,
+	StateManagerImpl_RemoveDestroyedTrackables_m3493103741,
+	StateManagerImpl_ClearTrackableBehaviours_m948612896,
+	StateManagerImpl_FindOrCreateImageTargetBehaviourForTrackable_m3679415397,
+	StateManagerImpl_FindOrCreateImageTargetBehaviourForTrackable_m1783817517,
+	StateManagerImpl_SetTrackableBehavioursForTrackableToNotFound_m2100230538,
+	StateManagerImpl_EnableTrackableBehavioursForTrackable_m1913018672,
+	StateManagerImpl_RemoveDisabledTrackablesFromQueue_m2204456482,
+	StateManagerImpl_UpdateCameraPoseWRTTrackable_m1054313662,
+	StateManagerImpl_UpdateTrackablePoses_m948589520,
+	StateManagerImpl_UpdateVirtualButtons_m1831629644,
+	StateManagerImpl_UpdateWords_m3051686358,
+	StateManagerImpl_UpdateVuMarks_m1642590239,
+	StateManagerImpl_GetDeviceTrackingManager_m3049689921,
+	StateManagerImpl_TryGetBehaviour_m4080092800,
+	StateManagerImpl_AssociateVirtualButtonBehaviours_m3624020269,
+	StateManagerImpl_CreateMissingDataSetTrackableBehaviours_m3568257287,
+	StateManagerImpl_CreateImageTargetBehaviour_m3101612347,
+	StateManagerImpl_CreateMultiTargetBehaviour_m3905144773,
+	StateManagerImpl_CreateCylinderTargetBehaviour_m3709521290,
+	StateManagerImpl_CreateVuMarkBehaviour_m2036105967,
+	StateManagerImpl_CreateObjectTargetBehaviour_m411101805,
+	StateManagerImpl_PositionCameraToTrackable_m3867107221,
+	StateManagerImpl_ExtractTranslationFromMatrix_m244134135,
+	StateManagerImpl_ExtractRotationFromMatrix_m3042784432,
+	StateManagerImpl_PositionTrackable_m691777470,
+	StateManagerImpl__ctor_m1684002598,
+	StencilHideExcessAreaClipping_CreateQuad_m1641056092,
+	StencilHideExcessAreaClipping_HasCalculationDataChanged_m2844737183,
+	StencilHideExcessAreaClipping__ctor_m2937019428,
+	StencilHideExcessAreaClipping_SetPlanesRenderingActive_m2624045410,
+	StencilHideExcessAreaClipping_IsPlanesRenderingActive_m3724166351,
+	StencilHideExcessAreaClipping_OnPreCull_m1426585804,
+	StencilHideExcessAreaClipping_OnPostRender_m42167053,
+	StencilHideExcessAreaClipping_Start_m2440281030,
+	StencilHideExcessAreaClipping_OnDestroy_m2004263581,
+	StencilHideExcessAreaClipping_Update_m2016281218,
+	StereoViewerCameraConfiguration__ctor_m710267357,
+	StereoViewerCameraConfiguration_ApplyCorrectedProjectionMatrix_m1039505813,
+	StereoViewerCameraConfiguration_SetDistortion_m2668939769,
+	StereoViewerCameraConfiguration_ConfigureVideoBackground_m77414874,
+	StereoViewerCameraConfiguration_CameraParameterChanged_m1220298069,
+	StereoViewerCameraConfiguration_UpdateProjection_m2815333043,
+	SurfaceAbstractBehaviour_get_Surface_m2886945944,
+	SurfaceAbstractBehaviour_InternalUnregisterTrackable_m500321914,
+	SurfaceAbstractBehaviour_InitializeSurface_m2451600064,
+	SurfaceAbstractBehaviour__ctor_m4051989004,
+	SurfaceImpl__ctor_m3491056719,
+	SurfaceImpl_SetID_m2314875393,
+	SurfaceImpl_SetMesh_m3126532384,
+	SurfaceImpl_SetBoundingBox_m254915721,
+	SurfaceImpl_GetNavMesh_m843393080,
+	SurfaceImpl_GetMeshBoundaries_m2459214002,
+	SurfaceImpl_get_BoundingBox_m1349638881,
+	SurfaceImpl_GetArea_m1881730018,
+	SurfaceUtilities_OnSurfaceCreated_m3675640541,
+	SurfaceUtilities_OnSurfaceDeinit_m2313364330,
+	SurfaceUtilities_HasSurfaceBeenRecreated_m2740261893,
+	SurfaceUtilities_OnSurfaceChanged_m1174166543,
+	SurfaceUtilities_SetSurfaceOrientation_m3106547277,
+	SurfaceUtilities_GetSurfaceOrientation_m270932104,
+	SurfaceUtilities__cctor_m2402708418,
+	TargetFinder__ctor_m884950909,
+	TargetFinderImpl__ctor_m4043272937,
+	TargetFinderImpl_Finalize_m4085200791,
+	TargetFinderImpl_StartInit_m81465743,
+	TargetFinderImpl_GetInitState_m2960710876,
+	TargetFinderImpl_Deinit_m233710940,
+	TargetFinderImpl_StartRecognition_m4133014850,
+	TargetFinderImpl_Stop_m1069546045,
+	TargetFinderImpl_IsRequesting_m527431398,
+	TargetFinderImpl_Update_m1230191095,
+	TargetFinderImpl_Update_m696384020,
+	TargetFinderImpl_GetResults_m3079493181,
+	TargetFinderImpl_EnableTracking_m1345350475,
+	TargetFinderImpl_EnableTracking_m393981657,
+	TargetFinderImpl_ClearTrackables_m1565896857,
+	TargetFinderImpl_GetImageTargets_m3243864554,
+	TextRecoAbstractBehaviour_get_IsInitialized_m4262792788,
+	TextRecoAbstractBehaviour_Awake_m220638410,
+	TextRecoAbstractBehaviour_OnEnable_m3783334689,
+	TextRecoAbstractBehaviour_OnDisable_m321581418,
+	TextRecoAbstractBehaviour_OnDestroy_m1988576224,
+	TextRecoAbstractBehaviour_RegisterTextRecoEventHandler_m2429472575,
+	TextRecoAbstractBehaviour_UnregisterTextRecoEventHandler_m3340187050,
+	TextRecoAbstractBehaviour_StartTextTracker_m1237111316,
+	TextRecoAbstractBehaviour_StopTextTracker_m179921704,
+	TextRecoAbstractBehaviour_SetupWordList_m1780946480,
+	TextRecoAbstractBehaviour_NotifyEventHandlersOfChanges_m2780294942,
+	TextRecoAbstractBehaviour_OnVuforiaInitialized_m4291791820,
+	TextRecoAbstractBehaviour_OnVuforiaStarted_m440491041,
+	TextRecoAbstractBehaviour_OnTrackablesUpdated_m1506886535,
+	TextRecoAbstractBehaviour_OnPause_m3556601501,
+	TextRecoAbstractBehaviour__ctor_m3986867921,
+	TextTracker__ctor_m3185043435,
+	TextTrackerImpl_get_WordList_m3637742575,
+	TextTrackerImpl_Start_m3238301911,
+	TextTrackerImpl_Stop_m119305535,
+	TextTrackerImpl_SetRegionOfInterest_m2711259384,
+	TextTrackerImpl_GetRegionOfInterest_m590102462,
+	TextTrackerImpl_ScreenSpaceRectFromCamSpaceRectData_m3215332742,
+	TextTrackerImpl_get_CurrentUpDirection_m3412825062,
+	TextTrackerImpl__ctor_m3562927119,
+	TextureRenderer_get_Width_m3510583717,
+	TextureRenderer_get_Height_m4277442898,
+	TextureRenderer__ctor_m1942028846,
+	TextureRenderer_Render_m797034467,
+	TextureRenderer_Destroy_m2387433172,
+	TrackableBehaviour_get_CurrentStatus_m161631220,
+	TrackableBehaviour_get_Trackable_m2299553042,
+	TrackableBehaviour_get_TrackableName_m3173853042,
+	TrackableBehaviour_get_TimeStamp_m4066162022,
+	TrackableBehaviour_set_TimeStamp_m2646705715,
+	TrackableBehaviour_RegisterTrackableEventHandler_m1156666476,
+	TrackableBehaviour_UnregisterTrackableEventHandler_m635108731,
+	TrackableBehaviour_OnTrackerUpdate_m3635877487,
+	TrackableBehaviour_OnFrameIndexUpdate_m1905371942,
+	TrackableBehaviour_OnDisable_m2060273815,
+	TrackableBehaviour_CorrectScale_m4114224384,
+	TrackableBehaviour_UnregisterTrackable_m3237011489,
+	TrackableBehaviour_CorrectScaleImpl_m2374582286,
+	TrackableBehaviour_EnforceUniformScaling_m563763785,
+	TrackableBehaviour_SetScaleFromWidth_m1609285904,
+	TrackableBehaviour_SetScaleFromHeight_m309122327,
+	TrackableBehaviour_SetScale_m3549084047,
+	TrackableBehaviour__ctor_m3061730430,
+	TrackableImpl__ctor_m1519495996,
+	TrackableImpl_get_Name_m1069451128,
+	TrackableImpl_set_Name_m3021178023,
+	TrackableImpl_get_ID_m4059169333,
+	TrackableImpl_set_ID_m3120186232,
+	TrackableSource__ctor_m2372059400,
+	TrackableSourceImpl_get_TrackableSourcePtr_m2252804594,
+	TrackableSourceImpl_set_TrackableSourcePtr_m3781251199,
+	TrackableSourceImpl__ctor_m2640691668,
+	Tracker_get_IsActive_m3836407257,
+	Tracker_set_IsActive_m1033737426,
+	Tracker__ctor_m3073433658,
+	TrackerManager_get_Instance_m2067083115,
+	TrackerManager__ctor_m2827613573,
+	TrackerManager__cctor_m489463224,
+	TrackerManagerImpl_GetStateManager_m1215937408,
+	TrackerManagerImpl__ctor_m3552683369,
+	TurnOffAbstractBehaviour__ctor_m1043676009,
+	TypeMapping_GetTypeID_m2778623299,
+	TypeMapping__cctor_m513036105,
+	UnityCameraExtensions_GetPixelHeightInt_m3886825274,
+	UnityCameraExtensions_GetPixelWidthInt_m2878223513,
+	UnityCameraExtensions_GetMaxDepthForVideoBackground_m2452083041,
+	UnityCameraExtensions_GetMinDepthForVideoBackground_m1782968943,
+	UnityPlayer_get_Instance_m671322364,
+	UnityPlayer_SetImplementation_m4048947777,
+	UnityPlayer__cctor_m3346810069,
+	UserDefinedTargetBuildingAbstractBehaviour_RegisterEventHandler_m3014125139,
+	UserDefinedTargetBuildingAbstractBehaviour_UnregisterEventHandler_m358415958,
+	UserDefinedTargetBuildingAbstractBehaviour_StartScanning_m2698452449,
+	UserDefinedTargetBuildingAbstractBehaviour_BuildNewTarget_m3831119264,
+	UserDefinedTargetBuildingAbstractBehaviour_StopScanning_m2341680829,
+	UserDefinedTargetBuildingAbstractBehaviour_SetFrameQuality_m3523072144,
+	UserDefinedTargetBuildingAbstractBehaviour_Start_m3860857606,
+	UserDefinedTargetBuildingAbstractBehaviour_Update_m685184189,
+	UserDefinedTargetBuildingAbstractBehaviour_OnEnable_m2243124966,
+	UserDefinedTargetBuildingAbstractBehaviour_OnDisable_m1547939641,
+	UserDefinedTargetBuildingAbstractBehaviour_OnDestroy_m4019166983,
+	UserDefinedTargetBuildingAbstractBehaviour_OnVuforiaStarted_m3972468230,
+	UserDefinedTargetBuildingAbstractBehaviour_OnPause_m3892567458,
+	UserDefinedTargetBuildingAbstractBehaviour__ctor_m3581213318,
+	VideoBackgroundAbstractBehaviour_ResetBackgroundPlane_m4002175800,
+	VideoBackgroundAbstractBehaviour_SetStereoDepth_m979889836,
+	VideoBackgroundAbstractBehaviour_ApplyStereoDepthToMatrices_m1030872950,
+	VideoBackgroundAbstractBehaviour_DisconnectFromBackgroundBehaviour_m3815701813,
+	VideoBackgroundAbstractBehaviour_SetVuforiaFrustumSkewValues_m893976874,
+	VideoBackgroundAbstractBehaviour_RestoreVuforiaFrustumSkew_m808624436,
+	VideoBackgroundAbstractBehaviour_RenderOnUpdate_m1780198690,
+	VideoBackgroundAbstractBehaviour_Awake_m2283072941,
+	VideoBackgroundAbstractBehaviour_Start_m3641120856,
+	VideoBackgroundAbstractBehaviour_OnPreRender_m2914454742,
+	VideoBackgroundAbstractBehaviour_OnPostRender_m3296587151,
+	VideoBackgroundAbstractBehaviour_OnDestroy_m2098322779,
+	VideoBackgroundAbstractBehaviour__ctor_m397100456,
+	VideoBackgroundAbstractBehaviour__cctor_m683141767,
+	VideoBackgroundManager__ctor_m2472061678,
+	VideoBackgroundManager_get_Instance_m2973135279,
+	VideoBackgroundManager_RegisterARController_m1515432682,
+	VideoBackgroundManager_get_VideoBackgroundEnabled_m2864646665,
+	VideoBackgroundManager_get_ClippingMode_m2482110931,
+	VideoBackgroundManager_get_MatteShader_m1155075128,
+	VideoBackgroundManager_SetVideoBackgroundEnabled_m2229021397,
+	VideoBackgroundManager_SetClippingMode_m3211944811,
+	VideoBackgroundManager_SetMatteShader_m2178247910,
+	VideoBackgroundManager_Initialize_m2750973746,
+	VideoBackgroundManager_Awake_m581554667,
+	VideoBackgroundManager_Start_m603699066,
+	VideoBackgroundManager_Update_m2069709623,
+	VideoBackgroundManager_OnDestroy_m1103235341,
+	VideoBackgroundManager_OnVuforiaInitialized_m1918398019,
+	VideoBackgroundManager_UpdateVideoBackgroundEnabled_m3879780185,
+	VideoBackgroundManager_OnVideoBackgroundConfigChanged_m2200842214,
+	VideoBackgroundManager__cctor_m837365537,
+	ViewerParameters__ctor_m2907337924,
+	ViewerParameters_Finalize_m2784781450,
+	ViewerParameters_GetVersion_m2317581570,
+	ViewerParameters_GetName_m911448262,
+	ViewerParameters_GetManufacturer_m3085188268,
+	ViewerParameters_GetButtonType_m745873483,
+	ViewerParameters_GetTrayAlignment_m2536018591,
+	ViewerParameters_GetScreenToLensDistance_m1062311894,
+	ViewerParameters_GetInterLensDistance_m3548251609,
+	ViewerParameters_GetLensCentreToTrayDistance_m3799826503,
+	ViewerParameters_GetNumDistortionCoefficients_m989971033,
+	ViewerParameters_GetDistortionCoefficient_m255258205,
+	ViewerParameters_GetFieldOfView_m1495976935,
+	ViewerParameters_ContainsMagnet_m893246661,
+	ViewerParameters_get_NativePtr_m4157973501,
+	ViewerParametersList_get_ListForAuthoringTools_m1486777573,
+	ViewerParametersList__ctor_m2493037388,
+	ViewerParametersList_SetSDKFilter_m4259729048,
+	ViewerParametersList_Size_m726643231,
+	ViewerParametersList_Get_m527027107,
+	ViewerParametersList_Get_m4057077902,
+	ViewerParametersList_GetAllViewers_m3122624633,
+	VirtualButton__ctor_m3096451101,
+	VirtualButtonAbstractBehaviour_get_VirtualButtonName_m2853719456,
+	VirtualButtonAbstractBehaviour_get_Pressed_m1667011251,
+	VirtualButtonAbstractBehaviour_get_HasUpdatedPose_m3646300135,
+	VirtualButtonAbstractBehaviour_get_UnregisterOnDestroy_m135051996,
+	VirtualButtonAbstractBehaviour_set_UnregisterOnDestroy_m3412426979,
+	VirtualButtonAbstractBehaviour_get_VirtualButton_m513689368,
+	VirtualButtonAbstractBehaviour__ctor_m855896756,
+	VirtualButtonAbstractBehaviour_RegisterEventHandler_m2946769017,
+	VirtualButtonAbstractBehaviour_UnregisterEventHandler_m1632071242,
+	VirtualButtonAbstractBehaviour_CalculateButtonArea_m3085583845,
+	VirtualButtonAbstractBehaviour_UpdateAreaRectangle_m786663139,
+	VirtualButtonAbstractBehaviour_UpdateSensitivity_m4237066460,
+	VirtualButtonAbstractBehaviour_UpdateEnabled_m3641096346,
+	VirtualButtonAbstractBehaviour_UpdatePose_m3480467650,
+	VirtualButtonAbstractBehaviour_OnTrackerUpdated_m981438975,
+	VirtualButtonAbstractBehaviour_GetImageTargetBehaviour_m2972458003,
+	VirtualButtonAbstractBehaviour_SetVirtualButtonName_m1373595752,
+	VirtualButtonAbstractBehaviour_get_Sensitivity_m1288211212,
+	VirtualButtonAbstractBehaviour_set_Sensitivity_m1575706723,
+	VirtualButtonAbstractBehaviour_get_PreviousTransform_m2680815663,
+	VirtualButtonAbstractBehaviour_set_PreviousTransform_m1516004684,
+	VirtualButtonAbstractBehaviour_get_PreviousParent_m4289491239,
+	VirtualButtonAbstractBehaviour_set_PreviousParent_m3146033748,
+	VirtualButtonAbstractBehaviour_InitializeVirtualButton_m1213136180,
+	VirtualButtonAbstractBehaviour_SetPosAndScaleFromButtonArea_m2415782462,
+	VirtualButtonAbstractBehaviour_LateUpdate_m1150004353,
+	VirtualButtonAbstractBehaviour_OnDisable_m2095615841,
+	VirtualButtonAbstractBehaviour_OnDestroy_m880609011,
+	VirtualButtonAbstractBehaviour_OnValidate_m69939779,
+	VirtualButtonAbstractBehaviour_Equals_m1707174628,
+	VirtualButtonImpl_get_Name_m215985868,
+	VirtualButtonImpl_get_ID_m84970095,
+	VirtualButtonImpl_get_Enabled_m3234422381,
+	VirtualButtonImpl_get_Area_m2641550899,
+	VirtualButtonImpl__ctor_m3058463529,
+	VirtualButtonImpl_SetArea_m4087599671,
+	VirtualButtonImpl_SetSensitivity_m2382816725,
+	VirtualButtonImpl_SetEnabled_m1713083893,
+	VuforiaAbstractBehaviour_Awake_m232471254,
+	VuforiaAbstractBehaviour_OnEnable_m2635583287,
+	VuforiaAbstractBehaviour_Start_m2160275031,
+	VuforiaAbstractBehaviour_Update_m1010039316,
+	VuforiaAbstractBehaviour_OnLevelWasLoaded_m520437034,
+	VuforiaAbstractBehaviour_OnApplicationPause_m1349687785,
+	VuforiaAbstractBehaviour_OnDisable_m3115467530,
+	VuforiaAbstractBehaviour_OnDestroy_m1526652240,
+	VuforiaAbstractBehaviour_add_BehaviourCreated_m456481505,
+	VuforiaAbstractBehaviour_remove_BehaviourCreated_m1409464876,
+	VuforiaAbstractBehaviour_add_BehaviourDestroyed_m1173869650,
+	VuforiaAbstractBehaviour_remove_BehaviourDestroyed_m1549127109,
+	VuforiaAbstractBehaviour_add_AwakeEvent_m2402370997,
+	VuforiaAbstractBehaviour_remove_AwakeEvent_m858652844,
+	VuforiaAbstractBehaviour_add_OnEnableEvent_m4220286934,
+	VuforiaAbstractBehaviour_remove_OnEnableEvent_m3087320251,
+	VuforiaAbstractBehaviour_add_StartEvent_m1312744736,
+	VuforiaAbstractBehaviour_remove_StartEvent_m3088365351,
+	VuforiaAbstractBehaviour_add_UpdateEvent_m3785923501,
+	VuforiaAbstractBehaviour_remove_UpdateEvent_m3440918772,
+	VuforiaAbstractBehaviour_add_OnLevelWasLoadedEvent_m3268793749,
+	VuforiaAbstractBehaviour_remove_OnLevelWasLoadedEvent_m750222042,
+	VuforiaAbstractBehaviour_add_OnApplicationPauseEvent_m1441184353,
+	VuforiaAbstractBehaviour_remove_OnApplicationPauseEvent_m3242286072,
+	VuforiaAbstractBehaviour_add_OnDisableEvent_m1370388693,
+	VuforiaAbstractBehaviour_remove_OnDisableEvent_m4014423472,
+	VuforiaAbstractBehaviour_add_OnDestroyEvent_m10906947,
+	VuforiaAbstractBehaviour_remove_OnDestroyEvent_m3652319802,
+	VuforiaAbstractBehaviour_get_WorldCenterMode_m1610512611,
+	VuforiaAbstractBehaviour_get_WorldCenter_m471838410,
+	VuforiaAbstractBehaviour_get_CentralAnchorPoint_m1788441968,
+	VuforiaAbstractBehaviour_get_ParentAnchorPoint_m712534043,
+	VuforiaAbstractBehaviour_get_PrimaryCamera_m120897616,
+	VuforiaAbstractBehaviour_get_SecondaryCamera_m3154276464,
+	VuforiaAbstractBehaviour__ctor_m3900338923,
+	VuforiaAbstractConfiguration_get_Instance_m3543652287,
+	VuforiaAbstractConfiguration_get_Vuforia_m3334047132,
+	VuforiaAbstractConfiguration_get_DigitalEyewear_m963121745,
+	VuforiaAbstractConfiguration_get_DatabaseLoad_m863142065,
+	VuforiaAbstractConfiguration_get_VideoBackground_m3219950961,
+	VuforiaAbstractConfiguration_get_SmartTerrainTracker_m1411076141,
+	VuforiaAbstractConfiguration_get_DeviceTracker_m3821906409,
+	VuforiaAbstractConfiguration_get_WebCam_m1356964529,
+	VuforiaAbstractConfiguration_CreateInstance_m70843896,
+	VuforiaAbstractConfiguration__ctor_m1625969650,
+	VuforiaAbstractConfiguration__cctor_m2562109521,
+	DatabaseLoadConfiguration_get_DataSetsToLoad_m1670047590,
+	DatabaseLoadConfiguration_set_DataSetsToLoad_m3508923487,
+	DatabaseLoadConfiguration_get_DataSetsToActivate_m2124674399,
+	DatabaseLoadConfiguration_set_DataSetsToActivate_m4276738768,
+	DatabaseLoadConfiguration__ctor_m2562268836,
+	DeviceTrackerConfiguration_get_PosePrediction_m3898657930,
+	DeviceTrackerConfiguration_set_PosePrediction_m1869566795,
+	DeviceTrackerConfiguration_get_ModelCorrectionMode_m1082958999,
+	DeviceTrackerConfiguration_set_ModelCorrectionMode_m76410848,
+	DeviceTrackerConfiguration_get_ModelTransformEnabled_m999993340,
+	DeviceTrackerConfiguration_set_ModelTransformEnabled_m3823159685,
+	DeviceTrackerConfiguration_get_ModelTransform_m2773735905,
+	DeviceTrackerConfiguration_set_ModelTransform_m602758866,
+	DeviceTrackerConfiguration__ctor_m1713693237,
+	DigitalEyewearConfiguration_get_CameraOffset_m1098495516,
+	DigitalEyewearConfiguration_set_CameraOffset_m495326199,
+	DigitalEyewearConfiguration_get_DistortionRenderingMode_m3316123287,
+	DigitalEyewearConfiguration_set_DistortionRenderingMode_m2573235694,
+	DigitalEyewearConfiguration_get_DistortionRenderingLayer_m4168444540,
+	DigitalEyewearConfiguration_set_DistortionRenderingLayer_m349744261,
+	DigitalEyewearConfiguration_get_EyewearType_m644536749,
+	DigitalEyewearConfiguration_set_EyewearType_m848158650,
+	DigitalEyewearConfiguration_get_StereoFramework_m4052380397,
+	DigitalEyewearConfiguration_set_StereoFramework_m1313504586,
+	DigitalEyewearConfiguration_get_SeeThroughConfiguration_m958262893,
+	DigitalEyewearConfiguration_set_SeeThroughConfiguration_m3654543402,
+	DigitalEyewearConfiguration_get_ViewerName_m3014765526,
+	DigitalEyewearConfiguration_set_ViewerName_m1381294493,
+	DigitalEyewearConfiguration_get_ViewerManufacturer_m3751245116,
+	DigitalEyewearConfiguration_set_ViewerManufacturer_m1906563745,
+	DigitalEyewearConfiguration_get_UseCustomViewer_m452624050,
+	DigitalEyewearConfiguration_set_UseCustomViewer_m3518798199,
+	DigitalEyewearConfiguration_get_CustomViewer_m2832953697,
+	DigitalEyewearConfiguration_set_CustomViewer_m2467532474,
+	DigitalEyewearConfiguration__ctor_m714645971,
+	GenericVuforiaConfiguration_get_LicenseKey_m3263571328,
+	GenericVuforiaConfiguration_set_LicenseKey_m1976655159,
+	GenericVuforiaConfiguration_get_DelayedInitialization_m282560601,
+	GenericVuforiaConfiguration_set_DelayedInitialization_m2446686252,
+	GenericVuforiaConfiguration_get_CameraDeviceMode_m2674354308,
+	GenericVuforiaConfiguration_set_CameraDeviceMode_m575341997,
+	GenericVuforiaConfiguration_get_MaxSimultaneousImageTargets_m1594838211,
+	GenericVuforiaConfiguration_set_MaxSimultaneousImageTargets_m4151090044,
+	GenericVuforiaConfiguration_get_MaxSimultaneousObjectTargets_m920963097,
+	GenericVuforiaConfiguration_set_MaxSimultaneousObjectTargets_m733835700,
+	GenericVuforiaConfiguration_get_UseDelayedLoadingObjectTargets_m2442865267,
+	GenericVuforiaConfiguration_set_UseDelayedLoadingObjectTargets_m3554108566,
+	GenericVuforiaConfiguration_get_CameraDirection_m1495589414,
+	GenericVuforiaConfiguration_set_CameraDirection_m67433341,
+	GenericVuforiaConfiguration_get_MirrorVideoBackground_m3537902870,
+	GenericVuforiaConfiguration_set_MirrorVideoBackground_m2784427171,
+	GenericVuforiaConfiguration__ctor_m178639012,
+	SmartTerrainTrackerConfiguration_get_AutoInitBuilder_m3992337064,
+	SmartTerrainTrackerConfiguration_set_AutoInitBuilder_m4155674825,
+	SmartTerrainTrackerConfiguration_get_SceneUnitsToMillimeter_m3985264900,
+	SmartTerrainTrackerConfiguration_set_SceneUnitsToMillimeter_m2329755313,
+	SmartTerrainTrackerConfiguration__ctor_m126081675,
+	TrackerConfiguration_get_AutoInitAndStartTracker_m3795859564,
+	TrackerConfiguration_set_AutoInitAndStartTracker_m1493555145,
+	TrackerConfiguration__ctor_m19462729,
+	VideoBackgroundConfiguration_get_ClippingMode_m3801834199,
+	VideoBackgroundConfiguration_set_ClippingMode_m1469413642,
+	VideoBackgroundConfiguration_get_MatteShader_m658757870,
+	VideoBackgroundConfiguration_set_MatteShader_m358716021,
+	VideoBackgroundConfiguration_get_VideoBackgroundEnabled_m3395134557,
+	VideoBackgroundConfiguration_set_VideoBackgroundEnabled_m2331880996,
+	VideoBackgroundConfiguration_GetDefaultMatteShader_m3099015376,
+	VideoBackgroundConfiguration_SetDefaultMatteShader_m2477821507,
+	VideoBackgroundConfiguration__ctor_m3814288290,
+	WebCamConfiguration_get_DeviceNameSetInEditor_m1642663453,
+	WebCamConfiguration_get_FlipHorizontally_m1275668363,
+	WebCamConfiguration_get_TurnOffWebCam_m1754607218,
+	WebCamConfiguration_get_RenderTextureLayer_m2458825587,
+	WebCamConfiguration__ctor_m1247846304,
+	VuforiaARController_get_WorldCenterModeSetting_m119308351,
+	VuforiaARController_get_WorldCenter_m3294539308,
+	VuforiaARController_get_VideoBackGroundMirrored_m1321719990,
+	VuforiaARController_get_CameraDeviceMode_m2914771215,
+	VuforiaARController_get_HasStarted_m2401859183,
+	VuforiaARController__ctor_m283184769,
+	VuforiaARController_get_Instance_m3759800119,
+	VuforiaARController_RegisterARController_m159338467,
+	VuforiaARController_RegisterVuforiaInitializedCallback_m2641948078,
+	VuforiaARController_UnregisterVuforiaInitializedCallback_m2306591099,
+	VuforiaARController_RegisterVuforiaStartedCallback_m2843633801,
+	VuforiaARController_UnregisterVuforiaStartedCallback_m1686003454,
+	VuforiaARController_RegisterTrackablesUpdatedCallback_m3488784743,
+	VuforiaARController_UnregisterTrackablesUpdatedCallback_m3083737634,
+	VuforiaARController_RegisterOnPauseCallback_m3559975647,
+	VuforiaARController_UnregisterOnPauseCallback_m1514303432,
+	VuforiaARController_RegisterBackgroundTextureChangedCallback_m3203056379,
+	VuforiaARController_UnregisterBackgroundTextureChangedCallback_m1052550268,
+	VuforiaARController_RegisterTrackerEventHandler_m487468923,
+	VuforiaARController_UnregisterTrackerEventHandler_m1455152768,
+	VuforiaARController_RegisterVideoBgEventHandler_m602997984,
+	VuforiaARController_UnregisterVideoBgEventHandler_m2237318095,
+	VuforiaARController_SetWorldCenterMode_m2086476029,
+	VuforiaARController_SetWorldCenter_m975580946,
+	VuforiaARController_GetVideoBackgroundRectInViewPort_m1393662747,
+	VuforiaARController_GetSurfaceOrientation_m862089838,
+	VuforiaARController_UpdateState_m2272296819,
+	VuforiaARController_ApplyCorrectedProjectionMatrix_m3388896403,
+	VuforiaARController_RegisterVuforiaDeinitializedCallback_m2349865249,
+	VuforiaARController_UnregisterVuforiaDeinitializedCallback_m2035717992,
+	VuforiaARController_get_CameraConfiguration_m179717394,
+	VuforiaARController_set_CameraConfiguration_m2912640843,
+	VuforiaARController_InitCameraConfiguration_m984206152,
+	VuforiaARController_ConfigureVideoBackground_m1736998326,
+	VuforiaARController_ResetBackgroundPlane_m4073553983,
+	VuforiaARController_RegisterRenderOnUpdateCallback_m4049043910,
+	VuforiaARController_UnregisterRenderOnUpdateCallback_m3605923253,
+	VuforiaARController_IsValidPrimaryCamera_m58264230,
+	VuforiaARController_IsValidSecondaryCamera_m214230814,
+	VuforiaARController_Awake_m200506594,
+	VuforiaARController_Start_m534875641,
+	VuforiaARController_OnEnable_m1414166969,
+	VuforiaARController_OnApplicationPause_m3287677087,
+	VuforiaARController_OnDisable_m3844446650,
+	VuforiaARController_OnDestroy_m86903944,
+	VuforiaARController_UpdateStatePrivate_m3308430596,
+	VuforiaARController_StartVuforia_m2466127206,
+	VuforiaARController_StopVuforia_m2011718385,
+	VuforiaARController_DisableCameraIfNotNeeded_m1776148865,
+	VuforiaARController_DeinitRequestedTrackers_m3736071081,
+	VuforiaARController_OnVideoBackgroundConfigChanged_m390161611,
+	VuforiaARController_EnableObjectRenderer_m4118246151,
+	VuforiaARController_ApplyMissedProjectionMatrices_m1651958151,
+	VuforiaARController__cctor_m4028062860,
+	VuforiaDeinitBehaviour_Awake_m4215310681,
+	VuforiaDeinitBehaviour_OnApplicationQuit_m2554157948,
+	VuforiaDeinitBehaviour_DeinitVuforia_m2020728651,
+	VuforiaDeinitBehaviour__ctor_m1803636006,
+	VuforiaDeinitBehaviour__cctor_m293654503,
+	VuforiaExtendedTrackingManager_ApplyTrackingState_m2455272473,
+	VuforiaExtendedTrackingManager_StartExtendedTracking_m1006262806,
+	VuforiaExtendedTrackingManager_StopExtendedTracking_m1758508878,
+	VuforiaExtendedTrackingManager_PersistExtendedTracking_m1576860222,
+	VuforiaExtendedTrackingManager_ResetExtendedTracking_m3896949427,
+	VuforiaExtendedTrackingManager_GetExtendedTrackedBehaviours_m1616904410,
+	VuforiaExtendedTrackingManager_EnableWorldAnchorUsage_m3316152449,
+	VuforiaExtendedTrackingManager_GetExtendedTrackingParameters_m3848587469,
+	VuforiaExtendedTrackingManager_SetExtendedTrackingParameters_m268148045,
+	VuforiaExtendedTrackingManager__ctor_m3622223881,
+	VuforiaManager_get_Instance_m425433003,
+	VuforiaManager__ctor_m2402028253,
+	VuforiaManager__cctor_m1426182330,
+	TrackableIdPair_FromTrackableId_m1576637116,
+	TrackableIdPair_FromResultId_m309840374,
+	TrackableIdPair_FromTrackableAndResultId_m508966059,
+	VuforiaManagerImpl_set_WorldCenterMode_m3153519054,
+	VuforiaManagerImpl_get_WorldCenterMode_m2828536029,
+	VuforiaManagerImpl_set_WorldCenter_m827303058,
+	VuforiaManagerImpl_get_WorldCenter_m3422950637,
+	VuforiaManagerImpl_set_VuMarkWorldCenter_m463098780,
+	VuforiaManagerImpl_get_VuMarkWorldCenter_m3357540109,
+	VuforiaManagerImpl_set_ARCameraTransform_m314583629,
+	VuforiaManagerImpl_get_ARCameraTransform_m4007699804,
+	VuforiaManagerImpl_set_CentralAnchorPoint_m1216617257,
+	VuforiaManagerImpl_get_CentralAnchorPoint_m1427646452,
+	VuforiaManagerImpl_set_ParentAnchorPoint_m454618784,
+	VuforiaManagerImpl_get_ParentAnchorPoint_m3821948537,
+	VuforiaManagerImpl_get_Initialized_m3015283572,
+	VuforiaManagerImpl_get_CurrentFrameIndex_m607013204,
+	VuforiaManagerImpl_set_VideoBackgroundTextureSet_m2835395033,
+	VuforiaManagerImpl_get_VideoBackgroundTextureSet_m2276462900,
+	VuforiaManagerImpl_Init_m223499947,
+	VuforiaManagerImpl_Deinit_m1388239924,
+	VuforiaManagerImpl_Update_m1207202450,
+	VuforiaManagerImpl_StartRendering_m1927564155,
+	VuforiaManagerImpl_FinishRendering_m2654244216,
+	VuforiaManagerImpl_Pause_m536248066,
+	VuforiaManagerImpl_SetStatesToDiscard_m1590876370,
+	VuforiaManagerImpl_IsDiscardingRenderingStates_m753404079,
+	VuforiaManagerImpl_IsDetectedOrTracked_m1936825519,
+	VuforiaManagerImpl_InitializeTrackableContainer_m2300008772,
+	VuforiaManagerImpl_UpdateTrackers_m3984824715,
+	VuforiaManagerImpl_UpdateSmartTerrain_m2140506790,
+	VuforiaManagerImpl_UpdateTrackablesEditor_m2419247263,
+	VuforiaManagerImpl_UnmarshalTrackables_m617329726,
+	VuforiaManagerImpl_UnmarshalWordTrackables_m2315320206,
+	VuforiaManagerImpl_UnmarshalVuMarkTrackables_m1685287062,
+	VuforiaManagerImpl_UpdateImageContainer_m7787316,
+	VuforiaManagerImpl_UpdateCameraFrame_m310552862,
+	VuforiaManagerImpl_InjectCameraFrame_m4250962038,
+	VuforiaManagerImpl_UpdateTrackableFoundQueue_m4002308150,
+	VuforiaManagerImpl_UpdateTrackableFoundQueue_m917188471,
+	VuforiaManagerImpl_GetTrackableResultData_m2864035145,
+	VuforiaManagerImpl_GetVuMarkWorldCenter_m1572153011,
+	VuforiaManagerImpl_UpdateExtendedTrackedVuMarks_m1547135318,
+	VuforiaManagerImpl__ctor_m3138251417,
+	U3CU3Ec__DisplayClass86_0__ctor_m1887019962,
+	U3CU3Ec__DisplayClass86_0_U3CUpdateTrackableFoundQueueU3Eb__0_m2990144355,
+	U3CU3Ec__DisplayClass86_0_U3CUpdateTrackableFoundQueueU3Eb__1_m3826244548,
+	PoseData_get_coordinateSystem_m299770816_AdjustorThunk,
+	PoseData_set_coordinateSystem_m1739671603_AdjustorThunk,
+	TrackableResultData_get_status_m2999615273_AdjustorThunk,
+	TrackableResultData_set_status_m716230220_AdjustorThunk,
+	VuMarkTargetResultData_get_status_m1348501583_AdjustorThunk,
+	VuMarkTargetResultData_set_status_m3447826240_AdjustorThunk,
+	WordResultData_get_status_m2705966852_AdjustorThunk,
+	WordResultData_set_status_m322052673_AdjustorThunk,
+	VuforiaNativeIosWrapper_CameraDeviceDeinitCamera_m1152901278,
+	VuforiaNativeIosWrapper_CameraDeviceGetCameraDirection_m1185555680,
+	VuforiaNativeIosWrapper_CameraDeviceGetCameraField_m711848676,
+	VuforiaNativeIosWrapper_CameraDeviceGetCameraFieldOfViewRads_m2087319325,
+	VuforiaNativeIosWrapper_CameraDeviceGetFieldBool_m2888303282,
+	VuforiaNativeIosWrapper_CameraDeviceGetFieldFloat_m3884659222,
+	VuforiaNativeIosWrapper_CameraDeviceGetFieldInt64_m2257095147,
+	VuforiaNativeIosWrapper_CameraDeviceGetFieldInt64Range_m3459352038,
+	VuforiaNativeIosWrapper_CameraDeviceGetFieldString_m3480342432,
+	VuforiaNativeIosWrapper_CameraDeviceGetNumCameraFields_m2571014198,
+	VuforiaNativeIosWrapper_CameraDeviceGetNumVideoModes_m1157853523,
+	VuforiaNativeIosWrapper_CameraDeviceGetVideoMode_m302402639,
+	VuforiaNativeIosWrapper_CameraDeviceInitCamera_m807781252,
+	VuforiaNativeIosWrapper_CameraDeviceSelectVideoMode_m2016613001,
+	VuforiaNativeIosWrapper_CameraDeviceSetCameraConfiguration_m970640227,
+	VuforiaNativeIosWrapper_CameraDeviceSetFieldBool_m2173082941,
+	VuforiaNativeIosWrapper_CameraDeviceSetFieldFloat_m225269101,
+	VuforiaNativeIosWrapper_CameraDeviceSetFieldInt64_m1597940631,
+	VuforiaNativeIosWrapper_CameraDeviceSetFieldInt64Range_m3390387310,
+	VuforiaNativeIosWrapper_CameraDeviceSetFieldString_m2308695447,
+	VuforiaNativeIosWrapper_CameraDeviceSetFlashTorchMode_m161590340,
+	VuforiaNativeIosWrapper_CameraDeviceSetFocusMode_m3804486714,
+	VuforiaNativeIosWrapper_CameraDeviceStartCamera_m3074857167,
+	VuforiaNativeIosWrapper_CameraDeviceStopCamera_m3151693519,
+	VuforiaNativeIosWrapper_CustomViewerParameters_AddDistortionCoefficient_m3499897001,
+	VuforiaNativeIosWrapper_CustomViewerParameters_ClearDistortionCoefficients_m2289754423,
+	VuforiaNativeIosWrapper_CustomViewerParameters_delete_m1409602130,
+	VuforiaNativeIosWrapper_CustomViewerParameters_new_m265885501,
+	VuforiaNativeIosWrapper_CustomViewerParameters_SetButtonType_m2733103106,
+	VuforiaNativeIosWrapper_CustomViewerParameters_SetContainsMagnet_m4001863969,
+	VuforiaNativeIosWrapper_CustomViewerParameters_SetFieldOfView_m3367427213,
+	VuforiaNativeIosWrapper_CustomViewerParameters_SetInterLensDistance_m3945732435,
+	VuforiaNativeIosWrapper_CustomViewerParameters_SetLensCentreToTrayDistance_m2845567325,
+	VuforiaNativeIosWrapper_CustomViewerParameters_SetScreenToLensDistance_m1646022090,
+	VuforiaNativeIosWrapper_CustomViewerParameters_SetTrayAlignment_m4199441105,
+	VuforiaNativeIosWrapper_CylinderTargetGetDimensions_m2512799187,
+	VuforiaNativeIosWrapper_CylinderTargetSetBottomDiameter_m3044531299,
+	VuforiaNativeIosWrapper_CylinderTargetSetSideLength_m1857345412,
+	VuforiaNativeIosWrapper_CylinderTargetSetTopDiameter_m3164449167,
+	VuforiaNativeIosWrapper_DataSetCreateTrackable_m2185825815,
+	VuforiaNativeIosWrapper_DataSetDestroyTrackable_m344764689,
+	VuforiaNativeIosWrapper_DataSetExists_m2603130428,
+	VuforiaNativeIosWrapper_DataSetGetNumTrackableType_m3058657915,
+	VuforiaNativeIosWrapper_DataSetGetTrackableName_m2005700695,
+	VuforiaNativeIosWrapper_DataSetGetTrackablesOfType_m2596356640,
+	VuforiaNativeIosWrapper_DataSetHasReachedTrackableLimit_m299544149,
+	VuforiaNativeIosWrapper_DataSetLoad_m74301160,
+	VuforiaNativeIosWrapper_DeinitFrameState_m2554644580,
+	VuforiaNativeIosWrapper_Device_GetMode_m4140149265,
+	VuforiaNativeIosWrapper_Device_GetSelectedViewer_m1505025856,
+	VuforiaNativeIosWrapper_Device_GetViewerList_m4044609621,
+	VuforiaNativeIosWrapper_Device_IsViewerPresent_m3731987927,
+	VuforiaNativeIosWrapper_Device_SelectViewer_m2040586310,
+	VuforiaNativeIosWrapper_Device_SetMode_m1981898282,
+	VuforiaNativeIosWrapper_Device_SetViewerPresent_m754792458,
+	VuforiaNativeIosWrapper_DeviceIsEyewearDevice_m432492141,
+	VuforiaNativeIosWrapper_EyewearCPMClearProfile_m2678252602,
+	VuforiaNativeIosWrapper_EyewearCPMGetActiveProfile_m2591782878,
+	VuforiaNativeIosWrapper_EyewearCPMGetCameraToEyePose_m3864084515,
+	VuforiaNativeIosWrapper_EyewearCPMGetEyeProjection_m3756689217,
+	VuforiaNativeIosWrapper_EyewearCPMGetMaxCount_m662265504,
+	VuforiaNativeIosWrapper_EyewearCPMGetProfileName_m74204045,
+	VuforiaNativeIosWrapper_EyewearCPMGetUsedCount_m1748450535,
+	VuforiaNativeIosWrapper_EyewearCPMIsProfileUsed_m939325052,
+	VuforiaNativeIosWrapper_EyewearCPMSetActiveProfile_m1362125829,
+	VuforiaNativeIosWrapper_EyewearCPMSetCameraToEyePose_m3847257495,
+	VuforiaNativeIosWrapper_EyewearCPMSetEyeProjection_m1699826485,
+	VuforiaNativeIosWrapper_EyewearCPMSetProfileName_m1326722226,
+	VuforiaNativeIosWrapper_EyewearDeviceGetScreenOrientation_m127385927,
+	VuforiaNativeIosWrapper_EyewearDeviceIsDisplayExtended_m1147620486,
+	VuforiaNativeIosWrapper_EyewearDeviceIsDisplayExtendedGLOnly_m86127519,
+	VuforiaNativeIosWrapper_EyewearDeviceIsDualDisplay_m283177535,
+	VuforiaNativeIosWrapper_EyewearDeviceIsPredictiveTrackingEnabled_m226493848,
+	VuforiaNativeIosWrapper_EyewearDeviceIsSeeThru_m3255744929,
+	VuforiaNativeIosWrapper_EyewearDeviceSetDisplayExtended_m3408200003,
+	VuforiaNativeIosWrapper_EyewearDeviceSetPredictiveTracking_m174335064,
+	VuforiaNativeIosWrapper_EyewearUserCalibratorGetMaxScaleHint_m1022551552,
+	VuforiaNativeIosWrapper_EyewearUserCalibratorGetMinScaleHint_m2350038758,
+	VuforiaNativeIosWrapper_EyewearUserCalibratorGetProjectionMatrix_m3444678698,
+	VuforiaNativeIosWrapper_EyewearUserCalibratorInit_m1851885123,
+	VuforiaNativeIosWrapper_EyewearUserCalibratorIsStereoStretched_m2508866847,
+	VuforiaNativeIosWrapper_FrameCounterGetBenchmarkingData_m610769791,
+	VuforiaNativeIosWrapper_GetCameraThreadID_m2879492543,
+	VuforiaNativeIosWrapper_GetProjectionGL_m3958918218,
+	VuforiaNativeIosWrapper_GetVuforiaLibraryVersion_m2616556127,
+	VuforiaNativeIosWrapper_HasSurfaceBeenRecreated_m1411406811,
+	VuforiaNativeIosWrapper_ImageTargetBuilderBuild_m761460217,
+	VuforiaNativeIosWrapper_ImageTargetBuilderGetFrameQuality_m1489038982,
+	VuforiaNativeIosWrapper_ImageTargetBuilderGetTrackableSource_m2028146589,
+	VuforiaNativeIosWrapper_ImageTargetBuilderStartScan_m1862534857,
+	VuforiaNativeIosWrapper_ImageTargetBuilderStopScan_m3689948729,
+	VuforiaNativeIosWrapper_ImageTargetCreateVirtualButton_m3356595724,
+	VuforiaNativeIosWrapper_ImageTargetDestroyVirtualButton_m736427530,
+	VuforiaNativeIosWrapper_ImageTargetGetNumVirtualButtons_m371823917,
+	VuforiaNativeIosWrapper_ImageTargetGetVirtualButtonName_m3989696179,
+	VuforiaNativeIosWrapper_ImageTargetGetVirtualButtons_m868907208,
+	VuforiaNativeIosWrapper_InitFrameState_m1012189235,
+	VuforiaNativeIosWrapper_InitPlatformNative_m1809835485,
+	VuforiaNativeIosWrapper_MultiTargetGetLargestSizeComponent_m3440076165,
+	VuforiaNativeIosWrapper_ObjectTargetGetSize_m804931780,
+	VuforiaNativeIosWrapper_ObjectTargetSetSize_m3030721496,
+	VuforiaNativeIosWrapper_ObjectTrackerActivateDataSet_m3557428407,
+	VuforiaNativeIosWrapper_ObjectTrackerCreateDataSet_m2817648219,
+	VuforiaNativeIosWrapper_ObjectTrackerDeactivateDataSet_m2648798182,
+	VuforiaNativeIosWrapper_ObjectTrackerDestroyDataSet_m301844456,
+	VuforiaNativeIosWrapper_ObjectTrackerPersistExtendedTracking_m3393631373,
+	VuforiaNativeIosWrapper_ObjectTrackerResetExtendedTracking_m424156371,
+	VuforiaNativeIosWrapper_OnPause_m2560128968,
+	VuforiaNativeIosWrapper_OnResume_m1408289077,
+	VuforiaNativeIosWrapper_OnSurfaceChanged_m307016283,
+	VuforiaNativeIosWrapper_QcarAddCameraFrame_m2904837623,
+	VuforiaNativeIosWrapper_QcarDeinit_m4207857047,
+	VuforiaNativeIosWrapper_QcarGetBufferSize_m3641959808,
+	VuforiaNativeIosWrapper_QcarInit_m1620694890,
+	VuforiaNativeIosWrapper_QcarSetFrameFormat_m913867524,
+	VuforiaNativeIosWrapper_QcarSetHint_m2435668228,
+	VuforiaNativeIosWrapper_ReconstructioFromEnvironmentGetReconstructionState_m4055328441,
+	VuforiaNativeIosWrapper_ReconstructionFromTargetSetInitializationTarget_m1516900789,
+	VuforiaNativeIosWrapper_ReconstructionIsReconstructing_m2980521543,
+	VuforiaNativeIosWrapper_ReconstructionReset_m4122793900,
+	VuforiaNativeIosWrapper_ReconstructionSetMaximumArea_m4087028836,
+	VuforiaNativeIosWrapper_ReconstructionSetNavMeshPadding_m2047814053,
+	VuforiaNativeIosWrapper_ReconstructionStart_m2330593959,
+	VuforiaNativeIosWrapper_ReconstructionStop_m2134173667,
+	VuforiaNativeIosWrapper_RendererCreateNativeTexture_m1318632830,
+	VuforiaNativeIosWrapper_RendererEnd_m2703841983,
+	VuforiaNativeIosWrapper_RendererGetGraphicsAPI_m1052861569,
+	VuforiaNativeIosWrapper_RendererGetRecommendedFps_m3849508297,
+	VuforiaNativeIosWrapper_RendererGetVideoBackgroundCfg_m900453101,
+	VuforiaNativeIosWrapper_RendererGetVideoBackgroundTextureInfo_m3496016516,
+	VuforiaNativeIosWrapper_RendererIsVideoBackgroundTextureInfoAvailable_m3369144807,
+	VuforiaNativeIosWrapper_RendererSetVideoBackgroundCfg_m3254069681,
+	VuforiaNativeIosWrapper_RendererSetVideoBackgroundTextureID_m2671740442,
+	VuforiaNativeIosWrapper_RendererSetVideoBackgroundTexturePtr_m3975425300,
+	VuforiaNativeIosWrapper_RenderingPrimitives_DeleteCopy_m11704288,
+	VuforiaNativeIosWrapper_RenderingPrimitives_GetDistortionMesh_m3898684507,
+	VuforiaNativeIosWrapper_RenderingPrimitives_GetDistortionMeshSize_m1922283246,
+	VuforiaNativeIosWrapper_RenderingPrimitives_GetDistortionTextureViewport_m1194762575,
+	VuforiaNativeIosWrapper_RenderingPrimitives_GetEffectiveFov_m2223623225,
+	VuforiaNativeIosWrapper_RenderingPrimitives_GetEyeDisplayAdjustmentMatrix_m1048175274,
+	VuforiaNativeIosWrapper_RenderingPrimitives_GetNormalizedViewport_m2259441382,
+	VuforiaNativeIosWrapper_RenderingPrimitives_GetProjectionMatrix_m1170110928,
+	VuforiaNativeIosWrapper_RenderingPrimitives_GetViewport_m669351719,
+	VuforiaNativeIosWrapper_RenderingPrimitives_GetViewportCentreToEyeAxis_m1483442813,
+	VuforiaNativeIosWrapper_RenderingPrimitives_UpdateCopy_m3173378786,
+	VuforiaNativeIosWrapper_RotationalDeviceTracker_GetModelCorrectionMode_m680451865,
+	VuforiaNativeIosWrapper_RotationalDeviceTracker_GetModelCorrectionTransform_m2044223864,
+	VuforiaNativeIosWrapper_RotationalDeviceTracker_GetPosePrediction_m2933739195,
+	VuforiaNativeIosWrapper_RotationalDeviceTracker_Recenter_m2484813333,
+	VuforiaNativeIosWrapper_RotationalDeviceTracker_SetModelCorrectionMode_m3151279954,
+	VuforiaNativeIosWrapper_RotationalDeviceTracker_SetModelCorrectionModeWithTransform_m814525146,
+	VuforiaNativeIosWrapper_RotationalDeviceTracker_SetPosePrediction_m691473712,
+	VuforiaNativeIosWrapper_SetApplicationEnvironment_m75822216,
+	VuforiaNativeIosWrapper_SetHolographicAppCS_m735300802,
+	VuforiaNativeIosWrapper_SetRenderBuffers_m3342542844,
+	VuforiaNativeIosWrapper_SetStateBufferSize_m3213366782,
+	VuforiaNativeIosWrapper_SmartTerrainBuilderAddReconstruction_m2495975253,
+	VuforiaNativeIosWrapper_SmartTerrainBuilderCreateReconstructionFromEnvironment_m1815804104,
+	VuforiaNativeIosWrapper_SmartTerrainBuilderCreateReconstructionFromTarget_m1251424812,
+	VuforiaNativeIosWrapper_SmartTerrainBuilderDestroyReconstruction_m609742430,
+	VuforiaNativeIosWrapper_SmartTerrainBuilderRemoveReconstruction_m3971717530,
+	VuforiaNativeIosWrapper_SmartTerrainTrackerDeinitBuilder_m302996419,
+	VuforiaNativeIosWrapper_SmartTerrainTrackerInitBuilder_m620295786,
+	VuforiaNativeIosWrapper_SmartTerrainTrackerSetScaleToMillimeter_m2783048279,
+	VuforiaNativeIosWrapper_StartExtendedTracking_m3153159432,
+	VuforiaNativeIosWrapper_StopExtendedTracking_m577155968,
+	VuforiaNativeIosWrapper_TargetFinderClearTrackables_m4069983977,
+	VuforiaNativeIosWrapper_TargetFinderDeinit_m3699635235,
+	VuforiaNativeIosWrapper_TargetFinderEnableTracking_m1012242156,
+	VuforiaNativeIosWrapper_TargetFinderGetImageTargets_m2512364458,
+	VuforiaNativeIosWrapper_TargetFinderGetInitState_m3256667455,
+	VuforiaNativeIosWrapper_TargetFinderGetResults_m589564163,
+	VuforiaNativeIosWrapper_TargetFinderStartInit_m1218004482,
+	VuforiaNativeIosWrapper_TargetFinderStartRecognition_m3657386603,
+	VuforiaNativeIosWrapper_TargetFinderStop_m4086500612,
+	VuforiaNativeIosWrapper_TargetFinderUpdate_m1076763128,
+	VuforiaNativeIosWrapper_TextTrackerGetRegionOfInterest_m3865666793,
+	VuforiaNativeIosWrapper_TextTrackerSetRegionOfInterest_m2445974948,
+	VuforiaNativeIosWrapper_TrackerManagerDeinitTracker_m2540501350,
+	VuforiaNativeIosWrapper_TrackerManagerInitTracker_m3935154363,
+	VuforiaNativeIosWrapper_TrackerStart_m2974003764,
+	VuforiaNativeIosWrapper_TrackerStop_m1449029388,
+	VuforiaNativeIosWrapper_UpdateQCAR_m3873847443,
+	VuforiaNativeIosWrapper_ViewerParameters_ContainsMagnet_m2238426861,
+	VuforiaNativeIosWrapper_ViewerParameters_copy_m4121762008,
+	VuforiaNativeIosWrapper_ViewerParameters_delete_m84076153,
+	VuforiaNativeIosWrapper_ViewerParameters_GetButtonType_m706654982,
+	VuforiaNativeIosWrapper_ViewerParameters_GetDistortionCoefficient_m1023272655,
+	VuforiaNativeIosWrapper_ViewerParameters_GetFieldOfView_m318242640,
+	VuforiaNativeIosWrapper_ViewerParameters_GetInterLensDistance_m2088129059,
+	VuforiaNativeIosWrapper_ViewerParameters_GetLensCentreToTrayDistance_m3517560929,
+	VuforiaNativeIosWrapper_ViewerParameters_GetManufacturer_m3196302280,
+	VuforiaNativeIosWrapper_ViewerParameters_GetName_m4134217462,
+	VuforiaNativeIosWrapper_ViewerParameters_GetNumDistortionCoefficients_m3279147659,
+	VuforiaNativeIosWrapper_ViewerParameters_GetScreenToLensDistance_m2226660214,
+	VuforiaNativeIosWrapper_ViewerParameters_GetTrayAlignment_m1934941145,
+	VuforiaNativeIosWrapper_ViewerParameters_GetVersion_m1358966946,
+	VuforiaNativeIosWrapper_ViewerParametersList_Begin_m606335884,
+	VuforiaNativeIosWrapper_ViewerParametersList_GetByIndex_m3002845065,
+	VuforiaNativeIosWrapper_ViewerParametersList_GetByNameManufacturer_m850916446,
+	VuforiaNativeIosWrapper_ViewerParametersList_GetListForAuthoringTools_m3527778128,
+	VuforiaNativeIosWrapper_ViewerParametersList_Next_m81190180,
+	VuforiaNativeIosWrapper_ViewerParametersList_SetSDKFilter_m1583373230,
+	VuforiaNativeIosWrapper_ViewerParametersList_Size_m3906509153,
+	VuforiaNativeIosWrapper_VirtualButtonGetId_m569539281,
+	VuforiaNativeIosWrapper_VirtualButtonSetAreaRectangle_m3672781762,
+	VuforiaNativeIosWrapper_VirtualButtonSetEnabled_m208095882,
+	VuforiaNativeIosWrapper_VirtualButtonSetSensitivity_m3799741596,
+	VuforiaNativeIosWrapper_VuforiaGetRenderEventCallback_m2270251237,
+	VuforiaNativeIosWrapper_VuMarkTargetGetInstanceImage_m1152364951,
+	VuforiaNativeIosWrapper_VuMarkTemplateGetOrigin_m381959105,
+	VuforiaNativeIosWrapper_VuMarkTemplateGetVuMarkUserData_m72354746,
+	VuforiaNativeIosWrapper_VuMarkTemplateSetTrackingFromRuntimeAppearance_m2733792703,
+	VuforiaNativeIosWrapper_WordGetLetterBoundingBoxes_m1006111415,
+	VuforiaNativeIosWrapper_WordGetLetterMask_m610684220,
+	VuforiaNativeIosWrapper_WordListAddWordsFromFile_m4291907338,
+	VuforiaNativeIosWrapper_WordListAddWordToFilterListU_m4161474916,
+	VuforiaNativeIosWrapper_WordListAddWordU_m3618658491,
+	VuforiaNativeIosWrapper_WordListClearFilterList_m658467842,
+	VuforiaNativeIosWrapper_WordListContainsWordU_m2040191253,
+	VuforiaNativeIosWrapper_WordListGetFilterListWordCount_m871389696,
+	VuforiaNativeIosWrapper_WordListGetFilterListWordU_m3494697002,
+	VuforiaNativeIosWrapper_WordListGetFilterMode_m2653430156,
+	VuforiaNativeIosWrapper_WordListLoadFilterList_m3809084866,
+	VuforiaNativeIosWrapper_WordListLoadWordList_m1883806888,
+	VuforiaNativeIosWrapper_WordListRemoveWordFromFilterListU_m3389547606,
+	VuforiaNativeIosWrapper_WordListRemoveWordU_m3110586468,
+	VuforiaNativeIosWrapper_WordListSetFilterMode_m661376283,
+	VuforiaNativeIosWrapper_WordListUnloadAllLists_m2056443526,
+	VuforiaNativeIosWrapper_cameraDeviceDeinitCamera_m1587929918,
+	VuforiaNativeIosWrapper_cameraDeviceGetCameraDirection_m1728649600,
+	VuforiaNativeIosWrapper_cameraDeviceGetCameraField_m4250172676,
+	VuforiaNativeIosWrapper_cameraDeviceGetCameraFieldOfViewRads_m55423933,
+	VuforiaNativeIosWrapper_cameraDeviceGetFieldBool_m3981804370,
+	VuforiaNativeIosWrapper_cameraDeviceGetFieldFloat_m980178806,
+	VuforiaNativeIosWrapper_cameraDeviceGetFieldInt64_m4045292235,
+	VuforiaNativeIosWrapper_cameraDeviceGetFieldInt64Range_m1981884486,
+	VuforiaNativeIosWrapper_cameraDeviceGetFieldString_m3298608192,
+	VuforiaNativeIosWrapper_cameraDeviceGetNumCameraFields_m1875692502,
+	VuforiaNativeIosWrapper_cameraDeviceGetNumVideoModes_m1830756723,
+	VuforiaNativeIosWrapper_cameraDeviceGetVideoMode_m1845583535,
+	VuforiaNativeIosWrapper_cameraDeviceInitCamera_m2633929252,
+	VuforiaNativeIosWrapper_cameraDeviceSelectVideoMode_m31442025,
+	VuforiaNativeIosWrapper_cameraDeviceSetCameraConfiguration_m3211847683,
+	VuforiaNativeIosWrapper_cameraDeviceSetFieldBool_m3266305245,
+	VuforiaNativeIosWrapper_cameraDeviceSetFieldFloat_m1615749773,
+	VuforiaNativeIosWrapper_cameraDeviceSetFieldInt64_m3386135735,
+	VuforiaNativeIosWrapper_cameraDeviceSetFieldInt64Range_m2453804430,
+	VuforiaNativeIosWrapper_cameraDeviceSetFieldString_m3821169527,
+	VuforiaNativeIosWrapper_cameraDeviceSetFlashTorchMode_m1889761380,
+	VuforiaNativeIosWrapper_cameraDeviceSetFocusMode_m3175089050,
+	VuforiaNativeIosWrapper_cameraDeviceStartCamera_m3208437935,
+	VuforiaNativeIosWrapper_cameraDeviceStopCamera_m3032355887,
+	VuforiaNativeIosWrapper_customViewerParameters_AddDistortionCoefficient_m2661110409,
+	VuforiaNativeIosWrapper_customViewerParameters_ClearDistortionCoefficients_m2509496407,
+	VuforiaNativeIosWrapper_customViewerParameters_delete_m1145210226,
+	VuforiaNativeIosWrapper_customViewerParameters_new_m3768036445,
+	VuforiaNativeIosWrapper_customViewerParameters_SetButtonType_m1021066530,
+	VuforiaNativeIosWrapper_customViewerParameters_SetContainsMagnet_m1887028353,
+	VuforiaNativeIosWrapper_customViewerParameters_SetFieldOfView_m2159232301,
+	VuforiaNativeIosWrapper_customViewerParameters_SetInterLensDistance_m3121437811,
+	VuforiaNativeIosWrapper_customViewerParameters_SetLensCentreToTrayDistance_m3470445629,
+	VuforiaNativeIosWrapper_customViewerParameters_SetScreenToLensDistance_m2806871658,
+	VuforiaNativeIosWrapper_customViewerParameters_SetTrayAlignment_m3316586673,
+	VuforiaNativeIosWrapper_cylinderTargetGetDimensions_m2568397939,
+	VuforiaNativeIosWrapper_cylinderTargetSetBottomDiameter_m1846085059,
+	VuforiaNativeIosWrapper_cylinderTargetSetSideLength_m428031588,
+	VuforiaNativeIosWrapper_cylinderTargetSetTopDiameter_m3134277167,
+	VuforiaNativeIosWrapper_dataSetCreateTrackable_m2330511863,
+	VuforiaNativeIosWrapper_dataSetDestroyTrackable_m1211145585,
+	VuforiaNativeIosWrapper_dataSetExists_m1609124316,
+	VuforiaNativeIosWrapper_dataSetGetNumTrackableType_m1607768155,
+	VuforiaNativeIosWrapper_dataSetGetTrackableName_m84910199,
+	VuforiaNativeIosWrapper_dataSetGetTrackablesOfType_m273956672,
+	VuforiaNativeIosWrapper_dataSetHasReachedTrackableLimit_m1442588405,
+	VuforiaNativeIosWrapper_dataSetLoad_m3012062920,
+	VuforiaNativeIosWrapper_deinitFrameState_m897954500,
+	VuforiaNativeIosWrapper_device_GetMode_m250013105,
+	VuforiaNativeIosWrapper_device_GetSelectedViewer_m2573141792,
+	VuforiaNativeIosWrapper_device_GetViewerList_m4247101621,
+	VuforiaNativeIosWrapper_device_IsViewerPresent_m1262156215,
+	VuforiaNativeIosWrapper_device_SelectViewer_m220684390,
+	VuforiaNativeIosWrapper_device_SetMode_m2592184458,
+	VuforiaNativeIosWrapper_device_SetViewerPresent_m3090035818,
+	VuforiaNativeIosWrapper_deviceIsEyewearDevice_m2657808909,
+	VuforiaNativeIosWrapper_eyewearCPMClearProfile_m3345323802,
+	VuforiaNativeIosWrapper_eyewearCPMGetActiveProfile_m4075121662,
+	VuforiaNativeIosWrapper_eyewearCPMGetCameraToEyePose_m2830964739,
+	VuforiaNativeIosWrapper_eyewearCPMGetEyeProjection_m3700712801,
+	VuforiaNativeIosWrapper_eyewearCPMGetMaxCount_m3578964992,
+	VuforiaNativeIosWrapper_eyewearCPMGetProfileName_m2069979309,
+	VuforiaNativeIosWrapper_eyewearCPMGetUsedCount_m381538951,
+	VuforiaNativeIosWrapper_eyewearCPMIsProfileUsed_m2918768860,
+	VuforiaNativeIosWrapper_eyewearCPMSetActiveProfile_m614447077,
+	VuforiaNativeIosWrapper_eyewearCPMSetCameraToEyePose_m2814137719,
+	VuforiaNativeIosWrapper_eyewearCPMSetEyeProjection_m1643850069,
+	VuforiaNativeIosWrapper_eyewearCPMSetProfileName_m3973334866,
+	VuforiaNativeIosWrapper_eyewearDeviceGetScreenOrientation_m3076880359,
+	VuforiaNativeIosWrapper_eyewearDeviceIsDisplayExtended_m2903419110,
+	VuforiaNativeIosWrapper_eyewearDeviceIsDisplayExtendedGLOnly_m849691199,
+	VuforiaNativeIosWrapper_eyewearDeviceIsDualDisplay_m904056287,
+	VuforiaNativeIosWrapper_eyewearDeviceIsPredictiveTrackingEnabled_m3486033528,
+	VuforiaNativeIosWrapper_eyewearDeviceIsSeeThru_m3205109121,
+	VuforiaNativeIosWrapper_eyewearDeviceSetDisplayExtended_m3083391203,
+	VuforiaNativeIosWrapper_eyewearDeviceSetPredictiveTracking_m630864248,
+	VuforiaNativeIosWrapper_eyewearUserCalibratorGetMaxScaleHint_m1907921952,
+	VuforiaNativeIosWrapper_eyewearUserCalibratorGetMinScaleHint_m1311367942,
+	VuforiaNativeIosWrapper_eyewearUserCalibratorGetProjectionMatrix_m2836689226,
+	VuforiaNativeIosWrapper_eyewearUserCalibratorInit_m1522517795,
+	VuforiaNativeIosWrapper_eyewearUserCalibratorIsStereoStretched_m2098774975,
+	VuforiaNativeIosWrapper_frameCounterGetBenchmarkingData_m2069907807,
+	VuforiaNativeIosWrapper_getCameraThreadID_m1781433375,
+	VuforiaNativeIosWrapper_getProjectionGL_m2982094058,
+	VuforiaNativeIosWrapper_getVuforiaLibraryVersion_m1793725823,
+	VuforiaNativeIosWrapper_hasSurfaceBeenRecreated_m2869422907,
+	VuforiaNativeIosWrapper_imageTargetBuilderBuild_m2202258393,
+	VuforiaNativeIosWrapper_imageTargetBuilderGetFrameQuality_m2951572518,
+	VuforiaNativeIosWrapper_imageTargetBuilderGetTrackableSource_m2143164861,
+	VuforiaNativeIosWrapper_imageTargetBuilderStartScan_m4228299177,
+	VuforiaNativeIosWrapper_imageTargetBuilderStopScan_m1835474969,
+	VuforiaNativeIosWrapper_imageTargetCreateVirtualButton_m3782989548,
+	VuforiaNativeIosWrapper_imageTargetDestroyVirtualButton_m3689507626,
+	VuforiaNativeIosWrapper_imageTargetGetNumVirtualButtons_m2957197453,
+	VuforiaNativeIosWrapper_imageTargetGetVirtualButtonName_m2247848339,
+	VuforiaNativeIosWrapper_imageTargetGetVirtualButtons_m1743081832,
+	VuforiaNativeIosWrapper_initFrameState_m2026310867,
+	VuforiaNativeIosWrapper_initPlatformNative_m3868192701,
+	VuforiaNativeIosWrapper_multiTargetGetLargestSizeComponent_m2588386597,
+	VuforiaNativeIosWrapper_objectTargetGetSize_m3619084004,
+	VuforiaNativeIosWrapper_objectTargetSetSize_m1549906424,
+	VuforiaNativeIosWrapper_objectTrackerActivateDataSet_m3612744791,
+	VuforiaNativeIosWrapper_objectTrackerCreateDataSet_m2032962555,
+	VuforiaNativeIosWrapper_objectTrackerDeactivateDataSet_m1309291462,
+	VuforiaNativeIosWrapper_objectTrackerDestroyDataSet_m3141081480,
+	VuforiaNativeIosWrapper_objectTrackerPersistExtendedTracking_m3210300269,
+	VuforiaNativeIosWrapper_objectTrackerResetExtendedTracking_m1726601523,
+	VuforiaNativeIosWrapper_onPause_m405923240,
+	VuforiaNativeIosWrapper_onResume_m1771188757,
+	VuforiaNativeIosWrapper_onSurfaceChanged_m3315021947,
+	VuforiaNativeIosWrapper_qcarAddCameraFrame_m4004049239,
+	VuforiaNativeIosWrapper_qcarDeinit_m101946935,
+	VuforiaNativeIosWrapper_qcarGetBufferSize_m1980761568,
+	VuforiaNativeIosWrapper_qcarInit_m2366259850,
+	VuforiaNativeIosWrapper_qcarSetFrameFormat_m3296300004,
+	VuforiaNativeIosWrapper_qcarSetHint_m389356964,
+	VuforiaNativeIosWrapper_reconstructioFromEnvironmentGetReconstructionState_m4226052121,
+	VuforiaNativeIosWrapper_reconstructionFromTargetSetInitializationTarget_m183654805,
+	VuforiaNativeIosWrapper_reconstructionIsReconstructing_m1879333735,
+	VuforiaNativeIosWrapper_reconstructionReset_m569248588,
+	VuforiaNativeIosWrapper_reconstructionSetMaximumArea_m4277845316,
+	VuforiaNativeIosWrapper_reconstructionSetNavMeshPadding_m1798156037,
+	VuforiaNativeIosWrapper_reconstructionStart_m1276739271,
+	VuforiaNativeIosWrapper_reconstructionStop_m718400579,
+	VuforiaNativeIosWrapper_rendererCreateNativeTexture_m3522408734,
+	VuforiaNativeIosWrapper_rendererEnd_m3748908575,
+	VuforiaNativeIosWrapper_rendererGetGraphicsAPI_m4081151137,
+	VuforiaNativeIosWrapper_rendererGetRecommendedFps_m2093869481,
+	VuforiaNativeIosWrapper_rendererGetVideoBackgroundCfg_m2044882061,
+	VuforiaNativeIosWrapper_rendererGetVideoBackgroundTextureInfo_m3555068388,
+	VuforiaNativeIosWrapper_rendererIsVideoBackgroundTextureInfoAvailable_m2005124487,
+	VuforiaNativeIosWrapper_rendererSetVideoBackgroundCfg_m103531345,
+	VuforiaNativeIosWrapper_rendererSetVideoBackgroundTextureID_m549253946,
+	VuforiaNativeIosWrapper_rendererSetVideoBackgroundTexturePtr_m3508335028,
+	VuforiaNativeIosWrapper_renderingPrimitives_DeleteCopy_m2389955136,
+	VuforiaNativeIosWrapper_renderingPrimitives_GetDistortionMesh_m4267271227,
+	VuforiaNativeIosWrapper_renderingPrimitives_GetDistortionMeshSize_m1314955982,
+	VuforiaNativeIosWrapper_renderingPrimitives_GetDistortionTextureViewport_m2409313007,
+	VuforiaNativeIosWrapper_renderingPrimitives_GetEffectiveFov_m2153537433,
+	VuforiaNativeIosWrapper_renderingPrimitives_GetEyeDisplayAdjustmentMatrix_m2110868810,
+	VuforiaNativeIosWrapper_renderingPrimitives_GetNormalizedViewport_m921064390,
+	VuforiaNativeIosWrapper_renderingPrimitives_GetProjectionMatrix_m3624445744,
+	VuforiaNativeIosWrapper_renderingPrimitives_GetViewport_m3203698759,
+	VuforiaNativeIosWrapper_renderingPrimitives_GetViewportCentreToEyeAxis_m1840788573,
+	VuforiaNativeIosWrapper_renderingPrimitives_UpdateCopy_m3416861250,
+	VuforiaNativeIosWrapper_rotationalDeviceTracker_GetModelCorrectionMode_m1993917689,
+	VuforiaNativeIosWrapper_rotationalDeviceTracker_GetModelCorrectionTransform_m4270789976,
+	VuforiaNativeIosWrapper_rotationalDeviceTracker_GetPosePrediction_m1624677915,
+	VuforiaNativeIosWrapper_rotationalDeviceTracker_Recenter_m4061718453,
+	VuforiaNativeIosWrapper_rotationalDeviceTracker_SetModelCorrectionMode_m1264565106,
+	VuforiaNativeIosWrapper_rotationalDeviceTracker_SetModelCorrectionModeWithTransform_m3332665146,
+	VuforiaNativeIosWrapper_rotationalDeviceTracker_SetPosePrediction_m3698643088,
+	VuforiaNativeIosWrapper_setApplicationEnvironment_m3840656360,
+	VuforiaNativeIosWrapper_setHolographicAppCS_m2821035810,
+	VuforiaNativeIosWrapper_setRenderBuffers_m1506452892,
+	VuforiaNativeIosWrapper_setStateBufferSize_m1566900126,
+	VuforiaNativeIosWrapper_smartTerrainBuilderAddReconstruction_m2389970357,
+	VuforiaNativeIosWrapper_smartTerrainBuilderCreateReconstructionFromEnvironment_m1899014632,
+	VuforiaNativeIosWrapper_smartTerrainBuilderCreateReconstructionFromTarget_m3362073420,
+	VuforiaNativeIosWrapper_smartTerrainBuilderDestroyReconstruction_m1922190526,
+	VuforiaNativeIosWrapper_smartTerrainBuilderRemoveReconstruction_m3922169658,
+	VuforiaNativeIosWrapper_smartTerrainTrackerDeinitBuilder_m1812618339,
+	VuforiaNativeIosWrapper_smartTerrainTrackerInitBuilder_m4050234314,
+	VuforiaNativeIosWrapper_smartTerrainTrackerSetScaleToMillimeter_m3009738487,
+	VuforiaNativeIosWrapper_startExtendedTracking_m3420814888,
+	VuforiaNativeIosWrapper_stopExtendedTracking_m3952460832,
+	VuforiaNativeIosWrapper_targetFinderClearTrackables_m1475907081,
+	VuforiaNativeIosWrapper_targetFinderDeinit_m2013149251,
+	VuforiaNativeIosWrapper_targetFinderEnableTracking_m2220507596,
+	VuforiaNativeIosWrapper_targetFinderGetImageTargets_m747558922,
+	VuforiaNativeIosWrapper_targetFinderGetInitState_m4025907359,
+	VuforiaNativeIosWrapper_targetFinderGetResults_m2135083875,
+	VuforiaNativeIosWrapper_targetFinderStartInit_m617810274,
+	VuforiaNativeIosWrapper_targetFinderStartRecognition_m3928355403,
+	VuforiaNativeIosWrapper_targetFinderStop_m1692693988,
+	VuforiaNativeIosWrapper_targetFinderUpdate_m4158881560,
+	VuforiaNativeIosWrapper_textTrackerGetRegionOfInterest_m1206411465,
+	VuforiaNativeIosWrapper_textTrackerSetRegionOfInterest_m3530828036,
+	VuforiaNativeIosWrapper_trackerManagerDeinitTracker_m667500934,
+	VuforiaNativeIosWrapper_trackerManagerInitTracker_m3140201755,
+	VuforiaNativeIosWrapper_trackerStart_m2503881172,
+	VuforiaNativeIosWrapper_trackerStop_m1414063980,
+	VuforiaNativeIosWrapper_updateQCAR_m1735310899,
+	VuforiaNativeIosWrapper_viewerParameters_ContainsMagnet_m1930084045,
+	VuforiaNativeIosWrapper_viewerParameters_copy_m2582006584,
+	VuforiaNativeIosWrapper_viewerParameters_delete_m48747289,
+	VuforiaNativeIosWrapper_viewerParameters_GetButtonType_m1555090342,
+	VuforiaNativeIosWrapper_viewerParameters_GetDistortionCoefficient_m3282973871,
+	VuforiaNativeIosWrapper_viewerParameters_GetFieldOfView_m2602457840,
+	VuforiaNativeIosWrapper_viewerParameters_GetInterLensDistance_m3435326787,
+	VuforiaNativeIosWrapper_viewerParameters_GetLensCentreToTrayDistance_m1510126145,
+	VuforiaNativeIosWrapper_viewerParameters_GetManufacturer_m2113922472,
+	VuforiaNativeIosWrapper_viewerParameters_GetName_m292468950,
+	VuforiaNativeIosWrapper_viewerParameters_GetNumDistortionCoefficients_m431163115,
+	VuforiaNativeIosWrapper_viewerParameters_GetScreenToLensDistance_m127583126,
+	VuforiaNativeIosWrapper_viewerParameters_GetTrayAlignment_m1144067705,
+	VuforiaNativeIosWrapper_viewerParameters_GetVersion_m1868306690,
+	VuforiaNativeIosWrapper_viewerParametersList_Begin_m1351734828,
+	VuforiaNativeIosWrapper_viewerParametersList_GetByIndex_m3688531817,
+	VuforiaNativeIosWrapper_viewerParametersList_GetByNameManufacturer_m3451169470,
+	VuforiaNativeIosWrapper_viewerParametersList_GetListForAuthoringTools_m3822216112,
+	VuforiaNativeIosWrapper_viewerParametersList_Next_m245097348,
+	VuforiaNativeIosWrapper_viewerParametersList_SetSDKFilter_m2503443406,
+	VuforiaNativeIosWrapper_viewerParametersList_Size_m263769793,
+	VuforiaNativeIosWrapper_virtualButtonGetId_m190867889,
+	VuforiaNativeIosWrapper_virtualButtonSetAreaRectangle_m2462416034,
+	VuforiaNativeIosWrapper_virtualButtonSetEnabled_m1979993002,
+	VuforiaNativeIosWrapper_virtualButtonSetSensitivity_m3646875708,
+	VuforiaNativeIosWrapper_vuforiaGetRenderEventCallback_m3666992453,
+	VuforiaNativeIosWrapper_vuMarkTargetGetInstanceImage_m4273202231,
+	VuforiaNativeIosWrapper_vuMarkTemplateGetOrigin_m685820321,
+	VuforiaNativeIosWrapper_vuMarkTemplateGetVuMarkUserData_m2375377050,
+	VuforiaNativeIosWrapper_vuMarkTemplateSetTrackingFromRuntimeAppearance_m2667943135,
+	VuforiaNativeIosWrapper_wordGetLetterBoundingBoxes_m2060470295,
+	VuforiaNativeIosWrapper_wordGetLetterMask_m1601539420,
+	VuforiaNativeIosWrapper_wordListAddWordsFromFile_m4169273642,
+	VuforiaNativeIosWrapper_wordListAddWordToFilterListU_m1504486340,
+	VuforiaNativeIosWrapper_wordListAddWordU_m2664139803,
+	VuforiaNativeIosWrapper_wordListClearFilterList_m2975657186,
+	VuforiaNativeIosWrapper_wordListContainsWordU_m4226219317,
+	VuforiaNativeIosWrapper_wordListGetFilterListWordCount_m3662038304,
+	VuforiaNativeIosWrapper_wordListGetFilterListWordU_m938934346,
+	VuforiaNativeIosWrapper_wordListGetFilterMode_m1378839596,
+	VuforiaNativeIosWrapper_wordListLoadFilterList_m1741071522,
+	VuforiaNativeIosWrapper_wordListLoadWordList_m393179080,
+	VuforiaNativeIosWrapper_wordListRemoveWordFromFilterListU_m887358902,
+	VuforiaNativeIosWrapper_wordListRemoveWordU_m1241517508,
+	VuforiaNativeIosWrapper_wordListSetFilterMode_m4090943099,
+	VuforiaNativeIosWrapper_wordListUnloadAllLists_m1166082790,
+	VuforiaNativeIosWrapper__ctor_m421771357,
+	VuforiaNativeWrapper_CameraDeviceDeinitCamera_m1109208629,
+	VuforiaNativeWrapper_CameraDeviceGetCameraDirection_m703468441,
+	VuforiaNativeWrapper_CameraDeviceGetCameraField_m63553131,
+	VuforiaNativeWrapper_CameraDeviceGetCameraFieldOfViewRads_m808578640,
+	VuforiaNativeWrapper_CameraDeviceGetFieldBool_m2539675793,
+	VuforiaNativeWrapper_CameraDeviceGetFieldFloat_m423682739,
+	VuforiaNativeWrapper_CameraDeviceGetFieldInt64_m531726890,
+	VuforiaNativeWrapper_CameraDeviceGetFieldInt64Range_m3248407549,
+	VuforiaNativeWrapper_CameraDeviceGetFieldString_m1690296337,
+	VuforiaNativeWrapper_CameraDeviceGetNumCameraFields_m2982742771,
+	VuforiaNativeWrapper_CameraDeviceGetNumVideoModes_m1468494034,
+	VuforiaNativeWrapper_CameraDeviceGetVideoMode_m831836610,
+	VuforiaNativeWrapper_CameraDeviceInitCamera_m2164031797,
+	VuforiaNativeWrapper_CameraDeviceSelectVideoMode_m1038892030,
+	VuforiaNativeWrapper_CameraDeviceSetCameraConfiguration_m3586296648,
+	VuforiaNativeWrapper_CameraDeviceSetFieldBool_m1466270898,
+	VuforiaNativeWrapper_CameraDeviceSetFieldFloat_m3231490170,
+	VuforiaNativeWrapper_CameraDeviceSetFieldInt64_m3339716288,
+	VuforiaNativeWrapper_CameraDeviceSetFieldInt64Range_m4205204779,
+	VuforiaNativeWrapper_CameraDeviceSetFieldString_m2544232480,
+	VuforiaNativeWrapper_CameraDeviceSetFlashTorchMode_m1268187253,
+	VuforiaNativeWrapper_CameraDeviceSetFocusMode_m1516702471,
+	VuforiaNativeWrapper_CameraDeviceStartCamera_m1648509688,
+	VuforiaNativeWrapper_CameraDeviceStopCamera_m382415192,
+	VuforiaNativeWrapper_CustomViewerParameters_AddDistortionCoefficient_m4050510332,
+	VuforiaNativeWrapper_CustomViewerParameters_ClearDistortionCoefficients_m2969993578,
+	VuforiaNativeWrapper_CustomViewerParameters_delete_m2560137619,
+	VuforiaNativeWrapper_CustomViewerParameters_new_m2285257164,
+	VuforiaNativeWrapper_CustomViewerParameters_SetButtonType_m2557764195,
+	VuforiaNativeWrapper_CustomViewerParameters_SetContainsMagnet_m441592582,
+	VuforiaNativeWrapper_CustomViewerParameters_SetFieldOfView_m4256636688,
+	VuforiaNativeWrapper_CustomViewerParameters_SetInterLensDistance_m750366472,
+	VuforiaNativeWrapper_CustomViewerParameters_SetLensCentreToTrayDistance_m1881978978,
+	VuforiaNativeWrapper_CustomViewerParameters_SetScreenToLensDistance_m2504455073,
+	VuforiaNativeWrapper_CustomViewerParameters_SetTrayAlignment_m2300096494,
+	VuforiaNativeWrapper_CylinderTargetGetDimensions_m4288176978,
+	VuforiaNativeWrapper_CylinderTargetSetBottomDiameter_m322495034,
+	VuforiaNativeWrapper_CylinderTargetSetSideLength_m258427277,
+	VuforiaNativeWrapper_CylinderTargetSetTopDiameter_m449536726,
+	VuforiaNativeWrapper_DataSetCreateTrackable_m2990128992,
+	VuforiaNativeWrapper_DataSetDestroyTrackable_m3681595572,
+	VuforiaNativeWrapper_DataSetExists_m2807206103,
+	VuforiaNativeWrapper_DataSetGetNumTrackableType_m2351326228,
+	VuforiaNativeWrapper_DataSetGetTrackableName_m3695645824,
+	VuforiaNativeWrapper_DataSetGetTrackablesOfType_m604571841,
+	VuforiaNativeWrapper_DataSetHasReachedTrackableLimit_m2620656106,
+	VuforiaNativeWrapper_DataSetLoad_m1260320755,
+	VuforiaNativeWrapper_DeinitFrameState_m3888900699,
+	VuforiaNativeWrapper_Device_GetMode_m424990260,
+	VuforiaNativeWrapper_Device_GetSelectedViewer_m2323016995,
+	VuforiaNativeWrapper_Device_GetViewerList_m700311300,
+	VuforiaNativeWrapper_Device_IsViewerPresent_m2010970110,
+	VuforiaNativeWrapper_Device_SelectViewer_m116751893,
+	VuforiaNativeWrapper_Device_SetMode_m1718017929,
+	VuforiaNativeWrapper_Device_SetViewerPresent_m2479357667,
+	VuforiaNativeWrapper_DeviceIsEyewearDevice_m2970460386,
+	VuforiaNativeWrapper_EyewearCPMClearProfile_m3627509031,
+	VuforiaNativeWrapper_EyewearCPMGetActiveProfile_m3497764733,
+	VuforiaNativeWrapper_EyewearCPMGetCameraToEyePose_m941746972,
+	VuforiaNativeWrapper_EyewearCPMGetEyeProjection_m1482460470,
+	VuforiaNativeWrapper_EyewearCPMGetMaxCount_m3171668281,
+	VuforiaNativeWrapper_EyewearCPMGetProfileName_m505697772,
+	VuforiaNativeWrapper_EyewearCPMGetUsedCount_m280960342,
+	VuforiaNativeWrapper_EyewearCPMIsProfileUsed_m2552144799,
+	VuforiaNativeWrapper_EyewearCPMSetActiveProfile_m2104105680,
+	VuforiaNativeWrapper_EyewearCPMSetCameraToEyePose_m2875139712,
+	VuforiaNativeWrapper_EyewearCPMSetEyeProjection_m3300367642,
+	VuforiaNativeWrapper_EyewearCPMSetProfileName_m553815769,
+	VuforiaNativeWrapper_EyewearDeviceGetScreenOrientation_m378511126,
+	VuforiaNativeWrapper_EyewearDeviceIsDisplayExtended_m4119027101,
+	VuforiaNativeWrapper_EyewearDeviceIsDisplayExtendedGLOnly_m1981191680,
+	VuforiaNativeWrapper_EyewearDeviceIsDualDisplay_m771840902,
+	VuforiaNativeWrapper_EyewearDeviceIsPredictiveTrackingEnabled_m2051618457,
+	VuforiaNativeWrapper_EyewearDeviceIsSeeThru_m3209053292,
+	VuforiaNativeWrapper_EyewearDeviceSetDisplayExtended_m587511586,
+	VuforiaNativeWrapper_EyewearDeviceSetPredictiveTracking_m2880039531,
+	VuforiaNativeWrapper_EyewearUserCalibratorGetMaxScaleHint_m3515881541,
+	VuforiaNativeWrapper_EyewearUserCalibratorGetMinScaleHint_m497648927,
+	VuforiaNativeWrapper_EyewearUserCalibratorGetProjectionMatrix_m344279799,
+	VuforiaNativeWrapper_EyewearUserCalibratorInit_m1428546714,
+	VuforiaNativeWrapper_EyewearUserCalibratorIsStereoStretched_m3029041672,
+	VuforiaNativeWrapper_FrameCounterGetBenchmarkingData_m2933366218,
+	VuforiaNativeWrapper_GetCameraThreadID_m2761409230,
+	VuforiaNativeWrapper_GetProjectionGL_m844412913,
+	VuforiaNativeWrapper_GetVuforiaLibraryVersion_m354038804,
+	VuforiaNativeWrapper_HasSurfaceBeenRecreated_m2036938132,
+	VuforiaNativeWrapper_ImageTargetBuilderBuild_m910660886,
+	VuforiaNativeWrapper_ImageTargetBuilderGetFrameQuality_m2416629835,
+	VuforiaNativeWrapper_ImageTargetBuilderGetTrackableSource_m2360215990,
+	VuforiaNativeWrapper_ImageTargetBuilderStartScan_m809644532,
+	VuforiaNativeWrapper_ImageTargetBuilderStopScan_m2535540620,
+	VuforiaNativeWrapper_ImageTargetCreateVirtualButton_m1368760967,
+	VuforiaNativeWrapper_ImageTargetDestroyVirtualButton_m82814135,
+	VuforiaNativeWrapper_ImageTargetGetNumVirtualButtons_m3628348058,
+	VuforiaNativeWrapper_ImageTargetGetVirtualButtonName_m2112234436,
+	VuforiaNativeWrapper_ImageTargetGetVirtualButtons_m2320424507,
+	VuforiaNativeWrapper_InitFrameState_m4223899912,
+	VuforiaNativeWrapper_InitPlatformNative_m2860361880,
+	VuforiaNativeWrapper_MultiTargetGetLargestSizeComponent_m2654880854,
+	VuforiaNativeWrapper_ObjectTargetGetSize_m1080718975,
+	VuforiaNativeWrapper_ObjectTargetSetSize_m2490596547,
+	VuforiaNativeWrapper_ObjectTrackerActivateDataSet_m1405592088,
+	VuforiaNativeWrapper_ObjectTrackerCreateDataSet_m3669350956,
+	VuforiaNativeWrapper_ObjectTrackerDeactivateDataSet_m1775103787,
+	VuforiaNativeWrapper_ObjectTrackerDestroyDataSet_m1829171873,
+	VuforiaNativeWrapper_ObjectTrackerPersistExtendedTracking_m49830696,
+	VuforiaNativeWrapper_ObjectTrackerResetExtendedTracking_m3037757866,
+	VuforiaNativeWrapper_OnPause_m2681763759,
+	VuforiaNativeWrapper_OnResume_m3769569024,
+	VuforiaNativeWrapper_OnSurfaceChanged_m51781902,
+	VuforiaNativeWrapper_QcarAddCameraFrame_m800762140,
+	VuforiaNativeWrapper_QcarDeinit_m4180067380,
+	VuforiaNativeWrapper_QcarGetBufferSize_m812514041,
+	VuforiaNativeWrapper_QcarInit_m1548867895,
+	VuforiaNativeWrapper_QcarSetFrameFormat_m3674889639,
+	VuforiaNativeWrapper_QcarSetHint_m2216260991,
+	VuforiaNativeWrapper_ReconstructioFromEnvironmentGetReconstructionState_m4241304182,
+	VuforiaNativeWrapper_ReconstructionFromTargetSetInitializationTarget_m2216601704,
+	VuforiaNativeWrapper_ReconstructionIsReconstructing_m4219088470,
+	VuforiaNativeWrapper_ReconstructionReset_m2652192527,
+	VuforiaNativeWrapper_ReconstructionSetMaximumArea_m2200790357,
+	VuforiaNativeWrapper_ReconstructionSetNavMeshPadding_m1245734770,
+	VuforiaNativeWrapper_ReconstructionStart_m1708729006,
+	VuforiaNativeWrapper_ReconstructionStop_m2213730332,
+	VuforiaNativeWrapper_RendererCreateNativeTexture_m4108368443,
+	VuforiaNativeWrapper_RendererEnd_m2755310140,
+	VuforiaNativeWrapper_RendererGetGraphicsAPI_m311384318,
+	VuforiaNativeWrapper_RendererGetRecommendedFps_m2718147006,
+	VuforiaNativeWrapper_RendererGetVideoBackgroundCfg_m3445707232,
+	VuforiaNativeWrapper_RendererGetVideoBackgroundTextureInfo_m813611765,
+	VuforiaNativeWrapper_RendererIsVideoBackgroundTextureInfoAvailable_m3325794448,
+	VuforiaNativeWrapper_RendererSetVideoBackgroundCfg_m316024940,
+	VuforiaNativeWrapper_RendererSetVideoBackgroundTextureID_m2114615881,
+	VuforiaNativeWrapper_RendererSetVideoBackgroundTexturePtr_m1202149405,
+	VuforiaNativeWrapper_RenderingPrimitives_DeleteCopy_m3000368135,
+	VuforiaNativeWrapper_RenderingPrimitives_GetDistortionMesh_m4283176662,
+	VuforiaNativeWrapper_RenderingPrimitives_GetDistortionMeshSize_m912665527,
+	VuforiaNativeWrapper_RenderingPrimitives_GetDistortionTextureViewport_m1785851748,
+	VuforiaNativeWrapper_RenderingPrimitives_GetEffectiveFov_m3093465092,
+	VuforiaNativeWrapper_RenderingPrimitives_GetEyeDisplayAdjustmentMatrix_m738133225,
+	VuforiaNativeWrapper_RenderingPrimitives_GetNormalizedViewport_m52452887,
+	VuforiaNativeWrapper_RenderingPrimitives_GetProjectionMatrix_m574647785,
+	VuforiaNativeWrapper_RenderingPrimitives_GetViewport_m2137207794,
+	VuforiaNativeWrapper_RenderingPrimitives_GetViewportCentreToEyeAxis_m266470848,
+	VuforiaNativeWrapper_RenderingPrimitives_UpdateCopy_m2449350739,
+	VuforiaNativeWrapper_RotationalDeviceTracker_GetModelCorrectionMode_m3601203876,
+	VuforiaNativeWrapper_RotationalDeviceTracker_GetModelCorrectionTransform_m556679759,
+	VuforiaNativeWrapper_RotationalDeviceTracker_GetPosePrediction_m2112929460,
+	VuforiaNativeWrapper_RotationalDeviceTracker_Recenter_m3572830818,
+	VuforiaNativeWrapper_RotationalDeviceTracker_SetModelCorrectionMode_m900228177,
+	VuforiaNativeWrapper_RotationalDeviceTracker_SetModelCorrectionModeWithTransform_m3356567657,
+	VuforiaNativeWrapper_RotationalDeviceTracker_SetPosePrediction_m3042270249,
+	VuforiaNativeWrapper_SetApplicationEnvironment_m3227637697,
+	VuforiaNativeWrapper_SetHolographicAppCS_m3683919625,
+	VuforiaNativeWrapper_SetRenderBuffers_m2507583749,
+	VuforiaNativeWrapper_SetStateBufferSize_m2648144133,
+	VuforiaNativeWrapper_SmartTerrainBuilderAddReconstruction_m408374664,
+	VuforiaNativeWrapper_SmartTerrainBuilderCreateReconstructionFromEnvironment_m464511443,
+	VuforiaNativeWrapper_SmartTerrainBuilderCreateReconstructionFromTarget_m2726296039,
+	VuforiaNativeWrapper_SmartTerrainBuilderDestroyReconstruction_m3369434467,
+	VuforiaNativeWrapper_SmartTerrainBuilderRemoveReconstruction_m3540107375,
+	VuforiaNativeWrapper_SmartTerrainTrackerDeinitBuilder_m3528945108,
+	VuforiaNativeWrapper_SmartTerrainTrackerInitBuilder_m2371827647,
+	VuforiaNativeWrapper_SmartTerrainTrackerSetScaleToMillimeter_m1896207680,
+	VuforiaNativeWrapper_StartExtendedTracking_m1582118465,
+	VuforiaNativeWrapper_StopExtendedTracking_m809694617,
+	VuforiaNativeWrapper_TargetFinderClearTrackables_m2478094286,
+	VuforiaNativeWrapper_TargetFinderDeinit_m793830682,
+	VuforiaNativeWrapper_TargetFinderEnableTracking_m4099626151,
+	VuforiaNativeWrapper_TargetFinderGetImageTargets_m189431547,
+	VuforiaNativeWrapper_TargetFinderGetInitState_m2991932808,
+	VuforiaNativeWrapper_TargetFinderGetResults_m3707893436,
+	VuforiaNativeWrapper_TargetFinderStartInit_m2209911127,
+	VuforiaNativeWrapper_TargetFinderStartRecognition_m660185564,
+	VuforiaNativeWrapper_TargetFinderStop_m864798381,
+	VuforiaNativeWrapper_TargetFinderUpdate_m3958322217,
+	VuforiaNativeWrapper_TextTrackerGetRegionOfInterest_m474085108,
+	VuforiaNativeWrapper_TextTrackerSetRegionOfInterest_m2425820735,
+	VuforiaNativeWrapper_TrackerManagerDeinitTracker_m2521888619,
+	VuforiaNativeWrapper_TrackerManagerInitTracker_m1042086034,
+	VuforiaNativeWrapper_TrackerStart_m2627030839,
+	VuforiaNativeWrapper_TrackerStop_m1349417349,
+	VuforiaNativeWrapper_UpdateQCAR_m334369828,
+	VuforiaNativeWrapper_ViewerParameters_ContainsMagnet_m3851168722,
+	VuforiaNativeWrapper_ViewerParameters_copy_m2541527997,
+	VuforiaNativeWrapper_ViewerParameters_delete_m3934079046,
+	VuforiaNativeWrapper_ViewerParameters_GetButtonType_m2399075267,
+	VuforiaNativeWrapper_ViewerParameters_GetDistortionCoefficient_m2805254700,
+	VuforiaNativeWrapper_ViewerParameters_GetFieldOfView_m994860239,
+	VuforiaNativeWrapper_ViewerParameters_GetInterLensDistance_m3452712974,
+	VuforiaNativeWrapper_ViewerParameters_GetLensCentreToTrayDistance_m391308882,
+	VuforiaNativeWrapper_ViewerParameters_GetManufacturer_m3535128349,
+	VuforiaNativeWrapper_ViewerParameters_GetName_m3589734657,
+	VuforiaNativeWrapper_ViewerParameters_GetNumDistortionCoefficients_m1434048572,
+	VuforiaNativeWrapper_ViewerParameters_GetScreenToLensDistance_m365067601,
+	VuforiaNativeWrapper_ViewerParameters_GetTrayAlignment_m224107260,
+	VuforiaNativeWrapper_ViewerParameters_GetVersion_m1936265387,
+	VuforiaNativeWrapper_ViewerParametersList_Begin_m3690712145,
+	VuforiaNativeWrapper_ViewerParametersList_GetByIndex_m2565238122,
+	VuforiaNativeWrapper_ViewerParametersList_GetByNameManufacturer_m3464335699,
+	VuforiaNativeWrapper_ViewerParametersList_GetListForAuthoringTools_m561272181,
+	VuforiaNativeWrapper_ViewerParametersList_Next_m1307807527,
+	VuforiaNativeWrapper_ViewerParametersList_SetSDKFilter_m172044647,
+	VuforiaNativeWrapper_ViewerParametersList_Size_m1586103964,
+	VuforiaNativeWrapper_VirtualButtonGetId_m694900924,
+	VuforiaNativeWrapper_VirtualButtonSetAreaRectangle_m3735602825,
+	VuforiaNativeWrapper_VirtualButtonSetEnabled_m2700062673,
+	VuforiaNativeWrapper_VirtualButtonSetSensitivity_m941855429,
+	VuforiaNativeWrapper_VuforiaGetRenderEventCallback_m2198644342,
+	VuforiaNativeWrapper_VuMarkTargetGetInstanceImage_m50631174,
+	VuforiaNativeWrapper_VuMarkTemplateGetOrigin_m3473411830,
+	VuforiaNativeWrapper_VuMarkTemplateGetVuMarkUserData_m4092156073,
+	VuforiaNativeWrapper_VuMarkTemplateSetTrackingFromRuntimeAppearance_m2541755296,
+	VuforiaNativeWrapper_WordGetLetterBoundingBoxes_m714582278,
+	VuforiaNativeWrapper_WordGetLetterMask_m1848572543,
+	VuforiaNativeWrapper_WordListAddWordsFromFile_m3894640849,
+	VuforiaNativeWrapper_WordListAddWordToFilterListU_m2143677823,
+	VuforiaNativeWrapper_WordListAddWordU_m2234464154,
+	VuforiaNativeWrapper_WordListClearFilterList_m857813409,
+	VuforiaNativeWrapper_WordListContainsWordU_m410011466,
+	VuforiaNativeWrapper_WordListGetFilterListWordCount_m4067127347,
+	VuforiaNativeWrapper_WordListGetFilterListWordU_m686241119,
+	VuforiaNativeWrapper_WordListGetFilterMode_m1898643183,
+	VuforiaNativeWrapper_WordListLoadFilterList_m153306409,
+	VuforiaNativeWrapper_WordListLoadWordList_m3917314203,
+	VuforiaNativeWrapper_WordListRemoveWordFromFilterListU_m513490925,
+	VuforiaNativeWrapper_WordListRemoveWordU_m2959518757,
+	VuforiaNativeWrapper_WordListSetFilterMode_m1278809324,
+	VuforiaNativeWrapper_WordListUnloadAllLists_m437045667,
+	VuforiaNativeWrapper_cameraDeviceDeinitCamera_m4219703893,
+	VuforiaNativeWrapper_cameraDeviceGetCameraDirection_m2401033145,
+	VuforiaNativeWrapper_cameraDeviceGetCameraField_m2600414923,
+	VuforiaNativeWrapper_cameraDeviceGetCameraFieldOfViewRads_m753933936,
+	VuforiaNativeWrapper_cameraDeviceGetFieldBool_m4040444337,
+	VuforiaNativeWrapper_cameraDeviceGetFieldFloat_m3650590099,
+	VuforiaNativeWrapper_cameraDeviceGetFieldInt64_m3267825034,
+	VuforiaNativeWrapper_cameraDeviceGetFieldInt64Range_m1758802909,
+	VuforiaNativeWrapper_cameraDeviceGetFieldString_m3351294513,
+	VuforiaNativeWrapper_cameraDeviceGetNumCameraFields_m3022289683,
+	VuforiaNativeWrapper_cameraDeviceGetNumVideoModes_m1617386610,
+	VuforiaNativeWrapper_cameraDeviceGetVideoMode_m686866146,
+	VuforiaNativeWrapper_cameraDeviceInitCamera_m3271950677,
+	VuforiaNativeWrapper_cameraDeviceSelectVideoMode_m3123920734,
+	VuforiaNativeWrapper_cameraDeviceSetCameraConfiguration_m2074319656,
+	VuforiaNativeWrapper_cameraDeviceSetFieldBool_m1910033874,
+	VuforiaNativeWrapper_cameraDeviceSetFieldFloat_m1203177242,
+	VuforiaNativeWrapper_cameraDeviceSetFieldInt64_m4226630496,
+	VuforiaNativeWrapper_cameraDeviceSetFieldInt64Range_m3417788619,
+	VuforiaNativeWrapper_cameraDeviceSetFieldString_m1167631232,
+	VuforiaNativeWrapper_cameraDeviceSetFlashTorchMode_m987214613,
+	VuforiaNativeWrapper_cameraDeviceSetFocusMode_m754677991,
+	VuforiaNativeWrapper_cameraDeviceStartCamera_m1692944472,
+	VuforiaNativeWrapper_cameraDeviceStopCamera_m1259053624,
+	VuforiaNativeWrapper_customViewerParameters_AddDistortionCoefficient_m413939100,
+	VuforiaNativeWrapper_customViewerParameters_ClearDistortionCoefficients_m1194991818,
+	VuforiaNativeWrapper_customViewerParameters_delete_m2379453683,
+	VuforiaNativeWrapper_customViewerParameters_new_m2125218156,
+	VuforiaNativeWrapper_customViewerParameters_SetButtonType_m300520387,
+	VuforiaNativeWrapper_customViewerParameters_SetContainsMagnet_m1853518630,
+	VuforiaNativeWrapper_customViewerParameters_SetFieldOfView_m2657211120,
+	VuforiaNativeWrapper_customViewerParameters_SetInterLensDistance_m3585563240,
+	VuforiaNativeWrapper_customViewerParameters_SetLensCentreToTrayDistance_m2196889346,
+	VuforiaNativeWrapper_customViewerParameters_SetScreenToLensDistance_m3153848193,
+	VuforiaNativeWrapper_customViewerParameters_SetTrayAlignment_m2685206414,
+	VuforiaNativeWrapper_cylinderTargetGetDimensions_m2149491314,
+	VuforiaNativeWrapper_cylinderTargetSetBottomDiameter_m373820186,
+	VuforiaNativeWrapper_cylinderTargetSetSideLength_m2452915437,
+	VuforiaNativeWrapper_cylinderTargetSetTopDiameter_m1932526582,
+	VuforiaNativeWrapper_dataSetCreateTrackable_m1637079488,
+	VuforiaNativeWrapper_dataSetDestroyTrackable_m630077332,
+	VuforiaNativeWrapper_dataSetExists_m667588599,
+	VuforiaNativeWrapper_dataSetGetNumTrackableType_m3985595764,
+	VuforiaNativeWrapper_dataSetGetTrackableName_m819104800,
+	VuforiaNativeWrapper_dataSetGetTrackablesOfType_m3970202721,
+	VuforiaNativeWrapper_dataSetHasReachedTrackableLimit_m3457465354,
+	VuforiaNativeWrapper_dataSetLoad_m3890757715,
+	VuforiaNativeWrapper_deinitFrameState_m194699131,
+	VuforiaNativeWrapper_device_GetMode_m310845780,
+	VuforiaNativeWrapper_device_GetSelectedViewer_m2226509315,
+	VuforiaNativeWrapper_device_GetViewerList_m2441017316,
+	VuforiaNativeWrapper_device_IsViewerPresent_m1486093406,
+	VuforiaNativeWrapper_device_SelectViewer_m2510235061,
+	VuforiaNativeWrapper_device_SetMode_m2099758953,
+	VuforiaNativeWrapper_device_SetViewerPresent_m4028844547,
+	VuforiaNativeWrapper_deviceIsEyewearDevice_m1088392962,
+	VuforiaNativeWrapper_eyewearCPMClearProfile_m3838594439,
+	VuforiaNativeWrapper_eyewearCPMGetActiveProfile_m3855135517,
+	VuforiaNativeWrapper_eyewearCPMGetCameraToEyePose_m1383118460,
+	VuforiaNativeWrapper_eyewearCPMGetEyeProjection_m1748705494,
+	VuforiaNativeWrapper_eyewearCPMGetMaxCount_m3406048793,
+	VuforiaNativeWrapper_eyewearCPMGetProfileName_m2665778956,
+	VuforiaNativeWrapper_eyewearCPMGetUsedCount_m944267382,
+	VuforiaNativeWrapper_eyewearCPMIsProfileUsed_m1923593855,
+	VuforiaNativeWrapper_eyewearCPMSetActiveProfile_m3135509040,
+	VuforiaNativeWrapper_eyewearCPMSetCameraToEyePose_m3316511200,
+	VuforiaNativeWrapper_eyewearCPMSetEyeProjection_m3566612666,
+	VuforiaNativeWrapper_eyewearCPMSetProfileName_m3420132601,
+	VuforiaNativeWrapper_eyewearDeviceGetScreenOrientation_m1904932918,
+	VuforiaNativeWrapper_eyewearDeviceIsDisplayExtended_m1519405693,
+	VuforiaNativeWrapper_eyewearDeviceIsDisplayExtendedGLOnly_m1047329568,
+	VuforiaNativeWrapper_eyewearDeviceIsDualDisplay_m1724349606,
+	VuforiaNativeWrapper_eyewearDeviceIsPredictiveTrackingEnabled_m2951791865,
+	VuforiaNativeWrapper_eyewearDeviceIsSeeThru_m1119616716,
+	VuforiaNativeWrapper_eyewearDeviceSetDisplayExtended_m2123754818,
+	VuforiaNativeWrapper_eyewearDeviceSetPredictiveTracking_m1482673163,
+	VuforiaNativeWrapper_eyewearUserCalibratorGetMaxScaleHint_m499366373,
+	VuforiaNativeWrapper_eyewearUserCalibratorGetMinScaleHint_m1472226495,
+	VuforiaNativeWrapper_eyewearUserCalibratorGetProjectionMatrix_m2427406231,
+	VuforiaNativeWrapper_eyewearUserCalibratorInit_m639017466,
+	VuforiaNativeWrapper_eyewearUserCalibratorIsStereoStretched_m1648620072,
+	VuforiaNativeWrapper_frameCounterGetBenchmarkingData_m3146208618,
+	VuforiaNativeWrapper_getCameraThreadID_m2369258158,
+	VuforiaNativeWrapper_getProjectionGL_m152731153,
+	VuforiaNativeWrapper_getVuforiaLibraryVersion_m4106512244,
+	VuforiaNativeWrapper_hasSurfaceBeenRecreated_m4147998836,
+	VuforiaNativeWrapper_imageTargetBuilderBuild_m4139814006,
+	VuforiaNativeWrapper_imageTargetBuilderGetFrameQuality_m3815886699,
+	VuforiaNativeWrapper_imageTargetBuilderGetTrackableSource_m3676749142,
+	VuforiaNativeWrapper_imageTargetBuilderStartScan_m491243668,
+	VuforiaNativeWrapper_imageTargetBuilderStopScan_m3697451820,
+	VuforiaNativeWrapper_imageTargetCreateVirtualButton_m3357179879,
+	VuforiaNativeWrapper_imageTargetDestroyVirtualButton_m4207113303,
+	VuforiaNativeWrapper_imageTargetGetNumVirtualButtons_m441334138,
+	VuforiaNativeWrapper_imageTargetGetVirtualButtonName_m1217998884,
+	VuforiaNativeWrapper_imageTargetGetVirtualButtons_m3961565275,
+	VuforiaNativeWrapper_initFrameState_m2998378728,
+	VuforiaNativeWrapper_initPlatformNative_m2039690296,
+	VuforiaNativeWrapper_multiTargetGetLargestSizeComponent_m1862802294,
+	VuforiaNativeWrapper_objectTargetGetSize_m2150902047,
+	VuforiaNativeWrapper_objectTargetSetSize_m3560779619,
+	VuforiaNativeWrapper_objectTrackerActivateDataSet_m3431537464,
+	VuforiaNativeWrapper_objectTrackerCreateDataSet_m976305484,
+	VuforiaNativeWrapper_objectTrackerDeactivateDataSet_m2930407563,
+	VuforiaNativeWrapper_objectTrackerDestroyDataSet_m428522689,
+	VuforiaNativeWrapper_objectTrackerPersistExtendedTracking_m3306568840,
+	VuforiaNativeWrapper_objectTrackerResetExtendedTracking_m2904863626,
+	VuforiaNativeWrapper_onPause_m2643881807,
+	VuforiaNativeWrapper_onResume_m3731695520,
+	VuforiaNativeWrapper_onSurfaceChanged_m4067509614,
+	VuforiaNativeWrapper_qcarAddCameraFrame_m351656252,
+	VuforiaNativeWrapper_qcarDeinit_m2998966292,
+	VuforiaNativeWrapper_qcarGetBufferSize_m248372185,
+	VuforiaNativeWrapper_qcarInit_m1662005975,
+	VuforiaNativeWrapper_qcarSetFrameFormat_m3074094087,
+	VuforiaNativeWrapper_qcarSetHint_m4155760287,
+	VuforiaNativeWrapper_reconstructioFromEnvironmentGetReconstructionState_m3916566870,
+	VuforiaNativeWrapper_reconstructionFromTargetSetInitializationTarget_m2592142536,
+	VuforiaNativeWrapper_reconstructionIsReconstructing_m2923969014,
+	VuforiaNativeWrapper_reconstructionReset_m1642657839,
+	VuforiaNativeWrapper_reconstructionSetMaximumArea_m378375349,
+	VuforiaNativeWrapper_reconstructionSetNavMeshPadding_m2807717266,
+	VuforiaNativeWrapper_reconstructionStart_m2129778766,
+	VuforiaNativeWrapper_reconstructionStop_m3099766012,
+	VuforiaNativeWrapper_rendererCreateNativeTexture_m499622875,
+	VuforiaNativeWrapper_rendererEnd_m2514244188,
+	VuforiaNativeWrapper_rendererGetGraphicsAPI_m2912221086,
+	VuforiaNativeWrapper_rendererGetRecommendedFps_m3352865310,
+	VuforiaNativeWrapper_rendererGetVideoBackgroundCfg_m2516003008,
+	VuforiaNativeWrapper_rendererGetVideoBackgroundTextureInfo_m969300693,
+	VuforiaNativeWrapper_rendererIsVideoBackgroundTextureInfoAvailable_m2647975856,
+	VuforiaNativeWrapper_rendererSetVideoBackgroundCfg_m3681288012,
+	VuforiaNativeWrapper_rendererSetVideoBackgroundTextureID_m323774441,
+	VuforiaNativeWrapper_rendererSetVideoBackgroundTexturePtr_m3208397117,
+	VuforiaNativeWrapper_renderingPrimitives_DeleteCopy_m1503846695,
+	VuforiaNativeWrapper_renderingPrimitives_GetDistortionMesh_m584414326,
+	VuforiaNativeWrapper_renderingPrimitives_GetDistortionMeshSize_m3734207831,
+	VuforiaNativeWrapper_renderingPrimitives_GetDistortionTextureViewport_m3706007108,
+	VuforiaNativeWrapper_renderingPrimitives_GetEffectiveFov_m2974713892,
+	VuforiaNativeWrapper_renderingPrimitives_GetEyeDisplayAdjustmentMatrix_m1670241993,
+	VuforiaNativeWrapper_renderingPrimitives_GetNormalizedViewport_m1095725751,
+	VuforiaNativeWrapper_renderingPrimitives_GetProjectionMatrix_m3281247241,
+	VuforiaNativeWrapper_renderingPrimitives_GetViewport_m3415550290,
+	VuforiaNativeWrapper_renderingPrimitives_GetViewportCentreToEyeAxis_m3582423392,
+	VuforiaNativeWrapper_renderingPrimitives_UpdateCopy_m952689779,
+	VuforiaNativeWrapper_rotationalDeviceTracker_GetModelCorrectionMode_m1644218884,
+	VuforiaNativeWrapper_rotationalDeviceTracker_GetModelCorrectionTransform_m3353439215,
+	VuforiaNativeWrapper_rotationalDeviceTracker_GetPosePrediction_m3773104276,
+	VuforiaNativeWrapper_rotationalDeviceTracker_Recenter_m1839585666,
+	VuforiaNativeWrapper_rotationalDeviceTracker_SetModelCorrectionMode_m2980623857,
+	VuforiaNativeWrapper_rotationalDeviceTracker_SetModelCorrectionModeWithTransform_m2483871049,
+	VuforiaNativeWrapper_rotationalDeviceTracker_SetPosePrediction_m2407139081,
+	VuforiaNativeWrapper_setApplicationEnvironment_m4251470817,
+	VuforiaNativeWrapper_setHolographicAppCS_m25892073,
+	VuforiaNativeWrapper_setRenderBuffers_m2134602725,
+	VuforiaNativeWrapper_setStateBufferSize_m1346191333,
+	VuforiaNativeWrapper_smartTerrainBuilderAddReconstruction_m1696364648,
+	VuforiaNativeWrapper_smartTerrainBuilderCreateReconstructionFromEnvironment_m3734179059,
+	VuforiaNativeWrapper_smartTerrainBuilderCreateReconstructionFromTarget_m2378007559,
+	VuforiaNativeWrapper_smartTerrainBuilderDestroyReconstruction_m3285370947,
+	VuforiaNativeWrapper_smartTerrainBuilderRemoveReconstruction_m1273352847,
+	VuforiaNativeWrapper_smartTerrainTrackerDeinitBuilder_m2680314868,
+	VuforiaNativeWrapper_smartTerrainTrackerInitBuilder_m4098769311,
+	VuforiaNativeWrapper_smartTerrainTrackerSetScaleToMillimeter_m1090673760,
+	VuforiaNativeWrapper_startExtendedTracking_m4085874657,
+	VuforiaNativeWrapper_stopExtendedTracking_m353569209,
+	VuforiaNativeWrapper_targetFinderClearTrackables_m2526441262,
+	VuforiaNativeWrapper_targetFinderDeinit_m1484163770,
+	VuforiaNativeWrapper_targetFinderEnableTracking_m38241287,
+	VuforiaNativeWrapper_targetFinderGetImageTargets_m456651291,
+	VuforiaNativeWrapper_targetFinderGetInitState_m1497219688,
+	VuforiaNativeWrapper_targetFinderGetResults_m1283572124,
+	VuforiaNativeWrapper_targetFinderStartInit_m2442180407,
+	VuforiaNativeWrapper_targetFinderStartRecognition_m191924028,
+	VuforiaNativeWrapper_targetFinderStop_m1362528013,
+	VuforiaNativeWrapper_targetFinderUpdate_m2352440713,
+	VuforiaNativeWrapper_textTrackerGetRegionOfInterest_m1891530900,
+	VuforiaNativeWrapper_textTrackerSetRegionOfInterest_m3471806751,
+	VuforiaNativeWrapper_trackerManagerDeinitTracker_m2273347339,
+	VuforiaNativeWrapper_trackerManagerInitTracker_m858909298,
+	VuforiaNativeWrapper_trackerStart_m568363351,
+	VuforiaNativeWrapper_trackerStop_m2575825061,
+	VuforiaNativeWrapper_updateQCAR_m1093217348,
+	VuforiaNativeWrapper_viewerParameters_ContainsMagnet_m1499879730,
+	VuforiaNativeWrapper_viewerParameters_copy_m569414813,
+	VuforiaNativeWrapper_viewerParameters_delete_m3849308198,
+	VuforiaNativeWrapper_viewerParameters_GetButtonType_m3479264483,
+	VuforiaNativeWrapper_viewerParameters_GetDistortionCoefficient_m1565627276,
+	VuforiaNativeWrapper_viewerParameters_GetFieldOfView_m3035666863,
+	VuforiaNativeWrapper_viewerParameters_GetInterLensDistance_m3407840686,
+	VuforiaNativeWrapper_viewerParameters_GetLensCentreToTrayDistance_m3353119410,
+	VuforiaNativeWrapper_viewerParameters_GetManufacturer_m265937277,
+	VuforiaNativeWrapper_viewerParameters_GetName_m2432302177,
+	VuforiaNativeWrapper_viewerParameters_GetNumDistortionCoefficients_m3854295580,
+	VuforiaNativeWrapper_viewerParameters_GetScreenToLensDistance_m1173661425,
+	VuforiaNativeWrapper_viewerParameters_GetTrayAlignment_m1705092636,
+	VuforiaNativeWrapper_viewerParameters_GetVersion_m3414344075,
+	VuforiaNativeWrapper_viewerParametersList_Begin_m3298523633,
+	VuforiaNativeWrapper_viewerParametersList_GetByIndex_m1255506634,
+	VuforiaNativeWrapper_viewerParametersList_GetByNameManufacturer_m529139379,
+	VuforiaNativeWrapper_viewerParametersList_GetListForAuthoringTools_m2114064725,
+	VuforiaNativeWrapper_viewerParametersList_Next_m2110456839,
+	VuforiaNativeWrapper_viewerParametersList_SetSDKFilter_m3030342599,
+	VuforiaNativeWrapper_viewerParametersList_Size_m1603735676,
+	VuforiaNativeWrapper_virtualButtonGetId_m2307391772,
+	VuforiaNativeWrapper_virtualButtonSetAreaRectangle_m1540384489,
+	VuforiaNativeWrapper_virtualButtonSetEnabled_m4204282993,
+	VuforiaNativeWrapper_virtualButtonSetSensitivity_m924368869,
+	VuforiaNativeWrapper_vuforiaGetRenderEventCallback_m3628388438,
+	VuforiaNativeWrapper_vuMarkTargetGetInstanceImage_m3526919718,
+	VuforiaNativeWrapper_vuMarkTemplateGetOrigin_m3601807190,
+	VuforiaNativeWrapper_vuMarkTemplateGetVuMarkUserData_m2215830537,
+	VuforiaNativeWrapper_vuMarkTemplateSetTrackingFromRuntimeAppearance_m231246400,
+	VuforiaNativeWrapper_wordGetLetterBoundingBoxes_m1609842662,
+	VuforiaNativeWrapper_wordGetLetterMask_m3756631839,
+	VuforiaNativeWrapper_wordListAddWordsFromFile_m2923970929,
+	VuforiaNativeWrapper_wordListAddWordToFilterListU_m1962642783,
+	VuforiaNativeWrapper_wordListAddWordU_m1925461882,
+	VuforiaNativeWrapper_wordListClearFilterList_m3088835841,
+	VuforiaNativeWrapper_wordListContainsWordU_m280995818,
+	VuforiaNativeWrapper_wordListGetFilterListWordCount_m351766995,
+	VuforiaNativeWrapper_wordListGetFilterListWordU_m847201919,
+	VuforiaNativeWrapper_wordListGetFilterMode_m3740979215,
+	VuforiaNativeWrapper_wordListLoadFilterList_m2452788105,
+	VuforiaNativeWrapper_wordListLoadWordList_m3728913723,
+	VuforiaNativeWrapper_wordListRemoveWordFromFilterListU_m716212941,
+	VuforiaNativeWrapper_wordListRemoveWordU_m1201629957,
+	VuforiaNativeWrapper_wordListSetFilterMode_m209973708,
+	VuforiaNativeWrapper_wordListUnloadAllLists_m3021676931,
+	VuforiaNativeWrapper__ctor_m4015888056,
+	VuforiaNullWrapper_CameraDeviceDeinitCamera_m2665608967,
+	VuforiaNullWrapper_CameraDeviceGetCameraDirection_m2809298187,
+	VuforiaNullWrapper_CameraDeviceGetCameraField_m3871545521,
+	VuforiaNullWrapper_CameraDeviceGetCameraFieldOfViewRads_m1490215970,
+	VuforiaNullWrapper_CameraDeviceGetFieldBool_m406275755,
+	VuforiaNullWrapper_CameraDeviceGetFieldFloat_m2369566577,
+	VuforiaNullWrapper_CameraDeviceGetFieldInt64_m2568572056,
+	VuforiaNullWrapper_CameraDeviceGetFieldInt64Range_m2566118419,
+	VuforiaNullWrapper_CameraDeviceGetFieldString_m2124860131,
+	VuforiaNullWrapper_CameraDeviceGetNumCameraFields_m93530305,
+	VuforiaNullWrapper_CameraDeviceGetNumVideoModes_m2243247280,
+	VuforiaNullWrapper_CameraDeviceGetVideoMode_m955650332,
+	VuforiaNullWrapper_CameraDeviceInitCamera_m434910787,
+	VuforiaNullWrapper_CameraDeviceSelectVideoMode_m597799808,
+	VuforiaNullWrapper_CameraDeviceSetCameraConfiguration_m3052196174,
+	VuforiaNullWrapper_CameraDeviceSetFieldBool_m2589571424,
+	VuforiaNullWrapper_CameraDeviceSetFieldFloat_m3704437480,
+	VuforiaNullWrapper_CameraDeviceSetFieldInt64_m765070014,
+	VuforiaNullWrapper_CameraDeviceSetFieldInt64Range_m910190377,
+	VuforiaNullWrapper_CameraDeviceSetFieldString_m673822878,
+	VuforiaNullWrapper_CameraDeviceSetFlashTorchMode_m1860202547,
+	VuforiaNullWrapper_CameraDeviceSetFocusMode_m1389506209,
+	VuforiaNullWrapper_CameraDeviceStartCamera_m1962269226,
+	VuforiaNullWrapper_CameraDeviceStopCamera_m3003729046,
+	VuforiaNullWrapper_CustomViewerParameters_AddDistortionCoefficient_m458731550,
+	VuforiaNullWrapper_CustomViewerParameters_ClearDistortionCoefficients_m541615508,
+	VuforiaNullWrapper_CustomViewerParameters_delete_m3734435025,
+	VuforiaNullWrapper_CustomViewerParameters_new_m1414888078,
+	VuforiaNullWrapper_CustomViewerParameters_SetButtonType_m4251585841,
+	VuforiaNullWrapper_CustomViewerParameters_SetContainsMagnet_m10276000,
+	VuforiaNullWrapper_CustomViewerParameters_SetFieldOfView_m2758492122,
+	VuforiaNullWrapper_CustomViewerParameters_SetInterLensDistance_m2800133266,
+	VuforiaNullWrapper_CustomViewerParameters_SetLensCentreToTrayDistance_m4278095192,
+	VuforiaNullWrapper_CustomViewerParameters_SetScreenToLensDistance_m1413125979,
+	VuforiaNullWrapper_CustomViewerParameters_SetTrayAlignment_m157382248,
+	VuforiaNullWrapper_CylinderTargetGetDimensions_m3582197380,
+	VuforiaNullWrapper_CylinderTargetSetBottomDiameter_m2860835036,
+	VuforiaNullWrapper_CylinderTargetSetSideLength_m380416983,
+	VuforiaNullWrapper_CylinderTargetSetTopDiameter_m248602812,
+	VuforiaNullWrapper_DataSetCreateTrackable_m3747374382,
+	VuforiaNullWrapper_DataSetDestroyTrackable_m2074503518,
+	VuforiaNullWrapper_DataSetExists_m953729653,
+	VuforiaNullWrapper_DataSetGetNumTrackableType_m1132928170,
+	VuforiaNullWrapper_DataSetGetTrackableName_m2632674766,
+	VuforiaNullWrapper_DataSetGetTrackablesOfType_m3910136327,
+	VuforiaNullWrapper_DataSetHasReachedTrackableLimit_m1886273176,
+	VuforiaNullWrapper_DataSetLoad_m2516713677,
+	VuforiaNullWrapper_DeinitFrameState_m1450361765,
+	VuforiaNullWrapper_Device_GetMode_m788030418,
+	VuforiaNullWrapper_Device_GetSelectedViewer_m2502658565,
+	VuforiaNullWrapper_Device_GetViewerList_m2341663702,
+	VuforiaNullWrapper_Device_IsViewerPresent_m3628312280,
+	VuforiaNullWrapper_Device_SelectViewer_m2008675991,
+	VuforiaNullWrapper_Device_SetMode_m1130966083,
+	VuforiaNullWrapper_Device_SetViewerPresent_m1172878657,
+	VuforiaNullWrapper_DeviceIsEyewearDevice_m4169933456,
+	VuforiaNullWrapper_EyewearCPMClearProfile_m1855834093,
+	VuforiaNullWrapper_EyewearCPMGetActiveProfile_m3784562579,
+	VuforiaNullWrapper_EyewearCPMGetCameraToEyePose_m1930924194,
+	VuforiaNullWrapper_EyewearCPMGetEyeProjection_m3336478776,
+	VuforiaNullWrapper_EyewearCPMGetMaxCount_m244811599,
+	VuforiaNullWrapper_EyewearCPMGetProfileName_m3900784050,
+	VuforiaNullWrapper_EyewearCPMGetUsedCount_m118781040,
+	VuforiaNullWrapper_EyewearCPMIsProfileUsed_m1311943917,
+	VuforiaNullWrapper_EyewearCPMSetActiveProfile_m3104906706,
+	VuforiaNullWrapper_EyewearCPMSetCameraToEyePose_m4292498750,
+	VuforiaNullWrapper_EyewearCPMSetEyeProjection_m1518571604,
+	VuforiaNullWrapper_EyewearCPMSetProfileName_m241432343,
+	VuforiaNullWrapper_EyewearDeviceGetScreenOrientation_m2275275548,
+	VuforiaNullWrapper_EyewearDeviceIsDisplayExtended_m1225441251,
+	VuforiaNullWrapper_EyewearDeviceIsDisplayExtendedGLOnly_m2131038690,
+	VuforiaNullWrapper_EyewearDeviceIsDualDisplay_m2766059260,
+	VuforiaNullWrapper_EyewearDeviceIsPredictiveTrackingEnabled_m3332175535,
+	VuforiaNullWrapper_EyewearDeviceIsSeeThru_m2901662634,
+	VuforiaNullWrapper_EyewearDeviceSetDisplayExtended_m210014944,
+	VuforiaNullWrapper_EyewearDeviceSetPredictiveTracking_m993877989,
+	VuforiaNullWrapper_EyewearUserCalibratorGetMaxScaleHint_m3532409891,
+	VuforiaNullWrapper_EyewearUserCalibratorGetMinScaleHint_m2108620741,
+	VuforiaNullWrapper_EyewearUserCalibratorGetProjectionMatrix_m695524125,
+	VuforiaNullWrapper_EyewearUserCalibratorInit_m1094752360,
+	VuforiaNullWrapper_EyewearUserCalibratorIsStereoStretched_m458702346,
+	VuforiaNullWrapper_FrameCounterGetBenchmarkingData_m3326248512,
+	VuforiaNullWrapper_GetCameraThreadID_m3621488904,
+	VuforiaNullWrapper_GetProjectionGL_m2228857983,
+	VuforiaNullWrapper_GetVuforiaLibraryVersion_m191631426,
+	VuforiaNullWrapper_HasSurfaceBeenRecreated_m3989471482,
+	VuforiaNullWrapper_ImageTargetBuilderBuild_m2001575528,
+	VuforiaNullWrapper_ImageTargetBuilderGetFrameQuality_m2011787533,
+	VuforiaNullWrapper_ImageTargetBuilderGetTrackableSource_m1559881316,
+	VuforiaNullWrapper_ImageTargetBuilderStartScan_m3101513590,
+	VuforiaNullWrapper_ImageTargetBuilderStopScan_m3767910846,
+	VuforiaNullWrapper_ImageTargetCreateVirtualButton_m1433375141,
+	VuforiaNullWrapper_ImageTargetDestroyVirtualButton_m2400573581,
+	VuforiaNullWrapper_ImageTargetGetNumVirtualButtons_m2856701732,
+	VuforiaNullWrapper_ImageTargetGetVirtualButtonName_m1082824190,
+	VuforiaNullWrapper_ImageTargetGetVirtualButtons_m1986957249,
+	VuforiaNullWrapper_InitFrameState_m2020491138,
+	VuforiaNullWrapper_InitPlatformNative_m2888493394,
+	VuforiaNullWrapper_MultiTargetGetLargestSizeComponent_m1459103056,
+	VuforiaNullWrapper_ObjectTargetGetSize_m1637584881,
+	VuforiaNullWrapper_ObjectTargetSetSize_m227707309,
+	VuforiaNullWrapper_ObjectTrackerActivateDataSet_m2074555782,
+	VuforiaNullWrapper_ObjectTrackerCreateDataSet_m3584540878,
+	VuforiaNullWrapper_ObjectTrackerDeactivateDataSet_m3524240873,
+	VuforiaNullWrapper_ObjectTrackerDestroyDataSet_m3132984803,
+	VuforiaNullWrapper_ObjectTrackerPersistExtendedTracking_m749791182,
+	VuforiaNullWrapper_ObjectTrackerResetExtendedTracking_m1929567880,
+	VuforiaNullWrapper_OnPause_m3864786145,
+	VuforiaNullWrapper_OnResume_m4097882238,
+	VuforiaNullWrapper_OnSurfaceChanged_m2319307868,
+	VuforiaNullWrapper_QcarAddCameraFrame_m1638812990,
+	VuforiaNullWrapper_QcarDeinit_m2318850098,
+	VuforiaNullWrapper_QcarGetBufferSize_m676644523,
+	VuforiaNullWrapper_QcarInit_m2210364305,
+	VuforiaNullWrapper_QcarSetFrameFormat_m2619316197,
+	VuforiaNullWrapper_QcarSetHint_m607678349,
+	VuforiaNullWrapper_ReconstructioFromEnvironmentGetReconstructionState_m1066290360,
+	VuforiaNullWrapper_ReconstructionFromTargetSetInitializationTarget_m3253150186,
+	VuforiaNullWrapper_ReconstructionIsReconstructing_m3948715884,
+	VuforiaNullWrapper_ReconstructionReset_m3298575601,
+	VuforiaNullWrapper_ReconstructionSetMaximumArea_m3165861795,
+	VuforiaNullWrapper_ReconstructionSetNavMeshPadding_m1143047364,
+	VuforiaNullWrapper_ReconstructionStart_m3253104500,
+	VuforiaNullWrapper_ReconstructionStop_m1377667986,
+	VuforiaNullWrapper_RendererCreateNativeTexture_m2446863061,
+	VuforiaNullWrapper_RendererEnd_m239892666,
+	VuforiaNullWrapper_RendererGetGraphicsAPI_m1635513844,
+	VuforiaNullWrapper_RendererGetRecommendedFps_m1698536288,
+	VuforiaNullWrapper_RendererGetVideoBackgroundCfg_m1954791470,
+	VuforiaNullWrapper_RendererGetVideoBackgroundTextureInfo_m3073703635,
+	VuforiaNullWrapper_RendererIsVideoBackgroundTextureInfoAvailable_m1068175170,
+	VuforiaNullWrapper_RendererSetVideoBackgroundCfg_m789506466,
+	VuforiaNullWrapper_RendererSetVideoBackgroundTextureID_m2866544087,
+	VuforiaNullWrapper_RendererSetVideoBackgroundTexturePtr_m1750470823,
+	VuforiaNullWrapper_RenderingPrimitives_DeleteCopy_m3977550361,
+	VuforiaNullWrapper_RenderingPrimitives_GetDistortionMesh_m3373795988,
+	VuforiaNullWrapper_RenderingPrimitives_GetDistortionMeshSize_m3039180269,
+	VuforiaNullWrapper_RenderingPrimitives_GetDistortionTextureViewport_m1779380722,
+	VuforiaNullWrapper_RenderingPrimitives_GetEffectiveFov_m3335202502,
+	VuforiaNullWrapper_RenderingPrimitives_GetEyeDisplayAdjustmentMatrix_m2895442179,
+	VuforiaNullWrapper_RenderingPrimitives_GetNormalizedViewport_m3565237885,
+	VuforiaNullWrapper_RenderingPrimitives_GetProjectionMatrix_m1995468187,
+	VuforiaNullWrapper_RenderingPrimitives_GetViewport_m3169045752,
+	VuforiaNullWrapper_RenderingPrimitives_GetViewportCentreToEyeAxis_m415748298,
+	VuforiaNullWrapper_RenderingPrimitives_UpdateCopy_m3821122821,
+	VuforiaNullWrapper_RotationalDeviceTracker_GetModelCorrectionMode_m3227416434,
+	VuforiaNullWrapper_RotationalDeviceTracker_GetModelCorrectionTransform_m1401904957,
+	VuforiaNullWrapper_RotationalDeviceTracker_GetPosePrediction_m1125183950,
+	VuforiaNullWrapper_RotationalDeviceTracker_Recenter_m671835872,
+	VuforiaNullWrapper_RotationalDeviceTracker_SetModelCorrectionMode_m3030215243,
+	VuforiaNullWrapper_RotationalDeviceTracker_SetModelCorrectionModeWithTransform_m818673271,
+	VuforiaNullWrapper_RotationalDeviceTracker_SetPosePrediction_m2061111295,
+	VuforiaNullWrapper_SetApplicationEnvironment_m975296579,
+	VuforiaNullWrapper_SetHolographicAppCS_m284965811,
+	VuforiaNullWrapper_SetRenderBuffers_m4172595999,
+	VuforiaNullWrapper_SetStateBufferSize_m1459082135,
+	VuforiaNullWrapper_SmartTerrainBuilderAddReconstruction_m2747045898,
+	VuforiaNullWrapper_SmartTerrainBuilderCreateReconstructionFromEnvironment_m4085409637,
+	VuforiaNullWrapper_SmartTerrainBuilderCreateReconstructionFromTarget_m2367265121,
+	VuforiaNullWrapper_SmartTerrainBuilderDestroyReconstruction_m1568352757,
+	VuforiaNullWrapper_SmartTerrainBuilderRemoveReconstruction_m3406661833,
+	VuforiaNullWrapper_SmartTerrainTrackerDeinitBuilder_m527956670,
+	VuforiaNullWrapper_SmartTerrainTrackerInitBuilder_m3724222153,
+	VuforiaNullWrapper_SmartTerrainTrackerSetScaleToMillimeter_m3986342658,
+	VuforiaNullWrapper_StartExtendedTracking_m2133871827,
+	VuforiaNullWrapper_StopExtendedTracking_m3950014379,
+	VuforiaNullWrapper_TargetFinderClearTrackables_m3523004664,
+	VuforiaNullWrapper_TargetFinderDeinit_m2832471100,
+	VuforiaNullWrapper_TargetFinderEnableTracking_m1367780585,
+	VuforiaNullWrapper_TargetFinderGetImageTargets_m48615501,
+	VuforiaNullWrapper_TargetFinderGetInitState_m885257354,
+	VuforiaNullWrapper_TargetFinderGetResults_m424069238,
+	VuforiaNullWrapper_TargetFinderStartInit_m131987489,
+	VuforiaNullWrapper_TargetFinderStartRecognition_m3330979318,
+	VuforiaNullWrapper_TargetFinderStop_m2273784955,
+	VuforiaNullWrapper_TargetFinderUpdate_m348083707,
+	VuforiaNullWrapper_TextTrackerGetRegionOfInterest_m3909029622,
+	VuforiaNullWrapper_TextTrackerSetRegionOfInterest_m1907587377,
+	VuforiaNullWrapper_TrackerManagerDeinitTracker_m2436097149,
+	VuforiaNullWrapper_TrackerManagerInitTracker_m2245973332,
+	VuforiaNullWrapper_TrackerStart_m3807133797,
+	VuforiaNullWrapper_TrackerStop_m2423356467,
+	VuforiaNullWrapper_UpdateQCAR_m3451494702,
+	VuforiaNullWrapper_ViewerParameters_ContainsMagnet_m1483129196,
+	VuforiaNullWrapper_ViewerParameters_copy_m418981427,
+	VuforiaNullWrapper_ViewerParameters_delete_m3090600244,
+	VuforiaNullWrapper_ViewerParameters_GetButtonType_m3197033345,
+	VuforiaNullWrapper_ViewerParameters_GetDistortionCoefficient_m4080920762,
+	VuforiaNullWrapper_ViewerParameters_GetFieldOfView_m655196337,
+	VuforiaNullWrapper_ViewerParameters_GetInterLensDistance_m288773804,
+	VuforiaNullWrapper_ViewerParameters_GetLensCentreToTrayDistance_m3810811076,
+	VuforiaNullWrapper_ViewerParameters_GetManufacturer_m699853439,
+	VuforiaNullWrapper_ViewerParameters_GetName_m712885731,
+	VuforiaNullWrapper_ViewerParameters_GetNumDistortionCoefficients_m1793211042,
+	VuforiaNullWrapper_ViewerParameters_GetScreenToLensDistance_m2967481871,
+	VuforiaNullWrapper_ViewerParameters_GetTrayAlignment_m946749990,
+	VuforiaNullWrapper_ViewerParameters_GetVersion_m3733522217,
+	VuforiaNullWrapper_ViewerParametersList_Begin_m408273483,
+	VuforiaNullWrapper_ViewerParametersList_GetByIndex_m2949172368,
+	VuforiaNullWrapper_ViewerParametersList_GetByNameManufacturer_m699749981,
+	VuforiaNullWrapper_ViewerParametersList_GetListForAuthoringTools_m3270627803,
+	VuforiaNullWrapper_ViewerParametersList_Next_m638079517,
+	VuforiaNullWrapper_ViewerParametersList_SetSDKFilter_m3814776257,
+	VuforiaNullWrapper_ViewerParametersList_Size_m665886598,
+	VuforiaNullWrapper_VirtualButtonGetId_m598893338,
+	VuforiaNullWrapper_VirtualButtonSetAreaRectangle_m4096906019,
+	VuforiaNullWrapper_VirtualButtonSetEnabled_m3584826287,
+	VuforiaNullWrapper_VirtualButtonSetSensitivity_m3119222195,
+	VuforiaNullWrapper_VuforiaGetRenderEventCallback_m4133543940,
+	VuforiaNullWrapper_VuMarkTargetGetInstanceImage_m4204893360,
+	VuforiaNullWrapper_VuMarkTemplateGetOrigin_m3208289848,
+	VuforiaNullWrapper_VuMarkTemplateGetVuMarkUserData_m2574509319,
+	VuforiaNullWrapper_VuMarkTemplateSetTrackingFromRuntimeAppearance_m3395059870,
+	VuforiaNullWrapper_WordGetLetterBoundingBoxes_m1603651132,
+	VuforiaNullWrapper_WordGetLetterMask_m3941092205,
+	VuforiaNullWrapper_WordListAddWordsFromFile_m3648010511,
+	VuforiaNullWrapper_WordListAddWordToFilterListU_m3112232109,
+	VuforiaNullWrapper_WordListAddWordU_m2152771640,
+	VuforiaNullWrapper_WordListClearFilterList_m24737291,
+	VuforiaNullWrapper_WordListContainsWordU_m1257010120,
+	VuforiaNullWrapper_WordListGetFilterListWordCount_m1890773097,
+	VuforiaNullWrapper_WordListGetFilterListWordU_m1630805709,
+	VuforiaNullWrapper_WordListGetFilterMode_m2192975005,
+	VuforiaNullWrapper_WordListLoadFilterList_m121282007,
+	VuforiaNullWrapper_WordListLoadWordList_m1141964609,
+	VuforiaNullWrapper_WordListRemoveWordFromFilterListU_m1520481103,
+	VuforiaNullWrapper_WordListRemoveWordU_m3473614623,
+	VuforiaNullWrapper_WordListSetFilterMode_m2983089270,
+	VuforiaNullWrapper_WordListUnloadAllLists_m1984480805,
+	VuforiaNullWrapper__ctor_m3619043698,
+	VuforiaRenderer_get_Instance_m1621768183,
+	VuforiaRenderer_get_InternalInstance_m3420738422,
+	VuforiaRenderer__ctor_m3432491483,
+	VuforiaRenderer__cctor_m1094698736,
+	Vec2I__ctor_m814098547_AdjustorThunk,
+	VideoBGCfgData_get_reflection_m183482127_AdjustorThunk,
+	VideoBGCfgData_set_reflection_m4089700608_AdjustorThunk,
+	VuforiaRendererImpl_get_VideoBackgroundTexture_m832380897,
+	VuforiaRendererImpl_GetVideoBackgroundConfig_m3531408893,
+	VuforiaRendererImpl_ClearVideoBackgroundConfig_m2519576127,
+	VuforiaRendererImpl_SetVideoBackgroundConfig_m1563624558,
+	VuforiaRendererImpl_createNativeTexture_m3932804897,
+	VuforiaRendererImpl_SetVideoBackgroundTexture_m66201618,
+	VuforiaRendererImpl_SetVideoBackgroundTexturePtr_m1482649197,
+	VuforiaRendererImpl_IsVideoBackgroundInfoAvailable_m1515605869,
+	VuforiaRendererImpl_GetVideoTextureInfo_m394771892,
+	VuforiaRendererImpl_Pause_m2076107180,
+	VuforiaRendererImpl_GetRecommendedFps_m3251648129,
+	VuforiaRendererImpl_GetRendererAPI_m2962944766,
+	VuforiaRendererImpl_UnityRenderEvent_m3449656070,
+	VuforiaRendererImpl_HasBackgroundTextureChanged_m3768314602,
+	VuforiaRendererImpl_SetVideoBackgroundConfigInternal_m1001709025,
+	VuforiaRendererImpl_GetLastSetReflection_m2994414649,
+	VuforiaRendererImpl__ctor_m998191311,
+	VuforiaRuntime__ctor_m3341498150,
+	VuforiaRuntime_get_Instance_m4069915631,
+	VuforiaRuntime_InitPlatform_m3306160978,
+	VuforiaRuntime_InitVuforia_m2353933398,
+	VuforiaRuntime_Deinit_m746211317,
+	VuforiaRuntime_RegisterVuforiaInitErrorCallback_m1800574616,
+	VuforiaRuntime_UnregisterVuforiaInitErrorCallback_m2870938817,
+	VuforiaRuntime_get_HasInitialized_m3411757181,
+	VuforiaRuntime_CreateDeinitHelper_m348246935,
+	VuforiaRuntime__cctor_m3105021749,
+	VuforiaRuntimeUtilities_GetStoragePath_m937083168,
+	VuforiaRuntimeUtilities_StripFileNameFromPath_m3600327917,
+	VuforiaRuntimeUtilities_StripStreamingAssetsFromPath_m1976521327,
+	VuforiaRuntimeUtilities_StripExtensionFromPath_m2573996161,
+	VuforiaRuntimeUtilities_get_ScreenOrientation_m1546146121,
+	VuforiaRuntimeUtilities_get_IsLandscapeOrientation_m1736391522,
+	VuforiaRuntimeUtilities_get_IsPortraitOrientation_m989453348,
+	VuforiaRuntimeUtilities_ForceDisableTrackables_m1370852495,
+	VuforiaRuntimeUtilities_IsPlayMode_m2939358997,
+	VuforiaRuntimeUtilities_IsWSARuntime_m3848252715,
+	VuforiaRuntimeUtilities_IsVuforiaEnabled_m1774515559,
+	VuforiaRuntimeUtilities_IsWebCamUsed_m1353111182,
+	VuforiaRuntimeUtilities_ScreenSpaceToCameraFrameCoordinates_m3801339830,
+	VuforiaRuntimeUtilities_CameraFrameToScreenSpaceCoordinates_m1680369179,
+	VuforiaRuntimeUtilities_CameraFrameToScreenSpaceCoordinates_m3404428623,
+	VuforiaRuntimeUtilities_SelectRectTopLeftAndBottomRightForLandscapeLeft_m1389683231,
+	VuforiaRuntimeUtilities_CalculateRectFromLandscapeLeftCorners_m1942396741,
+	VuforiaRuntimeUtilities_DisableSleepMode_m2123290978,
+	VuforiaRuntimeUtilities_ResetSleepMode_m2455636941,
+	VuforiaRuntimeUtilities_MatrixIsNaN_m431823786,
+	VuforiaRuntimeUtilities_CheckNativePluginSupport_m1706982001,
+	VuforiaRuntimeUtilities_IsNativePluginSupportAvailable_m148657444,
+	VuforiaRuntimeUtilities_StopCameraIfPossible_m3496297228,
+	VuforiaRuntimeUtilities_CleanTrackableFromUnwantedComponents_m2746381936,
+	VuforiaRuntimeUtilities_PrepareCoordinateConversion_m1474731089,
+	VuforiaRuntimeUtilities_qcarCheckNativePluginSupport_m1038601354,
+	VuforiaRuntimeUtilities__ctor_m222360936,
+	VuforiaRuntimeUtilities__cctor_m1059653703,
+	VuforiaUnity_Deinit_m4072609744,
+	VuforiaUnity_IsRendererDirty_m3880978144,
+	VuforiaUnity_SetHint_m2330902584,
+	VuforiaUnity_SetHint_m2483295745,
+	VuforiaUnity_GetProjectionGL_m3164064275,
+	VuforiaUnity_OnPause_m2422224752,
+	VuforiaUnity_OnResume_m2186520633,
+	VuforiaUnity_SetRendererDirty_m1382076344,
+	VuforiaUnity_GetVuforiaLibraryVersion_m2417950331,
+	VuforiaUnity_SetHolographicAppCoordinateSystem_m52519737,
+	VuforiaUnity_SetHoloLensApiAbstraction_m7689476,
+	VuforiaUnity_SetAssetInitializationParameters_m3316561825,
+	VuforiaUnity_SetStandardInitializationParameters_m3220511984,
+	VuforiaUnity_GetHoloLensApiAbstraction_m3179952423,
+	VuforiaUnity__cctor_m3355793260,
+	VuforiaUnityImpl_Deinit_m3798045698,
+	VuforiaUnityImpl_IsRendererDirty_m837591966,
+	VuforiaUnityImpl_SetHint_m256192198,
+	VuforiaUnityImpl_SetHint_m1570319901,
+	VuforiaUnityImpl_GetProjectionGL_m315627943,
+	VuforiaUnityImpl_SetHolographicAppCoordinateSystem_m3740974621,
+	VuforiaUnityImpl_SetApplicationEnvironment_m1395279108,
+	VuforiaUnityImpl_OnPause_m915261490,
+	VuforiaUnityImpl_OnResume_m2663092717,
+	VuforiaUnityImpl_SetRendererDirty_m633029446,
+	VuforiaUnityImpl_GetVuforiaLibraryVersion_m746775303,
+	VuforiaUnityImpl_SetAssetInitializationParameters_m1991506221,
+	VuforiaUnityImpl_SetStandardInitializationParameters_m2170135826,
+	VuforiaUnityImpl__cctor_m3399819038,
+	VuforiaWrapper_get_Instance_m128711606,
+	VuforiaWrapper_get_CamIndependentInstance_m600115195,
+	VuforiaWrapper_CreateRuntimeInstance_m398239160,
+	VuforiaWrapper_CreateCamIndependentInstance_m697642581,
+	VuforiaWrapper_SetImplementation_m1019610825,
+	VuforiaWrapper__cctor_m3285230706,
+	VuMarkAbstractBehaviour_get_VuMarkTemplate_m3544911177,
+	VuMarkAbstractBehaviour_get_VuMarkTarget_m4042803881,
+	VuMarkAbstractBehaviour_get_Origin_m1957069827,
+	VuMarkAbstractBehaviour__ctor_m326197713,
+	VuMarkAbstractBehaviour_CorrectScaleImpl_m1963338375,
+	VuMarkAbstractBehaviour_InternalUnregisterTrackable_m4208260561,
+	VuMarkAbstractBehaviour_CalculateDefaultOccluderBounds_m1143923286,
+	VuMarkAbstractBehaviour_ProtectedSetAsSmartTerrainInitializationTarget_m3368788891,
+	VuMarkAbstractBehaviour_GetSize_m2325839469,
+	VuMarkAbstractBehaviour_SetWidth_m1688925418,
+	VuMarkAbstractBehaviour_SetHeight_m2987244041,
+	VuMarkAbstractBehaviour_RegisterVuMarkTargetAssignedCallback_m2556160039,
+	VuMarkAbstractBehaviour_UnregisterVuMarkTargetAssignedCallback_m691111332,
+	VuMarkAbstractBehaviour_RegisterVuMarkTargetLostCallback_m1294084023,
+	VuMarkAbstractBehaviour_UnregisterVuMarkTargetLostCallback_m1699960082,
+	VuMarkAbstractBehaviour_UnregisterVuMarkTarget_m3019970390,
+	VuMarkAbstractBehaviour_RegisterVuMarkTarget_m980765950,
+	VuMarkAbstractBehaviour_get_VuMarkResultId_m588106376,
+	VuMarkAbstractBehaviour_set_VuMarkResultId_m2892526623,
+	VuMarkAbstractBehaviour_InitializeTarget_m3302584584,
+	VuMarkAbstractBehaviour_OnValidate_m3543957550,
+	VuMarkManager__ctor_m2902519055,
+	VuMarkManagerImpl_GetActiveVuMarks_m3057777205,
+	VuMarkManagerImpl_GetActiveBehaviours_m193147855,
+	VuMarkManagerImpl_GetActiveBehaviours_m2701874204,
+	VuMarkManagerImpl_GetAllBehaviours_m824777727,
+	VuMarkManagerImpl_RegisterVuMarkDetectedCallback_m1548121458,
+	VuMarkManagerImpl_UnregisterVuMarkDetectedCallback_m2011038775,
+	VuMarkManagerImpl_RegisterVuMarkLostCallback_m1875841390,
+	VuMarkManagerImpl_UnregisterVuMarkLostCallback_m561735977,
+	VuMarkManagerImpl_RegisterVuMarkBehaviourDetectedCallback_m4277724253,
+	VuMarkManagerImpl_UnregisterVuMarkBehaviourDetectedCallback_m1301588478,
+	VuMarkManagerImpl_UpdateVuMarks_m4251157048,
+	VuMarkManagerImpl_UpdateVuMarkPoses_m1799620,
+	VuMarkManagerImpl_AddTemplateBehaviour_m2587528850,
+	VuMarkManagerImpl_ContainsVuMarkTemplate_m3766230023,
+	VuMarkManagerImpl_ClearBehaviours_m3239519372,
+	VuMarkManagerImpl_DestroyBehaviourCopies_m1656270747,
+	VuMarkManagerImpl_RemoveDestroyedTrackables_m2442166898,
+	VuMarkManagerImpl_IsBehaviourMarkedForDeletion_m2344385681,
+	VuMarkManagerImpl_GetBehaviourWithResultID_m2260936321,
+	VuMarkManagerImpl_UpdateNewVuMarks_m1556174676,
+	VuMarkManagerImpl_UpdateLostVuMarks_m3845955716,
+	VuMarkManagerImpl_CreateVuMarkTarget_m1497932471,
+	VuMarkManagerImpl_CreateOrGetUnusedBehaviour_m4109115014,
+	VuMarkManagerImpl_GetVuMarkTemplate_m1492647889,
+	VuMarkManagerImpl_CopyGameObject_m2594454544,
+	VuMarkManagerImpl_MarkBehaviourUntracked_m3376456811,
+	VuMarkManagerImpl_AssociateTargetWithBehaviour_m3771986789,
+	VuMarkManagerImpl_UpdateVuMarkResults_m1335032210,
+	VuMarkManagerImpl_GetActiveBehaviour_m4237687970,
+	VuMarkManagerImpl_GetVuMarkTarget_m43906157,
+	VuMarkManagerImpl_GroupResultsByTargetId_m3129483197,
+	VuMarkManagerImpl__ctor_m3457070443,
+	VuMarkTargetImpl__ctor_m2799170966,
+	VuMarkTargetImpl_GetSize_m266131082,
+	VuMarkTargetImpl_GetLargestSizeComponent_m1554647361,
+	VuMarkTargetImpl_SetSize_m1721897007,
+	VuMarkTargetImpl_StartExtendedTracking_m1406240925,
+	VuMarkTargetImpl_StopExtendedTracking_m2975163645,
+	VuMarkTargetImpl_ExtendedTrackingEnabled_m902197676,
+	VuMarkTargetImpl_get_Name_m931358238,
+	VuMarkTargetImpl_get_ID_m3173237059,
+	VuMarkTargetImpl_get_InstanceId_m1883644529,
+	VuMarkTargetImpl_get_Template_m977518223,
+	VuMarkTargetImpl_get_InstanceImage_m188603180,
+	VuMarkTargetImpl_CallNativeGetInstanceImage_m191303874,
+	VuMarkTargetImpl_CreateInstanceImage_m2497056139,
+	VuMarkTargetImpl_SetImageValues_m500105563,
+	VuMarkTargetImpl_AllocateImage_m2957561888,
+	VuMarkTemplateImpl__ctor_m4212876127,
+	VuMarkTemplateImpl_get_VuMarkUserData_m1342787955,
+	VuMarkTemplateImpl_get_TrackingFromRuntimeAppearance_m4094086530,
+	VuMarkTemplateImpl_set_TrackingFromRuntimeAppearance_m2470700277,
+	VuMarkTemplateImpl_get_Origin_m735220598,
+	VuMarkTemplateImpl_SetSize_m3397421618,
+	VuMarkTemplateImpl_UpdateOrigin_m1395473153,
+	WebCamARController__ctor_m3370055434,
+	WebCamARController_get_Instance_m1127137215,
+	WebCamARController_RegisterARController_m4272523858,
+	WebCamARController_get_DeviceName_m3505426021,
+	WebCamARController_set_DeviceName_m2220487978,
+	WebCamARController_get_FlipHorizontally_m831951487,
+	WebCamARController_set_FlipHorizontally_m3627665488,
+	WebCamARController_get_IsPlaying_m1619485073,
+	WebCamARController_get_ImplementationClass_m1189872477,
+	WebCamARController_InitCamera_m2477073913,
+	WebCamARController_Awake_m4003528519,
+	WebCamARController_OnLevelWasLoaded_m1454507931,
+	WebCamARController_OnDestroy_m1953398301,
+	WebCamARController_Update_m300718083,
+	WebCamARController__cctor_m4253412777,
+	WebCamImpl_get_DidUpdateThisFrame_m3380320051,
+	WebCamImpl_get_IsPlaying_m3141718436,
+	WebCamImpl_get_ActualWidth_m2252839076,
+	WebCamImpl_get_ActualHeight_m3528721215,
+	WebCamImpl_get_IsTextureSizeAvailable_m4042103541,
+	WebCamImpl_set_IsTextureSizeAvailable_m1295557856,
+	WebCamImpl_get_FlipHorizontally_m3677192580,
+	WebCamImpl_get_ResampledTextureSize_m3469975071,
+	WebCamImpl_ComputeResampledTextureSize_m1533056019,
+	WebCamImpl__ctor_m2108257629,
+	WebCamImpl_StartCamera_m2311244138,
+	WebCamImpl_StopCamera_m3184021270,
+	WebCamImpl_ResetPlaying_m3915685594,
+	WebCamImpl_GetPixels32AndBufferFrame_m2484403945,
+	WebCamImpl_RenderFrame_m1518656991,
+	WebCamImpl_GetVideoMode_m920069202,
+	WebCamImpl_GetVideoTextureInfo_m3954133244,
+	WebCamImpl_IsRendererDirty_m2680557624,
+	WebCamImpl_OnDestroy_m615947000,
+	WebCamImpl_Update_m4105536744,
+	WebCamProfile_get_Default_m2045402713,
+	WebCamProfile__ctor_m2516165060,
+	WebCamProfile_GetProfile_m1910850226,
+	WebCamProfile_ProfileAvailable_m1660806332,
+	ProfileCollection__ctor_m1604460341_AdjustorThunk,
+	WebCamTexAdaptor__ctor_m3326895553,
+	WebCamTexAdaptorImpl_get_DidUpdateThisFrame_m2756135115,
+	WebCamTexAdaptorImpl_get_IsPlaying_m1323517514,
+	WebCamTexAdaptorImpl_get_Texture_m594176022,
+	WebCamTexAdaptorImpl__ctor_m2179149417,
+	WebCamTexAdaptorImpl_Play_m3880371477,
+	WebCamTexAdaptorImpl_Stop_m946549237,
+	WebCamTexAdaptorImpl_CheckPermissions_m644464339,
+	WordAbstractBehaviour_InternalUnregisterTrackable_m1616159713,
+	WordAbstractBehaviour_get_Word_m2554944169,
+	WordAbstractBehaviour_get_IsTemplateMode_m243037009,
+	WordAbstractBehaviour_get_IsSpecificWordMode_m329663031,
+	WordAbstractBehaviour_get_SpecificWord_m2846109451,
+	WordAbstractBehaviour_InitializeWord_m1938025803,
+	WordAbstractBehaviour_OnValidate_m223603350,
+	WordAbstractBehaviour__ctor_m1415816009,
+	WordImpl__ctor_m2135802911,
+	WordImpl_get_StringValue_m131447204,
+	WordImpl_get_Size_m2498138279,
+	WordImpl_GetLetterMask_m1285376160,
+	WordImpl_GetLetterBoundingBoxes_m3281201375,
+	WordImpl_InitImageHeader_m492255088,
+	WordImpl_CreateLetterMask_m1974445140,
+	WordImpl_SetImageValues_m2453811954,
+	WordImpl_AllocateImage_m2347164983,
+	WordList__ctor_m1845098908,
+	WordListImpl_LoadWordListFile_m2220640552,
+	WordListImpl_LoadWordListFile_m3178229187,
+	WordListImpl_AddWordsFromFile_m934599620,
+	WordListImpl_AddWordsFromFile_m4239366397,
+	WordListImpl_AddWord_m2914751619,
+	WordListImpl_RemoveWord_m1457146834,
+	WordListImpl_ContainsWord_m784687157,
+	WordListImpl_UnloadAllLists_m672527667,
+	WordListImpl_GetFilterMode_m978650999,
+	WordListImpl_SetFilterMode_m2627170536,
+	WordListImpl_LoadFilterListFile_m1282317742,
+	WordListImpl_LoadFilterListFile_m969843205,
+	WordListImpl_AddWordToFilterList_m3484515656,
+	WordListImpl_RemoveWordFromFilterList_m2724088440,
+	WordListImpl_ClearFilterList_m2443475993,
+	WordListImpl_GetFilterListWordCount_m346006489,
+	WordListImpl_GetFilterListWord_m2629737458,
+	WordListImpl__ctor_m2953304286,
+	WordManager__ctor_m501606791,
+	WordManagerImpl_GetActiveWordResults_m1373666590,
+	WordManagerImpl_GetNewWords_m3002296077,
+	WordManagerImpl_GetLostWords_m3146633038,
+	WordManagerImpl_TryGetWordBehaviour_m1106367364,
+	WordManagerImpl_GetTrackableBehaviours_m896923779,
+	WordManagerImpl_DestroyWordBehaviour_m2846089908,
+	WordManagerImpl_InitializeWordBehaviourTemplates_m3992314456,
+	WordManagerImpl_InitializeWordBehaviourTemplates_m4020699935,
+	WordManagerImpl_RemoveDestroyedTrackables_m3725489426,
+	WordManagerImpl_UpdateWords_m506580541,
+	WordManagerImpl_SetWordBehavioursToNotFound_m1520214889,
+	WordManagerImpl_CleanupWordBehaviours_m3463819555,
+	WordManagerImpl_UpdateWords_m2132655282,
+	WordManagerImpl_UpdateWordResultPoses_m1487928222,
+	WordManagerImpl_AssociateWordResultsWithBehaviours_m2500550211,
+	WordManagerImpl_UnregisterLostWords_m1604343620,
+	WordManagerImpl_UpdateWordBehaviourPoses_m93294755,
+	WordManagerImpl_AssociateWordBehaviour_m1493851823,
+	WordManagerImpl_AssociateWordBehaviour_m3359416954,
+	WordManagerImpl_InstantiateWordBehaviour_m2525602245,
+	WordManagerImpl_CreateWordBehaviour_m810645364,
+	WordManagerImpl__ctor_m1978406723,
+	WordResult__ctor_m56695885,
+	WordResultImpl__ctor_m401521253,
+	WordResultImpl_get_Word_m3362229457,
+	WordResultImpl_get_Position_m3408670079,
+	WordResultImpl_get_Orientation_m2760402236,
+	WordResultImpl_get_Obb_m2405245731,
+	WordResultImpl_get_CurrentStatus_m3077354831,
+	WordResultImpl_SetPose_m3664988988,
+	WordResultImpl_SetObb_m82808223,
+	WordResultImpl_SetStatus_m3989517476,
 	ActorProperties__ctor_m2137510317,
 	AudioRpc__ctor_m3378425616,
 	AudioRpc_Awake_m4005024013,
@@ -40199,6 +46634,8 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	ConnectAndJoinRandom_OnPhotonRandomJoinFailed_m1611482014,
 	ConnectAndJoinRandom_OnFailedToConnectToPhoton_m1157358986,
 	ConnectAndJoinRandom_OnJoinedRoom_m574746072,
+	Control_Plant__ctor_m3930634814,
+	Control_Plant_Update_m3788805089,
 	CubeExtra__ctor_m1505268344,
 	CubeExtra_Awake_m1398511913,
 	CubeExtra_OnPhotonSerializeView_m1036418693,
@@ -40493,6 +46930,12 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	Extensions_StripKeysWithNullValues_m3622109825,
 	Extensions_Contains_m4150929930,
 	Extensions__cctor_m1489472364,
+	FPSWalkerEnhanced__ctor_m2474376202,
+	FPSWalkerEnhanced_Start_m571701350,
+	FPSWalkerEnhanced_FixedUpdate_m3238808973,
+	FPSWalkerEnhanced_Update_m3412799663,
+	FPSWalkerEnhanced_OnControllerColliderHit_m2537114598,
+	FPSWalkerEnhanced_FallingDamageAlert_m2072832505,
 	FriendInfo__ctor_m1097318655,
 	FriendInfo_get_Name_m397115320,
 	FriendInfo_set_Name_m3469425619,
@@ -41526,6 +47969,16 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	ShowStatusWhenConnecting__ctor_m608592104,
 	ShowStatusWhenConnecting_OnGUI_m3194874404,
 	ShowStatusWhenConnecting_GetConnectingDots_m2542111387,
+	SkyboxChanger__ctor_m1201184127,
+	SkyboxChanger_Awake_m1118505952,
+	SkyboxChanger_ChangeSkybox_m3219538497,
+	SkyboxRotator__ctor_m960111938,
+	SkyboxRotator_Update_m1192437015,
+	SkyboxRotator_ToggleSkyboxRotation_m177268064,
+	SmoothMouseLook__ctor_m2602337615,
+	SmoothMouseLook_Update_m121977692,
+	SmoothMouseLook_Start_m774693555,
+	SmoothMouseLook_ClampAngle_m476947378,
 	SmoothSyncMovement__ctor_m4278263621,
 	SmoothSyncMovement_Awake_m2392679608,
 	SmoothSyncMovement_OnPhotonSerializeView_m2640699924,
@@ -41598,6 +48051,139 @@ extern const Il2CppMethodPointer g_MethodPointers[20809] =
 	TypedLobby__cctor_m2464180626,
 	TypedLobbyInfo__ctor_m726869419,
 	TypedLobbyInfo_ToString_m3242429526,
+	VRIntegrationHelper__ctor_m4069773343,
+	VRIntegrationHelper_Awake_m681899862,
+	VRIntegrationHelper_Start_m536586683,
+	VRIntegrationHelper_OnVuforiaStarted_m1154042475,
+	VRIntegrationHelper_LateUpdate_m4039758880,
+	VRIntegrationHelper_OnPreRender_m1211949763,
+	VRIntegrationHelper__cctor_m708693476,
+	AndroidUnityPlayer__ctor_m2233000524,
+	AndroidUnityPlayer_LoadNativeLibraries_m694869242,
+	AndroidUnityPlayer_InitializePlatform_m2952017853,
+	AndroidUnityPlayer_InitializeVuforia_m3815589415,
+	AndroidUnityPlayer_StartScene_m1635484230,
+	AndroidUnityPlayer_Update_m4198269979,
+	AndroidUnityPlayer_OnPause_m2222496097,
+	AndroidUnityPlayer_OnResume_m3489453528,
+	AndroidUnityPlayer_OnDestroy_m3206719289,
+	AndroidUnityPlayer_Dispose_m2709691617,
+	AndroidUnityPlayer_LoadNativeLibrariesFromJava_m2955245326,
+	AndroidUnityPlayer_InitAndroidPlatform_m1583405850,
+	AndroidUnityPlayer_InitVuforia_m2858754529,
+	AndroidUnityPlayer_InitializeSurface_m1417263607,
+	AndroidUnityPlayer_ResetUnityScreenOrientation_m2917504922,
+	AndroidUnityPlayer_CheckOrientation_m2044239264,
+	BackgroundPlaneBehaviour__ctor_m2808006244,
+	CloudRecoBehaviour__ctor_m2555627024,
+	ComponentFactoryStarterBehaviour__ctor_m1215525256,
+	ComponentFactoryStarterBehaviour_Awake_m583572645,
+	ComponentFactoryStarterBehaviour_SetBehaviourComponentFactory_m3496159002,
+	CylinderTargetBehaviour__ctor_m2197210535,
+	DefaultInitializationErrorHandler__ctor_m2781804906,
+	DefaultInitializationErrorHandler_Awake_m2567656739,
+	DefaultInitializationErrorHandler_OnGUI_m2796165714,
+	DefaultInitializationErrorHandler_OnDestroy_m3502240837,
+	DefaultInitializationErrorHandler_DrawWindowContent_m1741663736,
+	DefaultInitializationErrorHandler_SetErrorCode_m617037449,
+	DefaultInitializationErrorHandler_SetErrorOccurred_m3043577076,
+	DefaultInitializationErrorHandler_OnVuforiaInitializationError_m1319028211,
+	DefaultSmartTerrainEventHandler__ctor_m2500188526,
+	DefaultSmartTerrainEventHandler_Start_m2088335438,
+	DefaultSmartTerrainEventHandler_OnDestroy_m904284311,
+	DefaultSmartTerrainEventHandler_OnPropCreated_m2699063839,
+	DefaultSmartTerrainEventHandler_OnSurfaceCreated_m3013324307,
+	DefaultTrackableEventHandler__ctor_m205667975,
+	DefaultTrackableEventHandler_Start_m93544099,
+	DefaultTrackableEventHandler_OnTrackableStateChanged_m2460643418,
+	DefaultTrackableEventHandler_OnTrackingFound_m1963976755,
+	DefaultTrackableEventHandler_OnTrackingLost_m3813626281,
+	GLErrorHandler__ctor_m2689292648,
+	GLErrorHandler_SetError_m381241178,
+	GLErrorHandler_OnGUI_m3766403336,
+	GLErrorHandler_DrawWindowContent_m161374698,
+	GLErrorHandler__cctor_m454494933,
+	HideExcessAreaBehaviour__ctor_m1434979708,
+	ImageTargetBehaviour__ctor_m2964661606,
+	IOSUnityPlayer__ctor_m676692974,
+	IOSUnityPlayer_LoadNativeLibraries_m1172109064,
+	IOSUnityPlayer_InitializePlatform_m286541247,
+	IOSUnityPlayer_InitializeVuforia_m260052685,
+	IOSUnityPlayer_StartScene_m2357985464,
+	IOSUnityPlayer_Update_m3611099589,
+	IOSUnityPlayer_Dispose_m444239215,
+	IOSUnityPlayer_OnPause_m2518700507,
+	IOSUnityPlayer_OnResume_m921094382,
+	IOSUnityPlayer_OnDestroy_m3703758411,
+	IOSUnityPlayer_InitializeSurface_m4219932605,
+	IOSUnityPlayer_SetUnityScreenOrientation_m3793088327,
+	IOSUnityPlayer_setPlatFormNative_m2804175766,
+	IOSUnityPlayer_initQCARiOS_m4109121394,
+	IOSUnityPlayer_setSurfaceOrientationiOS_m3165018273,
+	MaskOutBehaviour__ctor_m3872076058,
+	MaskOutBehaviour_Start_m3914251470,
+	MultiTargetBehaviour__ctor_m3457059082,
+	ObjectTargetBehaviour__ctor_m26156260,
+	PropBehaviour__ctor_m2238867581,
+	ReconstructionBehaviour__ctor_m2616285522,
+	ReconstructionFromTargetBehaviour__ctor_m2764930605,
+	SurfaceBehaviour__ctor_m1448804633,
+	TextRecoBehaviour__ctor_m2446679806,
+	TurnOffBehaviour__ctor_m1873134682,
+	TurnOffBehaviour_Awake_m4285356927,
+	TurnOffWordBehaviour__ctor_m2227245698,
+	TurnOffWordBehaviour_Awake_m2854048885,
+	UserDefinedTargetBuildingBehaviour__ctor_m2304938643,
+	VideoBackgroundBehaviour__ctor_m2133855431,
+	VirtualButtonBehaviour__ctor_m3984899111,
+	VuforiaBehaviour__ctor_m3143982076,
+	VuforiaBehaviour_Awake_m3772880569,
+	VuforiaBehaviour_get_Instance_m790681192,
+	VuforiaBehaviour_AddOSSpecificExternalDatasetSearchDirs_m4168849520,
+	VuforiaBehaviour__cctor_m1552098219,
+	VuforiaBehaviourComponentFactory__ctor_m4023364043,
+	VuforiaBehaviourComponentFactory_AddMaskOutBehaviour_m3602623915,
+	VuforiaBehaviourComponentFactory_AddVirtualButtonBehaviour_m273150123,
+	VuforiaBehaviourComponentFactory_AddTurnOffBehaviour_m3691970091,
+	VuforiaBehaviourComponentFactory_AddImageTargetBehaviour_m110195307,
+	VuforiaBehaviourComponentFactory_AddMultiTargetBehaviour_m1008182955,
+	VuforiaBehaviourComponentFactory_AddCylinderTargetBehaviour_m2573942991,
+	VuforiaBehaviourComponentFactory_AddWordBehaviour_m3806508403,
+	VuforiaBehaviourComponentFactory_AddTextRecoBehaviour_m2915043667,
+	VuforiaBehaviourComponentFactory_AddObjectTargetBehaviour_m3475568395,
+	VuforiaBehaviourComponentFactory_AddVuMarkBehaviour_m2639490483,
+	VuforiaBehaviourComponentFactory_CreateVuforiaConfiguration_m931474600,
+	VuforiaConfiguration__ctor_m2808042321,
+	VuforiaRuntimeInitialization_InitPlatform_m3197388960,
+	VuforiaRuntimeInitialization_InitVuforia_m2546903059,
+	VuforiaRuntimeInitialization_CreateUnityPlayer_m1650732109,
+	VuMarkBehaviour__ctor_m1415860126,
+	WireframeBehaviour__ctor_m420914080,
+	WireframeBehaviour_Start_m2184757344,
+	WireframeBehaviour_OnRenderObject_m2411339956,
+	WireframeBehaviour_OnDrawGizmos_m4179942854,
+	WireframeTrackableEventHandler__ctor_m4253736968,
+	WireframeTrackableEventHandler_Start_m1475947192,
+	WireframeTrackableEventHandler_OnTrackableStateChanged_m106630617,
+	WireframeTrackableEventHandler_OnTrackingFound_m563781220,
+	WireframeTrackableEventHandler_OnTrackingLost_m3180126272,
+	WordBehaviour__ctor_m581909702,
+	WSAUnityPlayer__ctor_m1279021334,
+	WSAUnityPlayer_LoadNativeLibraries_m2310474608,
+	WSAUnityPlayer_InitializePlatform_m2450540007,
+	WSAUnityPlayer_InitializeVuforia_m1467576933,
+	WSAUnityPlayer_StartScene_m2884648656,
+	WSAUnityPlayer_Update_m3453039605,
+	WSAUnityPlayer_Dispose_m459169223,
+	WSAUnityPlayer_OnPause_m2815166635,
+	WSAUnityPlayer_OnResume_m2572251502,
+	WSAUnityPlayer_OnDestroy_m3845019931,
+	WSAUnityPlayer_InitializeSurface_m2485130165,
+	WSAUnityPlayer_SetUnityScreenOrientation_m3964512799,
+	WSAUnityPlayer_GetActualScreenOrientation_m2906081196,
+	WSAUnityPlayer_setPlatFormNative_m413995854,
+	WSAUnityPlayer_initVuforiaWSA_m2461582347,
+	WSAUnityPlayer_setSurfaceOrientationWSA_m2082052129,
 	WebRpcResponse__ctor_m3792427727,
 	WebRpcResponse_get_Name_m3941051470,
 	WebRpcResponse_set_Name_m796339125,

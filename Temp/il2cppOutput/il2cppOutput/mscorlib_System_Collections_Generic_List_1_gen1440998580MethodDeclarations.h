@@ -124,8 +124,8 @@ extern "C"  ReadOnlyCollection_1_t2257663140 * List_1_AsReadOnly_m3556741007_gsh
 extern "C"  void List_1_Clear_m3644677550_gshared (List_1_t1440998580 * __this, const MethodInfo* method);
 #define List_1_Clear_m3644677550(__this, method) ((  void (*) (List_1_t1440998580 *, const MethodInfo*))List_1_Clear_m3644677550_gshared)(__this, method)
 // System.Boolean System.Collections.Generic.List`1<System.Int32>::Contains(T)
-extern "C"  bool List_1_Contains_m793041670_gshared (List_1_t1440998580 * __this, int32_t ___item0, const MethodInfo* method);
-#define List_1_Contains_m793041670(__this, ___item0, method) ((  bool (*) (List_1_t1440998580 *, int32_t, const MethodInfo*))List_1_Contains_m793041670_gshared)(__this, ___item0, method)
+extern "C"  bool List_1_Contains_m1136004261_gshared (List_1_t1440998580 * __this, int32_t ___item0, const MethodInfo* method);
+#define List_1_Contains_m1136004261(__this, ___item0, method) ((  bool (*) (List_1_t1440998580 *, int32_t, const MethodInfo*))List_1_Contains_m1136004261_gshared)(__this, ___item0, method)
 // System.Void System.Collections.Generic.List`1<System.Int32>::CopyTo(T[],System.Int32)
 extern "C"  void List_1_CopyTo_m2021584896_gshared (List_1_t1440998580 * __this, Int32U5BU5D_t3030399641* ___array0, int32_t ___arrayIndex1, const MethodInfo* method);
 #define List_1_CopyTo_m2021584896(__this, ___array0, ___arrayIndex1, method) ((  void (*) (List_1_t1440998580 *, Int32U5BU5D_t3030399641*, int32_t, const MethodInfo*))List_1_CopyTo_m2021584896_gshared)(__this, ___array0, ___arrayIndex1, method)
@@ -145,8 +145,8 @@ extern "C"  int32_t List_1_GetIndex_m4030875800_gshared (List_1_t1440998580 * __
 extern "C"  Enumerator_t975728254  List_1_GetEnumerator_m4100073676_gshared (List_1_t1440998580 * __this, const MethodInfo* method);
 #define List_1_GetEnumerator_m4100073676(__this, method) ((  Enumerator_t975728254  (*) (List_1_t1440998580 *, const MethodInfo*))List_1_GetEnumerator_m4100073676_gshared)(__this, method)
 // System.Int32 System.Collections.Generic.List`1<System.Int32>::IndexOf(T)
-extern "C"  int32_t List_1_IndexOf_m3529832102_gshared (List_1_t1440998580 * __this, int32_t ___item0, const MethodInfo* method);
-#define List_1_IndexOf_m3529832102(__this, ___item0, method) ((  int32_t (*) (List_1_t1440998580 *, int32_t, const MethodInfo*))List_1_IndexOf_m3529832102_gshared)(__this, ___item0, method)
+extern "C"  int32_t List_1_IndexOf_m4289860611_gshared (List_1_t1440998580 * __this, int32_t ___item0, const MethodInfo* method);
+#define List_1_IndexOf_m4289860611(__this, ___item0, method) ((  int32_t (*) (List_1_t1440998580 *, int32_t, const MethodInfo*))List_1_IndexOf_m4289860611_gshared)(__this, ___item0, method)
 // System.Void System.Collections.Generic.List`1<System.Int32>::Shift(System.Int32,System.Int32)
 extern "C"  void List_1_Shift_m2880167903_gshared (List_1_t1440998580 * __this, int32_t ___start0, int32_t ___delta1, const MethodInfo* method);
 #define List_1_Shift_m2880167903(__this, ___start0, ___delta1, method) ((  void (*) (List_1_t1440998580 *, int32_t, int32_t, const MethodInfo*))List_1_Shift_m2880167903_gshared)(__this, ___start0, ___delta1, method)
@@ -160,14 +160,14 @@ extern "C"  void List_1_Insert_m2493743341_gshared (List_1_t1440998580 * __this,
 extern "C"  void List_1_CheckCollection_m2486007558_gshared (List_1_t1440998580 * __this, Il2CppObject* ___collection0, const MethodInfo* method);
 #define List_1_CheckCollection_m2486007558(__this, ___collection0, method) ((  void (*) (List_1_t1440998580 *, Il2CppObject*, const MethodInfo*))List_1_CheckCollection_m2486007558_gshared)(__this, ___collection0, method)
 // System.Boolean System.Collections.Generic.List`1<System.Int32>::Remove(T)
-extern "C"  bool List_1_Remove_m3494432915_gshared (List_1_t1440998580 * __this, int32_t ___item0, const MethodInfo* method);
-#define List_1_Remove_m3494432915(__this, ___item0, method) ((  bool (*) (List_1_t1440998580 *, int32_t, const MethodInfo*))List_1_Remove_m3494432915_gshared)(__this, ___item0, method)
+extern "C"  bool List_1_Remove_m3746272350_gshared (List_1_t1440998580 * __this, int32_t ___item0, const MethodInfo* method);
+#define List_1_Remove_m3746272350(__this, ___item0, method) ((  bool (*) (List_1_t1440998580 *, int32_t, const MethodInfo*))List_1_Remove_m3746272350_gshared)(__this, ___item0, method)
 // System.Int32 System.Collections.Generic.List`1<System.Int32>::RemoveAll(System.Predicate`1<T>)
 extern "C"  int32_t List_1_RemoveAll_m2964742291_gshared (List_1_t1440998580 * __this, Predicate_1_t514847563 * ___match0, const MethodInfo* method);
 #define List_1_RemoveAll_m2964742291(__this, ___match0, method) ((  int32_t (*) (List_1_t1440998580 *, Predicate_1_t514847563 *, const MethodInfo*))List_1_RemoveAll_m2964742291_gshared)(__this, ___match0, method)
 // System.Void System.Collections.Generic.List`1<System.Int32>::RemoveAt(System.Int32)
-extern "C"  void List_1_RemoveAt_m1644402641_gshared (List_1_t1440998580 * __this, int32_t ___index0, const MethodInfo* method);
-#define List_1_RemoveAt_m1644402641(__this, ___index0, method) ((  void (*) (List_1_t1440998580 *, int32_t, const MethodInfo*))List_1_RemoveAt_m1644402641_gshared)(__this, ___index0, method)
+extern "C"  void List_1_RemoveAt_m718233485_gshared (List_1_t1440998580 * __this, int32_t ___index0, const MethodInfo* method);
+#define List_1_RemoveAt_m718233485(__this, ___index0, method) ((  void (*) (List_1_t1440998580 *, int32_t, const MethodInfo*))List_1_RemoveAt_m718233485_gshared)(__this, ___index0, method)
 // System.Void System.Collections.Generic.List`1<System.Int32>::RemoveRange(System.Int32,System.Int32)
 extern "C"  void List_1_RemoveRange_m4110300452_gshared (List_1_t1440998580 * __this, int32_t ___index0, int32_t ___count1, const MethodInfo* method);
 #define List_1_RemoveRange_m4110300452(__this, ___index0, ___count1, method) ((  void (*) (List_1_t1440998580 *, int32_t, int32_t, const MethodInfo*))List_1_RemoveRange_m4110300452_gshared)(__this, ___index0, ___count1, method)
@@ -199,8 +199,8 @@ extern "C"  void List_1_set_Capacity_m1511847951_gshared (List_1_t1440998580 * _
 extern "C"  int32_t List_1_get_Count_m852068579_gshared (List_1_t1440998580 * __this, const MethodInfo* method);
 #define List_1_get_Count_m852068579(__this, method) ((  int32_t (*) (List_1_t1440998580 *, const MethodInfo*))List_1_get_Count_m852068579_gshared)(__this, method)
 // T System.Collections.Generic.List`1<System.Int32>::get_Item(System.Int32)
-extern "C"  int32_t List_1_get_Item_m1921196075_gshared (List_1_t1440998580 * __this, int32_t ___index0, const MethodInfo* method);
-#define List_1_get_Item_m1921196075(__this, ___index0, method) ((  int32_t (*) (List_1_t1440998580 *, int32_t, const MethodInfo*))List_1_get_Item_m1921196075_gshared)(__this, ___index0, method)
+extern "C"  int32_t List_1_get_Item_m3472206364_gshared (List_1_t1440998580 * __this, int32_t ___index0, const MethodInfo* method);
+#define List_1_get_Item_m3472206364(__this, ___index0, method) ((  int32_t (*) (List_1_t1440998580 *, int32_t, const MethodInfo*))List_1_get_Item_m3472206364_gshared)(__this, ___index0, method)
 // System.Void System.Collections.Generic.List`1<System.Int32>::set_Item(System.Int32,T)
 extern "C"  void List_1_set_Item_m1852089066_gshared (List_1_t1440998580 * __this, int32_t ___index0, int32_t ___value1, const MethodInfo* method);
 #define List_1_set_Item_m1852089066(__this, ___index0, ___value1, method) ((  void (*) (List_1_t1440998580 *, int32_t, int32_t, const MethodInfo*))List_1_set_Item_m1852089066_gshared)(__this, ___index0, ___value1, method)

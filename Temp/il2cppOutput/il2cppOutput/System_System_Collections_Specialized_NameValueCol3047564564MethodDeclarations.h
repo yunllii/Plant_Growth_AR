@@ -31,15 +31,15 @@ struct StringU5BU5D_t1642385972;
 #include "mscorlib_System_Collections_ArrayList4252133567.h"
 
 // System.Void System.Collections.Specialized.NameValueCollection::.ctor()
-extern "C"  void NameValueCollection__ctor_m1767369537 (NameValueCollection_t3047564564 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void NameValueCollection__ctor_m1929851035 (NameValueCollection_t3047564564 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Specialized.NameValueCollection::.ctor(System.Int32,System.Collections.Specialized.NameValueCollection)
-extern "C"  void NameValueCollection__ctor_m2225277639 (NameValueCollection_t3047564564 * __this, int32_t ___capacity0, NameValueCollection_t3047564564 * ___col1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void NameValueCollection__ctor_m3524889949 (NameValueCollection_t3047564564 * __this, int32_t ___capacity0, NameValueCollection_t3047564564 * ___col1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Specialized.NameValueCollection::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 extern "C"  void NameValueCollection__ctor_m3660918416 (NameValueCollection_t3047564564 * __this, SerializationInfo_t228987430 * ___info0, StreamingContext_t1417235061  ___context1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Collections.Specialized.NameValueCollection::get_Item(System.String)
-extern "C"  String_t* NameValueCollection_get_Item_m2776418562 (NameValueCollection_t3047564564 * __this, String_t* ___name0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  String_t* NameValueCollection_get_Item_m2645480742 (NameValueCollection_t3047564564 * __this, String_t* ___name0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Specialized.NameValueCollection::set_Item(System.String,System.String)
-extern "C"  void NameValueCollection_set_Item_m3775607929 (NameValueCollection_t3047564564 * __this, String_t* ___name0, String_t* ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void NameValueCollection_set_Item_m1374509551 (NameValueCollection_t3047564564 * __this, String_t* ___name0, String_t* ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Specialized.NameValueCollection::Add(System.Collections.Specialized.NameValueCollection)
 extern "C"  void NameValueCollection_Add_m2977622107 (NameValueCollection_t3047564564 * __this, NameValueCollection_t3047564564 * ___c0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Specialized.NameValueCollection::Add(System.String,System.String)
@@ -59,6 +59,6 @@ extern "C"  StringU5BU5D_t1642385972* NameValueCollection_AsStringArray_m1681029
 // System.Void System.Collections.Specialized.NameValueCollection::Remove(System.String)
 extern "C"  void NameValueCollection_Remove_m629217025 (NameValueCollection_t3047564564 * __this, String_t* ___name0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Specialized.NameValueCollection::Set(System.String,System.String)
-extern "C"  void NameValueCollection_Set_m2969274643 (NameValueCollection_t3047564564 * __this, String_t* ___name0, String_t* ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void NameValueCollection_Set_m3172952177 (NameValueCollection_t3047564564 * __this, String_t* ___name0, String_t* ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Specialized.NameValueCollection::InvalidateCachedArrays()
 extern "C"  void NameValueCollection_InvalidateCachedArrays_m1142700554 (NameValueCollection_t3047564564 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

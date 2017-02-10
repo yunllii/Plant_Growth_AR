@@ -20,7 +20,7 @@
 #endif
 
 // System.MonoNotSupportedAttribute
-struct  MonoNotSupportedAttribute_t2197455930  : public MonoTODOAttribute_t3487514021
+struct  MonoNotSupportedAttribute_t2197455930  : public MonoTODOAttribute_t3487514022
 {
 public:
 

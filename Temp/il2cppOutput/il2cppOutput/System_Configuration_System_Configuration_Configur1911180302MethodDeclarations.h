@@ -43,7 +43,7 @@ struct XmlReader_t3675626668;
 #include "System_Configuration_System_Configuration_Configura700320212.h"
 
 // System.Void System.Configuration.ConfigurationElementCollection::.ctor()
-extern "C"  void ConfigurationElementCollection__ctor_m1722138055 (ConfigurationElementCollection_t1911180302 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void ConfigurationElementCollection__ctor_m3776365441 (ConfigurationElementCollection_t1911180302 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Configuration.ConfigurationElementCollection::System.Collections.ICollection.CopyTo(System.Array,System.Int32)
 extern "C"  void ConfigurationElementCollection_System_Collections_ICollection_CopyTo_m3947886345 (ConfigurationElementCollection_t1911180302 * __this, Il2CppArray * ___arr0, int32_t ___index1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Configuration.ConfigurationElementCollection::InitFromProperty(System.Configuration.PropertyInformation)
@@ -77,19 +77,19 @@ extern "C"  void ConfigurationElementCollection_BaseAdd_m692033632 (Configuratio
 // System.Void System.Configuration.ConfigurationElementCollection::BaseAdd(System.Configuration.ConfigurationElement,System.Boolean)
 extern "C"  void ConfigurationElementCollection_BaseAdd_m1594255685 (ConfigurationElementCollection_t1911180302 * __this, ConfigurationElement_t1776195828 * ___element0, bool ___throwIfExists1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Configuration.ConfigurationElementCollection::BaseClear()
-extern "C"  void ConfigurationElementCollection_BaseClear_m1999336003 (ConfigurationElementCollection_t1911180302 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void ConfigurationElementCollection_BaseClear_m297267965 (ConfigurationElementCollection_t1911180302 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Configuration.ConfigurationElement System.Configuration.ConfigurationElementCollection::BaseGet(System.Int32)
 extern "C"  ConfigurationElement_t1776195828 * ConfigurationElementCollection_BaseGet_m498332263 (ConfigurationElementCollection_t1911180302 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Configuration.ConfigurationElement System.Configuration.ConfigurationElementCollection::BaseGet(System.Object)
 extern "C"  ConfigurationElement_t1776195828 * ConfigurationElementCollection_BaseGet_m673060682 (ConfigurationElementCollection_t1911180302 * __this, Il2CppObject * ___key0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Configuration.ConfigurationElementCollection::BaseIndexOf(System.Configuration.ConfigurationElement)
-extern "C"  int32_t ConfigurationElementCollection_BaseIndexOf_m1544895010 (ConfigurationElementCollection_t1911180302 * __this, ConfigurationElement_t1776195828 * ___element0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  int32_t ConfigurationElementCollection_BaseIndexOf_m2389057362 (ConfigurationElementCollection_t1911180302 * __this, ConfigurationElement_t1776195828 * ___element0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Configuration.ConfigurationElementCollection::IndexOfKey(System.Object)
 extern "C"  int32_t ConfigurationElementCollection_IndexOfKey_m1888078841 (ConfigurationElementCollection_t1911180302 * __this, Il2CppObject * ___key0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Configuration.ConfigurationElementCollection::BaseRemove(System.Object)
-extern "C"  void ConfigurationElementCollection_BaseRemove_m1128013164 (ConfigurationElementCollection_t1911180302 * __this, Il2CppObject * ___key0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void ConfigurationElementCollection_BaseRemove_m2742159664 (ConfigurationElementCollection_t1911180302 * __this, Il2CppObject * ___key0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Configuration.ConfigurationElementCollection::BaseRemoveAt(System.Int32)
-extern "C"  void ConfigurationElementCollection_BaseRemoveAt_m1239272108 (ConfigurationElementCollection_t1911180302 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void ConfigurationElementCollection_BaseRemoveAt_m1402001296 (ConfigurationElementCollection_t1911180302 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Configuration.ConfigurationElementCollection::CompareKeys(System.Object,System.Object)
 extern "C"  bool ConfigurationElementCollection_CompareKeys_m682234560 (ConfigurationElementCollection_t1911180302 * __this, Il2CppObject * ___key10, Il2CppObject * ___key21, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Configuration.ConfigurationElement System.Configuration.ConfigurationElementCollection::CreateNewElement(System.String)
@@ -101,7 +101,7 @@ extern "C"  bool ConfigurationElementCollection_Equals_m2221773756 (Configuratio
 // System.Int32 System.Configuration.ConfigurationElementCollection::GetHashCode()
 extern "C"  int32_t ConfigurationElementCollection_GetHashCode_m770974360 (ConfigurationElementCollection_t1911180302 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator System.Configuration.ConfigurationElementCollection::GetEnumerator()
-extern "C"  Il2CppObject * ConfigurationElementCollection_GetEnumerator_m2214669871 (ConfigurationElementCollection_t1911180302 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  Il2CppObject * ConfigurationElementCollection_GetEnumerator_m3962900713 (ConfigurationElementCollection_t1911180302 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Configuration.ConfigurationElementCollection::IsElementName(System.String)
 extern "C"  bool ConfigurationElementCollection_IsElementName_m2704993900 (ConfigurationElementCollection_t1911180302 * __this, String_t* ___elementName0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Configuration.ConfigurationElementCollection::IsElementRemovable(System.Configuration.ConfigurationElement)

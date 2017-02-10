@@ -29,6 +29,12 @@ extern "C"  void Vector3__ctor_m2720820983 (Vector3_t2243707580 * __this, float 
 extern "C"  Vector3_t2243707580  Vector3_Slerp_m846771032 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  ___a0, Vector3_t2243707580  ___b1, float ___t2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Vector3::INTERNAL_CALL_Slerp(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,UnityEngine.Vector3&)
 extern "C"  void Vector3_INTERNAL_CALL_Slerp_m1119564456 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580 * ___a0, Vector3_t2243707580 * ___b1, float ___t2, Vector3_t2243707580 * ___value3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Vector3::Internal_OrthoNormalize2(UnityEngine.Vector3&,UnityEngine.Vector3&)
+extern "C"  void Vector3_Internal_OrthoNormalize2_m80155026 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580 * ___a0, Vector3_t2243707580 * ___b1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Vector3::INTERNAL_CALL_Internal_OrthoNormalize2(UnityEngine.Vector3&,UnityEngine.Vector3&)
+extern "C"  void Vector3_INTERNAL_CALL_Internal_OrthoNormalize2_m3663555863 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580 * ___a0, Vector3_t2243707580 * ___b1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Vector3::OrthoNormalize(UnityEngine.Vector3&,UnityEngine.Vector3&)
+extern "C"  void Vector3_OrthoNormalize_m3371971860 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580 * ___normal0, Vector3_t2243707580 * ___tangent1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Vector3::RotateTowards(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single)
 extern "C"  Vector3_t2243707580  Vector3_RotateTowards_m4046679056 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  ___current0, Vector3_t2243707580  ___target1, float ___maxRadiansDelta2, float ___maxMagnitudeDelta3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Vector3::INTERNAL_CALL_RotateTowards(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.Vector3&)
@@ -41,6 +47,8 @@ extern "C"  Vector3_t2243707580  Vector3_MoveTowards_m1358638081 (Il2CppObject *
 extern "C"  float Vector3_get_Item_m3616014016 (Vector3_t2243707580 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Vector3::set_Item(System.Int32,System.Single)
 extern "C"  void Vector3_set_Item_m499708011 (Vector3_t2243707580 * __this, int32_t ___index0, float ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Vector3::Cross(UnityEngine.Vector3,UnityEngine.Vector3)
+extern "C"  Vector3_t2243707580  Vector3_Cross_m4149044051 (Il2CppObject * __this /* static, unused */, Vector3_t2243707580  ___lhs0, Vector3_t2243707580  ___rhs1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Vector3::GetHashCode()
 extern "C"  int32_t Vector3_GetHashCode_m1754570744 (Vector3_t2243707580 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Vector3::Equals(System.Object)

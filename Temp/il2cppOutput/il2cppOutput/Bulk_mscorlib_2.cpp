@@ -675,7 +675,7 @@ extern "C"  void DelegateSerializationHolder_GetDelegateData_m1057136238 (Il2Cpp
 	{
 		Delegate_t3022476291 * L_0 = ___instance0;
 		NullCheck(L_0);
-		DelegateU5BU5D_t1606206610* L_1 = VirtFuncInvoker0< DelegateU5BU5D_t1606206610* >::Invoke(8 /* System.Delegate[] System.Delegate::GetInvocationList() */, L_0);
+		DelegateU5BU5D_t1606206610* L_1 = VirtFuncInvoker0< DelegateU5BU5D_t1606206610* >::Invoke(9 /* System.Delegate[] System.Delegate::GetInvocationList() */, L_0);
 		V_0 = L_1;
 		V_1 = (DelegateEntry_t3215410094 *)NULL;
 		V_2 = 0;
@@ -10354,6 +10354,52 @@ extern "C"  void FormatException__ctor_m3740644286 (FormatException_t2948921286 
 		SerializationInfo_t228987430 * L_0 = ___info0;
 		StreamingContext_t1417235061  L_1 = ___context1;
 		SystemException__ctor_m2688248668(__this, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Int32 System.GC::get_MaxGeneration()
+extern "C"  int32_t GC_get_MaxGeneration_m1986243316 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef int32_t (*GC_get_MaxGeneration_m1986243316_ftn) ();
+	return  ((GC_get_MaxGeneration_m1986243316_ftn)mscorlib::System::GC::get_MaxGeneration) ();
+}
+// System.Void System.GC::InternalCollect(System.Int32)
+extern "C"  void GC_InternalCollect_m479047119 (Il2CppObject * __this /* static, unused */, int32_t ___generation0, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef void (*GC_InternalCollect_m479047119_ftn) (int32_t);
+	 ((GC_InternalCollect_m479047119_ftn)mscorlib::System::GC::InternalCollect) (___generation0);
+}
+// System.Void System.GC::Collect(System.Int32)
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1868527156;
+extern const uint32_t GC_Collect_m388951712_MetadataUsageId;
+extern "C"  void GC_Collect_m388951712 (Il2CppObject * __this /* static, unused */, int32_t ___generation0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (GC_Collect_m388951712_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		int32_t L_0 = ___generation0;
+		if ((((int32_t)L_0) >= ((int32_t)0)))
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_1 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_1, _stringLiteral1868527156, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0012:
+	{
+		int32_t L_2 = ___generation0;
+		GC_InternalCollect_m479047119(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -27461,6 +27507,19 @@ extern "C"  int32_t IntPtr_GetHashCode_m1174575389_AdjustorThunk (Il2CppObject *
 {
 	IntPtr_t* _thisAdjusted = reinterpret_cast<IntPtr_t*>(__this + 1);
 	return IntPtr_GetHashCode_m1174575389(_thisAdjusted, method);
+}
+// System.Int32 System.IntPtr::ToInt32()
+extern "C"  int32_t IntPtr_ToInt32_m4084182445 (IntPtr_t* __this, const MethodInfo* method)
+{
+	{
+		void* L_0 = __this->get_m_value_0();
+		return (((int32_t)((int32_t)(intptr_t)L_0)));
+	}
+}
+extern "C"  int32_t IntPtr_ToInt32_m4084182445_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
+{
+	IntPtr_t* _thisAdjusted = reinterpret_cast<IntPtr_t*>(__this + 1);
+	return IntPtr_ToInt32_m4084182445(_thisAdjusted, method);
 }
 // System.Int64 System.IntPtr::ToInt64()
 extern "C"  int64_t IntPtr_ToInt64_m39971741 (IntPtr_t* __this, const MethodInfo* method)

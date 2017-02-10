@@ -54496,7 +54496,7 @@ extern Il2CppClass* XdtAnyAtomicType_t3359210273_il2cpp_TypeInfo_var;
 extern Il2CppClass* XdtUntypedAtomic_t2904699188_il2cpp_TypeInfo_var;
 extern Il2CppClass* XdtDayTimeDuration_t2797717973_il2cpp_TypeInfo_var;
 extern Il2CppClass* XdtYearMonthDuration_t1764328599_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D43_6_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D43_6_FieldInfo_var;
 extern const uint32_t XmlSchemaDatatype__cctor_m74693117_MetadataUsageId;
 extern "C"  void XmlSchemaDatatype__cctor_m74693117 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -54508,7 +54508,7 @@ extern "C"  void XmlSchemaDatatype__cctor_m74693117 (Il2CppObject * __this /* st
 	}
 	{
 		CharU5BU5D_t1328083999* L_0 = ((CharU5BU5D_t1328083999*)SZArrayNew(CharU5BU5D_t1328083999_il2cpp_TypeInfo_var, (uint32_t)4));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D43_6_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D43_6_FieldInfo_var), /*hidden argument*/NULL);
 		((XmlSchemaDatatype_t1195946242_StaticFields*)XmlSchemaDatatype_t1195946242_il2cpp_TypeInfo_var->static_fields)->set_wsChars_1(L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(XsdAnySimpleType_t1096449895_il2cpp_TypeInfo_var);
 		XsdAnySimpleType_t1096449895 * L_1 = XsdAnySimpleType_get_Instance_m2353095684(NULL /*static, unused*/, /*hidden argument*/NULL);

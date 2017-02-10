@@ -28,12 +28,12 @@ struct ConfigurationSectionCollection_t4261113299;
 #include "System_Configuration_System_Configuration_SectionG2346323570.h"
 
 // System.Void System.Configuration.ConfigurationSectionGroup::.ctor()
-extern "C"  void ConfigurationSectionGroup__ctor_m2215148105 (ConfigurationSectionGroup_t2230982736 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void ConfigurationSectionGroup__ctor_m298945591 (ConfigurationSectionGroup_t2230982736 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Configuration.Configuration System.Configuration.ConfigurationSectionGroup::get_Config()
 extern "C"  Configuration_t3335372970 * ConfigurationSectionGroup_get_Config_m3001742842 (ConfigurationSectionGroup_t2230982736 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Configuration.ConfigurationSectionGroup::Initialize(System.Configuration.Configuration,System.Configuration.SectionGroupInfo)
 extern "C"  void ConfigurationSectionGroup_Initialize_m2622037419 (ConfigurationSectionGroup_t2230982736 * __this, Configuration_t3335372970 * ___config0, SectionGroupInfo_t2346323570 * ___group1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Configuration.ConfigurationSectionGroupCollection System.Configuration.ConfigurationSectionGroup::get_SectionGroups()
-extern "C"  ConfigurationSectionGroupCollection_t575145286 * ConfigurationSectionGroup_get_SectionGroups_m2522870927 (ConfigurationSectionGroup_t2230982736 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  ConfigurationSectionGroupCollection_t575145286 * ConfigurationSectionGroup_get_SectionGroups_m3335531313 (ConfigurationSectionGroup_t2230982736 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Configuration.ConfigurationSectionCollection System.Configuration.ConfigurationSectionGroup::get_Sections()
-extern "C"  ConfigurationSectionCollection_t4261113299 * ConfigurationSectionGroup_get_Sections_m3081736119 (ConfigurationSectionGroup_t2230982736 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  ConfigurationSectionCollection_t4261113299 * ConfigurationSectionGroup_get_Sections_m3419181621 (ConfigurationSectionGroup_t2230982736 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

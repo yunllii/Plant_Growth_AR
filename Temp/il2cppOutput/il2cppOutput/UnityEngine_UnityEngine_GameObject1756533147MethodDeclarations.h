@@ -16,6 +16,8 @@
 struct GameObject_t1756533147;
 // System.String
 struct String_t;
+// System.Type[]
+struct TypeU5BU5D_t1664964607;
 // UnityEngine.Component
 struct Component_t3819376471;
 // System.Type
@@ -33,6 +35,7 @@ struct GameObjectU5BU5D_t3057952154;
 
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_String2029220233.h"
+#include "UnityEngine_UnityEngine_PrimitiveType2454390065.h"
 #include "mscorlib_System_Type1303803226.h"
 #include "mscorlib_System_IntPtr2504060609.h"
 #include "mscorlib_System_Object2689449295.h"
@@ -43,6 +46,10 @@ struct GameObjectU5BU5D_t3057952154;
 extern "C"  void GameObject__ctor_m962601984 (GameObject_t1756533147 * __this, String_t* ___name0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.GameObject::.ctor()
 extern "C"  void GameObject__ctor_m498247354 (GameObject_t1756533147 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.GameObject::.ctor(System.String,System.Type[])
+extern "C"  void GameObject__ctor_m1633632305 (GameObject_t1756533147 * __this, String_t* ___name0, TypeU5BU5D_t1664964607* ___components1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.GameObject UnityEngine.GameObject::CreatePrimitive(UnityEngine.PrimitiveType)
+extern "C"  GameObject_t1756533147 * GameObject_CreatePrimitive_m973880764 (Il2CppObject * __this /* static, unused */, int32_t ___type0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Component UnityEngine.GameObject::GetComponent(System.Type)
 extern "C"  Component_t3819376471 * GameObject_GetComponent_m306258075 (GameObject_t1756533147 * __this, Type_t * ___type0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.GameObject::GetComponentFastPath(System.Type,System.IntPtr)

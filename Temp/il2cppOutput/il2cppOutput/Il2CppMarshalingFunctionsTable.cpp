@@ -248,6 +248,9 @@ extern "C" void TrackedReference_t1045890189_marshal_pinvoke_cleanup ();
 extern "C" void WaitForSeconds_t3839502067_marshal_pinvoke ();
 extern "C" void WaitForSeconds_t3839502067_marshal_pinvoke_back ();
 extern "C" void WaitForSeconds_t3839502067_marshal_pinvoke_cleanup ();
+extern "C" void WebCamDevice_t3983871389_marshal_pinvoke ();
+extern "C" void WebCamDevice_t3983871389_marshal_pinvoke_back ();
+extern "C" void WebCamDevice_t3983871389_marshal_pinvoke_cleanup ();
 extern "C" void YieldInstruction_t3462875981_marshal_pinvoke ();
 extern "C" void YieldInstruction_t3462875981_marshal_pinvoke_back ();
 extern "C" void YieldInstruction_t3462875981_marshal_pinvoke_cleanup ();
@@ -269,6 +272,24 @@ extern "C" void Navigation_t1571958496_marshal_pinvoke_cleanup ();
 extern "C" void SpriteState_t1353336012_marshal_pinvoke ();
 extern "C" void SpriteState_t1353336012_marshal_pinvoke_back ();
 extern "C" void SpriteState_t1353336012_marshal_pinvoke_cleanup ();
+extern "C" void CameraField_t3847513849_marshal_pinvoke ();
+extern "C" void CameraField_t3847513849_marshal_pinvoke_back ();
+extern "C" void CameraField_t3847513849_marshal_pinvoke_cleanup ();
+extern "C" void CameraFieldData_t1695136893_marshal_pinvoke ();
+extern "C" void CameraFieldData_t1695136893_marshal_pinvoke_back ();
+extern "C" void CameraFieldData_t1695136893_marshal_pinvoke_cleanup ();
+extern "C" void EyewearCalibrationReading_t1521251591_marshal_pinvoke ();
+extern "C" void EyewearCalibrationReading_t1521251591_marshal_pinvoke_back ();
+extern "C" void EyewearCalibrationReading_t1521251591_marshal_pinvoke_cleanup ();
+extern "C" void TargetSearchResult_t1958726506_marshal_pinvoke ();
+extern "C" void TargetSearchResult_t1958726506_marshal_pinvoke_back ();
+extern "C" void TargetSearchResult_t1958726506_marshal_pinvoke_cleanup ();
+extern "C" void AutoRotationState_t3090691518_marshal_pinvoke ();
+extern "C" void AutoRotationState_t3090691518_marshal_pinvoke_back ();
+extern "C" void AutoRotationState_t3090691518_marshal_pinvoke_cleanup ();
+extern "C" void ProfileCollection_t3644865120_marshal_pinvoke ();
+extern "C" void ProfileCollection_t3644865120_marshal_pinvoke_back ();
+extern "C" void ProfileCollection_t3644865120_marshal_pinvoke_cleanup ();
 extern "C" void DemoData_t3185271366_marshal_pinvoke ();
 extern "C" void DemoData_t3185271366_marshal_pinvoke_back ();
 extern "C" void DemoData_t3185271366_marshal_pinvoke_cleanup ();
@@ -278,7 +299,7 @@ extern "C" void DemoBtn_t4078322204_marshal_pinvoke_cleanup ();
 extern "C" void PhotonMessageInfo_t13590565_marshal_pinvoke ();
 extern "C" void PhotonMessageInfo_t13590565_marshal_pinvoke_back ();
 extern "C" void PhotonMessageInfo_t13590565_marshal_pinvoke_cleanup ();
-extern const Il2CppMarshalingFunctions g_MarshalingFunctions[90] = 
+extern const Il2CppMarshalingFunctions g_MarshalingFunctions[97] = 
 {
 	{ Context_t2636657155_marshal_pinvoke, Context_t2636657155_marshal_pinvoke_back, Context_t2636657155_marshal_pinvoke_cleanup },
 	{ Escape_t169451053_marshal_pinvoke, Escape_t169451053_marshal_pinvoke_back, Escape_t169451053_marshal_pinvoke_cleanup },
@@ -359,6 +380,7 @@ extern const Il2CppMarshalingFunctions g_MarshalingFunctions[90] =
 	{ TextGenerator_t647235000_marshal_pinvoke, TextGenerator_t647235000_marshal_pinvoke_back, TextGenerator_t647235000_marshal_pinvoke_cleanup },
 	{ TrackedReference_t1045890189_marshal_pinvoke, TrackedReference_t1045890189_marshal_pinvoke_back, TrackedReference_t1045890189_marshal_pinvoke_cleanup },
 	{ WaitForSeconds_t3839502067_marshal_pinvoke, WaitForSeconds_t3839502067_marshal_pinvoke_back, WaitForSeconds_t3839502067_marshal_pinvoke_cleanup },
+	{ WebCamDevice_t3983871389_marshal_pinvoke, WebCamDevice_t3983871389_marshal_pinvoke_back, WebCamDevice_t3983871389_marshal_pinvoke_cleanup },
 	{ YieldInstruction_t3462875981_marshal_pinvoke, YieldInstruction_t3462875981_marshal_pinvoke_back, YieldInstruction_t3462875981_marshal_pinvoke_cleanup },
 	{ RaycastResult_t21186376_marshal_pinvoke, RaycastResult_t21186376_marshal_pinvoke_back, RaycastResult_t21186376_marshal_pinvoke_cleanup },
 	{ ColorTween_t3438117476_marshal_pinvoke, ColorTween_t3438117476_marshal_pinvoke_back, ColorTween_t3438117476_marshal_pinvoke_cleanup },
@@ -366,6 +388,12 @@ extern const Il2CppMarshalingFunctions g_MarshalingFunctions[90] =
 	{ Resources_t2975512894_marshal_pinvoke, Resources_t2975512894_marshal_pinvoke_back, Resources_t2975512894_marshal_pinvoke_cleanup },
 	{ Navigation_t1571958496_marshal_pinvoke, Navigation_t1571958496_marshal_pinvoke_back, Navigation_t1571958496_marshal_pinvoke_cleanup },
 	{ SpriteState_t1353336012_marshal_pinvoke, SpriteState_t1353336012_marshal_pinvoke_back, SpriteState_t1353336012_marshal_pinvoke_cleanup },
+	{ CameraField_t3847513849_marshal_pinvoke, CameraField_t3847513849_marshal_pinvoke_back, CameraField_t3847513849_marshal_pinvoke_cleanup },
+	{ CameraFieldData_t1695136893_marshal_pinvoke, CameraFieldData_t1695136893_marshal_pinvoke_back, CameraFieldData_t1695136893_marshal_pinvoke_cleanup },
+	{ EyewearCalibrationReading_t1521251591_marshal_pinvoke, EyewearCalibrationReading_t1521251591_marshal_pinvoke_back, EyewearCalibrationReading_t1521251591_marshal_pinvoke_cleanup },
+	{ TargetSearchResult_t1958726506_marshal_pinvoke, TargetSearchResult_t1958726506_marshal_pinvoke_back, TargetSearchResult_t1958726506_marshal_pinvoke_cleanup },
+	{ AutoRotationState_t3090691518_marshal_pinvoke, AutoRotationState_t3090691518_marshal_pinvoke_back, AutoRotationState_t3090691518_marshal_pinvoke_cleanup },
+	{ ProfileCollection_t3644865120_marshal_pinvoke, ProfileCollection_t3644865120_marshal_pinvoke_back, ProfileCollection_t3644865120_marshal_pinvoke_cleanup },
 	{ DemoData_t3185271366_marshal_pinvoke, DemoData_t3185271366_marshal_pinvoke_back, DemoData_t3185271366_marshal_pinvoke_cleanup },
 	{ DemoBtn_t4078322204_marshal_pinvoke, DemoBtn_t4078322204_marshal_pinvoke_back, DemoBtn_t4078322204_marshal_pinvoke_cleanup },
 	{ PhotonMessageInfo_t13590565_marshal_pinvoke, PhotonMessageInfo_t13590565_marshal_pinvoke_back, PhotonMessageInfo_t13590565_marshal_pinvoke_cleanup },

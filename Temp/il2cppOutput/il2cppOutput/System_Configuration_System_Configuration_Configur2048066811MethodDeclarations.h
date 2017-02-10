@@ -37,11 +37,11 @@ struct ConfigurationCollectionAttribute_t2811353736;
 #include "System_Configuration_System_Configuration_Configur2811353736.h"
 
 // System.Void System.Configuration.ConfigurationProperty::.ctor(System.String,System.Type)
-extern "C"  void ConfigurationProperty__ctor_m2339141717 (ConfigurationProperty_t2048066811 * __this, String_t* ___name0, Type_t * ___type1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void ConfigurationProperty__ctor_m1936944139 (ConfigurationProperty_t2048066811 * __this, String_t* ___name0, Type_t * ___type1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Configuration.ConfigurationProperty::.ctor(System.String,System.Type,System.Object)
-extern "C"  void ConfigurationProperty__ctor_m2205928547 (ConfigurationProperty_t2048066811 * __this, String_t* ___name0, Type_t * ___type1, Il2CppObject * ___default_value2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void ConfigurationProperty__ctor_m1536343945 (ConfigurationProperty_t2048066811 * __this, String_t* ___name0, Type_t * ___type1, Il2CppObject * ___default_value2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Configuration.ConfigurationProperty::.ctor(System.String,System.Type,System.Object,System.Configuration.ConfigurationPropertyOptions)
-extern "C"  void ConfigurationProperty__ctor_m1024361505 (ConfigurationProperty_t2048066811 * __this, String_t* ___name0, Type_t * ___type1, Il2CppObject * ___default_value2, int32_t ___flags3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void ConfigurationProperty__ctor_m1540124895 (ConfigurationProperty_t2048066811 * __this, String_t* ___name0, Type_t * ___type1, Il2CppObject * ___default_value2, int32_t ___flags3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Configuration.ConfigurationProperty::.ctor(System.String,System.Type,System.Object,System.ComponentModel.TypeConverter,System.Configuration.ConfigurationValidatorBase,System.Configuration.ConfigurationPropertyOptions)
 extern "C"  void ConfigurationProperty__ctor_m2779674618 (ConfigurationProperty_t2048066811 * __this, String_t* ___name0, Type_t * ___type1, Il2CppObject * ___default_value2, TypeConverter_t745995970 * ___converter3, ConfigurationValidatorBase_t210547623 * ___validation4, int32_t ___flags5, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Configuration.ConfigurationProperty::.ctor(System.String,System.Type,System.Object,System.ComponentModel.TypeConverter,System.Configuration.ConfigurationValidatorBase,System.Configuration.ConfigurationPropertyOptions,System.String)

@@ -75,18 +75,18 @@
 #include "mscorlib_U3CPrivateImplementationDetailsU3E_U24Arra116038554.h"
 #include "mscorlib_System___Il2CppComObject4064417062.h"
 #include "mscorlib_System___Il2CppComDelegate3311706788.h"
-#include "System_Security_U3CModuleU3E3783534214.h"
-#include "Mono_Security_U3CModuleU3E3783534214.h"
-#include "Mono_Security_Locale4255929014.h"
-#include "Mono_Security_Mono_Math_BigInteger925946152.h"
-#include "Mono_Security_Mono_Math_BigInteger_Sign874893935.h"
-#include "Mono_Security_Mono_Math_BigInteger_ModulusRing80355991.h"
-#include "Mono_Security_Mono_Math_BigInteger_Kernel1353186455.h"
-#include "Mono_Security_Mono_Math_Prime_ConfidenceFactor1997037801.h"
-#include "Mono_Security_Mono_Math_Prime_PrimalityTests3283102398.h"
-#include "Mono_Security_Mono_Math_Prime_Generator_PrimeGener1053438167.h"
-#include "Mono_Security_Mono_Math_Prime_Generator_SequentialS463670656.h"
-#include "Mono_Security_Mono_Security_ASN1924533535.h"
+#include "System_Xml_U3CModuleU3E3783534214.h"
+#include "System_Xml_System_MonoTODOAttribute3487514019.h"
+#include "System_Xml_Mono_Xml_Schema_XsdIdentitySelector185499482.h"
+#include "System_Xml_Mono_Xml_Schema_XsdIdentityField2563516441.h"
+#include "System_Xml_Mono_Xml_Schema_XsdIdentityPath2037874.h"
+#include "System_Xml_Mono_Xml_Schema_XsdIdentityStep452377251.h"
+#include "System_Xml_Mono_Xml_Schema_XsdKeyEntryField3632833996.h"
+#include "System_Xml_Mono_Xml_Schema_XsdKeyEntryFieldCollect2946985218.h"
+#include "System_Xml_Mono_Xml_Schema_XsdKeyEntry3532015222.h"
+#include "System_Xml_Mono_Xml_Schema_XsdKeyEntryCollection1714053544.h"
+#include "System_Xml_Mono_Xml_Schema_XsdKeyTable2980902100.h"
+#include "System_Xml_Mono_Xml_Schema_XsdParticleStateManager4119977941.h"
 
 
 
@@ -435,51 +435,89 @@ extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1085 = { sizeof (U24A
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1086 = { sizeof (Il2CppComObject), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1087 = { sizeof (__Il2CppComDelegate_t3311706788), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1088 = { sizeof (U3CModuleU3E_t3783534215), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1089 = { sizeof (U3CModuleU3E_t3783534216), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1090 = { sizeof (Locale_t4255929015), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1091 = { sizeof (BigInteger_t925946153), -1, sizeof(BigInteger_t925946153_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1091[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1089 = { sizeof (MonoTODOAttribute_t3487514020), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1090 = { sizeof (XsdIdentitySelector_t185499482), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1090[3] = 
 {
-	BigInteger_t925946153::get_offset_of_length_0(),
-	BigInteger_t925946153::get_offset_of_data_1(),
-	BigInteger_t925946153_StaticFields::get_offset_of_smallPrimes_2(),
-	BigInteger_t925946153_StaticFields::get_offset_of_rng_3(),
+	XsdIdentitySelector_t185499482::get_offset_of_selectorPaths_0(),
+	XsdIdentitySelector_t185499482::get_offset_of_fields_1(),
+	XsdIdentitySelector_t185499482::get_offset_of_cachedFields_2(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1092 = { sizeof (Sign_t874893936)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1092[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1091 = { sizeof (XsdIdentityField_t2563516441), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1091[2] = 
 {
-	Sign_t874893936::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
+	XsdIdentityField_t2563516441::get_offset_of_fieldPaths_0(),
+	XsdIdentityField_t2563516441::get_offset_of_index_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1093 = { sizeof (ModulusRing_t80355992), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1093[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1092 = { sizeof (XsdIdentityPath_t2037874), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1092[2] = 
 {
-	ModulusRing_t80355992::get_offset_of_mod_0(),
-	ModulusRing_t80355992::get_offset_of_constant_1(),
+	XsdIdentityPath_t2037874::get_offset_of_OrderedSteps_0(),
+	XsdIdentityPath_t2037874::get_offset_of_Descendants_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1094 = { sizeof (Kernel_t1353186456), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1095 = { sizeof (ConfidenceFactor_t1997037802)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1095[7] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1093 = { sizeof (XsdIdentityStep_t452377251), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1093[6] = 
 {
-	ConfidenceFactor_t1997037802::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
+	XsdIdentityStep_t452377251::get_offset_of_IsCurrent_0(),
+	XsdIdentityStep_t452377251::get_offset_of_IsAttribute_1(),
+	XsdIdentityStep_t452377251::get_offset_of_IsAnyName_2(),
+	XsdIdentityStep_t452377251::get_offset_of_NsName_3(),
+	XsdIdentityStep_t452377251::get_offset_of_Name_4(),
+	XsdIdentityStep_t452377251::get_offset_of_Namespace_5(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1096 = { sizeof (PrimalityTests_t3283102399), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1097 = { sizeof (PrimeGeneratorBase_t1053438168), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1098 = { sizeof (SequentialSearchPrimeGeneratorBase_t463670657), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1099 = { sizeof (ASN1_t924533536), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1099[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1094 = { sizeof (XsdKeyEntryField_t3632833996), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1094[13] = 
 {
-	ASN1_t924533536::get_offset_of_m_nTag_0(),
-	ASN1_t924533536::get_offset_of_m_aValue_1(),
-	ASN1_t924533536::get_offset_of_elist_2(),
+	XsdKeyEntryField_t3632833996::get_offset_of_entry_0(),
+	XsdKeyEntryField_t3632833996::get_offset_of_field_1(),
+	XsdKeyEntryField_t3632833996::get_offset_of_FieldFound_2(),
+	XsdKeyEntryField_t3632833996::get_offset_of_FieldLineNumber_3(),
+	XsdKeyEntryField_t3632833996::get_offset_of_FieldLinePosition_4(),
+	XsdKeyEntryField_t3632833996::get_offset_of_FieldHasLineInfo_5(),
+	XsdKeyEntryField_t3632833996::get_offset_of_FieldType_6(),
+	XsdKeyEntryField_t3632833996::get_offset_of_Identity_7(),
+	XsdKeyEntryField_t3632833996::get_offset_of_IsXsiNil_8(),
+	XsdKeyEntryField_t3632833996::get_offset_of_FieldFoundDepth_9(),
+	XsdKeyEntryField_t3632833996::get_offset_of_FieldFoundPath_10(),
+	XsdKeyEntryField_t3632833996::get_offset_of_Consuming_11(),
+	XsdKeyEntryField_t3632833996::get_offset_of_Consumed_12(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1095 = { sizeof (XsdKeyEntryFieldCollection_t2946985218), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1096 = { sizeof (XsdKeyEntry_t3532015222), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1096[8] = 
+{
+	XsdKeyEntry_t3532015222::get_offset_of_StartDepth_0(),
+	XsdKeyEntry_t3532015222::get_offset_of_SelectorLineNumber_1(),
+	XsdKeyEntry_t3532015222::get_offset_of_SelectorLinePosition_2(),
+	XsdKeyEntry_t3532015222::get_offset_of_SelectorHasLineInfo_3(),
+	XsdKeyEntry_t3532015222::get_offset_of_KeyFields_4(),
+	XsdKeyEntry_t3532015222::get_offset_of_KeyRefFound_5(),
+	XsdKeyEntry_t3532015222::get_offset_of_OwnerSequence_6(),
+	XsdKeyEntry_t3532015222::get_offset_of_keyFound_7(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1097 = { sizeof (XsdKeyEntryCollection_t1714053544), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1098 = { sizeof (XsdKeyTable_t2980902100), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1098[9] = 
+{
+	XsdKeyTable_t2980902100::get_offset_of_alwaysTrue_0(),
+	XsdKeyTable_t2980902100::get_offset_of_selector_1(),
+	XsdKeyTable_t2980902100::get_offset_of_source_2(),
+	XsdKeyTable_t2980902100::get_offset_of_qname_3(),
+	XsdKeyTable_t2980902100::get_offset_of_refKeyName_4(),
+	XsdKeyTable_t2980902100::get_offset_of_Entries_5(),
+	XsdKeyTable_t2980902100::get_offset_of_FinishedEntries_6(),
+	XsdKeyTable_t2980902100::get_offset_of_StartDepth_7(),
+	XsdKeyTable_t2980902100::get_offset_of_ReferencedKey_8(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1099 = { sizeof (XsdParticleStateManager_t4119977941), -1, sizeof(XsdParticleStateManager_t4119977941_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1099[6] = 
+{
+	XsdParticleStateManager_t4119977941::get_offset_of_table_0(),
+	XsdParticleStateManager_t4119977941::get_offset_of_processContents_1(),
+	XsdParticleStateManager_t4119977941::get_offset_of_CurrentElement_2(),
+	XsdParticleStateManager_t4119977941::get_offset_of_ContextStack_3(),
+	XsdParticleStateManager_t4119977941::get_offset_of_Context_4(),
+	XsdParticleStateManager_t4119977941_StaticFields::get_offset_of_U3CU3Ef__switchU24map2_5(),
 };
 #ifdef __clang__
 #pragma clang diagnostic pop

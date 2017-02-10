@@ -16,101 +16,104 @@
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Certifica3721235490.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_PrivateKe1663566523.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E1486305137.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U1892466092.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2038352954.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2540610921.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U3672778804.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2896841275.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2866209745.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U3672778802.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U1703410334.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U1957337331.h"
-#include "System_Xml_U3CModuleU3E3783534214.h"
-#include "System_Xml_System_MonoTODOAttribute3487514019.h"
-#include "System_Xml_Mono_Xml_Schema_XsdIdentitySelector185499482.h"
-#include "System_Xml_Mono_Xml_Schema_XsdIdentityField2563516441.h"
-#include "System_Xml_Mono_Xml_Schema_XsdIdentityPath2037874.h"
-#include "System_Xml_Mono_Xml_Schema_XsdIdentityStep452377251.h"
-#include "System_Xml_Mono_Xml_Schema_XsdKeyEntryField3632833996.h"
-#include "System_Xml_Mono_Xml_Schema_XsdKeyEntryFieldCollect2946985218.h"
-#include "System_Xml_Mono_Xml_Schema_XsdKeyEntry3532015222.h"
-#include "System_Xml_Mono_Xml_Schema_XsdKeyEntryCollection1714053544.h"
-#include "System_Xml_Mono_Xml_Schema_XsdKeyTable2980902100.h"
-#include "System_Xml_Mono_Xml_Schema_XsdParticleStateManager4119977941.h"
-#include "System_Xml_Mono_Xml_Schema_XsdValidationState3545965403.h"
-#include "System_Xml_Mono_Xml_Schema_XsdElementValidationStat152111323.h"
-#include "System_Xml_Mono_Xml_Schema_XsdSequenceValidationSt3542030006.h"
-#include "System_Xml_Mono_Xml_Schema_XsdChoiceValidationStat1506407122.h"
-#include "System_Xml_Mono_Xml_Schema_XsdAllValidationState1028212608.h"
-#include "System_Xml_Mono_Xml_Schema_XsdAnyValidationState204702461.h"
-#include "System_Xml_Mono_Xml_Schema_XsdAppendedValidationSt3724408090.h"
-#include "System_Xml_Mono_Xml_Schema_XsdEmptyValidationState1914323912.h"
-#include "System_Xml_Mono_Xml_Schema_XsdInvalidValidationSta1112885736.h"
-#include "System_Xml_Mono_Xml_Schema_XsdValidatingReader1704923617.h"
-#include "System_Xml_Mono_Xml_Schema_XsdValidationContext3720679969.h"
-#include "System_Xml_Mono_Xml_Schema_XsdIDManager3860002335.h"
-#include "System_Xml_Mono_Xml_Schema_XsdWildcard625524157.h"
-#include "System_Xml_System_Xml_ConformanceLevel3761201363.h"
-#include "System_Xml_Mono_Xml_DTDAutomataFactory3605390810.h"
-#include "System_Xml_Mono_Xml_DTDAutomata545990600.h"
-#include "System_Xml_Mono_Xml_DTDElementAutomata2864881036.h"
-#include "System_Xml_Mono_Xml_DTDChoiceAutomata2810241733.h"
-#include "System_Xml_Mono_Xml_DTDSequenceAutomata1228770437.h"
-#include "System_Xml_Mono_Xml_DTDOneOrMoreAutomata1559764132.h"
-#include "System_Xml_Mono_Xml_DTDEmptyAutomata411530619.h"
-#include "System_Xml_Mono_Xml_DTDAnyAutomata146446906.h"
-#include "System_Xml_Mono_Xml_DTDInvalidAutomata247674167.h"
-#include "System_Xml_Mono_Xml_DTDObjectModel1113953282.h"
-#include "System_Xml_Mono_Xml_DictionaryBase1005937181.h"
-#include "System_Xml_Mono_Xml_DictionaryBase_U3CU3Ec__Iterat3518389200.h"
-#include "System_Xml_Mono_Xml_DTDCollectionBase2621362935.h"
-#include "System_Xml_Mono_Xml_DTDElementDeclarationCollectio2224069626.h"
-#include "System_Xml_Mono_Xml_DTDAttListDeclarationCollection243645429.h"
-#include "System_Xml_Mono_Xml_DTDEntityDeclarationCollection1212505713.h"
-#include "System_Xml_Mono_Xml_DTDNotationDeclarationCollectio228085060.h"
-#include "System_Xml_Mono_Xml_DTDContentModel445576364.h"
-#include "System_Xml_Mono_Xml_DTDContentModelCollection3164170484.h"
-#include "System_Xml_Mono_Xml_DTDNode1758286970.h"
-#include "System_Xml_Mono_Xml_DTDElementDeclaration8748002.h"
-#include "System_Xml_Mono_Xml_DTDAttributeDefinition3692870749.h"
-#include "System_Xml_Mono_Xml_DTDAttListDeclaration2272374839.h"
-#include "System_Xml_Mono_Xml_DTDEntityBase2353758560.h"
-#include "System_Xml_Mono_Xml_DTDEntityDeclaration4283284771.h"
-#include "System_Xml_Mono_Xml_DTDNotationDeclaration1758408116.h"
-#include "System_Xml_Mono_Xml_DTDParameterEntityDeclarationC3496720022.h"
-#include "System_Xml_Mono_Xml_DTDParameterEntityDeclaration252230634.h"
-#include "System_Xml_Mono_Xml_DTDContentOrderType3150259539.h"
-#include "System_Xml_Mono_Xml_DTDAttributeOccurenceType2819881069.h"
-#include "System_Xml_Mono_Xml_DTDOccurence99371501.h"
-#include "System_Xml_System_Xml_DTDReader2453137441.h"
-#include "System_Xml_Mono_Xml_DTDValidatingReader4120969348.h"
-#include "System_Xml_Mono_Xml_DTDValidatingReader_AttributeS1499247213.h"
-#include "System_Xml_Mono_Xml_EntityResolvingXmlReader2086920314.h"
-#include "System_Xml_System_Xml_EntityHandling3960499440.h"
-#include "System_Xml_System_Xml_Formatting1126649075.h"
-#include "System_Xml_System_Xml_NameTable594386929.h"
-#include "System_Xml_System_Xml_NameTable_Entry2583369454.h"
-#include "System_Xml_System_Xml_NamespaceHandling1452270444.h"
-#include "System_Xml_System_Xml_NewLineHandling1737195169.h"
-#include "System_Xml_System_Xml_ReadState3138905245.h"
-#include "System_Xml_System_Xml_ValidationType1401987383.h"
-#include "System_Xml_System_Xml_WhitespaceHandling3754063142.h"
-#include "System_Xml_System_Xml_WriteState1534871862.h"
-#include "System_Xml_System_Xml_XmlEntity4027255380.h"
-#include "System_Xml_System_Xml_XmlAttribute175731005.h"
-#include "System_Xml_System_Xml_XmlAttributeCollection3359885287.h"
-#include "System_Xml_System_Xml_XmlCDataSection1124775823.h"
-#include "System_Xml_System_Xml_XmlChar1369421061.h"
-#include "System_Xml_System_Xml_XmlCharacterData575748506.h"
-#include "System_Xml_System_Xml_XmlComment3999331572.h"
-#include "System_Xml_System_Xml_XmlNotation206561061.h"
-#include "System_Xml_System_Xml_XmlDeclaration1545359137.h"
-#include "System_Xml_System_Xml_XmlDocument3649534162.h"
-#include "System_Xml_System_Xml_XmlDocumentFragment3083262362.h"
-#include "System_Xml_System_Xml_XmlDocumentType824160610.h"
+#include "System_Xml_System_Xml_XmlParserContext_ContextItem1262420678.h"
+#include "System_Xml_System_Xml_XmlProcessingInstruction431557540.h"
+#include "System_Xml_System_Xml_XmlQualifiedName1944712516.h"
+#include "System_Xml_System_Xml_XmlReader3675626668.h"
+#include "System_Xml_System_Xml_XmlReaderBinarySupport1548133672.h"
+#include "System_Xml_System_Xml_XmlReaderBinarySupport_Comma1644897369.h"
+#include "System_Xml_System_Xml_XmlReaderBinarySupport_CharG1955031820.h"
+#include "System_Xml_System_Xml_XmlReaderSettings1578612233.h"
+#include "System_Xml_System_Xml_XmlResolver2024571559.h"
+#include "System_Xml_System_Xml_XmlSignificantWhitespace1224054391.h"
+#include "System_Xml_System_Xml_XmlSpace2880376877.h"
+#include "System_Xml_System_Xml_XmlText4111601336.h"
+#include "System_Xml_Mono_Xml2_XmlTextReader511376973.h"
+#include "System_Xml_Mono_Xml2_XmlTextReader_XmlTokenInfo254587324.h"
+#include "System_Xml_Mono_Xml2_XmlTextReader_XmlAttributeTok3353594030.h"
+#include "System_Xml_Mono_Xml2_XmlTextReader_TagName2340974457.h"
+#include "System_Xml_Mono_Xml2_XmlTextReader_DtdInputState3313602765.h"
+#include "System_Xml_Mono_Xml2_XmlTextReader_DtdInputStateSt3023928423.h"
+#include "System_Xml_System_Xml_XmlTextReader3514170725.h"
+#include "System_Xml_System_Xml_XmlTokenizedType1619571710.h"
+#include "System_Xml_System_Xml_XmlUrlResolver896669594.h"
+#include "System_Xml_System_Xml_XmlValidatingReader3416770767.h"
+#include "System_Xml_System_Xml_XmlWhitespace2557770518.h"
+#include "System_Xml_System_Xml_XmlWriter1048088568.h"
+#include "System_Xml_System_Xml_XmlTextWriter2527250655.h"
+#include "System_Xml_System_Xml_XmlTextWriter_XmlNodeInfo3709371029.h"
+#include "System_Xml_System_Xml_XmlTextWriter_StringUtil2068578019.h"
+#include "System_Xml_System_Xml_XmlTextWriter_XmlDeclState3530111136.h"
+#include "System_Xml_System_Xml_XmlStreamReader2725532304.h"
+#include "System_Xml_System_Xml_NonBlockingStreamReader3963211903.h"
+#include "System_Xml_System_Xml_XmlInputStream2650744719.h"
+#include "System_Xml_System_Xml_XmlParserInput2366782760.h"
+#include "System_Xml_System_Xml_XmlParserInput_XmlParserInputS25800784.h"
+#include "System_Xml_Mono_Xml_Schema_XsdWhitespaceFacet2758097827.h"
+#include "System_Xml_Mono_Xml_Schema_XsdOrdering3741887935.h"
+#include "System_Xml_Mono_Xml_Schema_XsdAnySimpleType1096449895.h"
+#include "System_Xml_Mono_Xml_Schema_XdtAnyAtomicType3359210273.h"
+#include "System_Xml_Mono_Xml_Schema_XdtUntypedAtomic2904699188.h"
+#include "System_Xml_Mono_Xml_Schema_XsdString263933896.h"
+#include "System_Xml_Mono_Xml_Schema_XsdNormalizedString2132216291.h"
+#include "System_Xml_Mono_Xml_Schema_XsdToken2902215462.h"
+#include "System_Xml_Mono_Xml_Schema_XsdLanguage3897851897.h"
+#include "System_Xml_Mono_Xml_Schema_XsdNMToken547135877.h"
+#include "System_Xml_Mono_Xml_Schema_XsdNMTokens1753890866.h"
+#include "System_Xml_Mono_Xml_Schema_XsdName1409945702.h"
+#include "System_Xml_Mono_Xml_Schema_XsdNCName414304927.h"
+#include "System_Xml_Mono_Xml_Schema_XsdID1067193160.h"
+#include "System_Xml_Mono_Xml_Schema_XsdIDRef1377311049.h"
+#include "System_Xml_Mono_Xml_Schema_XsdIDRefs763119546.h"
+#include "System_Xml_Mono_Xml_Schema_XsdEntity2664305022.h"
+#include "System_Xml_Mono_Xml_Schema_XsdEntities1103053540.h"
+#include "System_Xml_Mono_Xml_Schema_XsdNotation720379093.h"
+#include "System_Xml_Mono_Xml_Schema_XsdDecimal2932251550.h"
+#include "System_Xml_Mono_Xml_Schema_XsdInteger1330502157.h"
+#include "System_Xml_Mono_Xml_Schema_XsdLong4179235589.h"
+#include "System_Xml_Mono_Xml_Schema_XsdInt1488443894.h"
+#include "System_Xml_Mono_Xml_Schema_XsdShort1778530041.h"
+#include "System_Xml_Mono_Xml_Schema_XsdByte1120972221.h"
+#include "System_Xml_Mono_Xml_Schema_XsdNonNegativeInteger3587933853.h"
+#include "System_Xml_Mono_Xml_Schema_XsdUnsignedLong137890294.h"
+#include "System_Xml_Mono_Xml_Schema_XsdUnsignedInt2956447959.h"
+#include "System_Xml_Mono_Xml_Schema_XsdUnsignedShort3693774826.h"
+#include "System_Xml_Mono_Xml_Schema_XsdUnsignedByte3216355454.h"
+#include "System_Xml_Mono_Xml_Schema_XsdPositiveInteger1896481288.h"
+#include "System_Xml_Mono_Xml_Schema_XsdNonPositiveInteger409343009.h"
+#include "System_Xml_Mono_Xml_Schema_XsdNegativeInteger399444136.h"
+#include "System_Xml_Mono_Xml_Schema_XsdFloat386143221.h"
+#include "System_Xml_Mono_Xml_Schema_XsdDouble2510112208.h"
+#include "System_Xml_Mono_Xml_Schema_XsdBase64Binary1094704629.h"
+#include "System_Xml_Mono_Xml_Schema_XsdHexBinary3496718151.h"
+#include "System_Xml_Mono_Xml_Schema_XsdQName930779123.h"
+#include "System_Xml_Mono_Xml_Schema_XsdBoolean4126353587.h"
+#include "System_Xml_Mono_Xml_Schema_XsdAnyURI2527983239.h"
+#include "System_Xml_Mono_Xml_Schema_XmlSchemaUri1295878664.h"
+#include "System_Xml_Mono_Xml_Schema_XsdDuration1605638443.h"
+#include "System_Xml_Mono_Xml_Schema_XdtDayTimeDuration2797717973.h"
+#include "System_Xml_Mono_Xml_Schema_XdtYearMonthDuration1764328599.h"
+#include "System_Xml_Mono_Xml_Schema_XsdDateTime1344468684.h"
+#include "System_Xml_Mono_Xml_Schema_XsdDate919459387.h"
+#include "System_Xml_Mono_Xml_Schema_XsdTime4165680512.h"
+#include "System_Xml_Mono_Xml_Schema_XsdGYearMonth1363357165.h"
+#include "System_Xml_Mono_Xml_Schema_XsdGMonthDay3859978294.h"
+#include "System_Xml_Mono_Xml_Schema_XsdGYear3810382607.h"
+#include "System_Xml_Mono_Xml_Schema_XsdGMonth4076673358.h"
+#include "System_Xml_Mono_Xml_Schema_XsdGDay1914244270.h"
+#include "System_Xml_System_Xml_Schema_QNameValueType2109511131.h"
+#include "System_Xml_System_Xml_Schema_StringValueType652312500.h"
+#include "System_Xml_System_Xml_Schema_UriValueType1626089757.h"
+#include "System_Xml_System_Xml_Schema_StringArrayValueType1731700877.h"
+#include "System_Xml_System_Xml_Schema_ValidationEventArgs1577905814.h"
+#include "System_Xml_System_Xml_Schema_XmlSchema880472818.h"
+#include "System_Xml_System_Xml_Schema_XmlSchemaAll1805755215.h"
+#include "System_Xml_System_Xml_Schema_XmlSchemaAnnotated2082486936.h"
+#include "System_Xml_System_Xml_Schema_XmlSchemaAnnotation2400301303.h"
+#include "System_Xml_System_Xml_Schema_XmlSchemaAny3277730824.h"
+#include "System_Xml_System_Xml_Schema_XmlSchemaAnyAttribute530453212.h"
+#include "System_Xml_System_Xml_Schema_XmlSchemaAppInfo2033489551.h"
+#include "System_Xml_System_Xml_Schema_XmlSchemaAttribute4015859774.h"
 
 
 
@@ -119,697 +122,551 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1200 = { sizeof (CertificateSelectionCallback_t3721235490), sizeof(Il2CppMethodPointer), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1201 = { sizeof (PrivateKeySelectionCallback_t1663566523), sizeof(Il2CppMethodPointer), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1202 = { sizeof (U3CPrivateImplementationDetailsU3E_t1486305138), -1, sizeof(U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1202[15] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1200 = { sizeof (ContextItem_t1262420678), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1200[3] = 
 {
-	U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields::get_offset_of_U24U24fieldU2D0_0(),
-	U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields::get_offset_of_U24U24fieldU2D5_1(),
-	U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields::get_offset_of_U24U24fieldU2D6_2(),
-	U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields::get_offset_of_U24U24fieldU2D7_3(),
-	U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields::get_offset_of_U24U24fieldU2D8_4(),
-	U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields::get_offset_of_U24U24fieldU2D9_5(),
-	U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields::get_offset_of_U24U24fieldU2D11_6(),
-	U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields::get_offset_of_U24U24fieldU2D12_7(),
-	U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields::get_offset_of_U24U24fieldU2D13_8(),
-	U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields::get_offset_of_U24U24fieldU2D14_9(),
-	U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields::get_offset_of_U24U24fieldU2D15_10(),
-	U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields::get_offset_of_U24U24fieldU2D16_11(),
-	U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields::get_offset_of_U24U24fieldU2D17_12(),
-	U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields::get_offset_of_U24U24fieldU2D21_13(),
-	U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields::get_offset_of_U24U24fieldU2D22_14(),
+	ContextItem_t1262420678::get_offset_of_BaseURI_0(),
+	ContextItem_t1262420678::get_offset_of_XmlLang_1(),
+	ContextItem_t1262420678::get_offset_of_XmlSpace_2(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1203 = { sizeof (U24ArrayTypeU243132_t1892466093)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU243132_t1892466093 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1204 = { sizeof (U24ArrayTypeU24256_t2038352955)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24256_t2038352955 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1205 = { sizeof (U24ArrayTypeU2420_t540610922)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2420_t540610922 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1206 = { sizeof (U24ArrayTypeU2432_t3672778805)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2432_t3672778805 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1207 = { sizeof (U24ArrayTypeU2448_t896841276)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2448_t896841276 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1208 = { sizeof (U24ArrayTypeU2464_t2866209746)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2464_t2866209746 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1209 = { sizeof (U24ArrayTypeU2412_t3672778803)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2412_t3672778803 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1210 = { sizeof (U24ArrayTypeU2416_t1703410335)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2416_t1703410335 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1211 = { sizeof (U24ArrayTypeU244_t1957337331)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU244_t1957337331 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1212 = { sizeof (U3CModuleU3E_t3783534217), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1213 = { sizeof (MonoTODOAttribute_t3487514020), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1214 = { sizeof (XsdIdentitySelector_t185499482), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1214[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1201 = { sizeof (XmlProcessingInstruction_t431557540), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1201[2] = 
 {
-	XsdIdentitySelector_t185499482::get_offset_of_selectorPaths_0(),
-	XsdIdentitySelector_t185499482::get_offset_of_fields_1(),
-	XsdIdentitySelector_t185499482::get_offset_of_cachedFields_2(),
+	XmlProcessingInstruction_t431557540::get_offset_of_target_6(),
+	XmlProcessingInstruction_t431557540::get_offset_of_data_7(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1215 = { sizeof (XsdIdentityField_t2563516441), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1215[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1202 = { sizeof (XmlQualifiedName_t1944712516), -1, sizeof(XmlQualifiedName_t1944712516_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1202[4] = 
 {
-	XsdIdentityField_t2563516441::get_offset_of_fieldPaths_0(),
-	XsdIdentityField_t2563516441::get_offset_of_index_1(),
+	XmlQualifiedName_t1944712516_StaticFields::get_offset_of_Empty_0(),
+	XmlQualifiedName_t1944712516::get_offset_of_name_1(),
+	XmlQualifiedName_t1944712516::get_offset_of_ns_2(),
+	XmlQualifiedName_t1944712516::get_offset_of_hash_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1216 = { sizeof (XsdIdentityPath_t2037874), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1216[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1203 = { sizeof (XmlReader_t3675626668), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1203[2] = 
 {
-	XsdIdentityPath_t2037874::get_offset_of_OrderedSteps_0(),
-	XsdIdentityPath_t2037874::get_offset_of_Descendants_1(),
+	XmlReader_t3675626668::get_offset_of_binary_0(),
+	XmlReader_t3675626668::get_offset_of_settings_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1217 = { sizeof (XsdIdentityStep_t452377251), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1217[6] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1204 = { sizeof (XmlReaderBinarySupport_t1548133672), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1204[5] = 
 {
-	XsdIdentityStep_t452377251::get_offset_of_IsCurrent_0(),
-	XsdIdentityStep_t452377251::get_offset_of_IsAttribute_1(),
-	XsdIdentityStep_t452377251::get_offset_of_IsAnyName_2(),
-	XsdIdentityStep_t452377251::get_offset_of_NsName_3(),
-	XsdIdentityStep_t452377251::get_offset_of_Name_4(),
-	XsdIdentityStep_t452377251::get_offset_of_Namespace_5(),
+	XmlReaderBinarySupport_t1548133672::get_offset_of_reader_0(),
+	XmlReaderBinarySupport_t1548133672::get_offset_of_base64CacheStartsAt_1(),
+	XmlReaderBinarySupport_t1548133672::get_offset_of_state_2(),
+	XmlReaderBinarySupport_t1548133672::get_offset_of_hasCache_3(),
+	XmlReaderBinarySupport_t1548133672::get_offset_of_dontReset_4(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1218 = { sizeof (XsdKeyEntryField_t3632833996), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1218[13] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1205 = { sizeof (CommandState_t1644897369)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1205[6] = 
 {
-	XsdKeyEntryField_t3632833996::get_offset_of_entry_0(),
-	XsdKeyEntryField_t3632833996::get_offset_of_field_1(),
-	XsdKeyEntryField_t3632833996::get_offset_of_FieldFound_2(),
-	XsdKeyEntryField_t3632833996::get_offset_of_FieldLineNumber_3(),
-	XsdKeyEntryField_t3632833996::get_offset_of_FieldLinePosition_4(),
-	XsdKeyEntryField_t3632833996::get_offset_of_FieldHasLineInfo_5(),
-	XsdKeyEntryField_t3632833996::get_offset_of_FieldType_6(),
-	XsdKeyEntryField_t3632833996::get_offset_of_Identity_7(),
-	XsdKeyEntryField_t3632833996::get_offset_of_IsXsiNil_8(),
-	XsdKeyEntryField_t3632833996::get_offset_of_FieldFoundDepth_9(),
-	XsdKeyEntryField_t3632833996::get_offset_of_FieldFoundPath_10(),
-	XsdKeyEntryField_t3632833996::get_offset_of_Consuming_11(),
-	XsdKeyEntryField_t3632833996::get_offset_of_Consumed_12(),
+	CommandState_t1644897369::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1219 = { sizeof (XsdKeyEntryFieldCollection_t2946985218), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1220 = { sizeof (XsdKeyEntry_t3532015222), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1220[8] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1206 = { sizeof (CharGetter_t1955031820), sizeof(Il2CppMethodPointer), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1207 = { sizeof (XmlReaderSettings_t1578612233), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1207[5] = 
 {
-	XsdKeyEntry_t3532015222::get_offset_of_StartDepth_0(),
-	XsdKeyEntry_t3532015222::get_offset_of_SelectorLineNumber_1(),
-	XsdKeyEntry_t3532015222::get_offset_of_SelectorLinePosition_2(),
-	XsdKeyEntry_t3532015222::get_offset_of_SelectorHasLineInfo_3(),
-	XsdKeyEntry_t3532015222::get_offset_of_KeyFields_4(),
-	XsdKeyEntry_t3532015222::get_offset_of_KeyRefFound_5(),
-	XsdKeyEntry_t3532015222::get_offset_of_OwnerSequence_6(),
-	XsdKeyEntry_t3532015222::get_offset_of_keyFound_7(),
+	XmlReaderSettings_t1578612233::get_offset_of_checkCharacters_0(),
+	XmlReaderSettings_t1578612233::get_offset_of_conformance_1(),
+	XmlReaderSettings_t1578612233::get_offset_of_schemas_2(),
+	XmlReaderSettings_t1578612233::get_offset_of_schemasNeedsInitialization_3(),
+	XmlReaderSettings_t1578612233::get_offset_of_validationFlags_4(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1221 = { sizeof (XsdKeyEntryCollection_t1714053544), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1222 = { sizeof (XsdKeyTable_t2980902100), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1222[9] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1208 = { sizeof (XmlResolver_t2024571559), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1209 = { sizeof (XmlSignificantWhitespace_t1224054391), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1210 = { sizeof (XmlSpace_t2880376877)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1210[4] = 
 {
-	XsdKeyTable_t2980902100::get_offset_of_alwaysTrue_0(),
-	XsdKeyTable_t2980902100::get_offset_of_selector_1(),
-	XsdKeyTable_t2980902100::get_offset_of_source_2(),
-	XsdKeyTable_t2980902100::get_offset_of_qname_3(),
-	XsdKeyTable_t2980902100::get_offset_of_refKeyName_4(),
-	XsdKeyTable_t2980902100::get_offset_of_Entries_5(),
-	XsdKeyTable_t2980902100::get_offset_of_FinishedEntries_6(),
-	XsdKeyTable_t2980902100::get_offset_of_StartDepth_7(),
-	XsdKeyTable_t2980902100::get_offset_of_ReferencedKey_8(),
+	XmlSpace_t2880376877::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1223 = { sizeof (XsdParticleStateManager_t4119977941), -1, sizeof(XsdParticleStateManager_t4119977941_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1223[6] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1211 = { sizeof (XmlText_t4111601336), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1212 = { sizeof (XmlTextReader_t511376973), -1, sizeof(XmlTextReader_t511376973_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1212[54] = 
 {
-	XsdParticleStateManager_t4119977941::get_offset_of_table_0(),
-	XsdParticleStateManager_t4119977941::get_offset_of_processContents_1(),
-	XsdParticleStateManager_t4119977941::get_offset_of_CurrentElement_2(),
-	XsdParticleStateManager_t4119977941::get_offset_of_ContextStack_3(),
-	XsdParticleStateManager_t4119977941::get_offset_of_Context_4(),
-	XsdParticleStateManager_t4119977941_StaticFields::get_offset_of_U3CU3Ef__switchU24map2_5(),
+	XmlTextReader_t511376973::get_offset_of_cursorToken_2(),
+	XmlTextReader_t511376973::get_offset_of_currentToken_3(),
+	XmlTextReader_t511376973::get_offset_of_currentAttributeToken_4(),
+	XmlTextReader_t511376973::get_offset_of_currentAttributeValueToken_5(),
+	XmlTextReader_t511376973::get_offset_of_attributeTokens_6(),
+	XmlTextReader_t511376973::get_offset_of_attributeValueTokens_7(),
+	XmlTextReader_t511376973::get_offset_of_currentAttribute_8(),
+	XmlTextReader_t511376973::get_offset_of_currentAttributeValue_9(),
+	XmlTextReader_t511376973::get_offset_of_attributeCount_10(),
+	XmlTextReader_t511376973::get_offset_of_parserContext_11(),
+	XmlTextReader_t511376973::get_offset_of_nameTable_12(),
+	XmlTextReader_t511376973::get_offset_of_nsmgr_13(),
+	XmlTextReader_t511376973::get_offset_of_readState_14(),
+	XmlTextReader_t511376973::get_offset_of_disallowReset_15(),
+	XmlTextReader_t511376973::get_offset_of_depth_16(),
+	XmlTextReader_t511376973::get_offset_of_elementDepth_17(),
+	XmlTextReader_t511376973::get_offset_of_depthUp_18(),
+	XmlTextReader_t511376973::get_offset_of_popScope_19(),
+	XmlTextReader_t511376973::get_offset_of_elementNames_20(),
+	XmlTextReader_t511376973::get_offset_of_elementNameStackPos_21(),
+	XmlTextReader_t511376973::get_offset_of_allowMultipleRoot_22(),
+	XmlTextReader_t511376973::get_offset_of_isStandalone_23(),
+	XmlTextReader_t511376973::get_offset_of_returnEntityReference_24(),
+	XmlTextReader_t511376973::get_offset_of_entityReferenceName_25(),
+	XmlTextReader_t511376973::get_offset_of_valueBuffer_26(),
+	XmlTextReader_t511376973::get_offset_of_reader_27(),
+	XmlTextReader_t511376973::get_offset_of_peekChars_28(),
+	XmlTextReader_t511376973::get_offset_of_peekCharsIndex_29(),
+	XmlTextReader_t511376973::get_offset_of_peekCharsLength_30(),
+	XmlTextReader_t511376973::get_offset_of_curNodePeekIndex_31(),
+	XmlTextReader_t511376973::get_offset_of_preserveCurrentTag_32(),
+	XmlTextReader_t511376973::get_offset_of_line_33(),
+	XmlTextReader_t511376973::get_offset_of_column_34(),
+	XmlTextReader_t511376973::get_offset_of_currentLinkedNodeLineNumber_35(),
+	XmlTextReader_t511376973::get_offset_of_currentLinkedNodeLinePosition_36(),
+	XmlTextReader_t511376973::get_offset_of_useProceedingLineInfo_37(),
+	XmlTextReader_t511376973::get_offset_of_startNodeType_38(),
+	XmlTextReader_t511376973::get_offset_of_currentState_39(),
+	XmlTextReader_t511376973::get_offset_of_nestLevel_40(),
+	XmlTextReader_t511376973::get_offset_of_readCharsInProgress_41(),
+	XmlTextReader_t511376973::get_offset_of_binaryCharGetter_42(),
+	XmlTextReader_t511376973::get_offset_of_namespaces_43(),
+	XmlTextReader_t511376973::get_offset_of_whitespaceHandling_44(),
+	XmlTextReader_t511376973::get_offset_of_resolver_45(),
+	XmlTextReader_t511376973::get_offset_of_normalization_46(),
+	XmlTextReader_t511376973::get_offset_of_checkCharacters_47(),
+	XmlTextReader_t511376973::get_offset_of_prohibitDtd_48(),
+	XmlTextReader_t511376973::get_offset_of_closeInput_49(),
+	XmlTextReader_t511376973::get_offset_of_entityHandling_50(),
+	XmlTextReader_t511376973::get_offset_of_whitespacePool_51(),
+	XmlTextReader_t511376973::get_offset_of_whitespaceCache_52(),
+	XmlTextReader_t511376973::get_offset_of_stateStack_53(),
+	XmlTextReader_t511376973_StaticFields::get_offset_of_U3CU3Ef__switchU24map38_54(),
+	XmlTextReader_t511376973_StaticFields::get_offset_of_U3CU3Ef__switchU24map39_55(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1224 = { sizeof (XsdValidationState_t3545965403), -1, sizeof(XsdValidationState_t3545965403_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1224[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1213 = { sizeof (XmlTokenInfo_t254587324), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1213[13] = 
 {
-	XsdValidationState_t3545965403_StaticFields::get_offset_of_invalid_0(),
-	XsdValidationState_t3545965403::get_offset_of_occured_1(),
-	XsdValidationState_t3545965403::get_offset_of_manager_2(),
+	XmlTokenInfo_t254587324::get_offset_of_valueCache_0(),
+	XmlTokenInfo_t254587324::get_offset_of_Reader_1(),
+	XmlTokenInfo_t254587324::get_offset_of_Name_2(),
+	XmlTokenInfo_t254587324::get_offset_of_LocalName_3(),
+	XmlTokenInfo_t254587324::get_offset_of_Prefix_4(),
+	XmlTokenInfo_t254587324::get_offset_of_NamespaceURI_5(),
+	XmlTokenInfo_t254587324::get_offset_of_IsEmptyElement_6(),
+	XmlTokenInfo_t254587324::get_offset_of_QuoteChar_7(),
+	XmlTokenInfo_t254587324::get_offset_of_LineNumber_8(),
+	XmlTokenInfo_t254587324::get_offset_of_LinePosition_9(),
+	XmlTokenInfo_t254587324::get_offset_of_ValueBufferStart_10(),
+	XmlTokenInfo_t254587324::get_offset_of_ValueBufferEnd_11(),
+	XmlTokenInfo_t254587324::get_offset_of_NodeType_12(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1225 = { sizeof (XsdElementValidationState_t152111323), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1225[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1214 = { sizeof (XmlAttributeTokenInfo_t3353594030), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1214[4] = 
 {
-	XsdElementValidationState_t152111323::get_offset_of_element_3(),
+	XmlAttributeTokenInfo_t3353594030::get_offset_of_ValueTokenStartIndex_13(),
+	XmlAttributeTokenInfo_t3353594030::get_offset_of_ValueTokenEndIndex_14(),
+	XmlAttributeTokenInfo_t3353594030::get_offset_of_valueCache_15(),
+	XmlAttributeTokenInfo_t3353594030::get_offset_of_tmpBuilder_16(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1226 = { sizeof (XsdSequenceValidationState_t3542030006), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1226[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1215 = { sizeof (TagName_t2340974457)+ sizeof (Il2CppObject), sizeof(TagName_t2340974457_marshaled_pinvoke), 0, 0 };
+extern const int32_t g_FieldOffsetTable1215[3] = 
 {
-	XsdSequenceValidationState_t3542030006::get_offset_of_seq_3(),
-	XsdSequenceValidationState_t3542030006::get_offset_of_current_4(),
-	XsdSequenceValidationState_t3542030006::get_offset_of_currentAutomata_5(),
-	XsdSequenceValidationState_t3542030006::get_offset_of_emptiable_6(),
+	TagName_t2340974457::get_offset_of_Name_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	TagName_t2340974457::get_offset_of_LocalName_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	TagName_t2340974457::get_offset_of_Prefix_2() + static_cast<int32_t>(sizeof(Il2CppObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1227 = { sizeof (XsdChoiceValidationState_t1506407122), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1227[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1216 = { sizeof (DtdInputState_t3313602765)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1216[10] = 
 {
-	XsdChoiceValidationState_t1506407122::get_offset_of_choice_3(),
-	XsdChoiceValidationState_t1506407122::get_offset_of_emptiable_4(),
-	XsdChoiceValidationState_t1506407122::get_offset_of_emptiableComputed_5(),
+	DtdInputState_t3313602765::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1228 = { sizeof (XsdAllValidationState_t1028212608), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1217 = { sizeof (DtdInputStateStack_t3023928423), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1217[1] = 
+{
+	DtdInputStateStack_t3023928423::get_offset_of_intern_0(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1218 = { sizeof (XmlTextReader_t3514170725), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1218[5] = 
+{
+	XmlTextReader_t3514170725::get_offset_of_entity_2(),
+	XmlTextReader_t3514170725::get_offset_of_source_3(),
+	XmlTextReader_t3514170725::get_offset_of_entityInsideAttribute_4(),
+	XmlTextReader_t3514170725::get_offset_of_insideAttribute_5(),
+	XmlTextReader_t3514170725::get_offset_of_entityNameStack_6(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1219 = { sizeof (XmlTokenizedType_t1619571710)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1219[14] = 
+{
+	XmlTokenizedType_t1619571710::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1220 = { sizeof (XmlUrlResolver_t896669594), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1220[1] = 
+{
+	XmlUrlResolver_t896669594::get_offset_of_credential_0(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1221 = { sizeof (XmlValidatingReader_t3416770767), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1221[12] = 
+{
+	XmlValidatingReader_t3416770767::get_offset_of_entityHandling_2(),
+	XmlValidatingReader_t3416770767::get_offset_of_sourceReader_3(),
+	XmlValidatingReader_t3416770767::get_offset_of_xmlTextReader_4(),
+	XmlValidatingReader_t3416770767::get_offset_of_validatingReader_5(),
+	XmlValidatingReader_t3416770767::get_offset_of_resolver_6(),
+	XmlValidatingReader_t3416770767::get_offset_of_resolverSpecified_7(),
+	XmlValidatingReader_t3416770767::get_offset_of_validationType_8(),
+	XmlValidatingReader_t3416770767::get_offset_of_schemas_9(),
+	XmlValidatingReader_t3416770767::get_offset_of_dtdReader_10(),
+	XmlValidatingReader_t3416770767::get_offset_of_schemaInfo_11(),
+	XmlValidatingReader_t3416770767::get_offset_of_storedCharacters_12(),
+	XmlValidatingReader_t3416770767::get_offset_of_ValidationEventHandler_13(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1222 = { sizeof (XmlWhitespace_t2557770518), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1223 = { sizeof (XmlWriter_t1048088568), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1224 = { sizeof (XmlTextWriter_t2527250655), -1, sizeof(XmlTextWriter_t2527250655_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1224[35] = 
+{
+	XmlTextWriter_t2527250655_StaticFields::get_offset_of_unmarked_utf8encoding_0(),
+	XmlTextWriter_t2527250655_StaticFields::get_offset_of_escaped_text_chars_1(),
+	XmlTextWriter_t2527250655_StaticFields::get_offset_of_escaped_attr_chars_2(),
+	XmlTextWriter_t2527250655::get_offset_of_base_stream_3(),
+	XmlTextWriter_t2527250655::get_offset_of_source_4(),
+	XmlTextWriter_t2527250655::get_offset_of_writer_5(),
+	XmlTextWriter_t2527250655::get_offset_of_preserver_6(),
+	XmlTextWriter_t2527250655::get_offset_of_preserved_name_7(),
+	XmlTextWriter_t2527250655::get_offset_of_is_preserved_xmlns_8(),
+	XmlTextWriter_t2527250655::get_offset_of_allow_doc_fragment_9(),
+	XmlTextWriter_t2527250655::get_offset_of_close_output_stream_10(),
+	XmlTextWriter_t2527250655::get_offset_of_ignore_encoding_11(),
+	XmlTextWriter_t2527250655::get_offset_of_namespaces_12(),
+	XmlTextWriter_t2527250655::get_offset_of_xmldecl_state_13(),
+	XmlTextWriter_t2527250655::get_offset_of_check_character_validity_14(),
+	XmlTextWriter_t2527250655::get_offset_of_newline_handling_15(),
+	XmlTextWriter_t2527250655::get_offset_of_is_document_entity_16(),
+	XmlTextWriter_t2527250655::get_offset_of_state_17(),
+	XmlTextWriter_t2527250655::get_offset_of_node_state_18(),
+	XmlTextWriter_t2527250655::get_offset_of_nsmanager_19(),
+	XmlTextWriter_t2527250655::get_offset_of_open_count_20(),
+	XmlTextWriter_t2527250655::get_offset_of_elements_21(),
+	XmlTextWriter_t2527250655::get_offset_of_new_local_namespaces_22(),
+	XmlTextWriter_t2527250655::get_offset_of_explicit_nsdecls_23(),
+	XmlTextWriter_t2527250655::get_offset_of_namespace_handling_24(),
+	XmlTextWriter_t2527250655::get_offset_of_indent_25(),
+	XmlTextWriter_t2527250655::get_offset_of_indent_count_26(),
+	XmlTextWriter_t2527250655::get_offset_of_indent_char_27(),
+	XmlTextWriter_t2527250655::get_offset_of_indent_string_28(),
+	XmlTextWriter_t2527250655::get_offset_of_newline_29(),
+	XmlTextWriter_t2527250655::get_offset_of_indent_attributes_30(),
+	XmlTextWriter_t2527250655::get_offset_of_quote_char_31(),
+	XmlTextWriter_t2527250655::get_offset_of_v2_32(),
+	XmlTextWriter_t2527250655_StaticFields::get_offset_of_U3CU3Ef__switchU24map3A_33(),
+	XmlTextWriter_t2527250655_StaticFields::get_offset_of_U3CU3Ef__switchU24map3B_34(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1225 = { sizeof (XmlNodeInfo_t3709371029), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1225[7] = 
+{
+	XmlNodeInfo_t3709371029::get_offset_of_Prefix_0(),
+	XmlNodeInfo_t3709371029::get_offset_of_LocalName_1(),
+	XmlNodeInfo_t3709371029::get_offset_of_NS_2(),
+	XmlNodeInfo_t3709371029::get_offset_of_HasSimple_3(),
+	XmlNodeInfo_t3709371029::get_offset_of_HasElements_4(),
+	XmlNodeInfo_t3709371029::get_offset_of_XmlLang_5(),
+	XmlNodeInfo_t3709371029::get_offset_of_XmlSpace_6(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1226 = { sizeof (StringUtil_t2068578019), -1, sizeof(StringUtil_t2068578019_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1226[2] = 
+{
+	StringUtil_t2068578019_StaticFields::get_offset_of_cul_0(),
+	StringUtil_t2068578019_StaticFields::get_offset_of_cmp_1(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1227 = { sizeof (XmlDeclState_t3530111136)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1227[5] = 
+{
+	XmlDeclState_t3530111136::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1228 = { sizeof (XmlStreamReader_t2725532304), -1, sizeof(XmlStreamReader_t2725532304_StaticFields), 0 };
 extern const int32_t g_FieldOffsetTable1228[2] = 
 {
-	XsdAllValidationState_t1028212608::get_offset_of_all_3(),
-	XsdAllValidationState_t1028212608::get_offset_of_consumed_4(),
+	XmlStreamReader_t2725532304::get_offset_of_input_13(),
+	XmlStreamReader_t2725532304_StaticFields::get_offset_of_invalidDataException_14(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1229 = { sizeof (XsdAnyValidationState_t204702461), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1229[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1229 = { sizeof (NonBlockingStreamReader_t3963211903), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1229[11] = 
 {
-	XsdAnyValidationState_t204702461::get_offset_of_any_3(),
+	NonBlockingStreamReader_t3963211903::get_offset_of_input_buffer_2(),
+	NonBlockingStreamReader_t3963211903::get_offset_of_decoded_buffer_3(),
+	NonBlockingStreamReader_t3963211903::get_offset_of_decoded_count_4(),
+	NonBlockingStreamReader_t3963211903::get_offset_of_pos_5(),
+	NonBlockingStreamReader_t3963211903::get_offset_of_buffer_size_6(),
+	NonBlockingStreamReader_t3963211903::get_offset_of_encoding_7(),
+	NonBlockingStreamReader_t3963211903::get_offset_of_decoder_8(),
+	NonBlockingStreamReader_t3963211903::get_offset_of_base_stream_9(),
+	NonBlockingStreamReader_t3963211903::get_offset_of_mayBlock_10(),
+	NonBlockingStreamReader_t3963211903::get_offset_of_line_builder_11(),
+	NonBlockingStreamReader_t3963211903::get_offset_of_foundCR_12(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1230 = { sizeof (XsdAppendedValidationState_t3724408090), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1230[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1230 = { sizeof (XmlInputStream_t2650744719), -1, sizeof(XmlInputStream_t2650744719_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1230[7] = 
 {
-	XsdAppendedValidationState_t3724408090::get_offset_of_head_3(),
-	XsdAppendedValidationState_t3724408090::get_offset_of_rest_4(),
+	XmlInputStream_t2650744719_StaticFields::get_offset_of_StrictUTF8_2(),
+	XmlInputStream_t2650744719::get_offset_of_enc_3(),
+	XmlInputStream_t2650744719::get_offset_of_stream_4(),
+	XmlInputStream_t2650744719::get_offset_of_buffer_5(),
+	XmlInputStream_t2650744719::get_offset_of_bufLength_6(),
+	XmlInputStream_t2650744719::get_offset_of_bufPos_7(),
+	XmlInputStream_t2650744719_StaticFields::get_offset_of_encodingException_8(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1231 = { sizeof (XsdEmptyValidationState_t1914323912), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1232 = { sizeof (XsdInvalidValidationState_t1112885736), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1233 = { sizeof (XsdValidatingReader_t1704923617), -1, sizeof(XsdValidatingReader_t1704923617_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1233[30] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1231 = { sizeof (XmlParserInput_t2366782760), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1231[5] = 
 {
-	XsdValidatingReader_t1704923617_StaticFields::get_offset_of_emptyAttributeArray_2(),
-	XsdValidatingReader_t1704923617::get_offset_of_reader_3(),
-	XsdValidatingReader_t1704923617::get_offset_of_resolver_4(),
-	XsdValidatingReader_t1704923617::get_offset_of_sourceReaderSchemaInfo_5(),
-	XsdValidatingReader_t1704923617::get_offset_of_readerLineInfo_6(),
-	XsdValidatingReader_t1704923617::get_offset_of_validationType_7(),
-	XsdValidatingReader_t1704923617::get_offset_of_schemas_8(),
-	XsdValidatingReader_t1704923617::get_offset_of_namespaces_9(),
-	XsdValidatingReader_t1704923617::get_offset_of_validationStarted_10(),
-	XsdValidatingReader_t1704923617::get_offset_of_checkIdentity_11(),
-	XsdValidatingReader_t1704923617::get_offset_of_idManager_12(),
-	XsdValidatingReader_t1704923617::get_offset_of_checkKeyConstraints_13(),
-	XsdValidatingReader_t1704923617::get_offset_of_keyTables_14(),
-	XsdValidatingReader_t1704923617::get_offset_of_currentKeyFieldConsumers_15(),
-	XsdValidatingReader_t1704923617::get_offset_of_tmpKeyrefPool_16(),
-	XsdValidatingReader_t1704923617::get_offset_of_elementQNameStack_17(),
-	XsdValidatingReader_t1704923617::get_offset_of_state_18(),
-	XsdValidatingReader_t1704923617::get_offset_of_skipValidationDepth_19(),
-	XsdValidatingReader_t1704923617::get_offset_of_xsiNilDepth_20(),
-	XsdValidatingReader_t1704923617::get_offset_of_storedCharacters_21(),
-	XsdValidatingReader_t1704923617::get_offset_of_shouldValidateCharacters_22(),
-	XsdValidatingReader_t1704923617::get_offset_of_defaultAttributes_23(),
-	XsdValidatingReader_t1704923617::get_offset_of_currentDefaultAttribute_24(),
-	XsdValidatingReader_t1704923617::get_offset_of_defaultAttributesCache_25(),
-	XsdValidatingReader_t1704923617::get_offset_of_defaultAttributeConsumed_26(),
-	XsdValidatingReader_t1704923617::get_offset_of_currentAttrType_27(),
-	XsdValidatingReader_t1704923617::get_offset_of_ValidationEventHandler_28(),
-	XsdValidatingReader_t1704923617_StaticFields::get_offset_of_U3CU3Ef__switchU24map3_29(),
-	XsdValidatingReader_t1704923617_StaticFields::get_offset_of_U3CU3Ef__switchU24map4_30(),
-	XsdValidatingReader_t1704923617_StaticFields::get_offset_of_U3CU3Ef__switchU24map5_31(),
+	XmlParserInput_t2366782760::get_offset_of_sourceStack_0(),
+	XmlParserInput_t2366782760::get_offset_of_source_1(),
+	XmlParserInput_t2366782760::get_offset_of_has_peek_2(),
+	XmlParserInput_t2366782760::get_offset_of_peek_char_3(),
+	XmlParserInput_t2366782760::get_offset_of_allowTextDecl_4(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1234 = { sizeof (XsdValidationContext_t3720679969), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1234[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1232 = { sizeof (XmlParserInputSource_t25800784), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1232[6] = 
 {
-	XsdValidationContext_t3720679969::get_offset_of_xsi_type_0(),
-	XsdValidationContext_t3720679969::get_offset_of_State_1(),
-	XsdValidationContext_t3720679969::get_offset_of_element_stack_2(),
+	XmlParserInputSource_t25800784::get_offset_of_BaseURI_0(),
+	XmlParserInputSource_t25800784::get_offset_of_reader_1(),
+	XmlParserInputSource_t25800784::get_offset_of_state_2(),
+	XmlParserInputSource_t25800784::get_offset_of_isPE_3(),
+	XmlParserInputSource_t25800784::get_offset_of_line_4(),
+	XmlParserInputSource_t25800784::get_offset_of_column_5(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1235 = { sizeof (XsdIDManager_t3860002335), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1235[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1233 = { 0, -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1234 = { sizeof (XsdWhitespaceFacet_t2758097827)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1234[4] = 
 {
-	XsdIDManager_t3860002335::get_offset_of_idList_0(),
-	XsdIDManager_t3860002335::get_offset_of_missingIDReferences_1(),
-	XsdIDManager_t3860002335::get_offset_of_thisElementId_2(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1236 = { sizeof (XsdWildcard_t625524157), -1, sizeof(XsdWildcard_t625524157_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1236[10] = 
-{
-	XsdWildcard_t625524157::get_offset_of_xsobj_0(),
-	XsdWildcard_t625524157::get_offset_of_ResolvedProcessing_1(),
-	XsdWildcard_t625524157::get_offset_of_TargetNamespace_2(),
-	XsdWildcard_t625524157::get_offset_of_SkipCompile_3(),
-	XsdWildcard_t625524157::get_offset_of_HasValueAny_4(),
-	XsdWildcard_t625524157::get_offset_of_HasValueLocal_5(),
-	XsdWildcard_t625524157::get_offset_of_HasValueOther_6(),
-	XsdWildcard_t625524157::get_offset_of_HasValueTargetNamespace_7(),
-	XsdWildcard_t625524157::get_offset_of_ResolvedNamespaces_8(),
-	XsdWildcard_t625524157_StaticFields::get_offset_of_U3CU3Ef__switchU24map6_9(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1237 = { 0, -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1238 = { 0, -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1239 = { sizeof (ConformanceLevel_t3761201363)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1239[4] = 
-{
-	ConformanceLevel_t3761201363::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	XsdWhitespaceFacet_t2758097827::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1240 = { sizeof (DTDAutomataFactory_t3605390810), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1240[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1235 = { sizeof (XsdOrdering_t3741887935)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1235[5] = 
 {
-	DTDAutomataFactory_t3605390810::get_offset_of_root_0(),
-	DTDAutomataFactory_t3605390810::get_offset_of_choiceTable_1(),
-	DTDAutomataFactory_t3605390810::get_offset_of_sequenceTable_2(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1241 = { sizeof (DTDAutomata_t545990600), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1241[1] = 
-{
-	DTDAutomata_t545990600::get_offset_of_root_0(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1242 = { sizeof (DTDElementAutomata_t2864881036), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1242[1] = 
-{
-	DTDElementAutomata_t2864881036::get_offset_of_name_1(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1243 = { sizeof (DTDChoiceAutomata_t2810241733), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1243[4] = 
-{
-	DTDChoiceAutomata_t2810241733::get_offset_of_left_1(),
-	DTDChoiceAutomata_t2810241733::get_offset_of_right_2(),
-	DTDChoiceAutomata_t2810241733::get_offset_of_hasComputedEmptiable_3(),
-	DTDChoiceAutomata_t2810241733::get_offset_of_cachedEmptiable_4(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1244 = { sizeof (DTDSequenceAutomata_t1228770437), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1244[4] = 
-{
-	DTDSequenceAutomata_t1228770437::get_offset_of_left_1(),
-	DTDSequenceAutomata_t1228770437::get_offset_of_right_2(),
-	DTDSequenceAutomata_t1228770437::get_offset_of_hasComputedEmptiable_3(),
-	DTDSequenceAutomata_t1228770437::get_offset_of_cachedEmptiable_4(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1245 = { sizeof (DTDOneOrMoreAutomata_t1559764132), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1245[1] = 
-{
-	DTDOneOrMoreAutomata_t1559764132::get_offset_of_children_1(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1246 = { sizeof (DTDEmptyAutomata_t411530619), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1247 = { sizeof (DTDAnyAutomata_t146446906), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1248 = { sizeof (DTDInvalidAutomata_t247674167), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1249 = { sizeof (DTDObjectModel_t1113953282), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1249[23] = 
-{
-	DTDObjectModel_t1113953282::get_offset_of_factory_0(),
-	DTDObjectModel_t1113953282::get_offset_of_rootAutomata_1(),
-	DTDObjectModel_t1113953282::get_offset_of_emptyAutomata_2(),
-	DTDObjectModel_t1113953282::get_offset_of_anyAutomata_3(),
-	DTDObjectModel_t1113953282::get_offset_of_invalidAutomata_4(),
-	DTDObjectModel_t1113953282::get_offset_of_elementDecls_5(),
-	DTDObjectModel_t1113953282::get_offset_of_attListDecls_6(),
-	DTDObjectModel_t1113953282::get_offset_of_peDecls_7(),
-	DTDObjectModel_t1113953282::get_offset_of_entityDecls_8(),
-	DTDObjectModel_t1113953282::get_offset_of_notationDecls_9(),
-	DTDObjectModel_t1113953282::get_offset_of_validationErrors_10(),
-	DTDObjectModel_t1113953282::get_offset_of_resolver_11(),
-	DTDObjectModel_t1113953282::get_offset_of_nameTable_12(),
-	DTDObjectModel_t1113953282::get_offset_of_externalResources_13(),
-	DTDObjectModel_t1113953282::get_offset_of_baseURI_14(),
-	DTDObjectModel_t1113953282::get_offset_of_name_15(),
-	DTDObjectModel_t1113953282::get_offset_of_publicId_16(),
-	DTDObjectModel_t1113953282::get_offset_of_systemId_17(),
-	DTDObjectModel_t1113953282::get_offset_of_intSubset_18(),
-	DTDObjectModel_t1113953282::get_offset_of_intSubsetHasPERef_19(),
-	DTDObjectModel_t1113953282::get_offset_of_isStandalone_20(),
-	DTDObjectModel_t1113953282::get_offset_of_lineNumber_21(),
-	DTDObjectModel_t1113953282::get_offset_of_linePosition_22(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1250 = { sizeof (DictionaryBase_t1005937181), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1251 = { sizeof (U3CU3Ec__Iterator3_t3518389200), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1251[5] = 
-{
-	U3CU3Ec__Iterator3_t3518389200::get_offset_of_U3CU24s_50U3E__0_0(),
-	U3CU3Ec__Iterator3_t3518389200::get_offset_of_U3CpU3E__1_1(),
-	U3CU3Ec__Iterator3_t3518389200::get_offset_of_U24PC_2(),
-	U3CU3Ec__Iterator3_t3518389200::get_offset_of_U24current_3(),
-	U3CU3Ec__Iterator3_t3518389200::get_offset_of_U3CU3Ef__this_4(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1252 = { sizeof (DTDCollectionBase_t2621362935), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1252[1] = 
-{
-	DTDCollectionBase_t2621362935::get_offset_of_root_5(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1253 = { sizeof (DTDElementDeclarationCollection_t2224069626), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1254 = { sizeof (DTDAttListDeclarationCollection_t243645429), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1255 = { sizeof (DTDEntityDeclarationCollection_t1212505713), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1256 = { sizeof (DTDNotationDeclarationCollection_t228085060), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1257 = { sizeof (DTDContentModel_t445576364), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1257[7] = 
-{
-	DTDContentModel_t445576364::get_offset_of_root_5(),
-	DTDContentModel_t445576364::get_offset_of_compiledAutomata_6(),
-	DTDContentModel_t445576364::get_offset_of_ownerElementName_7(),
-	DTDContentModel_t445576364::get_offset_of_elementName_8(),
-	DTDContentModel_t445576364::get_offset_of_orderType_9(),
-	DTDContentModel_t445576364::get_offset_of_childModels_10(),
-	DTDContentModel_t445576364::get_offset_of_occurence_11(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1258 = { sizeof (DTDContentModelCollection_t3164170484), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1258[1] = 
-{
-	DTDContentModelCollection_t3164170484::get_offset_of_contentModel_0(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1259 = { sizeof (DTDNode_t1758286970), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1259[5] = 
-{
-	DTDNode_t1758286970::get_offset_of_root_0(),
-	DTDNode_t1758286970::get_offset_of_isInternalSubset_1(),
-	DTDNode_t1758286970::get_offset_of_baseURI_2(),
-	DTDNode_t1758286970::get_offset_of_lineNumber_3(),
-	DTDNode_t1758286970::get_offset_of_linePosition_4(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1260 = { sizeof (DTDElementDeclaration_t8748002), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1260[6] = 
-{
-	DTDElementDeclaration_t8748002::get_offset_of_root_5(),
-	DTDElementDeclaration_t8748002::get_offset_of_contentModel_6(),
-	DTDElementDeclaration_t8748002::get_offset_of_name_7(),
-	DTDElementDeclaration_t8748002::get_offset_of_isEmpty_8(),
-	DTDElementDeclaration_t8748002::get_offset_of_isAny_9(),
-	DTDElementDeclaration_t8748002::get_offset_of_isMixedContent_10(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1261 = { sizeof (DTDAttributeDefinition_t3692870749), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1261[7] = 
-{
-	DTDAttributeDefinition_t3692870749::get_offset_of_name_5(),
-	DTDAttributeDefinition_t3692870749::get_offset_of_datatype_6(),
-	DTDAttributeDefinition_t3692870749::get_offset_of_enumeratedLiterals_7(),
-	DTDAttributeDefinition_t3692870749::get_offset_of_unresolvedDefault_8(),
-	DTDAttributeDefinition_t3692870749::get_offset_of_enumeratedNotations_9(),
-	DTDAttributeDefinition_t3692870749::get_offset_of_occurenceType_10(),
-	DTDAttributeDefinition_t3692870749::get_offset_of_resolvedDefaultValue_11(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1262 = { sizeof (DTDAttListDeclaration_t2272374839), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1262[3] = 
-{
-	DTDAttListDeclaration_t2272374839::get_offset_of_name_5(),
-	DTDAttListDeclaration_t2272374839::get_offset_of_attributeOrders_6(),
-	DTDAttListDeclaration_t2272374839::get_offset_of_attributes_7(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1263 = { sizeof (DTDEntityBase_t2353758560), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1263[10] = 
-{
-	DTDEntityBase_t2353758560::get_offset_of_name_5(),
-	DTDEntityBase_t2353758560::get_offset_of_publicId_6(),
-	DTDEntityBase_t2353758560::get_offset_of_systemId_7(),
-	DTDEntityBase_t2353758560::get_offset_of_literalValue_8(),
-	DTDEntityBase_t2353758560::get_offset_of_replacementText_9(),
-	DTDEntityBase_t2353758560::get_offset_of_uriString_10(),
-	DTDEntityBase_t2353758560::get_offset_of_absUri_11(),
-	DTDEntityBase_t2353758560::get_offset_of_isInvalid_12(),
-	DTDEntityBase_t2353758560::get_offset_of_loadFailed_13(),
-	DTDEntityBase_t2353758560::get_offset_of_resolver_14(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1264 = { sizeof (DTDEntityDeclaration_t4283284771), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1264[6] = 
-{
-	DTDEntityDeclaration_t4283284771::get_offset_of_entityValue_15(),
-	DTDEntityDeclaration_t4283284771::get_offset_of_notationName_16(),
-	DTDEntityDeclaration_t4283284771::get_offset_of_ReferencingEntities_17(),
-	DTDEntityDeclaration_t4283284771::get_offset_of_scanned_18(),
-	DTDEntityDeclaration_t4283284771::get_offset_of_recursed_19(),
-	DTDEntityDeclaration_t4283284771::get_offset_of_hasExternalReference_20(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1265 = { sizeof (DTDNotationDeclaration_t1758408116), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1265[5] = 
-{
-	DTDNotationDeclaration_t1758408116::get_offset_of_name_5(),
-	DTDNotationDeclaration_t1758408116::get_offset_of_localName_6(),
-	DTDNotationDeclaration_t1758408116::get_offset_of_prefix_7(),
-	DTDNotationDeclaration_t1758408116::get_offset_of_publicId_8(),
-	DTDNotationDeclaration_t1758408116::get_offset_of_systemId_9(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1266 = { sizeof (DTDParameterEntityDeclarationCollection_t3496720022), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1266[2] = 
-{
-	DTDParameterEntityDeclarationCollection_t3496720022::get_offset_of_peDecls_0(),
-	DTDParameterEntityDeclarationCollection_t3496720022::get_offset_of_root_1(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1267 = { sizeof (DTDParameterEntityDeclaration_t252230634), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1268 = { sizeof (DTDContentOrderType_t3150259539)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1268[4] = 
-{
-	DTDContentOrderType_t3150259539::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1269 = { sizeof (DTDAttributeOccurenceType_t2819881069)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1269[5] = 
-{
-	DTDAttributeOccurenceType_t2819881069::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	XsdOrdering_t3741887935::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1270 = { sizeof (DTDOccurence_t99371501)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1270[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1236 = { sizeof (XsdAnySimpleType_t1096449895), -1, sizeof(XsdAnySimpleType_t1096449895_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1236[6] = 
 {
-	DTDOccurence_t99371501::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
+	XsdAnySimpleType_t1096449895_StaticFields::get_offset_of_instance_55(),
+	XsdAnySimpleType_t1096449895_StaticFields::get_offset_of_whitespaceArray_56(),
+	XsdAnySimpleType_t1096449895_StaticFields::get_offset_of_booleanAllowedFacets_57(),
+	XsdAnySimpleType_t1096449895_StaticFields::get_offset_of_decimalAllowedFacets_58(),
+	XsdAnySimpleType_t1096449895_StaticFields::get_offset_of_durationAllowedFacets_59(),
+	XsdAnySimpleType_t1096449895_StaticFields::get_offset_of_stringAllowedFacets_60(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1271 = { sizeof (DTDReader_t2453137441), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1271[14] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1237 = { sizeof (XdtAnyAtomicType_t3359210273), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1238 = { sizeof (XdtUntypedAtomic_t2904699188), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1239 = { sizeof (XsdString_t263933896), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1240 = { sizeof (XsdNormalizedString_t2132216291), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1241 = { sizeof (XsdToken_t2902215462), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1242 = { sizeof (XsdLanguage_t3897851897), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1243 = { sizeof (XsdNMToken_t547135877), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1244 = { sizeof (XsdNMTokens_t1753890866), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1245 = { sizeof (XsdName_t1409945702), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1246 = { sizeof (XsdNCName_t414304927), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1247 = { sizeof (XsdID_t1067193160), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1248 = { sizeof (XsdIDRef_t1377311049), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1249 = { sizeof (XsdIDRefs_t763119546), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1250 = { sizeof (XsdEntity_t2664305022), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1251 = { sizeof (XsdEntities_t1103053540), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1252 = { sizeof (XsdNotation_t720379093), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1253 = { sizeof (XsdDecimal_t2932251550), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1254 = { sizeof (XsdInteger_t1330502157), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1255 = { sizeof (XsdLong_t4179235589), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1256 = { sizeof (XsdInt_t1488443894), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1257 = { sizeof (XsdShort_t1778530041), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1258 = { sizeof (XsdByte_t1120972221), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1259 = { sizeof (XsdNonNegativeInteger_t3587933853), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1260 = { sizeof (XsdUnsignedLong_t137890294), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1261 = { sizeof (XsdUnsignedInt_t2956447959), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1262 = { sizeof (XsdUnsignedShort_t3693774826), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1263 = { sizeof (XsdUnsignedByte_t3216355454), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1264 = { sizeof (XsdPositiveInteger_t1896481288), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1265 = { sizeof (XsdNonPositiveInteger_t409343009), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1266 = { sizeof (XsdNegativeInteger_t399444136), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1267 = { sizeof (XsdFloat_t386143221), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1268 = { sizeof (XsdDouble_t2510112208), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1269 = { sizeof (XsdBase64Binary_t1094704629), -1, sizeof(XsdBase64Binary_t1094704629_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1269[2] = 
 {
-	DTDReader_t2453137441::get_offset_of_currentInput_0(),
-	DTDReader_t2453137441::get_offset_of_parserInputStack_1(),
-	DTDReader_t2453137441::get_offset_of_nameBuffer_2(),
-	DTDReader_t2453137441::get_offset_of_nameLength_3(),
-	DTDReader_t2453137441::get_offset_of_nameCapacity_4(),
-	DTDReader_t2453137441::get_offset_of_valueBuffer_5(),
-	DTDReader_t2453137441::get_offset_of_currentLinkedNodeLineNumber_6(),
-	DTDReader_t2453137441::get_offset_of_currentLinkedNodeLinePosition_7(),
-	DTDReader_t2453137441::get_offset_of_dtdIncludeSect_8(),
-	DTDReader_t2453137441::get_offset_of_normalization_9(),
-	DTDReader_t2453137441::get_offset_of_processingInternalSubset_10(),
-	DTDReader_t2453137441::get_offset_of_cachedPublicId_11(),
-	DTDReader_t2453137441::get_offset_of_cachedSystemId_12(),
-	DTDReader_t2453137441::get_offset_of_DTD_13(),
+	XsdBase64Binary_t1094704629_StaticFields::get_offset_of_ALPHABET_61(),
+	XsdBase64Binary_t1094704629_StaticFields::get_offset_of_decodeTable_62(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1272 = { sizeof (DTDValidatingReader_t4120969348), -1, sizeof(DTDValidatingReader_t4120969348_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1272[29] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1270 = { sizeof (XsdHexBinary_t3496718151), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1271 = { sizeof (XsdQName_t930779123), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1272 = { sizeof (XsdBoolean_t4126353587), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1273 = { sizeof (XsdAnyURI_t2527983239), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1274 = { sizeof (XmlSchemaUri_t1295878664), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1274[1] = 
 {
-	DTDValidatingReader_t4120969348::get_offset_of_reader_2(),
-	DTDValidatingReader_t4120969348::get_offset_of_sourceTextReader_3(),
-	DTDValidatingReader_t4120969348::get_offset_of_validatingReader_4(),
-	DTDValidatingReader_t4120969348::get_offset_of_dtd_5(),
-	DTDValidatingReader_t4120969348::get_offset_of_resolver_6(),
-	DTDValidatingReader_t4120969348::get_offset_of_currentElement_7(),
-	DTDValidatingReader_t4120969348::get_offset_of_attributes_8(),
-	DTDValidatingReader_t4120969348::get_offset_of_attributeCount_9(),
-	DTDValidatingReader_t4120969348::get_offset_of_currentAttribute_10(),
-	DTDValidatingReader_t4120969348::get_offset_of_consumedAttribute_11(),
-	DTDValidatingReader_t4120969348::get_offset_of_elementStack_12(),
-	DTDValidatingReader_t4120969348::get_offset_of_automataStack_13(),
-	DTDValidatingReader_t4120969348::get_offset_of_popScope_14(),
-	DTDValidatingReader_t4120969348::get_offset_of_isStandalone_15(),
-	DTDValidatingReader_t4120969348::get_offset_of_currentAutomata_16(),
-	DTDValidatingReader_t4120969348::get_offset_of_previousAutomata_17(),
-	DTDValidatingReader_t4120969348::get_offset_of_idList_18(),
-	DTDValidatingReader_t4120969348::get_offset_of_missingIDReferences_19(),
-	DTDValidatingReader_t4120969348::get_offset_of_nsmgr_20(),
-	DTDValidatingReader_t4120969348::get_offset_of_currentTextValue_21(),
-	DTDValidatingReader_t4120969348::get_offset_of_constructingTextValue_22(),
-	DTDValidatingReader_t4120969348::get_offset_of_shouldResetCurrentTextValue_23(),
-	DTDValidatingReader_t4120969348::get_offset_of_isSignificantWhitespace_24(),
-	DTDValidatingReader_t4120969348::get_offset_of_isWhitespace_25(),
-	DTDValidatingReader_t4120969348::get_offset_of_isText_26(),
-	DTDValidatingReader_t4120969348::get_offset_of_attributeValueEntityStack_27(),
-	DTDValidatingReader_t4120969348::get_offset_of_valueBuilder_28(),
-	DTDValidatingReader_t4120969348::get_offset_of_whitespaceChars_29(),
-	DTDValidatingReader_t4120969348_StaticFields::get_offset_of_U3CU3Ef__switchU24map2A_30(),
+	XmlSchemaUri_t1295878664::get_offset_of_value_36(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1273 = { sizeof (AttributeSlot_t1499247213), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1273[6] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1275 = { sizeof (XsdDuration_t1605638443), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1276 = { sizeof (XdtDayTimeDuration_t2797717973), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1277 = { sizeof (XdtYearMonthDuration_t1764328599), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1278 = { sizeof (XsdDateTime_t1344468684), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1279 = { sizeof (XsdDate_t919459387), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1280 = { sizeof (XsdTime_t4165680512), -1, sizeof(XsdTime_t4165680512_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1280[1] = 
 {
-	AttributeSlot_t1499247213::get_offset_of_Name_0(),
-	AttributeSlot_t1499247213::get_offset_of_LocalName_1(),
-	AttributeSlot_t1499247213::get_offset_of_NS_2(),
-	AttributeSlot_t1499247213::get_offset_of_Prefix_3(),
-	AttributeSlot_t1499247213::get_offset_of_Value_4(),
-	AttributeSlot_t1499247213::get_offset_of_IsDefault_5(),
+	XsdTime_t4165680512_StaticFields::get_offset_of_timeFormats_61(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1274 = { sizeof (EntityResolvingXmlReader_t2086920314), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1274[8] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1281 = { sizeof (XsdGYearMonth_t1363357165), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1282 = { sizeof (XsdGMonthDay_t3859978294), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1283 = { sizeof (XsdGYear_t3810382607), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1284 = { sizeof (XsdGMonth_t4076673358), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1285 = { sizeof (XsdGDay_t1914244270), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1286 = { 0, -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1287 = { sizeof (QNameValueType_t2109511131)+ sizeof (Il2CppObject), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1287[1] = 
 {
-	EntityResolvingXmlReader_t2086920314::get_offset_of_entity_2(),
-	EntityResolvingXmlReader_t2086920314::get_offset_of_source_3(),
-	EntityResolvingXmlReader_t2086920314::get_offset_of_context_4(),
-	EntityResolvingXmlReader_t2086920314::get_offset_of_resolver_5(),
-	EntityResolvingXmlReader_t2086920314::get_offset_of_entity_handling_6(),
-	EntityResolvingXmlReader_t2086920314::get_offset_of_entity_inside_attr_7(),
-	EntityResolvingXmlReader_t2086920314::get_offset_of_inside_attr_8(),
-	EntityResolvingXmlReader_t2086920314::get_offset_of_do_resolve_9(),
+	QNameValueType_t2109511131::get_offset_of_value_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1275 = { sizeof (EntityHandling_t3960499440)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1275[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1288 = { sizeof (StringValueType_t652312500)+ sizeof (Il2CppObject), sizeof(StringValueType_t652312500_marshaled_pinvoke), 0, 0 };
+extern const int32_t g_FieldOffsetTable1288[1] = 
 {
-	EntityHandling_t3960499440::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
+	StringValueType_t652312500::get_offset_of_value_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1276 = { sizeof (Formatting_t1126649075)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1276[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1289 = { sizeof (UriValueType_t1626089757)+ sizeof (Il2CppObject), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1289[1] = 
 {
-	Formatting_t1126649075::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
+	UriValueType_t1626089757::get_offset_of_value_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1277 = { 0, -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1278 = { 0, -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1279 = { 0, -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1280 = { sizeof (NameTable_t594386929), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1280[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1290 = { sizeof (StringArrayValueType_t1731700877)+ sizeof (Il2CppObject), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1290[1] = 
 {
-	NameTable_t594386929::get_offset_of_count_0(),
-	NameTable_t594386929::get_offset_of_buckets_1(),
-	NameTable_t594386929::get_offset_of_size_2(),
+	StringArrayValueType_t1731700877::get_offset_of_value_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1281 = { sizeof (Entry_t2583369454), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1281[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1291 = { sizeof (ValidationEventArgs_t1577905814), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1291[3] = 
 {
-	Entry_t2583369454::get_offset_of_str_0(),
-	Entry_t2583369454::get_offset_of_hash_1(),
-	Entry_t2583369454::get_offset_of_len_2(),
-	Entry_t2583369454::get_offset_of_next_3(),
+	ValidationEventArgs_t1577905814::get_offset_of_exception_1(),
+	ValidationEventArgs_t1577905814::get_offset_of_message_2(),
+	ValidationEventArgs_t1577905814::get_offset_of_severity_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1282 = { sizeof (NamespaceHandling_t1452270444)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1282[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1292 = { sizeof (XmlSchema_t880472818), -1, sizeof(XmlSchema_t880472818_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable1292[20] = 
 {
-	NamespaceHandling_t1452270444::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
+	XmlSchema_t880472818::get_offset_of_attributeFormDefault_13(),
+	XmlSchema_t880472818::get_offset_of_attributeGroups_14(),
+	XmlSchema_t880472818::get_offset_of_attributes_15(),
+	XmlSchema_t880472818::get_offset_of_blockDefault_16(),
+	XmlSchema_t880472818::get_offset_of_elementFormDefault_17(),
+	XmlSchema_t880472818::get_offset_of_elements_18(),
+	XmlSchema_t880472818::get_offset_of_finalDefault_19(),
+	XmlSchema_t880472818::get_offset_of_groups_20(),
+	XmlSchema_t880472818::get_offset_of_id_21(),
+	XmlSchema_t880472818::get_offset_of_includes_22(),
+	XmlSchema_t880472818::get_offset_of_items_23(),
+	XmlSchema_t880472818::get_offset_of_notations_24(),
+	XmlSchema_t880472818::get_offset_of_schemaTypes_25(),
+	XmlSchema_t880472818::get_offset_of_targetNamespace_26(),
+	XmlSchema_t880472818::get_offset_of_version_27(),
+	XmlSchema_t880472818::get_offset_of_schemas_28(),
+	XmlSchema_t880472818::get_offset_of_nameTable_29(),
+	XmlSchema_t880472818::get_offset_of_missedSubComponents_30(),
+	XmlSchema_t880472818::get_offset_of_compilationItems_31(),
+	XmlSchema_t880472818_StaticFields::get_offset_of_U3CU3Ef__switchU24map41_32(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1283 = { sizeof (NewLineHandling_t1737195169)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1283[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1293 = { sizeof (XmlSchemaAll_t1805755215), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1293[3] = 
 {
-	NewLineHandling_t1737195169::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
+	XmlSchemaAll_t1805755215::get_offset_of_schema_28(),
+	XmlSchemaAll_t1805755215::get_offset_of_items_29(),
+	XmlSchemaAll_t1805755215::get_offset_of_emptiable_30(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1284 = { sizeof (ReadState_t3138905245)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1284[6] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1294 = { sizeof (XmlSchemaAnnotated_t2082486936), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1294[3] = 
 {
-	ReadState_t3138905245::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
-	0,
+	XmlSchemaAnnotated_t2082486936::get_offset_of_annotation_13(),
+	XmlSchemaAnnotated_t2082486936::get_offset_of_id_14(),
+	XmlSchemaAnnotated_t2082486936::get_offset_of_unhandledAttributes_15(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1285 = { sizeof (ValidationType_t1401987383)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1285[6] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1295 = { sizeof (XmlSchemaAnnotation_t2400301303), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1295[2] = 
 {
-	ValidationType_t1401987383::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
-	0,
+	XmlSchemaAnnotation_t2400301303::get_offset_of_id_13(),
+	XmlSchemaAnnotation_t2400301303::get_offset_of_items_14(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1286 = { sizeof (WhitespaceHandling_t3754063142)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1286[4] = 
-{
-	WhitespaceHandling_t3754063142::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1287 = { sizeof (WriteState_t1534871862)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1287[8] = 
-{
-	WriteState_t1534871862::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1288 = { sizeof (XmlEntity_t4027255380), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1288[7] = 
-{
-	XmlEntity_t4027255380::get_offset_of_name_5(),
-	XmlEntity_t4027255380::get_offset_of_NDATA_6(),
-	XmlEntity_t4027255380::get_offset_of_publicId_7(),
-	XmlEntity_t4027255380::get_offset_of_systemId_8(),
-	XmlEntity_t4027255380::get_offset_of_baseUri_9(),
-	XmlEntity_t4027255380::get_offset_of_lastLinkedChild_10(),
-	XmlEntity_t4027255380::get_offset_of_contentAlreadySet_11(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1289 = { sizeof (XmlAttribute_t175731005), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1289[4] = 
-{
-	XmlAttribute_t175731005::get_offset_of_name_5(),
-	XmlAttribute_t175731005::get_offset_of_isDefault_6(),
-	XmlAttribute_t175731005::get_offset_of_lastLinkedChild_7(),
-	XmlAttribute_t175731005::get_offset_of_schemaInfo_8(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1290 = { sizeof (XmlAttributeCollection_t3359885287), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1290[2] = 
-{
-	XmlAttributeCollection_t3359885287::get_offset_of_ownerElement_4(),
-	XmlAttributeCollection_t3359885287::get_offset_of_ownerDocument_5(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1291 = { sizeof (XmlCDataSection_t1124775823), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1292 = { sizeof (XmlChar_t1369421061), -1, sizeof(XmlChar_t1369421061_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1292[5] = 
-{
-	XmlChar_t1369421061_StaticFields::get_offset_of_WhitespaceChars_0(),
-	XmlChar_t1369421061_StaticFields::get_offset_of_firstNamePages_1(),
-	XmlChar_t1369421061_StaticFields::get_offset_of_namePages_2(),
-	XmlChar_t1369421061_StaticFields::get_offset_of_nameBitmap_3(),
-	XmlChar_t1369421061_StaticFields::get_offset_of_U3CU3Ef__switchU24map2F_4(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1293 = { sizeof (XmlCharacterData_t575748506), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1293[1] = 
-{
-	XmlCharacterData_t575748506::get_offset_of_data_6(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1294 = { sizeof (XmlComment_t3999331572), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1295 = { sizeof (XmlNotation_t206561061), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1295[4] = 
-{
-	XmlNotation_t206561061::get_offset_of_localName_5(),
-	XmlNotation_t206561061::get_offset_of_publicId_6(),
-	XmlNotation_t206561061::get_offset_of_systemId_7(),
-	XmlNotation_t206561061::get_offset_of_prefix_8(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1296 = { sizeof (XmlDeclaration_t1545359137), -1, sizeof(XmlDeclaration_t1545359137_StaticFields), 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1296 = { sizeof (XmlSchemaAny_t3277730824), -1, sizeof(XmlSchemaAny_t3277730824_StaticFields), 0 };
 extern const int32_t g_FieldOffsetTable1296[4] = 
 {
-	XmlDeclaration_t1545359137::get_offset_of_encoding_6(),
-	XmlDeclaration_t1545359137::get_offset_of_standalone_7(),
-	XmlDeclaration_t1545359137::get_offset_of_version_8(),
-	XmlDeclaration_t1545359137_StaticFields::get_offset_of_U3CU3Ef__switchU24map30_9(),
+	XmlSchemaAny_t3277730824_StaticFields::get_offset_of_anyTypeContent_27(),
+	XmlSchemaAny_t3277730824::get_offset_of_nameSpace_28(),
+	XmlSchemaAny_t3277730824::get_offset_of_processing_29(),
+	XmlSchemaAny_t3277730824::get_offset_of_wildcard_30(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1297 = { sizeof (XmlDocument_t3649534162), -1, sizeof(XmlDocument_t3649534162_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1297[20] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1297 = { sizeof (XmlSchemaAnyAttribute_t530453212), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1297[3] = 
 {
-	XmlDocument_t3649534162_StaticFields::get_offset_of_optimal_create_types_5(),
-	XmlDocument_t3649534162::get_offset_of_optimal_create_element_6(),
-	XmlDocument_t3649534162::get_offset_of_optimal_create_attribute_7(),
-	XmlDocument_t3649534162::get_offset_of_nameTable_8(),
-	XmlDocument_t3649534162::get_offset_of_baseURI_9(),
-	XmlDocument_t3649534162::get_offset_of_implementation_10(),
-	XmlDocument_t3649534162::get_offset_of_preserveWhitespace_11(),
-	XmlDocument_t3649534162::get_offset_of_resolver_12(),
-	XmlDocument_t3649534162::get_offset_of_idTable_13(),
-	XmlDocument_t3649534162::get_offset_of_nameCache_14(),
-	XmlDocument_t3649534162::get_offset_of_lastLinkedChild_15(),
-	XmlDocument_t3649534162::get_offset_of_schemas_16(),
-	XmlDocument_t3649534162::get_offset_of_schemaInfo_17(),
-	XmlDocument_t3649534162::get_offset_of_loadMode_18(),
-	XmlDocument_t3649534162::get_offset_of_NodeChanged_19(),
-	XmlDocument_t3649534162::get_offset_of_NodeChanging_20(),
-	XmlDocument_t3649534162::get_offset_of_NodeInserted_21(),
-	XmlDocument_t3649534162::get_offset_of_NodeInserting_22(),
-	XmlDocument_t3649534162::get_offset_of_NodeRemoved_23(),
-	XmlDocument_t3649534162::get_offset_of_NodeRemoving_24(),
+	XmlSchemaAnyAttribute_t530453212::get_offset_of_nameSpace_16(),
+	XmlSchemaAnyAttribute_t530453212::get_offset_of_processing_17(),
+	XmlSchemaAnyAttribute_t530453212::get_offset_of_wildcard_18(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1298 = { sizeof (XmlDocumentFragment_t3083262362), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1298[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1298 = { sizeof (XmlSchemaAppInfo_t2033489551), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1298[2] = 
 {
-	XmlDocumentFragment_t3083262362::get_offset_of_lastLinkedChild_5(),
+	XmlSchemaAppInfo_t2033489551::get_offset_of_markup_13(),
+	XmlSchemaAppInfo_t2033489551::get_offset_of_source_14(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1299 = { sizeof (XmlDocumentType_t824160610), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1299[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1299 = { sizeof (XmlSchemaAttribute_t4015859774), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1299[17] = 
 {
-	XmlDocumentType_t824160610::get_offset_of_entities_6(),
-	XmlDocumentType_t824160610::get_offset_of_notations_7(),
-	XmlDocumentType_t824160610::get_offset_of_dtd_8(),
+	XmlSchemaAttribute_t4015859774::get_offset_of_attributeType_16(),
+	XmlSchemaAttribute_t4015859774::get_offset_of_attributeSchemaType_17(),
+	XmlSchemaAttribute_t4015859774::get_offset_of_defaultValue_18(),
+	XmlSchemaAttribute_t4015859774::get_offset_of_fixedValue_19(),
+	XmlSchemaAttribute_t4015859774::get_offset_of_validatedDefaultValue_20(),
+	XmlSchemaAttribute_t4015859774::get_offset_of_validatedFixedValue_21(),
+	XmlSchemaAttribute_t4015859774::get_offset_of_validatedFixedTypedValue_22(),
+	XmlSchemaAttribute_t4015859774::get_offset_of_form_23(),
+	XmlSchemaAttribute_t4015859774::get_offset_of_name_24(),
+	XmlSchemaAttribute_t4015859774::get_offset_of_targetNamespace_25(),
+	XmlSchemaAttribute_t4015859774::get_offset_of_qualifiedName_26(),
+	XmlSchemaAttribute_t4015859774::get_offset_of_refName_27(),
+	XmlSchemaAttribute_t4015859774::get_offset_of_schemaType_28(),
+	XmlSchemaAttribute_t4015859774::get_offset_of_schemaTypeName_29(),
+	XmlSchemaAttribute_t4015859774::get_offset_of_use_30(),
+	XmlSchemaAttribute_t4015859774::get_offset_of_validatedUse_31(),
+	XmlSchemaAttribute_t4015859774::get_offset_of_referencedAttribute_32(),
 };
 #ifdef __clang__
 #pragma clang diagnostic pop

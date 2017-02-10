@@ -24,5 +24,9 @@ struct CharacterController_t4094781467;
 extern "C"  int32_t CharacterController_Move_m3456882757 (CharacterController_t4094781467 * __this, Vector3_t2243707580  ___motion0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.CollisionFlags UnityEngine.CharacterController::INTERNAL_CALL_Move(UnityEngine.CharacterController,UnityEngine.Vector3&)
 extern "C"  int32_t CharacterController_INTERNAL_CALL_Move_m2826125634 (Il2CppObject * __this /* static, unused */, CharacterController_t4094781467 * ___self0, Vector3_t2243707580 * ___motion1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.CharacterController::get_radius()
+extern "C"  float CharacterController_get_radius_m2751828411 (CharacterController_t4094781467 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.CharacterController::get_height()
 extern "C"  float CharacterController_get_height_m2830713110 (CharacterController_t4094781467 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.CharacterController::get_slopeLimit()
+extern "C"  float CharacterController_get_slopeLimit_m1930597355 (CharacterController_t4094781467 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

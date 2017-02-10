@@ -139,7 +139,7 @@ extern "C"  TypeConverter_t745995970 * TypeDescriptor_GetConverter_m2779430453 (
 // System.Collections.ArrayList System.ComponentModel.TypeDescriptor::get_DefaultConverters()
 extern "C"  ArrayList_t4252133567 * TypeDescriptor_get_DefaultConverters_m3008219029 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.ComponentModel.TypeConverter System.ComponentModel.TypeDescriptor::GetConverter(System.Type)
-extern "C"  TypeConverter_t745995970 * TypeDescriptor_GetConverter_m1788154595 (Il2CppObject * __this /* static, unused */, Type_t * ___type0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  TypeConverter_t745995970 * TypeDescriptor_GetConverter_m2863175601 (Il2CppObject * __this /* static, unused */, Type_t * ___type0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Type System.ComponentModel.TypeDescriptor::FindDefaultConverterType(System.Type)
 extern "C"  Type_t * TypeDescriptor_FindDefaultConverterType_m1939082393 (Il2CppObject * __this /* static, unused */, Type_t * ___type0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.ComponentModel.EventDescriptor System.ComponentModel.TypeDescriptor::GetDefaultEvent(System.Type)

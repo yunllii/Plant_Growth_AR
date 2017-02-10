@@ -22,6 +22,8 @@ struct Il2CppObject;
 struct Type_t;
 // System.String
 struct String_t;
+// System.Object[]
+struct ObjectU5BU5D_t3614634134;
 // System.Runtime.Serialization.SerializationInfo
 struct SerializationInfo_t228987430;
 // System.Delegate[]
@@ -69,6 +71,10 @@ extern "C"  Delegate_t3022476291 * Delegate_CreateDelegate_m1864084142 (Il2CppOb
 extern "C"  Delegate_t3022476291 * Delegate_CreateDelegate_m1706525923 (Il2CppObject * __this /* static, unused */, Type_t * ___type0, Il2CppObject * ___target1, String_t* ___method2, bool ___ignoreCase3, bool ___throwOnBindFailure4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Delegate System.Delegate::CreateDelegate(System.Type,System.Object,System.String,System.Boolean)
 extern "C"  Delegate_t3022476291 * Delegate_CreateDelegate_m2923944126 (Il2CppObject * __this /* static, unused */, Type_t * ___type0, Il2CppObject * ___target1, String_t* ___method2, bool ___ignoreCase3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Object System.Delegate::DynamicInvoke(System.Object[])
+extern "C"  Il2CppObject * Delegate_DynamicInvoke_m4087640646 (Delegate_t3022476291 * __this, ObjectU5BU5D_t3614634134* ___args0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Object System.Delegate::DynamicInvokeImpl(System.Object[])
+extern "C"  Il2CppObject * Delegate_DynamicInvokeImpl_m3083854600 (Delegate_t3022476291 * __this, ObjectU5BU5D_t3614634134* ___args0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Delegate::Clone()
 extern "C"  Il2CppObject * Delegate_Clone_m2661349026 (Delegate_t3022476291 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Delegate::Equals(System.Object)

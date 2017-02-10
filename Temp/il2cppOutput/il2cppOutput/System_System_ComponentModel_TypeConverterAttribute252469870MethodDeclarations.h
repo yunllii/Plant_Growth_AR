@@ -39,4 +39,4 @@ extern "C"  bool TypeConverterAttribute_Equals_m2330345916 (TypeConverterAttribu
 // System.Int32 System.ComponentModel.TypeConverterAttribute::GetHashCode()
 extern "C"  int32_t TypeConverterAttribute_GetHashCode_m131437980 (TypeConverterAttribute_t252469870 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.ComponentModel.TypeConverterAttribute::get_ConverterTypeName()
-extern "C"  String_t* TypeConverterAttribute_get_ConverterTypeName_m2296240606 (TypeConverterAttribute_t252469870 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  String_t* TypeConverterAttribute_get_ConverterTypeName_m1307032478 (TypeConverterAttribute_t252469870 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

@@ -27,6 +27,7 @@ extern "C" void DelegatePInvokeWrapper_ReadDelegate_t1559754630 ();
 extern "C" void DelegatePInvokeWrapper_WriteDelegate_t888270799 ();
 extern "C" void DelegatePInvokeWrapper_SocketAsyncCall_t3737776727 ();
 extern "C" void DelegatePInvokeWrapper_CostDelegate_t1824458113 ();
+extern "C" void DelegatePInvokeWrapper_Action_t3226471752 ();
 extern "C" void DelegatePInvokeWrapper_LogCallback_t1867914413 ();
 extern "C" void DelegatePInvokeWrapper_PCMReaderCallback_t3007145346 ();
 extern "C" void DelegatePInvokeWrapper_PCMSetPositionCallback_t421863554 ();
@@ -43,7 +44,7 @@ extern "C" void DelegatePInvokeWrapper_MyAction_t1657508700 ();
 extern "C" void DelegatePInvokeWrapper_IntegerMillisecondsDelegate_t1507343911 ();
 extern "C" void DelegatePInvokeWrapper_OnValidateInput_t1946318473 ();
 extern "C" void DelegatePInvokeWrapper_RoomIndexingChanged_t3550649017 ();
-extern const Il2CppMethodPointer g_DelegateWrappersManagedToNative[32] = 
+extern const Il2CppMethodPointer g_DelegateWrappersManagedToNative[33] = 
 {
 	DelegatePInvokeWrapper_AppDomainInitializer_t3898244613,
 	DelegatePInvokeWrapper_Swapper_t2637371637,
@@ -61,6 +62,7 @@ extern const Il2CppMethodPointer g_DelegateWrappersManagedToNative[32] =
 	DelegatePInvokeWrapper_WriteDelegate_t888270799,
 	DelegatePInvokeWrapper_SocketAsyncCall_t3737776727,
 	DelegatePInvokeWrapper_CostDelegate_t1824458113,
+	DelegatePInvokeWrapper_Action_t3226471752,
 	DelegatePInvokeWrapper_LogCallback_t1867914413,
 	DelegatePInvokeWrapper_PCMReaderCallback_t3007145346,
 	DelegatePInvokeWrapper_PCMSetPositionCallback_t421863554,
