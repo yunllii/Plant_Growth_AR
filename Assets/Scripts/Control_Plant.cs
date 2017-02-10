@@ -20,14 +20,14 @@ public class Control_Plant : Photon.MonoBehaviour {
 		if (Input.GetKeyDown ("d")) {
 		
 			print("d was pressed");
-			transform.localScale += new Vector3(0.25F, 0.25F, 0.25F);
+			transform.localScale += new Vector3(0.05F, 0.05F, 0.05F);
 		
 		}
 
 		if (Input.GetKeyDown ("a")) {
 
 			print("d was pressed");
-			transform.localScale -= new Vector3(0.25F, 0.25F, 0.25F);
+			transform.localScale -= new Vector3(0.05F, 0.05F, 0.05F);
 
 		}
 			
